@@ -14,8 +14,8 @@
     "max_duration_seconds": 75,
     "clip_cut_seconds": 3.0,
     "background_zoom": 1.04,
-    "bitrate": "12000k",
-    "crf": 20,
+    "bitrate": null,
+    "crf": 18,
     "preset": "medium"
   },
   "transitions": {

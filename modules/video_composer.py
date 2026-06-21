@@ -815,7 +815,7 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
             audio_codec="aac",
             threads=4,
             preset="medium",
-            ffmpeg_params=["-pix_fmt", "yuv420p", "-crf", "20"],
+            ffmpeg_params=["-pix_fmt", "yuv420p", "-crf", "18"],
             verbose=False,
             logger=None,
         )
