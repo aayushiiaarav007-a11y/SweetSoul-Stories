@@ -817,7 +817,7 @@ def _build_music_only_audio(duration):
             try:
                 synth = _synth_background_music(duration)
                 if synth is not None:
-                    vol = float(get_cfg("music.synth_volume", 0.18))
+                    vol = float(get_cfg("music.synth_volume", 0.65))
                     bed = volumex(synth, vol).set_duration(duration)
                     log.info("Music bed: synth at %.0f%% vol.", vol * 100)
             except Exception as exc:

@@ -101,12 +101,12 @@
   },
   "music": {
     "enabled": true,
-    "volume": 0.22,
+    "volume": 0.70,
     "synth_fallback": true,
-    "synth_volume": 0.18,
+    "synth_volume": 0.65,
     "hook_sting_enabled": true,
-    "hook_sting_volume": 0.55,
-    "comment": "Voice OFF. Music soft background. Hook sting = short punchy accent on first 4s."
+    "hook_sting_volume": 0.80,
+    "comment": "Voice OFF. Synth music full 30s continuous. Volume loud enough to actually hear."
   },
   "grade": {
     "comment": "BRIGHT, VIVID, PUNCHY cinematic look. Vignette + warm tint OFF (no oval).",
