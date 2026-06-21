@@ -26,6 +26,7 @@ assets/cache/
 # keep the music folder placeholder but ignore actual tracks
 assets/music/*
 !assets/music/.gitkeep
+!assets/music/*.mp3
 
 # ---- OS / editor ----
 .DS_Store
