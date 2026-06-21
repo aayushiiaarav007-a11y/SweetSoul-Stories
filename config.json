@@ -98,7 +98,9 @@
   },
   "music": {
     "enabled": true,
-    "volume": 0.13
+    "volume": 0.13,
+    "synth_fallback": true,
+    "synth_volume": 0.10
   },
   "grade": {
     "comment": "Subtle BRIGHT, VIVID, PUNCHY look. Vignette + warm tint are OFF so footage fills the whole frame edge-to-edge with NO circular/oval darkening.",
