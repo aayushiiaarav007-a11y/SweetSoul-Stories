@@ -93,7 +93,13 @@ def _concat_with_crossfade(segments, duration):
 
     if len(segments) > 1 and xfade > 0:
         try:
-            from moviepy.video.fx.all import crossfadein
+            # IMPORTANT: crossfadein lives in compositing.transitions, NOT in
+            # fx.all (importing it from fx.all silently failed before, so every
+            # reel used hard jump-cuts instead of smooth transitions).
+            try:
+                from moviepy.video.compositing.transitions import crossfadein as _xfn
+            except Exception:
+                _xfn = None
 
             faded = [segments[0]]
             for seg in segments[1:]:
@@ -103,7 +109,10 @@ def _concat_with_crossfade(segments, duration):
                 except Exception:
                     seg_dur = xfade
                 this_fade = min(xfade, max(0.05, seg_dur * 0.5))
-                faded.append(crossfadein(seg, this_fade))
+                if _xfn is not None:
+                    faded.append(_xfn(seg, this_fade))
+                else:
+                    faded.append(seg.crossfadein(this_fade))
             bg = concatenate_videoclips(faded, method="compose", padding=-xfade)
             bg = bg.set_duration(duration)
             log.info("Applied %.2fs crossfade transitions between %d segment(s).", xfade, len(segments))
@@ -612,6 +621,56 @@ def _find_music_track():
     return None
 
 
+def _synth_background_music(duration, fps=44100):
+    """Generate a soft, warm ambient music bed when no music file is provided.
+
+    Produces a gentle, slowly-shifting major-chord pad (multiple soft sine
+    partials with a slow tremolo + smooth fade in/out). It is intentionally
+    quiet and unobtrusive so it adds cozy warmth under the voiceover instead of
+    leaving the reel feeling flat/silent. Fully defensive: returns None on any
+    error. Drop a real .mp3 into assets/music to override this.
+    """
+    try:
+        import numpy as np
+        from moviepy.editor import AudioArrayClip
+
+        duration = float(max(1.0, duration))
+        n = int(duration * fps)
+        t = np.linspace(0.0, duration, n, endpoint=False)
+
+        # Warm major-ish chord (C, E, G, + soft high C) with light detune.
+        partials = [
+            (130.81, 0.55), (164.81, 0.42), (196.00, 0.42),
+            (261.63, 0.30), (329.63, 0.20),
+        ]
+        wave = np.zeros(n, dtype=np.float64)
+        for freq, amp in partials:
+            detune = 1.0 + 0.0015 * np.sin(2.0 * np.pi * 0.05 * t)
+            wave += amp * np.sin(2.0 * np.pi * freq * detune * t)
+
+        # Slow breathing tremolo so it feels alive, not a flat drone.
+        tremolo = 0.75 + 0.25 * np.sin(2.0 * np.pi * 0.07 * t)
+        wave *= tremolo
+
+        # Normalize and apply gentle 2s fade in / out.
+        peak = float(np.max(np.abs(wave))) or 1.0
+        wave /= peak
+        fade = min(int(2.0 * fps), n // 2)
+        if fade > 0:
+            env = np.ones(n)
+            env[:fade] = np.linspace(0.0, 1.0, fade)
+            env[-fade:] = np.linspace(1.0, 0.0, fade)
+            wave *= env
+
+        stereo = np.column_stack([wave, wave]).astype(np.float32)
+        clip = AudioArrayClip(stereo, fps=fps).set_duration(duration)
+        log.info("Synthesized %.1fs gentle ambient music bed (no music file found).", duration)
+        return clip
+    except Exception as exc:
+        log.warning("Music synthesis failed (%s); voiceover only.", exc)
+        return None
+
+
 def _build_audio(voice_path, duration):
     """Build the final audio track.
 
@@ -649,6 +708,17 @@ def _build_audio(voice_path, duration):
                 log.info("Mixed background music at %.0f%% volume: %s", vol * 100, os.path.basename(music_path))
             except Exception as exc:
                 log.warning("Could not mix music (%s); voiceover only.", exc)
+        elif get_cfg("music.synth_fallback", True):
+            # No music file: synthesize a gentle ambient bed so the reel isn't
+            # flat/silent. Quieter than a real track (it's a soft pad).
+            try:
+                synth = _synth_background_music(voice.duration)
+                if synth is not None:
+                    vol = float(get_cfg("music.synth_volume", 0.10))
+                    tracks.append(volumex(synth, vol))
+                    log.info("Mixed synthesized ambient music at %.0f%% volume.", vol * 100)
+            except Exception as exc:
+                log.warning("Could not mix synth music (%s); voiceover only.", exc)
 
     if len(tracks) == 1:
         return voice
