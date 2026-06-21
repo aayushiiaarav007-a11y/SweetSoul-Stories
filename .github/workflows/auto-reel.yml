@@ -95,39 +95,32 @@ jobs:
         if: ${{ github.event.inputs.diagnose_only != 'true' }}
         run: |
           mkdir -p assets/music
-          # 9 royalty-free tracks from Pixabay CDN (CC0 / royalty-free).
-          # Each has a strong hook/melody — uplifting, feel-good, viral energy.
-          # They rotate randomly each run via the music system in video_composer.py.
-          declare -A TRACKS=(
-            ["01_happy_ukulele.mp3"]="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bda.mp3"
-            ["02_uplifting_pop.mp3"]="https://cdn.pixabay.com/download/audio/2022/03/24/audio_2cba25c436.mp3"
-            ["03_feel_good.mp3"]="https://cdn.pixabay.com/download/audio/2022/10/30/audio_c8f4bb65b0.mp3"
-            ["04_sunny_day.mp3"]="https://cdn.pixabay.com/download/audio/2023/02/28/audio_bb6f9a5552.mp3"
-            ["05_cheerful.mp3"]="https://cdn.pixabay.com/download/audio/2022/08/31/audio_1c9e73e5cf.mp3"
-            ["06_positive_vibes.mp3"]="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3"
-            ["07_kids_joy.mp3"]="https://cdn.pixabay.com/download/audio/2023/01/16/audio_8b576799c1.mp3"
-            ["08_sweet_moments.mp3"]="https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3"
-            ["09_warm_heart.mp3"]="https://cdn.pixabay.com/download/audio/2021/08/08/audio_dc39bde6cf.mp3"
-          )
           SUCCESS=0
-          for FNAME in "${!TRACKS[@]}"; do
-            URL="${TRACKS[$FNAME]}"
-            DEST="assets/music/$FNAME"
-            if curl -fsSL --max-time 30 -o "$DEST" "$URL" 2>/dev/null; then
-              SIZE=$(stat -c%s "$DEST" 2>/dev/null || echo 0)
-              if [ "$SIZE" -gt 10000 ]; then
-                echo "✅ Downloaded: $FNAME (${SIZE} bytes)"
-                SUCCESS=$((SUCCESS + 1))
-              else
-                echo "⚠️ Too small, removing: $FNAME"
-                rm -f "$DEST"
+          download_track() {
+            local fname="$1" url="$2"
+            local dest="assets/music/$fname"
+            if curl -fsSL --max-time 30 -o "$dest" "$url" 2>/dev/null; then
+              local size
+              size=$(stat -c%s "$dest" 2>/dev/null || echo 0)
+              if [ "$size" -gt 10000 ]; then
+                echo "OK $fname (${size}b)"
+                return 0
               fi
-            else
-              echo "⚠️ Failed to download: $FNAME"
-              rm -f "$DEST"
             fi
-          done
-          echo "Music tracks ready: $SUCCESS / ${#TRACKS[@]}"
+            rm -f "$dest"
+            echo "SKIP $fname"
+            return 1
+          }
+          download_track "01_happy_ukulele.mp3"    "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bda.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "02_uplifting_pop.mp3"    "https://cdn.pixabay.com/download/audio/2022/03/24/audio_2cba25c436.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "03_feel_good.mp3"        "https://cdn.pixabay.com/download/audio/2022/10/30/audio_c8f4bb65b0.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "04_sunny_day.mp3"        "https://cdn.pixabay.com/download/audio/2023/02/28/audio_bb6f9a5552.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "05_cheerful.mp3"         "https://cdn.pixabay.com/download/audio/2022/08/31/audio_1c9e73e5cf.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "06_positive_vibes.mp3"   "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "07_kids_joy.mp3"         "https://cdn.pixabay.com/download/audio/2023/01/16/audio_8b576799c1.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "08_sweet_moments.mp3"    "https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          download_track "09_warm_heart.mp3"       "https://cdn.pixabay.com/download/audio/2021/08/08/audio_dc39bde6cf.mp3" && SUCCESS=$((SUCCESS+1)) || true
+          echo "Music ready: $SUCCESS tracks downloaded"
           ls -la assets/music/ || true
         if: ${{ github.event.inputs.diagnose_only != 'true' }}
         run: |
