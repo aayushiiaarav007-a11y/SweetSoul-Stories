@@ -14,8 +14,8 @@
     "max_duration_seconds": 75,
     "clip_cut_seconds": 3.0,
     "background_zoom": 1.04,
-    "bitrate": "12000k",
-    "crf": 20,
+    "bitrate": null,
+    "crf": 18,
     "preset": "medium"
   },
   "transitions": {
@@ -100,11 +100,11 @@
     "volume": 0.13
   },
   "grade": {
-    "comment": "Subtle BRIGHT, VIVID, PUNCHY look for cute content: saturation + slight contrast/brightness lift, vignette nearly off, no warm haze.",
+    "comment": "Subtle BRIGHT, VIVID, PUNCHY look. Vignette + warm tint are OFF so footage fills the whole frame edge-to-edge with NO circular/oval darkening.",
     "enabled": true,
     "warm_color": [255, 170, 110],
-    "warm_opacity": 0.04,
-    "vignette_strength": 0.15,
+    "warm_opacity": 0.0,
+    "vignette_strength": 0.0,
     "saturation": 1.12,
     "contrast": 0.10,
     "brightness": 8
