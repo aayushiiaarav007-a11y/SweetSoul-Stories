@@ -103,28 +103,42 @@ def _download(url, dest, requests):
 
 
 def _pick_portrait_file(video_files):
-    """Choose the best portrait-ish rendition from a Pexels video entry.
+    """Choose the rendition that fills a 1080x1920 portrait frame as CRISPLY as
+    possible (i.e. with the least UPSCALING, which is what causes blur and
+    "fat"/blocky pixels).
 
-    Prefers the HIGHEST resolution PORTRAIT file so footage is crisp HD, not
-    low-res/blurry: strongly favours portrait (h > w), requires height around
-    1080+ where possible, and picks the height closest to 1920 (favouring
-    higher resolution) rather than tiny renditions.
+    For every rendition we compute the scale needed to COVER 1080x1920. A scale
+    greater than 1.0 means the source is smaller than the frame and would be
+    enlarged (blurry), so it is heavily penalised in proportion to how much it
+    must stretch. Among renditions that need NO upscaling we keep the one with
+    the most native detail, softly preferring true portrait sources (less of
+    the frame gets cropped) and Pexels 'hd'/'uhd' quality tags.
+
+    The previous implementation over-rewarded *any* portrait file, so a tiny
+    540x960 portrait clip beat a crisp 4K landscape one and then got stretched
+    2x -> the blurry/pixelated look. This version optimises for crispness.
     """
+    target_w, target_h = 1080, 1920
     best = None
-    best_score = -1
+    best_score = float("-inf")
     for vf in video_files:
         w = vf.get("width") or 0
         h = vf.get("height") or 0
         link = vf.get("link")
-        if not link:
+        if not link or w <= 0 or h <= 0:
             continue
-        # Strongly prefer portrait (h > w).
-        portrait_bonus = 100000 if h >= w else 0
-        # Penalise renditions below ~1080 so we never pick a blurry small file.
-        low_res_penalty = 0 if h >= 1080 else (1080 - h) * 50
-        # Favour height closest to 1920 (slight tolerance above is fine).
-        target_distance = abs(1920 - h)
-        score = portrait_bonus - low_res_penalty - target_distance
+        # Scale required to fully cover the portrait frame.
+        scale = max(target_w / float(w), target_h / float(h))
+        # Upscaling blurs footage: penalise hard, proportional to the stretch.
+        upscale_penalty = 0.0 if scale <= 1.0 else (scale - 1.0) * 1_000_000.0
+        # More native pixels = more detail to work with (mild, capped reward).
+        res_reward = min(w * h, 4096 * 4096) / 1_000_000.0
+        # Prefer portrait sources (less of the frame is cropped away).
+        portrait_reward = 30.0 if h >= w else 0.0
+        # Pexels tags each rendition 'sd' | 'hd' | 'uhd'.
+        quality = str(vf.get("quality") or "").lower()
+        quality_reward = {"uhd": 20.0, "hd": 10.0}.get(quality, 0.0)
+        score = res_reward + portrait_reward + quality_reward - upscale_penalty
         if score > best_score:
             best_score = score
             best = link

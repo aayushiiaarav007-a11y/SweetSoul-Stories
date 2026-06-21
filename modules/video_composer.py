@@ -776,16 +776,31 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
         fps=FPS,
         codec="libx264",
         audio_codec="aac",
+        audio_bitrate="192k",
         threads=4,
-        preset="medium",
+        preset=get_cfg("video.preset", "medium"),
         verbose=False,
         logger=None,
     )
     try:
-        bitrate = get_cfg("video.bitrate", "6000k")
-        if bitrate:
-            write_kwargs["bitrate"] = bitrate
-        write_kwargs["ffmpeg_params"] = ["-pix_fmt", "yuv420p"]
+        # Prefer CONSTANT-QUALITY (CRF) encoding: it allocates as many bits as
+        # the footage needs so high-motion cute clips stay crisp instead of
+        # going blocky/pixelated at a fixed low bitrate. CRF ~18-21 is visually
+        # lossless-ish; lower = higher quality + bigger file.
+        ffmpeg_params = ["-pix_fmt", "yuv420p"]
+        crf = get_cfg("video.crf", 20)
+        if crf is not None:
+            ffmpeg_params += ["-crf", str(int(crf))]
+            # With CRF active, do NOT also pass a target bitrate (it would
+            # override constant-quality). Keep an optional high ceiling only.
+            bitrate = get_cfg("video.bitrate", None)
+            if bitrate:
+                ffmpeg_params += ["-maxrate", str(bitrate), "-bufsize", "24000k"]
+        else:
+            bitrate = get_cfg("video.bitrate", "12000k")
+            if bitrate:
+                write_kwargs["bitrate"] = bitrate
+        write_kwargs["ffmpeg_params"] = ffmpeg_params
     except Exception as exc:
         log.warning("Could not set HQ encoding params (%s); using defaults.", exc)
 
@@ -800,6 +815,7 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
             audio_codec="aac",
             threads=4,
             preset="medium",
+            ffmpeg_params=["-pix_fmt", "yuv420p", "-crf", "20"],
             verbose=False,
             logger=None,
         )
