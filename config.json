@@ -30,7 +30,7 @@
     "solid_fallback": [255, 209, 168]
   },
   "captions": {
-    "enabled": true,
+    "enabled": false,
     "fontsize": 90,
     "color": "white",
     "stroke_color": "black",
