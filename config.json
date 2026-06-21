@@ -106,9 +106,9 @@
     "warm_color": [255, 170, 110],
     "warm_opacity": 0.0,
     "vignette_strength": 0.0,
-    "saturation": 1.12,
-    "contrast": 0.10,
-    "brightness": 8
+    "saturation": 1.22,
+    "contrast": 0.16,
+    "brightness": 10
   },
   "youtube": {
     "category_id": "15",

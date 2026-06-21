@@ -8,8 +8,12 @@ name: SweetSoul Auto Reel
 #   EST = UTC-5 (winter)  |  EDT = UTC-4 (summer)
 # So the local ET clock time shifts by an hour between standard/daylight time.
 #
-# It can also run a FAST secret/source DIAGNOSTIC (no video) when the
-# "diagnose_only" input is set to "true" on a manual run.
+# Manual modes (workflow_dispatch):
+#   * diagnose_only=true -> fast secret/source check, NO video.
+#   * selftest=true      -> build a real reel but DO NOT upload; print a full
+#                           report (background source, clip resolutions, output
+#                           file resolution/bitrate) so quality can be verified
+#                           without publishing.
 # ---------------------------------------------------------------------------
 
 on:
@@ -26,6 +30,10 @@ on:
     inputs:
       diagnose_only:
         description: "Only check secrets/sources, do NOT make a video (true/false)"
+        required: false
+        default: "false"
+      selftest:
+        description: "Build a real reel but DO NOT upload; print a quality report (true/false)"
         required: false
         default: "false"
       days:
@@ -66,8 +74,6 @@ jobs:
 
       # ---------------------------------------------------------------------
       # FAST DIAGNOSTIC (no video). Runs ONLY when diagnose_only == "true".
-      # Installs just the light HTTP/AI deps so it finishes in well under a
-      # minute, then prints a clear PASS/FAIL verdict for every secret/source.
       # ---------------------------------------------------------------------
       - name: Secret/source diagnostic (NO video)
         if: ${{ github.event.inputs.diagnose_only == 'true' }}
@@ -120,8 +126,35 @@ jobs:
         run: |
           python generate.py --days "${{ steps.params.outputs.days }}" --per-day "${{ steps.params.outputs.per_day }}"
 
+      # ---------------------------------------------------------------------
+      # SELFTEST report: print exactly what was produced (so quality can be
+      # verified WITHOUT uploading). Exits non-zero on purpose so the full job
+      # log (incl. the "Background source" lines above) is retrievable.
+      # ---------------------------------------------------------------------
+      - name: Selftest quality report (NO upload)
+        if: ${{ always() && github.event.inputs.selftest == 'true' }}
+        run: |
+          echo "================= SELFTEST QUALITY REPORT ================="
+          echo "--- output/ files ---"
+          ls -la output/ || true
+          echo "--- manifest.json ---"
+          cat manifest.json || true
+          echo "--- ffprobe on each mp4 (resolution / bitrate / duration) ---"
+          for f in output/*.mp4; do
+            [ -f "$f" ] || continue
+            echo ">>> $f"
+            ffprobe -v error -select_streams v:0 \
+              -show_entries stream=width,height,codec_name,bit_rate,avg_frame_rate \
+              -show_entries format=duration,size,bit_rate \
+              -of default=noprint_wrappers=1 "$f" || true
+          done
+          echo "=========================================================="
+          echo "(This run is intentionally marked FAILED so the report above"
+          echo " can be read back. No video was uploaded. The report is the goal.)"
+          exit 1
+
       - name: Upload to YouTube
-        if: ${{ github.event.inputs.diagnose_only != 'true' && (github.event_name == 'schedule' || github.event.inputs.upload_youtube == 'true') }}
+        if: ${{ github.event.inputs.diagnose_only != 'true' && github.event.inputs.selftest != 'true' && (github.event_name == 'schedule' || github.event.inputs.upload_youtube == 'true') }}
         env:
           YT_CLIENT_SECRET_JSON: ${{ secrets.YT_CLIENT_SECRET_JSON }}
           YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
@@ -129,7 +162,7 @@ jobs:
           python upload_youtube.py --limit "${{ steps.params.outputs.per_day }}" --privacy public
 
       - name: Upload to Instagram (optional)
-        if: ${{ github.event.inputs.diagnose_only != 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.upload_instagram == 'true' }}
+        if: ${{ github.event.inputs.diagnose_only != 'true' && github.event.inputs.selftest != 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.upload_instagram == 'true' }}
         env:
           IG_USERNAME: ${{ secrets.IG_USERNAME }}
           IG_PASSWORD: ${{ secrets.IG_PASSWORD }}

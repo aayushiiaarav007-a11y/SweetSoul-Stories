@@ -73,7 +73,7 @@ def _download(url, dest, requests):
         return True
     for attempt in range(1, 3):
         try:
-            with requests.get(url, stream=True, timeout=60) as resp:
+            with requests.get(url, stream=True, timeout=120) as resp:
                 if resp.status_code != 200:
                     log.warning(
                         "Download failed (HTTP %s) on attempt %d for %s",
@@ -129,16 +129,21 @@ def _pick_portrait_file(video_files):
             continue
         # Scale required to fully cover the portrait frame.
         scale = max(target_w / float(w), target_h / float(h))
-        # Upscaling blurs footage: penalise hard, proportional to the stretch.
-        upscale_penalty = 0.0 if scale <= 1.0 else (scale - 1.0) * 1_000_000.0
-        # More native pixels = more detail to work with (mild, capped reward).
-        res_reward = min(w * h, 4096 * 4096) / 1_000_000.0
-        # Prefer portrait sources (less of the frame is cropped away).
+        if scale <= 1.0:
+            # No upscaling needed (crisp). Among these, prefer the SMALLEST
+            # sufficient rendition, i.e. the one whose covering scale is
+            # CLOSEST to 1.0 (~1080x1920). This avoids picking giant 4K files
+            # that are slow/huge to download (and can time out -> gradient
+            # fallback), while keeping the footage perfectly sharp for a
+            # 1080x1920 frame.
+            fit_score = 1000.0 + scale * 100.0  # scale closer to 1 => higher
+        else:
+            # Must upscale (blurs); rank below all non-upscalers, least first.
+            fit_score = 100.0 - (scale - 1.0) * 100.0
         portrait_reward = 30.0 if h >= w else 0.0
-        # Pexels tags each rendition 'sd' | 'hd' | 'uhd'.
         quality = str(vf.get("quality") or "").lower()
-        quality_reward = {"uhd": 20.0, "hd": 10.0}.get(quality, 0.0)
-        score = res_reward + portrait_reward + quality_reward - upscale_penalty
+        quality_reward = {"uhd": 5.0, "hd": 10.0, "sd": 0.0}.get(quality, 0.0)
+        score = fit_score + portrait_reward + quality_reward
         if score > best_score:
             best_score = score
             best = link
