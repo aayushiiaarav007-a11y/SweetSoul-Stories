@@ -13,8 +13,10 @@
     "min_duration_seconds": 30,
     "max_duration_seconds": 75,
     "clip_cut_seconds": 3.0,
-    "background_zoom": 1.08,
-    "bitrate": "6000k"
+    "background_zoom": 1.04,
+    "bitrate": "12000k",
+    "crf": 20,
+    "preset": "medium"
   },
   "transitions": {
     "comment": "Short crossfade between background segments for a premium feel.",
@@ -51,7 +53,7 @@
     "font": "DejaVu-Sans-Bold",
     "pop_overshoot": 1.18,
     "pop_in_seconds": 0.45,
-    "punch_zoom": 1.12,
+    "punch_zoom": 1.06,
     "flash_opacity": 0.35,
     "suppress_captions": true,
     "candidates": [
@@ -77,16 +79,18 @@
   },
   "pexels": {
     "default_keywords": [
-      "cute puppy",
-      "kitten playing",
-      "baby laughing",
-      "dog and baby",
-      "fluffy cat",
-      "golden retriever",
-      "toddler playing",
-      "pets cuddling"
+      "puppies playing together",
+      "kitten and puppy playing",
+      "dog playing with baby",
+      "toddler playing with puppy",
+      "child hugging dog",
+      "baby laughing with dog",
+      "kittens playing together",
+      "golden retriever puppy playing",
+      "cat playing with toddler",
+      "pets playing together"
     ],
-    "per_query": 15,
+    "per_query": 20,
     "min_clips": 6,
     "min_images": 6,
     "orientation": "portrait"

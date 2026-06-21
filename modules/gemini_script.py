@@ -32,14 +32,14 @@ HOOK_CANDIDATES = [
 ]
 
 DEFAULT_KEYWORDS = [
-    "cute puppy",
-    "kitten playing",
-    "baby laughing",
-    "dog and baby",
-    "fluffy cat",
-    "golden retriever",
-    "toddler playing",
-    "pets cuddling",
+    "puppies playing together",
+    "kitten and puppy playing",
+    "dog playing with baby",
+    "toddler playing with puppy",
+    "child hugging dog",
+    "baby laughing with dog",
+    "kittens playing together",
+    "cat playing with toddler",
 ]
 
 _CTA = "Follow SweetSoul Stories for your daily dose of joy."
@@ -105,7 +105,9 @@ read aloud at a gentle pace). Requirements:
   believe this", "This melted my heart", "Watch till the end", "Try not to
   smile".
 - Warm, gentle, wholesome, feel-good emotional tone.
-- Tell a tiny heartwarming story about a cute pet and/or baby.
+- Tell a tiny heartwarming story about adorable animals PLAYING and having fun
+  together (puppies, kittens, dogs, cats) and/or playing with cute human
+  children (babies and toddlers) - playful, joyful "aww" moments.
 - End with this exact call to action: "{cta}"
 - Plain spoken sentences only. No emojis, no stage directions, no markdown,
   no hashtags, no quotation marks around the whole thing. American English.
@@ -113,8 +115,10 @@ read aloud at a gentle pace). Requirements:
 Return ONLY a JSON object (no code fences) with these keys:
   "title": a short catchy title (max 8 words),
   "text": the full narration script as a single string,
-  "keywords": an array of 3-5 short footage search phrases describing the cute
-              pets/babies in the story (e.g. "cute puppy", "baby laughing").
+  "keywords": an array of 3-5 short footage search phrases describing the
+              PLAYFUL pets/children in the story. Each phrase MUST describe an
+              action/interaction, e.g. "puppies playing together",
+              "dog playing with baby", "toddler playing with kitten".
 """
 
 
