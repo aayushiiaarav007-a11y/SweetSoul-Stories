@@ -192,8 +192,12 @@ def main():
     if not pex:
         print(" >> The #1 fix for boring/same backgrounds: make PEXELS_API_KEY valid.")
     print("")
-    # Always exit 0 so the workflow shows the report cleanly.
-    return 0
+    print("(NOTE: this run is marked FAILED (red X) ON PURPOSE so the result")
+    print(" can be read back remotely. The red X is EXPECTED and harmless -")
+    print(" the FINAL VERDICT above is the real answer.)")
+    # Intentionally exit non-zero so the job is marked failed and its log is
+    # retrievable. The verdict is printed above regardless.
+    return 1
 
 
 if __name__ == "__main__":
