@@ -103,7 +103,13 @@ def _download(url, dest, requests):
 
 
 def _pick_portrait_file(video_files):
-    """Choose the best portrait-ish rendition from a Pexels video entry."""
+    """Choose the best portrait-ish rendition from a Pexels video entry.
+
+    Prefers the HIGHEST resolution PORTRAIT file so footage is crisp HD, not
+    low-res/blurry: strongly favours portrait (h > w), requires height around
+    1080+ where possible, and picks the height closest to 1920 (favouring
+    higher resolution) rather than tiny renditions.
+    """
     best = None
     best_score = -1
     for vf in video_files:
@@ -112,10 +118,13 @@ def _pick_portrait_file(video_files):
         link = vf.get("link")
         if not link:
             continue
-        # Prefer portrait (h > w) and a height around 1920.
-        portrait_bonus = 1000 if h >= w else 0
-        # Penalise distance from target height 1920.
-        score = portrait_bonus - abs(1920 - h)
+        # Strongly prefer portrait (h > w).
+        portrait_bonus = 100000 if h >= w else 0
+        # Penalise renditions below ~1080 so we never pick a blurry small file.
+        low_res_penalty = 0 if h >= 1080 else (1080 - h) * 50
+        # Favour height closest to 1920 (slight tolerance above is fine).
+        target_distance = abs(1920 - h)
+        score = portrait_bonus - low_res_penalty - target_distance
         if score > best_score:
             best_score = score
             best = link
