@@ -632,7 +632,7 @@ def _synth_background_music(duration, fps=44100):
     """
     try:
         import numpy as np
-        from moviepy.editor import AudioArrayClip
+        from moviepy.audio.AudioClip import AudioArrayClip
 
         duration = float(max(1.0, duration))
         n = int(duration * fps)
