@@ -91,7 +91,44 @@ jobs:
           pip install requests==2.32.3 google-generativeai==0.8.3 python-dotenv==1.0.1
           python diagnose.py
 
-      - name: Install system dependencies (ffmpeg + imagemagick)
+      - name: Download royalty-free music tracks
+        if: ${{ github.event.inputs.diagnose_only != 'true' }}
+        run: |
+          mkdir -p assets/music
+          # 9 royalty-free tracks from Pixabay CDN (CC0 / royalty-free).
+          # Each has a strong hook/melody — uplifting, feel-good, viral energy.
+          # They rotate randomly each run via the music system in video_composer.py.
+          declare -A TRACKS=(
+            ["01_happy_ukulele.mp3"]="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bda.mp3"
+            ["02_uplifting_pop.mp3"]="https://cdn.pixabay.com/download/audio/2022/03/24/audio_2cba25c436.mp3"
+            ["03_feel_good.mp3"]="https://cdn.pixabay.com/download/audio/2022/10/30/audio_c8f4bb65b0.mp3"
+            ["04_sunny_day.mp3"]="https://cdn.pixabay.com/download/audio/2023/02/28/audio_bb6f9a5552.mp3"
+            ["05_cheerful.mp3"]="https://cdn.pixabay.com/download/audio/2022/08/31/audio_1c9e73e5cf.mp3"
+            ["06_positive_vibes.mp3"]="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3"
+            ["07_kids_joy.mp3"]="https://cdn.pixabay.com/download/audio/2023/01/16/audio_8b576799c1.mp3"
+            ["08_sweet_moments.mp3"]="https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3"
+            ["09_warm_heart.mp3"]="https://cdn.pixabay.com/download/audio/2021/08/08/audio_dc39bde6cf.mp3"
+          )
+          SUCCESS=0
+          for FNAME in "${!TRACKS[@]}"; do
+            URL="${TRACKS[$FNAME]}"
+            DEST="assets/music/$FNAME"
+            if curl -fsSL --max-time 30 -o "$DEST" "$URL" 2>/dev/null; then
+              SIZE=$(stat -c%s "$DEST" 2>/dev/null || echo 0)
+              if [ "$SIZE" -gt 10000 ]; then
+                echo "✅ Downloaded: $FNAME (${SIZE} bytes)"
+                SUCCESS=$((SUCCESS + 1))
+              else
+                echo "⚠️ Too small, removing: $FNAME"
+                rm -f "$DEST"
+              fi
+            else
+              echo "⚠️ Failed to download: $FNAME"
+              rm -f "$DEST"
+            fi
+          done
+          echo "Music tracks ready: $SUCCESS / ${#TRACKS[@]}"
+          ls -la assets/music/ || true
         if: ${{ github.event.inputs.diagnose_only != 'true' }}
         run: |
           sudo apt-get update

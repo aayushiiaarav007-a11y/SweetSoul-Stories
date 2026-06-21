@@ -609,16 +609,25 @@ def _build_hook_clips(hook_text, background):
 # Audio
 # ==========================================================================
 def _find_music_track():
-    """Return a path to a music file in assets/music, or None."""
+    """Return path to a RANDOMLY selected music file in assets/music.
+
+    Random selection ensures a different track plays each run (variety).
+    Returns None if no tracks are available.
+    """
     try:
-        for name in sorted(os.listdir(MUSIC_DIR)):
+        tracks = []
+        for name in os.listdir(MUSIC_DIR):
             if name == ".gitkeep":
                 continue
             if name.lower().endswith((".mp3", ".m4a", ".wav", ".ogg", ".aac")):
-                return os.path.join(MUSIC_DIR, name)
+                tracks.append(os.path.join(MUSIC_DIR, name))
+        if not tracks:
+            return None
+        chosen = random.choice(tracks)
+        log.info("Selected music track: %s (from %d available)", os.path.basename(chosen), len(tracks))
+        return chosen
     except Exception:
-        pass
-    return None
+        return None
 
 
 def _synth_background_music(duration, fps=44100):
