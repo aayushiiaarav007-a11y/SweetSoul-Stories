@@ -11,12 +11,14 @@ name: SweetSoul Auto Reel
 
 on:
   schedule:
-    # 12:00 UTC -> ~07:00 ET (EST) / ~08:00 ET (EDT)  [morning post]
-    - cron: "0 12 * * *"
-    # 17:00 UTC -> ~12:00 ET (EST) / ~13:00 ET (EDT)  [midday post]
-    - cron: "0 17 * * *"
-    # 22:00 UTC -> ~17:00 ET (EST) / ~18:00 ET (EDT)  [evening post]
-    - cron: "0 22 * * *"
+    # NOTE: off-hour minutes (not :00) are used on purpose — GitHub delays/skips
+    # scheduled runs most at the top of the hour. Random minutes = more reliable.
+    # 12:19 UTC -> ~07:19 ET (EST) / ~08:19 ET (EDT)  [morning post]
+    - cron: "19 12 * * *"
+    # 17:23 UTC -> ~12:23 ET (EST) / ~13:23 ET (EDT)  [midday post]
+    - cron: "23 17 * * *"
+    # 21:47 UTC -> ~16:47 ET (EST) / ~17:47 ET (EDT)  [evening post]
+    - cron: "47 21 * * *"
   workflow_dispatch:
     inputs:
       days:
