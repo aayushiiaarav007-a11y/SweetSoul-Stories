@@ -671,6 +671,51 @@ def _synth_background_music(duration, fps=44100):
         return None
 
 
+def _build_music_only_audio(duration):
+    """Build a music-only audio track (no voiceover).
+
+    Used when video.voice_enabled = false. Returns an AudioClip at `duration`,
+    or None if music is disabled and synthesis also fails.
+    """
+    from moviepy.editor import CompositeAudioClip
+    from moviepy.audio.fx.all import audio_loop, volumex
+
+    if not get_cfg("music.enabled", True):
+        log.info("Music disabled and voice off -> silent reel.")
+        return None
+
+    music_path = _find_music_track()
+    if music_path:
+        try:
+            from moviepy.editor import AudioFileClip
+            vol = float(get_cfg("music.volume", 0.30))
+            music = AudioFileClip(music_path)
+            music = volumex(music, vol)
+            try:
+                music = audio_loop(music, duration=duration)
+            except Exception:
+                music = music.set_duration(min(music.duration, duration))
+            log.info("Music-only audio: real track at %.0f%% vol: %s", vol * 100, os.path.basename(music_path))
+            return music.set_duration(duration)
+        except Exception as exc:
+            log.warning("Could not load music file (%s); trying synth.", exc)
+
+    # Synth fallback.
+    if get_cfg("music.synth_fallback", True):
+        try:
+            synth = _synth_background_music(duration)
+            if synth is not None:
+                vol = float(get_cfg("music.synth_volume", 0.28))
+                from moviepy.audio.fx.all import volumex
+                result = volumex(synth, vol).set_duration(duration)
+                log.info("Music-only audio: synth ambient at %.0f%% vol.", vol * 100)
+                return result
+        except Exception as exc:
+            log.warning("Synth music failed (%s); silent reel.", exc)
+
+    return None
+
+
 def _build_audio(voice_path, duration):
     """Build the final audio track.
 
@@ -745,15 +790,23 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
     """
     from moviepy.editor import AudioFileClip, CompositeVideoClip
 
-    if not voice_path or not os.path.exists(voice_path):
-        raise FileNotFoundError("Voiceover not found: %s" % voice_path)
+    voice_enabled = get_cfg("video.voice_enabled", True)
 
-    # Determine duration from the voiceover.
-    probe = AudioFileClip(voice_path)
-    duration = float(probe.duration or get_cfg("video.target_duration_seconds", 60))
-    probe.close()
-    duration = max(get_cfg("video.min_duration_seconds", 10), duration)
-    log.info("Target reel duration: %.2fs", duration)
+    if voice_enabled:
+        if not voice_path or not os.path.exists(voice_path):
+            raise FileNotFoundError("Voiceover not found: %s" % voice_path)
+        # Determine duration from the voiceover.
+        probe = AudioFileClip(voice_path)
+        duration = float(probe.duration or get_cfg("video.target_duration_seconds", 30))
+        probe.close()
+    else:
+        log.info("Voice DISABLED — music-only montage mode.")
+        # Duration comes from config (not voiceover length).
+        duration = float(get_cfg("video.target_duration_seconds", 30))
+
+    duration = max(float(get_cfg("video.min_duration_seconds", 20)), duration)
+    duration = min(float(get_cfg("video.max_duration_seconds", 35)), duration)
+    log.info("Target reel duration: %.2fs (voice_enabled=%s)", duration, voice_enabled)
 
     # 1) Background.
     background = _build_background(keywords, duration)
@@ -796,8 +849,11 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
 
     video = CompositeVideoClip(layers, size=(W, H)).set_duration(duration)
 
-    # 5) Audio.
-    audio = _build_audio(voice_path, duration)
+    # 5) Audio — voice OR music-only depending on config.
+    if voice_enabled:
+        audio = _build_audio(voice_path, duration)
+    else:
+        audio = _build_music_only_audio(duration)
     if audio is not None:
         video = video.set_audio(audio)
 
