@@ -1,0 +1,119 @@
+{
+  "channel": {
+    "name": "SweetSoul Stories",
+    "niche": "Heartwarming cute pets & babies",
+    "audience": "USA",
+    "tagline": "Your daily dose of joy"
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "target_duration_seconds": 60,
+    "min_duration_seconds": 30,
+    "max_duration_seconds": 75,
+    "clip_cut_seconds": 3.0,
+    "background_zoom": 1.08
+  },
+  "palette": {
+    "comment": "Warm soft golden / peach / cream tones for a cozy heartwarming look",
+    "gradient_top": [255, 224, 178],
+    "gradient_bottom": [255, 183, 153],
+    "gradient_accent": [255, 245, 224],
+    "solid_fallback": [255, 209, 168]
+  },
+  "captions": {
+    "enabled": true,
+    "fontsize": 90,
+    "color": "white",
+    "stroke_color": "black",
+    "stroke_width": 4,
+    "font": "DejaVu-Sans-Bold",
+    "words_per_group": 3,
+    "position_y_ratio": 0.72,
+    "bg_opacity": 0.0
+  },
+  "hook": {
+    "enabled": true,
+    "duration_seconds": 5.0,
+    "fontsize": 150,
+    "color": "white",
+    "stroke_color": "black",
+    "stroke_width": 6,
+    "font": "DejaVu-Sans-Bold",
+    "pop_overshoot": 1.18,
+    "pop_in_seconds": 0.45,
+    "punch_zoom": 1.12,
+    "flash_opacity": 0.35,
+    "suppress_captions": true,
+    "candidates": [
+      "WAIT FOR IT...",
+      "THIS MELTED MY HEART",
+      "YOU WON'T BELIEVE THIS",
+      "WATCH TILL THE END",
+      "THE CUTEST THING TODAY"
+    ]
+  },
+  "tts": {
+    "voice": "en-US-AriaNeural",
+    "rate": "-8%",
+    "pitch": "+0Hz",
+    "fallback_lang": "en",
+    "fallback_tld": "com"
+  },
+  "gemini": {
+    "model": "gemini-2.0-flash",
+    "model_candidates": ["gemini-2.0-flash", "gemini-flash-latest", "gemini-2.5-flash"],
+    "target_words": 150,
+    "temperature": 0.9
+  },
+  "pexels": {
+    "default_keywords": [
+      "cute puppy",
+      "kitten playing",
+      "baby laughing",
+      "dog and baby",
+      "fluffy cat",
+      "golden retriever",
+      "toddler playing",
+      "pets cuddling"
+    ],
+    "per_query": 15,
+    "min_clips": 6,
+    "min_images": 6,
+    "orientation": "portrait"
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.13
+  },
+  "grade": {
+    "comment": "Subtle cinematic grade: gentle warm wash + soft dark vignette.",
+    "enabled": true,
+    "warm_color": [255, 170, 110],
+    "warm_opacity": 0.12,
+    "vignette_strength": 0.55
+  },
+  "youtube": {
+    "category_id": "15",
+    "category_note": "15 = Pets & Animals (alternative: 22 = People & Blogs)",
+    "privacy_status": "public",
+    "made_for_kids": false,
+    "default_tags": [
+      "shorts", "cute", "puppy", "baby", "aww", "animals",
+      "cute pets", "wholesome", "heartwarming", "cute baby",
+      "kitten", "dog", "feel good", "adorable"
+    ],
+    "hashtags": "#shorts #cute #puppy #baby #aww #animals #wholesome #heartwarming"
+  },
+  "instagram": {
+    "enabled": false,
+    "comment": "OFF by default - automated IG posting carries account ban risk."
+  },
+  "posting_times_et": {
+    "comment": "USA Eastern Time targets; cron in workflow is UTC. EST=UTC-5, EDT=UTC-4.",
+    "morning": "07:00-08:00 ET",
+    "midday": "12:00-13:00 ET",
+    "evening": "17:00-18:00 ET"
+  }
+}
