@@ -9,14 +9,16 @@
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "target_duration_seconds": 60,
-    "min_duration_seconds": 30,
-    "max_duration_seconds": 75,
-    "clip_cut_seconds": 3.0,
+    "target_duration_seconds": 30,
+    "min_duration_seconds": 20,
+    "max_duration_seconds": 35,
+    "clip_cut_seconds": 2.5,
     "background_zoom": 1.04,
     "bitrate": null,
     "crf": 18,
-    "preset": "medium"
+    "preset": "medium",
+    "voice_enabled": false,
+    "comment_voice": "Set false = no voiceover. Music-only montage. Much more premium than gTTS robotic voice."
   },
   "transitions": {
     "comment": "Short crossfade between background segments for a premium feel.",
@@ -45,7 +47,7 @@
   },
   "hook": {
     "enabled": true,
-    "duration_seconds": 5.0,
+    "duration_seconds": 4.0,
     "fontsize": 150,
     "color": "white",
     "stroke_color": "black",
@@ -59,10 +61,11 @@
     "suppress_captions": true,
     "candidates": [
       "WAIT FOR IT...",
-      "THIS MELTED MY HEART",
+      "THIS MELTED MY HEART \u2764",
       "YOU WON'T BELIEVE THIS",
       "WATCH TILL THE END",
-      "THE CUTEST THING TODAY"
+      "THE CUTEST THING TODAY",
+      "TRY NOT TO SMILE"
     ]
   },
   "tts": {
@@ -70,51 +73,52 @@
     "rate": "-8%",
     "pitch": "+0Hz",
     "fallback_lang": "en",
-    "fallback_tld": "com"
+    "fallback_tld": "co.uk"
   },
   "gemini": {
     "model": "gemini-2.0-flash",
     "model_candidates": ["gemini-2.0-flash", "gemini-flash-latest", "gemini-2.5-flash"],
-    "target_words": 150,
+    "target_words": 60,
     "temperature": 0.9
   },
   "pexels": {
     "default_keywords": [
-      "puppies playing together",
-      "kitten and puppy playing",
-      "dog playing with baby",
-      "toddler playing with puppy",
-      "child hugging dog",
-      "baby laughing with dog",
-      "kittens playing together",
-      "golden retriever puppy playing",
-      "cat playing with toddler",
-      "pets playing together"
+      "golden retriever puppy outdoor sunshine",
+      "puppy playing in grass sunlight",
+      "baby laughing outdoor",
+      "kitten playing near window light",
+      "toddler playing with puppy outside",
+      "dog and baby in garden",
+      "fluffy puppy running outdoor",
+      "baby and puppy sunny day",
+      "kittens playing in sunlight",
+      "child hugging dog outdoor"
     ],
     "per_query": 20,
-    "min_clips": 6,
+    "min_clips": 8,
     "min_images": 6,
     "orientation": "portrait"
   },
   "music": {
     "enabled": true,
-    "volume": 0.13,
+    "volume": 0.30,
     "synth_fallback": true,
-    "synth_volume": 0.10
+    "synth_volume": 0.28,
+    "comment": "Voice OFF so music is the only audio - louder volume for proper feel."
   },
   "grade": {
-    "comment": "Subtle BRIGHT, VIVID, PUNCHY look. Vignette + warm tint are OFF so footage fills the whole frame edge-to-edge with NO circular/oval darkening.",
+    "comment": "BRIGHT, VIVID, PUNCHY cinematic look. Vignette + warm tint OFF (no oval).",
     "enabled": true,
     "warm_color": [255, 170, 110],
     "warm_opacity": 0.0,
     "vignette_strength": 0.0,
-    "saturation": 1.22,
-    "contrast": 0.16,
-    "brightness": 10
+    "saturation": 1.25,
+    "contrast": 0.18,
+    "brightness": 12
   },
   "youtube": {
     "category_id": "15",
-    "category_note": "15 = Pets & Animals (alternative: 22 = People & Blogs)",
+    "category_note": "15 = Pets & Animals",
     "privacy_status": "public",
     "made_for_kids": false,
     "default_tags": [
@@ -131,7 +135,9 @@
   "posting_times_et": {
     "comment": "USA Eastern Time targets; cron in workflow is UTC. EST=UTC-5, EDT=UTC-4.",
     "morning": "07:00-08:00 ET",
-    "midday": "12:00-13:00 ET",
-    "evening": "17:00-18:00 ET"
+    "midday": "10:00-11:00 ET",
+    "afternoon": "13:00-14:00 ET",
+    "evening": "17:00-18:00 ET",
+    "night": "20:00-21:00 ET"
   }
 }
