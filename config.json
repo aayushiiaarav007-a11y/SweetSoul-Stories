@@ -54,7 +54,8 @@
     "pop_overshoot": 1.18,
     "pop_in_seconds": 0.45,
     "punch_zoom": 1.06,
-    "flash_opacity": 0.35,
+    "flash_opacity": 0.0,
+    "backdrop_opacity": 0.0,
     "suppress_captions": true,
     "candidates": [
       "WAIT FOR IT...",

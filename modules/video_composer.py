@@ -64,6 +64,11 @@ def _fit_cover(clip):
     scale = max(W / float(cw), H / float(ch))
     new_w = int(cw * scale)
     new_h = int(ch * scale)
+    # Force EVEN dimensions. Odd width/height encoded as yuv420p (chroma
+    # subsampling) is a classic cause of coloured / "rainbow" fringing along
+    # the edges, so we round each side up to the nearest even number.
+    new_w += new_w % 2
+    new_h += new_h % 2
     clip = clip.resize((new_w, new_h))
     try:
         clip = crop(clip, width=W, height=H, x_center=new_w / 2, y_center=new_h / 2)
@@ -322,52 +327,15 @@ def _apply_color_grade(clip):
 
 
 def _build_cinematic_grade(duration):
-    """Return SUBTLE overlay clips for a tasteful finish (NOT the old faded
-    look). By default this is nearly off: an almost-invisible warm tint and a
-    very soft vignette confined to the FAR corners only — never darkening the
-    cute footage. Fully defensive: returns [] on any error.
+    """Disabled on purpose: returns NO overlay layers.
+
+    The old version added a warm tint and a radial VIGNETTE (a black overlay
+    with an OVAL alpha mask). That vignette was the source of the reported
+    "oval / egg-shaped frame" plus the coloured "rainbow glitch" fringing along
+    the mask boundary. To guarantee a 100% clean, full RECTANGULAR frame with
+    NO mask and NO colour fringing, we add no finishing overlays at all.
     """
-    overlays = []
-
-    # (a) Very light warm tint (effectively off by default) ---------------
-    try:
-        from moviepy.editor import ColorClip
-
-        warm = get_cfg("grade.warm_color", [255, 170, 110])
-        warm_opacity = float(get_cfg("grade.warm_opacity", 0.04))
-        if warm_opacity > 0:
-            wash = (
-                ColorClip(size=(W, H), color=tuple(int(c) for c in warm))
-                .set_duration(duration)
-                .set_opacity(warm_opacity)
-            )
-            overlays.append(wash)
-    except Exception as exc:
-        log.warning("Warm tint failed (%s); skipping.", exc)
-
-    # (b) Soft vignette on FAR corners only -------------------------------
-    try:
-        import numpy as np
-        from moviepy.editor import ImageClip
-
-        strength = float(get_cfg("grade.vignette_strength", 0.15))
-        if strength > 0:
-            ys = np.linspace(-1.0, 1.0, H, dtype=np.float64).reshape(H, 1)
-            xs = np.linspace(-1.0, 1.0, W, dtype=np.float64).reshape(1, W)
-            radius = np.sqrt((xs ** 2) + (ys ** 2))
-            # Only the far corners darken: ramp starts ~85% out.
-            edge = np.clip((radius - 0.85) / 0.55, 0.0, 1.0)
-            alpha = (edge * strength * 255.0).astype("uint8")  # (H, W)
-            black = np.zeros((H, W, 3), dtype="uint8")
-            mask = ImageClip(alpha, ismask=True).set_duration(duration)
-            vignette = ImageClip(black).set_duration(duration).set_mask(mask)
-            overlays.append(vignette)
-    except Exception as exc:
-        log.warning("Vignette generation failed (%s); skipping.", exc)
-
-    if overlays:
-        log.info("Applied subtle finish (%d overlay layer(s)).", len(overlays))
-    return overlays
+    return []
 
 
 # ==========================================================================
