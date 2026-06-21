@@ -1,34 +1,11 @@
 name: SweetSoul Auto Reel
 
-# ---------------------------------------------------------------------------
-# Generates ONE heartwarming Short per scheduled run and uploads it to YouTube,
-# producing THREE separate posts per day at staggered USA-friendly times.
-#
-# Cron is in UTC. The USA Eastern Time mapping below assumes:
-#   EST = UTC-5 (winter)  |  EDT = UTC-4 (summer)
-# So the local ET clock time shifts by an hour between standard/daylight time.
-#
-# Manual modes (workflow_dispatch):
-#   * diagnose_only=true -> fast secret/source check, NO video.
-#   * selftest=true      -> build a real reel but DO NOT upload; print a full
-#                           report (background source, clip resolutions, output
-#                           file resolution/bitrate) so quality can be verified
-#                           without publishing.
-# ---------------------------------------------------------------------------
-
 on:
   schedule:
-    # 5 posts/day at USA-friendly off-hour times (UTC).
-    # EST=UTC-5 | EDT=UTC-4
-    # 12:17 UTC = 07:17 ET  [morning]
     - cron: "17 12 * * *"
-    # 14:43 UTC = 09:43 ET  [mid-morning]
     - cron: "43 14 * * *"
-    # 17:29 UTC = 12:29 ET  [midday]
     - cron: "29 17 * * *"
-    # 21:11 UTC = 16:11 ET  [afternoon]
     - cron: "11 21 * * *"
-    # 23:53 UTC = 18:53 ET  [evening]
     - cron: "53 23 * * *"
   workflow_dispatch:
     inputs:
@@ -53,11 +30,10 @@ on:
         required: false
         default: "true"
       upload_instagram:
-        description: "Upload generated reels to Instagram (risky, off by default)"
+        description: "Upload to Instagram (risky, off by default)"
         required: false
         default: "false"
 
-# Avoid overlapping runs stepping on each other.
 concurrency:
   group: sweetsoul-auto-reel
   cancel-in-progress: false
@@ -66,8 +42,8 @@ jobs:
   build-and-upload:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -76,9 +52,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      # ---------------------------------------------------------------------
-      # FAST DIAGNOSTIC (no video). Runs ONLY when diagnose_only == "true".
-      # ---------------------------------------------------------------------
       - name: Secret/source diagnostic (NO video)
         if: ${{ github.event.inputs.diagnose_only == 'true' }}
         env:
@@ -91,48 +64,40 @@ jobs:
           pip install requests==2.32.3 google-generativeai==0.8.3 python-dotenv==1.0.1
           python diagnose.py
 
+      - name: Install system dependencies
+        if: ${{ github.event.inputs.diagnose_only != 'true' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg imagemagick fonts-dejavu-core
+          POLICY="/etc/ImageMagick-6/policy.xml"
+          if [ -f "$POLICY" ]; then
+            sudo sed -i 's/rights="none" pattern="@\*"/rights="read|write" pattern="@*"/' "$POLICY" || true
+            sudo sed -i 's/<policy domain="path" rights="none" pattern="@\*"\/>//' "$POLICY" || true
+          fi
+
       - name: Download royalty-free music tracks
         if: ${{ github.event.inputs.diagnose_only != 'true' }}
         run: |
           mkdir -p assets/music
           SUCCESS=0
           download_track() {
-            local fname="$1" url="$2"
-            local dest="assets/music/$fname"
-            if curl -fsSL --max-time 30 -o "$dest" "$url" 2>/dev/null; then
-              local size
-              size=$(stat -c%s "$dest" 2>/dev/null || echo 0)
-              if [ "$size" -gt 10000 ]; then
-                echo "OK $fname (${size}b)"
-                return 0
-              fi
-            fi
-            rm -f "$dest"
-            echo "SKIP $fname"
-            return 1
+            local fname="$1" url="$2" dest="assets/music/$1"
+            curl -fsSL --max-time 30 -o "$dest" "$url" 2>/dev/null || { rm -f "$dest"; echo "SKIP $fname"; return 1; }
+            local size; size=$(stat -c%s "$dest" 2>/dev/null || echo 0)
+            if [ "$size" -gt 10000 ]; then echo "OK $fname"; return 0; fi
+            rm -f "$dest"; echo "SKIP $fname (too small)"; return 1
           }
-          download_track "01_happy_ukulele.mp3"    "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bda.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "02_uplifting_pop.mp3"    "https://cdn.pixabay.com/download/audio/2022/03/24/audio_2cba25c436.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "03_feel_good.mp3"        "https://cdn.pixabay.com/download/audio/2022/10/30/audio_c8f4bb65b0.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "04_sunny_day.mp3"        "https://cdn.pixabay.com/download/audio/2023/02/28/audio_bb6f9a5552.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "05_cheerful.mp3"         "https://cdn.pixabay.com/download/audio/2022/08/31/audio_1c9e73e5cf.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "06_positive_vibes.mp3"   "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "07_kids_joy.mp3"         "https://cdn.pixabay.com/download/audio/2023/01/16/audio_8b576799c1.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "08_sweet_moments.mp3"    "https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          download_track "09_warm_heart.mp3"       "https://cdn.pixabay.com/download/audio/2021/08/08/audio_dc39bde6cf.mp3" && SUCCESS=$((SUCCESS+1)) || true
-          echo "Music ready: $SUCCESS tracks downloaded"
-          ls -la assets/music/ || true
-        if: ${{ github.event.inputs.diagnose_only != 'true' }}
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg imagemagick fonts-dejavu-core
-          # ImageMagick's default policy blocks some operations MoviePy needs.
-          # Relax the text/path policy so TextClip (captions + hook) works.
-          POLICY="/etc/ImageMagick-6/policy.xml"
-          if [ -f "$POLICY" ]; then
-            sudo sed -i 's/rights="none" pattern="@\*"/rights="read|write" pattern="@*"/' "$POLICY" || true
-            sudo sed -i 's/<policy domain="path" rights="none" pattern="@\*"\/>//' "$POLICY" || true
-          fi
+          download_track "01_happy_ukulele.mp3"  "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bda.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "02_uplifting_pop.mp3"  "https://cdn.pixabay.com/download/audio/2022/03/24/audio_2cba25c436.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "03_feel_good.mp3"      "https://cdn.pixabay.com/download/audio/2022/10/30/audio_c8f4bb65b0.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "04_sunny_day.mp3"      "https://cdn.pixabay.com/download/audio/2023/02/28/audio_bb6f9a5552.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "05_cheerful.mp3"       "https://cdn.pixabay.com/download/audio/2022/08/31/audio_1c9e73e5cf.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "06_positive_vibes.mp3" "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "07_kids_joy.mp3"       "https://cdn.pixabay.com/download/audio/2023/01/16/audio_8b576799c1.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "08_sweet_moments.mp3"  "https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          download_track "09_warm_heart.mp3"     "https://cdn.pixabay.com/download/audio/2021/08/08/audio_dc39bde6cf.mp3"  && SUCCESS=$((SUCCESS+1)) || true
+          echo "Music ready: $SUCCESS / 9 tracks"
+          ls -la assets/music/
 
       - name: Install Python dependencies
         if: ${{ github.event.inputs.diagnose_only != 'true' }}
@@ -160,20 +125,12 @@ jobs:
         run: |
           python generate.py --days "${{ steps.params.outputs.days }}" --per-day "${{ steps.params.outputs.per_day }}"
 
-      # ---------------------------------------------------------------------
-      # SELFTEST report: print exactly what was produced (so quality can be
-      # verified WITHOUT uploading). Exits non-zero on purpose so the full job
-      # log (incl. the "Background source" lines above) is retrievable.
-      # ---------------------------------------------------------------------
       - name: Selftest quality report (NO upload)
         if: ${{ always() && github.event.inputs.selftest == 'true' }}
         run: |
           echo "================= SELFTEST QUALITY REPORT ================="
-          echo "--- output/ files ---"
           ls -la output/ || true
-          echo "--- manifest.json ---"
           cat manifest.json || true
-          echo "--- ffprobe on each mp4 (resolution / bitrate / duration) ---"
           for f in output/*.mp4; do
             [ -f "$f" ] || continue
             echo ">>> $f"
@@ -183,8 +140,6 @@ jobs:
               -of default=noprint_wrappers=1 "$f" || true
           done
           echo "=========================================================="
-          echo "(This run is intentionally marked FAILED so the report above"
-          echo " can be read back. No video was uploaded. The report is the goal.)"
           exit 1
 
       - name: Upload to YouTube
@@ -203,7 +158,7 @@ jobs:
         run: |
           python upload_instagram.py --limit "${{ steps.params.outputs.per_day }}"
 
-      - name: Upload generated reels as artifacts
+      - name: Upload artifacts
         if: ${{ always() && github.event.inputs.diagnose_only != 'true' }}
         uses: actions/upload-artifact@v4
         with:
