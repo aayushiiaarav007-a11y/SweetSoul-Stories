@@ -622,13 +622,17 @@ def _find_music_track():
 
 
 def _synth_background_music(duration, fps=44100):
-    """Generate a soft, warm ambient music bed when no music file is provided.
+    """Generate an UPLIFTING ANTHEM-style music bed — 4 rotating styles.
 
-    Produces a gentle, slowly-shifting major-chord pad (multiple soft sine
-    partials with a slow tremolo + smooth fade in/out). It is intentionally
-    quiet and unobtrusive so it adds cozy warmth under the voiceover instead of
-    leaving the reel feeling flat/silent. Fully defensive: returns None on any
-    error. Drop a real .mp3 into assets/music to override this.
+    All styles are inspired by feel-good "la la laa" Olympic/viral anthem
+    energy that matches cute pet + baby content perfectly:
+
+      Style 0 — "La La Laa" Anthem : bright ascending melody, triumphant feel
+      Style 1 — Heartwarming March  : bold 4-beat march, warm + celebratory
+      Style 2 — Viral Pop Hook      : catchy repeating 4-note hook, energetic
+      Style 3 — Olympic Swell       : grand rising theme, emotional + epic
+
+    Rotates randomly each run. Drop a real .mp3 in assets/music to override.
     """
     try:
         import numpy as np
@@ -637,83 +641,213 @@ def _synth_background_music(duration, fps=44100):
         duration = float(max(1.0, duration))
         n = int(duration * fps)
         t = np.linspace(0.0, duration, n, endpoint=False)
+        style = random.randint(0, 3)
+        log.info("Anthem music style: %d", style)
 
-        # Warm major-ish chord (C, E, G, + soft high C) with light detune.
-        partials = [
-            (130.81, 0.55), (164.81, 0.42), (196.00, 0.42),
-            (261.63, 0.30), (329.63, 0.20),
-        ]
-        wave = np.zeros(n, dtype=np.float64)
-        for freq, amp in partials:
-            detune = 1.0 + 0.0015 * np.sin(2.0 * np.pi * 0.05 * t)
-            wave += amp * np.sin(2.0 * np.pi * freq * detune * t)
+        if style == 0:
+            # --- "La La Laa" Anthem: ascending bright melody (C-E-G-A-C) ---
+            # Mimics the iconic happy "la la la" viral anthem feel
+            melody = [261.63, 329.63, 392.00, 440.00, 523.25,  # C E G A C (up)
+                      440.00, 392.00, 329.63, 261.63, 329.63]  # A G E C E (down)
+            note_dur = 0.30
+            note_idx = (t / note_dur).astype(int) % len(melody)
+            freq_arr = np.array([melody[i] for i in note_idx])
+            phase_in = (t / note_dur) % 1.0
+            # Bell-like: quick attack, slow decay
+            env = np.exp(-3.0 * phase_in)
+            wave = 0.55 * env * np.sin(2 * np.pi * freq_arr * t)
+            # Harmony a third below
+            harm = np.array([f * 0.794 for f in freq_arr])
+            wave += 0.3 * env * np.sin(2 * np.pi * harm * t)
+            # Warm bass pulse on beat
+            beat = (t * (1.0 / 0.6)) % 1.0
+            bass_env = np.exp(-8.0 * beat)
+            wave += 0.25 * bass_env * np.sin(2 * np.pi * 130.81 * t)
 
-        # Slow breathing tremolo so it feels alive, not a flat drone.
-        tremolo = 0.75 + 0.25 * np.sin(2.0 * np.pi * 0.07 * t)
-        wave *= tremolo
+        elif style == 1:
+            # --- Heartwarming March: bold 4-beat, warm + celebratory ---
+            # G-major feel, steady rhythm like happy parade
+            chord_notes = [392.00, 493.88, 587.33]  # G B D
+            wave = np.zeros(n)
+            for freq in chord_notes:
+                wave += (0.4 / len(chord_notes)) * np.sin(2 * np.pi * freq * t)
+            # 4-beat march accent
+            beat4 = (t * 2.0) % 1.0
+            accent = np.exp(-12.0 * beat4)
+            wave *= (0.7 + 0.3 * accent)
+            # Melodic top line
+            top = [392.00, 440.00, 493.88, 523.25, 493.88, 440.00]
+            top_dur = 0.4
+            top_idx = (t / top_dur).astype(int) % len(top)
+            top_freq = np.array([top[i] for i in top_idx])
+            top_env = np.exp(-5.0 * ((t / top_dur) % 1.0))
+            wave += 0.35 * top_env * np.sin(2 * np.pi * top_freq * t)
 
-        # Normalize and apply gentle 2s fade in / out.
+        elif style == 2:
+            # --- Viral Pop Hook: catchy 4-note loop, high energy ---
+            # Simple iconic hook: C-G-A-F (same chords as many viral songs)
+            hook = [523.25, 392.00, 440.00, 349.23]  # C G A F
+            hook_dur = 0.4
+            h_idx = (t / hook_dur).astype(int) % len(hook)
+            h_freq = np.array([hook[i] for i in h_idx])
+            h_env = np.exp(-4.0 * ((t / hook_dur) % 1.0))
+            wave = 0.6 * h_env * np.sin(2 * np.pi * h_freq * t)
+            # Octave doubling for richness
+            wave += 0.3 * h_env * np.sin(2 * np.pi * h_freq * 2 * t)
+            # Energetic beat (every 0.4s)
+            beat_e = (t / hook_dur) % 1.0
+            kick = 0.35 * np.exp(-15.0 * beat_e) * np.sin(2 * np.pi * 85 * t)
+            wave += kick
+
+        else:
+            # --- Olympic Swell: grand rising anthem, emotional + epic ---
+            # Starts humble, builds to triumphant peak
+            rise = np.clip(t / (duration * 0.7), 0.0, 1.0)
+            # Foundation chord
+            base_notes = [(130.81, 0.45), (196.00, 0.40), (261.63, 0.35)]
+            # Rising melody notes that appear as swell builds
+            high_notes = [(523.25, 0.30), (659.25, 0.25), (783.99, 0.20)]
+            wave = np.zeros(n)
+            for freq, amp in base_notes:
+                wave += amp * np.sin(2 * np.pi * freq * t)
+            for freq, amp in high_notes:
+                wave += amp * rise * np.sin(2 * np.pi * freq * t)
+            # Heroic 8-beat pulse
+            pulse = 0.8 + 0.2 * np.sin(2 * np.pi * t * (120 / 60) * 0.5)
+            wave *= pulse
+            # Dramatic hit at peak
+            hit_t = duration * 0.7
+            hit_mask = np.exp(-20.0 * np.abs(t - hit_t))
+            wave += 0.4 * hit_mask * np.sin(2 * np.pi * 523.25 * t)
+
+        # Normalize + fade in/out
         peak = float(np.max(np.abs(wave))) or 1.0
         wave /= peak
-        fade = min(int(2.0 * fps), n // 2)
-        if fade > 0:
-            env = np.ones(n)
-            env[:fade] = np.linspace(0.0, 1.0, fade)
-            env[-fade:] = np.linspace(1.0, 0.0, fade)
-            wave *= env
+        fade_in  = min(int(0.8 * fps), n // 5)
+        fade_out = min(int(1.5 * fps), n // 4)
+        if fade_in  > 0: wave[:fade_in]   *= np.linspace(0.0, 1.0, fade_in)
+        if fade_out > 0: wave[-fade_out:]  *= np.linspace(1.0, 0.0, fade_out)
 
         stereo = np.column_stack([wave, wave]).astype(np.float32)
         clip = AudioArrayClip(stereo, fps=fps).set_duration(duration)
-        log.info("Synthesized %.1fs gentle ambient music bed (no music file found).", duration)
+        log.info("Synthesized %.1fs anthem music (style %d).", duration, style)
         return clip
+
     except Exception as exc:
-        log.warning("Music synthesis failed (%s); voiceover only.", exc)
+        log.warning("Music synthesis failed (%s); silent audio.", exc)
+        return None
+
+
+def _synth_hook_sting(duration=2.5, fps=44100):
+    """Short punchy 'sting' sound for the hook window (first ~4s).
+
+    A crisp rising impact + bright shimmer — gives the hook text a satisfying
+    'arrival' feel without being loud or jarring. Randomly picks one of two
+    sting flavours each run.
+    """
+    try:
+        import numpy as np
+        from moviepy.audio.AudioClip import AudioArrayClip
+
+        n = int(duration * fps)
+        t = np.linspace(0.0, duration, n, endpoint=False)
+        flavour = random.randint(0, 1)
+
+        if flavour == 0:
+            # Rising "whoosh + chime": frequency sweeps up fast, then bright chime rings
+            sweep_dur = 0.25
+            sweep = np.exp(-15.0 * t) * np.sin(2 * np.pi * (200 + 1200 * t / sweep_dur) * t)
+            chime_freq = 1046.50  # C6
+            chime = np.exp(-4.0 * np.maximum(t - 0.2, 0)) * np.sin(2 * np.pi * chime_freq * t)
+            chime2 = 0.5 * np.exp(-5.0 * np.maximum(t - 0.25, 0)) * np.sin(2 * np.pi * 1318.51 * t)
+            wave = 0.5 * sweep + 0.6 * chime + 0.3 * chime2
+        else:
+            # "Punch + sparkle": low thump at start, then high sparkle
+            thump = np.exp(-30.0 * t) * np.sin(2 * np.pi * 90 * t)
+            sparkle_freq = 880.0
+            sparkle = np.exp(-6.0 * np.maximum(t - 0.1, 0)) * np.sin(2 * np.pi * sparkle_freq * t)
+            sparkle2 = 0.4 * np.exp(-8.0 * np.maximum(t - 0.15, 0)) * np.sin(2 * np.pi * 1108.73 * t)
+            wave = 0.7 * thump + 0.5 * sparkle + 0.3 * sparkle2
+
+        # Normalize + short fade out
+        peak = float(np.max(np.abs(wave))) or 1.0
+        wave /= peak
+        fade = min(int(0.4 * fps), n // 3)
+        wave[-fade:] *= np.linspace(1.0, 0.0, fade)
+
+        stereo = np.column_stack([wave, wave]).astype(np.float32)
+        return AudioArrayClip(stereo, fps=fps).set_duration(duration)
+    except Exception as exc:
+        log.warning("Hook sting synthesis failed (%s); skipping.", exc)
         return None
 
 
 def _build_music_only_audio(duration):
-    """Build a music-only audio track (no voiceover).
+    """Build a music-only audio track: soft background bed + punchy hook sting.
 
-    Used when video.voice_enabled = false. Returns an AudioClip at `duration`,
-    or None if music is disabled and synthesis also fails.
+    The hook sting plays at t=0 for ~2.5s (while the hook text is on screen),
+    giving a satisfying 'arrival' accent. The background bed runs the full
+    duration at a lower volume so it never feels overwhelming.
     """
     from moviepy.editor import CompositeAudioClip
     from moviepy.audio.fx.all import audio_loop, volumex
 
-    if not get_cfg("music.enabled", True):
-        log.info("Music disabled and voice off -> silent reel.")
-        return None
+    tracks = []
 
-    music_path = _find_music_track()
-    if music_path:
-        try:
-            from moviepy.editor import AudioFileClip
-            vol = float(get_cfg("music.volume", 0.30))
-            music = AudioFileClip(music_path)
-            music = volumex(music, vol)
+    # --- Background music bed (soft) ---
+    if get_cfg("music.enabled", True):
+        music_path = _find_music_track()
+        bed = None
+        if music_path:
             try:
-                music = audio_loop(music, duration=duration)
-            except Exception:
-                music = music.set_duration(min(music.duration, duration))
-            log.info("Music-only audio: real track at %.0f%% vol: %s", vol * 100, os.path.basename(music_path))
-            return music.set_duration(duration)
-        except Exception as exc:
-            log.warning("Could not load music file (%s); trying synth.", exc)
+                from moviepy.editor import AudioFileClip
+                vol = float(get_cfg("music.volume", 0.22))
+                music = AudioFileClip(music_path)
+                music = volumex(music, vol)
+                try:
+                    music = audio_loop(music, duration=duration)
+                except Exception:
+                    music = music.set_duration(min(music.duration, duration))
+                bed = music.set_duration(duration)
+                log.info("Music bed: real track at %.0f%% vol: %s", vol * 100, os.path.basename(music_path))
+            except Exception as exc:
+                log.warning("Could not load music file (%s); trying synth.", exc)
 
-    # Synth fallback.
-    if get_cfg("music.synth_fallback", True):
+        if bed is None and get_cfg("music.synth_fallback", True):
+            try:
+                synth = _synth_background_music(duration)
+                if synth is not None:
+                    vol = float(get_cfg("music.synth_volume", 0.18))
+                    bed = volumex(synth, vol).set_duration(duration)
+                    log.info("Music bed: synth at %.0f%% vol.", vol * 100)
+            except Exception as exc:
+                log.warning("Synth music failed (%s).", exc)
+
+        if bed is not None:
+            tracks.append(bed)
+
+    # --- Hook sting (punchy accent at t=0) ---
+    if get_cfg("music.hook_sting_enabled", True):
         try:
-            synth = _synth_background_music(duration)
-            if synth is not None:
-                vol = float(get_cfg("music.synth_volume", 0.28))
-                from moviepy.audio.fx.all import volumex
-                result = volumex(synth, vol).set_duration(duration)
-                log.info("Music-only audio: synth ambient at %.0f%% vol.", vol * 100)
-                return result
+            sting = _synth_hook_sting(duration=min(2.5, duration * 0.35))
+            if sting is not None:
+                vol = float(get_cfg("music.hook_sting_volume", 0.55))
+                sting = volumex(sting, vol).set_start(0)
+                tracks.append(sting)
+                log.info("Hook sting added at t=0 (%.0f%% vol).", vol * 100)
         except Exception as exc:
-            log.warning("Synth music failed (%s); silent reel.", exc)
+            log.warning("Hook sting failed (%s); skipping.", exc)
 
-    return None
+    if not tracks:
+        log.warning("No audio tracks built; silent reel.")
+        return None
+    if len(tracks) == 1:
+        return tracks[0].set_duration(duration)
+    try:
+        return CompositeAudioClip(tracks).set_duration(duration)
+    except Exception as exc:
+        log.warning("Audio composite failed (%s); using bed only.", exc)
+        return tracks[0].set_duration(duration)
 
 
 def _build_audio(voice_path, duration):

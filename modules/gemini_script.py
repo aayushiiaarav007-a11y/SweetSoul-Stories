@@ -32,14 +32,40 @@ HOOK_CANDIDATES = [
 ]
 
 DEFAULT_KEYWORDS = [
-    "puppies playing together",
-    "kitten and puppy playing",
-    "dog playing with baby",
-    "toddler playing with puppy",
-    "child hugging dog",
-    "baby laughing with dog",
-    "kittens playing together",
-    "cat playing with toddler",
+    "golden retriever puppy outdoor sunshine",
+    "puppy playing in grass sunlight",
+    "baby laughing outdoor",
+    "kitten playing near window light",
+    "toddler playing with puppy outside",
+    "dog and baby in garden",
+    "fluffy puppy running outdoor",
+    "baby and puppy sunny day",
+    "kittens playing in sunlight",
+    "child hugging dog outdoor",
+]
+
+# Diverse topic pool — randomly picked each run for variety
+TOPIC_POOL = [
+    "a golden retriever puppy meeting a baby for the first time",
+    "a kitten and puppy becoming best friends",
+    "a toddler teaching a puppy to sit",
+    "a baby's first giggle triggered by a playful dog",
+    "a rescue kitten finding a forever home",
+    "twin babies playing with a gentle giant dog",
+    "a puppy discovering snow for the first time",
+    "a kitten stealing a baby's toy and returning it",
+    "a toddler and puppy taking a nap together",
+    "a dog proudly carrying his puppy to meet the family baby",
+    "a kitten learning to play fetch with a laughing toddler",
+    "a baby sharing snacks with a patient golden retriever",
+    "a puppy and kitten cuddling under a warm blanket",
+    "a toddler reading a picture book to three sleepy puppies",
+    "a baby's first steps guided by a loyal labrador",
+    "a cat tucking in a newborn baby every night",
+    "a puppy howling along to a baby's laughter",
+    "a toddler and a fluffy cat playing hide and seek",
+    "a dog meeting his new baby sibling at the hospital",
+    "a kitten and a baby discovering bubbles together",
 ]
 
 _CTA = "Follow SweetSoul Stories for your daily dose of joy."
@@ -260,7 +286,14 @@ def _fallback_script(topic=None):
 # Public API
 # --------------------------------------------------------------------------
 def generate_script(topic=None):
-    """Return a single Script, preferring Gemini and falling back to quotes."""
+    """Return a single Script, preferring Gemini and falling back to quotes.
+
+    If no topic is given, a random one is picked from TOPIC_POOL so every
+    run produces a genuinely different story (no repeat syndrome).
+    """
+    if not topic:
+        topic = random.choice(TOPIC_POOL)
+        log.info("Auto-picked topic: %s", topic)
     script = _generate_with_gemini(topic)
     if script is None:
         script = _fallback_script(topic)

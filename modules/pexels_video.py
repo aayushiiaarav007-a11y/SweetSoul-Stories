@@ -18,6 +18,7 @@ stdlib + requests only.
 
 import logging
 import os
+import random
 import time
 
 from .config import CACHE_DIR, CLIPS_DIR, get_cfg, get_env
@@ -150,8 +151,8 @@ def _pick_portrait_file(video_files):
     return best
 
 
-def _search(requests, headers, query, per_page, orientation):
-    params = {"query": query, "per_page": per_page}
+def _search(requests, headers, query, per_page, orientation, page=1):
+    params = {"query": query, "per_page": per_page, "page": page}
     if orientation:
         params["orientation"] = orientation
     try:
@@ -191,8 +192,10 @@ def _search(requests, headers, query, per_page, orientation):
 def fetch_pexels_videos(keywords, min_clips=None):
     """Return a list of local mp4 paths for portrait-ish cute footage.
 
-    Returns an empty list if the key is missing/invalid or nothing was found,
-    allowing the caller to fall back to photos / Picsum / gradient.
+    Every call uses a RANDOM page offset so the same cached clips are not
+    reused run after run (which caused every video to look identical).
+    Old cached clips are cleared at the start of each fetch so storage does
+    not grow unbounded and fresh variety is guaranteed.
     """
     key = _api_key()
     if not key:
@@ -202,8 +205,8 @@ def fetch_pexels_videos(keywords, min_clips=None):
         return []
 
     if min_clips is None:
-        min_clips = get_cfg("pexels.min_clips", 6)
-    per_page = get_cfg("pexels.per_query", 15)
+        min_clips = get_cfg("pexels.min_clips", 8)
+    per_page = get_cfg("pexels.per_query", 20)
     orientation = get_cfg("pexels.orientation", "portrait")
     default_keywords = get_cfg("pexels.default_keywords", [])
 
@@ -211,10 +214,23 @@ def fetch_pexels_videos(keywords, min_clips=None):
     keywords = [k for k in (keywords or []) if k] or list(default_keywords)
 
     os.makedirs(CLIPS_DIR, exist_ok=True)
+
+    # Clear old cached clips so every run gets fresh, varied footage.
+    try:
+        for fname in os.listdir(CLIPS_DIR):
+            if fname.startswith("pexels_") and fname.endswith(".mp4"):
+                try:
+                    os.remove(os.path.join(CLIPS_DIR, fname))
+                except Exception:
+                    pass
+        log.info("Cleared old cached clips for fresh variety.")
+    except Exception as exc:
+        log.warning("Could not clear clip cache (%s); continuing.", exc)
+
     collected = []
     seen_ids = set()
 
-    # Build the three search passes.
+    # Build the three search passes with random page offsets for variety.
     passes = [
         ("themed + portrait", keywords, orientation),
         ("themed + any orientation", keywords, None),
@@ -230,9 +246,11 @@ def fetch_pexels_videos(keywords, min_clips=None):
         for query in kw_list:
             if len(collected) >= min_clips:
                 break
-            videos, stop_all = _search(requests, headers, query, per_page, orient)
+            # Random page (1-5) so results differ each run.
+            page = random.randint(1, 5)
+            videos, stop_all = _search(requests, headers, query, per_page, orient, page=page)
             if stop_all:
-                return collected  # key invalid - return whatever we have (likely [])
+                return collected
             for entry in videos or []:
                 if len(collected) >= min_clips:
                     break
@@ -246,7 +264,7 @@ def fetch_pexels_videos(keywords, min_clips=None):
                 if _download(link, dest, requests):
                     seen_ids.add(vid_id)
                     collected.append(dest)
-                    log.info("Got clip %d/%d: %s", len(collected), min_clips, os.path.basename(dest))
+                    log.info("Got clip %d/%d (page=%d): %s", len(collected), min_clips, page, os.path.basename(dest))
 
     if not collected:
         log.warning("No Pexels videos collected after all passes.")
