@@ -3,11 +3,15 @@ Video composition for SweetSoul Stories.
 
 Assembles a 60s vertical 1080x1920 reel:
   * Background built from a priority chain (Pexels video -> Pexels photos
-    Ken-Burns -> keyless Picsum Ken-Burns -> warm animated gradient).
-  * A subtle cinematic grade (warm wash + soft dark vignette).
+    Ken-Burns -> warm animated gradient). Random/irrelevant keyless stock
+    images are deliberately NOT used.
+  * A subtle BRIGHT, VIVID, PUNCHY grade (gentle saturation + slight
+    brightness/contrast lift; vignette nearly off; no warm haze).
+  * Short crossfade transitions between background segments for smooth motion.
   * A first-5-seconds animated HOOK overlay (scale "pop" + background "punch"
     zoom + subtle flash) that stops the scroll.
-  * Word-by-word style timing-based captions for the rest.
+  * Word-by-word style timing-based captions with a soft rounded backdrop pill
+    for the rest.
   * Audio = voiceover (+ optional low-volume background music).
 
 Heavy imports (moviepy/numpy) happen lazily inside functions so that importing
@@ -68,7 +72,45 @@ def _fit_cover(clip):
     return clip
 
 
-def _ken_burns_from_image(path, duration, zoom_end=None):
+def _concat_with_crossfade(segments, duration):
+    """Concatenate clips with short crossfade transitions for a premium feel.
+
+    Uses moviepy's crossfadein + a compose concatenation with negative padding
+    so successive segments overlap by `crossfade_seconds`. Fully defensive: on
+    ANY error it falls back to plain concatenation so the reel always renders.
+    """
+    from moviepy.editor import concatenate_videoclips
+
+    if not segments:
+        raise RuntimeError("No segments to concatenate.")
+
+    xfade = float(get_cfg("transitions.crossfade_seconds", 0.35))
+
+    if len(segments) > 1 and xfade > 0:
+        try:
+            from moviepy.video.fx.all import crossfadein
+
+            faded = [segments[0]]
+            for seg in segments[1:]:
+                # Don't let the crossfade exceed the segment length.
+                try:
+                    seg_dur = seg.duration or xfade
+                except Exception:
+                    seg_dur = xfade
+                this_fade = min(xfade, max(0.05, seg_dur * 0.5))
+                faded.append(crossfadein(seg, this_fade))
+            bg = concatenate_videoclips(faded, method="compose", padding=-xfade)
+            bg = bg.set_duration(duration)
+            log.info("Applied %.2fs crossfade transitions between %d segment(s).", xfade, len(segments))
+            return bg
+        except Exception as exc:
+            log.warning("Crossfade concat failed (%s); using plain concatenation.", exc)
+
+    bg = concatenate_videoclips(segments, method="compose").set_duration(duration)
+    return bg
+
+
+
     """Create a slow Ken-Burns (pan + zoom) clip from a single image."""
     from moviepy.editor import ImageClip
 
@@ -94,15 +136,23 @@ def _ken_burns_from_image(path, duration, zoom_end=None):
 
 
 def _video_background(clip_paths, duration):
-    """Concatenate / loop Pexels video clips with FAST CUTS to fill `duration`."""
-    from moviepy.editor import VideoFileClip, concatenate_videoclips
+    """Concatenate / loop Pexels video clips with FAST CUTS to fill `duration`.
+
+    Segments are joined with short crossfades for smooth, polished motion.
+    """
+    from moviepy.editor import VideoFileClip
 
     cut = get_cfg("video.clip_cut_seconds", 3.0)
+    xfade = float(get_cfg("transitions.crossfade_seconds", 0.35))
     segments = []
     total = 0.0
     idx = 0
     guard = 0
-    while total < duration and clip_paths and guard < 200:
+    while clip_paths and guard < 200:
+        # Account for crossfade overlap shrinking the composed length.
+        effective = total - max(0, len(segments) - 1) * xfade
+        if effective >= duration:
+            break
         guard += 1
         path = clip_paths[idx % len(clip_paths)]
         idx += 1
@@ -121,27 +171,32 @@ def _video_background(clip_paths, duration):
         total += seg_dur
     if not segments:
         raise RuntimeError("No usable video segments.")
-    bg = concatenate_videoclips(segments, method="compose")
+    bg = _concat_with_crossfade(segments, duration)
     bg = bg.set_duration(duration)
     return bg
 
 
 def _images_background(image_paths, duration):
-    """Build a Ken-Burns slideshow background from images covering `duration`."""
-    from moviepy.editor import concatenate_videoclips
+    """Build a Ken-Burns slideshow background from images covering `duration`.
 
+    Segments are joined with short crossfades for smooth, polished motion.
+    """
     if not image_paths:
         raise RuntimeError("No images for background.")
+    xfade = float(get_cfg("transitions.crossfade_seconds", 0.35))
     per = max(2.5, duration / max(1, len(image_paths)))
     clips = []
     total = 0.0
     idx = 0
     guard = 0
-    while total < duration and guard < 200:
+    while guard < 200:
+        effective = total - max(0, len(clips) - 1) * xfade
+        if effective >= duration:
+            break
         guard += 1
         path = image_paths[idx % len(image_paths)]
         idx += 1
-        seg_dur = min(per, duration - total)
+        seg_dur = min(per, duration - effective)
         if seg_dur <= 0:
             break
         try:
@@ -152,7 +207,7 @@ def _images_background(image_paths, duration):
             continue
     if not clips:
         raise RuntimeError("No Ken-Burns clips built.")
-    bg = concatenate_videoclips(clips, method="compose").set_duration(duration)
+    bg = _concat_with_crossfade(clips, duration).set_duration(duration)
     return bg
 
 
@@ -192,7 +247,13 @@ def _warm_gradient_background(duration):
 
 
 def _build_background(keywords, duration):
-    """Background priority chain. Each source attempt is logged loudly."""
+    """Background priority chain. Each source attempt is logged loudly.
+
+    Chain: (1) Pexels VIDEO -> (2) Pexels PHOTOS (Ken-Burns) -> (3) warm
+    gradient. Random/irrelevant keyless stock images (Picsum) are deliberately
+    NOT used here: unrelated photos ruin a cute-pet reel, so a clean warm
+    gradient is the preferred last resort.
+    """
     # (1) Pexels VIDEO clips.
     try:
         clips = pexels_video.fetch_pexels_videos(keywords)
@@ -213,45 +274,67 @@ def _build_background(keywords, duration):
             try:
                 return _images_background(photos, duration)
             except Exception as exc:
-                log.warning("Photo background build failed (%s); trying Picsum.", exc)
+                log.warning("Photo background build failed (%s); using gradient.", exc)
     except Exception as exc:
-        log.warning("Pexels photo fetch error (%s); trying Picsum.", exc)
+        log.warning("Pexels photo fetch error (%s); using gradient.", exc)
 
-    # (3) Keyless Picsum images as Ken-Burns (guaranteed no-key safety net).
-    try:
-        picsum = images_mod.fetch_picsum_images(keywords, count=get_cfg("pexels.min_images", 6))
-        if picsum:
-            log.info("Background source: keyless Picsum images (Ken-Burns, %d).", len(picsum))
-            try:
-                return _images_background(picsum, duration)
-            except Exception as exc:
-                log.warning("Picsum background build failed (%s); using gradient.", exc)
-    except Exception as exc:
-        log.warning("Picsum fetch error (%s); using gradient.", exc)
-
-    # (4) Warm animated gradient (last resort, always works).
+    # (3) Warm animated gradient (clean last resort, always works).
     return _warm_gradient_background(duration)
 
 
 # ==========================================================================
-# Cinematic grade (subtle warm overlay + dark vignette)
+# Color grade — BRIGHT, VIVID, PUNCHY (no faded haze)
 # ==========================================================================
-def _build_cinematic_grade(duration):
-    """Return overlay clips that give a cohesive, premium cinematic look.
+def _apply_color_grade(clip):
+    """Apply a SUBTLE bright/punchy grade directly to the background so cute
+    colors pop: a gentle saturation/brightness multiply (colorx) plus a slight
+    brightness + contrast lift (lum_contrast). This replaces the old faded
+    warm-wash + heavy-vignette look. Fully defensive: returns the clip
+    unchanged on any error so the reel always renders.
+    """
+    try:
+        from moviepy.video.fx.all import colorx, lum_contrast
+    except Exception as exc:
+        log.warning("Color grade fx unavailable (%s); using ungraded background.", exc)
+        return clip
 
-    Produces (a) a gentle warm color wash at low opacity and (b) a soft dark
-    vignette that darkens the edges while keeping the cute footage bright in
-    the center. Fully defensive: returns [] on any error so the reel still
-    renders. Captions/hook are added ON TOP of these, so they stay readable.
+    saturation = float(get_cfg("grade.saturation", 1.12))
+    brightness = float(get_cfg("grade.brightness", 8))
+    contrast = float(get_cfg("grade.contrast", 0.10))
+
+    graded = clip
+    try:
+        # Mild multiply lifts brightness and makes colours pop (not oversaturated).
+        graded = colorx(graded, saturation)
+    except Exception as exc:
+        log.warning("colorx grade failed (%s); skipping that step.", exc)
+    try:
+        # Slight brightness + contrast lift for crisp, clean footage.
+        graded = lum_contrast(graded, lum=brightness, contrast=contrast)
+    except Exception as exc:
+        log.warning("lum_contrast grade failed (%s); skipping that step.", exc)
+
+    log.info(
+        "Applied bright/punchy grade (saturation=%.2f, brightness=%.0f, contrast=%.2f).",
+        saturation, brightness, contrast,
+    )
+    return graded
+
+
+def _build_cinematic_grade(duration):
+    """Return SUBTLE overlay clips for a tasteful finish (NOT the old faded
+    look). By default this is nearly off: an almost-invisible warm tint and a
+    very soft vignette confined to the FAR corners only — never darkening the
+    cute footage. Fully defensive: returns [] on any error.
     """
     overlays = []
 
-    # (a) Warm color wash -------------------------------------------------
+    # (a) Very light warm tint (effectively off by default) ---------------
     try:
         from moviepy.editor import ColorClip
 
         warm = get_cfg("grade.warm_color", [255, 170, 110])
-        warm_opacity = float(get_cfg("grade.warm_opacity", 0.12))
+        warm_opacity = float(get_cfg("grade.warm_opacity", 0.04))
         if warm_opacity > 0:
             wash = (
                 ColorClip(size=(W, H), color=tuple(int(c) for c in warm))
@@ -260,33 +343,30 @@ def _build_cinematic_grade(duration):
             )
             overlays.append(wash)
     except Exception as exc:
-        log.warning("Warm color wash failed (%s); skipping.", exc)
+        log.warning("Warm tint failed (%s); skipping.", exc)
 
-    # (b) Soft dark vignette ---------------------------------------------
+    # (b) Soft vignette on FAR corners only -------------------------------
     try:
         import numpy as np
         from moviepy.editor import ImageClip
 
-        strength = float(get_cfg("grade.vignette_strength", 0.55))
+        strength = float(get_cfg("grade.vignette_strength", 0.15))
         if strength > 0:
             ys = np.linspace(-1.0, 1.0, H, dtype=np.float64).reshape(H, 1)
             xs = np.linspace(-1.0, 1.0, W, dtype=np.float64).reshape(1, W)
-            # Elliptical radial distance from center (0 center -> ~1.4 corners).
             radius = np.sqrt((xs ** 2) + (ys ** 2))
-            # Smooth darkening that starts ~60% out toward the edges.
-            edge = np.clip((radius - 0.6) / 0.8, 0.0, 1.0)
+            # Only the far corners darken: ramp starts ~85% out.
+            edge = np.clip((radius - 0.85) / 0.55, 0.0, 1.0)
             alpha = (edge * strength * 255.0).astype("uint8")  # (H, W)
             black = np.zeros((H, W, 3), dtype="uint8")
             mask = ImageClip(alpha, ismask=True).set_duration(duration)
-            vignette = (
-                ImageClip(black).set_duration(duration).set_mask(mask)
-            )
+            vignette = ImageClip(black).set_duration(duration).set_mask(mask)
             overlays.append(vignette)
     except Exception as exc:
         log.warning("Vignette generation failed (%s); skipping.", exc)
 
     if overlays:
-        log.info("Applied cinematic grade (%d overlay layer(s)).", len(overlays))
+        log.info("Applied subtle finish (%d overlay layer(s)).", len(overlays))
     return overlays
 
 
@@ -325,8 +405,68 @@ def _make_text_clip(txt, fontsize, color, stroke_color, stroke_width, font, max_
             return None
 
 
+def _hex_to_rgb(value, default=(0, 0, 0)):
+    """Parse a '#RRGGBB' hex color into an (r, g, b) tuple. Defensive."""
+    try:
+        s = str(value).strip().lstrip("#")
+        if len(s) == 3:
+            s = "".join(c * 2 for c in s)
+        if len(s) != 6:
+            return default
+        return (int(s[0:2], 16), int(s[2:4], 16), int(s[4:6], 16))
+    except Exception:
+        return default
+
+
+def _make_caption_backdrop(tw, th, start, seg_dur, y_top):
+    """Build a semi-transparent (optionally rounded) dark pill sized to the
+    caption text so it reads cleanly on bright footage. Returns a positioned
+    clip or None on any error.
+    """
+    try:
+        import numpy as np
+        from moviepy.editor import ColorClip, ImageClip
+
+        opacity = float(get_cfg("captions.bg_opacity", 0.35))
+        if opacity <= 0:
+            return None
+        color = _hex_to_rgb(get_cfg("captions.bg_color", "#000000"))
+        rounded = bool(get_cfg("captions.rounded", True))
+
+        pad_x = max(24, int(tw * 0.06))
+        pad_y = max(16, int(th * 0.22))
+        w = int(tw + 2 * pad_x)
+        h = int(th + 2 * pad_y)
+        if w <= 2 or h <= 2:
+            return None
+
+        alpha = np.ones((h, w), dtype=np.float64) * opacity
+        if rounded:
+            radius = int(min(h // 2, 48))
+            if radius > 0:
+                yy, xx = np.ogrid[0:h, 0:w]
+                dx = np.minimum(xx, w - 1 - xx)
+                dy = np.minimum(yy, h - 1 - yy)
+                in_corner = (dx < radius) & (dy < radius)
+                dist = np.sqrt((radius - dx) ** 2 + (radius - dy) ** 2)
+                alpha[in_corner & (dist > radius)] = 0.0
+
+        mask = ImageClip(alpha, ismask=True).set_duration(seg_dur)
+        bg = (
+            ColorClip(size=(w, h), color=color)
+            .set_duration(seg_dur)
+            .set_mask(mask)
+            .set_start(start)
+            .set_position(("center", int(y_top - pad_y)))
+        )
+        return bg
+    except Exception as exc:
+        log.warning("Caption backdrop failed (%s); showing text only.", exc)
+        return None
+
+
 def _build_caption_clips(text, duration):
-    """Return a list of positioned caption TextClips (may be empty)."""
+    """Return a list of positioned caption clips (backdrops + text; may be empty)."""
     if not get_cfg("captions.enabled", True):
         return []
 
@@ -358,13 +498,25 @@ def _build_caption_clips(text, duration):
         if tc is None:
             continue
         seg_dur = max(0.2, g["end"] - g["start"])
+        y_top = int(H * y_ratio)
         try:
             tc = tc.set_start(g["start"]).set_duration(seg_dur)
-            tc = tc.set_position(("center", int(H * y_ratio)))
-            clips.append(tc)
+            tc = tc.set_position(("center", y_top))
         except Exception as exc:
             log.warning("Could not place caption '%s' (%s).", g["text"], exc)
-    log.info("Built %d caption clip(s).", len(clips))
+            continue
+
+        # Add a backdrop pill BEHIND this caption (appended first so text is on top).
+        try:
+            tw, th = tc.size
+            backdrop = _make_caption_backdrop(tw, th, g["start"], seg_dur, y_top)
+            if backdrop is not None:
+                clips.append(backdrop)
+        except Exception as exc:
+            log.warning("Caption backdrop sizing failed (%s); skipping backdrop.", exc)
+
+        clips.append(tc)
+    log.info("Built %d caption layer(s) (incl. backdrops).", len(clips))
     return clips
 
 
@@ -569,6 +721,12 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
     background = _build_background(keywords, duration)
     background = background.set_duration(duration)
 
+    # 1b) Bright/punchy color grade directly on the background (kills the
+    # faded look). Defensive: returns the background unchanged on failure.
+    if get_cfg("grade.enabled", True):
+        background = _apply_color_grade(background)
+        background = background.set_duration(duration)
+
     # 2) Hook overlay (+ background punch) for the first ~5s.
     suppress_captions_during_hook = get_cfg("hook.suppress_captions", True)
     hook_dur = float(get_cfg("hook.duration_seconds", 5.0))
@@ -577,8 +735,8 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
 
     layers = [background]
 
-    # 2b) Cinematic grade (warm wash + dark vignette) on top of background,
-    # below captions/hook so text stays crisp and readable.
+    # 2b) Subtle finish (very light tint + far-corner vignette) on top of the
+    # graded background, below captions/hook so text stays crisp and readable.
     if get_cfg("grade.enabled", True):
         layers.extend(_build_cinematic_grade(duration))
 
@@ -613,8 +771,8 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
 
     log.info("Rendering reel -> %s", out_path)
-    video.write_videofile(
-        out_path,
+    # High-quality encoding: ~6 Mbps bitrate, yuv420p for broad compatibility.
+    write_kwargs = dict(
         fps=FPS,
         codec="libx264",
         audio_codec="aac",
@@ -623,6 +781,28 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
         verbose=False,
         logger=None,
     )
+    try:
+        bitrate = get_cfg("video.bitrate", "6000k")
+        if bitrate:
+            write_kwargs["bitrate"] = bitrate
+        write_kwargs["ffmpeg_params"] = ["-pix_fmt", "yuv420p"]
+    except Exception as exc:
+        log.warning("Could not set HQ encoding params (%s); using defaults.", exc)
+
+    try:
+        video.write_videofile(out_path, **write_kwargs)
+    except Exception as exc:
+        log.warning("HQ write failed (%s); retrying with safe defaults.", exc)
+        video.write_videofile(
+            out_path,
+            fps=FPS,
+            codec="libx264",
+            audio_codec="aac",
+            threads=4,
+            preset="medium",
+            verbose=False,
+            logger=None,
+        )
     try:
         video.close()
     except Exception:

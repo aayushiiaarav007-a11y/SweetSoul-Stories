@@ -13,7 +13,12 @@
     "min_duration_seconds": 30,
     "max_duration_seconds": 75,
     "clip_cut_seconds": 3.0,
-    "background_zoom": 1.08
+    "background_zoom": 1.08,
+    "bitrate": "6000k"
+  },
+  "transitions": {
+    "comment": "Short crossfade between background segments for a premium feel.",
+    "crossfade_seconds": 0.35
   },
   "palette": {
     "comment": "Warm soft golden / peach / cream tones for a cozy heartwarming look",
@@ -31,7 +36,10 @@
     "font": "DejaVu-Sans-Bold",
     "words_per_group": 3,
     "position_y_ratio": 0.72,
-    "bg_opacity": 0.0
+    "bg_opacity": 0.35,
+    "bg_color": "#000000",
+    "rounded": true,
+    "accent_color": "#FFD27F"
   },
   "hook": {
     "enabled": true,
@@ -88,11 +96,14 @@
     "volume": 0.13
   },
   "grade": {
-    "comment": "Subtle cinematic grade: gentle warm wash + soft dark vignette.",
+    "comment": "Subtle BRIGHT, VIVID, PUNCHY look for cute content: saturation + slight contrast/brightness lift, vignette nearly off, no warm haze.",
     "enabled": true,
     "warm_color": [255, 170, 110],
-    "warm_opacity": 0.12,
-    "vignette_strength": 0.55
+    "warm_opacity": 0.04,
+    "vignette_strength": 0.15,
+    "saturation": 1.12,
+    "contrast": 0.10,
+    "brightness": 8
   },
   "youtube": {
     "category_id": "15",

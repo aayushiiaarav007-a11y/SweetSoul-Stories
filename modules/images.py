@@ -196,7 +196,14 @@ def fetch_pexels_photos(keywords, min_images=None):
                 if pid in seen:
                     continue
                 src = photo.get("src", {})
-                link = src.get("portrait") or src.get("large2x") or src.get("large") or src.get("original")
+                # Prefer the HIGHEST-res source so Ken-Burns does not upscale a
+                # small image into blur: original > large2x > portrait > large.
+                link = (
+                    src.get("original")
+                    or src.get("large2x")
+                    or src.get("portrait")
+                    or src.get("large")
+                )
                 if not link:
                     continue
                 dest = os.path.join(IMAGES_DIR, "pexels_%s.jpg" % pid)
