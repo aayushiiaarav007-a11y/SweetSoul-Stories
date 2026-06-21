@@ -110,7 +110,7 @@ def _concat_with_crossfade(segments, duration):
     return bg
 
 
-
+def _ken_burns_from_image(path, duration, zoom_end=None):
     """Create a slow Ken-Burns (pan + zoom) clip from a single image."""
     from moviepy.editor import ImageClip
 
