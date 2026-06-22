@@ -1,12 +1,13 @@
 name: SweetSoul Auto Reel
+# Schedule re-registered: 2026-06-21
 
 on:
   schedule:
-    - cron: "17 12 * * *"
-    - cron: "43 14 * * *"
-    - cron: "29 17 * * *"
-    - cron: "11 21 * * *"
-    - cron: "53 23 * * *"
+    - cron: "17 12 * * *"   # 5:47 PM IST
+    - cron: "43 14 * * *"   # 8:13 PM IST
+    - cron: "29 17 * * *"   # 10:59 PM IST
+    - cron: "11 21 * * *"   # 2:41 AM IST
+    - cron: "53 23 * * *"   # 5:23 AM IST
   workflow_dispatch:
     inputs:
       diagnose_only:
