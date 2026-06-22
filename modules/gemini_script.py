@@ -124,16 +124,18 @@ _PROMPT_TEMPLATE = """You are a scriptwriter for a faceless YouTube Shorts chann
 dogs and cats, cute babies and toddlers, and the sweet "aww" moments between
 them. The audience is in the USA.
 
-Write ONE narration script of about {words} words (roughly 60 seconds when
+Write ONE narration script of about {words} words (roughly 30 seconds when
 read aloud at a gentle pace). Requirements:
 - Sentence 1 MUST be a SHORT scroll-stopping curiosity hook (3-7 words) that
   makes people stop scrolling. Good examples: "Wait for it...", "You won't
   believe this", "This melted my heart", "Watch till the end", "Try not to
   smile".
-- Warm, gentle, wholesome, feel-good emotional tone.
+- Warm, sweet, gentle, wholesome, feel-good emotional tone. Like a kind older
+  sister narrating a cute story.
 - Tell a tiny heartwarming story about adorable animals PLAYING and having fun
   together (puppies, kittens, dogs, cats) and/or playing with cute human
   children (babies and toddlers) - playful, joyful "aww" moments.
+- Keep it SHORT and punchy — 30 seconds max when spoken. Do NOT ramble.
 - End with this exact call to action: "{cta}"
 - Plain spoken sentences only. No emojis, no stage directions, no markdown,
   no hashtags, no quotation marks around the whole thing. American English.
