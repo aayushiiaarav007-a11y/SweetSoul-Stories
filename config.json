@@ -17,8 +17,8 @@
     "bitrate": null,
     "crf": 18,
     "preset": "medium",
-    "voice_enabled": false,
-    "comment_voice": "Set false = no voiceover. Music-only montage. Much more premium than gTTS robotic voice."
+    "voice_enabled": true,
+    "comment_voice": "Sweet USA girl voice tells a heartwarming story. Hook shown first 4s, then voice narrates."
   },
   "transitions": {
     "comment": "Short crossfade between background segments for a premium feel.",
@@ -101,12 +101,12 @@
   },
   "music": {
     "enabled": true,
-    "volume": 0.70,
+    "volume": 0.18,
     "synth_fallback": true,
-    "synth_volume": 0.65,
+    "synth_volume": 0.18,
     "hook_sting_enabled": true,
-    "hook_sting_volume": 0.80,
-    "comment": "Voice OFF. Synth music full 30s continuous. Volume loud enough to actually hear."
+    "hook_sting_volume": 0.55,
+    "comment": "Voice ON. Music soft background (0.18) so sweet girl voice is clearly heard over it."
   },
   "grade": {
     "comment": "BRIGHT, VIVID, PUNCHY cinematic look. Vignette + warm tint OFF (no oval).",
