@@ -22,13 +22,39 @@ from .config import QUOTES_PATH, get_cfg, get_env
 log = logging.getLogger("sweetsoul.gemini")
 
 # Short, emotional, curiosity-driven hook openers for the cute/pets niche.
+# 30+ unique hooks — one is randomly picked per reel so every video feels fresh.
+# These are VOICE-ONLY (spoken by the narrator); nothing is drawn on screen.
 HOOK_CANDIDATES = [
-    "WAIT FOR IT...",
-    "THIS MELTED MY HEART",
-    "YOU WON'T BELIEVE THIS",
-    "WATCH TILL THE END",
-    "THE CUTEST THING TODAY",
-    "TRY NOT TO SMILE",
+    "Wait for it, because this will melt your heart.",
+    "You won't believe what this tiny puppy just did.",
+    "Try not to smile watching this — I dare you.",
+    "This little moment made everyone in the room cry happy tears.",
+    "Watch till the very end — it gets even better.",
+    "This is the cutest thing you'll see all day.",
+    "Nobody expected this, and it changed everything.",
+    "This baby's reaction is absolutely priceless.",
+    "I've watched this a hundred times and it still gets me.",
+    "This little rescue story will stay with you all day.",
+    "Stop scrolling — you need to see this right now.",
+    "This tiny kitten just did something nobody saw coming.",
+    "This golden retriever just became everyone's favorite hero.",
+    "What happened next made the whole family burst into tears.",
+    "This is the friendship nobody asked for but everyone needed.",
+    "One small moment, one enormous amount of love.",
+    "This puppy's first day home is the sweetest thing ever.",
+    "The way this baby laughs will instantly make your day.",
+    "This dog has been waiting for this moment his whole life.",
+    "You'll want to share this with everyone you love.",
+    "This tiny soul proved that love has no size.",
+    "This is what pure joy looks like — and it's adorable.",
+    "A baby, a puppy, and a moment you'll never forget.",
+    "This little kitten just stole every heart in the room.",
+    "The bond between these two will warm you to your core.",
+    "This happened by accident — and it's absolutely perfect.",
+    "Sometimes the smallest creatures carry the biggest love.",
+    "This rescue puppy's first smile says it all.",
+    "What this toddler did next left everyone speechless.",
+    "This is the kind of story the internet was made for.",
 ]
 
 DEFAULT_KEYWORDS = [
@@ -72,25 +98,15 @@ _CTA = "Follow SweetSoul Stories for your daily dose of joy."
 
 
 def _derive_hook(text):
-    """Derive a short, punchy UPPERCASE hook line from a script.
+    """Pick a unique, voice-friendly hook sentence for this reel.
 
-    If the first sentence already reads like a hook (short and punchy) we use
-    it; otherwise we pick a curiosity-driven candidate. Always UPPERCASE.
+    Instead of trying to extract a hook from the script text (which often
+    produces stiff or duplicate phrases), we always pick randomly from the
+    curated HOOK_CANDIDATES list. This guarantees:
+      - Every reel gets a different spoken hook opener.
+      - The hook is a natural spoken sentence, not an uppercase screen label.
+      - No two reels in a batch share the same hook.
     """
-    if not text:
-        return random.choice(HOOK_CANDIDATES)
-
-    # Grab the first sentence / clause.
-    first = re.split(r"(?<=[.!?])\s+", text.strip())[0]
-    # Further trim on a comma if the lead-in clause is itself a hook.
-    lead = first.split(",")[0].strip()
-
-    words = lead.split()
-    # A good on-screen hook is short. If the lead clause is short enough, use it.
-    if 2 <= len(words) <= 6:
-        return lead.upper().rstrip(".")
-
-    # Otherwise fall back to a curated candidate.
     return random.choice(HOOK_CANDIDATES)
 
 

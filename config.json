@@ -46,7 +46,7 @@
     "accent_color": "#FFD27F"
   },
   "hook": {
-    "enabled": true,
+    "enabled": false,
     "duration_seconds": 4.0,
     "fontsize": 150,
     "color": "white",
