@@ -110,6 +110,31 @@ def _derive_hook(text):
     return random.choice(HOOK_CANDIDATES)
 
 
+def swap_spoken_hook(text, hook=None):
+    """Replace the FIRST sentence of the script with a fresh spoken hook.
+
+    The narrator voices `script.text`, and almost every pre-written / Gemini
+    script begins with the same handful of openers ("This melted my heart...",
+    "Wait for it...", "You won't believe..."). That makes the SPOKEN hook feel
+    repetitive across reels even though the on-screen text is gone.
+
+    This swaps out that first sentence for a randomly chosen unique hook from
+    HOOK_CANDIDATES so every reel's voiceover opens differently, while leaving
+    the rest of the story (and the closing CTA) completely untouched.
+    """
+    if not text:
+        return text
+    chosen = hook or random.choice(HOOK_CANDIDATES)
+    body = text.strip()
+    # Split off the first sentence (ends at the first ., ! or ?).
+    parts = re.split(r"(?<=[.!?])\s+", body, maxsplit=1)
+    rest = parts[1].strip() if len(parts) == 2 else ""
+    if rest:
+        return f"{chosen} {rest}"
+    # No clear sentence break — just prepend the hook.
+    return f"{chosen} {body}"
+
+
 @dataclass
 class Script:
     """A single narration script ready for the pipeline."""
@@ -143,9 +168,11 @@ them. The audience is in the USA.
 Write ONE narration script of about {words} words (roughly 30 seconds when
 read aloud at a gentle pace). Requirements:
 - Sentence 1 MUST be a SHORT scroll-stopping curiosity hook (3-7 words) that
-  makes people stop scrolling. Good examples: "Wait for it...", "You won't
-  believe this", "This melted my heart", "Watch till the end", "Try not to
-  smile".
+  makes people stop scrolling. Vary it every time and be creative — there are
+  many ways to hook a viewer. Good styles: a teaser ("Wait for it..."),
+  a promise ("This will make your day"), a challenge ("Try not to smile"),
+  or curiosity ("You won't believe what happened next"). Do NOT reuse the same
+  opener every time.
 - Warm, sweet, gentle, wholesome, feel-good emotional tone. Like a kind older
   sister narrating a cute story.
 - Tell a tiny heartwarming story about adorable animals PLAYING and having fun
@@ -316,6 +343,15 @@ def generate_script(topic=None):
     if script is None:
         script = _fallback_script(topic)
         log.info("Using fallback script: '%s'.", script.title)
+
+    # Give every reel a DIFFERENT spoken opener. Both the pre-written scripts
+    # and Gemini tend to start with the same few hooks ("This melted my
+    # heart...", "Wait for it..."), which made the voiceover feel repetitive.
+    # Swap the first sentence for a unique hook and reuse it as the (now
+    # voice-only) hook field too.
+    fresh_hook = random.choice(HOOK_CANDIDATES)
+    script.text = swap_spoken_hook(script.text, fresh_hook)
+    script.hook = fresh_hook
     return script
 
 
@@ -336,6 +372,14 @@ def generate_scripts(count, topic=None):
     random.shuffle(pool)
     if not pool:
         return [generate_script(topic) for _ in range(count)]
+    # Give each reel in the batch a DIFFERENT spoken hook (no repeats while we
+    # still have unused hooks to hand out).
+    hooks = list(HOOK_CANDIDATES)
+    random.shuffle(hooks)
     for i in range(count):
-        results.append(pool[i % len(pool)])
+        script = pool[i % len(pool)]
+        fresh_hook = hooks[i % len(hooks)]
+        script.text = swap_spoken_hook(script.text, fresh_hook)
+        script.hook = fresh_hook
+        results.append(script)
     return results
