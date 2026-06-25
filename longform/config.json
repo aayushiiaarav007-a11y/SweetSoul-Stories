@@ -1,0 +1,77 @@
+{
+  "channel": {
+    "name": "MoralTales",
+    "cta": "Subscribe for a brand-new moral story every single day!"
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "target_duration_seconds": 360,
+    "min_duration_seconds": 300,
+    "max_duration_seconds": 460,
+    "clip_cut_seconds": 7.0,
+    "preset": "medium",
+    "crf": 20
+  },
+  "story": {
+    "target_words": 950,
+    "min_words": 750
+  },
+  "palette": {
+    "comment": "Calm dark-blue storytime backdrop used only when no footage is available",
+    "gradient_top": [25, 32, 64],
+    "gradient_bottom": [10, 12, 28],
+    "solid_fallback": [16, 20, 40]
+  },
+  "captions": {
+    "enabled": true,
+    "fontsize": 56,
+    "color": "white",
+    "stroke_color": "black",
+    "stroke_width": 3,
+    "font": "DejaVu-Sans-Bold",
+    "words_per_group": 6,
+    "position_y_ratio": 0.82,
+    "bg_opacity": 0.42,
+    "bg_color": "#000000",
+    "rounded": true
+  },
+  "intro": {"enabled": true, "duration_seconds": 4.0, "fontsize": 90},
+  "outro": {"enabled": true, "duration_seconds": 5.0, "fontsize": 64},
+  "transitions": {"crossfade_seconds": 0.4},
+  "grade": {"enabled": true, "saturation": 1.1, "brightness": 6, "contrast": 0.08},
+  "tts": {"voice": "en-US-AriaNeural", "rate": "-6%", "pitch": "+0Hz", "chunk_chars": 600},
+  "gemini": {
+    "model": "gemini-2.0-flash",
+    "model_candidates": ["gemini-2.0-flash", "gemini-flash-latest", "gemini-2.5-flash"],
+    "temperature": 0.95
+  },
+  "pexels": {
+    "orientation": "landscape",
+    "min_clips": 22,
+    "per_query": 20,
+    "default_keywords": [
+      "children playing outdoor",
+      "happy family sunset",
+      "forest path sunlight",
+      "village morning",
+      "kids reading book",
+      "nature landscape calm",
+      "old man smiling",
+      "river flowing nature"
+    ]
+  },
+  "music": {"enabled": true, "volume": 0.12, "synth_fallback": true, "synth_volume": 0.08},
+  "youtube": {
+    "category_id": "24",
+    "privacy_status": "public",
+    "made_for_kids": false,
+    "hashtags": "#moralstories #bedtimestories #storiesforkids #moralofthestory #kidsstories",
+    "default_tags": [
+      "moral stories", "bedtime stories", "stories for kids",
+      "short story with moral", "moral of the story", "english moral story",
+      "story for children", "good moral stories"
+    ]
+  }
+}
