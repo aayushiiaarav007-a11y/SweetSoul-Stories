@@ -122,6 +122,7 @@ _DEFAULT_CONFIG = {
         "workers": 3,
         "motion": False,
         "time_budget_seconds": 150,
+        "min_required": 5,
     },
     "youtube": {
         "category_id": "24",

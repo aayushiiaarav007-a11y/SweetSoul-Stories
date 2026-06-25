@@ -150,6 +150,17 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
         log.warning("AI image generation errored (%s); using stock footage.", exc)
         image_paths = []
 
+    # If too few AI images came back (e.g. the free image service rate-limited
+    # us), DON'T stretch 2 images across a 5-min video - that looks terrible.
+    # Drop them so the composer uses real Pexels footage that changes per scene.
+    min_required = int(get_cfg("ai_images.min_required", 5))
+    if image_paths and len(image_paths) < min_required and not test:
+        log.warning(
+            "Only %d AI image(s) (< %d required); using real footage instead "
+            "for varied, scene-matched visuals.", len(image_paths), min_required
+        )
+        image_paths = []
+
     # 3) Compose video
     try:
         out = video_composer.compose_video(

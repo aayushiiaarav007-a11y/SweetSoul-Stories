@@ -10,7 +10,7 @@
     "target_duration_seconds": 300,
     "min_duration_seconds": 240,
     "max_duration_seconds": 430,
-    "clip_cut_seconds": 8.0,
+    "clip_cut_seconds": 6.0,
     "preset": "veryfast",
     "crf": 23
   },
@@ -49,7 +49,7 @@
   },
   "pexels": {
     "orientation": "landscape",
-    "min_clips": 16,
+    "min_clips": 20,
     "per_query": 20,
     "default_keywords": [
       "children playing outdoor",
@@ -72,7 +72,8 @@
     "height": 720,
     "workers": 3,
     "motion": false,
-    "time_budget_seconds": 150
+    "time_budget_seconds": 150,
+    "min_required": 5
   },
   "youtube": {
     "category_id": "24",
