@@ -21,6 +21,7 @@ import os
 import random
 import time
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from .config import IMAGES_DIR, get_cfg
 
@@ -100,9 +101,9 @@ def _fetch_one(requests, prompt, dest, width, height, seed):
 
 
 def generate_scene_images(scene_prompts, max_images=None):
-    """Generate one storybook image per scene prompt. Returns a list of local
-    image paths in scene order (may be shorter than the input on partial
-    failure, or empty if the service is unavailable)."""
+    """Generate one storybook image per scene prompt, IN PARALLEL for speed.
+    Returns a list of local image paths in scene order (may be shorter than the
+    input on partial failure, or empty if the service is unavailable)."""
     if not get_cfg("ai_images.enabled", True):
         return []
     scene_prompts = [s for s in (scene_prompts or []) if s and str(s).strip()]
@@ -114,27 +115,45 @@ def generate_scene_images(scene_prompts, max_images=None):
         return []
 
     if max_images is None:
-        max_images = int(get_cfg("ai_images.max_images", 14))
+        max_images = int(get_cfg("ai_images.max_images", 10))
     scene_prompts = scene_prompts[:max_images]
 
-    width = int(get_cfg("ai_images.width", 1920))
-    height = int(get_cfg("ai_images.height", 1080))
-    # A single base seed per video keeps the art style consistent across scenes.
+    width = int(get_cfg("ai_images.width", 1280))
+    height = int(get_cfg("ai_images.height", 720))
+    workers = max(1, int(get_cfg("ai_images.workers", 5)))
     base_seed = random.randint(1, 9_999_999)
 
     os.makedirs(IMAGES_DIR, exist_ok=True)
     _clear_old_images()
 
-    paths = []
-    for i, prompt in enumerate(scene_prompts):
+    results = {}
+
+    def _task(i, prompt):
         dest = os.path.join(str(IMAGES_DIR), "scene_%02d.jpg" % i)
-        if _fetch_one(requests, str(prompt).strip(), dest, width, height, base_seed + i):
-            paths.append(dest)
-            log.info("AI image %d/%d ready.", len(paths), len(scene_prompts))
-        else:
-            log.warning("AI image %d failed; continuing.", i + 1)
+        ok = _fetch_one(requests, str(prompt).strip(), dest, width, height, base_seed + i)
+        return i, (dest if ok else None)
+
+    t0 = time.time()
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(_task, i, p) for i, p in enumerate(scene_prompts)]
+        done = 0
+        for fut in as_completed(futures):
+            try:
+                i, path = fut.result()
+            except Exception as exc:
+                log.warning("AI image task errored (%s).", exc)
+                continue
+            done += 1
+            if path:
+                results[i] = path
+                log.info("AI image ready (%d/%d done).", done, len(scene_prompts))
+            else:
+                log.warning("AI image %d failed.", i + 1)
+
+    paths = [results[i] for i in sorted(results.keys())]
     if paths:
-        log.info("Generated %d AI scene image(s).", len(paths))
+        log.info("Generated %d/%d AI scene image(s) in %.0fs (parallel x%d).",
+                 len(paths), len(scene_prompts), time.time() - t0, workers)
     else:
         log.warning("No AI images generated; composer will use stock footage instead.")
     return paths
