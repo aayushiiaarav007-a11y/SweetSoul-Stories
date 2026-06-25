@@ -1,0 +1,215 @@
+#!/usr/bin/env python3
+"""
+MoralTales Longform - daily moral-story video generation pipeline (CLI).
+
+End-to-end, defensive pipeline that, for each episode:
+  1. Generates a ~5-7 minute moral story (Gemini -> stories.json fallback) with
+     a strong hook, retention beats and a clear moral.
+  2. Synthesizes a warm USA storyteller voiceover (edge-tts -> gTTS fallback),
+     chunked for reliability on long text.
+  3. Builds a 1920x1080 HD video: scene-switching Pexels footage, an intro
+     title card, full-length readable captions, soft music, and an outro CTA.
+  4. Generates a bold thumbnail.
+  5. Records everything in manifest.json so the uploader can post later.
+
+Usage:
+  python generate.py                 # one episode (the scheduled default)
+  python generate.py --count 2       # a small batch
+  python generate.py --lesson honesty --topic "a child finds a lost wallet"
+"""
+
+import argparse
+import datetime as _dt
+import json
+import logging
+import os
+import sys
+
+from modules import config as config_mod
+from modules.config import OUTPUT_DIR, BASE_DIR, get_cfg, setup_logging
+from modules import story as story_mod
+from modules import tts
+from modules import video_composer
+from modules import thumbnail as thumb_mod
+
+log = logging.getLogger("moraltales.generate")
+
+MANIFEST_PATH = os.path.join(str(BASE_DIR), "manifest.json")
+
+# A short, representative story used ONLY for fast/cheap test renders. It shows
+# the exact LOOK (footage, captions, intro/outro, voice, grade) in ~1 minute so
+# testing burns almost no GitHub Actions minutes.
+_TEST_STORY_TEXT = (
+    "Would you give back gold that wasn't yours? A poor woodcutter once dropped "
+    "his only axe into a deep river. As he wept, a shining spirit rose holding an "
+    "axe of pure gold. Is this yours, she asked. No, he said, mine was just old "
+    "iron. Pleased by his honesty, the spirit gave him the gold axe too. The moral "
+    "of the story is that honesty is always rewarded. "
+)
+
+
+def _make_test_story():
+    cta = get_cfg("channel.cta", "Subscribe for a new moral story every day!")
+    return story_mod.Story(
+        title="Test: The Honest Woodcutter",
+        text=_TEST_STORY_TEXT + cta,
+        hook="Would you give back gold that wasn't yours?",
+        moral="The moral of the story is that honesty is always rewarded.",
+        keywords=["forest river sunlight", "old man working outdoor", "calm water nature"],
+    )
+
+
+def _slugify(text, max_len=40):
+    keep = []
+    for ch in (text or "").lower():
+        if ch.isalnum():
+            keep.append(ch)
+        elif ch in (" ", "-", "_"):
+            keep.append("-")
+    slug = "".join(keep).strip("-")
+    while "--" in slug:
+        slug = slug.replace("--", "-")
+    return (slug or "moraltale")[:max_len]
+
+
+def _load_manifest():
+    try:
+        with open(MANIFEST_PATH, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        if isinstance(data, dict) and isinstance(data.get("episodes"), list):
+            return data
+    except Exception:
+        pass
+    return {"episodes": []}
+
+
+def _save_manifest(manifest):
+    try:
+        with open(MANIFEST_PATH, "w", encoding="utf-8") as fh:
+            json.dump(manifest, fh, indent=2, ensure_ascii=False)
+        log.info("Manifest updated: %s (%d episode(s)).", MANIFEST_PATH, len(manifest["episodes"]))
+    except Exception as exc:
+        log.error("Could not write manifest (%s).", exc)
+
+
+def _build_description(story):
+    moral = (story.moral or "").strip()
+    channel = get_cfg("channel.name", "MoralTales")
+    parts = [story.hook.strip()]
+    if moral:
+        parts.append(moral)
+    parts.append(
+        f"Welcome to {channel} - a brand-new moral story for the whole family every day. "
+        "These gentle stories help children learn good values like honesty, kindness, "
+        "courage and patience. Watch till the end for the lesson!"
+    )
+    parts.append(get_cfg("channel.cta", "Subscribe for a new moral story every day!"))
+    return "\n\n".join(p for p in parts if p)
+
+
+def generate_one(lesson=None, topic=None, index=0, test=False):
+    """Generate a single episode. Returns a manifest entry dict or None.
+
+    When test=True a short fixed story is used and footage is limited, so the
+    full pipeline (voice + footage + render + thumbnail) runs in ~1 minute to
+    verify the LOOK without burning GitHub Actions minutes.
+    """
+    # 1) Story
+    if test:
+        story = _make_test_story()
+        # Fewer clips + no long render in test mode.
+        try:
+            config_mod.cfg.setdefault("pexels", {})["min_clips"] = 6
+        except Exception:
+            pass
+        log.info("TEST MODE: short story, reduced footage.")
+    else:
+        story = story_mod.generate_story(lesson, topic)
+    log.info("Story: '%s' (%d words). Hook: %r", story.title, story.word_count, story.hook)
+
+    stamp = _dt.datetime.utcnow().strftime("%Y%m%d-%H%M%S")
+    base_name = f"{stamp}-{index:02d}-{_slugify(story.title)}"
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    voice_path = os.path.join(str(OUTPUT_DIR), base_name + ".mp3")
+    video_path = os.path.join(str(OUTPUT_DIR), base_name + ".mp4")
+    thumb_path = os.path.join(str(OUTPUT_DIR), base_name + ".jpg")
+
+    # 2) Voiceover
+    if tts.synthesize(story.text, voice_path) is None:
+        log.error("Voiceover synthesis failed; skipping this episode.")
+        return None
+
+    # 3) Compose video
+    try:
+        out = video_composer.compose_video(
+            voice_path=voice_path,
+            text=story.text,
+            keywords=story.keywords,
+            title=story.title,
+            hook_text=story.hook,
+            out_path=video_path,
+        )
+    except Exception as exc:
+        log.exception("Video composition failed (%s).", exc)
+        return None
+
+    # 4) Thumbnail (best-effort)
+    thumb = thumb_mod.generate_thumbnail(story.title, story.hook, out_path=thumb_path)
+
+    entry = {
+        "title": story.title,
+        "hook": story.hook,
+        "moral": story.moral,
+        "text": story.text,
+        "keywords": list(story.keywords),
+        "description": _build_description(story),
+        "video_path": os.path.relpath(out, str(BASE_DIR)),
+        "voice_path": os.path.relpath(voice_path, str(BASE_DIR)),
+        "thumbnail_path": os.path.relpath(thumb, str(BASE_DIR)) if thumb else None,
+        "created_utc": stamp,
+        "uploaded_youtube": False,
+        "youtube_id": None,
+    }
+    return entry
+
+
+def run(count=1, lesson=None, topic=None, test=False):
+    count = max(1, int(count))
+    log.info("Generating %d episode(s).%s", count, " [TEST MODE]" if test else "")
+    manifest = _load_manifest()
+    produced = []
+    for i in range(count):
+        log.info("=== Episode %d/%d ===", i + 1, count)
+        entry = generate_one(lesson=lesson, topic=topic, index=i, test=test)
+        if entry:
+            manifest["episodes"].append(entry)
+            produced.append(entry)
+            _save_manifest(manifest)
+        else:
+            log.warning("Episode %d/%d was not produced.", i + 1, count)
+    log.info("Done. Produced %d/%d episode(s).", len(produced), count)
+    return produced
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Generate MoralTales long-form videos.")
+    parser.add_argument("--count", type=int, default=1, help="Number of episodes to generate.")
+    parser.add_argument("--lesson", type=str, default=None, help="Optional moral/lesson hint.")
+    parser.add_argument("--topic", type=str, default=None, help="Optional story topic hint.")
+    parser.add_argument("--test", action="store_true",
+                        help="Fast cheap render: short fixed story + reduced footage (verifies the look).")
+    args = parser.parse_args(argv)
+
+    setup_logging()
+    produced = run(count=args.count, lesson=args.lesson, topic=args.topic, test=args.test)
+    if not produced:
+        log.error("No episodes were produced.")
+        return 1
+    print("\nGenerated episodes:")
+    for e in produced:
+        print(f"  - {e['title']}  ->  {e['video_path']}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
