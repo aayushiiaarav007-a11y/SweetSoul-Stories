@@ -3,11 +3,13 @@ name: SweetSoul Auto Reel
 
 on:
   schedule:
-    - cron: "17 12 * * *"   # 5:47 PM IST
-    - cron: "43 14 * * *"   # 8:13 PM IST
-    - cron: "29 17 * * *"   # 10:59 PM IST
-    - cron: "11 21 * * *"   # 2:41 AM IST
-    - cron: "53 23 * * *"   # 5:23 AM IST
+    # 4 reels/day — kept only US prime-time slots. The old 5:47 PM IST slot
+    # (cron "17 12") landed in US early morning and got almost no views, so it
+    # was removed. Freed-up YouTube upload quota is used by the long-form video.
+    - cron: "43 14 * * *"   # 8:13 PM IST  (10:43 AM ET / 7:43 AM PT)
+    - cron: "29 17 * * *"   # 10:59 PM IST (1:29 PM ET / 10:29 AM PT)
+    - cron: "11 21 * * *"   # 2:41 AM IST  (5:11 PM ET / 2:11 PM PT)
+    - cron: "53 23 * * *"   # 5:23 AM IST  (7:53 PM ET / 4:53 PM PT)
   workflow_dispatch:
     inputs:
       diagnose_only:
