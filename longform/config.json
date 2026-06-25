@@ -4,15 +4,15 @@
     "cta": "Subscribe for a brand-new moral story every single day!"
   },
   "video": {
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
+    "width": 1280,
+    "height": 720,
+    "fps": 18,
     "target_duration_seconds": 300,
     "min_duration_seconds": 240,
     "max_duration_seconds": 430,
     "clip_cut_seconds": 8.0,
     "preset": "veryfast",
-    "crf": 20
+    "crf": 23
   },
   "story": {
     "target_words": 620,
@@ -26,10 +26,10 @@
   },
   "captions": {
     "enabled": true,
-    "fontsize": 56,
+    "fontsize": 42,
     "color": "white",
     "stroke_color": "black",
-    "stroke_width": 4,
+    "stroke_width": 3,
     "font": "DejaVu-Sans-Bold",
     "words_per_group": 9,
     "position_y_ratio": 0.82,
@@ -37,8 +37,8 @@
     "bg_color": "#000000",
     "rounded": true
   },
-  "intro": {"enabled": true, "duration_seconds": 4.0, "fontsize": 90},
-  "outro": {"enabled": true, "duration_seconds": 5.0, "fontsize": 64},
+  "intro": {"enabled": true, "duration_seconds": 4.0, "fontsize": 64},
+  "outro": {"enabled": true, "duration_seconds": 5.0, "fontsize": 46},
   "transitions": {"crossfade_seconds": 0.4},
   "grade": {"enabled": true, "saturation": 1.1, "brightness": 6, "contrast": 0.08},
   "tts": {"voice": "en-US-AriaNeural", "rate": "-3%", "pitch": "+0Hz", "chunk_chars": 600},
@@ -68,8 +68,8 @@
     "model": "turbo",
     "style": "soft warm childrens storybook illustration, gentle cartoon style, wholesome, cinematic lighting, no text, no words, no letters",
     "max_images": 5,
-    "width": 1920,
-    "height": 1080,
+    "width": 1280,
+    "height": 720,
     "workers": 3,
     "motion": false,
     "time_budget_seconds": 150
