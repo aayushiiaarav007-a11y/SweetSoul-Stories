@@ -67,12 +67,12 @@
     "enabled": true,
     "model": "turbo",
     "style": "soft warm childrens storybook illustration, gentle cartoon style, wholesome, cinematic lighting, no text, no words, no letters",
-    "max_images": 5,
+    "max_images": 10,
     "width": 1280,
     "height": 720,
     "workers": 3,
     "motion": false,
-    "time_budget_seconds": 150,
+    "time_budget_seconds": 240,
     "min_required": 5
   },
   "youtube": {
