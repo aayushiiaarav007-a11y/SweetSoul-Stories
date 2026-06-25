@@ -60,7 +60,7 @@ _DEFAULT_CONFIG = {
         "max_duration_seconds": 430,
         "clip_cut_seconds": 8.0,
         "preset": "veryfast",
-        "crf": 22,
+        "crf": 20,
     },
     "story": {
         "target_words": 620,
@@ -114,12 +114,13 @@ _DEFAULT_CONFIG = {
     "music": {"enabled": True, "volume": 0.12, "synth_fallback": True, "synth_volume": 0.08},
     "ai_images": {
         "enabled": True,
-        "model": "turbo",
-        "style": "soft warm childrens storybook illustration, gentle cartoon style, wholesome, cinematic lighting, no text, no words, no letters",
+        "model": "flux",
+        "style": "soft warm childrens storybook illustration, gentle cartoon style, wholesome, cinematic lighting, highly detailed, no text, no words, no letters",
         "max_images": 6,
-        "width": 1280,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "workers": 2,
+        "motion": False,
     },
     "youtube": {
         "category_id": "24",

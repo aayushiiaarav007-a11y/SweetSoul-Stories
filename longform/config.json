@@ -12,7 +12,7 @@
     "max_duration_seconds": 430,
     "clip_cut_seconds": 8.0,
     "preset": "veryfast",
-    "crf": 22
+    "crf": 20
   },
   "story": {
     "target_words": 620,
@@ -65,12 +65,13 @@
   "music": {"enabled": true, "volume": 0.12, "synth_fallback": true, "synth_volume": 0.08},
   "ai_images": {
     "enabled": true,
-    "model": "turbo",
-    "style": "soft warm childrens storybook illustration, gentle cartoon style, wholesome, cinematic lighting, no text, no words, no letters",
+    "model": "flux",
+    "style": "soft warm childrens storybook illustration, gentle cartoon style, wholesome, cinematic lighting, highly detailed, no text, no words, no letters",
     "max_images": 6,
-    "width": 1280,
-    "height": 720,
-    "workers": 2
+    "width": 1920,
+    "height": 1080,
+    "workers": 2,
+    "motion": false
   },
   "youtube": {
     "category_id": "24",

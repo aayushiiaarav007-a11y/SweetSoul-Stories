@@ -164,10 +164,20 @@ def _gradient_background(duration):
 
 
 def _ken_burns_from_image(path, duration, zoom_end=1.10):
-    """Slow pan+zoom (Ken-Burns) clip from a single image, covering the frame."""
+    """Background clip from a single image, covering the frame.
+
+    If ai_images.motion is OFF (default), returns a STATIC image clip - this is
+    the FASTEST to render (no per-frame resize) and actually the SHARPEST (no
+    resampling), keeping full HD quality. Smooth crossfades between images give
+    a polished slideshow feel without the heavy per-frame Ken-Burns zoom that
+    made rendering extremely slow.
+    """
     from moviepy.editor import ImageClip
 
     base = _fit_cover(ImageClip(path).set_duration(duration))
+
+    if not get_cfg("ai_images.motion", False):
+        return base.set_position(("center", "center"))
 
     def scale(t):
         frac = t / duration if duration else 0
