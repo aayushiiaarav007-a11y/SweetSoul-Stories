@@ -54,13 +54,13 @@ _DEFAULT_CONFIG = {
     "video": {
         "width": 1920,
         "height": 1080,
-        "fps": 30,
+        "fps": 24,
         "target_duration_seconds": 360,
         "min_duration_seconds": 300,
         "max_duration_seconds": 460,
-        "clip_cut_seconds": 7.0,
-        "preset": "medium",
-        "crf": 20,
+        "clip_cut_seconds": 8.0,
+        "preset": "veryfast",
+        "crf": 22,
     },
     "story": {
         "target_words": 950,
@@ -100,7 +100,7 @@ _DEFAULT_CONFIG = {
     },
     "pexels": {
         "orientation": "landscape",
-        "min_clips": 22,
+        "min_clips": 16,
         "per_query": 20,
         "default_keywords": [
             "children playing outdoor",
