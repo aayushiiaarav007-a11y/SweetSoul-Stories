@@ -163,7 +163,61 @@ def _gradient_background(duration):
         return ColorClip(size=(W, H), color=tuple(solid)).set_duration(duration)
 
 
-def _build_background(keywords, duration):
+def _ken_burns_from_image(path, duration, zoom_end=1.10):
+    """Slow pan+zoom (Ken-Burns) clip from a single image, covering the frame."""
+    from moviepy.editor import ImageClip
+
+    base = _fit_cover(ImageClip(path).set_duration(duration))
+
+    def scale(t):
+        frac = t / duration if duration else 0
+        return 1.0 + (zoom_end - 1.0) * frac
+
+    try:
+        return base.resize(scale).set_position(("center", "center"))
+    except Exception as exc:
+        log.warning("Ken-Burns resize failed (%s); static image.", exc)
+        return base
+
+
+def _images_background(image_paths, duration):
+    """Ken-Burns slideshow background from AI scene images, crossfaded, filling
+    the full story duration (images shown in order, looped if needed)."""
+    if not image_paths:
+        raise RuntimeError("No images for background.")
+    xfade = float(get_cfg("transitions.crossfade_seconds", 0.4))
+    per = max(3.0, duration / max(1, len(image_paths)))
+    clips, total, idx, guard = [], 0.0, 0, 0
+    while guard < 400:
+        effective = total - max(0, len(clips) - 1) * xfade
+        if effective >= duration:
+            break
+        guard += 1
+        path = image_paths[idx % len(image_paths)]
+        idx += 1
+        seg_dur = min(per, duration - effective)
+        if seg_dur <= 0:
+            break
+        try:
+            clips.append(_ken_burns_from_image(path, seg_dur))
+            total += seg_dur
+        except Exception as exc:
+            log.warning("Ken-Burns failed for %s (%s).", path, exc)
+            continue
+    if not clips:
+        raise RuntimeError("No Ken-Burns clips built.")
+    return _concat_with_crossfade(clips, duration).set_duration(duration)
+
+
+def _build_background(keywords, duration, image_paths=None):
+    # (0) AI scene images (storybook illustrations that match the story).
+    if image_paths:
+        log.info("Background source: AI scene images (%d).", len(image_paths))
+        try:
+            return _images_background(image_paths, duration)
+        except Exception as exc:
+            log.warning("AI-image background failed (%s); trying stock footage.", exc)
+    # (1) Pexels stock VIDEO clips.
     try:
         clips = pexels_video.fetch_clips(keywords)
         if clips:
@@ -174,6 +228,7 @@ def _build_background(keywords, duration):
                 log.warning("Video background build failed (%s); using gradient.", exc)
     except Exception as exc:
         log.warning("Pexels video fetch error (%s); using gradient.", exc)
+    # (2) Calm gradient (always works).
     return _gradient_background(duration)
 
 
@@ -505,8 +560,12 @@ def _build_audio(voice_path, duration):
 # ==========================================================================
 # Public API
 # ==========================================================================
-def compose_video(voice_path, text, keywords, title=None, hook_text=None, out_path=None):
-    """Compose the full long-form video and write it to disk. Returns the path."""
+def compose_video(voice_path, text, keywords, title=None, hook_text=None, out_path=None, image_paths=None):
+    """Compose the full long-form video and write it to disk. Returns the path.
+
+    If `image_paths` (AI scene images) are provided they become the background
+    (Ken-Burns slideshow); otherwise Pexels stock footage; otherwise a gradient.
+    """
     from moviepy.editor import AudioFileClip, CompositeVideoClip
 
     if not voice_path or not os.path.exists(voice_path):
@@ -526,7 +585,7 @@ def compose_video(voice_path, text, keywords, title=None, hook_text=None, out_pa
     log.info("Story video duration: %.1fs (%.1f min).", duration, duration / 60.0)
 
     # 1) Background + grade.
-    background = _build_background(keywords, duration).set_duration(duration)
+    background = _build_background(keywords, duration, image_paths=image_paths).set_duration(duration)
     if get_cfg("grade.enabled", True):
         background = _apply_color_grade(background).set_duration(duration)
 
