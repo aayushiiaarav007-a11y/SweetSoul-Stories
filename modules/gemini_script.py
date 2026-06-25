@@ -37,7 +37,7 @@ HOOK_CANDIDATES = [
     "This little rescue story will stay with you all day.",
     "Stop scrolling — you need to see this right now.",
     "This tiny kitten just did something nobody saw coming.",
-    "This golden retriever just became everyone's favorite hero.",
+    "This little puppy just became everyone's favorite hero.",
     "What happened next made the whole family burst into tears.",
     "This is the friendship nobody asked for but everyone needed.",
     "One small moment, one enormous amount of love.",
@@ -72,7 +72,7 @@ DEFAULT_KEYWORDS = [
 
 # Diverse topic pool — randomly picked each run for variety
 TOPIC_POOL = [
-    "a golden retriever puppy meeting a baby for the first time",
+    "a puppy meeting a baby for the first time",
     "a kitten and puppy becoming best friends",
     "a toddler teaching a puppy to sit",
     "a baby's first giggle triggered by a playful dog",
@@ -83,10 +83,10 @@ TOPIC_POOL = [
     "a toddler and puppy taking a nap together",
     "a dog proudly carrying his puppy to meet the family baby",
     "a kitten learning to play fetch with a laughing toddler",
-    "a baby sharing snacks with a patient golden retriever",
+    "a baby sharing snacks with a patient gentle dog",
     "a puppy and kitten cuddling under a warm blanket",
     "a toddler reading a picture book to three sleepy puppies",
-    "a baby's first steps guided by a loyal labrador",
+    "a baby's first steps guided by a loyal gentle dog",
     "a cat tucking in a newborn baby every night",
     "a puppy howling along to a baby's laughter",
     "a toddler and a fluffy cat playing hide and seek",
@@ -178,6 +178,13 @@ read aloud at a gentle pace). Requirements:
 - Tell a tiny heartwarming story about adorable animals PLAYING and having fun
   together (puppies, kittens, dogs, cats) and/or playing with cute human
   children (babies and toddlers) - playful, joyful "aww" moments.
+- Do NOT state a specific dog or cat BREED (no "golden retriever", "labrador",
+  "husky", etc.). The footage is random stock video, so we never know the real
+  breed. Refer to the animal generically: "the puppy", "this little dog",
+  "the fluffy pup", "the kitten", "the cat".
+- Do NOT give the pet a name. Do NOT use common pet names like "Leo", "Max",
+  "Bella", "Luna", "Charlie", "Milo". Refer to it only as "the puppy", "the
+  little one", "this sweet pup", etc. Never call the animal by a proper name.
 - Keep it SHORT and punchy — 30 seconds max when spoken. Do NOT ramble.
 - End with this exact call to action: "{cta}"
 - Plain spoken sentences only. No emojis, no stage directions, no markdown,
