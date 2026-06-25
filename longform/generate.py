@@ -30,6 +30,7 @@ from modules.config import OUTPUT_DIR, BASE_DIR, get_cfg, setup_logging
 from modules import story as story_mod
 from modules import tts
 from modules import video_composer
+from modules import ai_images as ai_images_mod
 from modules import thumbnail as thumb_mod
 
 log = logging.getLogger("moraltales.generate")
@@ -139,6 +140,16 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
         log.error("Voiceover synthesis failed; skipping this episode.")
         return None
 
+    # 2b) AI scene images (storybook illustrations that match the story's
+    # characters). In test mode generate only a few to stay fast/cheap. On any
+    # failure this returns [] and the composer falls back to stock footage.
+    try:
+        max_imgs = 4 if test else None
+        image_paths = ai_images_mod.generate_scene_images(story.scenes, max_images=max_imgs)
+    except Exception as exc:
+        log.warning("AI image generation errored (%s); using stock footage.", exc)
+        image_paths = []
+
     # 3) Compose video
     try:
         out = video_composer.compose_video(
@@ -148,6 +159,7 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
             title=story.title,
             hook_text=story.hook,
             out_path=video_path,
+            image_paths=image_paths,
         )
     except Exception as exc:
         log.exception("Video composition failed (%s).", exc)
