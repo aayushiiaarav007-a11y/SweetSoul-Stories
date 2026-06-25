@@ -18,9 +18,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "test = fast ~1-min build (no upload) | preview = real 5-7 min build (no upload) | full = real build + upload"
+        description: "full = real build + upload (default) | preview = real build, no upload | test = fast 1-min build, no upload"
         required: false
-        default: "preview"
+        default: "full"
       upload_youtube:
         description: "Upload to YouTube (only applies in full mode)"
         required: false
