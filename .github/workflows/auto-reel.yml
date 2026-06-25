@@ -83,10 +83,15 @@ jobs:
           SUCCESS=0
           download_track() {
             local fname="$1" url="$2" dest="assets/music/$1"
-            curl -fsSL --max-time 30 -o "$dest" "$url" 2>/dev/null || { rm -f "$dest"; echo "SKIP $fname"; return 1; }
+            curl -fsSL -A "Mozilla/5.0" --max-time 60 -o "$dest" "$url" 2>/dev/null || { rm -f "$dest"; echo "SKIP $fname"; return 1; }
             local size; size=$(stat -c%s "$dest" 2>/dev/null || echo 0)
-            if [ "$size" -gt 10000 ]; then echo "OK $fname"; return 0; fi
-            rm -f "$dest"; echo "SKIP $fname (too small)"; return 1
+            if [ "$size" -le 20000 ]; then rm -f "$dest"; echo "SKIP $fname (too small)"; return 1; fi
+            # Reject HTML/error pages that got saved as .mp3 (a common cause of
+            # only 1 valid track surviving -> same music on every reel).
+            if head -c 32 "$dest" | grep -qiE "<!doctype|<html|<\?xml"; then
+              rm -f "$dest"; echo "SKIP $fname (not audio)"; return 1
+            fi
+            echo "OK $fname"; return 0
           }
           download_track "01_happy_ukulele.mp3"  "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bda.mp3"  && SUCCESS=$((SUCCESS+1)) || true
           download_track "02_uplifting_pop.mp3"  "https://cdn.pixabay.com/download/audio/2022/03/24/audio_2cba25c436.mp3"  && SUCCESS=$((SUCCESS+1)) || true
@@ -98,6 +103,7 @@ jobs:
           download_track "08_sweet_moments.mp3"  "https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3"  && SUCCESS=$((SUCCESS+1)) || true
           download_track "09_warm_heart.mp3"     "https://cdn.pixabay.com/download/audio/2021/08/08/audio_dc39bde6cf.mp3"  && SUCCESS=$((SUCCESS+1)) || true
           echo "Music ready: $SUCCESS / 9 tracks"
+          if [ "$SUCCESS" -le 1 ]; then echo "WARNING: <=1 track downloaded -> reels would repeat the same music. Check these Pixabay links."; fi
           ls -la assets/music/
 
       - name: Install Python dependencies
