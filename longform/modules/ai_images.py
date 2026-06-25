@@ -75,9 +75,15 @@ def _fetch_one(requests, prompt, dest, width, height, seed):
     )
     url = POLLINATIONS_URL + urllib.parse.quote(full)
     params = {"width": width, "height": height, "nologo": "true", "seed": seed, "model": get_cfg("ai_images.model", "flux")}
-    for attempt in range(1, 3):
+    for attempt in range(1, 4):
         try:
             with requests.get(url, params=params, timeout=90, stream=True) as resp:
+                if resp.status_code == 429:
+                    # Rate limited: back off progressively (turbo is shared/free).
+                    wait = 5 * attempt
+                    log.warning("Pollinations 429 (attempt %d) for %r; waiting %ds", attempt, prompt[:40], wait)
+                    time.sleep(wait)
+                    continue
                 if resp.status_code != 200:
                     log.warning("Pollinations HTTP %s (attempt %d) for %r", resp.status_code, attempt, prompt[:50])
                     time.sleep(2 * attempt)

@@ -338,15 +338,36 @@ def _build_caption_clips(text, duration, skip_before=0.0):
     fontsize = get_cfg("captions.fontsize", 56)
     color = get_cfg("captions.color", "white")
     stroke_color = get_cfg("captions.stroke_color", "black")
-    stroke_width = get_cfg("captions.stroke_width", 3)
+    stroke_width = get_cfg("captions.stroke_width", 4)
     font = get_cfg("captions.font", "DejaVu-Sans-Bold")
     y_ratio = get_cfg("captions.position_y_ratio", 0.82)
-    bg_opacity = float(get_cfg("captions.bg_opacity", 0.42))
+    bg_opacity = float(get_cfg("captions.bg_opacity", 0.4))
     bg_color = _hex_to_rgb(get_cfg("captions.bg_color", "#000000"))
-    rounded = bool(get_cfg("captions.rounded", True))
     max_w = int(W * 0.86)
+    y_top = int(H * y_ratio)
 
     clips = []
+
+    # ONE persistent semi-transparent band behind all captions (instead of a
+    # separate rounded ColorClip+numpy-mask per caption). This is the key
+    # memory fix: the old per-caption backdrops created hundreds of clips +
+    # mask arrays and exhausted the runner's RAM mid-render.
+    if bg_opacity > 0:
+        try:
+            from moviepy.editor import ColorClip
+            band_h = int(fontsize * 2.6)
+            band_start = max(0.0, skip_before)
+            band = (
+                ColorClip(size=(int(W * 0.92), band_h), color=bg_color)
+                .set_opacity(bg_opacity)
+                .set_start(band_start)
+                .set_duration(max(0.2, duration - band_start))
+                .set_position(("center", int(y_top - band_h * 0.28)))
+            )
+            clips.append(band)
+        except Exception as exc:
+            log.warning("Caption band failed (%s); text only.", exc)
+
     for g in groups:
         if g["start"] < skip_before:
             continue
@@ -354,21 +375,13 @@ def _build_caption_clips(text, duration, skip_before=0.0):
         if tc is None:
             continue
         seg_dur = max(0.2, g["end"] - g["start"])
-        y_top = int(H * y_ratio)
         try:
             tc = tc.set_start(g["start"]).set_duration(seg_dur).set_position(("center", y_top))
         except Exception as exc:
             log.warning("Could not place caption (%s).", exc)
             continue
-        try:
-            tw, th = tc.size
-            bd = _make_backdrop(tw, th, g["start"], seg_dur, y_top, bg_opacity, bg_color, rounded)
-            if bd is not None:
-                clips.append(bd)
-        except Exception:
-            pass
         clips.append(tc)
-    log.info("Built %d caption layer(s) (incl. backdrops).", len(clips))
+    log.info("Built %d caption layer(s) (1 band + text).", len(clips))
     return clips
 
 
