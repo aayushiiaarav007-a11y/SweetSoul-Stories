@@ -114,11 +114,12 @@ _DEFAULT_CONFIG = {
     "music": {"enabled": True, "volume": 0.12, "synth_fallback": True, "synth_volume": 0.08},
     "ai_images": {
         "enabled": True,
-        "model": "flux",
+        "model": "turbo",
         "style": "soft warm childrens storybook illustration, gentle cartoon style, wholesome, cinematic lighting, no text, no words, no letters",
-        "max_images": 14,
-        "width": 1920,
-        "height": 1080,
+        "max_images": 9,
+        "width": 1280,
+        "height": 720,
+        "workers": 5,
     },
     "youtube": {
         "category_id": "24",
