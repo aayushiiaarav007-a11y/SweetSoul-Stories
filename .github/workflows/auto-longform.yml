@@ -18,9 +18,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "test = fast 1-min build NO upload | full = real 5-7 min build"
+        description: "test = fast ~1-min build (no upload) | preview = real 5-7 min build (no upload) | full = real build + upload"
         required: false
-        default: "test"
+        default: "preview"
       upload_youtube:
         description: "Upload to YouTube (only applies in full mode)"
         required: false
@@ -92,8 +92,8 @@ jobs:
           python generate.py --test
           echo "TEST build complete. Download the artifact below to review the look."
 
-      - name: Generate (FULL = real 5-7 min story)
-        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'full') }}
+      - name: Generate (FULL real 5-7 min story — schedule, preview or full)
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && (github.event.inputs.mode == 'full' || github.event.inputs.mode == 'preview')) }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
@@ -101,8 +101,9 @@ jobs:
           TTS_VOICE: ${{ secrets.TTS_VOICE }}
         run: |
           python generate.py --count 1
+          echo "Build complete. If this was 'preview', download the artifact below to watch the REAL video before it ever goes to YouTube."
 
-      - name: Upload to YouTube (FULL mode only)
+      - name: Upload to YouTube (FULL mode / scheduled only — NOT preview/test)
         if: ${{ (github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'full' && github.event.inputs.upload_youtube != 'false') }}
         env:
           YT_CLIENT_SECRET_JSON: ${{ secrets.YT_CLIENT_SECRET_JSON }}
