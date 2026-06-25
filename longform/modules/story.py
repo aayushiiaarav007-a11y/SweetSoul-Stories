@@ -57,8 +57,10 @@ _PROMPT_TEMPLATE = """You are the head writer for a faceless YouTube channel cal
 every day. The audience is families in the USA. The narration is read aloud by
 a single warm, gentle storyteller voice.
 
-Write ONE complete story of about {words} words (roughly 5 to 7 minutes when
-read aloud at a calm, clear pace). Follow ALL of these rules:
+Write ONE complete story of about {words} words (around 5 minutes when read
+aloud at a calm, clear pace; NEVER longer than 7 minutes). Be concise - tell
+the story tight and well-paced, do NOT pad, ramble or repeat. Follow ALL of
+these rules:
 
 HOOK (very important):
 - The first 1-2 sentences MUST be an irresistible hook that makes the viewer
@@ -80,6 +82,12 @@ MORAL:
 - The story must clearly teach the lesson: {lesson}.
 - Near the end, state the moral plainly in one clean sentence starting with
   "The moral of the story is".
+
+EMOTION (very important):
+- Make the story genuinely HEART-TOUCHING - warm, emotional, the kind that
+  gives a gentle lump in the throat or happy tears by the end - while staying
+  simple and wholesome for children. Build a real emotional connection with the
+  main character so the ending truly lands.
 
 CLOSE:
 - End with this exact spoken call to action: "{cta}"

@@ -55,16 +55,16 @@ _DEFAULT_CONFIG = {
         "width": 1920,
         "height": 1080,
         "fps": 24,
-        "target_duration_seconds": 360,
-        "min_duration_seconds": 300,
-        "max_duration_seconds": 460,
+        "target_duration_seconds": 300,
+        "min_duration_seconds": 240,
+        "max_duration_seconds": 430,
         "clip_cut_seconds": 8.0,
         "preset": "veryfast",
         "crf": 22,
     },
     "story": {
-        "target_words": 950,
-        "min_words": 750,
+        "target_words": 620,
+        "min_words": 480,
     },
     "palette": {
         "gradient_top": [25, 32, 64],
@@ -88,7 +88,7 @@ _DEFAULT_CONFIG = {
     "outro": {"enabled": True, "duration_seconds": 5.0, "fontsize": 64},
     "transitions": {"crossfade_seconds": 0.4},
     "grade": {"enabled": True, "saturation": 1.1, "brightness": 6, "contrast": 0.08},
-    "tts": {"voice": "en-US-AriaNeural", "rate": "-6%", "pitch": "+0Hz"},
+    "tts": {"voice": "en-US-AriaNeural", "rate": "-3%", "pitch": "+0Hz"},
     "gemini": {
         "model": "gemini-2.0-flash",
         "model_candidates": [
