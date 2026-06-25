@@ -57,8 +57,10 @@ _PROMPT_TEMPLATE = """You are the head writer for a faceless YouTube channel cal
 every day. The audience is families in the USA. The narration is read aloud by
 a single warm, gentle storyteller voice.
 
-Write ONE complete story of about {words} words (roughly 5 to 7 minutes when
-read aloud at a calm, clear pace). Follow ALL of these rules:
+Write ONE complete story of about {words} words (around 5 minutes when read
+aloud at a calm, clear pace; NEVER longer than 7 minutes). Be concise - tell
+the story tight and well-paced, do NOT pad, ramble or repeat. Follow ALL of
+these rules:
 
 HOOK (very important):
 - The first 1-2 sentences MUST be an irresistible hook that makes the viewer
@@ -81,6 +83,12 @@ MORAL:
 - Near the end, state the moral plainly in one clean sentence starting with
   "The moral of the story is".
 
+EMOTION (very important):
+- Make the story genuinely HEART-TOUCHING - warm, emotional, the kind that
+  gives a gentle lump in the throat or happy tears by the end - while staying
+  simple and wholesome for children. Build a real emotional connection with the
+  main character so the ending truly lands.
+
 CLOSE:
 - End with this exact spoken call to action: "{cta}"
 
@@ -98,6 +106,12 @@ Return ONLY a JSON object (no code fences) with these keys:
   "moral": the one-sentence moral,
   "text": the FULL narration as one string (including the hook at the start
           and the call to action at the end),
+  "scenes": an array of 10-14 SHORT visual descriptions, IN STORY ORDER, one per
+          key beat of the story. Each MUST describe the CHARACTERS + setting +
+          action of that moment so an illustrator could draw it, e.g.
+          "a poor young boy in torn clothes crying beside a forest river at
+          dawn", "a kind old woman handing bread to a hungry child". Keep each
+          to a single vivid sentence. NO text/words in the scene.
   "keywords": an array of 5-8 short stock-footage search phrases that match the
           SETTING and ACTION of the story (e.g. "forest path sunlight",
           "child running village", "old man smiling"). Describe scenery and
@@ -112,18 +126,39 @@ class Story:
     hook: str = ""
     moral: str = ""
     keywords: list = field(default_factory=list)
+    scenes: list = field(default_factory=list)
 
     def __post_init__(self):
         if not self.keywords:
             self.keywords = list(get_cfg("pexels.default_keywords", []))
         if not self.hook:
-            # Use the first sentence as the hook if none supplied.
             parts = re.split(r"(?<=[.!?])\s+", self.text.strip(), maxsplit=1)
             self.hook = parts[0] if parts else self.title
+        if not self.scenes:
+            self.scenes = derive_scenes_from_text(self.text)
 
     @property
     def word_count(self):
         return len(self.text.split())
+
+
+def derive_scenes_from_text(text, target=12):
+    """Fallback: split the narration into ~target visual scene prompts so AI
+    images can still be generated when the model didn't return a 'scenes' list
+    (e.g. the bundled fallback stories)."""
+    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", (text or "").strip()) if s.strip()]
+    if not sentences:
+        return []
+    target = max(4, min(target, len(sentences)))
+    per = max(1, len(sentences) // target)
+    scenes = []
+    for i in range(0, len(sentences), per):
+        chunk = " ".join(sentences[i : i + per]).strip()
+        if chunk:
+            scenes.append(chunk)
+        if len(scenes) >= target:
+            break
+    return scenes
 
 
 def _build_prompt(lesson, topic):
@@ -194,6 +229,7 @@ def _generate_with_gemini(lesson, topic):
                 hook=str(data.get("hook") or "").strip(),
                 moral=str(data.get("moral") or "").strip(),
                 keywords=[str(k).strip() for k in data.get("keywords", []) if str(k).strip()],
+                scenes=[str(s).strip() for s in data.get("scenes", []) if str(s).strip()],
             )
             cta = get_cfg("channel.cta", "")
             if cta and cta.lower() not in story.text.lower():
@@ -232,6 +268,7 @@ def load_fallback_stories():
                         hook=str(item.get("hook", "")),
                         moral=str(item.get("moral", "")),
                         keywords=list(item.get("keywords", [])),
+                        scenes=list(item.get("scenes", [])),
                     )
                 )
             except Exception:

@@ -75,6 +75,12 @@ jobs:
           dl "01_calm_piano.mp3"     "https://cdn.pixabay.com/download/audio/2021/08/08/audio_dc39bde6cf.mp3" || true
           dl "02_gentle_ambient.mp3" "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" || true
           dl "03_soft_strings.mp3"   "https://cdn.pixabay.com/download/audio/2022/10/30/audio_c8f4bb65b0.mp3" || true
+          dl "04_warm_piano.mp3"     "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bda.mp3" || true
+          dl "05_uplifting.mp3"      "https://cdn.pixabay.com/download/audio/2022/03/24/audio_2cba25c436.mp3" || true
+          dl "06_sunny.mp3"          "https://cdn.pixabay.com/download/audio/2023/02/28/audio_bb6f9a5552.mp3" || true
+          dl "07_cheerful.mp3"       "https://cdn.pixabay.com/download/audio/2022/08/31/audio_1c9e73e5cf.mp3" || true
+          dl "08_emotional.mp3"      "https://cdn.pixabay.com/download/audio/2023/01/16/audio_8b576799c1.mp3" || true
+          dl "09_heartfelt.mp3"      "https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3" || true
           ls -la assets/music/ || true
 
       - name: Install Python dependencies
