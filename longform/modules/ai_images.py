@@ -21,7 +21,7 @@ import os
 import random
 import time
 import urllib.parse
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
 
 from .config import IMAGES_DIR, get_cfg
 
@@ -140,10 +140,12 @@ def generate_scene_images(scene_prompts, max_images=None):
         return i, (dest if ok else None)
 
     t0 = time.time()
-    with ThreadPoolExecutor(max_workers=workers) as ex:
-        futures = [ex.submit(_task, i, p) for i, p in enumerate(scene_prompts)]
-        done = 0
-        for fut in as_completed(futures):
+    budget = float(get_cfg("ai_images.time_budget_seconds", 180))
+    ex = ThreadPoolExecutor(max_workers=workers)
+    futures = [ex.submit(_task, i, p) for i, p in enumerate(scene_prompts)]
+    done = 0
+    try:
+        for fut in as_completed(futures, timeout=budget):
             try:
                 i, path = fut.result()
             except Exception as exc:
@@ -155,6 +157,15 @@ def generate_scene_images(scene_prompts, max_images=None):
                 log.info("AI image ready (%d/%d done).", done, len(scene_prompts))
             else:
                 log.warning("AI image %d failed.", i + 1)
+    except FuturesTimeout:
+        log.warning("AI image time budget (%.0fs) reached; proceeding with %d image(s).",
+                    budget, len(results))
+    finally:
+        # Never block the whole job waiting on slow/ratelimited image requests.
+        try:
+            ex.shutdown(wait=False, cancel_futures=True)
+        except TypeError:
+            ex.shutdown(wait=False)
 
     paths = [results[i] for i in sorted(results.keys())]
     if paths:
