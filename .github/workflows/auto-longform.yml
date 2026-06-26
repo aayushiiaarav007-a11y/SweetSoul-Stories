@@ -94,6 +94,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           TTS_VOICE: ${{ secrets.TTS_VOICE }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
         run: |
           python generate.py --test
           echo "TEST build complete. Download the artifact below to review the look."
@@ -105,6 +106,7 @@ jobs:
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           TTS_VOICE: ${{ secrets.TTS_VOICE }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
         run: |
           python generate.py --count 1
           echo "Build complete. If this was 'preview', download the artifact below to watch the REAL video before it ever goes to YouTube."

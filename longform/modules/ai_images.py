@@ -23,7 +23,7 @@ import time
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
 
-from .config import IMAGES_DIR, get_cfg
+from .config import IMAGES_DIR, get_cfg, get_env
 
 log = logging.getLogger("moraltales.aiimages")
 
@@ -75,9 +75,17 @@ def _fetch_one(requests, prompt, dest, width, height, seed):
     )
     url = POLLINATIONS_URL + urllib.parse.quote(full)
     params = {"width": width, "height": height, "nologo": "true", "seed": seed, "model": get_cfg("ai_images.model", "flux")}
+    # A FREE Pollinations API token (sign up at pollinations.ai) hugely reduces
+    # 429 rate-limiting, so most/all scene images succeed -> proper per-scene
+    # character visuals. Without it we still try (and fall back to footage).
+    headers = {}
+    token = get_env("POLLINATIONS_TOKEN")
+    if token:
+        headers["Authorization"] = "Bearer " + token
+        params["token"] = token
     for attempt in range(1, 4):
         try:
-            with requests.get(url, params=params, timeout=90, stream=True) as resp:
+            with requests.get(url, params=params, headers=headers, timeout=90, stream=True) as resp:
                 if resp.status_code == 429:
                     # Rate limited: back off progressively (turbo is shared/free).
                     wait = 5 * attempt
