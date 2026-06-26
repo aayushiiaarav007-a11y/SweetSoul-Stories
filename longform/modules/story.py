@@ -192,20 +192,26 @@ def _parse_model_json(raw):
         return None
 
 
+def _gemini_keys():
+    """All configured Gemini keys, in order. Add GEMINI_API_KEY_2 / _3 (fresh
+    free keys from other Google accounts) to survive the daily free quota."""
+    keys = []
+    for name in ("GEMINI_API_KEY", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3"):
+        v = get_env(name)
+        if v and v not in keys:
+            keys.append(v)
+    return keys
+
+
 def _generate_with_gemini(lesson, topic):
-    api_key = get_env("GEMINI_API_KEY")
-    if not api_key:
+    keys = _gemini_keys()
+    if not keys:
         log.warning("GEMINI_API_KEY not set - using local stories.json fallback.")
         return None
     try:
         import google.generativeai as genai
     except Exception as exc:
         log.warning("google-generativeai not available (%s); using fallback.", exc)
-        return None
-    try:
-        genai.configure(api_key=api_key)
-    except Exception as exc:
-        log.warning("Could not configure Gemini (%s); using fallback.", exc)
         return None
 
     default_model = get_env("GEMINI_MODEL", get_cfg("gemini.model", "gemini-2.0-flash"))
@@ -216,43 +222,51 @@ def _generate_with_gemini(lesson, topic):
     temperature = get_cfg("gemini.temperature", 0.95)
     min_words = int(get_cfg("story.min_words", 750))
 
-    for model_name in ordered:
+    for ki, key in enumerate(keys, 1):
         try:
-            log.info("Requesting story from Gemini model '%s'...", model_name)
-            model = genai.GenerativeModel(model_name)
-            resp = model.generate_content(
-                prompt, generation_config={"temperature": temperature}
-            )
-            raw = getattr(resp, "text", None)
-            data = _parse_model_json(raw)
-            if not data or not data.get("text"):
-                log.warning("Model '%s' returned no usable text; trying next.", model_name)
-                continue
-            story = Story(
-                title=str(data.get("title") or "A Moral Story").strip(),
-                text=str(data["text"]).strip(),
-                hook=str(data.get("hook") or "").strip(),
-                moral=str(data.get("moral") or "").strip(),
-                keywords=[str(k).strip() for k in data.get("keywords", []) if str(k).strip()],
-                scenes=[str(s).strip() for s in data.get("scenes", []) if str(s).strip()],
-                main_character=str(data.get("main_character") or "").strip(),
-            )
-            cta = get_cfg("channel.cta", "")
-            if cta and cta.lower() not in story.text.lower():
-                story.text = story.text.rstrip() + " " + cta
-            if story.word_count < min_words:
-                log.warning(
-                    "Model '%s' story too short (%d words); trying next.",
-                    model_name, story.word_count,
-                )
-                continue
-            log.info("Gemini story ready via '%s' (%d words).", model_name, story.word_count)
-            return story
+            genai.configure(api_key=key)
         except Exception as exc:
-            log.warning("Gemini model '%s' failed (%s); trying next.", model_name, exc)
+            log.warning("Could not configure Gemini key #%d (%s); trying next key.", ki, exc)
             continue
+        log.info("Trying Gemini key #%d of %d ...", ki, len(keys))
+        for model_name in ordered:
+            try:
+                log.info("Requesting story from Gemini model '%s' (key #%d)...", model_name, ki)
+                model = genai.GenerativeModel(model_name)
+                resp = model.generate_content(
+                    prompt, generation_config={"temperature": temperature}
+                )
+                raw = getattr(resp, "text", None)
+                data = _parse_model_json(raw)
+                if not data or not data.get("text"):
+                    log.warning("Model '%s' returned no usable text; trying next.", model_name)
+                    continue
+                story = Story(
+                    title=str(data.get("title") or "A Moral Story").strip(),
+                    text=str(data["text"]).strip(),
+                    hook=str(data.get("hook") or "").strip(),
+                    moral=str(data.get("moral") or "").strip(),
+                    keywords=[str(k).strip() for k in data.get("keywords", []) if str(k).strip()],
+                    scenes=[str(s).strip() for s in data.get("scenes", []) if str(s).strip()],
+                    main_character=str(data.get("main_character") or "").strip(),
+                )
+                cta = get_cfg("channel.cta", "")
+                if cta and cta.lower() not in story.text.lower():
+                    story.text = story.text.rstrip() + " " + cta
+                if story.word_count < min_words:
+                    log.warning(
+                        "Model '%s' story too short (%d words); trying next.",
+                        model_name, story.word_count,
+                    )
+                    continue
+                log.info("Gemini story ready via '%s' key #%d (%d words).", model_name, ki, story.word_count)
+                return story
+            except Exception as exc:
+                log.warning("Gemini key #%d model '%s' failed (%s); trying next.", ki, model_name, exc)
+                continue
+        log.warning("Gemini key #%d exhausted/failed; trying next key.", ki)
 
-    log.warning("All Gemini model candidates failed - using local stories.json.")
+    log.warning("All Gemini keys/models failed (likely daily quota) - using local stories.json.")
     return None
 
 
