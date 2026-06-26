@@ -57,10 +57,10 @@ _PROMPT_TEMPLATE = """You are the head writer for a faceless YouTube channel cal
 every day. The audience is families in the USA. The narration is read aloud by
 a single warm, gentle storyteller voice.
 
-Write ONE complete story of about {words} words (around 5 minutes when read
-aloud at a calm, clear pace; NEVER longer than 7 minutes). Be concise - tell
-the story tight and well-paced, do NOT pad, ramble or repeat. Follow ALL of
-these rules:
+Write ONE complete story of about {words} words. LENGTH IS IMPORTANT: it must
+be AT LEAST 4 minutes when read aloud (~650 words) and at most 7 minutes
+(~1000 words). Do NOT write a short story - develop the scenes fully. Follow
+ALL of these rules:
 
 HOOK (very important):
 - The first 1-2 sentences MUST be an irresistible hook that makes the viewer
@@ -104,6 +104,10 @@ Return ONLY a JSON object (no code fences) with these keys:
   "title": a short, curiosity-driven title (max 9 words, no quotes),
   "hook": the single opening hook sentence (used for the thumbnail too),
   "moral": the one-sentence moral,
+  "main_character": a SHORT fixed visual description of the main character so
+          they look the SAME in every scene, e.g. "a 7-year-old boy with messy
+          black hair, a red shirt and bare feet" or "a small fluffy brown
+          puppy with a white patch". Keep it concrete and consistent.
   "text": the FULL narration as one string (including the hook at the start
           and the call to action at the end),
   "scenes": an array of 10-14 SHORT visual descriptions, IN STORY ORDER, one per
@@ -127,6 +131,7 @@ class Story:
     moral: str = ""
     keywords: list = field(default_factory=list)
     scenes: list = field(default_factory=list)
+    main_character: str = ""
 
     def __post_init__(self):
         if not self.keywords:
@@ -230,6 +235,7 @@ def _generate_with_gemini(lesson, topic):
                 moral=str(data.get("moral") or "").strip(),
                 keywords=[str(k).strip() for k in data.get("keywords", []) if str(k).strip()],
                 scenes=[str(s).strip() for s in data.get("scenes", []) if str(s).strip()],
+                main_character=str(data.get("main_character") or "").strip(),
             )
             cta = get_cfg("channel.cta", "")
             if cta and cta.lower() not in story.text.lower():
@@ -269,6 +275,7 @@ def load_fallback_stories():
                         moral=str(item.get("moral", "")),
                         keywords=list(item.get("keywords", [])),
                         scenes=list(item.get("scenes", [])),
+                        main_character=str(item.get("main_character", "")),
                     )
                 )
             except Exception:

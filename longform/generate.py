@@ -158,12 +158,15 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
         log.error("Voiceover synthesis failed; skipping this episode.")
         return None
 
-    # 2b) AI scene images (storybook illustrations that match the story's
-    # characters). In test mode generate only a few to stay fast/cheap. On any
-    # failure this returns [] and the composer falls back to stock footage.
+    # 2b) AI scene images. Prepend the fixed main-character description to each
+    # scene so the SAME character appears across all scenes (consistency).
     try:
         max_imgs = 4 if test else None
-        image_paths = ai_images_mod.generate_scene_images(story.scenes, max_images=max_imgs)
+        char = (getattr(story, "main_character", "") or "").strip()
+        scene_prompts = story.scenes
+        if char:
+            scene_prompts = [f"{char}. {s}" for s in story.scenes]
+        image_paths = ai_images_mod.generate_scene_images(scene_prompts, max_images=max_imgs)
     except Exception as exc:
         log.warning("AI image generation errored (%s); using stock footage.", exc)
         image_paths = []
