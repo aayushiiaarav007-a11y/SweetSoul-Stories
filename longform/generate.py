@@ -174,26 +174,21 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
     # If too few AI images came back (e.g. the free image service rate-limited
     # us), DON'T stretch 2 images across a 5-min video - that looks terrible.
     # Drop them so the composer uses real Pexels footage that changes per scene.
-    min_required = int(get_cfg("ai_images.min_required", 5))
-    if image_paths and len(image_paths) < min_required and not test:
-        log.warning(
-            "Only %d AI image(s) (< %d required); using real footage instead "
-            "for varied, scene-matched visuals.", len(image_paths), min_required
-        )
-        image_paths = []
+    # If too few AI images came back we still keep them - they'll be MIXED with
+    # scene footage below so the character appears while footage adds variety.
 
-    # 2c) If we're not using AI images, fetch SCENE-MATCHED footage in story
-    # order so the visuals follow the storyline (boy -> dog -> river -> ...).
+    # 2c) Always fetch SCENE-MATCHED footage too, so we can mix it with the AI
+    # character images (varied, non-repeating, story-following visuals).
     clip_paths = []
-    if not image_paths and not test:
+    if not test:
         try:
             queries = _scene_queries(story)
-            clip_paths = pexels_mod.fetch_scene_clips(queries, max_clips=14)
+            clip_paths = pexels_mod.fetch_scene_clips(queries, max_clips=12)
         except Exception as exc:
-            log.warning("Scene footage fetch errored (%s); composer will keyword-fetch.", exc)
+            log.warning("Scene footage fetch errored (%s).", exc)
             clip_paths = []
 
-    # 3) Compose video
+    # 3) Compose video (composer mixes images + footage when both exist)
     try:
         out = video_composer.compose_video(
             voice_path=voice_path,

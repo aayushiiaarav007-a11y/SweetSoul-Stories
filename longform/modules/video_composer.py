@@ -223,15 +223,73 @@ def _images_background(image_paths, duration):
     return _concat_with_crossfade(clips, duration).set_duration(duration)
 
 
+def _mixed_background(image_paths, clip_paths, duration):
+    """Interleave AI character images (static) with scene footage clips, IN
+    ORDER, crossfaded - so the character appears through the video AND the
+    visuals stay varied/non-repeating even when only a few AI images succeed.
+    """
+    from moviepy.editor import VideoFileClip, ImageClip
+
+    cut = float(get_cfg("video.clip_cut_seconds", 6.0))
+    # Build an interleaved, ordered asset list: img, clip, img, clip ...
+    assets = []  # (kind, path)
+    imgs = list(image_paths or [])
+    clips = list(clip_paths or [])
+    i = j = 0
+    while i < len(imgs) or j < len(clips):
+        if i < len(imgs):
+            assets.append(("img", imgs[i])); i += 1
+        if j < len(clips):
+            assets.append(("clip", clips[j])); j += 1
+    if not assets:
+        raise RuntimeError("No mixed assets.")
+
+    segments, total, idx, guard = [], 0.0, 0, 0
+    max_segments = int(duration / max(1.5, cut)) + 10
+    while guard < 600 and len(segments) < max_segments:
+        xfade = float(get_cfg("transitions.crossfade_seconds", 0.4))
+        if total - max(0, len(segments) - 1) * xfade >= duration:
+            break
+        guard += 1
+        kind, path = assets[idx % len(assets)]
+        idx += 1
+        try:
+            if kind == "img":
+                seg = _fit_cover(ImageClip(path).set_duration(cut)).set_position(("center", "center"))
+            else:
+                vc = VideoFileClip(path, audio=False)
+                seg_dur = min(cut, vc.duration or cut)
+                if seg_dur <= 0:
+                    vc.close(); continue
+                seg = _fit_cover(vc.subclip(0, seg_dur))
+            segments.append(seg)
+            total += cut
+        except Exception as exc:
+            log.warning("Mixed segment failed (%s); skipping.", exc)
+            continue
+    if not segments:
+        raise RuntimeError("No mixed segments built.")
+    return _concat_with_crossfade(segments, duration).set_duration(duration)
+
+
 def _build_background(keywords, duration, image_paths=None, clip_paths=None):
-    # (0) AI scene images (storybook illustrations that match the story).
+    # (0) BOTH AI character images + scene footage -> mixed (best free result:
+    # character shows through the video, footage keeps it varied/non-repeating).
+    if image_paths and clip_paths:
+        log.info("Background source: MIXED AI images (%d) + scene footage (%d).",
+                 len(image_paths), len(clip_paths))
+        try:
+            return _mixed_background(image_paths, clip_paths, duration)
+        except Exception as exc:
+            log.warning("Mixed background failed (%s); trying images only.", exc)
+    # (0a) Only AI scene images.
     if image_paths:
         log.info("Background source: AI scene images (%d).", len(image_paths))
         try:
             return _images_background(image_paths, duration)
         except Exception as exc:
             log.warning("AI-image background failed (%s); trying scene footage.", exc)
-    # (0b) Scene-matched footage IN ORDER (follows the storyline: boy/dog/river).
+    # (0b) Only scene-matched footage IN ORDER.
     if clip_paths:
         log.info("Background source: scene-matched footage IN ORDER (%d).", len(clip_paths))
         try:

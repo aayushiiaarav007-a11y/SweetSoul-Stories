@@ -74,7 +74,8 @@ def _fetch_one(requests, prompt, dest, width, height, seed):
         f"{prompt}"
     )
     url = POLLINATIONS_URL + urllib.parse.quote(full)
-    params = {"width": width, "height": height, "nologo": "true", "seed": seed, "model": get_cfg("ai_images.model", "flux")}
+    params = {"width": width, "height": height, "nologo": "true", "seed": seed,
+              "model": get_cfg("ai_images.model", "flux"), "referrer": "moraltales"}
     # A FREE Pollinations API token (sign up at pollinations.ai) hugely reduces
     # 429 rate-limiting, so most/all scene images succeed -> proper per-scene
     # character visuals. Without it we still try (and fall back to footage).
