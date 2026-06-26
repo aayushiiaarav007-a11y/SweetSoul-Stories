@@ -223,3 +223,69 @@ def fetch_clips(keywords, min_clips=None):
     else:
         log.info("Collected %d Pexels clip(s).", len(collected))
     return collected
+
+
+
+def fetch_scene_clips(queries, max_clips=None):
+    """Fetch ONE landscape clip per scene query, IN ORDER, so the footage
+    follows the story beat-by-beat (boy -> river -> old woman -> village ...).
+    This is what makes the visuals track the storyline like the reels do.
+
+    Returns an ordered list of local mp4 paths (skips a scene if nothing found).
+    """
+    key = _api_key()
+    if not key:
+        return []
+    requests = _requests()
+    if requests is None:
+        return []
+
+    orientation = get_cfg("pexels.orientation", "landscape")
+    per_page = get_cfg("pexels.per_query", 20)
+    headers = {"Authorization": key}
+    queries = [q for q in (queries or []) if q and str(q).strip()]
+    if max_clips:
+        queries = queries[: int(max_clips)]
+    if not queries:
+        return []
+
+    os.makedirs(CLIPS_DIR, exist_ok=True)
+    # Clear old cached clips so every run is fresh.
+    try:
+        for fname in os.listdir(CLIPS_DIR):
+            if fname.startswith("pexels_") and fname.endswith(".mp4"):
+                try:
+                    os.remove(os.path.join(CLIPS_DIR, fname))
+                except Exception:
+                    pass
+    except Exception:
+        pass
+
+    collected, seen = [], set()
+    for idx, query in enumerate(queries):
+        got = False
+        for orient in (orientation, None):  # themed+landscape, then any orientation
+            page = random.randint(1, 3)
+            videos, stop_all = _search(requests, headers, str(query), per_page, orient, page=page)
+            if stop_all:
+                return collected
+            for entry in videos or []:
+                vid_id = entry.get("id")
+                if vid_id in seen:
+                    continue
+                link = _pick_landscape_file(entry.get("video_files", []))
+                if not link:
+                    continue
+                dest = os.path.join(CLIPS_DIR, "pexels_%s.mp4" % vid_id)
+                if _download(link, dest, requests):
+                    seen.add(vid_id)
+                    collected.append(dest)
+                    got = True
+                    log.info("Scene %d clip: %r -> %s", idx + 1, str(query)[:40], os.path.basename(dest))
+                    break
+            if got:
+                break
+        if not got:
+            log.warning("No footage for scene %d: %r", idx + 1, str(query)[:40])
+    log.info("Collected %d scene-matched clip(s).", len(collected))
+    return collected
