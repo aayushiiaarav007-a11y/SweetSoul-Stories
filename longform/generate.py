@@ -31,6 +31,7 @@ from modules import story as story_mod
 from modules import tts
 from modules import video_composer
 from modules import ai_images as ai_images_mod
+from modules import pexels_video as pexels_mod
 from modules import thumbnail as thumb_mod
 
 log = logging.getLogger("moraltales.generate")
@@ -108,6 +109,23 @@ def _build_description(story):
     return "\n\n".join(p for p in parts if p)
 
 
+def _scene_queries(story):
+    """Build one short, Pexels-friendly search phrase per story scene so the
+    footage matches the character/subject of each beat (boy, dog, river...).
+    Falls back to the story's keywords if no scenes are available."""
+    queries = []
+    for s in (getattr(story, "scenes", None) or []):
+        words = str(s).strip().split()
+        if not words:
+            continue
+        # First ~6 words usually carry the subject ("a poor young boy crying ...").
+        phrase = " ".join(words[:6])
+        queries.append(phrase)
+    if not queries:
+        queries = list(story.keywords or [])
+    return queries
+
+
 def generate_one(lesson=None, topic=None, index=0, test=False):
     """Generate a single episode. Returns a manifest entry dict or None.
 
@@ -161,6 +179,17 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
         )
         image_paths = []
 
+    # 2c) If we're not using AI images, fetch SCENE-MATCHED footage in story
+    # order so the visuals follow the storyline (boy -> dog -> river -> ...).
+    clip_paths = []
+    if not image_paths and not test:
+        try:
+            queries = _scene_queries(story)
+            clip_paths = pexels_mod.fetch_scene_clips(queries, max_clips=14)
+        except Exception as exc:
+            log.warning("Scene footage fetch errored (%s); composer will keyword-fetch.", exc)
+            clip_paths = []
+
     # 3) Compose video
     try:
         out = video_composer.compose_video(
@@ -171,6 +200,7 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
             hook_text=story.hook,
             out_path=video_path,
             image_paths=image_paths,
+            clip_paths=clip_paths,
         )
     except Exception as exc:
         log.exception("Video composition failed (%s).", exc)

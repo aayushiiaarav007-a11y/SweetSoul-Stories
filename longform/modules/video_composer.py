@@ -99,17 +99,21 @@ def _concat_with_crossfade(segments, duration):
     return concatenate_videoclips(segments, method="compose").set_duration(duration)
 
 
-def _video_background(clip_paths, duration):
+def _video_background(clip_paths, duration, ordered=False):
     """Scene-switching background: cut each clip to a few seconds and chain them
-    with crossfades until the full story duration is filled. Clips are shuffled
-    and looped as needed so a long story stays visually varied.
+    with crossfades until the full story duration is filled.
+
+    ordered=True keeps the clips in scene order (no shuffle) so the footage
+    follows the storyline beat-by-beat (boy -> dog -> river -> ...). ordered=
+    False shuffles for generic variety.
     """
     from moviepy.editor import VideoFileClip
 
     cut = float(get_cfg("video.clip_cut_seconds", 7.0))
     xfade = float(get_cfg("transitions.crossfade_seconds", 0.4))
     order = list(clip_paths)
-    random.shuffle(order)
+    if not ordered:
+        random.shuffle(order)
 
     segments, total, idx, guard = [], 0.0, 0, 0
     max_segments = int(duration / max(1.5, cut)) + 8
@@ -219,15 +223,22 @@ def _images_background(image_paths, duration):
     return _concat_with_crossfade(clips, duration).set_duration(duration)
 
 
-def _build_background(keywords, duration, image_paths=None):
+def _build_background(keywords, duration, image_paths=None, clip_paths=None):
     # (0) AI scene images (storybook illustrations that match the story).
     if image_paths:
         log.info("Background source: AI scene images (%d).", len(image_paths))
         try:
             return _images_background(image_paths, duration)
         except Exception as exc:
-            log.warning("AI-image background failed (%s); trying stock footage.", exc)
-    # (1) Pexels stock VIDEO clips.
+            log.warning("AI-image background failed (%s); trying scene footage.", exc)
+    # (0b) Scene-matched footage IN ORDER (follows the storyline: boy/dog/river).
+    if clip_paths:
+        log.info("Background source: scene-matched footage IN ORDER (%d).", len(clip_paths))
+        try:
+            return _video_background(clip_paths, duration, ordered=True)
+        except Exception as exc:
+            log.warning("Scene footage build failed (%s); trying keyword footage.", exc)
+    # (1) Pexels stock VIDEO clips (keyword-based, shuffled).
     try:
         clips = pexels_video.fetch_clips(keywords)
         if clips:
@@ -583,11 +594,11 @@ def _build_audio(voice_path, duration):
 # ==========================================================================
 # Public API
 # ==========================================================================
-def compose_video(voice_path, text, keywords, title=None, hook_text=None, out_path=None, image_paths=None):
+def compose_video(voice_path, text, keywords, title=None, hook_text=None, out_path=None, image_paths=None, clip_paths=None):
     """Compose the full long-form video and write it to disk. Returns the path.
 
-    If `image_paths` (AI scene images) are provided they become the background
-    (Ken-Burns slideshow); otherwise Pexels stock footage; otherwise a gradient.
+    Background priority: AI scene images -> scene-matched footage (in order) ->
+    keyword footage -> gradient.
     """
     from moviepy.editor import AudioFileClip, CompositeVideoClip
 
@@ -608,7 +619,7 @@ def compose_video(voice_path, text, keywords, title=None, hook_text=None, out_pa
     log.info("Story video duration: %.1fs (%.1f min).", duration, duration / 60.0)
 
     # 1) Background + grade.
-    background = _build_background(keywords, duration, image_paths=image_paths).set_duration(duration)
+    background = _build_background(keywords, duration, image_paths=image_paths, clip_paths=clip_paths).set_duration(duration)
     if get_cfg("grade.enabled", True):
         background = _apply_color_grade(background).set_duration(duration)
 
