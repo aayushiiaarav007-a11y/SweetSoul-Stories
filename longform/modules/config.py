@@ -63,8 +63,8 @@ _DEFAULT_CONFIG = {
         "crf": 23,
     },
     "story": {
-        "target_words": 620,
-        "min_words": 480,
+        "target_words": 800,
+        "min_words": 620,
     },
     "palette": {
         "gradient_top": [25, 32, 64],
