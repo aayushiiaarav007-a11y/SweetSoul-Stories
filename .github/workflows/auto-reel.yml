@@ -191,6 +191,11 @@ jobs:
         # filling up (free quota is only 0.5 GB). Artifacts are kept only for
         # manual debug runs, and auto-deleted after 1 day.
         if: ${{ always() && github.event.inputs.diagnose_only != 'true' && github.event_name != 'schedule' }}
+        # Never fail the whole run if storage is momentarily full: GitHub
+        # recalculates the storage quota only every 6-12 hours, so right after
+        # the cleanup step the quota can still read "full" and block the upload.
+        # The reel is already on YouTube, so this backup is optional.
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: sweetsoul-reels
