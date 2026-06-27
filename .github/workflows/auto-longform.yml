@@ -38,9 +38,29 @@ jobs:
   build-and-upload:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    permissions:
+      actions: write
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Clean up old artifacts (free Actions storage)
+        # Long-form videos are published to YouTube, so old artifacts just fill
+        # the 0.5 GB free quota. Delete them every run so storage never fills.
+        working-directory: .
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Deleting old workflow artifacts to free storage..."
+          gh api --paginate "repos/${{ github.repository }}/actions/artifacts" \
+            -q '.artifacts[].id' | while read -r id; do
+              [ -n "$id" ] && gh api -X DELETE \
+                "repos/${{ github.repository }}/actions/artifacts/$id" \
+                && echo "deleted artifact $id" || true
+            done
+          echo "Artifact cleanup done."
 
       - name: Set up Python (with pip cache)
         uses: actions/setup-python@v5
@@ -119,12 +139,15 @@ jobs:
         run: |
           python upload_youtube.py
 
-      - name: Upload video artifact (for your review)
+      - name: Upload video artifact (preview/test review only)
+        # Scheduled full runs publish to YouTube, so we don't keep artifacts for
+        # them. Only manual preview/test runs keep one, auto-deleted after 1 day.
+        if: ${{ github.event_name == 'workflow_dispatch' }}
         uses: actions/upload-artifact@v4
         with:
           name: moraltales-output
           path: |
             longform/output/*.mp4
             longform/output/*.jpg
-          retention-days: 7
+          retention-days: 1
           if-no-files-found: ignore
