@@ -143,6 +143,11 @@ jobs:
         # Scheduled full runs publish to YouTube, so we don't keep artifacts for
         # them. Only manual preview/test runs keep one, auto-deleted after 1 day.
         if: ${{ github.event_name == 'workflow_dispatch' }}
+        # Never fail the whole run if storage is momentarily full: GitHub
+        # recalculates the storage quota only every 6-12 hours, so right after
+        # the cleanup step the quota can still read "full" and block the upload.
+        # The video is already on YouTube, so this backup is optional.
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: moraltales-output
