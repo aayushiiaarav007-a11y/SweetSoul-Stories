@@ -43,10 +43,30 @@ jobs:
   build-and-upload:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    permissions:
+      actions: write
+      contents: read
     steps:
 
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Clean up old artifacts (free Actions storage)
+        # Reels are already published to YouTube, so old artifacts are just
+        # dead weight that fills the 0.5 GB free quota. Delete them every run
+        # so storage never fills up again.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Deleting old workflow artifacts to free storage..."
+          gh api --paginate "repos/${{ github.repository }}/actions/artifacts" \
+            -q '.artifacts[].id' | while read -r id; do
+              [ -n "$id" ] && gh api -X DELETE \
+                "repos/${{ github.repository }}/actions/artifacts/$id" \
+                && echo "deleted artifact $id" || true
+            done
+          echo "Artifact cleanup done."
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -159,8 +179,12 @@ jobs:
         run: |
           python upload_instagram.py --limit "${{ steps.params.outputs.per_day }}"
 
-      - name: Upload artifacts
-        if: ${{ always() && github.event.inputs.diagnose_only != 'true' }}
+      - name: Upload artifacts (manual/debug runs only)
+        # Scheduled daily reels already publish to YouTube, so we DON'T keep
+        # any artifacts for them — this stops GitHub Actions storage from
+        # filling up (free quota is only 0.5 GB). Artifacts are kept only for
+        # manual debug runs, and auto-deleted after 1 day.
+        if: ${{ always() && github.event.inputs.diagnose_only != 'true' && github.event_name != 'schedule' }}
         uses: actions/upload-artifact@v4
         with:
           name: sweetsoul-reels
@@ -168,4 +192,4 @@ jobs:
             output/*.mp4
             manifest.json
           if-no-files-found: ignore
-          retention-days: 7
+          retention-days: 1
