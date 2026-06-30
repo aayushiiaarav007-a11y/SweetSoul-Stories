@@ -69,21 +69,24 @@ def upload_pending(limit=1, privacy=None):
     reels = manifest.get("reels", [])
     if not reels:
         log.warning("No reels in manifest; nothing to upload. Run generate.py first.")
-        return []
+        return {"pending": 0, "uploaded": 0, "failed": 0}
 
     privacy = privacy or get_cfg("youtube.privacy_status", "public")
     # Newest first.
     pending = [r for r in reversed(reels) if not r.get("uploaded_youtube")]
     if not pending:
         log.info("All reels already uploaded to YouTube.")
-        return []
+        return {"pending": 0, "uploaded": 0, "failed": 0}
 
+    batch = pending[: max(1, int(limit))]
     uploaded = []
-    for entry in pending[: max(1, int(limit))]:
+    failed = 0
+    for entry in batch:
         video_rel = entry.get("video_path")
         video_path = os.path.join(str(BASE_DIR), video_rel) if video_rel else None
         if not video_path or not os.path.exists(video_path):
             log.error("Video file missing for '%s' (%s); skipping.", entry.get("title"), video_path)
+            failed += 1
             continue
         vid = youtube.upload_video(
             video_path=video_path,
@@ -99,9 +102,10 @@ def upload_pending(limit=1, privacy=None):
             _save_manifest(manifest)
         else:
             log.error("Upload failed for '%s'.", entry.get("title"))
+            failed += 1
 
-    log.info("Uploaded %d reel(s) to YouTube.", len(uploaded))
-    return uploaded
+    log.info("Uploaded %d reel(s) to YouTube (%d failed).", len(uploaded), failed)
+    return {"pending": len(batch), "uploaded": len(uploaded), "failed": failed}
 
 
 def main(argv=None):
@@ -119,7 +123,19 @@ def main(argv=None):
         path = youtube.authorize()
         return 0 if path else 1
 
-    upload_pending(limit=args.limit, privacy=args.privacy)
+    result = upload_pending(limit=args.limit, privacy=args.privacy)
+
+    # Fail loudly: if there were reels waiting to upload and NONE made it, the
+    # run must go RED so the failure is visible (token expired, quota, etc.).
+    # Previously this always returned 0, so failed uploads looked "green" and
+    # videos silently never appeared on YouTube.
+    if result["uploaded"] == 0 and result["failed"] > 0:
+        log.error(
+            "No reels were uploaded though %d were pending. Failing the run so "
+            "this is visible. Check the YouTube errors above.",
+            result["failed"],
+        )
+        return 1
     return 0
 
 

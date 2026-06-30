@@ -75,7 +75,29 @@ def _load_credentials():
                 fh.write(creds.to_json())
             log.info("Refreshed YouTube OAuth token.")
         except Exception as exc:
-            log.error("Token refresh failed (%s).", exc)
+            msg = str(exc)
+            if "invalid_grant" in msg.lower():
+                log.error(
+                    "=================================================================\n"
+                    "YouTube token refresh FAILED with 'invalid_grant'.\n"
+                    "Your YT_TOKEN_JSON refresh token has EXPIRED or been REVOKED, so\n"
+                    "no reels can be uploaded until you mint a fresh token.\n"
+                    "\n"
+                    "Most common cause: the Google OAuth consent screen is still in\n"
+                    "'Testing' mode -> refresh tokens die after 7 days.\n"
+                    "\n"
+                    "FIX:\n"
+                    "  1. Google Cloud Console -> APIs & Services -> OAuth consent\n"
+                    "     screen -> PUBLISH APP (move from Testing to Production).\n"
+                    "  2. Mint a new token (OAuth Playground or `python\n"
+                    "     upload_youtube.py --authorize`) signed in with the channel's\n"
+                    "     Google account, scope youtube.upload.\n"
+                    "  3. Paste the new token JSON into the GitHub Secret\n"
+                    "     YT_TOKEN_JSON.\n"
+                    "================================================================="
+                )
+            else:
+                log.error("Token refresh failed (%s).", exc)
             return None
     return creds
 
@@ -159,7 +181,19 @@ def upload_video(video_path, title, description="", tags=None, privacy=None):
         log.info("Uploaded! https://youtu.be/%s", video_id)
         return video_id
     except HttpError as exc:
-        log.error("YouTube API error (%s).", exc)
+        status = getattr(getattr(exc, "resp", None), "status", "?")
+        content = getattr(exc, "content", b"") or b""
+        try:
+            detail = content.decode("utf-8", "replace")
+        except Exception:
+            detail = str(content)
+        log.error("YouTube API error (HTTP %s): %s", status, detail[:600] or exc)
+        if str(status) == "403" and "quota" in detail.lower():
+            log.error(
+                "This looks like a QUOTA error. The YouTube Data API allows ~6 "
+                "uploads/day on the default 10,000-unit quota. Reduce reels/day "
+                "or request a quota increase in Google Cloud Console."
+            )
         return None
     except Exception as exc:
         log.error("Upload failed (%s).", exc)
