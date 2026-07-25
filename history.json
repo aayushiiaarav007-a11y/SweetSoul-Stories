@@ -1,0 +1,41 @@
+{
+  "cycles": {},
+  "used": {
+    "ctas": [
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "Subscribe for more of the quiet, lovely parts of the internet."
+    ],
+    "desc_ctas": [
+      "Subscribe — this channel exists for exactly the day you're having."
+    ],
+    "desc_openers": [
+      "{teaser} Small moment, disproportionate effect on your mood."
+    ],
+    "desc_questions": [
+      "On a scale of 1-10, how cute was that? Comment your score!"
+    ],
+    "flashes": [
+      "SLOWLY NOW",
+      "HE REMEMBERED",
+      "SO SOFT"
+    ],
+    "hooks": [
+      "It's the way he checks on her that gets me every time."
+    ],
+    "pinned_comments": [
+      "Sound on is a completely different video, by the way 🔊"
+    ],
+    "screen_hooks": [
+      "THE LOOK AT THE END"
+    ],
+    "title_patterns": [
+      "{anchor} - {core}"
+    ],
+    "topics": [
+      "a dog who saved his own dinner to share with a stray"
+    ],
+    "voices": [
+      "en-US-MichelleNeural"
+    ]
+  }
+}
