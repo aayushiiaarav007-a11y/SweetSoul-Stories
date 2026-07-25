@@ -170,7 +170,9 @@ def _fetch_videos(youtube, video_ids):
     for i in range(0, len(video_ids), 50):
         chunk = video_ids[i : i + 50]
         resp = youtube.videos().list(
-            part="snippet,status", id=",".join(chunk)
+            # statistics is needed for --skip-top, which protects the videos
+            # that are actually earning views.
+            part="snippet,status,statistics", id=",".join(chunk)
         ).execute()
         out.extend(resp.get("items", []))
     return out
@@ -181,6 +183,32 @@ def _fetch_videos(youtube, video_ids):
 # --------------------------------------------------------------------------
 def _is_legacy(title):
     return any(marker in (title or "") for marker in LEGACY_MARKERS)
+
+
+def _views(video):
+    try:
+        return int(video.get("statistics", {}).get("viewCount", 0))
+    except Exception:
+        return 0
+
+
+def _protect_top(videos, skip_top):
+    """Split videos into (safe_to_edit, protected) by view count.
+
+    WHY THIS EXISTS: a video that is currently earning views has accumulated
+    ranking signals against its existing title and description. Rewriting that
+    metadata makes YouTube re-index it, and reach can dip for a few days. There
+    is nothing to lose on a video sitting at 275 views, but there is on the ones
+    carrying the channel. So the best performers are left alone by default.
+    """
+    skip_top = max(0, int(skip_top))
+    if not skip_top:
+        return videos, []
+    ranked = sorted(videos, key=_views, reverse=True)
+    protected = ranked[:skip_top]
+    protected_ids = {v["id"] for v in protected}
+    safe = [v for v in videos if v["id"] not in protected_ids]
+    return safe, protected
 
 
 def _original_core(video):
@@ -235,7 +263,7 @@ def plan_update(video):
     return vid, old, new_snippet
 
 
-def run(limit=20, apply_changes=False, only_legacy=False):
+def run(limit=20, apply_changes=False, only_legacy=False, skip_top=15):
     from googleapiclient.discovery import build
 
     creds = _credentials()
@@ -247,8 +275,9 @@ def run(limit=20, apply_changes=False, only_legacy=False):
     if not playlist_id:
         return 1
 
-    # Pull a generous window so filtering still leaves enough to work on.
-    video_ids = _list_video_ids(youtube, playlist_id, max_items=max(limit * 5, 50))
+    # Pull the whole catalogue: --skip-top has to rank against every video, not
+    # just the slice we happen to be editing this run.
+    video_ids = _list_video_ids(youtube, playlist_id, max_items=500)
     videos = _fetch_videos(youtube, video_ids)
     log.info("Fetched %d video(s) from the channel.", len(videos))
 
@@ -256,6 +285,14 @@ def run(limit=20, apply_changes=False, only_legacy=False):
         videos = [v for v in videos if _is_legacy(v["snippet"].get("title", ""))]
         log.info("%d carry the legacy '| Cute & Wholesome' stamp.", len(videos))
 
+    videos, protected = _protect_top(videos, skip_top)
+    if protected:
+        log.info("Protecting the %d best-performing video(s):", len(protected))
+        for v in protected:
+            log.info("  %6d views  %s", _views(v), v["snippet"].get("title", "")[:56])
+
+    # Worst performers first: least to lose, most to gain.
+    videos.sort(key=_views)
     videos = videos[:limit]
     if not videos:
         log.info("Nothing to do.")
@@ -265,7 +302,7 @@ def run(limit=20, apply_changes=False, only_legacy=False):
     for v in videos:
         vid, old, new = plan_update(v)
         print("\n" + "=" * 70)
-        print(f"https://youtu.be/{vid}")
+        print(f"https://youtu.be/{vid}   ({_views(v)} views)")
         print(f"  OLD title : {old['title']}")
         print(f"  NEW title : {new['title']}")
         print(f"  OLD tags  : {len(old['tags'])} tag(s)")
@@ -306,12 +343,22 @@ def main(argv=None):
                         help="Actually write the changes. Without this it is a dry run.")
     parser.add_argument("--only-legacy", action="store_true",
                         help="Only videos still carrying the '| Cute & Wholesome' stamp.")
+    parser.add_argument("--skip-top", type=int, default=15,
+                        help="Leave the N best-performing videos untouched (default 15). "
+                             "Rewriting a video that is currently earning views makes "
+                             "YouTube re-index it and reach can dip for a few days. "
+                             "Pass 0 to rewrite everything.")
     args = parser.parse_args(argv)
 
     setup_logging()
     if args.authorize:
         return 0 if authorize() else 1
-    return run(limit=args.limit, apply_changes=args.apply, only_legacy=args.only_legacy)
+    return run(
+        limit=args.limit,
+        apply_changes=args.apply,
+        only_legacy=args.only_legacy,
+        skip_top=args.skip_top,
+    )
 
 
 if __name__ == "__main__":

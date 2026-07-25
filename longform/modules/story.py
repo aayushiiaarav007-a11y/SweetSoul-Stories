@@ -24,33 +24,17 @@ import re
 from dataclasses import dataclass, field
 
 from .config import STORIES_PATH, get_cfg, get_env
+from .pools import CTA_CANDIDATES, TOPIC_POOL
+from . import history
 
 log = logging.getLogger("moraltales.story")
 
-# Diverse moral-lesson seeds. One is picked per run so every episode teaches a
-# different lesson with a fresh setting and characters (no repeats).
-TOPIC_POOL = [
-    ("honesty", "a child who finds a lost wallet full of money"),
-    ("kindness", "a lonely old man and the children who befriend him"),
-    ("hard work", "a lazy rabbit who laughs at a slow but steady tortoise"),
-    ("courage", "a small boy who must cross a dark forest to fetch medicine"),
-    ("greed", "a fisherman who catches a magical fish that grants wishes"),
-    ("patience", "a girl who plants a seed and waits through every season"),
-    ("humility", "a proud peacock who learns the value of every creature"),
-    ("forgiveness", "two best friends torn apart by a silly misunderstanding"),
-    ("gratitude", "a poor boy who shares his only meal with a stranger"),
-    ("helping others", "village children who rebuild an old woman's broken bridge"),
-    ("never giving up", "a young bird afraid to take its very first flight"),
-    ("teamwork", "ants who must move a giant crumb before the rain comes"),
-    ("respecting elders", "a clever grandson and his wise old grandmother"),
-    ("sharing", "two brothers and a single basket of mangoes"),
-    ("telling the truth", "a shepherd boy who cried wolf one too many times"),
-    ("self-belief", "a tiny elephant told he could never do anything big"),
-    ("compassion", "a child who rescues a wounded sparrow in winter"),
-    ("contentment", "a dog who loses his bone chasing a reflection"),
-    ("wisdom over strength", "a clever mouse who frees a trapped lion"),
-    ("keeping promises", "a prince who gives his word to a humble farmer"),
-]
+# Lesson/topic seeds and spoken sign-offs now live in modules/pools.py so they can
+# be grown in one place: seeds 20 -> 80 (about 27 weeks at 3 episodes/week) and
+# sign-offs 5 -> 30. Both are imported at the top of this module and drawn through
+# modules/history.py, i.e. WITHOUT replacement, so no premise or closing line
+# returns until its pool is genuinely exhausted.
+
 
 _PROMPT_TEMPLATE = """You are the head writer for a faceless YouTube channel called
 "{channel}" that publishes ONE long, heartwarming MORAL STORY FOR CHILDREN
@@ -168,22 +152,25 @@ def derive_scenes_from_text(text, target=12):
     return scenes
 
 
+def _cta_pool():
+    """Sign-off pool: modules/pools.py, with config as an override."""
+    return list(get_cfg("channel.cta_pool", []) or []) or list(CTA_CANDIDATES)
+
+
 def _pick_cta():
-    """Rotate the spoken sign-off.
+    """Rotate the spoken sign-off, drawn without replacement.
 
     A single fixed closing line repeated word-for-word at the end of every
     episode is both a mass-production signal and a cue that trains returning
-    viewers to click away the moment they hear it.
+    viewers to click away the moment they hear it. Drawn through history so it
+    genuinely rotates instead of landing on the same line repeatedly by chance.
     """
-    pool = get_cfg("channel.cta_pool", []) or []
-    if pool:
-        return random.choice(list(pool))
-    return get_cfg("channel.cta", "Subscribe for a new story every day!")
+    return history.pick("ctas", _cta_pool())
 
 
 def _has_cta(text):
     low = (text or "").lower()
-    pool = list(get_cfg("channel.cta_pool", []) or [])
+    pool = _cta_pool()
     pool.append(get_cfg("channel.cta", ""))
     return any(c and c.lower() in low for c in pool)
 
@@ -409,8 +396,12 @@ def _fallback_story():
 def generate_story(lesson=None, topic=None):
     """Return a single Story, preferring Gemini, falling back to stories.json."""
     if not lesson or not topic:
-        lesson, topic = random.choice(TOPIC_POOL)
-        log.info("Auto-picked lesson: %s | topic: %s", lesson, topic)
+        lesson, topic = history.pick("topics", TOPIC_POOL)
+        log.info(
+            "Auto-picked lesson: %s | topic: %s  (%d of %d seeds unused)",
+            lesson, topic,
+            len(history.remaining("topics", TOPIC_POOL)), len(TOPIC_POOL),
+        )
     story = _generate_with_gemini(lesson, topic)
     if story is None:
         story = _fallback_story()

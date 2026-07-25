@@ -9,6 +9,10 @@ ineligible).
 
 ## Hard rules
 
+0. **Rolling word-by-word captions stay OFF.** `captions.enabled` is `false` because the
+   channel owner removed them: the 84px text with a dark backdrop pill covered the animal,
+   which is the only thing the viewer came for. Do not re-enable without asking. The
+   muted-viewer gap is covered by `flash_text` — three 2-3 word phrases in the upper third.
 1. **Never append a fixed string to every title.** No suffixes, no stamped hashtags. The
    deleted line `f"{base} | Cute & Wholesome #shorts #cute"` is the exact anti-pattern.
 2. **All published metadata comes from the SEO modules** — `modules/seo.py` for Shorts,
@@ -20,7 +24,24 @@ ineligible).
 4. **Static values in `config.json` (`youtube.hashtags`, `youtube.default_tags`) are fallbacks
    only.** They apply only when the SEO engine produced nothing.
 5. **Anything user-visible that repeats must be a rotating pool**, not a constant: hooks,
-   on-screen hooks, sign-offs/CTAs, TTS voices, description blocks, title patterns.
+   on-screen hooks, flash phrases, sign-offs/CTAs, TTS voices, description blocks, title
+   patterns, pinned comments.
+6. **Pools live in `modules/pools.py` / `longform/modules/pools.py`** — one place, easy to
+   grow. Run `python modules/pools.py` to print sizes and fail on duplicates.
+7. **Never select a user-visible string with `random.choice`.** Use
+   `history.pick(name, pool)`, which draws WITHOUT replacement and remembers across runs via
+   `history.json`. `random.choice` puts the item straight back in the bag, so even a
+   150-item pool collides within days (birthday problem: ~50% chance of a repeat inside 15
+   draws).
+8. **Never call `history.pick()` from a dataclass `__post_init__` or any other hot path.**
+   `load_fallback_scripts()` builds a `Script` for all 23 entries of `quotes.json` on a
+   single reel — history picks there drained the hook, screen-hook and flash pools in one
+   run and forced an immediate reset, which is exactly the repetition the system exists to
+   prevent. Placeholders in `__post_init__` use plain `random.choice`; the real pick happens
+   once per reel in `generate_script()`.
+9. **`history.json` and `longform/history.json` must be committed, never gitignored.** Both
+   scheduled workflows push them back (`permissions: contents: write`). Without that, every
+   run starts from an empty history.
 
 ## YouTube limits to respect
 

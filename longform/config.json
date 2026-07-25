@@ -3,13 +3,7 @@
     "comment": "IMPORTANT: this pipeline uploads with the SAME YT_TOKEN_JSON as the Shorts pipeline, i.e. onto the SAME YouTube channel (@SweetSoulStories007). Descriptions used to welcome viewers to 'MoralTales', a brand that does not exist on that channel. The name is aligned here so the audience, the branding and YouTube's topic model all agree. If these long-form stories are ever moved to their own channel, change this back and give that channel its own token.",
     "name": "Sweet Soul Stories",
     "cta": "Subscribe for a brand-new story every single day!",
-    "cta_pool": [
-      "Subscribe for a brand-new story every single day!",
-      "If this story stayed with you, subscribe — there is a new one tomorrow.",
-      "Subscribe and let a gentle story find you every day.",
-      "There is a new story here every day. Come listen tomorrow.",
-      "Stay with us — tomorrow's story is already waiting for you."
-    ]
+    "cta_pool_note": "The 30 rotating sign-offs now live in modules/pools.py (CTA_CANDIDATES) and are drawn without replacement via modules/history.py. Adding a 'cta_pool' array here would OVERRIDE that larger pool, so leave it out unless you deliberately want a shorter list."
   },
   "seo": {
     "comment": "Consumed by modules/seo.py. Chapters need >=3 entries, must start at 0:00, and each must be >=10s or YouTube ignores the whole block.",

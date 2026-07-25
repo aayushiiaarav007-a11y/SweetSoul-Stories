@@ -106,7 +106,10 @@ jobs:
     timeout-minutes: 45
     permissions:
       actions: write
-      contents: read
+      # contents: write (was read) so the no-repeat rotation state in
+      # history.json can be pushed back. Without this every run starts from a
+      # blank history and the whole no-repeat guarantee is lost.
+      contents: write
     steps:
 
       - name: Checkout repository
@@ -128,6 +131,33 @@ jobs:
                 && echo "deleted artifact $id" || true
             done
           echo "Artifact cleanup done."
+
+      - name: Delete workflow runs older than 2 days
+        # Artifacts are already cleaned above; this clears the RUN HISTORY, which
+        # otherwise grows by ~150 entries a month and makes the Actions tab
+        # unusable for finding a real failure.
+        #
+        # Retention is 2 DAYS on purpose (owner's call): a scheduled reel either
+        # published or it did not, and that is visible on YouTube within minutes,
+        # so there is nothing to debug in a run from last week. Only `completed`
+        # runs are eligible, so an in-progress build is never deleted.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CUTOFF=$(date -u -d '2 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          echo "Deleting completed workflow runs created before $CUTOFF"
+          DELETED=0
+          # Oldest first so a capped page still removes the most useful ones.
+          for id in $(gh api --paginate \
+                "repos/${{ github.repository }}/actions/runs?per_page=100&status=completed" \
+                -q ".workflow_runs[] | select(.created_at < \"$CUTOFF\") | .id" \
+                | head -200); do
+            if gh api -X DELETE "repos/${{ github.repository }}/actions/runs/$id" >/dev/null 2>&1; then
+              DELETED=$((DELETED+1))
+            fi
+          done
+          echo "Deleted $DELETED old workflow run(s)."
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -243,6 +273,49 @@ jobs:
           IG_PASSWORD: ${{ secrets.IG_PASSWORD }}
         run: |
           python upload_instagram.py --limit "${{ steps.params.outputs.per_day }}"
+
+      - name: Save no-repeat history back to the repo
+        # WHY: modules/history.py guarantees that a story topic, spoken hook,
+        # screen hook, flash phrase, narrator voice or title pattern is never
+        # reused until its pool is exhausted. That guarantee lives in
+        # history.json, and every Actions run gets a fresh checkout - so unless
+        # the file is pushed back, each run starts from an empty history and
+        # repeats come straight back.
+        #
+        # Runs on always() so the rotation is still recorded when the upload step
+        # failed: the reel was generated either way, and re-serving that topic
+        # would be worse than losing it.
+        #
+        # continue-on-error because a git conflict must never be reported as a
+        # failed video. The reel is already on YouTube by this point.
+        if: ${{ always() && github.event.inputs.diagnose_only != 'true' && github.event.inputs.selftest != 'true' }}
+        continue-on-error: true
+        run: |
+          set -u
+          if [ ! -f history.json ]; then
+            echo "No history.json produced; nothing to save."
+            exit 0
+          fi
+          git add history.json
+          if git diff --cached --quiet -- history.json; then
+            echo "history.json unchanged; nothing to commit."
+            exit 0
+          fi
+          # -c rather than `git config` so no persistent config is written.
+          git -c user.name="sweetsoul-bot" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "chore: record content rotation history [skip ci]"
+          # Concurrent runs (a reel and the long-form job) can race. Rebase and
+          # retry rather than clobbering the other pipeline's history file.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "history.json pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected; rebasing onto the remote (attempt $attempt)."
+            git pull --rebase --autostash || true
+          done
+          echo "Could not push history.json after 5 attempts; the next run will retry."
 
       - name: Upload artifacts (manual/debug runs only)
         # Scheduled daily reels already publish to YouTube, so we DON'T keep

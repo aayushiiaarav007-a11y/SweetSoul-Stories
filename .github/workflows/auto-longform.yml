@@ -1,4 +1,4 @@
-name: MoralTales Auto Longform
+name: Sweet Soul Auto Longform (3-5 min stories)
 
 # ONE long-form (3-5 min) story, posted roughly EVERY OTHER DAY at US evening
 # prime time. The cadence is no longer limited by GitHub Actions minutes - the
@@ -53,7 +53,9 @@ jobs:
     timeout-minutes: 90
     permissions:
       actions: write
-      contents: read
+      # contents: write (was read) so longform/history.json - the no-repeat
+      # rotation state for topic seeds and sign-offs - can be pushed back.
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -151,6 +153,37 @@ jobs:
           YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
         run: |
           python upload_youtube.py
+
+      - name: Save no-repeat history back to the repo
+        # See the equivalent step in auto-reel.yml. This pipeline keeps its own
+        # file (longform/history.json) so the two never fight over one path.
+        # Skipped for test/preview builds, which are not real published episodes.
+        if: ${{ always() && github.event.inputs.mode != 'test' && github.event.inputs.mode != 'preview' }}
+        continue-on-error: true
+        working-directory: .
+        run: |
+          set -u
+          if [ ! -f longform/history.json ]; then
+            echo "No longform/history.json produced; nothing to save."
+            exit 0
+          fi
+          git add longform/history.json
+          if git diff --cached --quiet -- longform/history.json; then
+            echo "longform/history.json unchanged; nothing to commit."
+            exit 0
+          fi
+          git -c user.name="sweetsoul-bot" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "chore: record long-form rotation history [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "longform/history.json pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected; rebasing onto the remote (attempt $attempt)."
+            git pull --rebase --autostash || true
+          done
+          echo "Could not push after 5 attempts; the next run will retry."
 
       - name: Upload video artifact (preview/test review only)
         # Scheduled full runs publish to YouTube, so we don't keep artifacts for

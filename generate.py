@@ -35,6 +35,7 @@ import sys
 
 from modules.config import OUTPUT_DIR, BASE_DIR, setup_logging
 from modules import gemini_script
+from modules import history
 from modules import seo
 from modules import thumbnail as thumbnail_mod
 from modules import tts
@@ -113,6 +114,8 @@ def generate_one(topic=None, index=0):
     # 2) Voiceover
     if tts.synthesize(script.text, voice_path) is None:
         log.error("Voiceover synthesis failed; skipping this reel.")
+        # Give the topic/hook/voice back so a failed run does not burn them.
+        history.discard()
         return None
 
     # 3) Compose video.
@@ -126,10 +129,12 @@ def generate_one(topic=None, index=0):
             text=script.text,
             keywords=script.keywords,
             hook_text=getattr(script, "screen_hook", "") or script.hook,
+            flashes=getattr(script, "flashes", None),
             out_path=video_path,
         )
     except Exception as exc:
         log.exception("Video composition failed (%s).", exc)
+        history.discard()
         return None
 
     # 4) SEO metadata (unique per video).
@@ -150,6 +155,7 @@ def generate_one(topic=None, index=0):
         "title": script.title,
         "hook": script.hook,
         "screen_hook": getattr(script, "screen_hook", ""),
+        "flashes": list(getattr(script, "flashes", []) or []),
         "text": script.text,
         "keywords": list(script.keywords),
         "subject": meta["subject"],
@@ -168,6 +174,11 @@ def generate_one(topic=None, index=0):
         "youtube_id": None,
         "uploaded_instagram": False,
     }
+
+    # The reel exists, so the topic/hook/voice/flashes it consumed are now
+    # permanently spent. Written here (not at pick time) so a run that dies
+    # mid-render leaves the rotation untouched.
+    history.commit()
     return entry
 
 

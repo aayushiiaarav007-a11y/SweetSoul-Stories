@@ -19,6 +19,7 @@ import os
 import random
 
 from .config import get_cfg, get_env
+from . import history
 
 log = logging.getLogger("sweetsoul.tts")
 
@@ -36,7 +37,9 @@ def _voice():
         return forced
     pool = get_cfg("tts.voice_pool", []) or []
     if pool:
-        return random.choice(list(pool))
+        # Drawn through history so the voice actually rotates instead of landing
+        # on the same one several days running by chance.
+        return history.pick("voices", list(pool))
     return get_cfg("tts.voice", "en-US-AriaNeural")
 
 

@@ -32,6 +32,7 @@ from modules import tts
 from modules import video_composer
 from modules import ai_images as ai_images_mod
 from modules import pexels_video as pexels_mod
+from modules import history
 from modules import seo
 from modules import thumbnail as thumb_mod
 
@@ -172,6 +173,8 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
     # 2) Voiceover
     if tts.synthesize(story.text, voice_path) is None:
         log.error("Voiceover synthesis failed; skipping this episode.")
+        # Hand the topic seed and sign-off back so a failed run does not burn them.
+        history.discard()
         return None
 
     # 2b) AI scene images. Prepend the fixed main-character description to each
@@ -218,6 +221,7 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
         )
     except Exception as exc:
         log.exception("Video composition failed (%s).", exc)
+        history.discard()
         return None
 
     # 4) Thumbnail (best-effort)
@@ -244,6 +248,11 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
         "uploaded_youtube": False,
         "youtube_id": None,
     }
+
+    # The episode exists, so the topic seed and sign-off it consumed are now
+    # permanently spent. Written here rather than at pick time so a run that
+    # dies mid-render leaves the rotation untouched.
+    history.commit()
     return entry
 
 

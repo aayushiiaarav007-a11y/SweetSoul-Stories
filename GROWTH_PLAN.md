@@ -64,6 +64,38 @@ the work in this change set is not only about getting more views — it is about
 - **`longform/modules/seo.py`** — the same idea for long-form, plus **auto-generated
   chapters** with real timestamps derived from the narration length.
 
+### Nothing repeats until a pool is exhausted
+Selection used to be `random.choice`, which puts the item straight back in the bag — so even
+a large pool collides within days. Pools moved into `modules/pools.py` and grew:
+
+| Pool | Before | After | Lasts (at 5 reels/day) |
+|---|---|---|---|
+| Story topics | 46 | **150** | 30 days |
+| Spoken hooks | 58 | **120** | 24 days |
+| Screen hooks | 24 | **80** | 16 days |
+| Flash phrases | — | **152** | 10 days (3 per reel) |
+| Sign-offs | 8 | **45** | 9 days |
+| Title patterns | 20 | **40** | 8 days |
+| Pinned comments | 8 | **29** | 6 days |
+| Long-form topic seeds | 20 | **80** | 27 weeks (3/week) |
+
+`modules/history.py` then draws **without replacement** and remembers across runs via
+`history.json`, which both workflows commit back. Verified over a simulated 30 days of
+5 reels/day: every pool is fully exhausted before a single item returns.
+
+### Rolling captions off, word flash in
+The word-by-word subtitle track is off — it covered the animal. Instead, three 2-3 word
+phrases appear for ~1.3s each in the upper third, with no backdrop panel, so a muted viewer
+still has something to read while the subject stays clear.
+
+### Two buttons in the Actions tab (no terminal needed)
+- **Fix Old Video Titles** — rewrites the back catalogue. Defaults to `dry-run`, and
+  protects the 15 best-performing videos so nothing that is currently earning views gets
+  re-indexed.
+- **Slot Report** — read-only; prints median views per publish hour.
+
+Both need a one-time token; `TOKEN_SETUP.md` covers it entirely in the browser.
+
 ### Long-form retargeted to 3-5 minutes
 The composer never cuts a video to `max_duration_seconds` — it always matches the voiceover
 length — so changing the duration config alone does nothing. Length is actually controlled by
@@ -122,14 +154,21 @@ from `*/2` day-of-month to Mon/Wed/Fri: `*/2` resets at month boundaries, so the
 
 ## 4. Your 15-day checklist — the parts only you can do
 
-### Day 1 — clean up the back catalogue
-```bash
-python retitle_existing.py --authorize            # one-time, needs force-ssl scope
-python retitle_existing.py --only-legacy --limit 20   # DRY RUN, read the diff
-python retitle_existing.py --only-legacy --limit 20 --apply
-```
-Repeat ~20/day for 6 days until all 113 are done. Keep the batch small: uploads already
-consume ~8,000 of the 10,000 daily API units.
+### Day 1 — clean up the back catalogue (all in the browser)
+1. Follow **`TOKEN_SETUP.md`** once to create the `YT_MANAGE_TOKEN_JSON` secret.
+2. Actions → **Slot Report** → Run workflow. Read-only, so it proves the token works.
+3. Actions → **Fix Old Video Titles** → Run workflow with `mode = dry-run`. Read the
+   before/after pairs.
+4. Same button with `mode = apply`. Start with `limit = 5`, wait 48 hours, check Studio, then
+   move to 20/day.
+
+Roughly 20/day for six days covers all 113. Keep batches small: `videos.update` costs 50 API
+units and the daily uploads already spend ~8,250 of the 10,000 allowance.
+
+The 15 best-performing videos are protected by default (`skip_top`). Rewriting a video that
+is currently earning views makes YouTube re-index it and reach can dip for a few days —
+there is nothing to lose on one sitting at 275 views, but there is on the ones carrying the
+channel.
 
 ### Day 1 — check the setting that decides whether any of this pays
 **Confirm the channel is not classified "Made for Kids."** Studio → Settings → Channel →

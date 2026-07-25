@@ -46,8 +46,19 @@ import random
 import re
 
 from .config import get_cfg
+from . import history
 
 log = logging.getLogger("sweetsoul.seo")
+
+# NOTE ON SELECTION
+# -----------------
+# The rotating string pools below are drawn through modules/history.py rather
+# than random.choice, so a title shape, a description opener or a pinned comment
+# does not reappear until its pool is exhausted. history.pick() only records into
+# a pending buffer; generate.py commits it after a reel actually renders, and
+# retitle_existing.py never commits at all -- which is exactly right, because
+# there a whole batch of rewrites should be internally distinct without
+# consuming the rotation used for new uploads.
 
 
 # ==========================================================================
@@ -227,6 +238,29 @@ TITLE_PATTERNS = [
     "{core} 💕 {anchor} Moment",
     "This Is Why We Love {anchor}s | {core}",
     "{core} | Daily Dose Of Cute",
+    # Extended from 20 to 40. One pattern is used per upload, so at 5 reels/day
+    # a 20-pattern pool means the same title shape reappears twice a week and
+    # the channel page starts looking stamped out again.
+    "{core} | You Have To See This",
+    "{anchor} Moment Of The Day | {core}",
+    "{core} 🐾 {anchor}",
+    "Not A Dry Eye | {core}",
+    "{core} | {anchor} Compilation Worthy",
+    "Someone Send Help 🥹 {core}",
+    "{core} — Watch The Last 5 Seconds",
+    "{anchor} That Fixed My Whole Day | {core}",
+    "{core} | Softest Thing Today",
+    "How Is This Real 🥺 {core}",
+    "{core} | {anchor} Done Right",
+    "The Sweetest {anchor} | {core}",
+    "{core} (This Got Me) | {anchor}",
+    "{core} | Save This For A Bad Day",
+    "Two Seconds In And I Was Gone | {core}",
+    "{core} 💛 Wholesome {anchor}",
+    "{anchor}: {core} — Stay Till The End",
+    "{core} | Proof The Internet Is Fine",
+    "Everyone Needs To See This {anchor} | {core}",
+    "{core} | Tiny Heart, Huge Moment",
 ]
 
 # Titles longer than this get the pattern decoration dropped so the searchable
@@ -257,7 +291,7 @@ def build_title(core_title, text="", keywords=None, subject=None, rng=None):
     core = _clean_core(core_title)
     subject = subject or detect_subject(core, text, keywords)
     anchor = rng.choice(SEARCH_ANCHORS.get(subject, SEARCH_ANCHORS["puppy_baby"]))
-    pattern = rng.choice(TITLE_PATTERNS)
+    pattern = history.pick("title_patterns", TITLE_PATTERNS, rng=rng)
 
     title = pattern.format(anchor=anchor, core=core)
 
@@ -422,6 +456,16 @@ DESC_OPENERS = [
     "{teaser} Pure, simple, wholesome joy in under a minute.",
     "This one melted us. {teaser}",
     "{anchor} moments like this are why the internet is worth it. {teaser}",
+    "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+    "Saving this one for a rough day. {teaser}",
+    "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+    "Here is your {anchor_lc} moment for today. {teaser}",
+    "{teaser} The kind of clip you send to one specific person.",
+    "We rewatched this more times than we should admit. {teaser}",
+    "{teaser} Small moment, disproportionate effect on your mood.",
+    "This is the soft part of the internet. {teaser}",
+    "{teaser} Watch to the end — the last few seconds are the whole thing.",
+    "A very short {anchor_lc} story with a very large heart. {teaser}",
 ]
 
 DESC_QUESTIONS = [
@@ -433,6 +477,21 @@ DESC_QUESTIONS = [
     "Tag someone who needs to see this right now.",
     "On a scale of 1-10, how cute was that? Comment your score!",
     "What should we call this little one? Best comment wins 🏆",
+    "Be honest — how many times did you rewatch? Comment the number 👇",
+    "Cat person or dog person? Settle it in the comments.",
+    "What was the exact second that got you? Comment the timestamp 👇",
+    "Does your pet have a habit like this? Tell us about it below.",
+    "One word for how this made you feel. Go 👇",
+    "Who should see this today? Tag them.",
+    "Comment 🥹 if the ending got you too.",
+    "What should tomorrow's story be about? We read every comment.",
+    "First time here? Say hello in the comments 👋",
+    "Did you watch with the sound on or off? Genuinely curious 👇",
+    "Rate this little one out of 10. No wrong answers.",
+    "What is your pet's most ridiculous habit? Comment below.",
+    "If this is your kind of thing, comment 🐾 and we'll make more.",
+    "Which one would you take home? Comment your pick.",
+    "Comment where you're watching from — we love seeing the map fill up 🌍",
 ]
 
 DESC_CTAS = [
@@ -442,6 +501,16 @@ DESC_CTAS = [
     "If this made your day, subscribing takes two seconds and keeps them coming.",
     "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
     "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+    "Subscribe — one small, kind story lands here every single day.",
+    "We post daily. Subscribing means the next one finds you without looking.",
+    "If you want more of this in your feed, subscribing is the whole trick.",
+    "Subscribe and let something gentle reach you every day.",
+    "There is a new one of these tomorrow. Subscribe so you catch it.",
+    "Follow for the softest thirty seconds of your day, daily.",
+    "Subscribe — this channel exists for exactly the day you're having.",
+    "One good thing a day. Subscribe and we'll handle the rest.",
+    "New wholesome moment every single day. Hit subscribe.",
+    "Subscribe for daily proof that the world still has soft edges.",
 ]
 
 DESC_ABOUT = [
@@ -504,7 +573,7 @@ def build_description(
     anchor = rng.choice(SEARCH_ANCHORS.get(subject, SEARCH_ANCHORS["puppy_baby"]))
     teaser = _teaser(text)
 
-    opener = rng.choice(DESC_OPENERS).format(
+    opener = history.pick("desc_openers", DESC_OPENERS, rng=rng).format(
         anchor=anchor, anchor_lc=anchor.lower(), teaser=teaser
     ).strip()
 
@@ -518,8 +587,8 @@ def build_description(
     parts = [
         opener,
         kw_line,
-        rng.choice(DESC_QUESTIONS),
-        rng.choice(DESC_CTAS),
+        history.pick("desc_questions", DESC_QUESTIONS, rng=rng),
+        history.pick("desc_ctas", DESC_CTAS, rng=rng),
         rng.choice(DESC_ABOUT),
         PRODUCTION_NOTE,
     ]
@@ -550,12 +619,35 @@ PINNED_COMMENTS = [
     "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
     "Tag the person who always sends you cute animal videos.",
     "Comment 🐾 and we'll reply to every single one today.",
+    "Be honest, how many times did you watch this? I'll go first: eleven.",
+    "The last three seconds are the reason this exists 🥹",
+    "Cat person or dog person? Deciding this in the comments today.",
+    "We read every comment on this channel. Say something and find out.",
+    "What should tomorrow's story be about? Best idea gets made.",
+    "Somebody tell me I'm not the only one who teared up here.",
+    "If this showed up at the right moment for you today, say so 👇",
+    "Name this little one. We're taking suggestions seriously.",
+    "Small channel, real replies. Comment and we'll talk 🐾",
+    "Sound on is a completely different video, by the way 🔊",
+    "Which second got you? Drop the timestamp and we'll compare.",
+    "Rate the ending out of 10 — I'm giving it a firm 10.",
+    "Does your pet do this too? I need to know it's not just this one.",
+    "Watched it again while uploading it. No regrets.",
+    "This is the exact kind of thing this channel is for.",
+    "Tag the person who sends you every animal video. It's their turn.",
+    "Genuine question: how did nobody cry filming this?",
+    "If you made it to the end, you're my favourite kind of person 🤍",
+    "Saving this one for a bad day. Recommend you do the same.",
+    "One word for how this made you feel. Mine was 'oh'.",
+    "New here? Welcome. We do this every single day 🐾",
 ]
 
 
 def build_pinned_comment(rng=None):
-    rng = rng or random
-    return rng.choice(PINNED_COMMENTS)
+    # Drawn through history: this is the most visible rotating string on the
+    # channel after the title, since it sits at the top of every comment
+    # section. Plain random selection from 30 items still repeats within days.
+    return history.pick("pinned_comments", PINNED_COMMENTS, rng=rng)
 
 
 # ==========================================================================
