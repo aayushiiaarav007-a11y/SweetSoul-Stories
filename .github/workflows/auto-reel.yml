@@ -26,12 +26,25 @@ on:
     #
     # THREE THINGS THESE TIMES ACCOUNT FOR
     #
-    # 1) CRON TIME IS NOT PUBLISH TIME.
-    #    A GitHub Actions schedule is queued, not guaranteed - it commonly
-    #    starts 5-30 minutes late. Then the reel has to render and upload,
-    #    another ~10-15 minutes. So the video goes public roughly 40 MINUTES
-    #    after the cron fires. Every cron below is therefore set 40 minutes
-    #    BEFORE its intended publish time. Do not "fix" these to round times.
+    # 1) CRON TIME IS NOT PUBLISH TIME. THE LEAD IS ~80 MINUTES, MEASURED.
+    #    A GitHub Actions schedule is queued, not guaranteed. This was first
+    #    guessed at 30 minutes; the real figure was then measured against five
+    #    consecutive scheduled runs on this repo:
+    #
+    #        cron 14:43 UTC -> started 16:06   (+83 min)
+    #        cron 17:29 UTC -> started 18:57   (+88 min)
+    #        cron 21:11 UTC -> started 22:15   (+64 min)
+    #        cron 23:53 UTC -> started 01:12   (+79 min)
+    #        cron 23:53 UTC -> started 01:11   (+78 min)
+    #                                  average  +78 min
+    #
+    #    The render itself is fast - those runs completed in 4-6 minutes - so
+    #    essentially all of the lead is queue time. Every cron below is set
+    #    80 MINUTES before its intended publish time.
+    #
+    #    Do NOT "tidy" these into round times, and do not shorten the lead
+    #    without re-measuring. Verify with `python slot_report.py --shorts-only`,
+    #    which reads the real publish hour off YouTube rather than guessing.
     #
     # 2) US DAYLIGHT SAVING TIME.
     #    Cron is fixed UTC, but US Eastern is UTC-4 in summer (EDT) and UTC-5
@@ -41,6 +54,14 @@ on:
     #    edited twice a year:
     #        summer (EDT): 7:57 AM, 4:13 PM, 8:07 PM, 10:53 PM, 1:17 AM
     #        winter (EST): 6:57 AM, 3:13 PM, 7:07 PM,  9:53 PM, 12:17 AM
+    #
+    # 2b) SCHEDULED RUNS ARE SOMETIMES DROPPED ENTIRELY.
+    #    Run #160 failed with "The job was not acquired by Runner of type hosted
+    #    even after multiple attempts" plus a GitHub internal server error - no
+    #    runner was ever assigned, so nothing in this repo could have prevented
+    #    it. Nothing to fix in code; it costs one reel. Minute values below avoid
+    #    :00 and :30, which is when the scheduler is most congested and both
+    #    delays and dropped runs are worst.
     #
     # 3) THE YOUTUBE API QUOTA, NOT GITHUB MINUTES.
     #    The repo is public now, so Actions minutes are unlimited - but the
@@ -58,17 +79,17 @@ on:
     # scheduler is most congested and delays are worst.
     # ---------------------------------------------------------------------
     # --- MORNING SCROLL (6:00 - 9:00 AM ET) ---
-    - cron: "17 11 * * *"        # -> ~7:57 AM EDT / ~6:57 AM EST
+    - cron: "37 10 * * *"        # -> ~7:57 AM EDT / ~6:57 AM EST
     # --- AFTER SCHOOL (3:00 - 5:00 PM ET) ---
-    - cron: "33 19 * * *"        # -> ~4:13 PM EDT / ~3:13 PM EST
+    - cron: "53 18 * * *"        # -> ~4:13 PM EDT / ~3:13 PM EST
     # --- EVENING PRIME (7:00 PM - 1:30 AM ET) ---
     # This first evening slot is skipped on Mon/Wed/Fri: the long-form video
-    # publishes at ~8:45 PM those days, and a reel at ~8:07 PM would land 38
-    # minutes ahead of it and split the same audience. Skipping it also keeps
-    # the quota at 8,250 units instead of 9,900 on long-form days.
-    - cron: "27 23 * * 0,2,4,6"  # -> ~8:07 PM EDT / ~7:07 PM EST
-    - cron: "13 2 * * *"         # -> ~10:53 PM EDT / ~9:53 PM EST
-    - cron: "37 4 * * *"         # -> ~1:17 AM EDT / ~12:17 AM EST
+    # publishes at ~8:39 PM those days, and a reel at ~8:07 PM would land half an
+    # hour ahead of it and split the same audience. Skipping it also keeps the
+    # quota at 8,250 units instead of 9,900 on long-form days.
+    - cron: "47 22 * * 0,2,4,6"  # -> ~8:07 PM EDT / ~7:07 PM EST
+    - cron: "33 1 * * *"         # -> ~10:53 PM EDT / ~9:53 PM EST
+    - cron: "57 3 * * *"         # -> ~1:17 AM EDT / ~12:17 AM EST
   workflow_dispatch:
     inputs:
       diagnose_only:

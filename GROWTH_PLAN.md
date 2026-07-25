@@ -108,16 +108,31 @@ with the moral and sign-off re-appended.
 Only 1 of the 5 old slots actually published inside a US prime window; three landed in the
 middle of the American working day (11:23 AM, 2:09 PM, 5:51 PM ET). Now:
 
-| Window | Slots | Publish (EDT / EST) |
-|---|---|---|
-| Morning scroll | 1 reel | 7:57 AM / 6:57 AM |
-| After school | 1 reel | 4:13 PM / 3:13 PM |
-| Evening prime | 3 reels | 8:07 PM, 10:53 PM, 1:17 AM / 7:07 PM, 9:53 PM, 12:17 AM |
-| Evening prime | long-form, Mon/Wed/Fri | 8:45 PM / 7:45 PM |
+| Window | Slots | cron (UTC) | Publish (EDT / EST) |
+|---|---|---|---|
+| Morning scroll | 1 reel | `37 10` | 7:57 AM / 6:57 AM |
+| After school | 1 reel | `53 18` | 4:13 PM / 3:13 PM |
+| Evening prime | reel, Sun/Tue/Thu/Sat | `47 22` | 8:07 PM / 7:07 PM |
+| Evening prime | reel, daily | `33 1` | 10:53 PM / 9:53 PM |
+| Evening prime | reel, daily | `57 3` | 1:17 AM / 12:17 AM |
+| Evening prime | long-form, Mon/Wed/Fri | `41 22` | 8:39 PM / 7:39 PM |
 
 Both DST states were checked, so the crons never need a seasonal edit. Long-form also moved
 from `*/2` day-of-month to Mon/Wed/Fri: `*/2` resets at month boundaries, so the 31st and the
 1st both matched and it ran on two consecutive days several times a year.
+
+**The queue delay is ~80 minutes, not 30.** Every cron is set that far ahead of its intended
+publish time. The figure is measured, not assumed — five consecutive scheduled runs on this
+repo started +83, +88, +64, +79 and +78 minutes after their cron, averaging **+78**. The
+render itself is quick (those runs finished in 4-6 minutes), so nearly all of it is queue
+time. Re-check with `python slot_report.py --shorts-only`, which reads the real publish hour
+off YouTube, and do not shorten the lead without re-measuring.
+
+**Scheduled runs are occasionally dropped altogether.** Run #160 failed with *"The job was not
+acquired by Runner of type hosted even after multiple attempts"* alongside a GitHub internal
+server error — no runner was ever assigned, so no code in this repo could have prevented it.
+It costs one reel and needs no fix. Minute values avoid `:00` and `:30`, when the scheduler is
+most congested.
 - Metadata is now built **once at generate time** and stored in `manifest.json`. The
   uploader consumes it instead of stamping a fixed suffix on top.
 
