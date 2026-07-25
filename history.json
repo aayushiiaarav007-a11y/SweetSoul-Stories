@@ -5,19 +5,24 @@
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "One good thing a day. Subscribe and let us handle it.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Stick around. The next one is just as soft as this.",
+      "Come back tomorrow. There's always another small moment worth seeing."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -25,31 +30,40 @@
       "SO SOFT",
       "FINALLY 🥹",
       "NAILED IT",
-      "AND THEN 🥹"
+      "AND THEN 🥹",
+      "SO CLOSE",
+      "OH DEAR 😅",
+      "HE HAS OPINIONS"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
-      "Watch him think about it. That's the best bit."
+      "Watch him think about it. That's the best bit.",
+      "He believes he is enormous. He is not."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
-      "Comment 🐾 and we'll reply to every single one today."
+      "Comment 🐾 and we'll reply to every single one today.",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
-      "FIRST TIME OUTSIDE"
+      "FIRST TIME OUTSIDE",
+      "DAY ONE AT HOME"
     ],
     "title_patterns": [
       "{anchor} - {core}",
-      "{anchor} Moment Of The Day | {core}"
+      "{anchor} Moment Of The Day | {core}",
+      "{core} 💕 {anchor} Moment"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
-      "a senior dog getting adopted on his last day at the shelter"
+      "a senior dog getting adopted on his last day at the shelter",
+      "a puppy who fell asleep holding the toddler's sleeve"
     ],
     "voices": [
       "en-US-MichelleNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
