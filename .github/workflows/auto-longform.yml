@@ -5,10 +5,10 @@ name: Sweet Soul Auto Longform (3-5 min stories)
 # repo is public, so those are unlimited - it is limited by the YouTube Data API
 # quota of 10,000 units/day against 1,600 units per upload.
 #
-# SCHEDULE: cron "55 23 * * 1,3,5" = 23:55 UTC every Mon/Wed/Fri
-#     publishes ~8:45 PM US Eastern in summer, ~7:45 PM in winter
+# SCHEDULE: cron "41 22 * * 1,3,5" = 22:41 UTC every Mon/Wed/Fri
+#     publishes ~8:39 PM US Eastern in summer, ~7:39 PM in winter
 #     -> inside the 7:00 PM - 1:30 AM US evening prime-time window all year
-#     = 5:25 AM IST
+#     = 4:11 AM IST
 #
 # WHY DAY-OF-WEEK INSTEAD OF THE OLD "*/2" (every 2nd day-of-month):
 #   "*/2" on day-of-month resets at every month boundary, so the 31st and the
@@ -17,17 +17,21 @@ name: Sweet Soul Auto Longform (3-5 min stories)
 #   and lets the reel workflow reliably skip its 23:27 slot on exactly these
 #   days to stay inside the YouTube API quota (see auto-reel.yml for the math).
 #
-# WHY 23:55 AND NOT THE PUBLISH TIME ITSELF:
-#   The Actions scheduler queues jobs (5-30 min late is normal) and this build
-#   renders a 3-5 minute video with AI scene images, so the video goes public
-#   roughly 50 minutes after the cron fires.
+# WHY 22:41 AND NOT THE PUBLISH TIME ITSELF:
+#   The Actions scheduler queues jobs, and the delay is far larger than it looks.
+#   Measured over five consecutive scheduled runs on this repo it averaged
+#   +78 MINUTES (range +64 to +88). On top of that this build renders a 3-5
+#   minute video with AI scene images, so the total lead is set to ~118 minutes.
+#   Verify with `python slot_report.py --longform-only`, which reads the real
+#   publish time off YouTube instead of guessing. Do not shorten this lead
+#   without re-measuring.
 #
 # This workflow lives entirely under the longform/ folder and does NOT touch the
 # SweetSoul reel pipeline or its schedule.
 
 on:
   schedule:
-    - cron: "55 23 * * 1,3,5"
+    - cron: "41 22 * * 1,3,5"
   workflow_dispatch:
     inputs:
       mode:
