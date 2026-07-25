@@ -24,43 +24,29 @@ import re
 from dataclasses import dataclass, field
 
 from .config import STORIES_PATH, get_cfg, get_env
+from .pools import CTA_CANDIDATES, TOPIC_POOL
+from . import history
 
 log = logging.getLogger("moraltales.story")
 
-# Diverse moral-lesson seeds. One is picked per run so every episode teaches a
-# different lesson with a fresh setting and characters (no repeats).
-TOPIC_POOL = [
-    ("honesty", "a child who finds a lost wallet full of money"),
-    ("kindness", "a lonely old man and the children who befriend him"),
-    ("hard work", "a lazy rabbit who laughs at a slow but steady tortoise"),
-    ("courage", "a small boy who must cross a dark forest to fetch medicine"),
-    ("greed", "a fisherman who catches a magical fish that grants wishes"),
-    ("patience", "a girl who plants a seed and waits through every season"),
-    ("humility", "a proud peacock who learns the value of every creature"),
-    ("forgiveness", "two best friends torn apart by a silly misunderstanding"),
-    ("gratitude", "a poor boy who shares his only meal with a stranger"),
-    ("helping others", "village children who rebuild an old woman's broken bridge"),
-    ("never giving up", "a young bird afraid to take its very first flight"),
-    ("teamwork", "ants who must move a giant crumb before the rain comes"),
-    ("respecting elders", "a clever grandson and his wise old grandmother"),
-    ("sharing", "two brothers and a single basket of mangoes"),
-    ("telling the truth", "a shepherd boy who cried wolf one too many times"),
-    ("self-belief", "a tiny elephant told he could never do anything big"),
-    ("compassion", "a child who rescues a wounded sparrow in winter"),
-    ("contentment", "a dog who loses his bone chasing a reflection"),
-    ("wisdom over strength", "a clever mouse who frees a trapped lion"),
-    ("keeping promises", "a prince who gives his word to a humble farmer"),
-]
+# Lesson/topic seeds and spoken sign-offs now live in modules/pools.py so they can
+# be grown in one place: seeds 20 -> 80 (about 27 weeks at 3 episodes/week) and
+# sign-offs 5 -> 30. Both are imported at the top of this module and drawn through
+# modules/history.py, i.e. WITHOUT replacement, so no premise or closing line
+# returns until its pool is genuinely exhausted.
+
 
 _PROMPT_TEMPLATE = """You are the head writer for a faceless YouTube channel called
 "{channel}" that publishes ONE long, heartwarming MORAL STORY FOR CHILDREN
 every day. The audience is families in the USA. The narration is read aloud by
 a single warm, gentle storyteller voice.
 
-Write ONE complete story of about {words} words. LENGTH IS IMPORTANT: it must
-be AT LEAST 4 minutes when read aloud (~650 words) and at most 7 minutes
-(~1000 words). Do NOT write a short story - develop the scenes fully. Follow
-ALL of these rules:
+Write ONE complete story of about {words} words. LENGTH IS IMPORTANT AND STRICT:
+read aloud it must run BETWEEN 3 AND 5 MINUTES, which is about {min_words} to
+{max_words} words. Do NOT go over {max_words} words - a story that runs past 5
+minutes will be rejected. Do NOT go under {min_words} words either: still tell a
+complete story with real scenes, just tell it tightly. Cut any scene that does
+not move the story forward. Follow ALL of these rules:
 
 HOOK (very important):
 - The first 1-2 sentences MUST be an irresistible hook that makes the viewer
@@ -166,14 +152,93 @@ def derive_scenes_from_text(text, target=12):
     return scenes
 
 
+def _cta_pool():
+    """Sign-off pool: modules/pools.py, with config as an override."""
+    return list(get_cfg("channel.cta_pool", []) or []) or list(CTA_CANDIDATES)
+
+
+def _pick_cta():
+    """Rotate the spoken sign-off, drawn without replacement.
+
+    A single fixed closing line repeated word-for-word at the end of every
+    episode is both a mass-production signal and a cue that trains returning
+    viewers to click away the moment they hear it. Drawn through history so it
+    genuinely rotates instead of landing on the same line repeatedly by chance.
+    """
+    return history.pick("ctas", _cta_pool())
+
+
+def _has_cta(text):
+    low = (text or "").lower()
+    pool = _cta_pool()
+    pool.append(get_cfg("channel.cta", ""))
+    return any(c and c.lower() in low for c in pool)
+
+
+# Narration speed of the edge-tts storyteller voices at the configured rate,
+# measured against the bundled stories: ~145 spoken words per minute. Used to
+# translate the 3-5 minute target into a word budget the model can actually aim
+# at, and to sanity-check what comes back.
+WORDS_PER_MINUTE = 145
+
+
+def _word_budget():
+    """Return (target, minimum, maximum) words for the configured duration."""
+    target = int(get_cfg("story.target_words", 560))
+    min_words = int(get_cfg("story.min_words", 420))
+    max_words = int(get_cfg("story.max_words", 700))
+    return target, min_words, max_words
+
+
+def _estimated_minutes(word_count):
+    return word_count / float(WORDS_PER_MINUTE)
+
+
 def _build_prompt(lesson, topic):
+    target, min_words, max_words = _word_budget()
     return _PROMPT_TEMPLATE.format(
-        channel=get_cfg("channel.name", "MoralTales"),
-        words=get_cfg("story.target_words", 950),
+        channel=get_cfg("channel.name", "Sweet Soul Stories"),
+        words=target,
+        min_words=min_words,
+        max_words=max_words,
         lesson=lesson,
         topic=topic,
-        cta=get_cfg("channel.cta", "Subscribe for a new moral story every day!"),
+        cta=_pick_cta(),
     )
+
+
+def _trim_to_words(story, max_words):
+    """Shorten an over-long story to fit the 5-minute ceiling.
+
+    Only used as a last resort, when every model candidate came back too long.
+    The video composer does NOT cut the video to `max_duration_seconds` -- it
+    always matches the voiceover length -- so an 900-word story would silently
+    produce a 6+ minute video no matter what the config says. Trimming happens
+    here instead, at a sentence boundary, and the moral plus the sign-off are
+    re-appended so the story still lands properly instead of stopping mid-scene.
+    """
+    sentences = [s for s in re.split(r"(?<=[.!?])\s+", story.text.strip()) if s]
+    kept, used = [], 0
+    # Reserve room for the moral and the closing CTA we are about to add back.
+    reserve = len((story.moral or "").split()) + 12
+    for sentence in sentences:
+        n = len(sentence.split())
+        if used + n > max_words - reserve and kept:
+            break
+        kept.append(sentence)
+        used += n
+
+    tail = []
+    if story.moral and story.moral.lower() not in " ".join(kept).lower():
+        tail.append(story.moral)
+    story.text = " ".join(kept + tail).strip()
+    if not _has_cta(story.text):
+        story.text = story.text.rstrip() + " " + _pick_cta()
+    log.warning(
+        "Trimmed story to %d words (~%.1f min) to respect the 5-minute ceiling.",
+        story.word_count, _estimated_minutes(story.word_count),
+    )
+    return story
 
 
 def _parse_model_json(raw):
@@ -214,7 +279,10 @@ def _generate_with_gemini(lesson, topic):
 
     prompt = _build_prompt(lesson, topic)
     temperature = get_cfg("gemini.temperature", 0.95)
-    min_words = int(get_cfg("story.min_words", 750))
+    _target, min_words, max_words = _word_budget()
+    # Best over-long candidate seen so far, kept so we can trim it instead of
+    # dropping to stories.json (which would repeat one of only three stories).
+    oversize = None
 
     for model_name in ordered:
         try:
@@ -237,20 +305,36 @@ def _generate_with_gemini(lesson, topic):
                 scenes=[str(s).strip() for s in data.get("scenes", []) if str(s).strip()],
                 main_character=str(data.get("main_character") or "").strip(),
             )
-            cta = get_cfg("channel.cta", "")
-            if cta and cta.lower() not in story.text.lower():
-                story.text = story.text.rstrip() + " " + cta
+            if not _has_cta(story.text):
+                story.text = story.text.rstrip() + " " + _pick_cta()
             if story.word_count < min_words:
                 log.warning(
-                    "Model '%s' story too short (%d words); trying next.",
-                    model_name, story.word_count,
+                    "Model '%s' story too short (%d words, ~%.1f min); trying next.",
+                    model_name, story.word_count, _estimated_minutes(story.word_count),
                 )
                 continue
-            log.info("Gemini story ready via '%s' (%d words).", model_name, story.word_count)
+            if story.word_count > max_words:
+                # Would overshoot the 5-minute ceiling. Remember it and ask the
+                # next model, which often obeys the length instruction better.
+                log.warning(
+                    "Model '%s' story too long (%d words, ~%.1f min); trying next.",
+                    model_name, story.word_count, _estimated_minutes(story.word_count),
+                )
+                if oversize is None or story.word_count < oversize.word_count:
+                    oversize = story
+                continue
+            log.info(
+                "Gemini story ready via '%s' (%d words, ~%.1f min).",
+                model_name, story.word_count, _estimated_minutes(story.word_count),
+            )
             return story
         except Exception as exc:
             log.warning("Gemini model '%s' failed (%s); trying next.", model_name, exc)
             continue
+
+    if oversize is not None:
+        log.warning("Every candidate overshot 5 minutes; trimming the shortest one.")
+        return _trim_to_words(oversize, max_words)
 
     log.warning("All Gemini model candidates failed - using local stories.json.")
     return None
@@ -312,8 +396,12 @@ def _fallback_story():
 def generate_story(lesson=None, topic=None):
     """Return a single Story, preferring Gemini, falling back to stories.json."""
     if not lesson or not topic:
-        lesson, topic = random.choice(TOPIC_POOL)
-        log.info("Auto-picked lesson: %s | topic: %s", lesson, topic)
+        lesson, topic = history.pick("topics", TOPIC_POOL)
+        log.info(
+            "Auto-picked lesson: %s | topic: %s  (%d of %d seeds unused)",
+            lesson, topic,
+            len(history.remaining("topics", TOPIC_POOL)), len(TOPIC_POOL),
+        )
     story = _generate_with_gemini(lesson, topic)
     if story is None:
         story = _fallback_story()

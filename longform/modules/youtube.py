@@ -26,6 +26,24 @@ SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 CLIENT_SECRET_FILE = os.path.join(str(BASE_DIR), "yt_client_secret.json")
 TOKEN_FILE = os.path.join(str(BASE_DIR), "yt_token.json")
 
+# YouTube rejects the request if the tags field exceeds 500 characters in total.
+TAGS_CHAR_BUDGET = 480
+
+
+def _trim_tags(tags):
+    """Drop tags from the end until the whole list fits the 500-char budget."""
+    kept, used = [], 0
+    for tag in tags:
+        tag = str(tag or "").strip()
+        if not tag:
+            continue
+        cost = len(tag) + 1
+        if used + cost > TAGS_CHAR_BUDGET:
+            continue
+        kept.append(tag)
+        used += cost
+    return kept
+
 
 def _materialize_env_json(env_name, dest_path):
     raw = get_env(env_name)
@@ -92,12 +110,23 @@ def authorize():
 
 
 def _build_metadata(title, description, tags):
-    cfg_tags = list(get_cfg("youtube.default_tags", []))
-    all_tags = list(dict.fromkeys((tags or []) + cfg_tags))[:30]
-    hashtags = get_cfg("youtube.hashtags", "#moralstories #storiesforkids")
+    """Assemble the API request body.
+
+    The static config hashtag string and default tag list are now FALLBACKS
+    only. modules/seo.py builds a per-episode hashtag and tag set at generate
+    time; appending the same fixed block on top of it is what gave every episode
+    an identical metadata footprint.
+    """
+    all_tags = list(dict.fromkeys(tags or []))
+    if not all_tags:
+        all_tags = list(dict.fromkeys(get_cfg("youtube.default_tags", [])))
+    all_tags = _trim_tags(all_tags)
+
     full_desc = (description or "").strip()
-    if hashtags and hashtags not in full_desc:
-        full_desc = (full_desc + "\n\n" + hashtags).strip()
+    if "#" not in full_desc:
+        hashtags = get_cfg("youtube.hashtags", "#moralstories #storiesforkids")
+        if hashtags:
+            full_desc = (full_desc + "\n\n" + hashtags).strip()
     return {
         "snippet": {
             "title": title[:100],

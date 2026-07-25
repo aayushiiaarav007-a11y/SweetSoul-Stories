@@ -65,11 +65,13 @@ def run(limit=None):
         if not video_path or not os.path.exists(video_path):
             log.warning("Video missing for '%s'; skipping.", entry.get("title"))
             continue
+        # Prefer the SEO-built fields written at generate time; fall back to the
+        # raw story fields so pre-existing manifest entries still upload.
         vid = youtube.upload_video(
             video_path=video_path,
-            title=entry.get("title", "A Moral Story"),
+            title=entry.get("youtube_title") or entry.get("title", "A Moral Story"),
             description=entry.get("description", ""),
-            tags=entry.get("keywords", []),
+            tags=entry.get("youtube_tags") or entry.get("keywords", []),
             thumbnail_path=_abs(entry.get("thumbnail_path")),
         )
         if vid:

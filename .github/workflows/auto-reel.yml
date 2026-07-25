@@ -3,13 +3,72 @@ name: SweetSoul Auto Reel
 
 on:
   schedule:
-    # 4 reels/day — kept only US prime-time slots. The old 5:47 PM IST slot
-    # (cron "17 12") landed in US early morning and got almost no views, so it
-    # was removed. Freed-up YouTube upload quota is used by the long-form video.
-    - cron: "43 14 * * *"   # 8:13 PM IST  (10:43 AM ET / 7:43 AM PT)
-    - cron: "29 17 * * *"   # 10:59 PM IST (1:29 PM ET / 10:29 AM PT)
-    - cron: "11 21 * * *"   # 2:41 AM IST  (5:11 PM ET / 2:11 PM PT)
-    - cron: "53 23 * * *"   # 5:23 AM IST  (7:53 PM ET / 4:53 PM PT)
+    # ---------------------------------------------------------------------
+    # 5 reels/day, spread across THREE US audience windows instead of stacking
+    # all of them into the evening:
+    #
+    #   3 reels - EVENING PRIME  (7:00 PM - 1:30 AM ET)  <- the main window
+    #   1 reel  - MORNING SCROLL (6:00 AM - 9:00 AM ET)
+    #   1 reel  - AFTER SCHOOL   (3:00 PM - 5:00 PM ET)
+    #
+    # WHY NOT ALL FIVE IN THE EVENING: on a channel this size every upload is
+    # tested against roughly the same small slice of subscribers. Five uploads
+    # inside one five-hour block means video 2 enters the feed while video 1 is
+    # still being tested, so they compete with each other instead of with the
+    # rest of YouTube. Splitting the day gives each upload its own audience.
+    #
+    # NOTE ON THE MORNING SLOT: a morning slot (cron "17 12", ~8:17 AM ET) was
+    # removed earlier because it "got almost no views". That was measured when
+    # every video shared an identical title and had no on-screen text, so the
+    # slot was never really tested on its own. This re-tests it. Run
+    # `python slot_report.py --shorts-only` after ~2 weeks and cut it on data,
+    # not on a hunch.
+    #
+    # THREE THINGS THESE TIMES ACCOUNT FOR
+    #
+    # 1) CRON TIME IS NOT PUBLISH TIME.
+    #    A GitHub Actions schedule is queued, not guaranteed - it commonly
+    #    starts 5-30 minutes late. Then the reel has to render and upload,
+    #    another ~10-15 minutes. So the video goes public roughly 40 MINUTES
+    #    after the cron fires. Every cron below is therefore set 40 minutes
+    #    BEFORE its intended publish time. Do not "fix" these to round times.
+    #
+    # 2) US DAYLIGHT SAVING TIME.
+    #    Cron is fixed UTC, but US Eastern is UTC-4 in summer (EDT) and UTC-5
+    #    in winter (EST), so every slot drifts an hour earlier from early
+    #    November to mid March. Each target below is placed so that BOTH states
+    #    stay inside its window, which means these crons never need to be
+    #    edited twice a year:
+    #        summer (EDT): 7:57 AM, 4:13 PM, 8:07 PM, 10:53 PM, 1:17 AM
+    #        winter (EST): 6:57 AM, 3:13 PM, 7:07 PM,  9:53 PM, 12:17 AM
+    #
+    # 3) THE YOUTUBE API QUOTA, NOT GITHUB MINUTES.
+    #    The repo is public now, so Actions minutes are unlimited - but the
+    #    YouTube Data API still allows 10,000 units/day and videos.insert
+    #    costs 1,600, i.e. a hard ceiling of 6 uploads per day. The quota
+    #    resets at midnight PACIFIC (07:00 UTC), not at UTC midnight, so all
+    #    five crons below fall inside ONE quota day even though they span two
+    #    UTC dates. Budget per quota day:
+    #        5 reels x 1,650 = 8,250 units  (leaves room for a retry)
+    #    The 23:27 slot is skipped on the days the long-form video runs
+    #    (Mon/Wed/Fri UTC) so those days stay at 4 reels + 1 long-form = 8,250
+    #    instead of 9,900, which would leave no margin for a failed retry.
+    #
+    # Minute values deliberately avoid :00 and :30 - that is when the Actions
+    # scheduler is most congested and delays are worst.
+    # ---------------------------------------------------------------------
+    # --- MORNING SCROLL (6:00 - 9:00 AM ET) ---
+    - cron: "17 11 * * *"        # -> ~7:57 AM EDT / ~6:57 AM EST
+    # --- AFTER SCHOOL (3:00 - 5:00 PM ET) ---
+    - cron: "33 19 * * *"        # -> ~4:13 PM EDT / ~3:13 PM EST
+    # --- EVENING PRIME (7:00 PM - 1:30 AM ET) ---
+    # This first evening slot is skipped on Mon/Wed/Fri: the long-form video
+    # publishes at ~8:45 PM those days, and a reel at ~8:07 PM would land 38
+    # minutes ahead of it and split the same audience. Skipping it also keeps
+    # the quota at 8,250 units instead of 9,900 on long-form days.
+    - cron: "27 23 * * 0,2,4,6"  # -> ~8:07 PM EDT / ~7:07 PM EST
+    - cron: "13 2 * * *"         # -> ~10:53 PM EDT / ~9:53 PM EST
+    - cron: "37 4 * * *"         # -> ~1:17 AM EDT / ~12:17 AM EST
   workflow_dispatch:
     inputs:
       diagnose_only:
@@ -47,7 +106,10 @@ jobs:
     timeout-minutes: 45
     permissions:
       actions: write
-      contents: read
+      # contents: write (was read) so the no-repeat rotation state in
+      # history.json can be pushed back. Without this every run starts from a
+      # blank history and the whole no-repeat guarantee is lost.
+      contents: write
     steps:
 
       - name: Checkout repository
@@ -69,6 +131,33 @@ jobs:
                 && echo "deleted artifact $id" || true
             done
           echo "Artifact cleanup done."
+
+      - name: Delete workflow runs older than 2 days
+        # Artifacts are already cleaned above; this clears the RUN HISTORY, which
+        # otherwise grows by ~150 entries a month and makes the Actions tab
+        # unusable for finding a real failure.
+        #
+        # Retention is 2 DAYS on purpose (owner's call): a scheduled reel either
+        # published or it did not, and that is visible on YouTube within minutes,
+        # so there is nothing to debug in a run from last week. Only `completed`
+        # runs are eligible, so an in-progress build is never deleted.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CUTOFF=$(date -u -d '2 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          echo "Deleting completed workflow runs created before $CUTOFF"
+          DELETED=0
+          # Oldest first so a capped page still removes the most useful ones.
+          for id in $(gh api --paginate \
+                "repos/${{ github.repository }}/actions/runs?per_page=100&status=completed" \
+                -q ".workflow_runs[] | select(.created_at < \"$CUTOFF\") | .id" \
+                | head -200); do
+            if gh api -X DELETE "repos/${{ github.repository }}/actions/runs/$id" >/dev/null 2>&1; then
+              DELETED=$((DELETED+1))
+            fi
+          done
+          echo "Deleted $DELETED old workflow run(s)."
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -184,6 +273,49 @@ jobs:
           IG_PASSWORD: ${{ secrets.IG_PASSWORD }}
         run: |
           python upload_instagram.py --limit "${{ steps.params.outputs.per_day }}"
+
+      - name: Save no-repeat history back to the repo
+        # WHY: modules/history.py guarantees that a story topic, spoken hook,
+        # screen hook, flash phrase, narrator voice or title pattern is never
+        # reused until its pool is exhausted. That guarantee lives in
+        # history.json, and every Actions run gets a fresh checkout - so unless
+        # the file is pushed back, each run starts from an empty history and
+        # repeats come straight back.
+        #
+        # Runs on always() so the rotation is still recorded when the upload step
+        # failed: the reel was generated either way, and re-serving that topic
+        # would be worse than losing it.
+        #
+        # continue-on-error because a git conflict must never be reported as a
+        # failed video. The reel is already on YouTube by this point.
+        if: ${{ always() && github.event.inputs.diagnose_only != 'true' && github.event.inputs.selftest != 'true' }}
+        continue-on-error: true
+        run: |
+          set -u
+          if [ ! -f history.json ]; then
+            echo "No history.json produced; nothing to save."
+            exit 0
+          fi
+          git add history.json
+          if git diff --cached --quiet -- history.json; then
+            echo "history.json unchanged; nothing to commit."
+            exit 0
+          fi
+          # -c rather than `git config` so no persistent config is written.
+          git -c user.name="sweetsoul-bot" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "chore: record content rotation history [skip ci]"
+          # Concurrent runs (a reel and the long-form job) can race. Rebase and
+          # retry rather than clobbering the other pipeline's history file.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "history.json pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected; rebasing onto the remote (attempt $attempt)."
+            git pull --rebase --autostash || true
+          done
+          echo "Could not push history.json after 5 attempts; the next run will retry."
 
       - name: Upload artifacts (manual/debug runs only)
         # Scheduled daily reels already publish to YouTube, so we DON'T keep

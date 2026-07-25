@@ -35,6 +35,9 @@ import sys
 
 from modules.config import OUTPUT_DIR, BASE_DIR, setup_logging
 from modules import gemini_script
+from modules import history
+from modules import seo
+from modules import thumbnail as thumbnail_mod
 from modules import tts
 from modules import video_composer
 
@@ -77,13 +80,19 @@ def _save_manifest(manifest):
         log.error("Could not write manifest (%s).", exc)
 
 
-def _build_description(script):
-    """Compose a wholesome, USA-friendly description from the script."""
-    intro = script.text.strip()
-    return (
-        f"{intro}\n\n"
-        "Thanks for watching SweetSoul Stories - your daily dose of joy. "
-        "Follow for more heartwarming pets and babies every day!"
+def _build_seo(script):
+    """Build the full YouTube metadata bundle for this reel.
+
+    Done HERE (at generate time) rather than at upload time on purpose: the
+    uploader used to bolt a fixed "| Cute & Wholesome #shorts #cute" suffix onto
+    every title and re-append the same hashtag block to every description, so
+    all 100+ published videos shared an identical metadata fingerprint. Now the
+    metadata is computed once, varies per video, and is stored in the manifest.
+    """
+    return seo.build_metadata(
+        core_title=script.title,
+        text=script.text,
+        keywords=script.keywords,
     )
 
 
@@ -100,38 +109,76 @@ def generate_one(topic=None, index=0):
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     voice_path = os.path.join(str(OUTPUT_DIR), base_name + ".mp3")
     video_path = os.path.join(str(OUTPUT_DIR), base_name + ".mp4")
+    thumb_path = os.path.join(str(OUTPUT_DIR), base_name + ".jpg")
 
     # 2) Voiceover
     if tts.synthesize(script.text, voice_path) is None:
         log.error("Voiceover synthesis failed; skipping this reel.")
+        # Give the topic/hook/voice back so a failed run does not burn them.
+        history.discard()
         return None
 
-    # 3) Compose video
+    # 3) Compose video.
+    # NOTE: the on-screen hook is script.screen_hook (2-4 punchy words), NOT
+    # script.hook (the long spoken sentence). Rendering a full sentence at
+    # 150px was unreadable, which is part of why on-screen text was switched
+    # off entirely -- and Shorts watched on mute then had no hook at all.
     try:
         out = video_composer.compose_video(
             voice_path=voice_path,
             text=script.text,
             keywords=script.keywords,
-            hook_text=script.hook,
+            hook_text=getattr(script, "screen_hook", "") or script.hook,
+            flashes=getattr(script, "flashes", None),
             out_path=video_path,
         )
     except Exception as exc:
         log.exception("Video composition failed (%s).", exc)
+        history.discard()
         return None
+
+    # 4) SEO metadata (unique per video).
+    meta = _build_seo(script)
+
+    # 5) Thumbnail for the channel grid / subscriptions feed (best-effort).
+    thumb = None
+    try:
+        thumb = thumbnail_mod.generate_thumbnail(
+            video_path=out,
+            headline=getattr(script, "screen_hook", "") or script.title,
+            out_path=thumb_path,
+        )
+    except Exception as exc:
+        log.warning("Thumbnail generation failed (%s); continuing without one.", exc)
 
     entry = {
         "title": script.title,
         "hook": script.hook,
+        "screen_hook": getattr(script, "screen_hook", ""),
+        "flashes": list(getattr(script, "flashes", []) or []),
         "text": script.text,
         "keywords": list(script.keywords),
-        "description": _build_description(script),
+        "subject": meta["subject"],
+        "youtube_title": meta["youtube_title"],
+        "youtube_tags": meta["youtube_tags"],
+        "hashtags": meta["hashtags"],
+        "pinned_comment": meta["pinned_comment"],
+        # Kept under the original key so the uploader and any old tooling that
+        # reads `description` keeps working unchanged.
+        "description": meta["youtube_description"],
         "video_path": os.path.relpath(out, str(BASE_DIR)),
         "voice_path": os.path.relpath(voice_path, str(BASE_DIR)),
+        "thumbnail_path": os.path.relpath(thumb, str(BASE_DIR)) if thumb else None,
         "created_utc": stamp,
         "uploaded_youtube": False,
         "youtube_id": None,
         "uploaded_instagram": False,
     }
+
+    # The reel exists, so the topic/hook/voice/flashes it consumed are now
+    # permanently spent. Written here (not at pick time) so a run that dies
+    # mid-render leaves the rotation untouched.
+    history.commit()
     return entry
 
 
@@ -173,7 +220,11 @@ def main(argv=None):
         return 1
     print("\nGenerated reels:")
     for e in produced:
-        print(f"  - {e['title']}  ->  {e['video_path']}")
+        print(f"  - {e.get('youtube_title') or e['title']}")
+        print(f"      video     : {e['video_path']}")
+        print(f"      subject   : {e.get('subject')}")
+        print(f"      hashtags  : {' '.join(e.get('hashtags') or [])}")
+        print(f"      pin this  : {e.get('pinned_comment')}")
     return 0
 
 

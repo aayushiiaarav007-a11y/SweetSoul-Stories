@@ -1,22 +1,33 @@
 {
   "channel": {
-    "name": "MoralTales",
-    "cta": "Subscribe for a brand-new moral story every single day!"
+    "comment": "IMPORTANT: this pipeline uploads with the SAME YT_TOKEN_JSON as the Shorts pipeline, i.e. onto the SAME YouTube channel (@SweetSoulStories007). Descriptions used to welcome viewers to 'MoralTales', a brand that does not exist on that channel. The name is aligned here so the audience, the branding and YouTube's topic model all agree. If these long-form stories are ever moved to their own channel, change this back and give that channel its own token.",
+    "name": "Sweet Soul Stories",
+    "cta": "Subscribe for a brand-new story every single day!",
+    "cta_pool_note": "The 30 rotating sign-offs now live in modules/pools.py (CTA_CANDIDATES) and are drawn without replacement via modules/history.py. Adding a 'cta_pool' array here would OVERRIDE that larger pool, so leave it out unless you deliberately want a shorter list."
+  },
+  "seo": {
+    "comment": "Consumed by modules/seo.py. Chapters need >=3 entries, must start at 0:00, and each must be >=10s or YouTube ignores the whole block.",
+    "hashtag_count": 8,
+    "chapter_count": 6,
+    "channel_url": "https://www.youtube.com/@SweetSoulStories007"
   },
   "video": {
     "width": 1280,
     "height": 720,
     "fps": 18,
-    "target_duration_seconds": 300,
-    "min_duration_seconds": 240,
-    "max_duration_seconds": 430,
-    "clip_cut_seconds": 6.0,
+    "comment_duration": "Retargeted to 3-5 minutes. NOTE: the composer never cuts the video to max_duration_seconds - it always matches the voiceover length - so length is actually controlled by story.target_words below. These bounds only decide when a warning is logged.",
+    "target_duration_seconds": 240,
+    "min_duration_seconds": 180,
+    "max_duration_seconds": 300,
+    "clip_cut_seconds": 5.0,
     "preset": "veryfast",
     "crf": 23
   },
   "story": {
-    "target_words": 800,
-    "min_words": 620
+    "comment": "THIS is what controls video length. The storyteller voice runs ~145 words/minute at the configured rate, so 420-700 words = 3-5 minutes. A story over max_words is rejected and the next model is asked; if all of them overshoot, the shortest is trimmed at a sentence boundary with the moral re-appended.",
+    "target_words": 560,
+    "min_words": 440,
+    "max_words": 700
   },
   "palette": {
     "comment": "Calm dark-blue storytime backdrop used only when no footage is available",
@@ -79,7 +90,9 @@
     "category_id": "24",
     "privacy_status": "public",
     "made_for_kids": false,
-    "hashtags": "#moralstories #bedtimestories #storiesforkids #moralofthestory #kidsstories",
+    "hashtags_note": "FALLBACK ONLY. Per-episode rotating hashtags now come from modules/seo.py.",
+    "hashtags": "#moralstories #bedtimestories #storiesforkids",
+    "default_tags_note": "FALLBACK ONLY. modules/seo.py builds the per-episode tag set within YouTube's 500-char budget.",
     "default_tags": [
       "moral stories", "bedtime stories", "stories for kids",
       "short story with moral", "moral of the story", "english moral story",

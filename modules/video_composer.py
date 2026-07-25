@@ -498,6 +498,85 @@ def _build_caption_clips(text, duration):
 
 
 # ==========================================================================
+# Mid-video FLASH phrases
+# ==========================================================================
+def _build_flash_clips(flashes, duration, start_after=0.0):
+    """Flash a few very short phrases during the middle of the reel.
+
+    WHY THIS EXISTS
+    ---------------
+    Rolling word-by-word captions are switched OFF on this channel on purpose:
+    at 84px with a dark backdrop pill they covered the animal, which is the only
+    thing the viewer came for. But turning them off left a muted viewer with
+    nothing to read after the 2.5s opening hook, and a large share of Shorts
+    plays start muted.
+
+    So instead of a permanent subtitle track, three phrases of two or three
+    words each appear for a little over a second, spaced across the middle of
+    the video, in the UPPER third where the subject is not, with no backdrop
+    panel and a soft fade. Something to read, nothing obscured.
+
+    The phrases come from modules/pools.FLASH_PHRASES via the no-repeat history,
+    so a week of uploads does not carry the same three words.
+
+    Returns [] if disabled, if there is nothing to show, or on any render error.
+    """
+    if not get_cfg("flash_text.enabled", True):
+        return []
+    phrases = [str(p).strip() for p in (flashes or []) if str(p).strip()]
+    if not phrases:
+        return []
+
+    show_for = float(get_cfg("flash_text.duration_seconds", 1.3))
+    fade = float(get_cfg("flash_text.fade_seconds", 0.25))
+    fontsize = int(get_cfg("flash_text.fontsize", 76))
+    color = get_cfg("flash_text.color", "white")
+    stroke_color = get_cfg("flash_text.stroke_color", "black")
+    stroke_width = int(get_cfg("flash_text.stroke_width", 5))
+    font = get_cfg("flash_text.font", "DejaVu-Sans-Bold")
+    y_ratio = float(get_cfg("flash_text.position_y_ratio", 0.14))
+    tail_guard = float(get_cfg("flash_text.end_before_seconds", 2.5))
+
+    # Window available for flashes: after the hook, before the closing seconds.
+    window_start = max(float(start_after) + 0.6, 0.6)
+    window_end = duration - tail_guard
+    if window_end - window_start < show_for:
+        log.info("Reel too short for flash phrases; skipping.")
+        return []
+
+    phrases = phrases[: max(1, int(get_cfg("flash_text.count", 3)))]
+    slots = len(phrases)
+    span = (window_end - window_start) / float(slots)
+
+    clips = []
+    for i, phrase in enumerate(phrases):
+        # Centre each phrase inside its own slice so they never overlap.
+        start = window_start + span * i + max(0.0, (span - show_for) / 2.0)
+        seg = min(show_for, window_end - start)
+        if seg <= 0.3:
+            continue
+        tc = _make_text_clip(
+            phrase.upper(), fontsize, color, stroke_color, stroke_width,
+            font, int(W * 0.86),
+        )
+        if tc is None:
+            continue
+        try:
+            tc = tc.set_start(start).set_duration(seg)
+            tc = tc.set_position(("center", int(H * y_ratio)))
+            # Soft fade so it reads as a gentle accent, not a hard cut.
+            if fade > 0 and seg > fade * 2:
+                tc = tc.crossfadein(fade).crossfadeout(fade)
+            clips.append(tc)
+        except Exception as exc:
+            log.warning("Could not place flash phrase %r (%s).", phrase, exc)
+            continue
+
+    log.info("Built %d flash phrase(s): %s", len(clips), " | ".join(phrases))
+    return clips
+
+
+# ==========================================================================
 # First-5-seconds HOOK overlay
 # ==========================================================================
 def _build_hook_clips(hook_text, background):
@@ -920,15 +999,18 @@ def _build_audio(voice_path, duration):
 # ==========================================================================
 # Public API
 # ==========================================================================
-def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
+def compose_video(voice_path, text, keywords, hook_text=None, out_path=None,
+                  flashes=None):
     """Compose the full reel and write it to disk. Returns the output path.
 
     Parameters
     ----------
     voice_path : str   Path to the narration mp3 (required).
-    text       : str   The narration text (for captions).
+    text       : str   The narration text (used only if captions are enabled).
     keywords   : list  Footage search keywords for the background.
-    hook_text  : str   The derived first-5s hook line (optional).
+    hook_text  : str   Short on-screen hook label for the first ~2.5s.
+    flashes    : list  Short phrases flashed mid-video. Used instead of rolling
+                       captions, which are off by design on this channel.
     out_path   : str   Output mp4 path (optional; auto-named if omitted).
     """
     from moviepy.editor import AudioFileClip, CompositeVideoClip
@@ -986,6 +1068,10 @@ def compose_video(voice_path, text, keywords, hook_text=None, out_path=None):
                 kept.append(c)
         caption_clips = kept
     layers.extend(caption_clips)
+
+    # 3b) Mid-video flash phrases. These are what replaced the rolling captions:
+    # a muted viewer still gets something to read, but the subject stays clear.
+    layers.extend(_build_flash_clips(flashes, duration, start_after=hook_dur))
 
     # 4) Hook overlays go on top.
     layers.extend(hook_overlays)

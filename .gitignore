@@ -12,6 +12,7 @@ env/
 client_secret*.json
 token*.json
 yt_token.json
+yt_token_manage.json
 yt_client_secret.json
 *.session
 *.session-journal

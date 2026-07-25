@@ -25,6 +25,7 @@ import os
 import sys
 
 from modules.config import BASE_DIR, get_cfg, setup_logging
+from modules import seo
 from modules import youtube
 
 log = logging.getLogger("sweetsoul.upload.youtube")
@@ -52,16 +53,67 @@ def _save_manifest(manifest):
 
 
 def _build_title(entry):
-    """Cute, USA-friendly Shorts title with a couple of hashtags."""
-    base = entry.get("title") or "A SweetSoul Story"
-    # Keep it short and add #Shorts so YouTube treats it as a Short.
-    title = f"{base} | Cute & Wholesome #shorts #cute"
-    return title[:100]
+    """Return the per-video SEO title produced at generate time.
+
+    The previous implementation was:
+
+        title = f"{base} | Cute & Wholesome #shorts #cute"
+
+    ...which stamped a byte-identical 30-character suffix onto every single
+    upload. It buried the click-worthy words past the point where the Shorts UI
+    truncates the title, made every video compete for the same query, and gave
+    the channel a textbook "template-based content" fingerprint.
+
+    New behaviour: use `youtube_title` from the manifest. Entries created before
+    this change (or hand-edited ones) are re-run through modules/seo.py so the
+    legacy suffix is stripped rather than reproduced.
+    """
+    title = (entry.get("youtube_title") or "").strip()
+    if title:
+        return title[:100]
+
+    log.info("No youtube_title in manifest for %r; deriving one now.", entry.get("title"))
+    return seo.build_title(
+        core_title=entry.get("title") or "A SweetSoul Story",
+        text=entry.get("text", ""),
+        keywords=entry.get("keywords") or [],
+    )[:100]
+
+
+def _description(entry):
+    """Description from the manifest, rebuilt on the fly for legacy entries."""
+    desc = (entry.get("description") or "").strip()
+    # Legacy entries stored the raw narration + boilerplate with no hashtags.
+    if desc and "#" in desc:
+        return desc
+    meta = seo.build_metadata(
+        core_title=entry.get("title") or "A SweetSoul Story",
+        text=entry.get("text", ""),
+        keywords=entry.get("keywords") or [],
+    )
+    return meta["youtube_description"]
 
 
 def _tags(entry):
-    kw = entry.get("keywords") or []
-    return list(kw)
+    tags = entry.get("youtube_tags") or []
+    if tags:
+        return list(tags)
+    return seo.build_tags(
+        core_title=entry.get("title", ""),
+        keywords=entry.get("keywords") or [],
+        subject=seo.detect_subject(
+            entry.get("title", ""), entry.get("text", ""), entry.get("keywords")
+        ),
+        extra=get_cfg("youtube.default_tags", []),
+    )
+
+
+def _thumbnail(entry):
+    rel = entry.get("thumbnail_path")
+    if not rel:
+        return None
+    path = os.path.join(str(BASE_DIR), rel)
+    return path if os.path.exists(path) else None
 
 
 def upload_pending(limit=1, privacy=None):
@@ -91,15 +143,24 @@ def upload_pending(limit=1, privacy=None):
         vid = youtube.upload_video(
             video_path=video_path,
             title=_build_title(entry),
-            description=entry.get("description", ""),
+            description=_description(entry),
             tags=_tags(entry),
             privacy=privacy,
+            thumbnail_path=_thumbnail(entry),
         )
         if vid:
             entry["uploaded_youtube"] = True
             entry["youtube_id"] = vid
             uploaded.append(entry)
             _save_manifest(manifest)
+            # The pinned comment cannot be posted with the youtube.upload scope
+            # alone (it needs youtube.force-ssl), so surface it in the log for
+            # a 5-second manual paste that reliably kick-starts the comments.
+            if entry.get("pinned_comment"):
+                log.info(
+                    "PIN THIS COMMENT on https://youtu.be/%s -> %s",
+                    vid, entry["pinned_comment"],
+                )
         else:
             log.error("Upload failed for '%s'.", entry.get("title"))
             failed += 1

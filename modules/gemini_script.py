@@ -15,86 +15,56 @@ import json
 import logging
 import random
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 
 from .config import QUOTES_PATH, get_cfg, get_env
 
 log = logging.getLogger("sweetsoul.gemini")
 
-# Short, emotional, curiosity-driven hook openers for the cute/pets niche.
-# 30+ unique hooks — one is randomly picked per reel so every video feels fresh.
-# These are VOICE-ONLY (spoken by the narrator); nothing is drawn on screen.
-HOOK_CANDIDATES = [
-    "Wait for it, because this will melt your heart.",
-    "You won't believe what this tiny puppy just did.",
-    "Try not to smile watching this — I dare you.",
-    "This little moment made everyone in the room cry happy tears.",
-    "Watch till the very end — it gets even better.",
-    "This is the cutest thing you'll see all day.",
-    "Nobody expected this, and it changed everything.",
-    "This baby's reaction is absolutely priceless.",
-    "I've watched this a hundred times and it still gets me.",
-    "This little rescue story will stay with you all day.",
-    "Stop scrolling — you need to see this right now.",
-    "This tiny kitten just did something nobody saw coming.",
-    "This little puppy just became everyone's favorite hero.",
-    "What happened next made the whole family burst into tears.",
-    "This is the friendship nobody asked for but everyone needed.",
-    "One small moment, one enormous amount of love.",
-    "This puppy's first day home is the sweetest thing ever.",
-    "The way this baby laughs will instantly make your day.",
-    "This dog has been waiting for this moment his whole life.",
-    "You'll want to share this with everyone you love.",
-    "This tiny soul proved that love has no size.",
-    "This is what pure joy looks like — and it's adorable.",
-    "A baby, a puppy, and a moment you'll never forget.",
-    "This little kitten just stole every heart in the room.",
-    "The bond between these two will warm you to your core.",
-    "This happened by accident — and it's absolutely perfect.",
-    "Sometimes the smallest creatures carry the biggest love.",
-    "This rescue puppy's first smile says it all.",
-    "What this toddler did next left everyone speechless.",
-    "This is the kind of story the internet was made for.",
-]
+# All content pools now live in modules/pools.py so they can be grown in one
+# place. Re-exported under their original names so any other import keeps working.
+#
+#   topics 46 -> 150 | spoken hooks 58 -> 120 | screen hooks 24 -> 80
+#   flash phrases (new) 152 | sign-offs 8 -> 45
+#
+# Selection goes through modules/history.py, which draws WITHOUT replacement and
+# remembers across runs, so nothing repeats until a pool is genuinely exhausted.
+from .pools import (
+    CTA_CANDIDATES,
+    DEFAULT_KEYWORDS,
+    FLASH_PHRASES,
+    HOOK_CANDIDATES,
+    SCREEN_HOOKS,
+    TOPIC_POOL,
+)
+from . import history
 
-DEFAULT_KEYWORDS = [
-    "golden retriever puppy outdoor sunshine",
-    "puppy playing in grass sunlight",
-    "baby laughing outdoor",
-    "kitten playing near window light",
-    "toddler playing with puppy outside",
-    "dog and baby in garden",
-    "fluffy puppy running outdoor",
-    "baby and puppy sunny day",
-    "kittens playing in sunlight",
-    "child hugging dog outdoor",
-]
+_CTA = CTA_CANDIDATES[0]
 
-# Diverse topic pool — randomly picked each run for variety
-TOPIC_POOL = [
-    "a puppy meeting a baby for the first time",
-    "a kitten and puppy becoming best friends",
-    "a toddler teaching a puppy to sit",
-    "a baby's first giggle triggered by a playful dog",
-    "a rescue kitten finding a forever home",
-    "twin babies playing with a gentle giant dog",
-    "a puppy discovering snow for the first time",
-    "a kitten stealing a baby's toy and returning it",
-    "a toddler and puppy taking a nap together",
-    "a dog proudly carrying his puppy to meet the family baby",
-    "a kitten learning to play fetch with a laughing toddler",
-    "a baby sharing snacks with a patient gentle dog",
-    "a puppy and kitten cuddling under a warm blanket",
-    "a toddler reading a picture book to three sleepy puppies",
-    "a baby's first steps guided by a loyal gentle dog",
-    "a cat tucking in a newborn baby every night",
-    "a puppy howling along to a baby's laughter",
-    "a toddler and a fluffy cat playing hide and seek",
-    "a dog meeting his new baby sibling at the hospital",
-    "a kitten and a baby discovering bubbles together",
-]
 
-_CTA = "Follow SweetSoul Stories for your daily dose of joy."
+def _pick_cta():
+    return history.pick("ctas", CTA_CANDIDATES)
+
+
+def _pick_screen_hook():
+    return history.pick("screen_hooks", SCREEN_HOOKS)
+
+
+def _pick_flashes(count=3):
+    """Short phrases flashed mid-video (see video_composer._build_flash_clips).
+
+    Drawn through history so the same three words are not stamped across a
+    week of uploads, which is exactly the kind of repetition that made the old
+    on-screen text feel templated.
+    """
+    picked = history.pick("flashes", FLASH_PHRASES, count=count)
+    return picked if isinstance(picked, list) else [picked]
+
+
+def _has_cta(text):
+    """True if the script already ends with one of our sign-offs."""
+    low = (text or "").lower()
+    return any(c.lower() in low for c in CTA_CANDIDATES)
 
 
 def _derive_hook(text):
@@ -107,6 +77,12 @@ def _derive_hook(text):
       - The hook is a natural spoken sentence, not an uppercase screen label.
       - No two reels in a batch share the same hook.
     """
+    # Plain random on purpose, NOT history.pick(). This runs inside
+    # Script.__post_init__, and load_fallback_scripts() builds a Script for every
+    # entry in quotes.json - 23 of them - on a single reel. Consuming history
+    # here drained the hook, screen-hook and flash pools in one run and forced
+    # an immediate reset, which is what caused visible repeats. The real,
+    # history-backed pick happens once per reel in generate_script().
     return random.choice(HOOK_CANDIDATES)
 
 
@@ -124,7 +100,7 @@ def swap_spoken_hook(text, hook=None):
     """
     if not text:
         return text
-    chosen = hook or random.choice(HOOK_CANDIDATES)
+    chosen = hook or history.pick("hooks", HOOK_CANDIDATES)
     body = text.strip()
     # Split off the first sentence (ends at the first ., ! or ?).
     parts = re.split(r"(?<=[.!?])\s+", body, maxsplit=1)
@@ -135,6 +111,27 @@ def swap_spoken_hook(text, hook=None):
     return f"{chosen} {body}"
 
 
+def swap_cta(text, cta=None):
+    """Replace a known trailing sign-off with a freshly chosen one.
+
+    quotes.json and older Gemini output both end on the same fixed line
+    ("Follow SweetSoul Stories for your daily dose of joy."). Rotating it means
+    the last five seconds of audio -- the part regulars hear most often -- is no
+    longer identical across the whole library.
+    """
+    if not text:
+        return text
+    body = text.strip()
+    chosen = cta or _pick_cta()
+    for candidate in CTA_CANDIDATES:
+        idx = body.lower().rfind(candidate.lower())
+        if idx != -1:
+            return (body[:idx].rstrip() + " " + chosen).strip()
+    if not _has_cta(body):
+        return (body + " " + chosen).strip()
+    return body
+
+
 @dataclass
 class Script:
     """A single narration script ready for the pipeline."""
@@ -142,12 +139,21 @@ class Script:
     title: str
     text: str
     keywords: list = field(default_factory=list)
-    hook: str = ""
+    hook: str = ""          # spoken opener (full sentence, narrated)
+    screen_hook: str = ""   # on-screen label (2-4 words, drawn for ~2.5s)
+    flashes: list = field(default_factory=list)  # short phrases flashed mid-video
 
     def __post_init__(self):
-        # Auto-derive the on-screen hook if one was not supplied.
+        # Auto-derive the spoken hook if one was not supplied.
         if not self.hook:
             self.hook = _derive_hook(self.text)
+        # Cheap random placeholders only. generate_script() overwrites both with
+        # history-backed picks for the reel that is actually produced; see the
+        # note in _derive_hook for why this must not touch history.
+        if not self.screen_hook:
+            self.screen_hook = random.choice(SCREEN_HOOKS)
+        if not self.flashes:
+            self.flashes = random.sample(FLASH_PHRASES, min(3, len(FLASH_PHRASES)))
         # Ensure we always have at least some footage keywords.
         if not self.keywords:
             self.keywords = list(DEFAULT_KEYWORDS)
@@ -206,7 +212,7 @@ def _build_prompt(topic=None):
     if topic:
         topic_line = f"- The story should be about: {topic}\n"
     return _PROMPT_TEMPLATE.format(
-        words=target_words, cta=_CTA, topic_line=topic_line
+        words=target_words, cta=_pick_cta(), topic_line=topic_line
     )
 
 
@@ -277,9 +283,9 @@ def _generate_with_gemini(topic=None):
                 text=str(data["text"]).strip(),
                 keywords=[str(k).strip() for k in data.get("keywords", []) if str(k).strip()],
             )
-            # Guarantee the CTA is present.
-            if _CTA.lower() not in script.text.lower():
-                script.text = script.text.rstrip() + " " + _CTA
+            # Guarantee a sign-off is present (any of the rotating variants).
+            if not _has_cta(script.text):
+                script.text = script.text.rstrip() + " " + _pick_cta()
             log.info("Gemini script ready via '%s' (%d words).", model_name, script.word_count)
             return script
         except Exception as exc:
@@ -344,8 +350,11 @@ def generate_script(topic=None):
     run produces a genuinely different story (no repeat syndrome).
     """
     if not topic:
-        topic = random.choice(TOPIC_POOL)
-        log.info("Auto-picked topic: %s", topic)
+        topic = history.pick("topics", TOPIC_POOL)
+        log.info(
+            "Auto-picked topic: %s  (%d of %d unused)",
+            topic, len(history.remaining("topics", TOPIC_POOL)), len(TOPIC_POOL),
+        )
     script = _generate_with_gemini(topic)
     if script is None:
         script = _fallback_script(topic)
@@ -356,9 +365,12 @@ def generate_script(topic=None):
     # heart...", "Wait for it..."), which made the voiceover feel repetitive.
     # Swap the first sentence for a unique hook and reuse it as the (now
     # voice-only) hook field too.
-    fresh_hook = random.choice(HOOK_CANDIDATES)
+    fresh_hook = history.pick("hooks", HOOK_CANDIDATES)
     script.text = swap_spoken_hook(script.text, fresh_hook)
+    script.text = swap_cta(script.text)
     script.hook = fresh_hook
+    script.screen_hook = _pick_screen_hook()
+    script.flashes = _pick_flashes()
     return script
 
 
@@ -381,12 +393,19 @@ def generate_scripts(count, topic=None):
         return [generate_script(topic) for _ in range(count)]
     # Give each reel in the batch a DIFFERENT spoken hook (no repeats while we
     # still have unused hooks to hand out).
-    hooks = list(HOOK_CANDIDATES)
-    random.shuffle(hooks)
     for i in range(count):
-        script = pool[i % len(pool)]
-        fresh_hook = hooks[i % len(hooks)]
+        # COPY, don't reuse. quotes.json holds 23 scripts, so once `count`
+        # exceeds that, `pool[i % len(pool)]` hands back an object that is
+        # already in `results`. Mutating it then overwrote the hook and screen
+        # hook of the earlier reel too, so a batch of 40 produced only 23
+        # distinct openers. Real scheduled runs call generate_script() once per
+        # reel and were unaffected, but batch runs and the SEO self-check were.
+        script = replace(pool[i % len(pool)])
+        fresh_hook = history.pick("hooks", HOOK_CANDIDATES)
         script.text = swap_spoken_hook(script.text, fresh_hook)
+        script.text = swap_cta(script.text)
         script.hook = fresh_hook
+        script.screen_hook = _pick_screen_hook()
+        script.flashes = _pick_flashes()
         results.append(script)
     return results
