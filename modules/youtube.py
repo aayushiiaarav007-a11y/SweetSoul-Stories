@@ -27,6 +27,26 @@ SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 CLIENT_SECRET_FILE = os.path.join(str(BASE_DIR), "yt_client_secret.json")
 TOKEN_FILE = os.path.join(str(BASE_DIR), "yt_token.json")
 
+# YouTube rejects the request if the tags field exceeds 500 characters in total
+# (separators included). Silently overflowing it used to fail the whole upload.
+TAGS_CHAR_BUDGET = 480
+
+
+def _trim_tags(tags):
+    """Drop tags from the end until the whole list fits the 500-char budget."""
+    kept = []
+    used = 0
+    for tag in tags:
+        tag = str(tag or "").strip()
+        if not tag:
+            continue
+        cost = len(tag) + 1
+        if used + cost > TAGS_CHAR_BUDGET:
+            continue
+        kept.append(tag)
+        used += cost
+    return kept
+
 
 def _materialize_env_json(env_name, dest_path):
     """If an env var holds JSON, write it to dest_path. Returns path or None."""
@@ -124,15 +144,30 @@ def authorize():
 
 
 def _build_metadata(title, description, tags):
-    cfg_tags = list(get_cfg("youtube.default_tags", []))
-    all_tags = list(dict.fromkeys((tags or []) + cfg_tags))[:30]
-    hashtags = get_cfg(
-        "youtube.hashtags",
-        "#shorts #cute #puppy #baby #aww #animals #wholesome #heartwarming",
-    )
+    """Assemble the API request body.
+
+    IMPORTANT: this function no longer force-appends the channel-wide hashtag
+    string or the channel-wide default tag list. modules/seo.py now produces a
+    per-video hashtag set and tag set at generate time; blindly appending the
+    same static block on top of it is exactly what made every upload share an
+    identical metadata footprint. The static values survive only as a fallback
+    for callers (or old manifest entries) that supply nothing.
+    """
+    all_tags = list(dict.fromkeys(tags or []))
+    if not all_tags:
+        all_tags = list(dict.fromkeys(get_cfg("youtube.default_tags", [])))
+    all_tags = _trim_tags(all_tags)
+
     full_desc = (description or "").strip()
-    if hashtags and hashtags not in full_desc:
-        full_desc = (full_desc + "\n\n" + hashtags).strip()
+    if "#" not in full_desc:
+        # No hashtags anywhere in the description -> fall back to the config set.
+        fallback = get_cfg(
+            "youtube.hashtags",
+            "#shorts #cute #wholesome #aww #heartwarming",
+        )
+        if fallback:
+            full_desc = (full_desc + "\n\n" + fallback).strip()
+
     return {
         "snippet": {
             "title": title[:100],
@@ -147,7 +182,32 @@ def _build_metadata(title, description, tags):
     }
 
 
-def upload_video(video_path, title, description="", tags=None, privacy=None):
+def _set_thumbnail(youtube, video_id, thumbnail_path):
+    """Attach a custom thumbnail. Best-effort: never fails the upload.
+
+    Shorts do not use the thumbnail inside the Shorts player, but they DO use it
+    on the channel's video grid, in the subscriptions feed and in search — which
+    is precisely where a browsing viewer decides whether to subscribe.
+    """
+    from googleapiclient.http import MediaFileUpload
+
+    if not thumbnail_path or not os.path.exists(thumbnail_path):
+        return False
+    try:
+        youtube.thumbnails().set(
+            videoId=video_id,
+            media_body=MediaFileUpload(thumbnail_path, mimetype="image/jpeg"),
+        ).execute()
+        log.info("Thumbnail set for %s", video_id)
+        return True
+    except Exception as exc:
+        # Custom thumbnails need a verified channel; log and move on.
+        log.warning("Could not set thumbnail (%s).", exc)
+        return False
+
+
+def upload_video(video_path, title, description="", tags=None, privacy=None,
+                 thumbnail_path=None):
     """Upload a single video to YouTube. Returns the video id or None."""
     from googleapiclient.discovery import build
     from googleapiclient.http import MediaFileUpload
@@ -179,6 +239,8 @@ def upload_video(video_path, title, description="", tags=None, privacy=None):
                 log.info("Upload progress: %d%%", int(status.progress() * 100))
         video_id = response.get("id")
         log.info("Uploaded! https://youtu.be/%s", video_id)
+        if thumbnail_path:
+            _set_thumbnail(youtube, video_id, thumbnail_path)
         return video_id
     except HttpError as exc:
         status = getattr(getattr(exc, "resp", None), "status", "?")

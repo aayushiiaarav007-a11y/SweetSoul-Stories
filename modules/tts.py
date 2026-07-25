@@ -16,6 +16,7 @@ gTTS is imported lazily so importing this module never hard-fails.
 import asyncio
 import logging
 import os
+import random
 
 from .config import get_cfg, get_env
 
@@ -23,10 +24,27 @@ log = logging.getLogger("sweetsoul.tts")
 
 
 def _voice():
-    return get_env("TTS_VOICE", get_cfg("tts.voice", "en-US-AriaNeural"))
+    """Pick the narrator voice for this run.
+
+    An explicit TTS_VOICE env var always wins (useful for pinning a voice while
+    debugging). Otherwise a voice is drawn from tts.voice_pool so the library
+    does not consist of 100+ videos narrated by one identical synthetic voice --
+    which reads as mass-produced to viewers and to YouTube alike.
+    """
+    forced = get_env("TTS_VOICE")
+    if forced:
+        return forced
+    pool = get_cfg("tts.voice_pool", []) or []
+    if pool:
+        return random.choice(list(pool))
+    return get_cfg("tts.voice", "en-US-AriaNeural")
 
 
 def _rate():
+    """Slightly vary the speaking rate too, so pacing is not identical either."""
+    pool = get_cfg("tts.rate_pool", []) or []
+    if pool:
+        return random.choice(list(pool))
     return get_cfg("tts.rate", "-8%")
 
 

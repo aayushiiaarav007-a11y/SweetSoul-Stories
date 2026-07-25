@@ -55,6 +55,66 @@ HOOK_CANDIDATES = [
     "This rescue puppy's first smile says it all.",
     "What this toddler did next left everyone speechless.",
     "This is the kind of story the internet was made for.",
+    "Give this ten seconds. Trust me.",
+    "Nobody in that room stayed dry-eyed.",
+    "This tiny thing changed one family forever.",
+    "You are about to smile whether you like it or not.",
+    "Keep watching, the best part is hiding at the end.",
+    "This is your sign to be gentle with something small today.",
+    "One look and this little one had a home.",
+    "It took four seconds for these two to become inseparable.",
+    "There is a reason this clip refuses to leave my head.",
+    "This little face was waiting all week for this.",
+    "Watch what happens the second she turns around.",
+    "This might be the softest thing on the internet today.",
+    "Nobody taught him this. He just knew.",
+    "This is what being chosen looks like.",
+    "Two seconds in and my heart was gone.",
+    "This one is going to sit with you for a while.",
+    "The tiniest hero you'll meet today.",
+    "This started as an ordinary Tuesday.",
+    "You can actually see the exact moment they become friends.",
+    "That little sigh at the end broke me.",
+    "This is the good part of the internet.",
+    "She had no idea he'd been waiting by the door all morning.",
+    "Small paws, enormous heart.",
+    "This is the sweetest thing I've filmed all year.",
+    "He wasn't supposed to be able to do this yet.",
+    "Their first hello turned into their whole friendship.",
+    "You'll feel this one in your chest.",
+    "Nobody expected the baby to react like that.",
+]
+
+# SHORT, punchy labels drawn ON SCREEN for the first few seconds.
+# These are deliberately separate from HOOK_CANDIDATES: the spoken hook is a
+# full sentence, but a full sentence rendered at 150px is unreadable on a phone.
+# A 2-4 word label is what actually stops a thumb mid-scroll, and it is also the
+# only hook a muted viewer ever receives (a large share of Shorts plays).
+SCREEN_HOOKS = [
+    "WAIT FOR IT...",
+    "WATCH TILL THE END",
+    "TRY NOT TO SMILE",
+    "THIS MELTED ME",
+    "NOBODY EXPECTED THIS",
+    "CUTEST THING TODAY",
+    "GIVE IT 10 SECONDS",
+    "THE ENDING THOUGH",
+    "PURE JOY INCOMING",
+    "SOUND ON 🔊",
+    "HE JUST KNEW",
+    "BEST FRIENDS ALREADY",
+    "SHE HAD NO IDEA",
+    "KEEP WATCHING",
+    "TINY BUT MIGHTY",
+    "THIS IS THE ONE",
+    "WAIT FOR THE END 🥹",
+    "IT GETS BETTER",
+    "SMALL PAWS BIG HEART",
+    "YOU'LL WATCH TWICE",
+    "LOOK AT HIS FACE",
+    "FIRST HELLO ❤️",
+    "DON'T SCROLL PAST",
+    "THE SOFTEST THING",
 ]
 
 DEFAULT_KEYWORDS = [
@@ -92,9 +152,61 @@ TOPIC_POOL = [
     "a toddler and a fluffy cat playing hide and seek",
     "a dog meeting his new baby sibling at the hospital",
     "a kitten and a baby discovering bubbles together",
+    "a shy shelter dog wagging his tail for the very first time",
+    "a puppy waiting by the window every day for the school bus",
+    "a kitten who adopted a litter of orphaned puppies",
+    "a toddler sharing an umbrella with a soaked stray cat",
+    "a three-legged puppy outrunning everyone at the park",
+    "a baby falling asleep on a patient old dog's belly",
+    "a kitten who insists on supervising bath time",
+    "an old dog teaching a clumsy puppy how to climb stairs",
+    "a toddler carefully feeding a bottle to a rescued kitten",
+    "a puppy who brings one sock to every visitor as a gift",
+    "a baby and a cat playing peekaboo through a doorway",
+    "a rescue dog meeting the child who chose him",
+    "a kitten discovering its own reflection for the first time",
+    "a puppy learning to swim with a laughing toddler cheering",
+    "a dog gently guarding a sleeping newborn all night",
+    "a toddler and a kitten sharing a single blanket in winter",
+    "a puppy's first birthday celebrated by the whole family",
+    "a cat who greets the baby at the door every single morning",
+    "a nervous rescue kitten finally purring after a month",
+    "a toddler reading the alphabet out loud to a listening dog",
+    "a puppy and a duckling that grew up in the same yard",
+    "a baby's first word being the family dog's name",
+    "a senior dog getting adopted on his last day at the shelter",
+    "a kitten who steals one strawberry every single morning",
+    "a toddler building a pillow fort for a shy puppy",
+    "a dog carrying his blanket to a crying baby",
 ]
 
-_CTA = "Follow SweetSoul Stories for your daily dose of joy."
+# Rotating sign-offs. A single fixed CTA repeated verbatim in every video's
+# audio, on a channel of 100+ videos, is one of the loudest "mass-produced from
+# one template" signals there is -- and it also trains regular viewers to swipe
+# the moment they hear the familiar line.
+CTA_CANDIDATES = [
+    "Follow SweetSoul Stories for your daily dose of joy.",
+    "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+    "There's a new sweet story here every single day. Come back tomorrow.",
+    "If this made you smile, SweetSoul Stories has one of these for you daily.",
+    "Stay for tomorrow's story. It's just as soft as this one.",
+    "Subscribe and let something gentle find you every day.",
+    "SweetSoul Stories, every day, for the days you need something kind.",
+    "Follow along — the next tiny story is already waiting.",
+]
+
+# Kept for backward compatibility with anything importing the old constant.
+_CTA = CTA_CANDIDATES[0]
+
+
+def _pick_cta():
+    return random.choice(CTA_CANDIDATES)
+
+
+def _has_cta(text):
+    """True if the script already ends with one of our sign-offs."""
+    low = (text or "").lower()
+    return any(c.lower() in low for c in CTA_CANDIDATES)
 
 
 def _derive_hook(text):
@@ -135,6 +247,27 @@ def swap_spoken_hook(text, hook=None):
     return f"{chosen} {body}"
 
 
+def swap_cta(text, cta=None):
+    """Replace a known trailing sign-off with a freshly chosen one.
+
+    quotes.json and older Gemini output both end on the same fixed line
+    ("Follow SweetSoul Stories for your daily dose of joy."). Rotating it means
+    the last five seconds of audio -- the part regulars hear most often -- is no
+    longer identical across the whole library.
+    """
+    if not text:
+        return text
+    body = text.strip()
+    chosen = cta or _pick_cta()
+    for candidate in CTA_CANDIDATES:
+        idx = body.lower().rfind(candidate.lower())
+        if idx != -1:
+            return (body[:idx].rstrip() + " " + chosen).strip()
+    if not _has_cta(body):
+        return (body + " " + chosen).strip()
+    return body
+
+
 @dataclass
 class Script:
     """A single narration script ready for the pipeline."""
@@ -142,12 +275,15 @@ class Script:
     title: str
     text: str
     keywords: list = field(default_factory=list)
-    hook: str = ""
+    hook: str = ""          # spoken opener (full sentence, narrated)
+    screen_hook: str = ""   # on-screen label (2-4 words, drawn for ~2.5s)
 
     def __post_init__(self):
-        # Auto-derive the on-screen hook if one was not supplied.
+        # Auto-derive the spoken hook if one was not supplied.
         if not self.hook:
             self.hook = _derive_hook(self.text)
+        if not self.screen_hook:
+            self.screen_hook = random.choice(SCREEN_HOOKS)
         # Ensure we always have at least some footage keywords.
         if not self.keywords:
             self.keywords = list(DEFAULT_KEYWORDS)
@@ -206,7 +342,7 @@ def _build_prompt(topic=None):
     if topic:
         topic_line = f"- The story should be about: {topic}\n"
     return _PROMPT_TEMPLATE.format(
-        words=target_words, cta=_CTA, topic_line=topic_line
+        words=target_words, cta=_pick_cta(), topic_line=topic_line
     )
 
 
@@ -277,9 +413,9 @@ def _generate_with_gemini(topic=None):
                 text=str(data["text"]).strip(),
                 keywords=[str(k).strip() for k in data.get("keywords", []) if str(k).strip()],
             )
-            # Guarantee the CTA is present.
-            if _CTA.lower() not in script.text.lower():
-                script.text = script.text.rstrip() + " " + _CTA
+            # Guarantee a sign-off is present (any of the rotating variants).
+            if not _has_cta(script.text):
+                script.text = script.text.rstrip() + " " + _pick_cta()
             log.info("Gemini script ready via '%s' (%d words).", model_name, script.word_count)
             return script
         except Exception as exc:
@@ -358,7 +494,9 @@ def generate_script(topic=None):
     # voice-only) hook field too.
     fresh_hook = random.choice(HOOK_CANDIDATES)
     script.text = swap_spoken_hook(script.text, fresh_hook)
+    script.text = swap_cta(script.text)
     script.hook = fresh_hook
+    script.screen_hook = random.choice(SCREEN_HOOKS)
     return script
 
 
@@ -383,10 +521,14 @@ def generate_scripts(count, topic=None):
     # still have unused hooks to hand out).
     hooks = list(HOOK_CANDIDATES)
     random.shuffle(hooks)
+    screen = list(SCREEN_HOOKS)
+    random.shuffle(screen)
     for i in range(count):
         script = pool[i % len(pool)]
         fresh_hook = hooks[i % len(hooks)]
         script.text = swap_spoken_hook(script.text, fresh_hook)
+        script.text = swap_cta(script.text)
         script.hook = fresh_hook
+        script.screen_hook = screen[i % len(screen)]
         results.append(script)
     return results

@@ -32,6 +32,7 @@ from modules import tts
 from modules import video_composer
 from modules import ai_images as ai_images_mod
 from modules import pexels_video as pexels_mod
+from modules import seo
 from modules import thumbnail as thumb_mod
 
 log = logging.getLogger("moraltales.generate")
@@ -94,19 +95,34 @@ def _save_manifest(manifest):
         log.error("Could not write manifest (%s).", exc)
 
 
-def _build_description(story):
-    moral = (story.moral or "").strip()
-    channel = get_cfg("channel.name", "MoralTales")
-    parts = [story.hook.strip()]
-    if moral:
-        parts.append(moral)
-    parts.append(
-        f"Welcome to {channel} - a brand-new moral story for the whole family every day. "
-        "These gentle stories help children learn good values like honesty, kindness, "
-        "courage and patience. Watch till the end for the lesson!"
-    )
-    parts.append(get_cfg("channel.cta", "Subscribe for a new moral story every day!"))
-    return "\n\n".join(p for p in parts if p)
+def _media_duration(path):
+    """Best-effort duration in seconds for a rendered file (None on failure).
+
+    Needed so build_chapters() can place real timestamps rather than guesses.
+    """
+    if not path or not os.path.exists(path):
+        return None
+    try:
+        from moviepy.editor import AudioFileClip
+
+        clip = AudioFileClip(path)
+        try:
+            return float(clip.duration or 0) or None
+        finally:
+            clip.close()
+    except Exception as exc:
+        log.warning("Could not probe duration of %s (%s).", path, exc)
+        return None
+
+
+def _build_seo(story, duration_seconds):
+    """Build the YouTube metadata bundle for this episode.
+
+    Replaces the old _build_description(), which produced the same four blocks
+    for every upload, carried no search anchor in the title, had no chapters, and
+    welcomed viewers to a brand name that did not match the channel.
+    """
+    return seo.build_metadata(story, duration_seconds=duration_seconds)
 
 
 def _scene_queries(story):
@@ -207,13 +223,20 @@ def generate_one(lesson=None, topic=None, index=0, test=False):
     # 4) Thumbnail (best-effort)
     thumb = thumb_mod.generate_thumbnail(story.title, story.hook, out_path=thumb_path)
 
+    # 5) SEO metadata. Chapter timestamps are derived from the real narration
+    # length, so probe the voiceover rather than trusting the config target.
+    meta = _build_seo(story, _media_duration(voice_path))
+
     entry = {
         "title": story.title,
         "hook": story.hook,
         "moral": story.moral,
         "text": story.text,
         "keywords": list(story.keywords),
-        "description": _build_description(story),
+        "youtube_title": meta["youtube_title"],
+        "youtube_tags": meta["youtube_tags"],
+        "hashtags": meta["hashtags"],
+        "description": meta["youtube_description"],
         "video_path": os.path.relpath(out, str(BASE_DIR)),
         "voice_path": os.path.relpath(voice_path, str(BASE_DIR)),
         "thumbnail_path": os.path.relpath(thumb, str(BASE_DIR)) if thumb else None,

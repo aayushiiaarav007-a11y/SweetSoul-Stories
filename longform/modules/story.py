@@ -166,13 +166,33 @@ def derive_scenes_from_text(text, target=12):
     return scenes
 
 
+def _pick_cta():
+    """Rotate the spoken sign-off.
+
+    A single fixed closing line repeated word-for-word at the end of every
+    episode is both a mass-production signal and a cue that trains returning
+    viewers to click away the moment they hear it.
+    """
+    pool = get_cfg("channel.cta_pool", []) or []
+    if pool:
+        return random.choice(list(pool))
+    return get_cfg("channel.cta", "Subscribe for a new story every day!")
+
+
+def _has_cta(text):
+    low = (text or "").lower()
+    pool = list(get_cfg("channel.cta_pool", []) or [])
+    pool.append(get_cfg("channel.cta", ""))
+    return any(c and c.lower() in low for c in pool)
+
+
 def _build_prompt(lesson, topic):
     return _PROMPT_TEMPLATE.format(
-        channel=get_cfg("channel.name", "MoralTales"),
+        channel=get_cfg("channel.name", "Sweet Soul Stories"),
         words=get_cfg("story.target_words", 950),
         lesson=lesson,
         topic=topic,
-        cta=get_cfg("channel.cta", "Subscribe for a new moral story every day!"),
+        cta=_pick_cta(),
     )
 
 
@@ -237,9 +257,8 @@ def _generate_with_gemini(lesson, topic):
                 scenes=[str(s).strip() for s in data.get("scenes", []) if str(s).strip()],
                 main_character=str(data.get("main_character") or "").strip(),
             )
-            cta = get_cfg("channel.cta", "")
-            if cta and cta.lower() not in story.text.lower():
-                story.text = story.text.rstrip() + " " + cta
+            if not _has_cta(story.text):
+                story.text = story.text.rstrip() + " " + _pick_cta()
             if story.word_count < min_words:
                 log.warning(
                     "Model '%s' story too short (%d words); trying next.",
