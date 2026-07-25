@@ -3,39 +3,53 @@
   "used": {
     "ctas": [
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "Subscribe for more of the quiet, lovely parts of the internet."
+      "Subscribe for more of the quiet, lovely parts of the internet.",
+      "One good thing a day. Subscribe and let us handle it.",
+      "If your day got a little better, that's all we wanted. Subscribe for more."
     ],
     "desc_ctas": [
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "SLOWLY NOW",
       "HE REMEMBERED",
-      "SO SOFT"
+      "SO SOFT",
+      "FINALLY 🥹",
+      "NAILED IT",
+      "AND THEN 🥹"
     ],
     "hooks": [
-      "It's the way he checks on her that gets me every time."
+      "It's the way he checks on her that gets me every time.",
+      "Watch him think about it. That's the best bit."
     ],
     "pinned_comments": [
-      "Sound on is a completely different video, by the way 🔊"
+      "Sound on is a completely different video, by the way 🔊",
+      "Comment 🐾 and we'll reply to every single one today."
     ],
     "screen_hooks": [
-      "THE LOOK AT THE END"
+      "THE LOOK AT THE END",
+      "FIRST TIME OUTSIDE"
     ],
     "title_patterns": [
-      "{anchor} - {core}"
+      "{anchor} - {core}",
+      "{anchor} Moment Of The Day | {core}"
     ],
     "topics": [
-      "a dog who saved his own dinner to share with a stray"
+      "a dog who saved his own dinner to share with a stray",
+      "a senior dog getting adopted on his last day at the shelter"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
