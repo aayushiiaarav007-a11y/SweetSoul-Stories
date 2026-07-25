@@ -21,16 +21,19 @@
     "width": 1280,
     "height": 720,
     "fps": 18,
-    "target_duration_seconds": 300,
-    "min_duration_seconds": 240,
-    "max_duration_seconds": 430,
-    "clip_cut_seconds": 6.0,
+    "comment_duration": "Retargeted to 3-5 minutes. NOTE: the composer never cuts the video to max_duration_seconds - it always matches the voiceover length - so length is actually controlled by story.target_words below. These bounds only decide when a warning is logged.",
+    "target_duration_seconds": 240,
+    "min_duration_seconds": 180,
+    "max_duration_seconds": 300,
+    "clip_cut_seconds": 5.0,
     "preset": "veryfast",
     "crf": 23
   },
   "story": {
-    "target_words": 800,
-    "min_words": 620
+    "comment": "THIS is what controls video length. The storyteller voice runs ~145 words/minute at the configured rate, so 420-700 words = 3-5 minutes. A story over max_words is rejected and the next model is asked; if all of them overshoot, the shortest is trimmed at a sentence boundary with the moral re-appended.",
+    "target_words": 560,
+    "min_words": 440,
+    "max_words": 700
   },
   "palette": {
     "comment": "Calm dark-blue storytime backdrop used only when no footage is available",

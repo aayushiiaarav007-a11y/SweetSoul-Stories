@@ -3,13 +3,72 @@ name: SweetSoul Auto Reel
 
 on:
   schedule:
-    # 4 reels/day — kept only US prime-time slots. The old 5:47 PM IST slot
-    # (cron "17 12") landed in US early morning and got almost no views, so it
-    # was removed. Freed-up YouTube upload quota is used by the long-form video.
-    - cron: "43 14 * * *"   # 8:13 PM IST  (10:43 AM ET / 7:43 AM PT)
-    - cron: "29 17 * * *"   # 10:59 PM IST (1:29 PM ET / 10:29 AM PT)
-    - cron: "11 21 * * *"   # 2:41 AM IST  (5:11 PM ET / 2:11 PM PT)
-    - cron: "53 23 * * *"   # 5:23 AM IST  (7:53 PM ET / 4:53 PM PT)
+    # ---------------------------------------------------------------------
+    # 5 reels/day, spread across THREE US audience windows instead of stacking
+    # all of them into the evening:
+    #
+    #   3 reels - EVENING PRIME  (7:00 PM - 1:30 AM ET)  <- the main window
+    #   1 reel  - MORNING SCROLL (6:00 AM - 9:00 AM ET)
+    #   1 reel  - AFTER SCHOOL   (3:00 PM - 5:00 PM ET)
+    #
+    # WHY NOT ALL FIVE IN THE EVENING: on a channel this size every upload is
+    # tested against roughly the same small slice of subscribers. Five uploads
+    # inside one five-hour block means video 2 enters the feed while video 1 is
+    # still being tested, so they compete with each other instead of with the
+    # rest of YouTube. Splitting the day gives each upload its own audience.
+    #
+    # NOTE ON THE MORNING SLOT: a morning slot (cron "17 12", ~8:17 AM ET) was
+    # removed earlier because it "got almost no views". That was measured when
+    # every video shared an identical title and had no on-screen text, so the
+    # slot was never really tested on its own. This re-tests it. Run
+    # `python slot_report.py --shorts-only` after ~2 weeks and cut it on data,
+    # not on a hunch.
+    #
+    # THREE THINGS THESE TIMES ACCOUNT FOR
+    #
+    # 1) CRON TIME IS NOT PUBLISH TIME.
+    #    A GitHub Actions schedule is queued, not guaranteed - it commonly
+    #    starts 5-30 minutes late. Then the reel has to render and upload,
+    #    another ~10-15 minutes. So the video goes public roughly 40 MINUTES
+    #    after the cron fires. Every cron below is therefore set 40 minutes
+    #    BEFORE its intended publish time. Do not "fix" these to round times.
+    #
+    # 2) US DAYLIGHT SAVING TIME.
+    #    Cron is fixed UTC, but US Eastern is UTC-4 in summer (EDT) and UTC-5
+    #    in winter (EST), so every slot drifts an hour earlier from early
+    #    November to mid March. Each target below is placed so that BOTH states
+    #    stay inside its window, which means these crons never need to be
+    #    edited twice a year:
+    #        summer (EDT): 7:57 AM, 4:13 PM, 8:07 PM, 10:53 PM, 1:17 AM
+    #        winter (EST): 6:57 AM, 3:13 PM, 7:07 PM,  9:53 PM, 12:17 AM
+    #
+    # 3) THE YOUTUBE API QUOTA, NOT GITHUB MINUTES.
+    #    The repo is public now, so Actions minutes are unlimited - but the
+    #    YouTube Data API still allows 10,000 units/day and videos.insert
+    #    costs 1,600, i.e. a hard ceiling of 6 uploads per day. The quota
+    #    resets at midnight PACIFIC (07:00 UTC), not at UTC midnight, so all
+    #    five crons below fall inside ONE quota day even though they span two
+    #    UTC dates. Budget per quota day:
+    #        5 reels x 1,650 = 8,250 units  (leaves room for a retry)
+    #    The 23:27 slot is skipped on the days the long-form video runs
+    #    (Mon/Wed/Fri UTC) so those days stay at 4 reels + 1 long-form = 8,250
+    #    instead of 9,900, which would leave no margin for a failed retry.
+    #
+    # Minute values deliberately avoid :00 and :30 - that is when the Actions
+    # scheduler is most congested and delays are worst.
+    # ---------------------------------------------------------------------
+    # --- MORNING SCROLL (6:00 - 9:00 AM ET) ---
+    - cron: "17 11 * * *"        # -> ~7:57 AM EDT / ~6:57 AM EST
+    # --- AFTER SCHOOL (3:00 - 5:00 PM ET) ---
+    - cron: "33 19 * * *"        # -> ~4:13 PM EDT / ~3:13 PM EST
+    # --- EVENING PRIME (7:00 PM - 1:30 AM ET) ---
+    # This first evening slot is skipped on Mon/Wed/Fri: the long-form video
+    # publishes at ~8:45 PM those days, and a reel at ~8:07 PM would land 38
+    # minutes ahead of it and split the same audience. Skipping it also keeps
+    # the quota at 8,250 units instead of 9,900 on long-form days.
+    - cron: "27 23 * * 0,2,4,6"  # -> ~8:07 PM EDT / ~7:07 PM EST
+    - cron: "13 2 * * *"         # -> ~10:53 PM EDT / ~9:53 PM EST
+    - cron: "37 4 * * *"         # -> ~1:17 AM EDT / ~12:17 AM EST
   workflow_dispatch:
     inputs:
       diagnose_only:

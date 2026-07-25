@@ -63,6 +63,29 @@ the work in this change set is not only about getting more views — it is about
   body, and a tag set built to fit YouTube's 500-character budget.
 - **`longform/modules/seo.py`** — the same idea for long-form, plus **auto-generated
   chapters** with real timestamps derived from the narration length.
+
+### Long-form retargeted to 3-5 minutes
+The composer never cuts a video to `max_duration_seconds` — it always matches the voiceover
+length — so changing the duration config alone does nothing. Length is actually controlled by
+**word count**: the storyteller voice runs ~145 words/minute, so `story.target_words` went
+800 → **560** (~3.9 min) with a 440-700 word band. If a model returns something longer, the
+next model is tried; if all of them overshoot, the shortest is trimmed at a sentence boundary
+with the moral and sign-off re-appended.
+
+### Upload schedule rebuilt around US prime time
+Only 1 of the 5 old slots actually published inside a US prime window; three landed in the
+middle of the American working day (11:23 AM, 2:09 PM, 5:51 PM ET). Now:
+
+| Window | Slots | Publish (EDT / EST) |
+|---|---|---|
+| Morning scroll | 1 reel | 7:57 AM / 6:57 AM |
+| After school | 1 reel | 4:13 PM / 3:13 PM |
+| Evening prime | 3 reels | 8:07 PM, 10:53 PM, 1:17 AM / 7:07 PM, 9:53 PM, 12:17 AM |
+| Evening prime | long-form, Mon/Wed/Fri | 8:45 PM / 7:45 PM |
+
+Both DST states were checked, so the crons never need a seasonal edit. Long-form also moved
+from `*/2` day-of-month to Mon/Wed/Fri: `*/2` resets at month boundaries, so the 31st and the
+1st both matched and it ran on two consecutive days several times a year.
 - Metadata is now built **once at generate time** and stored in `manifest.json`. The
   uploader consumes it instead of stamping a fixed suffix on top.
 
@@ -108,15 +131,30 @@ python retitle_existing.py --only-legacy --limit 20 --apply
 Repeat ~20/day for 6 days until all 113 are done. Keep the batch small: uploads already
 consume ~8,000 of the 10,000 daily API units.
 
-### Day 1 — two settings changes worth real money
-1. **Make the GitHub repo public.** Private repos burn Actions minutes against the 2,000/month
-   free limit, which is why long-form only runs every *other* day. Public repos get unlimited
-   Actions minutes — that alone unlocks daily long-form. No secrets live in the code (they are
-   all GitHub Secrets), so this is safe.
-2. **Shift the upload mix toward long-form.** Long-form is the only thing that generates watch
-   hours. YouTube's API quota allows about 6 uploads/day at 1,600 units each, so:
-   `4 Shorts + 1 long-form` → **`3 Shorts + 2 long-form`**. You can also request a quota
-   increase in Google Cloud Console.
+### Day 1 — check the setting that decides whether any of this pays
+**Confirm the channel is not classified "Made for Kids."** Studio → Settings → Channel →
+Advanced, and the Audience setting on individual videos. If YouTube treats this content as
+made-for-kids, **comments are disabled entirely** and personalised ads are switched off, which
+roughly halves RPM. Given the niche (babies, toddlers, kids' moral stories) this channel sits
+right on the boundary, so verify it rather than assume. This matters more than any SEO change.
+
+Also confirm **2-step verification** is on — custom thumbnails require it.
+
+### Upload volume: what the real ceiling is
+The repo is public, so GitHub Actions minutes are unlimited and no longer a constraint. The
+binding limit is now the **YouTube Data API quota: 10,000 units/day**, and `videos.insert`
+costs **1,600 units** — a hard ceiling of **6 uploads/day**. The quota resets at midnight
+**Pacific** (07:00 UTC), not at UTC midnight.
+
+Current allocation keeps every day at 8,250 units, leaving headroom for one retry:
+
+| Days | Uploads | Units |
+|---|---|---|
+| Sun / Tue / Thu / Sat | 5 reels | 8,250 |
+| Mon / Wed / Fri | 4 reels + 1 long-form | 8,250 |
+
+That is **32 reels + 3 long-form per week**. To go beyond it, request a quota increase in
+Google Cloud Console (free form, takes a while and may be refused).
 
 ### Every day — 10 minutes of manual work that the API cannot do
 - **Pin the first comment.** The generator now prints one for each video
@@ -130,15 +168,25 @@ consume ~8,000 of the 10,000 daily API units.
 ### Week 1 — verify you are actually eligible
 - Studio → **Earn** — confirm which tier is offered in your country. The 500-sub fan-funding
   tier rolled out region by region, so check rather than assume.
-- Studio → Settings → Channel → **Advanced** — confirm the "made for kids" setting.
-  Marking a channel as made-for-kids disables personalised ads and severely cuts RPM. This
-  repo sets `made_for_kids: false`; make sure the channel-level setting agrees with reality.
-- Confirm **2-step verification** is on (required for custom thumbnails).
+
+### Week 2 — decide the schedule on data, not on a hunch
+```bash
+python slot_report.py --shorts-only --detail
+```
+This groups every published video by the hour it went live in US Eastern and reports the
+**median** views per slot. Read the median, not the mean — one lucky video makes a dead slot
+look healthy. A slot needs ~8-10 videos before its number means anything, so give it two weeks.
+
+The morning slot in particular is a deliberate re-test: a morning slot was removed earlier for
+"almost no views", but that was measured when every video had an identical title and no
+on-screen text, so the slot itself was never fairly tested.
 
 ### Things to stop doing
-- Don't post more Shorts hoping for 10M views in 90 days. That target is unreachable from
-  3,600 views/day, and every hour spent there is an hour not spent on watch hours.
 - Don't add more hashtags. Above 15, YouTube ignores **all** of them. The engine ships 9.
+- Don't chase the Shorts monetisation route as the *goal*. Reels are for subscribers and
+  reach; the 10M-views-in-90-days gate stays out of range. Watch hours come from long-form.
+- Don't set cron times to the publish time you want. Actions queues jobs 5-30 minutes late and
+  rendering adds ~10-15 more, so the crons are deliberately set ~40 minutes early.
 
 ---
 

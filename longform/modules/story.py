@@ -57,10 +57,12 @@ _PROMPT_TEMPLATE = """You are the head writer for a faceless YouTube channel cal
 every day. The audience is families in the USA. The narration is read aloud by
 a single warm, gentle storyteller voice.
 
-Write ONE complete story of about {words} words. LENGTH IS IMPORTANT: it must
-be AT LEAST 4 minutes when read aloud (~650 words) and at most 7 minutes
-(~1000 words). Do NOT write a short story - develop the scenes fully. Follow
-ALL of these rules:
+Write ONE complete story of about {words} words. LENGTH IS IMPORTANT AND STRICT:
+read aloud it must run BETWEEN 3 AND 5 MINUTES, which is about {min_words} to
+{max_words} words. Do NOT go over {max_words} words - a story that runs past 5
+minutes will be rejected. Do NOT go under {min_words} words either: still tell a
+complete story with real scenes, just tell it tightly. Cut any scene that does
+not move the story forward. Follow ALL of these rules:
 
 HOOK (very important):
 - The first 1-2 sentences MUST be an irresistible hook that makes the viewer
@@ -186,14 +188,70 @@ def _has_cta(text):
     return any(c and c.lower() in low for c in pool)
 
 
+# Narration speed of the edge-tts storyteller voices at the configured rate,
+# measured against the bundled stories: ~145 spoken words per minute. Used to
+# translate the 3-5 minute target into a word budget the model can actually aim
+# at, and to sanity-check what comes back.
+WORDS_PER_MINUTE = 145
+
+
+def _word_budget():
+    """Return (target, minimum, maximum) words for the configured duration."""
+    target = int(get_cfg("story.target_words", 560))
+    min_words = int(get_cfg("story.min_words", 420))
+    max_words = int(get_cfg("story.max_words", 700))
+    return target, min_words, max_words
+
+
+def _estimated_minutes(word_count):
+    return word_count / float(WORDS_PER_MINUTE)
+
+
 def _build_prompt(lesson, topic):
+    target, min_words, max_words = _word_budget()
     return _PROMPT_TEMPLATE.format(
         channel=get_cfg("channel.name", "Sweet Soul Stories"),
-        words=get_cfg("story.target_words", 950),
+        words=target,
+        min_words=min_words,
+        max_words=max_words,
         lesson=lesson,
         topic=topic,
         cta=_pick_cta(),
     )
+
+
+def _trim_to_words(story, max_words):
+    """Shorten an over-long story to fit the 5-minute ceiling.
+
+    Only used as a last resort, when every model candidate came back too long.
+    The video composer does NOT cut the video to `max_duration_seconds` -- it
+    always matches the voiceover length -- so an 900-word story would silently
+    produce a 6+ minute video no matter what the config says. Trimming happens
+    here instead, at a sentence boundary, and the moral plus the sign-off are
+    re-appended so the story still lands properly instead of stopping mid-scene.
+    """
+    sentences = [s for s in re.split(r"(?<=[.!?])\s+", story.text.strip()) if s]
+    kept, used = [], 0
+    # Reserve room for the moral and the closing CTA we are about to add back.
+    reserve = len((story.moral or "").split()) + 12
+    for sentence in sentences:
+        n = len(sentence.split())
+        if used + n > max_words - reserve and kept:
+            break
+        kept.append(sentence)
+        used += n
+
+    tail = []
+    if story.moral and story.moral.lower() not in " ".join(kept).lower():
+        tail.append(story.moral)
+    story.text = " ".join(kept + tail).strip()
+    if not _has_cta(story.text):
+        story.text = story.text.rstrip() + " " + _pick_cta()
+    log.warning(
+        "Trimmed story to %d words (~%.1f min) to respect the 5-minute ceiling.",
+        story.word_count, _estimated_minutes(story.word_count),
+    )
+    return story
 
 
 def _parse_model_json(raw):
@@ -234,7 +292,10 @@ def _generate_with_gemini(lesson, topic):
 
     prompt = _build_prompt(lesson, topic)
     temperature = get_cfg("gemini.temperature", 0.95)
-    min_words = int(get_cfg("story.min_words", 750))
+    _target, min_words, max_words = _word_budget()
+    # Best over-long candidate seen so far, kept so we can trim it instead of
+    # dropping to stories.json (which would repeat one of only three stories).
+    oversize = None
 
     for model_name in ordered:
         try:
@@ -261,15 +322,32 @@ def _generate_with_gemini(lesson, topic):
                 story.text = story.text.rstrip() + " " + _pick_cta()
             if story.word_count < min_words:
                 log.warning(
-                    "Model '%s' story too short (%d words); trying next.",
-                    model_name, story.word_count,
+                    "Model '%s' story too short (%d words, ~%.1f min); trying next.",
+                    model_name, story.word_count, _estimated_minutes(story.word_count),
                 )
                 continue
-            log.info("Gemini story ready via '%s' (%d words).", model_name, story.word_count)
+            if story.word_count > max_words:
+                # Would overshoot the 5-minute ceiling. Remember it and ask the
+                # next model, which often obeys the length instruction better.
+                log.warning(
+                    "Model '%s' story too long (%d words, ~%.1f min); trying next.",
+                    model_name, story.word_count, _estimated_minutes(story.word_count),
+                )
+                if oversize is None or story.word_count < oversize.word_count:
+                    oversize = story
+                continue
+            log.info(
+                "Gemini story ready via '%s' (%d words, ~%.1f min).",
+                model_name, story.word_count, _estimated_minutes(story.word_count),
+            )
             return story
         except Exception as exc:
             log.warning("Gemini model '%s' failed (%s); trying next.", model_name, exc)
             continue
+
+    if oversize is not None:
+        log.warning("Every candidate overshot 5 minutes; trimming the shortest one.")
+        return _trim_to_words(oversize, max_words)
 
     log.warning("All Gemini model candidates failed - using local stories.json.")
     return None
