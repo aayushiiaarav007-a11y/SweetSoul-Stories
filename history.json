@@ -1,5 +1,7 @@
 {
-  "cycles": {},
+  "cycles": {
+    "voices": 1
+  },
   "used": {
     "ctas": [
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
@@ -13,7 +15,9 @@
       "Subscribe and let something gentle find you every day.",
       "Stay a while. We post something gentle here every day.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day."
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -21,7 +25,8 @@
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe and let something gentle reach you every day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
@@ -29,7 +34,8 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "This one melted us. {teaser}",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -37,7 +43,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Tag someone who needs to see this right now.",
       "What should we call this little one? Best comment wins 🏆",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -57,7 +64,10 @@
       "GOOD ENOUGH FOR HIM",
       "COMMITTED",
       "I'M DONE 🥹",
-      "MY HEART"
+      "MY HEART",
+      "THERE SHE IS",
+      "LIKE CLOCKWORK",
+      "MASSIVE EFFORT"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -65,7 +75,8 @@
       "He believes he is enormous. He is not.",
       "One small moment, one enormous amount of love.",
       "This little rescue story will stay with you all day.",
-      "Some moments are too small to photograph and too big to forget."
+      "Some moments are too small to photograph and too big to forget.",
+      "Two minutes earlier they were strangers."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -73,7 +84,8 @@
       "Watched it again while uploading it. No regrets.",
       "One word for how this made you feel. Mine was 'oh'.",
       "If this showed up at the right moment for you today, say so 👇",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "Name this little one. We're taking suggestions seriously."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -81,7 +93,8 @@
       "DAY ONE AT HOME",
       "VERY PROUD OF HIMSELF",
       "FULL COMMITMENT",
-      "EVERY SINGLE MORNING"
+      "EVERY SINGLE MORNING",
+      "WATCH WHAT HE DOES"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -89,7 +102,8 @@
       "{core} 💕 {anchor} Moment",
       "{core} | Wholesome {anchor}",
       "Not A Dry Eye | {core}",
-      "{core} 🐾 {anchor}"
+      "{core} 🐾 {anchor}",
+      "How Is This Real 🥺 {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -97,14 +111,10 @@
       "a puppy who fell asleep holding the toddler's sleeve",
       "a toddler and a fluffy cat playing hide and seek",
       "a puppy who waits by the window every day for the school bus",
-      "a toddler reading a picture book to three sleepy puppies"
+      "a toddler reading a picture book to three sleepy puppies",
+      "a puppy's first trip to the beach and a war with the waves"
     ],
     "voices": [
-      "en-US-MichelleNeural",
-      "en-US-EmmaNeural",
-      "en-US-AnaNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
       "en-GB-SoniaNeural"
     ]
   }
