@@ -7,22 +7,27 @@
       "One good thing a day. Subscribe and let us handle it.",
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "Stick around. The next one is just as soft as this.",
-      "Come back tomorrow. There's always another small moment worth seeing."
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Pure, simple, wholesome joy in under a minute."
+      "{teaser} Pure, simple, wholesome joy in under a minute.",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Who else needed this today? Say hi in the comments 👋",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -33,37 +38,46 @@
       "AND THEN 🥹",
       "SO CLOSE",
       "OH DEAR 😅",
-      "HE HAS OPINIONS"
+      "HE HAS OPINIONS",
+      "HIS OWN WAY",
+      "PROUD BOY",
+      "THE PAWS"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
       "Watch him think about it. That's the best bit.",
-      "He believes he is enormous. He is not."
+      "He believes he is enormous. He is not.",
+      "One small moment, one enormous amount of love."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
       "Comment 🐾 and we'll reply to every single one today.",
-      "Watched it again while uploading it. No regrets."
+      "Watched it again while uploading it. No regrets.",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
       "FIRST TIME OUTSIDE",
-      "DAY ONE AT HOME"
+      "DAY ONE AT HOME",
+      "VERY PROUD OF HIMSELF"
     ],
     "title_patterns": [
       "{anchor} - {core}",
       "{anchor} Moment Of The Day | {core}",
-      "{core} 💕 {anchor} Moment"
+      "{core} 💕 {anchor} Moment",
+      "{core} | Wholesome {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
       "a senior dog getting adopted on his last day at the shelter",
-      "a puppy who fell asleep holding the toddler's sleeve"
+      "a puppy who fell asleep holding the toddler's sleeve",
+      "a toddler and a fluffy cat playing hide and seek"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-EmmaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
