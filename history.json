@@ -11,28 +11,33 @@
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe and let something gentle find you every day.",
-      "Stay a while. We post something gentle here every day."
+      "Stay a while. We post something gentle here every day.",
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe and let something gentle reach you every day.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "This one melted us. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Who else needed this today? Say hi in the comments 👋",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Tag someone who needs to see this right now.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -49,49 +54,58 @@
       "THE PAWS",
       "ALMOST OVER, STAY",
       "WORTH THE WAIT",
-      "GOOD ENOUGH FOR HIM"
+      "GOOD ENOUGH FOR HIM",
+      "COMMITTED",
+      "I'M DONE 🥹",
+      "MY HEART"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
       "Watch him think about it. That's the best bit.",
       "He believes he is enormous. He is not.",
       "One small moment, one enormous amount of love.",
-      "This little rescue story will stay with you all day."
+      "This little rescue story will stay with you all day.",
+      "Some moments are too small to photograph and too big to forget."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
       "Comment 🐾 and we'll reply to every single one today.",
       "Watched it again while uploading it. No regrets.",
       "One word for how this made you feel. Mine was 'oh'.",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
       "FIRST TIME OUTSIDE",
       "DAY ONE AT HOME",
       "VERY PROUD OF HIMSELF",
-      "FULL COMMITMENT"
+      "FULL COMMITMENT",
+      "EVERY SINGLE MORNING"
     ],
     "title_patterns": [
       "{anchor} - {core}",
       "{anchor} Moment Of The Day | {core}",
       "{core} 💕 {anchor} Moment",
       "{core} | Wholesome {anchor}",
-      "Not A Dry Eye | {core}"
+      "Not A Dry Eye | {core}",
+      "{core} 🐾 {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
       "a senior dog getting adopted on his last day at the shelter",
       "a puppy who fell asleep holding the toddler's sleeve",
       "a toddler and a fluffy cat playing hide and seek",
-      "a puppy who waits by the window every day for the school bus"
+      "a puppy who waits by the window every day for the school bus",
+      "a toddler reading a picture book to three sleepy puppies"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-EmmaNeural",
       "en-US-AnaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
