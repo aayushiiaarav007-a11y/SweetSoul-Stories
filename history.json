@@ -19,7 +19,9 @@
       "Follow SweetSoul Stories for your daily dose of joy.",
       "Follow along — the next tiny story is already waiting.",
       "Follow for more of this. Tomorrow's is already written.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "SweetSoul Stories, every day, for the days you need something kind."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -29,7 +31,8 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
@@ -39,7 +42,8 @@
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -49,7 +53,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "One word for how this made you feel. Go 👇",
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -75,7 +80,10 @@
       "MASSIVE EFFORT",
       "FIRST NAP HERE",
       "NEVER SEEN THIS",
-      "SHE WAITED"
+      "SHE WAITED",
+      "AWWW",
+      "SLEEPY BOY",
+      "IT WORKED?!"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -85,7 +93,8 @@
       "This little rescue story will stay with you all day.",
       "Some moments are too small to photograph and too big to forget.",
       "Two minutes earlier they were strangers.",
-      "This is the cutest thing you'll see all day."
+      "This is the cutest thing you'll see all day.",
+      "The bond between these two will warm you to your core."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -95,7 +104,8 @@
       "If this showed up at the right moment for you today, say so 👇",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Name this little one. We're taking suggestions seriously.",
-      "Which second got you? Drop the timestamp and we'll compare."
+      "Which second got you? Drop the timestamp and we'll compare.",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -105,7 +115,8 @@
       "FULL COMMITMENT",
       "EVERY SINGLE MORNING",
       "WATCH WHAT HE DOES",
-      "THE QUIET ONES HIT"
+      "THE QUIET ONES HIT",
+      "THIS MELTED ME"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -115,7 +126,8 @@
       "Not A Dry Eye | {core}",
       "{core} 🐾 {anchor}",
       "How Is This Real 🥺 {core}",
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -125,11 +137,13 @@
       "a puppy who waits by the window every day for the school bus",
       "a toddler reading a picture book to three sleepy puppies",
       "a puppy's first trip to the beach and a war with the waves",
-      "a puppy discovering snow for the first time"
+      "a puppy discovering snow for the first time",
+      "a baby crawling across the room to reach a sleeping puppy"
     ],
     "voices": [
       "en-GB-SoniaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
