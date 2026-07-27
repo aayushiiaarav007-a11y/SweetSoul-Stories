@@ -25,7 +25,9 @@
       "Follow now, and tomorrow's story will be waiting for you.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Subscribe, and tomorrow this will find you again."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -38,7 +40,8 @@
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe for daily proof that the world still has soft edges.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
@@ -51,7 +54,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -64,7 +68,8 @@
       "First time here? Say hello in the comments 👋",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Who should see this today? Tag them.",
-      "What should tomorrow's story be about? We read every comment."
+      "What should tomorrow's story be about? We read every comment.",
+      "Did you watch with the sound on or off? Genuinely curious 👇"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -99,7 +104,10 @@
       "WARM AND SAFE",
       "HE CAME BACK",
       "NO BRAKES",
-      "FEELS SAFE NOW"
+      "FEELS SAFE NOW",
+      "NEVER FORGOT",
+      "LOOK HOW LITTLE",
+      "PROTECT THEM BOTH"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -112,7 +120,8 @@
       "This is the cutest thing you'll see all day.",
       "The bond between these two will warm you to your core.",
       "This little face was waiting all week for this.",
-      "Watch till the very end — it gets even better."
+      "Watch till the very end — it gets even better.",
+      "There is nothing careful about this, and that is the beauty."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -125,7 +134,8 @@
       "Which second got you? Drop the timestamp and we'll compare.",
       "Tag the person who always sends you cute animal videos.",
       "We read every comment on this channel. Say something and find out.",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Somebody tell me I'm not the only one who teared up here."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -138,7 +148,8 @@
       "THE QUIET ONES HIT",
       "THIS MELTED ME",
       "STAY FOR 15 SECONDS",
-      "GOING SO BADLY 😭"
+      "GOING SO BADLY 😭",
+      "LAST ONE LEFT"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -151,7 +162,8 @@
       "I Watched This 10 Times | {core}",
       "{core} | Softest Thing Today",
       "{core} | Save This For A Bad Day",
-      "{anchor} | {core} ❤️"
+      "{anchor} | {core} ❤️",
+      "{core} (Try Not To Smile) | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -164,14 +176,16 @@
       "a puppy discovering snow for the first time",
       "a baby crawling across the room to reach a sleeping puppy",
       "a rescue puppy meeting his new brother, a three-legged dog",
-      "a puppy discovering his own tail exists"
+      "a puppy discovering his own tail exists",
+      "a baby's first giggle triggered by a playful dog"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AriaNeural",
       "en-US-AnaNeural",
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
