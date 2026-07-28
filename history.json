@@ -33,7 +33,9 @@
       "New story, same warmth, every day. Subscribe so you don't miss it.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "Every day, one gentle story. Subscribe and let it find you."
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "That's all for today. Follow along and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -50,7 +52,8 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "Subscribe — one small, kind story lands here every single day.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
@@ -67,7 +70,8 @@
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "{anchor} alert: {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -84,7 +88,8 @@
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Which one would you take home? Comment your pick.",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "Which part made you smile the most? Tell us in the comments 👇"
+      "Which part made you smile the most? Tell us in the comments 👇",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -131,7 +136,10 @@
       "NEVER LEAVES",
       "KEEP GOING",
       "BRAVE TODAY",
-      "WATCH TO THE END"
+      "WATCH TO THE END",
+      "BRAVE LITTLE THING",
+      "SNORING NOW",
+      "ALMOST 🥺"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -148,7 +156,8 @@
       "There is nothing careful about this, and that is the beauty.",
       "This little puppy just became everyone's favorite hero.",
       "There is a right way to do this. He found another way.",
-      "Twenty seconds is all this takes. Give it to yourself."
+      "Twenty seconds is all this takes. Give it to yourself.",
+      "Small paws, enormous heart."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -165,7 +174,8 @@
       "Somebody tell me I'm not the only one who teared up here.",
       "Does your pet do this too? I need to know it's not just this one.",
       "Cat person or dog person? Deciding this in the comments today.",
-      "Tag the person who sends you every animal video. It's their turn."
+      "Tag the person who sends you every animal video. It's their turn.",
+      "The last three seconds are the reason this exists 🥹"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -182,7 +192,8 @@
       "LAST ONE LEFT",
       "THIS IS THE ONE",
       "DON'T SCROLL PAST",
-      "WATCH TILL THE END"
+      "WATCH TILL THE END",
+      "SOUND ON 🔊"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -199,7 +210,8 @@
       "{core} (Try Not To Smile) | {anchor}",
       "{core} | {anchor}",
       "Wait For The End 🥺 {core}",
-      "{core} (This Got Me) | {anchor}"
+      "{core} (This Got Me) | {anchor}",
+      "Someone Send Help 🥹 {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -216,12 +228,14 @@
       "a baby's first giggle triggered by a playful dog",
       "a cat and a dog sharing one very small sunbeam",
       "a toddler who insists the dog sits at the dinner table",
-      "a kitten meeting a feather and losing the fight"
+      "a kitten meeting a feather and losing the fight",
+      "a kitten who follows the toddler from room to room all day"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
