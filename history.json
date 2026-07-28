@@ -1,5 +1,6 @@
 {
   "cycles": {
+    "desc_ctas": 1,
     "voices": 2
   },
   "used": {
@@ -35,25 +36,12 @@
       "That's today's dose of soft. Follow for tomorrow's.",
       "Every day, one gentle story. Subscribe and let it find you.",
       "If you smiled, that's the whole job done. Subscribe for more.",
-      "That's all for today. Follow along and we'll see you tomorrow."
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "There is more where this came from. Subscribe and find out.",
+      "If you needed this today, subscribe — we'll be here again tomorrow."
     ],
     "desc_ctas": [
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe and let something gentle reach you every day.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "{teaser} Small moment, disproportionate effect on your mood.",
@@ -71,7 +59,8 @@
       "{anchor} alert: {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -89,7 +78,8 @@
       "Which one would you take home? Comment your pick.",
       "What was the exact second that got you? Comment the timestamp 👇",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -139,7 +129,10 @@
       "WATCH TO THE END",
       "BRAVE LITTLE THING",
       "SNORING NOW",
-      "ALMOST 🥺"
+      "ALMOST 🥺",
+      "FIRST TIME",
+      "TOOK HER TIME",
+      "PHYSICS WHO"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -157,7 +150,8 @@
       "This little puppy just became everyone's favorite hero.",
       "There is a right way to do this. He found another way.",
       "Twenty seconds is all this takes. Give it to yourself.",
-      "Small paws, enormous heart."
+      "Small paws, enormous heart.",
+      "This is the good part of the internet."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -175,7 +169,8 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "Cat person or dog person? Deciding this in the comments today.",
       "Tag the person who sends you every animal video. It's their turn.",
-      "The last three seconds are the reason this exists 🥹"
+      "The last three seconds are the reason this exists 🥹",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -193,7 +188,8 @@
       "THIS IS THE ONE",
       "DON'T SCROLL PAST",
       "WATCH TILL THE END",
-      "SOUND ON 🔊"
+      "SOUND ON 🔊",
+      "SHE WAITED ALL DAY"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -211,7 +207,8 @@
       "{core} | {anchor}",
       "Wait For The End 🥺 {core}",
       "{core} (This Got Me) | {anchor}",
-      "Someone Send Help 🥹 {core}"
+      "Someone Send Help 🥹 {core}",
+      "{anchor} That Fixed My Whole Day | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -229,13 +226,15 @@
       "a cat and a dog sharing one very small sunbeam",
       "a toddler who insists the dog sits at the dinner table",
       "a kitten meeting a feather and losing the fight",
-      "a kitten who follows the toddler from room to room all day"
+      "a kitten who follows the toddler from room to room all day",
+      "a puppy howling along to a baby's laughter"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
       "en-US-EmmaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
