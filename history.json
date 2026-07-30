@@ -47,19 +47,23 @@
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "Come for one story, stay for the daily ones. Subscribe.",
-      "Follow along, and tomorrow we'll find another one of these together."
+      "Follow along, and tomorrow we'll find another one of these together.",
+      "Subscribe — there's a new little moment here every single morning.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe — one small, kind story lands here every single day.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -82,7 +86,8 @@
       "Does your pet have a habit like this? Tell us about it below.",
       "Would your pet do the same thing? Tell us below 👇",
       "Rate this little one out of 10. No wrong answers.",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -147,7 +152,10 @@
       "FULL SPEED",
       "HE DID IT",
       "TAIL GOING WILD",
-      "HE'S TRYING"
+      "HE'S TRYING",
+      "HER SPOT",
+      "GOOD LUCK 😅",
+      "ALMOST GOT IT"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -170,7 +178,8 @@
       "It is not going to work, and he is going to try anyway.",
       "This happened by accident — and it's absolutely perfect.",
       "This might be the softest thing on the internet today.",
-      "Sometimes the smallest creatures carry the biggest love."
+      "Sometimes the smallest creatures carry the biggest love.",
+      "This took forty attempts. Here is attempt forty-one."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -193,7 +202,8 @@
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "Saving this one for a bad day. Recommend you do the same.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -216,7 +226,8 @@
       "NO WORDS NEEDED",
       "THE SAME SPOT DAILY",
       "FIRST SOFT BED",
-      "NOBODY TAUGHT HIM"
+      "NOBODY TAUGHT HIM",
+      "WAIT FOR IT..."
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -239,7 +250,8 @@
       "This Is Why We Love {anchor}s | {core}",
       "{core} | Tiny Heart, Huge Moment",
       "{core} | {anchor} Done Right",
-      "{core} | Proof The Internet Is Fine"
+      "{core} | Proof The Internet Is Fine",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -262,12 +274,14 @@
       "a dog and a toddler building the world's worst snowman",
       "a puppy trying to carry a stick far too big for him",
       "a kitten who purrs only when the baby is nearby",
-      "a kitten who tucks in a newborn baby every night"
+      "a kitten who tucks in a newborn baby every night",
+      "the way a baby laughs every time the dog sneezes"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-MichelleNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
