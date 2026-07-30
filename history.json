@@ -12,7 +12,9 @@
       "If you smiled, that's the whole job done. Subscribe for more.",
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -23,7 +25,8 @@
       "Subscribe — this channel exists for exactly the day you're having.",
       "Follow for the softest thirty seconds of your day, daily.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -32,11 +35,13 @@
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "This is the soft part of the internet. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "{teaser} Pure, simple, wholesome joy in under a minute."
+      "{teaser} Pure, simple, wholesome joy in under a minute.",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "If this is your kind of thing, comment 🐾 and we'll make more."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -113,7 +118,10 @@
       "TINY LEGS",
       "FULL CONCENTRATION",
       "SAFE AT LAST",
-      "SHE'S HAD ENOUGH"
+      "SHE'S HAD ENOUGH",
+      "WE DON'T KNOW EITHER",
+      "CLOSE ENOUGH",
+      "WATCH THIS"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -140,7 +148,8 @@
       "This took forty attempts. Here is attempt forty-one.",
       "He is far too small to understand what he just did.",
       "Their first hello turned into their whole friendship.",
-      "Give this ten seconds. Trust me."
+      "Give this ten seconds. Trust me.",
+      "You'll feel this one in your chest."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -167,7 +176,8 @@
       "This is the exact kind of thing this channel is for.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "If this made you smile, that's all we wanted today ❤️",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "New here? Welcome. We do this every single day 🐾"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -194,7 +204,8 @@
       "WAIT FOR IT...",
       "JUST WAIT 🥺",
       "NOBODY EXPECTED THIS",
-      "THE GENTLEST BOY"
+      "THE GENTLEST BOY",
+      "LOOK AT HIS FACE"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -221,7 +232,8 @@
       "{core} 🥹 {anchor}",
       "{core} | Daily Dose Of Cute",
       "Everyone Needs To See This {anchor} | {core}",
-      "{anchor} You Need To See: {core}"
+      "{anchor} You Need To See: {core}",
+      "The Internet Loves This {anchor} | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -248,10 +260,12 @@
       "the way a baby laughs every time the dog sneezes",
       "a rescue cat who finally let someone hold her",
       "a three-legged puppy outrunning everyone at the park",
-      "a puppy and a duckling that grew up in the same yard"
+      "a puppy and a duckling that grew up in the same yard",
+      "a puppy learning that the vacuum is not actually a monster"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
