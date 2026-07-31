@@ -4,6 +4,7 @@
     "desc_ctas": 1,
     "desc_openers": 1,
     "desc_questions": 1,
+    "pinned_comments": 1,
     "voices": 4
   },
   "used": {
@@ -20,7 +21,9 @@
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
       "Stay for tomorrow's story. It's just as soft as this one.",
       "SweetSoul Stories, every day, for the days you need something kind.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow."
+      "If that helped even a little, subscribe and we'll do it again tomorrow.",
+      "Subscribe, and tomorrow this will find you again.",
+      "New story every day, no exceptions. Follow SweetSoul Stories."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -35,7 +38,8 @@
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -48,7 +52,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "We rewatched this more times than we should admit. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -56,7 +61,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "One word for how this made you feel. Go 👇",
-      "Rate this little one out of 10. No wrong answers."
+      "Rate this little one out of 10. No wrong answers.",
+      "What should we call this little one? Best comment wins 🏆"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -145,7 +151,10 @@
       "AGAIN? OKAY",
       "PROUD OF HIM",
       "FAST ASLEEP",
-      "WHAT IS THAT"
+      "WHAT IS THAT",
+      "BIG WORLD, SMALL PUP",
+      "THIS ONE HURTS",
+      "WE LOVE HIM"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -176,38 +185,11 @@
       "You'll feel this one in your chest.",
       "This tiny thing changed one family forever.",
       "I've watched this a hundred times and it still gets me.",
-      "What happened next made the whole family burst into tears."
+      "What happened next made the whole family burst into tears.",
+      "This is going about as well as you'd expect."
     ],
     "pinned_comments": [
-      "Sound on is a completely different video, by the way 🔊",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "Watched it again while uploading it. No regrets.",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "If this showed up at the right moment for you today, say so 👇",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Name this little one. We're taking suggestions seriously.",
-      "Which second got you? Drop the timestamp and we'll compare.",
-      "Tag the person who always sends you cute animal videos.",
-      "We read every comment on this channel. Say something and find out.",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Somebody tell me I'm not the only one who teared up here.",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "The last three seconds are the reason this exists 🥹",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "This is the exact kind of thing this channel is for.",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "If this made you smile, that's all we wanted today ❤️",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "New here? Welcome. We do this every single day 🐾",
-      "Tell us in one word how this made you feel 👇",
-      "Genuine question: how did nobody cry filming this?",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -238,7 +220,8 @@
       "LOOK AT HIS FACE",
       "SHE RUNS THIS HOUSE",
       "ZERO COORDINATION",
-      "TWO SECONDS IN 🥹"
+      "TWO SECONDS IN 🥹",
+      "MADE MY WHOLE WEEK"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -269,7 +252,8 @@
       "The Internet Loves This {anchor} | {core}",
       "Nobody Expected This | {core}",
       "{anchor}: {core}",
-      "{core} | {anchor} Compilation Worthy"
+      "{core} | {anchor} Compilation Worthy",
+      "{anchor}: {core} — Stay Till The End"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -300,14 +284,16 @@
       "a puppy learning that the vacuum is not actually a monster",
       "a kitten discovering its own reflection for the first time",
       "a shy cat meeting a crawling baby for the first time",
-      "a rescue dog sleeping in a real bed for the first time"
+      "a rescue dog sleeping in a real bed for the first time",
+      "a baby and a dog sharing a picnic blanket in the garden"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
       "en-US-AnaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
