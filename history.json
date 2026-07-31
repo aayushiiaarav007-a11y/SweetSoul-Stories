@@ -14,7 +14,9 @@
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
       "Subscribe, and let us hand you one good thing every single day.",
-      "Subscribe — the next small, sweet thing is one day away."
+      "Subscribe — the next small, sweet thing is one day away.",
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -26,7 +28,8 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -36,12 +39,14 @@
       "This is the soft part of the internet. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -121,7 +126,10 @@
       "SHE'S HAD ENOUGH",
       "WE DON'T KNOW EITHER",
       "CLOSE ENOUGH",
-      "WATCH THIS"
+      "WATCH THIS",
+      "WE LOVE HER",
+      "DIDN'T SEE IT",
+      "NO NOTES"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -149,7 +157,8 @@
       "He is far too small to understand what he just did.",
       "Their first hello turned into their whole friendship.",
       "Give this ten seconds. Trust me.",
-      "You'll feel this one in your chest."
+      "You'll feel this one in your chest.",
+      "This tiny thing changed one family forever."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -177,7 +186,8 @@
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "If this made you smile, that's all we wanted today ❤️",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "Tell us in one word how this made you feel 👇"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -205,7 +215,8 @@
       "JUST WAIT 🥺",
       "NOBODY EXPECTED THIS",
       "THE GENTLEST BOY",
-      "LOOK AT HIS FACE"
+      "LOOK AT HIS FACE",
+      "SHE RUNS THIS HOUSE"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -233,7 +244,8 @@
       "{core} | Daily Dose Of Cute",
       "Everyone Needs To See This {anchor} | {core}",
       "{anchor} You Need To See: {core}",
-      "The Internet Loves This {anchor} | {core}"
+      "The Internet Loves This {anchor} | {core}",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -261,11 +273,13 @@
       "a rescue cat who finally let someone hold her",
       "a three-legged puppy outrunning everyone at the park",
       "a puppy and a duckling that grew up in the same yard",
-      "a puppy learning that the vacuum is not actually a monster"
+      "a puppy learning that the vacuum is not actually a monster",
+      "a kitten discovering its own reflection for the first time"
     ],
     "voices": [
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
