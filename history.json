@@ -29,10 +29,13 @@
       "Come for one story, stay for the daily ones. Subscribe.",
       "Follow SweetSoul Stories for your daily dose of joy.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "One tiny story a day, every day. Subscribe so you catch the next."
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "Follow for daily reminders that small things carry a lot of love.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -49,7 +52,8 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "This one melted us. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -61,7 +65,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "Comment 🥹 if the ending got you too.",
       "First time here? Say hello in the comments 👋",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Does your pet have a habit like this? Tell us about it below."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -162,7 +167,10 @@
       "SO CAREFUL",
       "ONE MORE TRY",
       "THOSE EYES",
-      "PROBLEM SOLVED"
+      "PROBLEM SOLVED",
+      "NOT LIKE THAT",
+      "THERE IT IS",
+      "SO TINY"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -197,13 +205,15 @@
       "This is going about as well as you'd expect.",
       "He wasn't supposed to be able to do this yet.",
       "Nobody expected the baby to react like that.",
-      "This little moment made everyone in the room cry happy tears."
+      "This little moment made everyone in the room cry happy tears.",
+      "What this toddler did next left everyone speechless."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "Tag the person who sends you every animal video. It's their turn.",
       "Saving this one for a bad day. Recommend you do the same.",
-      "Comment 🐾 and we'll reply to every single one today."
+      "Comment 🐾 and we'll reply to every single one today.",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -238,7 +248,8 @@
       "MADE MY WHOLE WEEK",
       "NO SUPERVISION HERE",
       "TOOK A MONTH 🥹",
-      "ALMOST TOO CUTE"
+      "ALMOST TOO CUTE",
+      "TOO SMALL TO KNOW"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -273,7 +284,8 @@
       "{anchor}: {core} — Stay Till The End",
       "{core} — Watch The Last 5 Seconds",
       "{core} — And It Gets Better",
-      "{core} | You Have To See This"
+      "{core} | You Have To See This",
+      "You'll Watch This Twice | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -308,12 +320,14 @@
       "a baby and a dog sharing a picnic blanket in the garden",
       "two rescue kittens meeting on their first day home",
       "a kitten discovering a window box full of flowers",
-      "a puppy's first car ride with his head out the window"
+      "a puppy's first car ride with his head out the window",
+      "a cat and a baby who both refuse to nap without the other"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-EmmaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
