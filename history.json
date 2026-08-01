@@ -25,7 +25,9 @@
       "Subscribe, and tomorrow this will find you again.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -42,7 +44,8 @@
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Subscribe for daily proof that the world still has soft edges.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -57,7 +60,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -67,7 +71,8 @@
       "One word for how this made you feel. Go 👇",
       "Rate this little one out of 10. No wrong answers.",
       "What should we call this little one? Best comment wins 🏆",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -162,7 +167,10 @@
       "WE LOVE HIM",
       "WAIT...",
       "THE BEST BIT",
-      "SAME SPOT"
+      "SAME SPOT",
+      "OH NO 😭",
+      "STILL GOING",
+      "SO CAREFUL"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -195,11 +203,13 @@
       "I've watched this a hundred times and it still gets me.",
       "What happened next made the whole family burst into tears.",
       "This is going about as well as you'd expect.",
-      "He wasn't supposed to be able to do this yet."
+      "He wasn't supposed to be able to do this yet.",
+      "Nobody expected the baby to react like that."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Tag the person who sends you every animal video. It's their turn."
+      "Tag the person who sends you every animal video. It's their turn.",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -232,7 +242,8 @@
       "ZERO COORDINATION",
       "TWO SECONDS IN 🥹",
       "MADE MY WHOLE WEEK",
-      "NO SUPERVISION HERE"
+      "NO SUPERVISION HERE",
+      "TOOK A MONTH 🥹"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -265,7 +276,8 @@
       "{anchor}: {core}",
       "{core} | {anchor} Compilation Worthy",
       "{anchor}: {core} — Stay Till The End",
-      "{core} — Watch The Last 5 Seconds"
+      "{core} — Watch The Last 5 Seconds",
+      "{core} — And It Gets Better"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -298,10 +310,12 @@
       "a shy cat meeting a crawling baby for the first time",
       "a rescue dog sleeping in a real bed for the first time",
       "a baby and a dog sharing a picnic blanket in the garden",
-      "two rescue kittens meeting on their first day home"
+      "two rescue kittens meeting on their first day home",
+      "a kitten discovering a window box full of flowers"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
