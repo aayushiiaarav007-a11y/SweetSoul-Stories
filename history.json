@@ -37,17 +37,21 @@
       "Subscribe and let something gentle find you every day.",
       "Follow for more of this. Tomorrow's is already written.",
       "One good thing a day. Subscribe and let us handle it.",
-      "Subscribe for one small, kind story a day. That's all we do here."
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe — one small, kind story lands here every single day.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -63,7 +67,8 @@
       "Does your pet have a habit like this? Tell us about it below.",
       "Who should see this today? Tag them.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -176,7 +181,10 @@
       "TOTALLY WORTH IT",
       "SO MUCH TRYING",
       "ON DUTY",
-      "THAT FACE"
+      "THAT FACE",
+      "LOOK AT HIM GO",
+      "SAME LOVE",
+      "THE TAIL 🥹"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -215,7 +223,8 @@
       "What this toddler did next left everyone speechless.",
       "Somebody is about to be very surprised.",
       "Nobody expected this, and it changed everything.",
-      "Nobody in that room stayed dry-eyed."
+      "Nobody in that room stayed dry-eyed.",
+      "Stop scrolling — you need to see this right now."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -225,7 +234,8 @@
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "Sound on is a completely different video, by the way 🔊",
       "Tell us in one word how this made you feel 👇",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "If this made you smile, that's all we wanted today ❤️"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -264,7 +274,8 @@
       "TOO SMALL TO KNOW",
       "THE ENDING THOUGH",
       "SOMEONE'S ABOUT TO LOSE",
-      "THIS IS THE GOOD PART"
+      "THIS IS THE GOOD PART",
+      "NOT A SINGLE PLAN"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -303,7 +314,8 @@
       "You'll Watch This Twice | {core}",
       "The Sweetest {anchor} | {core}",
       "{core} | Best {anchor} Of The Day",
-      "Two Seconds In And I Was Gone | {core}"
+      "Two Seconds In And I Was Gone | {core}",
+      "This {anchor} Will Melt Your Heart | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -342,10 +354,12 @@
       "a cat and a baby who both refuse to nap without the other",
       "a dog proudly carrying his puppy to meet the family baby",
       "a big dog letting three kittens use him as a bed",
-      "a toddler and a kitten sharing a single blanket in winter"
+      "a toddler and a kitten sharing a single blanket in winter",
+      "a puppy who discovered the garden sprinkler"
     ],
     "voices": [
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
