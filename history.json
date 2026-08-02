@@ -33,12 +33,15 @@
       "Follow for daily reminders that small things carry a lot of love.",
       "Follow along — the next tiny story is already waiting.",
       "There is more where this came from. Subscribe and find out.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Subscribe and let something gentle find you every day.",
+      "Follow for more of this. Tomorrow's is already written."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -57,7 +60,8 @@
       "Saving this one for a rough day. {teaser}",
       "{anchor} alert: {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -71,7 +75,8 @@
       "First time here? Say hello in the comments 👋",
       "Cat person or dog person? Settle it in the comments.",
       "Does your pet have a habit like this? Tell us about it below.",
-      "Who should see this today? Tag them."
+      "Who should see this today? Tag them.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -178,7 +183,10 @@
       "SO TINY",
       "NO STOPPING HIM",
       "SHE DID IT",
-      "DID YOU SEE"
+      "DID YOU SEE",
+      "EVERY DAY THIS",
+      "RIGHT HERE",
+      "TOTALLY WORTH IT"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -215,7 +223,8 @@
       "Nobody expected the baby to react like that.",
       "This little moment made everyone in the room cry happy tears.",
       "What this toddler did next left everyone speechless.",
-      "Somebody is about to be very surprised."
+      "Somebody is about to be very surprised.",
+      "Nobody expected this, and it changed everything."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -223,7 +232,8 @@
       "Saving this one for a bad day. Recommend you do the same.",
       "Comment 🐾 and we'll reply to every single one today.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "Sound on is a completely different video, by the way 🔊"
+      "Sound on is a completely different video, by the way 🔊",
+      "Tell us in one word how this made you feel 👇"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -260,7 +270,8 @@
       "TOOK A MONTH 🥹",
       "ALMOST TOO CUTE",
       "TOO SMALL TO KNOW",
-      "THE ENDING THOUGH"
+      "THE ENDING THOUGH",
+      "SOMEONE'S ABOUT TO LOSE"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -297,7 +308,8 @@
       "{core} — And It Gets Better",
       "{core} | You Have To See This",
       "You'll Watch This Twice | {core}",
-      "The Sweetest {anchor} | {core}"
+      "The Sweetest {anchor} | {core}",
+      "{core} | Best {anchor} Of The Day"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -334,14 +346,16 @@
       "a kitten discovering a window box full of flowers",
       "a puppy's first car ride with his head out the window",
       "a cat and a baby who both refuse to nap without the other",
-      "a dog proudly carrying his puppy to meet the family baby"
+      "a dog proudly carrying his puppy to meet the family baby",
+      "a big dog letting three kittens use him as a bed"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-EmmaNeural",
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
