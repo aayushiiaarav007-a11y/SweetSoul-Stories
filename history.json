@@ -5,6 +5,7 @@
     "desc_openers": 2,
     "desc_questions": 1,
     "pinned_comments": 1,
+    "title_patterns": 1,
     "voices": 6
   },
   "used": {
@@ -43,7 +44,9 @@
       "Subscribe — there's a new little moment here every single morning.",
       "Tomorrow's story is already waiting for you. Follow along.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Every day, one gentle story. Subscribe and let it find you."
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "Stay a while. We post something gentle here every day.",
+      "Come back tomorrow. There's always another small moment worth seeing."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -53,13 +56,15 @@
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe and let something gentle reach you every day.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -78,7 +83,8 @@
       "Tag someone who needs to see this right now.",
       "What was the exact second that got you? Comment the timestamp 👇",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -200,7 +206,10 @@
       "NOBODY MOVES",
       "HOLD ON 🥹",
       "ALWAYS GENTLE",
-      "PURE JOY"
+      "PURE JOY",
+      "SHE APPROVES",
+      "HIS JOB NOW",
+      "NEARLY THERE"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -242,7 +251,8 @@
       "Nobody in that room stayed dry-eyed.",
       "Stop scrolling — you need to see this right now.",
       "This little kitten just stole every heart in the room.",
-      "You won't believe what this tiny puppy just did."
+      "You won't believe what this tiny puppy just did.",
+      "Nobody in the family remembers life before this."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -255,7 +265,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "If this made you smile, that's all we wanted today ❤️",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -297,49 +308,11 @@
       "THIS IS THE GOOD PART",
       "NOT A SINGLE PLAN",
       "HE FINALLY RELAXED",
-      "TAKE THIRTY SECONDS"
+      "TAKE THIRTY SECONDS",
+      "HIS FIRST TIME"
     ],
     "title_patterns": [
-      "{anchor} - {core}",
-      "{anchor} Moment Of The Day | {core}",
-      "{core} 💕 {anchor} Moment",
-      "{core} | Wholesome {anchor}",
-      "Not A Dry Eye | {core}",
-      "{core} 🐾 {anchor}",
-      "How Is This Real 🥺 {core}",
-      "I Watched This 10 Times | {core}",
-      "{core} | Softest Thing Today",
-      "{core} | Save This For A Bad Day",
-      "{anchor} | {core} ❤️",
-      "{core} (Try Not To Smile) | {anchor}",
-      "{core} | {anchor}",
-      "Wait For The End 🥺 {core}",
-      "{core} (This Got Me) | {anchor}",
-      "Someone Send Help 🥹 {core}",
-      "{anchor} That Fixed My Whole Day | {core}",
-      "This Is Why We Love {anchor}s | {core}",
-      "{core} | Tiny Heart, Huge Moment",
-      "{core} | {anchor} Done Right",
-      "{core} | Proof The Internet Is Fine",
-      "{core} 🥹 {anchor}",
-      "{core} | Daily Dose Of Cute",
-      "Everyone Needs To See This {anchor} | {core}",
-      "{anchor} You Need To See: {core}",
-      "The Internet Loves This {anchor} | {core}",
-      "Nobody Expected This | {core}",
-      "{anchor}: {core}",
-      "{core} | {anchor} Compilation Worthy",
-      "{anchor}: {core} — Stay Till The End",
-      "{core} — Watch The Last 5 Seconds",
-      "{core} — And It Gets Better",
-      "{core} | You Have To See This",
-      "You'll Watch This Twice | {core}",
-      "The Sweetest {anchor} | {core}",
-      "{core} | Best {anchor} Of The Day",
-      "Two Seconds In And I Was Gone | {core}",
-      "This {anchor} Will Melt Your Heart | {core}",
-      "{anchor}: {core} 😭❤️",
-      "{core} 💛 Wholesome {anchor}"
+      "{anchor} - {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -381,13 +354,15 @@
       "a toddler and a kitten sharing a single blanket in winter",
       "a puppy who discovered the garden sprinkler",
       "a puppy learning to fetch and bringing back the wrong thing",
-      "a puppy learning to climb stairs with an old dog's help"
+      "a puppy learning to climb stairs with an old dog's help",
+      "a kitten who steals one strawberry every single morning"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
