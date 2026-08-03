@@ -6,7 +6,7 @@
     "desc_questions": 1,
     "pinned_comments": 1,
     "title_patterns": 1,
-    "voices": 6
+    "voices": 7
   },
   "used": {
     "ctas": [
@@ -48,7 +48,9 @@
       "Stay a while. We post something gentle here every day.",
       "Come back tomorrow. There's always another small moment worth seeing.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming."
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "Stick around. The next one is just as soft as this."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -60,7 +62,8 @@
       "Subscribe and let something gentle reach you every day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -68,7 +71,8 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} The kind of clip you send to one specific person.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -89,7 +93,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "Comment 🐾 if you watched this more than once.",
       "Who else needed this today? Say hi in the comments 👋",
-      "Would your pet do the same thing? Tell us below 👇"
+      "Would your pet do the same thing? Tell us below 👇",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -217,7 +222,10 @@
       "NEARLY THERE",
       "STILL THERE",
       "TOO PURE",
-      "APPROVED ✅"
+      "APPROVED ✅",
+      "HERE IT COMES",
+      "TOGETHER NOW",
+      "PERFECTLY BALANCED"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -261,7 +269,8 @@
       "This little kitten just stole every heart in the room.",
       "You won't believe what this tiny puppy just did.",
       "Nobody in the family remembers life before this.",
-      "That little sigh at the end broke me."
+      "That little sigh at the end broke me.",
+      "Home found him, not the other way around."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -276,7 +285,8 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Genuine question: how did nobody cry filming this?",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "The last three seconds are the reason this exists 🥹"
+      "The last three seconds are the reason this exists 🥹",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -320,11 +330,13 @@
       "HE FINALLY RELAXED",
       "TAKE THIRTY SECONDS",
       "HIS FIRST TIME",
-      "TINY BUT MIGHTY"
+      "TINY BUT MIGHTY",
+      "THIS JUST HAPPENED"
     ],
     "title_patterns": [
       "{anchor} - {core}",
-      "{core} | Proof The Internet Is Fine"
+      "{core} | Proof The Internet Is Fine",
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -368,15 +380,11 @@
       "a puppy learning to fetch and bringing back the wrong thing",
       "a puppy learning to climb stairs with an old dog's help",
       "a kitten who steals one strawberry every single morning",
-      "a puppy who falls asleep standing up mid-play"
+      "a puppy who falls asleep standing up mid-play",
+      "a dog and a tortoise racing very slowly across a lawn"
     ],
     "voices": [
-      "en-US-AriaNeural",
-      "en-US-MichelleNeural",
-      "en-US-JennyNeural",
-      "en-US-EmmaNeural",
-      "en-US-AnaNeural",
-      "en-GB-SoniaNeural"
+      "en-US-AriaNeural"
     ]
   }
 }
