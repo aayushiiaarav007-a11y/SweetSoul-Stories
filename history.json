@@ -50,7 +50,9 @@
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
       "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "Stick around. The next one is just as soft as this."
+      "Stick around. The next one is just as soft as this.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "We'll be back tomorrow with another one. Follow so you don't miss it."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -63,7 +65,8 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -72,7 +75,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} The kind of clip you send to one specific person.",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -94,7 +98,8 @@
       "Comment 🐾 if you watched this more than once.",
       "Who else needed this today? Say hi in the comments 👋",
       "Would your pet do the same thing? Tell us below 👇",
-      "What should tomorrow's story be about? We read every comment."
+      "What should tomorrow's story be about? We read every comment.",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -225,7 +230,10 @@
       "APPROVED ✅",
       "HERE IT COMES",
       "TOGETHER NOW",
-      "PERFECTLY BALANCED"
+      "PERFECTLY BALANCED",
+      "HE APPROVES",
+      "EARS UP 🥺",
+      "CAME OUT AT LAST"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -270,7 +278,8 @@
       "You won't believe what this tiny puppy just did.",
       "Nobody in the family remembers life before this.",
       "That little sigh at the end broke me.",
-      "Home found him, not the other way around."
+      "Home found him, not the other way around.",
+      "Watch how she waits for him. She always waits."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -286,7 +295,8 @@
       "Genuine question: how did nobody cry filming this?",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "The last three seconds are the reason this exists 🥹",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "New here? Welcome. We do this every single day 🐾"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -331,12 +341,14 @@
       "TAKE THIRTY SECONDS",
       "HIS FIRST TIME",
       "TINY BUT MIGHTY",
-      "THIS JUST HAPPENED"
+      "THIS JUST HAPPENED",
+      "IT GETS BETTER"
     ],
     "title_patterns": [
       "{anchor} - {core}",
       "{core} | Proof The Internet Is Fine",
-      "{anchor} You Need To See: {core}"
+      "{anchor} You Need To See: {core}",
+      "{core} | Daily Dose Of Cute"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -381,10 +393,12 @@
       "a puppy learning to climb stairs with an old dog's help",
       "a kitten who steals one strawberry every single morning",
       "a puppy who falls asleep standing up mid-play",
-      "a dog and a tortoise racing very slowly across a lawn"
+      "a dog and a tortoise racing very slowly across a lawn",
+      "a toddler and a puppy jumping in the same puddle"
     ],
     "voices": [
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
