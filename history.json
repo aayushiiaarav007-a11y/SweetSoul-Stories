@@ -3,7 +3,7 @@
     "ctas": 2,
     "desc_ctas": 2,
     "desc_openers": 2,
-    "desc_questions": 1,
+    "desc_questions": 2,
     "pinned_comments": 1,
     "title_patterns": 1,
     "voices": 7
@@ -11,7 +11,9 @@
   "used": {
     "ctas": [
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Follow for daily reminders that small things carry a lot of love.",
+      "Save this channel for the days you need something soft. Subscribe."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -27,7 +29,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -39,32 +42,11 @@
       "{anchor} alert: {teaser}",
       "This one melted us. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
-      "On a scale of 1-10, how cute was that? Comment your score!",
-      "Did you watch with the sound on or off? Genuinely curious 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍",
-      "One word for how this made you feel. Go 👇",
-      "Rate this little one out of 10. No wrong answers.",
-      "What should we call this little one? Best comment wins 🏆",
-      "Comment 🥹 if the ending got you too.",
-      "First time here? Say hello in the comments 👋",
-      "Cat person or dog person? Settle it in the comments.",
-      "Does your pet have a habit like this? Tell us about it below.",
-      "Who should see this today? Tag them.",
-      "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Tag someone who needs to see this right now.",
-      "What was the exact second that got you? Comment the timestamp 👇",
-      "Which part made you smile the most? Tell us in the comments 👇",
-      "Comment 🐾 if you watched this more than once.",
-      "Who else needed this today? Say hi in the comments 👋",
-      "Would your pet do the same thing? Tell us below 👇",
-      "What should tomorrow's story be about? We read every comment.",
-      "What is your pet's most ridiculous habit? Comment below.",
-      "Which one would you take home? Comment your pick.",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -204,7 +186,10 @@
       "PLOT TWIST",
       "OUT COLD",
       "ZERO REGRETS",
-      "STRAIGHT IN"
+      "STRAIGHT IN",
+      "EVERY EVENING",
+      "ZERO FEAR",
+      "BRAND NEW"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -252,7 +237,8 @@
       "Home found him, not the other way around.",
       "Watch how she waits for him. She always waits.",
       "This one is going to sit with you for a while.",
-      "He has one plan, and it is a bad plan, and it is wonderful."
+      "He has one plan, and it is a bad plan, and it is wonderful.",
+      "She has decided he belongs to her now."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -271,7 +257,8 @@
       "Tag the person who always sends you cute animal videos.",
       "New here? Welcome. We do this every single day 🐾",
       "What should tomorrow's story be about? Best idea gets made.",
-      "Small channel, real replies. Comment and we'll talk 🐾"
+      "Small channel, real replies. Comment and we'll talk 🐾",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -319,7 +306,8 @@
       "THIS JUST HAPPENED",
       "IT GETS BETTER",
       "PURE JOY INCOMING",
-      "TINY AND FEARLESS"
+      "TINY AND FEARLESS",
+      "GIVE IT 10 SECONDS"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -327,7 +315,8 @@
       "{anchor} You Need To See: {core}",
       "{core} | Daily Dose Of Cute",
       "{core} | {anchor} Compilation Worthy",
-      "{anchor} That Fixed My Whole Day | {core}"
+      "{anchor} That Fixed My Whole Day | {core}",
+      "The Internet Loves This {anchor} | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -375,13 +364,15 @@
       "a dog and a tortoise racing very slowly across a lawn",
       "a toddler and a puppy jumping in the same puddle",
       "a puppy and kitten cuddling under a warm blanket",
-      "a cat who grooms the puppy every morning without fail"
+      "a cat who grooms the puppy every morning without fail",
+      "a cat who greets the baby at the door every single morning"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
