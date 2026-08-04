@@ -13,7 +13,9 @@
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
       "Subscribe for the quiet, lovely corner of your feed.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "Save this channel for the days you need something soft. Subscribe."
+      "Save this channel for the days you need something soft. Subscribe.",
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "If your day got a little better, that's all we wanted. Subscribe for more."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -30,7 +32,8 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -43,10 +46,12 @@
       "This one melted us. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "{teaser} Pure, simple, wholesome joy in under a minute."
+      "{teaser} Pure, simple, wholesome joy in under a minute.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -189,7 +194,10 @@
       "STRAIGHT IN",
       "EVERY EVENING",
       "ZERO FEAR",
-      "BRAND NEW"
+      "BRAND NEW",
+      "NO MORE HIDING",
+      "WELL THEN 😭",
+      "TRUST 🤍"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -238,7 +246,8 @@
       "Watch how she waits for him. She always waits.",
       "This one is going to sit with you for a while.",
       "He has one plan, and it is a bad plan, and it is wonderful.",
-      "She has decided he belongs to her now."
+      "She has decided he belongs to her now.",
+      "This is the friendship nobody asked for but everyone needed."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -258,7 +267,8 @@
       "New here? Welcome. We do this every single day 🐾",
       "What should tomorrow's story be about? Best idea gets made.",
       "Small channel, real replies. Comment and we'll talk 🐾",
-      "Watched it again while uploading it. No regrets."
+      "Watched it again while uploading it. No regrets.",
+      "Somebody tell me I'm not the only one who teared up here."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -307,7 +317,8 @@
       "IT GETS BETTER",
       "PURE JOY INCOMING",
       "TINY AND FEARLESS",
-      "GIVE IT 10 SECONDS"
+      "GIVE IT 10 SECONDS",
+      "SHE NEVER MISSES"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -316,7 +327,8 @@
       "{core} | Daily Dose Of Cute",
       "{core} | {anchor} Compilation Worthy",
       "{anchor} That Fixed My Whole Day | {core}",
-      "The Internet Loves This {anchor} | {core}"
+      "The Internet Loves This {anchor} | {core}",
+      "{core} — Watch The Last 5 Seconds"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -365,14 +377,16 @@
       "a toddler and a puppy jumping in the same puddle",
       "a puppy and kitten cuddling under a warm blanket",
       "a cat who grooms the puppy every morning without fail",
-      "a cat who greets the baby at the door every single morning"
+      "a cat who greets the baby at the door every single morning",
+      "a dog who walks the child to the school gate and back"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
