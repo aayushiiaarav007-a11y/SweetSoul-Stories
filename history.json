@@ -1,12 +1,12 @@
 {
   "cycles": {
     "ctas": 2,
-    "desc_ctas": 2,
+    "desc_ctas": 3,
     "desc_openers": 2,
     "desc_questions": 2,
     "pinned_comments": 1,
     "title_patterns": 1,
-    "voices": 7
+    "voices": 8
   },
   "used": {
     "ctas": [
@@ -15,25 +15,12 @@
       "Follow for daily reminders that small things carry a lot of love.",
       "Save this channel for the days you need something soft. Subscribe.",
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe and let something gentle reach you every day.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -47,11 +34,13 @@
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -197,7 +186,10 @@
       "BRAND NEW",
       "NO MORE HIDING",
       "WELL THEN 😭",
-      "TRUST 🤍"
+      "TRUST 🤍",
+      "TUCKED IN",
+      "TOO CUTE",
+      "ANY SECOND NOW"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -247,7 +239,8 @@
       "This one is going to sit with you for a while.",
       "He has one plan, and it is a bad plan, and it is wonderful.",
       "She has decided he belongs to her now.",
-      "This is the friendship nobody asked for but everyone needed."
+      "This is the friendship nobody asked for but everyone needed.",
+      "Nothing dramatic happens here. That's the point."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -268,7 +261,8 @@
       "What should tomorrow's story be about? Best idea gets made.",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Watched it again while uploading it. No regrets.",
-      "Somebody tell me I'm not the only one who teared up here."
+      "Somebody tell me I'm not the only one who teared up here.",
+      "Rate the ending out of 10 — I'm giving it a firm 10."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -318,7 +312,8 @@
       "PURE JOY INCOMING",
       "TINY AND FEARLESS",
       "GIVE IT 10 SECONDS",
-      "SHE NEVER MISSES"
+      "SHE NEVER MISSES",
+      "STAY A SECOND"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -328,7 +323,8 @@
       "{core} | {anchor} Compilation Worthy",
       "{anchor} That Fixed My Whole Day | {core}",
       "The Internet Loves This {anchor} | {core}",
-      "{core} — Watch The Last 5 Seconds"
+      "{core} — Watch The Last 5 Seconds",
+      "Not A Dry Eye | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -378,15 +374,11 @@
       "a puppy and kitten cuddling under a warm blanket",
       "a cat who grooms the puppy every morning without fail",
       "a cat who greets the baby at the door every single morning",
-      "a dog who walks the child to the school gate and back"
+      "a dog who walks the child to the school gate and back",
+      "a kitten learning to play fetch with a laughing toddler"
     ],
     "voices": [
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-US-MichelleNeural",
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural"
+      "en-GB-SoniaNeural"
     ]
   }
 }
