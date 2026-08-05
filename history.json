@@ -22,12 +22,15 @@
       "Follow along, and tomorrow we'll find another one of these together.",
       "Stay a while. We post something gentle here every day.",
       "Tomorrow's story is already waiting for you. Follow along.",
-      "There is more where this came from. Subscribe and find out."
+      "There is more where this came from. Subscribe and find out.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -44,17 +47,22 @@
       "This is the soft part of the internet. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
       "Which one would you take home? Comment your pick.",
       "Who should see this today? Tag them.",
       "Comment 🐾 if you watched this more than once.",
-      "Rate this little one out of 10. No wrong answers."
+      "Rate this little one out of 10. No wrong answers.",
+      "On a scale of 1-10, how cute was that? Comment your score!"
     ],
     "flashes": [
-      "LOOK AT HIM GO"
+      "LOOK AT HIM GO",
+      "NO BRAKES",
+      "SHE DECIDED",
+      "WATCH TO THE END"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -107,7 +115,8 @@
       "This is the friendship nobody asked for but everyone needed.",
       "Nothing dramatic happens here. That's the point.",
       "This tiny kitten just did something nobody saw coming.",
-      "You can actually see the exact moment they become friends."
+      "You can actually see the exact moment they become friends.",
+      "Watch what happens the second she turns around."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -131,7 +140,8 @@
       "Somebody tell me I'm not the only one who teared up here.",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Which second got you? Drop the timestamp and we'll compare.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -184,7 +194,8 @@
       "SHE NEVER MISSES",
       "STAY A SECOND",
       "GUARDING HIS BABY",
-      "THE SOFTEST THING"
+      "THE SOFTEST THING",
+      "TRY NOT TO SMILE"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -197,7 +208,8 @@
       "{core} — Watch The Last 5 Seconds",
       "Not A Dry Eye | {core}",
       "{core} | Softest Thing Today",
-      "Someone Send Help 🥹 {core}"
+      "Someone Send Help 🥹 {core}",
+      "{core} | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -250,12 +262,14 @@
       "a dog who walks the child to the school gate and back",
       "a kitten learning to play fetch with a laughing toddler",
       "a puppy and a goat who both think they are dogs",
-      "a nervous rescue kitten finally purring after a month"
+      "a nervous rescue kitten finally purring after a month",
+      "a cat who checks on every family member before sleeping"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
