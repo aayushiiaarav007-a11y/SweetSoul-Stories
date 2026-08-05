@@ -17,10 +17,13 @@
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "Come back tomorrow. There's always another small moment worth seeing.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "Follow along, and tomorrow we'll find another one of these together.",
+      "Stay a while. We post something gentle here every day."
     ],
     "desc_ctas": [
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -35,12 +38,14 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "This is the soft part of the internet. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
       "Which one would you take home? Comment your pick.",
-      "Who should see this today? Tag them."
+      "Who should see this today? Tag them.",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "SLOWLY NOW",
@@ -189,7 +194,10 @@
       "TRUST 🤍",
       "TUCKED IN",
       "TOO CUTE",
-      "ANY SECOND NOW"
+      "ANY SECOND NOW",
+      "HIS OWN BED",
+      "SO SMALL",
+      "TRY AGAIN BUDDY"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -240,7 +248,8 @@
       "He has one plan, and it is a bad plan, and it is wonderful.",
       "She has decided he belongs to her now.",
       "This is the friendship nobody asked for but everyone needed.",
-      "Nothing dramatic happens here. That's the point."
+      "Nothing dramatic happens here. That's the point.",
+      "This tiny kitten just did something nobody saw coming."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -262,7 +271,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Watched it again while uploading it. No regrets.",
       "Somebody tell me I'm not the only one who teared up here.",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -313,7 +323,8 @@
       "TINY AND FEARLESS",
       "GIVE IT 10 SECONDS",
       "SHE NEVER MISSES",
-      "STAY A SECOND"
+      "STAY A SECOND",
+      "GUARDING HIS BABY"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -324,7 +335,8 @@
       "{anchor} That Fixed My Whole Day | {core}",
       "The Internet Loves This {anchor} | {core}",
       "{core} — Watch The Last 5 Seconds",
-      "Not A Dry Eye | {core}"
+      "Not A Dry Eye | {core}",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -375,10 +387,12 @@
       "a cat who grooms the puppy every morning without fail",
       "a cat who greets the baby at the door every single morning",
       "a dog who walks the child to the school gate and back",
-      "a kitten learning to play fetch with a laughing toddler"
+      "a kitten learning to play fetch with a laughing toddler",
+      "a puppy and a goat who both think they are dogs"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
