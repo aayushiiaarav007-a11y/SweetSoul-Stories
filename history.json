@@ -24,13 +24,16 @@
       "Tomorrow's story is already waiting for you. Follow along.",
       "There is more where this came from. Subscribe and find out.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -48,7 +51,8 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -56,13 +60,17 @@
       "Who should see this today? Tag them.",
       "Comment 🐾 if you watched this more than once.",
       "Rate this little one out of 10. No wrong answers.",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "LOOK AT HIM GO",
       "NO BRAKES",
       "SHE DECIDED",
-      "WATCH TO THE END"
+      "WATCH TO THE END",
+      "HERE IT COMES",
+      "NO MORE HIDING",
+      "TRUST 🤍"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -116,7 +124,8 @@
       "Nothing dramatic happens here. That's the point.",
       "This tiny kitten just did something nobody saw coming.",
       "You can actually see the exact moment they become friends.",
-      "Watch what happens the second she turns around."
+      "Watch what happens the second she turns around.",
+      "She was the smallest one there, and the bravest."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -141,7 +150,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Which second got you? Drop the timestamp and we'll compare.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "We read every comment on this channel. Say something and find out."
+      "We read every comment on this channel. Say something and find out.",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -195,7 +205,8 @@
       "STAY A SECOND",
       "GUARDING HIS BABY",
       "THE SOFTEST THING",
-      "TRY NOT TO SMILE"
+      "TRY NOT TO SMILE",
+      "STILL WAITING 🥺"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -209,7 +220,8 @@
       "Not A Dry Eye | {core}",
       "{core} | Softest Thing Today",
       "Someone Send Help 🥹 {core}",
-      "{core} | {anchor}"
+      "{core} | {anchor}",
+      "{core} (Try Not To Smile) | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -263,13 +275,15 @@
       "a kitten learning to play fetch with a laughing toddler",
       "a puppy and a goat who both think they are dogs",
       "a nervous rescue kitten finally purring after a month",
-      "a cat who checks on every family member before sleeping"
+      "a cat who checks on every family member before sleeping",
+      "a rescue kitten finding a forever home"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
       "en-US-AnaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
