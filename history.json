@@ -30,7 +30,9 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "If you smiled, that's the whole job done. Subscribe for more.",
       "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming."
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -39,10 +41,12 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -53,7 +57,8 @@
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Which part made you smile the most? Tell us in the comments 👇",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -68,7 +73,10 @@
       "WE DON'T KNOW EITHER",
       "OUT COLD",
       "NEW FAVOURITE",
-      "SAFE AT LAST"
+      "SAFE AT LAST",
+      "WAIT...",
+      "FULL SPEED",
+      "IT'S HAPPENING"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -125,7 +133,8 @@
       "Watch what happens the second she turns around.",
       "She was the smallest one there, and the bravest.",
       "Nobody in this house gets any work done anymore.",
-      "This is the exact moment he realises what he has done."
+      "This is the exact moment he realises what he has done.",
+      "The way this baby laughs will instantly make your day."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -153,7 +162,8 @@
       "We read every comment on this channel. Say something and find out.",
       "This is the exact kind of thing this channel is for.",
       "Cat person or dog person? Deciding this in the comments today.",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "Genuine question: who is cuter here? Reply with your pick 👇"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -210,7 +220,8 @@
       "TRY NOT TO SMILE",
       "STILL WAITING 🥺",
       "FOR A HARD DAY",
-      "SOMEBODY PICKED HIM"
+      "SOMEBODY PICKED HIM",
+      "SHE HAD NO IDEA"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -227,7 +238,8 @@
       "{core} | {anchor}",
       "{core} (Try Not To Smile) | {anchor}",
       "The Sweetest {anchor} | {core}",
-      "{anchor}: {core} — Stay Till The End"
+      "{anchor}: {core} — Stay Till The End",
+      "{core} — And It Gets Better"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -284,10 +296,12 @@
       "a cat who checks on every family member before sleeping",
       "a rescue kitten finding a forever home",
       "a puppy who brings one sock to every visitor as a gift",
-      "a shy shelter dog wagging his tail for the very first time"
+      "a shy shelter dog wagging his tail for the very first time",
+      "a toddler meeting a litter of newborn puppies"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
