@@ -38,7 +38,9 @@
       "There's a new sweet story here every single day. Come back tomorrow.",
       "Subscribe, and tomorrow this will find you again.",
       "Subscribe — the next small, sweet thing is one day away.",
-      "One good thing a day. Subscribe and let us handle it."
+      "One good thing a day. Subscribe and let us handle it.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "Follow for more of this. Tomorrow's is already written."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -51,14 +53,16 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "Follow for the softest thirty seconds of your day, daily.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{anchor} alert: {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Pure, simple, wholesome joy in under a minute."
+      "{teaser} Pure, simple, wholesome joy in under a minute.",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -73,7 +77,8 @@
       "First time here? Say hello in the comments 👋",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Tag someone who needs to see this right now.",
-      "Would your pet do the same thing? Tell us below 👇"
+      "Would your pet do the same thing? Tell us below 👇",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -100,7 +105,10 @@
       "PLOT TWIST",
       "COMMITTED",
       "NO SHARING",
-      "HE APPROVES"
+      "HE APPROVES",
+      "ONE SECOND MORE",
+      "THIS ONE HURTS",
+      "GUARD MODE"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -161,10 +169,12 @@
       "The way this baby laughs will instantly make your day.",
       "One tiny decision, and two lives got better.",
       "This is what trust looks like when it is brand new.",
-      "This puppy's first day home is the sweetest thing ever."
+      "This puppy's first day home is the sweetest thing ever.",
+      "This is a very small act of love, caught on camera."
     ],
     "pinned_comments": [
-      "Somebody tell me I'm not the only one who teared up here."
+      "Somebody tell me I'm not the only one who teared up here.",
+      "What should tomorrow's story be about? Best idea gets made."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -225,7 +235,8 @@
       "SHE HAD NO IDEA",
       "SMALL PAWS BIG HEART",
       "SOMETHING SOFT TODAY",
-      "GENTLE GIANT"
+      "GENTLE GIANT",
+      "THIS IS NEW TO HIM"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -246,7 +257,8 @@
       "{core} — And It Gets Better",
       "{core} | {anchor} Done Right",
       "This Is Why We Love {anchor}s | {core}",
-      "{core} 🐾 {anchor}"
+      "{core} 🐾 {anchor}",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -307,14 +319,16 @@
       "a toddler meeting a litter of newborn puppies",
       "a toddler carefully feeding a bottle to a rescued kitten",
       "a baby who claps every single time the dog walks in",
-      "a toddler and a kitten planting seeds in a tiny pot"
+      "a toddler and a kitten planting seeds in a tiny pot",
+      "a kitten meeting a bowl of water for the first time"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
       "en-US-AnaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
