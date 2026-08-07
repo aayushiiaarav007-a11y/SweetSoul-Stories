@@ -7,7 +7,7 @@
     "flashes": 1,
     "pinned_comments": 2,
     "title_patterns": 1,
-    "voices": 9
+    "voices": 10
   },
   "used": {
     "ctas": [
@@ -40,7 +40,9 @@
       "Subscribe — the next small, sweet thing is one day away.",
       "One good thing a day. Subscribe and let us handle it.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Follow for more of this. Tomorrow's is already written."
+      "Follow for more of this. Tomorrow's is already written.",
+      "Subscribe for more of the quiet, lovely parts of the internet.",
+      "SweetSoul Stories, every day, for the days you need something kind."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -54,7 +56,8 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -62,7 +65,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -78,7 +82,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Tag someone who needs to see this right now.",
       "Would your pet do the same thing? Tell us below 👇",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -108,7 +113,10 @@
       "HE APPROVES",
       "ONE SECOND MORE",
       "THIS ONE HURTS",
-      "GUARD MODE"
+      "GUARD MODE",
+      "ZERO FEAR",
+      "THOSE EYES",
+      "STRAIGHT IN"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -170,11 +178,13 @@
       "One tiny decision, and two lives got better.",
       "This is what trust looks like when it is brand new.",
       "This puppy's first day home is the sweetest thing ever.",
-      "This is a very small act of love, caught on camera."
+      "This is a very small act of love, caught on camera.",
+      "He picked her, not the other way around."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Rate the ending out of 10 — I'm giving it a firm 10."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -236,7 +246,8 @@
       "SMALL PAWS BIG HEART",
       "SOMETHING SOFT TODAY",
       "GENTLE GIANT",
-      "THIS IS NEW TO HIM"
+      "THIS IS NEW TO HIM",
+      "BAD PLAN, GREAT RESULT"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -258,7 +269,8 @@
       "{core} | {anchor} Done Right",
       "This Is Why We Love {anchor}s | {core}",
       "{core} 🐾 {anchor}",
-      "Nobody Expected This | {core}"
+      "Nobody Expected This | {core}",
+      "I Watched This 10 Times | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -320,14 +332,10 @@
       "a toddler carefully feeding a bottle to a rescued kitten",
       "a baby who claps every single time the dog walks in",
       "a toddler and a kitten planting seeds in a tiny pot",
-      "a kitten meeting a bowl of water for the first time"
+      "a kitten meeting a bowl of water for the first time",
+      "a kitten who has claimed the warmest laundry basket"
     ],
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-US-EmmaNeural",
-      "en-US-JennyNeural",
-      "en-US-AnaNeural",
-      "en-US-MichelleNeural",
       "en-US-AriaNeural"
     ]
   }
