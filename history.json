@@ -34,7 +34,9 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "Follow SweetSoul Stories for your daily dose of joy.",
       "Follow along — the next tiny story is already waiting.",
-      "Stick around. The next one is just as soft as this."
+      "Stick around. The next one is just as soft as this.",
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe, and tomorrow this will find you again."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -45,12 +47,14 @@
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{anchor} alert: {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -63,7 +67,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Cat person or dog person? Settle it in the comments.",
       "First time here? Say hello in the comments 👋",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -84,7 +89,10 @@
       "IT'S HAPPENING",
       "STILL THERE",
       "DIDN'T SEE IT",
-      "DID YOU SEE"
+      "DID YOU SEE",
+      "THERE SHE IS",
+      "SO SOFT",
+      "PLOT TWIST"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -143,7 +151,8 @@
       "Nobody in this house gets any work done anymore.",
       "This is the exact moment he realises what he has done.",
       "The way this baby laughs will instantly make your day.",
-      "One tiny decision, and two lives got better."
+      "One tiny decision, and two lives got better.",
+      "This is what trust looks like when it is brand new."
     ],
     "pinned_comments": [
       "Okay but the part at the end though 🥹 What was your favourite second?",
@@ -173,7 +182,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "If this showed up at the right moment for you today, say so 👇",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -232,7 +242,8 @@
       "FOR A HARD DAY",
       "SOMEBODY PICKED HIM",
       "SHE HAD NO IDEA",
-      "SMALL PAWS BIG HEART"
+      "SMALL PAWS BIG HEART",
+      "SOMETHING SOFT TODAY"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -251,7 +262,8 @@
       "The Sweetest {anchor} | {core}",
       "{anchor}: {core} — Stay Till The End",
       "{core} — And It Gets Better",
-      "{core} | {anchor} Done Right"
+      "{core} | {anchor} Done Right",
+      "This Is Why We Love {anchor}s | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -310,12 +322,14 @@
       "a puppy who brings one sock to every visitor as a gift",
       "a shy shelter dog wagging his tail for the very first time",
       "a toddler meeting a litter of newborn puppies",
-      "a toddler carefully feeding a bottle to a rescued kitten"
+      "a toddler carefully feeding a bottle to a rescued kitten",
+      "a baby who claps every single time the dog walks in"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
