@@ -50,10 +50,13 @@
       "Subscribe for one small, kind story a day. That's all we do here.",
       "Follow now, and tomorrow's story will be waiting for you.",
       "Come for one story, stay for the daily ones. Subscribe.",
-      "New story every day, no exceptions. Follow SweetSoul Stories."
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "Subscribe — there's a new little moment here every single morning."
     ],
     "desc_ctas": [
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -66,7 +69,8 @@
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "This is the soft part of the internet. {teaser}",
       "This one melted us. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -87,7 +91,8 @@
       "What is your pet's most ridiculous habit? Comment below.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Does your pet have a habit like this? Tell us about it below."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -132,7 +137,10 @@
       "SNORING NOW",
       "FIRST TIME",
       "THE PAWS",
-      "ALMOST GOT IT"
+      "ALMOST GOT IT",
+      "EARS UP 🥺",
+      "GOOD LUCK 😅",
+      "NOT LIKE THAT"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -199,7 +207,8 @@
       "Every morning she does this. Every single morning.",
       "This is what being chosen looks like.",
       "This kind of thing does not happen twice.",
-      "This rescue puppy's first smile says it all."
+      "This rescue puppy's first smile says it all.",
+      "Nobody warned the cat about any of this."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -208,7 +217,8 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Does your pet do this too? I need to know it's not just this one.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Be honest, how many times did you watch this? I'll go first: eleven."
+      "Be honest, how many times did you watch this? I'll go first: eleven.",
+      "Sound on is a completely different video, by the way 🔊"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -275,7 +285,8 @@
       "HE THINKS HE'S BIG",
       "HE CHECKS ON HER",
       "WATCH HIM THINK",
-      "HOME AT LAST ❤️"
+      "HOME AT LAST ❤️",
+      "ONE MINUTE OLD FRIENDS"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -302,7 +313,8 @@
       "Two Seconds In And I Was Gone | {core}",
       "Wait For The End 🥺 {core}",
       "{core} | Wholesome {anchor}",
-      "{core} | You Have To See This"
+      "{core} | You Have To See This",
+      "{anchor}: {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -369,14 +381,16 @@
       "a puppy meeting a puddle and deciding to sit in it",
       "a puppy's first birthday celebrated by the whole family",
       "a kitten who was the last one left at the shelter",
-      "an old cat adopted by a family with a newborn"
+      "an old cat adopted by a family with a newborn",
+      "a puppy who greets every single person on the morning walk"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
