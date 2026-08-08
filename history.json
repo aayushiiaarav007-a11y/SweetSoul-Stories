@@ -42,7 +42,9 @@
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
       "Follow for more of this. Tomorrow's is already written.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
-      "SweetSoul Stories, every day, for the days you need something kind."
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "Follow SweetSoul Stories — we keep the gentle ones coming."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -57,7 +59,8 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -66,7 +69,8 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "A very short {anchor_lc} story with a very large heart. {teaser}"
+      "A very short {anchor_lc} story with a very large heart. {teaser}",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -83,7 +87,8 @@
       "Tag someone who needs to see this right now.",
       "Would your pet do the same thing? Tell us below 👇",
       "One word for how this made you feel. Go 👇",
-      "What was the exact second that got you? Comment the timestamp 👇"
+      "What was the exact second that got you? Comment the timestamp 👇",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -116,7 +121,10 @@
       "GUARD MODE",
       "ZERO FEAR",
       "THOSE EYES",
-      "STRAIGHT IN"
+      "STRAIGHT IN",
+      "TRY AGAIN BUDDY",
+      "OH NO 😭",
+      "EVERY EVENING"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -179,12 +187,14 @@
       "This is what trust looks like when it is brand new.",
       "This puppy's first day home is the sweetest thing ever.",
       "This is a very small act of love, caught on camera.",
-      "He picked her, not the other way around."
+      "He picked her, not the other way around.",
+      "Every morning she does this. Every single morning."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
       "What should tomorrow's story be about? Best idea gets made.",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -247,7 +257,8 @@
       "SOMETHING SOFT TODAY",
       "GENTLE GIANT",
       "THIS IS NEW TO HIM",
-      "BAD PLAN, GREAT RESULT"
+      "BAD PLAN, GREAT RESULT",
+      "HE THINKS HE'S BIG"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -270,7 +281,8 @@
       "This Is Why We Love {anchor}s | {core}",
       "{core} 🐾 {anchor}",
       "Nobody Expected This | {core}",
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "Two Seconds In And I Was Gone | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -333,10 +345,12 @@
       "a baby who claps every single time the dog walks in",
       "a toddler and a kitten planting seeds in a tiny pot",
       "a kitten meeting a bowl of water for the first time",
-      "a kitten who has claimed the warmest laundry basket"
+      "a kitten who has claimed the warmest laundry basket",
+      "a puppy meeting a puddle and deciding to sit in it"
     ],
     "voices": [
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
