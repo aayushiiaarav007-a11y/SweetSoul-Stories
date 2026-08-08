@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 2,
-    "desc_ctas": 3,
+    "desc_ctas": 4,
     "desc_openers": 3,
     "desc_questions": 2,
     "flashes": 1,
@@ -48,25 +48,12 @@
       "Stay for tomorrow's story. It's just as soft as this one.",
       "Subscribe and let something gentle find you every day.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "Follow now, and tomorrow's story will be waiting for you."
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "New story every day, no exceptions. Follow SweetSoul Stories."
     ],
     "desc_ctas": [
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe and let something gentle reach you every day."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -78,7 +65,8 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "This is the soft part of the internet. {teaser}",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "We rewatched this more times than we should admit. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -98,7 +86,8 @@
       "What was the exact second that got you? Comment the timestamp 👇",
       "What is your pet's most ridiculous habit? Comment below.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "If this is your kind of thing, comment 🐾 and we'll make more."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -140,7 +129,10 @@
       "OH DEAR 😅",
       "NO STOPPING HIM",
       "AND THEN 🥹",
-      "SNORING NOW"
+      "SNORING NOW",
+      "FIRST TIME",
+      "THE PAWS",
+      "ALMOST GOT IT"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -206,7 +198,8 @@
       "He picked her, not the other way around.",
       "Every morning she does this. Every single morning.",
       "This is what being chosen looks like.",
-      "This kind of thing does not happen twice."
+      "This kind of thing does not happen twice.",
+      "This rescue puppy's first smile says it all."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -214,7 +207,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "One word for how this made you feel. Mine was 'oh'.",
       "Does your pet do this too? I need to know it's not just this one.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -280,7 +274,8 @@
       "BAD PLAN, GREAT RESULT",
       "HE THINKS HE'S BIG",
       "HE CHECKS ON HER",
-      "WATCH HIM THINK"
+      "WATCH HIM THINK",
+      "HOME AT LAST ❤️"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -306,7 +301,8 @@
       "I Watched This 10 Times | {core}",
       "Two Seconds In And I Was Gone | {core}",
       "Wait For The End 🥺 {core}",
-      "{core} | Wholesome {anchor}"
+      "{core} | Wholesome {anchor}",
+      "{core} | You Have To See This"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -372,13 +368,15 @@
       "a kitten who has claimed the warmest laundry basket",
       "a puppy meeting a puddle and deciding to sit in it",
       "a puppy's first birthday celebrated by the whole family",
-      "a kitten who was the last one left at the shelter"
+      "a kitten who was the last one left at the shelter",
+      "an old cat adopted by a family with a newborn"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
