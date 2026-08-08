@@ -46,7 +46,9 @@
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
       "Stay for tomorrow's story. It's just as soft as this one.",
-      "Subscribe and let something gentle find you every day."
+      "Subscribe and let something gentle find you every day.",
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -63,7 +65,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "Subscribe — one small, kind story lands here every single day.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -74,7 +77,8 @@
       "{teaser} Small moment, disproportionate effect on your mood.",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -93,7 +97,8 @@
       "One word for how this made you feel. Go 👇",
       "What was the exact second that got you? Comment the timestamp 👇",
       "What is your pet's most ridiculous habit? Comment below.",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "Did you watch with the sound on or off? Genuinely curious 👇"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -132,7 +137,10 @@
       "EVERY EVENING",
       "BRAVE TODAY",
       "SHE DID IT",
-      "OH DEAR 😅"
+      "OH DEAR 😅",
+      "NO STOPPING HIM",
+      "AND THEN 🥹",
+      "SNORING NOW"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -197,14 +205,16 @@
       "This is a very small act of love, caught on camera.",
       "He picked her, not the other way around.",
       "Every morning she does this. Every single morning.",
-      "This is what being chosen looks like."
+      "This is what being chosen looks like.",
+      "This kind of thing does not happen twice."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
       "What should tomorrow's story be about? Best idea gets made.",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Does your pet do this too? I need to know it's not just this one."
+      "Does your pet do this too? I need to know it's not just this one.",
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -269,7 +279,8 @@
       "THIS IS NEW TO HIM",
       "BAD PLAN, GREAT RESULT",
       "HE THINKS HE'S BIG",
-      "HE CHECKS ON HER"
+      "HE CHECKS ON HER",
+      "WATCH HIM THINK"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -294,7 +305,8 @@
       "Nobody Expected This | {core}",
       "I Watched This 10 Times | {core}",
       "Two Seconds In And I Was Gone | {core}",
-      "Wait For The End 🥺 {core}"
+      "Wait For The End 🥺 {core}",
+      "{core} | Wholesome {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -359,12 +371,14 @@
       "a kitten meeting a bowl of water for the first time",
       "a kitten who has claimed the warmest laundry basket",
       "a puppy meeting a puddle and deciding to sit in it",
-      "a puppy's first birthday celebrated by the whole family"
+      "a puppy's first birthday celebrated by the whole family",
+      "a kitten who was the last one left at the shelter"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
