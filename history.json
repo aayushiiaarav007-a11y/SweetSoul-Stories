@@ -7,7 +7,7 @@
     "flashes": 1,
     "pinned_comments": 2,
     "title_patterns": 1,
-    "voices": 10
+    "voices": 11
   },
   "used": {
     "ctas": [
@@ -52,11 +52,14 @@
       "Come for one story, stay for the daily ones. Subscribe.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe — there's a new little moment here every single morning.",
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Every day, one gentle story. Subscribe and let it find you."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -70,7 +73,8 @@
       "This is the soft part of the internet. {teaser}",
       "This one melted us. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -92,7 +96,8 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -140,7 +145,10 @@
       "ALMOST GOT IT",
       "EARS UP 🥺",
       "GOOD LUCK 😅",
-      "NOT LIKE THAT"
+      "NOT LIKE THAT",
+      "WORTH THE WAIT",
+      "LIKE CLOCKWORK",
+      "VERY SERIOUS BUSINESS"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -208,7 +216,8 @@
       "This is what being chosen looks like.",
       "This kind of thing does not happen twice.",
       "This rescue puppy's first smile says it all.",
-      "Nobody warned the cat about any of this."
+      "Nobody warned the cat about any of this.",
+      "This is the sweetest thing I've filmed all year."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -218,7 +227,8 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "Sound on is a completely different video, by the way 🔊"
+      "Sound on is a completely different video, by the way 🔊",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -286,7 +296,8 @@
       "HE CHECKS ON HER",
       "WATCH HIM THINK",
       "HOME AT LAST ❤️",
-      "ONE MINUTE OLD FRIENDS"
+      "ONE MINUTE OLD FRIENDS",
+      "BEST FRIENDS ALREADY"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -314,7 +325,8 @@
       "Wait For The End 🥺 {core}",
       "{core} | Wholesome {anchor}",
       "{core} | You Have To See This",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "You'll Watch This Twice | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -382,14 +394,10 @@
       "a puppy's first birthday celebrated by the whole family",
       "a kitten who was the last one left at the shelter",
       "an old cat adopted by a family with a newborn",
-      "a puppy who greets every single person on the morning walk"
+      "a puppy who greets every single person on the morning walk",
+      "an old dog teaching a clumsy puppy how to be calm"
     ],
     "voices": [
-      "en-US-AriaNeural",
-      "en-US-MichelleNeural",
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural",
       "en-US-EmmaNeural"
     ]
   }
