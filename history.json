@@ -11,13 +11,16 @@
   },
   "used": {
     "ctas": [
-      "If you needed this today, subscribe — we'll be here again tomorrow."
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Every day, one gentle story. Subscribe and let it find you."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -33,7 +36,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -57,7 +61,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Does your pet have a habit like this? Tell us about it below.",
       "What should tomorrow's story be about? We read every comment.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -111,7 +116,10 @@
       "VERY SERIOUS BUSINESS",
       "BEST FRIENDS",
       "NEVER FORGOT",
-      "MY HEART"
+      "MY HEART",
+      "SLOWLY NOW",
+      "ZERO REGRETS",
+      "STILL KNOWS HER"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -181,7 +189,8 @@
       "This rescue puppy's first smile says it all.",
       "Nobody warned the cat about any of this.",
       "This is the sweetest thing I've filmed all year.",
-      "Keep watching, the best part is hiding at the end."
+      "Keep watching, the best part is hiding at the end.",
+      "She has never lost this game and she is not about to."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -193,7 +202,8 @@
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "Sound on is a completely different video, by the way 🔊",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Cat person or dog person? Deciding this in the comments today."
+      "Cat person or dog person? Deciding this in the comments today.",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -263,7 +273,8 @@
       "HOME AT LAST ❤️",
       "ONE MINUTE OLD FRIENDS",
       "BEST FRIENDS ALREADY",
-      "ATTEMPT FORTY-ONE"
+      "ATTEMPT FORTY-ONE",
+      "HE CHOSE HER"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -293,7 +304,8 @@
       "{core} | You Have To See This",
       "{anchor}: {core}",
       "You'll Watch This Twice | {core}",
-      "{core} 🥹 {anchor}"
+      "{core} 🥹 {anchor}",
+      "{core} | Save This For A Bad Day"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -363,11 +375,13 @@
       "an old cat adopted by a family with a newborn",
       "a puppy who greets every single person on the morning walk",
       "an old dog teaching a clumsy puppy how to be calm",
-      "a puppy who has decided the mailbox is his enemy"
+      "a puppy who has decided the mailbox is his enemy",
+      "a dog who learned to be gentle only around the baby"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
