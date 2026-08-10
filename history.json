@@ -2,12 +2,12 @@
   "cycles": {
     "ctas": 3,
     "desc_ctas": 4,
-    "desc_openers": 3,
+    "desc_openers": 4,
     "desc_questions": 3,
     "flashes": 1,
     "pinned_comments": 2,
     "title_patterns": 1,
-    "voices": 11
+    "voices": 12
   },
   "used": {
     "ctas": [
@@ -19,7 +19,9 @@
       "Follow for more of this. Tomorrow's is already written.",
       "Subscribe — the next small, sweet thing is one day away.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "Follow now, and tomorrow's story will be waiting for you."
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Subscribe for the quiet, lovely corner of your feed."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -29,32 +31,17 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
-      "{teaser} Watch it twice — the second time is even sweeter.",
-      "{anchor} alert: {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{teaser} Small moment, disproportionate effect on your mood.",
-      "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "This is the soft part of the internet. {teaser}",
-      "This one melted us. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}",
-      "{teaser} The kind of clip you send to one specific person.",
-      "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "Saving this one for a rough day. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
       "Who should see this today? Tag them.",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Did you watch with the sound on or off? Genuinely curious 👇"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -120,7 +107,10 @@
       "AWWW",
       "PROTECT THEM BOTH",
       "ON DUTY",
-      "WE LOVE HIM"
+      "WE LOVE HIM",
+      "HE'S SO PLEASED",
+      "THERE IT IS",
+      "ALMOST OVER, STAY"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -194,7 +184,8 @@
       "She has never lost this game and she is not about to.",
       "This one is for anyone having a hard week.",
       "This is going to be your favourite thirty seconds today.",
-      "One look and this little one had a home."
+      "One look and this little one had a home.",
+      "This is the most serious thing that has ever happened to him."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -210,7 +201,8 @@
       "Watched it again while uploading it. No regrets.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "This is the exact kind of thing this channel is for.",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -284,7 +276,8 @@
       "HE CHOSE HER",
       "HE JUST KNEW",
       "KEEP WATCHING",
-      "SHE LET HIM CLOSE"
+      "SHE LET HIM CLOSE",
+      "SHE ALWAYS WAITS"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -318,7 +311,8 @@
       "{core} | Save This For A Bad Day",
       "{core} | Best {anchor} Of The Day",
       "{anchor} | {core} ❤️",
-      "{anchor} Moment Of The Day | {core}"
+      "{anchor} Moment Of The Day | {core}",
+      "{core} 💕 {anchor} Moment"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -392,15 +386,11 @@
       "a dog who learned to be gentle only around the baby",
       "a cat who wakes the family at the exact same minute daily",
       "a dog who adopted an abandoned kitten as his own",
-      "a puppy who fell asleep in a basket of warm laundry"
+      "a puppy who fell asleep in a basket of warm laundry",
+      "a kitten and a baby discovering bubbles together"
     ],
     "voices": [
-      "en-US-EmmaNeural",
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AriaNeural",
-      "en-US-AnaNeural",
-      "en-US-MichelleNeural"
+      "en-US-EmmaNeural"
     ]
   }
 }
