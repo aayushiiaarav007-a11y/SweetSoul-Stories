@@ -17,7 +17,9 @@
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
       "Follow for more of this. Tomorrow's is already written.",
-      "Subscribe — the next small, sweet thing is one day away."
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Follow for daily reminders that small things carry a lot of love.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -26,7 +28,8 @@
       "Subscribe — this channel exists for exactly the day you're having.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -45,11 +48,13 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
-      "Who should see this today? Tag them."
+      "Who should see this today? Tag them.",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -112,7 +117,10 @@
       "IT WORKED?!",
       "TOGETHER NOW",
       "SO TINY",
-      "AWWW"
+      "AWWW",
+      "PROTECT THEM BOTH",
+      "ON DUTY",
+      "WE LOVE HIM"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -185,7 +193,8 @@
       "Keep watching, the best part is hiding at the end.",
       "She has never lost this game and she is not about to.",
       "This one is for anyone having a hard week.",
-      "This is going to be your favourite thirty seconds today."
+      "This is going to be your favourite thirty seconds today.",
+      "One look and this little one had a home."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -200,7 +209,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "Watched it again while uploading it. No regrets.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "New here? Welcome. We do this every single day 🐾"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -273,7 +283,8 @@
       "ATTEMPT FORTY-ONE",
       "HE CHOSE HER",
       "HE JUST KNEW",
-      "KEEP WATCHING"
+      "KEEP WATCHING",
+      "SHE LET HIM CLOSE"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -306,7 +317,8 @@
       "{core} 🥹 {anchor}",
       "{core} | Save This For A Bad Day",
       "{core} | Best {anchor} Of The Day",
-      "{anchor} | {core} ❤️"
+      "{anchor} | {core} ❤️",
+      "{anchor} Moment Of The Day | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -379,14 +391,16 @@
       "a puppy who has decided the mailbox is his enemy",
       "a dog who learned to be gentle only around the baby",
       "a cat who wakes the family at the exact same minute daily",
-      "a dog who adopted an abandoned kitten as his own"
+      "a dog who adopted an abandoned kitten as his own",
+      "a puppy who fell asleep in a basket of warm laundry"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-AriaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
