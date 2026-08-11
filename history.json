@@ -29,7 +29,9 @@
       "Stay for tomorrow's story. It's just as soft as this one.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
       "Stay a while. We post something gentle here every day.",
-      "New story, same warmth, every day. Subscribe so you don't miss it."
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -44,14 +46,16 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
@@ -61,7 +65,8 @@
       "Comment 🥹 if the ending got you too.",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "What should tomorrow's story be about? We read every comment."
+      "What should tomorrow's story be about? We read every comment.",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -142,7 +147,10 @@
       "HOLD ON 🥹",
       "NEVER SEEN THIS",
       "HER SPOT",
-      "FIRST NAP HERE"
+      "FIRST NAP HERE",
+      "LISTEN 🔊",
+      "NAILED IT",
+      "TOO CUTE"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -221,7 +229,8 @@
       "This is the part of the day everyone waits for.",
       "Watch his ears. That's when you'll know.",
       "You are about to smile whether you like it or not.",
-      "This baby's reaction is absolutely priceless."
+      "This baby's reaction is absolutely priceless.",
+      "This is the kind of story the internet was made for."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -242,7 +251,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "If this made you smile, that's all we wanted today ❤️",
       "Name this little one. We're taking suggestions seriously.",
-      "Saving this one for a bad day. Recommend you do the same."
+      "Saving this one for a bad day. Recommend you do the same.",
+      "Comment 🐾 and we'll reply to every single one today."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -321,7 +331,8 @@
       "YOU'LL WATCH TWICE",
       "WATCH HER EYES",
       "WAIT FOR THE END 🥹",
-      "FIRST HELLO ❤️"
+      "FIRST HELLO ❤️",
+      "SHE PICKED THE BABY"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -360,7 +371,8 @@
       "How Is This Real 🥺 {core}",
       "{core} 💛 Wholesome {anchor}",
       "Everyone Needs To See This {anchor} | {core}",
-      "{anchor}: {core} 😭❤️"
+      "{anchor}: {core} 😭❤️",
+      "{core} (This Got Me) | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -439,14 +451,16 @@
       "a puppy and a lamb who follow each other everywhere",
       "a toddler building a pillow fort for a shy puppy",
       "a dog who lets the family cat win every single time",
-      "a toddler meeting the puppy she has been drawing for weeks"
+      "a toddler meeting the puppy she has been drawing for weeks",
+      "a puppy meeting a duckling in the backyard"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
