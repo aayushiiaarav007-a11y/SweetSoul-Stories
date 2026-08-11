@@ -33,7 +33,9 @@
       "If you smiled, that's the whole job done. Subscribe for more.",
       "Subscribe, and let us hand you one good thing every single day.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Subscribe — there's a new little moment here every single morning.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -50,7 +52,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
@@ -59,7 +62,8 @@
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
@@ -71,7 +75,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "What should tomorrow's story be about? We read every comment.",
       "Who else needed this today? Say hi in the comments 👋",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -158,7 +163,10 @@
       "TOO CUTE",
       "THAT FACE",
       "NEARLY THERE",
-      "PROBLEM SOLVED"
+      "PROBLEM SOLVED",
+      "PURE JOY",
+      "CAME OUT AT LAST",
+      "STILL GOING"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -239,7 +247,8 @@
       "You are about to smile whether you like it or not.",
       "This baby's reaction is absolutely priceless.",
       "This is the kind of story the internet was made for.",
-      "They have known each other for exactly one minute."
+      "They have known each other for exactly one minute.",
+      "Nobody taught him this. He just knew."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -262,7 +271,8 @@
       "Name this little one. We're taking suggestions seriously.",
       "Saving this one for a bad day. Recommend you do the same.",
       "Comment 🐾 and we'll reply to every single one today.",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -343,7 +353,8 @@
       "WAIT FOR THE END 🥹",
       "FIRST HELLO ❤️",
       "SHE PICKED THE BABY",
-      "THIS IS TRUST"
+      "THIS IS TRUST",
+      "CUTEST THING TODAY"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -384,7 +395,8 @@
       "Everyone Needs To See This {anchor} | {core}",
       "{anchor}: {core} 😭❤️",
       "{core} (This Got Me) | {anchor}",
-      "This {anchor} Will Melt Your Heart | {core}"
+      "This {anchor} Will Melt Your Heart | {core}",
+      "{core} | Tiny Heart, Huge Moment"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -465,10 +477,12 @@
       "a dog who lets the family cat win every single time",
       "a toddler meeting the puppy she has been drawing for weeks",
       "a puppy meeting a duckling in the backyard",
-      "a toddler who packs the puppy a lunch for the park"
+      "a toddler who packs the puppy a lunch for the park",
+      "a puppy who befriended the neighbour's shy cat over a fence"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
