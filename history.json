@@ -27,7 +27,9 @@
       "Subscribe and let something gentle find you every day.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
       "Stay for tomorrow's story. It's just as soft as this one.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "Stay a while. We post something gentle here every day.",
+      "New story, same warmth, every day. Subscribe so you don't miss it."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -41,13 +43,15 @@
       "One good thing a day. Subscribe and we'll handle the rest.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
@@ -56,7 +60,8 @@
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Comment 🥹 if the ending got you too.",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Which part made you smile the most? Tell us in the comments 👇"
+      "Which part made you smile the most? Tell us in the comments 👇",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -134,7 +139,10 @@
       "PROUD BOY",
       "WHAT IS THAT",
       "CERTIFIED CUTE",
-      "HOLD ON 🥹"
+      "HOLD ON 🥹",
+      "NEVER SEEN THIS",
+      "HER SPOT",
+      "FIRST NAP HERE"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -212,7 +220,8 @@
       "This is the most serious thing that has ever happened to him.",
       "This is the part of the day everyone waits for.",
       "Watch his ears. That's when you'll know.",
-      "You are about to smile whether you like it or not."
+      "You are about to smile whether you like it or not.",
+      "This baby's reaction is absolutely priceless."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -232,7 +241,8 @@
       "Tag the person who always sends you cute animal videos.",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "If this made you smile, that's all we wanted today ❤️",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "THE LOOK AT THE END",
@@ -310,7 +320,8 @@
       "SHE ALWAYS WAITS",
       "YOU'LL WATCH TWICE",
       "WATCH HER EYES",
-      "WAIT FOR THE END 🥹"
+      "WAIT FOR THE END 🥹",
+      "FIRST HELLO ❤️"
     ],
     "title_patterns": [
       "{anchor} - {core}",
@@ -348,7 +359,8 @@
       "{core} 💕 {anchor} Moment",
       "How Is This Real 🥺 {core}",
       "{core} 💛 Wholesome {anchor}",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "{anchor}: {core} 😭❤️"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -426,13 +438,15 @@
       "a kitten and a baby discovering bubbles together",
       "a puppy and a lamb who follow each other everywhere",
       "a toddler building a pillow fort for a shy puppy",
-      "a dog who lets the family cat win every single time"
+      "a dog who lets the family cat win every single time",
+      "a toddler meeting the puppy she has been drawing for weeks"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
