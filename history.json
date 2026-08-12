@@ -38,10 +38,13 @@
       "Subscribe — there's a new little moment here every single morning.",
       "Follow along — the next tiny story is already waiting.",
       "Follow along, and tomorrow we'll find another one of these together.",
-      "One good thing a day. Subscribe and let us handle it."
+      "One good thing a day. Subscribe and let us handle it.",
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_ctas": [
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
@@ -52,7 +55,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "We rewatched this more times than we should admit. {teaser}",
       "{anchor} alert: {teaser}",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
@@ -66,7 +70,8 @@
       "Who else needed this today? Say hi in the comments 👋",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Cat person or dog person? Settle it in the comments.",
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -159,7 +164,10 @@
       "STILL GOING",
       "THE TAIL 🥹",
       "NO NOTES",
-      "ALMOST 🥺"
+      "ALMOST 🥺",
+      "HIS OWN BED",
+      "HIS OWN WAY",
+      "HE'S TRYING"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -242,7 +250,8 @@
       "This is the kind of story the internet was made for.",
       "They have known each other for exactly one minute.",
       "Nobody taught him this. He just knew.",
-      "Try not to smile watching this — I dare you."
+      "Try not to smile watching this — I dare you.",
+      "There is a reason this clip refuses to leave my head."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -267,13 +276,16 @@
       "Comment 🐾 and we'll reply to every single one today.",
       "Genuine question: how did nobody cry filming this?",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "Tell us in one word how this made you feel 👇"
+      "Tell us in one word how this made you feel 👇",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
-      "PURE JOY INCOMING"
+      "PURE JOY INCOMING",
+      "DON'T SCROLL PAST"
     ],
     "title_patterns": [
-      "{core} | Tiny Heart, Huge Moment"
+      "{core} | Tiny Heart, Huge Moment",
+      "{core} — And It Gets Better"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -356,12 +368,14 @@
       "a puppy meeting a duckling in the backyard",
       "a toddler who packs the puppy a lunch for the park",
       "a puppy who befriended the neighbour's shy cat over a fence",
-      "a kitten learning to jump and misjudging every distance"
+      "a kitten learning to jump and misjudging every distance",
+      "a kitten who taught herself to open the cupboard"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
