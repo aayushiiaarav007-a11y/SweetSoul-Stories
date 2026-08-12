@@ -8,7 +8,8 @@
       "Tell someone this story tonight, and subscribe for the next one.",
       "Subscribe for a new story, and a new lesson, every single time.",
       "If your children enjoyed this, subscribe — there is a new one waiting.",
-      "If this warmed you even a little, subscribe for the next one."
+      "If this warmed you even a little, subscribe for the next one.",
+      "Thank you for staying till the lesson. Subscribe for the next."
     ],
     "topics": [
       [
@@ -38,6 +39,10 @@
       [
         "moral courage",
         "a child who refuses to join in when friends steal fruit"
+      ],
+      [
+        "perseverance",
+        "a spider who rebuilds her web every single morning"
       ]
     ]
   }
