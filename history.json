@@ -5,7 +5,7 @@
     "desc_openers": 4,
     "desc_questions": 3,
     "flashes": 1,
-    "pinned_comments": 2,
+    "pinned_comments": 3,
     "screen_hooks": 1,
     "title_patterns": 2,
     "voices": 14
@@ -50,7 +50,9 @@
       "Come back tomorrow. There's always another small moment worth seeing.",
       "Subscribe, and tomorrow this will find you again.",
       "There is more where this came from. Subscribe and find out.",
-      "That's all for today. Follow along and we'll see you tomorrow."
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Stick around. The next one is just as soft as this.",
+      "Subscribe for more of the quiet, lovely parts of the internet."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -59,7 +61,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
@@ -76,7 +79,8 @@
       "This one melted us. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
@@ -96,7 +100,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "What should we call this little one? Best comment wins 🏆",
       "What is your pet's most ridiculous habit? Comment below.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -207,7 +212,10 @@
       "CLOSE ENOUGH",
       "MINE NOW",
       "ONE MORE TRY",
-      "SOMEHOW YES"
+      "SOMEHOW YES",
+      "THIS BIT 👇",
+      "BRAND NEW",
+      "SAME LOVE"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -296,38 +304,11 @@
       "The plan was simple. The plan did not survive.",
       "She has been practising this all week.",
       "Okay, you have to see what happens in about four seconds.",
-      "It only took one afternoon to change everything."
+      "It only took one afternoon to change everything.",
+      "This is a good day being made in real time."
     ],
     "pinned_comments": [
-      "Somebody tell me I'm not the only one who teared up here.",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "Sound on is a completely different video, by the way 🔊",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "Watched it again while uploading it. No regrets.",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "This is the exact kind of thing this channel is for.",
-      "New here? Welcome. We do this every single day 🐾",
-      "Tag the person who always sends you cute animal videos.",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "If this made you smile, that's all we wanted today ❤️",
-      "Name this little one. We're taking suggestions seriously.",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "Genuine question: how did nobody cry filming this?",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "Tell us in one word how this made you feel 👇",
-      "Which second got you? Drop the timestamp and we'll compare.",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "We read every comment on this channel. Say something and find out.",
-      "If this showed up at the right moment for you today, say so 👇",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "The last three seconds are the reason this exists 🥹"
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -336,7 +317,8 @@
       "GIVE IT 10 SECONDS",
       "WATCH WHAT HE DOES",
       "SOMEBODY PICKED HIM",
-      "SHE NEVER MISSES"
+      "SHE NEVER MISSES",
+      "WATCH HER EYES"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -345,7 +327,8 @@
       "Wait For The End 🥺 {core}",
       "The Internet Loves This {anchor} | {core}",
       "{core} | Daily Dose Of Cute",
-      "{core} 💕 {anchor} Moment"
+      "{core} 💕 {anchor} Moment",
+      "{core} (Try Not To Smile) | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -434,12 +417,14 @@
       "a puppy learning to swim with a laughing toddler cheering",
       "a kitten stealing a baby's toy and returning it",
       "a dog carrying his blanket to a crying baby",
-      "a kitten meeting the family's old gentle dog"
+      "a kitten meeting the family's old gentle dog",
+      "a toddler and puppy taking a nap together"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AnaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
