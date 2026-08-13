@@ -46,14 +46,17 @@
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "Come for one story, stay for the daily ones. Subscribe."
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "Subscribe, and tomorrow this will find you again."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe for daily proof that the world still has soft edges.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
@@ -68,7 +71,8 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "If you needed a reason to smile today, here it is. {teaser}",
       "This one melted us. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
@@ -86,7 +90,8 @@
       "Which one would you take home? Comment your pick.",
       "One word for how this made you feel. Go 👇",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -191,7 +196,10 @@
       "TAIL GOING WILD",
       "HIS JOB NOW",
       "NEVER LEAVES",
-      "GOOD ENOUGH FOR HIM"
+      "GOOD ENOUGH FOR HIM",
+      "HE DID IT",
+      "MASSIVE EFFORT",
+      "CLOSE ENOUGH"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -278,7 +286,8 @@
       "There is a reason this clip refuses to leave my head.",
       "This is your sign to be gentle with something small today.",
       "The plan was simple. The plan did not survive.",
-      "She has been practising this all week."
+      "She has been practising this all week.",
+      "Okay, you have to see what happens in about four seconds."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -307,21 +316,24 @@
       "Which second got you? Drop the timestamp and we'll compare.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "We read every comment on this channel. Say something and find out.",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
       "DON'T SCROLL PAST",
       "TAKE THIRTY SECONDS",
       "GIVE IT 10 SECONDS",
-      "WATCH WHAT HE DOES"
+      "WATCH WHAT HE DOES",
+      "SOMEBODY PICKED HIM"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
       "{core} — And It Gets Better",
       "Two Seconds In And I Was Gone | {core}",
       "Wait For The End 🥺 {core}",
-      "The Internet Loves This {anchor} | {core}"
+      "The Internet Loves This {anchor} | {core}",
+      "{core} | Daily Dose Of Cute"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -408,10 +420,12 @@
       "a kitten who taught herself to open the cupboard",
       "a stray puppy following a child home in the rain",
       "a puppy learning to swim with a laughing toddler cheering",
-      "a kitten stealing a baby's toy and returning it"
+      "a kitten stealing a baby's toy and returning it",
+      "a dog carrying his blanket to a crying baby"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
