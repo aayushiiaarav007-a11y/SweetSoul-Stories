@@ -13,7 +13,9 @@
   "used": {
     "ctas": [
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "If you needed this today, subscribe — we'll be here again tomorrow."
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "Tomorrow's story is already waiting for you. Follow along."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -26,10 +28,12 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Would your pet do the same thing? Tell us below 👇",
@@ -53,7 +57,8 @@
       "Rate this little one out of 10. No wrong answers.",
       "Does your pet have a habit like this? Tell us about it below.",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -176,7 +181,10 @@
       "I'M DONE 🥹",
       "SAME SPOT",
       "TUCKED IN",
-      "TOO PURE"
+      "TOO PURE",
+      "HE HAS OPINIONS",
+      "SO SMALL",
+      "HE REMEMBERED"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -269,13 +277,15 @@
       "This is a good day being made in real time.",
       "Wait for it, because this will melt your heart.",
       "There was no plan here. It just happened.",
-      "Confidence: enormous. Coordination: none."
+      "Confidence: enormous. Coordination: none.",
+      "The whole house went quiet when this happened."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Small channel, real replies. Comment and we'll talk 🐾",
-      "Tell us in one word how this made you feel 👇"
+      "Tell us in one word how this made you feel 👇",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -288,7 +298,8 @@
       "WATCH HER EYES",
       "FIRST HELLO ❤️",
       "SOMEONE'S ABOUT TO LOSE",
-      "IT GETS BETTER"
+      "IT GETS BETTER",
+      "SMALL PAWS BIG HEART"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -301,7 +312,8 @@
       "{core} (Try Not To Smile) | {anchor}",
       "{core} 🥹 {anchor}",
       "{anchor}: {core} — Stay Till The End",
-      "The Sweetest {anchor} | {core}"
+      "The Sweetest {anchor} | {core}",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -394,10 +406,12 @@
       "a toddler and puppy taking a nap together",
       "a baby's first steps guided by a loyal gentle dog",
       "a kitten who sleeps in the fruit bowl and refuses to move",
-      "a kitten who sits on the windowsill until the car comes home"
+      "a kitten who sits on the windowsill until the car comes home",
+      "a blind kitten who learned the whole house by heart"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
