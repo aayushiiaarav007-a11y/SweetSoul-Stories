@@ -21,7 +21,9 @@
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
       "Follow along — the next tiny story is already waiting.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "There's a new sweet story here every single day. Come back tomorrow."
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Follow SweetSoul Stories — we keep the gentle ones coming."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -38,19 +40,22 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe and let something gentle reach you every day.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "This is the soft part of the internet. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
       "Who else needed this today? Say hi in the comments 👋",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -185,7 +190,10 @@
       "TOTALLY WORTH IT",
       "SO CLOSE",
       "SHE APPROVES",
-      "LOOK 👀"
+      "LOOK 👀",
+      "ANY SECOND NOW",
+      "PROUD OF HIM",
+      "SHE'S HAD ENOUGH"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -282,7 +290,8 @@
       "The whole house went quiet when this happened.",
       "It is the ordinary days that turn out to matter.",
       "I did not expect to cry over a puppy today, but here we are.",
-      "This dog has been waiting for this moment his whole life."
+      "This dog has been waiting for this moment his whole life.",
+      "He is trying so hard and it is going so badly."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -292,7 +301,8 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "This is the exact kind of thing this channel is for.",
       "Name this little one. We're taking suggestions seriously.",
-      "Okay but the part at the end though 🥹 What was your favourite second?"
+      "Okay but the part at the end though 🥹 What was your favourite second?",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -309,7 +319,8 @@
       "SMALL PAWS BIG HEART",
       "LAST ONE LEFT",
       "THIS MELTED ME",
-      "SHE LET HIM CLOSE"
+      "SHE LET HIM CLOSE",
+      "SHE ALWAYS WAITS"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -326,7 +337,8 @@
       "{core} | Softest Thing Today",
       "This {anchor} Will Melt Your Heart | {core}",
       "{core} | Wholesome {anchor}",
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "{anchor} That Fixed My Whole Day | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -423,14 +435,16 @@
       "a blind kitten who learned the whole house by heart",
       "a dog who swims in the lake every summer morning",
       "a baby and a cat playing peekaboo through a doorway",
-      "a puppy who cries until the kitten comes to bed"
+      "a puppy who cries until the kitten comes to bed",
+      "a baby sharing snacks with a patient gentle dog"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
