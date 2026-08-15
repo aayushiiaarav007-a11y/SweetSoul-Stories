@@ -17,7 +17,9 @@
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
       "Tomorrow's story is already waiting for you. Follow along.",
       "One good thing a day. Subscribe and let us handle it.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -32,15 +34,18 @@
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "Follow for the softest thirty seconds of your day, daily.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -169,7 +174,10 @@
       "HE REMEMBERED",
       "BIG WORLD, SMALL PUP",
       "RIGHT HERE",
-      "BRAVE LITTLE THING"
+      "BRAVE LITTLE THING",
+      "FEELS SAFE NOW",
+      "PROUD OF HER",
+      "TOTALLY WORTH IT"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -264,7 +272,8 @@
       "There was no plan here. It just happened.",
       "Confidence: enormous. Coordination: none.",
       "The whole house went quiet when this happened.",
-      "It is the ordinary days that turn out to matter."
+      "It is the ordinary days that turn out to matter.",
+      "I did not expect to cry over a puppy today, but here we are."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -272,7 +281,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Tell us in one word how this made you feel 👇",
       "Does your pet do this too? I need to know it's not just this one.",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "Name this little one. We're taking suggestions seriously."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -287,7 +297,8 @@
       "SOMEONE'S ABOUT TO LOSE",
       "IT GETS BETTER",
       "SMALL PAWS BIG HEART",
-      "LAST ONE LEFT"
+      "LAST ONE LEFT",
+      "THIS MELTED ME"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -302,7 +313,8 @@
       "{anchor}: {core} — Stay Till The End",
       "The Sweetest {anchor} | {core}",
       "{core} | Softest Thing Today",
-      "This {anchor} Will Melt Your Heart | {core}"
+      "This {anchor} Will Melt Your Heart | {core}",
+      "{core} | Wholesome {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -397,12 +409,14 @@
       "a kitten who sleeps in the fruit bowl and refuses to move",
       "a kitten who sits on the windowsill until the car comes home",
       "a blind kitten who learned the whole house by heart",
-      "a dog who swims in the lake every summer morning"
+      "a dog who swims in the lake every summer morning",
+      "a baby and a cat playing peekaboo through a doorway"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
