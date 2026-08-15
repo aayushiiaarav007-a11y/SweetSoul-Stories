@@ -19,7 +19,9 @@
       "One good thing a day. Subscribe and let us handle it.",
       "Subscribe for the quiet, lovely corner of your feed.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Follow along — the next tiny story is already waiting."
+      "Follow along — the next tiny story is already waiting.",
+      "Follow for daily reminders that small things carry a lot of love.",
+      "There's a new sweet story here every single day. Come back tomorrow."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -35,17 +37,20 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe and let something gentle reach you every day.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "This is the soft part of the internet. {teaser}",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "On a scale of 1-10, how cute was that? Comment your score!"
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -177,7 +182,10 @@
       "BRAVE LITTLE THING",
       "FEELS SAFE NOW",
       "PROUD OF HER",
-      "TOTALLY WORTH IT"
+      "TOTALLY WORTH IT",
+      "SO CLOSE",
+      "SHE APPROVES",
+      "LOOK 👀"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -273,7 +281,8 @@
       "Confidence: enormous. Coordination: none.",
       "The whole house went quiet when this happened.",
       "It is the ordinary days that turn out to matter.",
-      "I did not expect to cry over a puppy today, but here we are."
+      "I did not expect to cry over a puppy today, but here we are.",
+      "This dog has been waiting for this moment his whole life."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -282,7 +291,8 @@
       "Tell us in one word how this made you feel 👇",
       "Does your pet do this too? I need to know it's not just this one.",
       "This is the exact kind of thing this channel is for.",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -298,7 +308,8 @@
       "IT GETS BETTER",
       "SMALL PAWS BIG HEART",
       "LAST ONE LEFT",
-      "THIS MELTED ME"
+      "THIS MELTED ME",
+      "SHE LET HIM CLOSE"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -314,7 +325,8 @@
       "The Sweetest {anchor} | {core}",
       "{core} | Softest Thing Today",
       "This {anchor} Will Melt Your Heart | {core}",
-      "{core} | Wholesome {anchor}"
+      "{core} | Wholesome {anchor}",
+      "I Watched This 10 Times | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -410,13 +422,15 @@
       "a kitten who sits on the windowsill until the car comes home",
       "a blind kitten who learned the whole house by heart",
       "a dog who swims in the lake every summer morning",
-      "a baby and a cat playing peekaboo through a doorway"
+      "a baby and a cat playing peekaboo through a doorway",
+      "a puppy who cries until the kitten comes to bed"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
