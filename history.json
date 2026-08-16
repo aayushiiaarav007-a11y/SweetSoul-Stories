@@ -31,13 +31,16 @@
       "Come for one story, stay for the daily ones. Subscribe.",
       "Subscribe and let something gentle find you every day.",
       "If you smiled, that's the whole job done. Subscribe for more.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -49,7 +52,8 @@
       "Saving this one for a rough day. {teaser}",
       "This one melted us. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -59,7 +63,8 @@
       "Does your pet have a habit like this? Tell us about it below.",
       "Who should see this today? Tag them.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "LOOK AT HIM GO",
@@ -209,7 +214,10 @@
       "WELL THEN 😭",
       "HERE WE GO",
       "HE CAME BACK",
-      "TOOK HER TIME"
+      "TOOK HER TIME",
+      "PERFECTLY BALANCED",
+      "SO MUCH TRYING",
+      "LOOK HOW LITTLE"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -311,7 +319,8 @@
       "He is very proud of himself and he should be.",
       "She has made a decision and there will be no discussion.",
       "The best things really are the quiet ones.",
-      "Absolutely nobody asked for this friendship, and yet."
+      "Absolutely nobody asked for this friendship, and yet.",
+      "This is the first time anyone has been gentle with him."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -326,7 +335,8 @@
       "New here? Welcome. We do this every single day 🐾",
       "Comment 🐾 and we'll reply to every single one today.",
       "Sound on is a completely different video, by the way 🔊",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "If this made you smile, that's all we wanted today ❤️"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -348,7 +358,8 @@
       "TOO SMALL TO KNOW",
       "STAY A SECOND",
       "WAIT FOR IT...",
-      "WATCH TILL THE END"
+      "WATCH TILL THE END",
+      "WAIT FOR THE END 🥹"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -370,7 +381,8 @@
       "{anchor}: {core}",
       "{core} | Proof The Internet Is Fine",
       "Someone Send Help 🥹 {core}",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "{core} | You Have To See This"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -472,13 +484,15 @@
       "a baby and a puppy watching rain on the window together",
       "a puppy discovering rain and trying to bite it",
       "a puppy trying to fit in a box three sizes too small",
-      "a kitten who claimed the freshly made bed as her own"
+      "a kitten who claimed the freshly made bed as her own",
+      "twin babies playing with a gentle giant dog"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
