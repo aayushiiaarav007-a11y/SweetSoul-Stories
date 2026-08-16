@@ -8,7 +8,7 @@
     "pinned_comments": 3,
     "screen_hooks": 1,
     "title_patterns": 2,
-    "voices": 16
+    "voices": 17
   },
   "used": {
     "ctas": [
@@ -35,7 +35,9 @@
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -43,7 +45,8 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -57,7 +60,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "We rewatched this more times than we should admit. {teaser}"
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -69,11 +73,15 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Comment 🐾 if you watched this more than once.",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "EVERY DAY THIS",
-      "HIS JOB NOW"
+      "HIS JOB NOW",
+      "SHE'S HAD ENOUGH",
+      "CERTIFIED CUTE",
+      "HE'S TRYING"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -177,7 +185,8 @@
       "The best things really are the quiet ones.",
       "Absolutely nobody asked for this friendship, and yet.",
       "This is the first time anyone has been gentle with him.",
-      "It started with a sound at the door."
+      "It started with a sound at the door.",
+      "Two seconds in and my heart was gone."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -194,7 +203,8 @@
       "Sound on is a completely different video, by the way 🔊",
       "Genuine question: how did nobody cry filming this?",
       "If this made you smile, that's all we wanted today ❤️",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -218,7 +228,8 @@
       "WAIT FOR IT...",
       "WATCH TILL THE END",
       "WAIT FOR THE END 🥹",
-      "NO WORDS NEEDED"
+      "NO WORDS NEEDED",
+      "THIS IS NEW TO HIM"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -242,7 +253,8 @@
       "Someone Send Help 🥹 {core}",
       "Everyone Needs To See This {anchor} | {core}",
       "{core} | You Have To See This",
-      "This Is Why We Love {anchor}s | {core}"
+      "This Is Why We Love {anchor}s | {core}",
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -346,15 +358,11 @@
       "a puppy trying to fit in a box three sizes too small",
       "a kitten who claimed the freshly made bed as her own",
       "twin babies playing with a gentle giant dog",
-      "a kitten and a puppy learning to share one water bowl"
+      "a kitten and a puppy learning to share one water bowl",
+      "a puppy meeting the ocean for the first time"
     ],
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-US-MichelleNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-US-AnaNeural"
+      "en-US-MichelleNeural"
     ]
   }
 }
