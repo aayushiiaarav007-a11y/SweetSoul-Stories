@@ -43,7 +43,9 @@
       "Save this channel for the days you need something soft. Subscribe.",
       "Subscribe for one small, kind story a day. That's all we do here.",
       "Subscribe — there's a new little moment here every single morning.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it."
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Stay a while. We post something gentle here every day.",
+      "Stick around. The next one is just as soft as this."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -55,7 +57,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Subscribe and let something gentle reach you every day.",
       "Subscribe — one small, kind story lands here every single day.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -73,7 +76,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -89,7 +93,8 @@
       "Which one would you take home? Comment your pick.",
       "Comment 🥹 if the ending got you too.",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -105,7 +110,10 @@
       "PROUD OF HIM",
       "PROBLEM SOLVED",
       "NEVER SEEN THIS",
-      "HE APPROVES"
+      "HE APPROVES",
+      "NEW FAVOURITE",
+      "THE BEST BIT",
+      "SAFE AT LAST"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -213,7 +221,8 @@
       "Two seconds in and my heart was gone.",
       "This started as an ordinary Tuesday.",
       "This is what pure joy looks like — and it's adorable.",
-      "Some friendships do not need words at all."
+      "Some friendships do not need words at all.",
+      "You'll want to share this with everyone you love."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -234,7 +243,8 @@
       "Saving this one for a bad day. Recommend you do the same.",
       "Tag the person who always sends you cute animal videos.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "The last three seconds are the reason this exists 🥹"
+      "The last three seconds are the reason this exists 🥹",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -262,7 +272,8 @@
       "THIS IS NEW TO HIM",
       "MADE MY WHOLE WEEK",
       "NOBODY TAUGHT HIM",
-      "JUST WAIT 🥺"
+      "JUST WAIT 🥺",
+      "LOOK AT HIS FACE"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -290,7 +301,8 @@
       "{anchor} You Need To See: {core}",
       "{core} (This Got Me) | {anchor}",
       "{core} | {anchor} Compilation Worthy",
-      "How Is This Real 🥺 {core}"
+      "How Is This Real 🥺 {core}",
+      "{core} 💛 Wholesome {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -398,13 +410,15 @@
       "a puppy meeting the ocean for the first time",
       "a baby and a puppy meeting their first butterfly",
       "a rescue dog who guards the baby's door every night",
-      "a kitten and an old dog who share one favourite chair"
+      "a kitten and an old dog who share one favourite chair",
+      "a kitten rescued from a drain pipe meeting her new family"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
