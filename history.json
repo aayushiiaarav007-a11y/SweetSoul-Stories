@@ -37,7 +37,9 @@
       "New story, same warmth, every day. Subscribe so you don't miss it.",
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "Come back tomorrow. There's always another small moment worth seeing.",
-      "Follow now, and tomorrow's story will be waiting for you."
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Follow for more of this. Tomorrow's is already written."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -46,7 +48,8 @@
       "One good thing a day. Subscribe and we'll handle the rest.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -61,7 +64,8 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{anchor} alert: {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -74,14 +78,18 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Comment 🐾 if you watched this more than once.",
       "What is your pet's most ridiculous habit? Comment below.",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "EVERY DAY THIS",
       "HIS JOB NOW",
       "SHE'S HAD ENOUGH",
       "CERTIFIED CUTE",
-      "HE'S TRYING"
+      "HE'S TRYING",
+      "HERE IT COMES",
+      "NEW BLANKET",
+      "WATCH TO THE END"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -186,7 +194,8 @@
       "Absolutely nobody asked for this friendship, and yet.",
       "This is the first time anyone has been gentle with him.",
       "It started with a sound at the door.",
-      "Two seconds in and my heart was gone."
+      "Two seconds in and my heart was gone.",
+      "This started as an ordinary Tuesday."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -204,7 +213,8 @@
       "Genuine question: how did nobody cry filming this?",
       "If this made you smile, that's all we wanted today ❤️",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Saving this one for a bad day. Recommend you do the same."
+      "Saving this one for a bad day. Recommend you do the same.",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -229,7 +239,8 @@
       "WATCH TILL THE END",
       "WAIT FOR THE END 🥹",
       "NO WORDS NEEDED",
-      "THIS IS NEW TO HIM"
+      "THIS IS NEW TO HIM",
+      "MADE MY WHOLE WEEK"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -254,7 +265,8 @@
       "Everyone Needs To See This {anchor} | {core}",
       "{core} | You Have To See This",
       "This Is Why We Love {anchor}s | {core}",
-      "{anchor} You Need To See: {core}"
+      "{anchor} You Need To See: {core}",
+      "{core} (This Got Me) | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -359,10 +371,12 @@
       "a kitten who claimed the freshly made bed as her own",
       "twin babies playing with a gentle giant dog",
       "a kitten and a puppy learning to share one water bowl",
-      "a puppy meeting the ocean for the first time"
+      "a puppy meeting the ocean for the first time",
+      "a baby and a puppy meeting their first butterfly"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
