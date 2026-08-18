@@ -45,7 +45,9 @@
       "Subscribe — there's a new little moment here every single morning.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Stay a while. We post something gentle here every day.",
-      "Stick around. The next one is just as soft as this."
+      "Stick around. The next one is just as soft as this.",
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -58,7 +60,8 @@
       "Subscribe and let something gentle reach you every day.",
       "Subscribe — one small, kind story lands here every single day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -77,7 +80,8 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -94,7 +98,8 @@
       "Comment 🥹 if the ending got you too.",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "Would your pet do the same thing? Tell us below 👇"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -113,7 +118,10 @@
       "HE APPROVES",
       "NEW FAVOURITE",
       "THE BEST BIT",
-      "SAFE AT LAST"
+      "SAFE AT LAST",
+      "WE LOVE HIM",
+      "MASSIVE EFFORT",
+      "TUCKED IN"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -222,7 +230,8 @@
       "This started as an ordinary Tuesday.",
       "This is what pure joy looks like — and it's adorable.",
       "Some friendships do not need words at all.",
-      "You'll want to share this with everyone you love."
+      "You'll want to share this with everyone you love.",
+      "A baby, a puppy, and a moment you'll never forget."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -244,7 +253,8 @@
       "Tag the person who always sends you cute animal videos.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "The last three seconds are the reason this exists 🥹",
-      "Watched it again while uploading it. No regrets."
+      "Watched it again while uploading it. No regrets.",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -273,7 +283,8 @@
       "MADE MY WHOLE WEEK",
       "NOBODY TAUGHT HIM",
       "JUST WAIT 🥺",
-      "LOOK AT HIS FACE"
+      "LOOK AT HIS FACE",
+      "THE ENDING THOUGH"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -302,7 +313,8 @@
       "{core} (This Got Me) | {anchor}",
       "{core} | {anchor} Compilation Worthy",
       "How Is This Real 🥺 {core}",
-      "{core} 💛 Wholesome {anchor}"
+      "{core} 💛 Wholesome {anchor}",
+      "You'll Watch This Twice | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -411,14 +423,16 @@
       "a baby and a puppy meeting their first butterfly",
       "a rescue dog who guards the baby's door every night",
       "a kitten and an old dog who share one favourite chair",
-      "a kitten rescued from a drain pipe meeting her new family"
+      "a kitten rescued from a drain pipe meeting her new family",
+      "a dog who insists on carrying the picnic basket himself"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
