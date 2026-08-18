@@ -49,7 +49,9 @@
       "SweetSoul Stories, every day, for the days you need something kind.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "Subscribe, and let us hand you one good thing every single day.",
-      "Subscribe for more of the quiet, lovely parts of the internet."
+      "Subscribe for more of the quiet, lovely parts of the internet.",
+      "That's today's dose of soft. Follow for tomorrow's.",
+      "There is more where this came from. Subscribe and find out."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -64,10 +66,12 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Follow for the softest thirty seconds of your day, daily.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -86,7 +90,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "First time here? Say hello in the comments 👋",
       "Would your pet do the same thing? Tell us below 👇",
-      "Which part made you smile the most? Tell us in the comments 👇"
+      "Which part made you smile the most? Tell us in the comments 👇",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -111,7 +116,10 @@
       "TUCKED IN",
       "NO SHARING",
       "WE LOVE HER",
-      "THIS BIT 👇"
+      "THIS BIT 👇",
+      "TINY LEGS",
+      "TINY YAWN",
+      "GOOD ENOUGH FOR HIM"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -222,7 +230,8 @@
       "Some friendships do not need words at all.",
       "You'll want to share this with everyone you love.",
       "A baby, a puppy, and a moment you'll never forget.",
-      "He had never had a soft place to sleep until now."
+      "He had never had a soft place to sleep until now.",
+      "He does not know he is being kind. He just is."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -246,7 +255,8 @@
       "The last three seconds are the reason this exists 🥹",
       "Watched it again while uploading it. No regrets.",
       "Cat person or dog person? Deciding this in the comments today.",
-      "Be honest, how many times did you watch this? I'll go first: eleven."
+      "Be honest, how many times did you watch this? I'll go first: eleven.",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -277,7 +287,8 @@
       "JUST WAIT 🥺",
       "LOOK AT HIS FACE",
       "THE ENDING THOUGH",
-      "BAD PLAN, GREAT RESULT"
+      "BAD PLAN, GREAT RESULT",
+      "SOMETHING SOFT TODAY"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -308,7 +319,8 @@
       "How Is This Real 🥺 {core}",
       "{core} 💛 Wholesome {anchor}",
       "You'll Watch This Twice | {core}",
-      "{anchor} Moment Of The Day | {core}"
+      "{anchor} Moment Of The Day | {core}",
+      "{core} — Watch The Last 5 Seconds"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -419,10 +431,12 @@
       "a kitten and an old dog who share one favourite chair",
       "a kitten rescued from a drain pipe meeting her new family",
       "a dog who insists on carrying the picnic basket himself",
-      "a toddler sharing an umbrella with a soaked stray cat"
+      "a toddler sharing an umbrella with a soaked stray cat",
+      "a dog gently guarding a sleeping newborn all night"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
