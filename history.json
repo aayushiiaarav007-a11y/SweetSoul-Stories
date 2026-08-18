@@ -51,7 +51,9 @@
       "Subscribe, and let us hand you one good thing every single day.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "There is more where this came from. Subscribe and find out."
+      "There is more where this came from. Subscribe and find out.",
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Every day, one gentle story. Subscribe and let it find you."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -67,11 +69,13 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -91,7 +95,8 @@
       "First time here? Say hello in the comments 👋",
       "Would your pet do the same thing? Tell us below 👇",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -119,7 +124,10 @@
       "THIS BIT 👇",
       "TINY LEGS",
       "TINY YAWN",
-      "GOOD ENOUGH FOR HIM"
+      "GOOD ENOUGH FOR HIM",
+      "OUT COLD",
+      "THIS ONE HURTS",
+      "PHYSICS WHO"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -231,7 +239,8 @@
       "You'll want to share this with everyone you love.",
       "A baby, a puppy, and a moment you'll never forget.",
       "He had never had a soft place to sleep until now.",
-      "He does not know he is being kind. He just is."
+      "He does not know he is being kind. He just is.",
+      "You will rewind this. I already know."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -256,7 +265,8 @@
       "Watched it again while uploading it. No regrets.",
       "Cat person or dog person? Deciding this in the comments today.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Rate the ending out of 10 — I'm giving it a firm 10."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -288,7 +298,8 @@
       "LOOK AT HIS FACE",
       "THE ENDING THOUGH",
       "BAD PLAN, GREAT RESULT",
-      "SOMETHING SOFT TODAY"
+      "SOMETHING SOFT TODAY",
+      "GOING SO BADLY 😭"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -320,7 +331,8 @@
       "{core} 💛 Wholesome {anchor}",
       "You'll Watch This Twice | {core}",
       "{anchor} Moment Of The Day | {core}",
-      "{core} — Watch The Last 5 Seconds"
+      "{core} — Watch The Last 5 Seconds",
+      "{core} | Save This For A Bad Day"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -432,11 +444,13 @@
       "a kitten rescued from a drain pipe meeting her new family",
       "a dog who insists on carrying the picnic basket himself",
       "a toddler sharing an umbrella with a soaked stray cat",
-      "a dog gently guarding a sleeping newborn all night"
+      "a dog gently guarding a sleeping newborn all night",
+      "a baby meeting a giant gentle dog and reaching out"
     ],
     "voices": [
       "en-GB-SoniaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
