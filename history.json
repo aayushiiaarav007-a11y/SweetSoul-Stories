@@ -8,17 +8,20 @@
     "pinned_comments": 3,
     "screen_hooks": 1,
     "title_patterns": 2,
-    "voices": 18
+    "voices": 19
   },
   "used": {
     "ctas": [
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
       "There is more where this came from. Subscribe and find out.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -26,7 +29,8 @@
       "This one melted us. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -50,7 +54,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "What was the exact second that got you? Comment the timestamp 👇",
       "One word for how this made you feel. Go 👇",
-      "What should tomorrow's story be about? We read every comment."
+      "What should tomorrow's story be about? We read every comment.",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -90,7 +95,10 @@
       "WATCH THIS",
       "WE DON'T KNOW EITHER",
       "PROUD OF HER",
-      "WORTH THE WAIT"
+      "WORTH THE WAIT",
+      "RIGHT ON TIME",
+      "SAME SPOT",
+      "MAKES NO SENSE"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -206,7 +214,8 @@
       "You will rewind this. I already know.",
       "This is what happens when nobody is supervising.",
       "The tiniest hero you'll meet today.",
-      "One of them knows what is going on. It is not him."
+      "One of them knows what is going on. It is not him.",
+      "This is a very short story about a very large heart."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -235,7 +244,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Tag the person who sends you every animal video. It's their turn.",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "If this showed up at the right moment for you today, say so 👇"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -271,7 +281,8 @@
       "GOING SO BADLY 😭",
       "NOBODY EXPECTED THIS",
       "SHE HAD NO IDEA",
-      "SHE WAITED ALL DAY"
+      "SHE WAITED ALL DAY",
+      "HIS FIRST TIME"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -307,7 +318,8 @@
       "{core} | Save This For A Bad Day",
       "{core} | {anchor} Done Right",
       "{core} 🐾 {anchor}",
-      "{core} | Best {anchor} Of The Day"
+      "{core} | Best {anchor} Of The Day",
+      "Not A Dry Eye | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -423,14 +435,10 @@
       "a baby meeting a giant gentle dog and reaching out",
       "a dog meeting his new baby sibling at the hospital",
       "a dog who has never once let the toddler wander off alone",
-      "a toddler reading the alphabet out loud to a listening dog"
+      "a toddler reading the alphabet out loud to a listening dog",
+      "a puppy who will only sleep if he can hear someone breathing"
     ],
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-US-JennyNeural",
-      "en-US-AnaNeural",
       "en-US-MichelleNeural"
     ]
   }
