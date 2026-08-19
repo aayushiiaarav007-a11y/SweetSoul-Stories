@@ -12,17 +12,21 @@
   },
   "used": {
     "ctas": [
-      "If that helped even a little, subscribe and we'll do it again tomorrow."
+      "If that helped even a little, subscribe and we'll do it again tomorrow.",
+      "There is more where this came from. Subscribe and find out.",
+      "Subscribe for the quiet, lovely corner of your feed."
     ],
     "desc_ctas": [
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "This one melted us. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "What should we call this little one? Best comment wins 🏆",
@@ -45,7 +49,8 @@
       "Cat person or dog person? Settle it in the comments.",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -82,7 +87,10 @@
       "VERY SERIOUS BUSINESS",
       "HER SPOT",
       "HE'S SO PLEASED",
-      "WATCH THIS"
+      "WATCH THIS",
+      "WE DON'T KNOW EITHER",
+      "PROUD OF HER",
+      "WORTH THE WAIT"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -197,7 +205,8 @@
       "He does not know he is being kind. He just is.",
       "You will rewind this. I already know.",
       "This is what happens when nobody is supervising.",
-      "The tiniest hero you'll meet today."
+      "The tiniest hero you'll meet today.",
+      "One of them knows what is going on. It is not him."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -225,7 +234,8 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Tag the person who sends you every animal video. It's their turn.",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "What should tomorrow's story be about? Best idea gets made."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -260,7 +270,8 @@
       "SOMETHING SOFT TODAY",
       "GOING SO BADLY 😭",
       "NOBODY EXPECTED THIS",
-      "SHE HAD NO IDEA"
+      "SHE HAD NO IDEA",
+      "SHE WAITED ALL DAY"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -295,7 +306,8 @@
       "{core} — Watch The Last 5 Seconds",
       "{core} | Save This For A Bad Day",
       "{core} | {anchor} Done Right",
-      "{core} 🐾 {anchor}"
+      "{core} 🐾 {anchor}",
+      "{core} | Best {anchor} Of The Day"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -410,14 +422,16 @@
       "a dog gently guarding a sleeping newborn all night",
       "a baby meeting a giant gentle dog and reaching out",
       "a dog meeting his new baby sibling at the hospital",
-      "a dog who has never once let the toddler wander off alone"
+      "a dog who has never once let the toddler wander off alone",
+      "a toddler reading the alphabet out loud to a listening dog"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
