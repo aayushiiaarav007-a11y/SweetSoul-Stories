@@ -3,7 +3,7 @@
     "ctas": 5,
     "desc_ctas": 7,
     "desc_openers": 6,
-    "desc_questions": 4,
+    "desc_questions": 5,
     "flashes": 2,
     "pinned_comments": 3,
     "screen_hooks": 1,
@@ -16,12 +16,15 @@
       "There is more where this came from. Subscribe and find out.",
       "Subscribe for the quiet, lovely corner of your feed.",
       "Follow now, and tomorrow's story will be waiting for you.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -30,32 +33,11 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
-      "What should we call this little one? Best comment wins 🏆",
-      "Who else needed this today? Say hi in the comments 👋",
-      "On a scale of 1-10, how cute was that? Comment your score!",
-      "Rate this little one out of 10. No wrong answers.",
-      "Does your pet have a habit like this? Tell us about it below.",
-      "Who should see this today? Tag them.",
-      "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!",
-      "Comment 🐾 if you watched this more than once.",
-      "What is your pet's most ridiculous habit? Comment below.",
-      "Which one would you take home? Comment your pick.",
-      "Comment 🥹 if the ending got you too.",
-      "Did you watch with the sound on or off? Genuinely curious 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "First time here? Say hello in the comments 👋",
-      "Would your pet do the same thing? Tell us below 👇",
-      "Which part made you smile the most? Tell us in the comments 👇",
-      "Cat person or dog person? Settle it in the comments.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍",
-      "What was the exact second that got you? Comment the timestamp 👇",
-      "One word for how this made you feel. Go 👇",
-      "What should tomorrow's story be about? We read every comment.",
-      "Tag someone who needs to see this right now."
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -98,7 +80,10 @@
       "WORTH THE WAIT",
       "RIGHT ON TIME",
       "SAME SPOT",
-      "MAKES NO SENSE"
+      "MAKES NO SENSE",
+      "HERE WE GO",
+      "WAIT...",
+      "OKAY THEN"
     ],
     "hooks": [
       "It's the way he checks on her that gets me every time.",
@@ -215,7 +200,8 @@
       "This is what happens when nobody is supervising.",
       "The tiniest hero you'll meet today.",
       "One of them knows what is going on. It is not him.",
-      "This is a very short story about a very large heart."
+      "This is a very short story about a very large heart.",
+      "Look how carefully he does this. Nobody showed him how."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -245,7 +231,8 @@
       "Tag the person who sends you every animal video. It's their turn.",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "What should tomorrow's story be about? Best idea gets made.",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "Somebody tell me I'm not the only one who teared up here."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -282,7 +269,8 @@
       "NOBODY EXPECTED THIS",
       "SHE HAD NO IDEA",
       "SHE WAITED ALL DAY",
-      "HIS FIRST TIME"
+      "HIS FIRST TIME",
+      "VERY PROUD OF HIMSELF"
     ],
     "title_patterns": [
       "{core} | Tiny Heart, Huge Moment",
@@ -319,7 +307,8 @@
       "{core} | {anchor} Done Right",
       "{core} 🐾 {anchor}",
       "{core} | Best {anchor} Of The Day",
-      "Not A Dry Eye | {core}"
+      "Not A Dry Eye | {core}",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -436,10 +425,12 @@
       "a dog meeting his new baby sibling at the hospital",
       "a dog who has never once let the toddler wander off alone",
       "a toddler reading the alphabet out loud to a listening dog",
-      "a puppy who will only sleep if he can hear someone breathing"
+      "a puppy who will only sleep if he can hear someone breathing",
+      "a puppy found in a box who now has his own armchair"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
