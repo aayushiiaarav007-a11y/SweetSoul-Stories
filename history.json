@@ -31,7 +31,9 @@
       "Follow along, and tomorrow we'll find another one of these together.",
       "Follow SweetSoul Stories for your daily dose of joy.",
       "Stay a while. We post something gentle here every day.",
-      "Follow for daily reminders that small things carry a lot of love."
+      "Follow for daily reminders that small things carry a lot of love.",
+      "Subscribe, and tomorrow this will find you again.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -43,7 +45,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -59,7 +62,8 @@
       "Saving this one for a rough day. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{teaser} The kind of clip you send to one specific person.",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -68,7 +72,8 @@
       "Cat person or dog person? Settle it in the comments.",
       "One word for how this made you feel. Go 👇",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -132,11 +137,15 @@
       "TOTALLY WORTH IT",
       "BEST FRIENDS",
       "ALMOST OVER, STAY",
-      "LOOK AT HIM GO"
+      "LOOK AT HIM GO",
+      "NOT LIKE THAT",
+      "ON DUTY",
+      "NOBODY MOVES"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
-      "Some moments are too small to photograph and too big to forget."
+      "Some moments are too small to photograph and too big to forget.",
+      "Nobody in that room stayed dry-eyed."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -144,7 +153,8 @@
       "Comment 🐾 and we'll reply to every single one today.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Saving this one for a bad day. Recommend you do the same.",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "If this made you smile, that's all we wanted today ❤️"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -188,11 +198,13 @@
       "THE LOOK AT THE END",
       "FULL COMMITMENT",
       "NO SUPERVISION HERE",
-      "WATCH HIM THINK"
+      "WATCH HIM THINK",
+      "STAY FOR 15 SECONDS"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
-      "{core} 💕 {anchor} Moment"
+      "{core} 💕 {anchor} Moment",
+      "Wait For The End 🥺 {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -316,11 +328,13 @@
       "a deaf puppy learning hand signals from a patient toddler",
       "a one-eyed cat becoming the most confident pet in the house",
       "a puppy meeting a baby for the first time",
-      "a kitten meeting the household's grumpy older cat"
+      "a kitten meeting the household's grumpy older cat",
+      "a kitten's first Christmas tree and a lot of poor decisions"
     ],
     "voices": [
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
