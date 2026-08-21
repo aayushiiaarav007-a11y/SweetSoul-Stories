@@ -29,7 +29,9 @@
       "Come for one story, stay for the daily ones. Subscribe.",
       "If you needed this today, subscribe — we'll be here again tomorrow.",
       "Follow along, and tomorrow we'll find another one of these together.",
-      "Follow SweetSoul Stories for your daily dose of joy."
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Stay a while. We post something gentle here every day.",
+      "Follow for daily reminders that small things carry a lot of love."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -40,7 +42,8 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -55,7 +58,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "Saving this one for a rough day. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -63,7 +67,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Cat person or dog person? Settle it in the comments.",
       "One word for how this made you feel. Go 👇",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -124,17 +129,22 @@
       "AGAIN? OKAY",
       "HE HAS OPINIONS",
       "ONE SECOND MORE",
-      "TOTALLY WORTH IT"
+      "TOTALLY WORTH IT",
+      "BEST FRIENDS",
+      "ALMOST OVER, STAY",
+      "LOOK AT HIM GO"
     ],
     "hooks": [
-      "It is the ordinary days that turn out to matter."
+      "It is the ordinary days that turn out to matter.",
+      "Some moments are too small to photograph and too big to forget."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Comment 🐾 and we'll reply to every single one today.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Saving this one for a bad day. Recommend you do the same."
+      "Saving this one for a bad day. Recommend you do the same.",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -177,10 +187,12 @@
       "ONE MINUTE OLD FRIENDS",
       "THE LOOK AT THE END",
       "FULL COMMITMENT",
-      "NO SUPERVISION HERE"
+      "NO SUPERVISION HERE",
+      "WATCH HIM THINK"
     ],
     "title_patterns": [
-      "{core} | Wholesome {anchor}"
+      "{core} | Wholesome {anchor}",
+      "{core} 💕 {anchor} Moment"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -303,10 +315,12 @@
       "a kitten who hunts snowflakes through the glass",
       "a deaf puppy learning hand signals from a patient toddler",
       "a one-eyed cat becoming the most confident pet in the house",
-      "a puppy meeting a baby for the first time"
+      "a puppy meeting a baby for the first time",
+      "a kitten meeting the household's grumpy older cat"
     ],
     "voices": [
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
