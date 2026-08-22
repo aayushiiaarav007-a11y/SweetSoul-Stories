@@ -35,7 +35,9 @@
       "Subscribe, and tomorrow this will find you again.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe — there's a new little moment here every single morning.",
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "If your day got a little better, that's all we wanted. Subscribe for more."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -49,7 +51,8 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe and let something gentle reach you every day.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -67,7 +70,8 @@
       "{teaser} The kind of clip you send to one specific person.",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -78,7 +82,8 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Comment 🥹 if the ending got you too.",
       "Who else needed this today? Say hi in the comments 👋",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -148,13 +153,17 @@
       "NOBODY MOVES",
       "FEELS SAFE NOW",
       "THERE SHE IS",
-      "I'M DONE 🥹"
+      "I'M DONE 🥹",
+      "SNORING NOW",
+      "THERE IT IS",
+      "LIKE CLOCKWORK"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
       "Some moments are too small to photograph and too big to forget.",
       "Nobody in that room stayed dry-eyed.",
-      "A baby, a puppy, and a moment you'll never forget."
+      "A baby, a puppy, and a moment you'll never forget.",
+      "Some friendships do not need words at all."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -164,7 +173,8 @@
       "Saving this one for a bad day. Recommend you do the same.",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "If this made you smile, that's all we wanted today ❤️",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -210,13 +220,15 @@
       "NO SUPERVISION HERE",
       "WATCH HIM THINK",
       "STAY FOR 15 SECONDS",
-      "EVERY SINGLE MORNING"
+      "EVERY SINGLE MORNING",
+      "THE SOFTEST THING"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
       "{core} 💕 {anchor} Moment",
       "Wait For The End 🥺 {core}",
-      "Someone Send Help 🥹 {core}"
+      "Someone Send Help 🥹 {core}",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -342,13 +354,15 @@
       "a puppy meeting a baby for the first time",
       "a kitten meeting the household's grumpy older cat",
       "a kitten's first Christmas tree and a lot of poor decisions",
-      "a toddler teaching a puppy to sit"
+      "a toddler teaching a puppy to sit",
+      "a puppy's first autumn and a very large pile of leaves"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-US-AnaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
