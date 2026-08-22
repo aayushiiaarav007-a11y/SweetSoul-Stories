@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 5,
-    "desc_ctas": 7,
+    "desc_ctas": 8,
     "desc_openers": 7,
     "desc_questions": 5,
     "flashes": 2,
@@ -43,29 +43,17 @@
       "Follow along — the next tiny story is already waiting.",
       "That's today's dose of soft. Follow for tomorrow's.",
       "Stick around. The next one is just as soft as this.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily."
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "Save this channel for the days you need something soft. Subscribe.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe and let something gentle reach you every day.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -80,7 +68,8 @@
       "What should tomorrow's story be about? We read every comment.",
       "Comment 🐾 if you watched this more than once.",
       "Which one would you take home? Comment your pick.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -162,7 +151,10 @@
       "SO SMALL",
       "DID YOU SEE",
       "BRAVE LITTLE THING",
-      "NO NOTES"
+      "NO NOTES",
+      "PURE JOY",
+      "TRUST 🤍",
+      "FULL SPEED"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -172,7 +164,8 @@
       "Some friendships do not need words at all.",
       "Somebody is about to be very surprised.",
       "He has one plan, and it is a bad plan, and it is wonderful.",
-      "This is the sound of somebody being happy."
+      "This is the sound of somebody being happy.",
+      "He believes he is enormous. He is not."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -186,7 +179,8 @@
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "The last three seconds are the reason this exists 🥹",
       "We read every comment on this channel. Say something and find out.",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -236,7 +230,8 @@
       "THE SOFTEST THING",
       "HE THINKS HE'S BIG",
       "STILL WAITING 🥺",
-      "FOR A HARD DAY"
+      "FOR A HARD DAY",
+      "FIRST TIME OUTSIDE"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -246,7 +241,8 @@
       "{core} 🥹 {anchor}",
       "{anchor} That Fixed My Whole Day | {core}",
       "{core} | Save This For A Bad Day",
-      "You'll Watch This Twice | {core}"
+      "You'll Watch This Twice | {core}",
+      "{core} | {anchor} Done Right"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -376,11 +372,13 @@
       "a puppy's first autumn and a very large pile of leaves",
       "a puppy who insists on sleeping in the cat's bed",
       "a baby's first word being the family dog's name",
-      "a kitten trying to catch a sunbeam on the wall"
+      "a kitten trying to catch a sunbeam on the wall",
+      "a kitten and puppy becoming best friends"
     ],
     "voices": [
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
