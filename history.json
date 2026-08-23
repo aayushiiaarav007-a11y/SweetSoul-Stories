@@ -47,17 +47,21 @@
       "Save this channel for the days you need something soft. Subscribe.",
       "Subscribe, and let us hand you one good thing every single day.",
       "Tomorrow's story is already waiting for you. Follow along.",
-      "Every day, one gentle story. Subscribe and let it find you."
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "One good thing a day. Subscribe and let us handle it."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -74,7 +78,8 @@
       "Which one would you take home? Comment your pick.",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Who should see this today? Tag them.",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -162,7 +167,10 @@
       "FULL SPEED",
       "THAT FACE",
       "OH DEAR 😅",
-      "WELL THEN 😭"
+      "WELL THEN 😭",
+      "FAST ASLEEP",
+      "THE TAIL 🥹",
+      "NOT MOVING"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -174,7 +182,8 @@
       "He has one plan, and it is a bad plan, and it is wonderful.",
       "This is the sound of somebody being happy.",
       "He believes he is enormous. He is not.",
-      "Wait for it, because this will melt your heart."
+      "Wait for it, because this will melt your heart.",
+      "This rescue puppy's first smile says it all."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -190,7 +199,8 @@
       "We read every comment on this channel. Say something and find out.",
       "Tag the person who always sends you cute animal videos.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Sound on is a completely different video, by the way 🔊"
+      "Sound on is a completely different video, by the way 🔊",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -242,7 +252,8 @@
       "STILL WAITING 🥺",
       "FOR A HARD DAY",
       "FIRST TIME OUTSIDE",
-      "SOUND ON 🔊"
+      "SOUND ON 🔊",
+      "THIS IS THE GOOD PART"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -254,7 +265,8 @@
       "{core} | Save This For A Bad Day",
       "You'll Watch This Twice | {core}",
       "{core} | {anchor} Done Right",
-      "This Is Why We Love {anchor}s | {core}"
+      "This Is Why We Love {anchor}s | {core}",
+      "{core} 🐾 {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -386,13 +398,15 @@
       "a baby's first word being the family dog's name",
       "a kitten trying to catch a sunbeam on the wall",
       "a kitten and puppy becoming best friends",
-      "a kitten who insists on supervising bath time"
+      "a kitten who insists on supervising bath time",
+      "a cat who sleeps on the pregnant owner's lap every evening"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
