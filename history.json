@@ -49,19 +49,23 @@
       "Tomorrow's story is already waiting for you. Follow along.",
       "Every day, one gentle story. Subscribe and let it find you.",
       "That's all for today. Follow along and we'll see you tomorrow.",
-      "One good thing a day. Subscribe and let us handle it."
+      "One good thing a day. Subscribe and let us handle it.",
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "There's a new sweet story here every single day. Come back tomorrow."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "Subscribe and let something gentle reach you every day.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "We rewatched this more times than we should admit. {teaser}",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -79,7 +83,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Who should see this today? Tag them.",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "Which part made you smile the most? Tell us in the comments 👇"
+      "Which part made you smile the most? Tell us in the comments 👇",
+      "Would your pet do the same thing? Tell us below 👇"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -170,7 +175,10 @@
       "WELL THEN 😭",
       "FAST ASLEEP",
       "THE TAIL 🥹",
-      "NOT MOVING"
+      "NOT MOVING",
+      "ALMOST GOT IT",
+      "ONE MORE TRY",
+      "GUARD MODE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -183,7 +191,8 @@
       "This is the sound of somebody being happy.",
       "He believes he is enormous. He is not.",
       "Wait for it, because this will melt your heart.",
-      "This rescue puppy's first smile says it all."
+      "This rescue puppy's first smile says it all.",
+      "This is a very small act of love, caught on camera."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -200,7 +209,8 @@
       "Tag the person who always sends you cute animal videos.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "Sound on is a completely different video, by the way 🔊",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -253,7 +263,8 @@
       "FOR A HARD DAY",
       "FIRST TIME OUTSIDE",
       "SOUND ON 🔊",
-      "THIS IS THE GOOD PART"
+      "THIS IS THE GOOD PART",
+      "BEST FRIENDS ALREADY"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -266,7 +277,8 @@
       "You'll Watch This Twice | {core}",
       "{core} | {anchor} Done Right",
       "This Is Why We Love {anchor}s | {core}",
-      "{core} 🐾 {anchor}"
+      "{core} 🐾 {anchor}",
+      "Two Seconds In And I Was Gone | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -399,14 +411,16 @@
       "a kitten trying to catch a sunbeam on the wall",
       "a kitten and puppy becoming best friends",
       "a kitten who insists on supervising bath time",
-      "a cat who sleeps on the pregnant owner's lap every evening"
+      "a cat who sleeps on the pregnant owner's lap every evening",
+      "a puppy meeting his reflection and deciding to make friends"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
       "en-US-MichelleNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
