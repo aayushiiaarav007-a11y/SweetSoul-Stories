@@ -9,7 +9,7 @@
     "pinned_comments": 4,
     "screen_hooks": 1,
     "title_patterns": 3,
-    "voices": 21
+    "voices": 22
   },
   "used": {
     "ctas": [
@@ -51,13 +51,16 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "One good thing a day. Subscribe and let us handle it.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "There's a new sweet story here every single day. Come back tomorrow."
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
+      "Subscribe and let something gentle find you every day."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "Subscribe and let something gentle reach you every day.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -65,7 +68,8 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "We rewatched this more times than we should admit. {teaser}",
       "This is the soft part of the internet. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -84,7 +88,8 @@
       "Who should see this today? Tag them.",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Would your pet do the same thing? Tell us below 👇"
+      "Would your pet do the same thing? Tell us below 👇",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -178,7 +183,10 @@
       "NOT MOVING",
       "ALMOST GOT IT",
       "ONE MORE TRY",
-      "GUARD MODE"
+      "GUARD MODE",
+      "NO MORE HIDING",
+      "GOOD LUCK 😅",
+      "NO STOPPING HIM"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -192,7 +200,8 @@
       "He believes he is enormous. He is not.",
       "Wait for it, because this will melt your heart.",
       "This rescue puppy's first smile says it all.",
-      "This is a very small act of love, caught on camera."
+      "This is a very small act of love, caught on camera.",
+      "Nobody in this house gets any work done anymore."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -210,7 +219,8 @@
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "Sound on is a completely different video, by the way 🔊",
       "This is the exact kind of thing this channel is for.",
-      "Does your pet do this too? I need to know it's not just this one."
+      "Does your pet do this too? I need to know it's not just this one.",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -264,7 +274,8 @@
       "FIRST TIME OUTSIDE",
       "SOUND ON 🔊",
       "THIS IS THE GOOD PART",
-      "BEST FRIENDS ALREADY"
+      "BEST FRIENDS ALREADY",
+      "TINY BUT MIGHTY"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -278,7 +289,8 @@
       "{core} | {anchor} Done Right",
       "This Is Why We Love {anchor}s | {core}",
       "{core} 🐾 {anchor}",
-      "Two Seconds In And I Was Gone | {core}"
+      "Two Seconds In And I Was Gone | {core}",
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -412,15 +424,11 @@
       "a kitten and puppy becoming best friends",
       "a kitten who insists on supervising bath time",
       "a cat who sleeps on the pregnant owner's lap every evening",
-      "a puppy meeting his reflection and deciding to make friends"
+      "a puppy meeting his reflection and deciding to make friends",
+      "a baby falling asleep on a patient old dog's belly"
     ],
     "voices": [
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural",
-      "en-US-MichelleNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural"
+      "en-US-AriaNeural"
     ]
   }
 }
