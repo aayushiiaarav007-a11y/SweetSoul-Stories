@@ -1,6 +1,6 @@
 {
   "cycles": {
-    "ctas": 5,
+    "ctas": 6,
     "desc_ctas": 8,
     "desc_openers": 7,
     "desc_questions": 5,
@@ -13,51 +13,8 @@
   },
   "used": {
     "ctas": [
-      "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "There is more where this came from. Subscribe and find out.",
-      "Subscribe for the quiet, lovely corner of your feed.",
-      "Follow now, and tomorrow's story will be waiting for you.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "If you smiled, that's the whole job done. Subscribe for more.",
-      "Subscribe — the next small, sweet thing is one day away.",
-      "SweetSoul Stories, every day, for the days you need something kind.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Come back tomorrow. There's always another small moment worth seeing.",
-      "New story every day, no exceptions. Follow SweetSoul Stories.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Come for one story, stay for the daily ones. Subscribe.",
-      "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Follow along, and tomorrow we'll find another one of these together.",
-      "Follow SweetSoul Stories for your daily dose of joy.",
-      "Stay a while. We post something gentle here every day.",
-      "Follow for daily reminders that small things carry a lot of love.",
-      "Subscribe, and tomorrow this will find you again.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Subscribe for more of the quiet, lovely parts of the internet.",
-      "Subscribe — there's a new little moment here every single morning.",
-      "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "If your day got a little better, that's all we wanted. Subscribe for more.",
-      "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Follow along — the next tiny story is already waiting.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "Stick around. The next one is just as soft as this.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "Save this channel for the days you need something soft. Subscribe.",
-      "Subscribe, and let us hand you one good thing every single day.",
-      "Tomorrow's story is already waiting for you. Follow along.",
-      "Every day, one gentle story. Subscribe and let it find you.",
-      "That's all for today. Follow along and we'll see you tomorrow.",
-      "One good thing a day. Subscribe and let us handle it.",
-      "Subscribe for one small, kind story a day. That's all we do here.",
-      "There's a new sweet story here every single day. Come back tomorrow.",
-      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "Subscribe and let something gentle find you every day.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Stay for tomorrow's story. It's just as soft as this one.",
-      "Follow for more of this. Tomorrow's is already written.",
-      "One tiny story a day, every day. Subscribe so you catch the next."
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -66,7 +23,8 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -77,7 +35,8 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{anchor} alert: {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -99,7 +58,8 @@
       "Would your pet do the same thing? Tell us below 👇",
       "What is your pet's most ridiculous habit? Comment below.",
       "Tag someone who needs to see this right now.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Does your pet have a habit like this? Tell us about it below."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -202,7 +162,10 @@
       "NO BRAKES",
       "AND THEN 🥹",
       "FULL CONCENTRATION",
-      "SLOWLY NOW"
+      "SLOWLY NOW",
+      "MY HEART",
+      "FINALLY 🥹",
+      "SHE DID IT"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -219,7 +182,8 @@
       "This is a very small act of love, caught on camera.",
       "Nobody in this house gets any work done anymore.",
       "It only took one afternoon to change everything.",
-      "He is very proud of himself and he should be."
+      "He is very proud of himself and he should be.",
+      "He does not know he is being kind. He just is."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -240,7 +204,8 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "Tag the person who sends you every animal video. It's their turn.",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "Somebody tell me I'm not the only one who teared up here."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -297,7 +262,8 @@
       "BEST FRIENDS ALREADY",
       "TINY BUT MIGHTY",
       "THE QUIET ONES HIT",
-      "ZERO COORDINATION"
+      "ZERO COORDINATION",
+      "YOU'LL WATCH TWICE"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -314,7 +280,8 @@
       "Two Seconds In And I Was Gone | {core}",
       "{anchor} You Need To See: {core}",
       "{anchor}: {core}",
-      "This {anchor} Will Melt Your Heart | {core}"
+      "This {anchor} Will Melt Your Heart | {core}",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -451,12 +418,14 @@
       "a puppy meeting his reflection and deciding to make friends",
       "a baby falling asleep on a patient old dog's belly",
       "a cat who moved her kittens onto the child's bed",
-      "a baby meeting the family cat through a glass door"
+      "a baby meeting the family cat through a glass door",
+      "a dog who brings his toy to whoever looks sad"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
