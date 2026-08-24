@@ -55,7 +55,9 @@
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "Subscribe and let something gentle find you every day.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Follow for more of this. Tomorrow's is already written.",
+      "One tiny story a day, every day. Subscribe so you catch the next."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -63,7 +65,8 @@
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -73,7 +76,8 @@
       "This is the soft part of the internet. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{anchor} alert: {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -94,7 +98,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "Would your pet do the same thing? Tell us below 👇",
       "What is your pet's most ridiculous habit? Comment below.",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "What should we call this little one? Best comment wins 🏆"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -194,7 +199,10 @@
       "NO STOPPING HIM",
       "STILL KNOWS HER",
       "FIRST TIME",
-      "NO BRAKES"
+      "NO BRAKES",
+      "AND THEN 🥹",
+      "FULL CONCENTRATION",
+      "SLOWLY NOW"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -210,7 +218,8 @@
       "This rescue puppy's first smile says it all.",
       "This is a very small act of love, caught on camera.",
       "Nobody in this house gets any work done anymore.",
-      "It only took one afternoon to change everything."
+      "It only took one afternoon to change everything.",
+      "He is very proud of himself and he should be."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -230,7 +239,8 @@
       "This is the exact kind of thing this channel is for.",
       "Does your pet do this too? I need to know it's not just this one.",
       "Tag the person who sends you every animal video. It's their turn.",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -286,7 +296,8 @@
       "THIS IS THE GOOD PART",
       "BEST FRIENDS ALREADY",
       "TINY BUT MIGHTY",
-      "THE QUIET ONES HIT"
+      "THE QUIET ONES HIT",
+      "ZERO COORDINATION"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -302,7 +313,8 @@
       "{core} 🐾 {anchor}",
       "Two Seconds In And I Was Gone | {core}",
       "{anchor} You Need To See: {core}",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "This {anchor} Will Melt Your Heart | {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -438,11 +450,13 @@
       "a cat who sleeps on the pregnant owner's lap every evening",
       "a puppy meeting his reflection and deciding to make friends",
       "a baby falling asleep on a patient old dog's belly",
-      "a cat who moved her kittens onto the child's bed"
+      "a cat who moved her kittens onto the child's bed",
+      "a baby meeting the family cat through a glass door"
     ],
     "voices": [
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
