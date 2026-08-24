@@ -14,7 +14,9 @@
   "used": {
     "ctas": [
       "That's today's dose of soft. Follow for tomorrow's.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily."
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -24,7 +26,8 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -36,7 +39,8 @@
       "{anchor} alert: {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -59,7 +63,8 @@
       "What is your pet's most ridiculous habit? Comment below.",
       "Tag someone who needs to see this right now.",
       "What should we call this little one? Best comment wins 🏆",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -165,7 +170,10 @@
       "SLOWLY NOW",
       "MY HEART",
       "FINALLY 🥹",
-      "SHE DID IT"
+      "SHE DID IT",
+      "TAIL GOING WILD",
+      "TRY AGAIN BUDDY",
+      "STILL THERE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -183,7 +191,8 @@
       "Nobody in this house gets any work done anymore.",
       "It only took one afternoon to change everything.",
       "He is very proud of himself and he should be.",
-      "He does not know he is being kind. He just is."
+      "He does not know he is being kind. He just is.",
+      "She has been practising this all week."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -205,7 +214,8 @@
       "Tag the person who sends you every animal video. It's their turn.",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Somebody tell me I'm not the only one who teared up here."
+      "Somebody tell me I'm not the only one who teared up here.",
+      "New here? Welcome. We do this every single day 🐾"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -263,7 +273,8 @@
       "TINY BUT MIGHTY",
       "THE QUIET ONES HIT",
       "ZERO COORDINATION",
-      "YOU'LL WATCH TWICE"
+      "YOU'LL WATCH TWICE",
+      "DAY ONE AT HOME"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -281,7 +292,8 @@
       "{anchor} You Need To See: {core}",
       "{anchor}: {core}",
       "This {anchor} Will Melt Your Heart | {core}",
-      "Nobody Expected This | {core}"
+      "Nobody Expected This | {core}",
+      "How Is This Real 🥺 {core}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -419,13 +431,15 @@
       "a baby falling asleep on a patient old dog's belly",
       "a cat who moved her kittens onto the child's bed",
       "a baby meeting the family cat through a glass door",
-      "a dog who brings his toy to whoever looks sad"
+      "a dog who brings his toy to whoever looks sad",
+      "a toddler brushing a very tolerant cat"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
