@@ -22,7 +22,9 @@
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
       "Tomorrow's story is already waiting for you. Follow along.",
       "Stay for tomorrow's story. It's just as soft as this one.",
-      "Subscribe, and tomorrow this will find you again."
+      "Subscribe, and tomorrow this will find you again.",
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -36,7 +38,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -52,11 +55,13 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
-      "Which part made you smile the most? Tell us in the comments 👇"
+      "Which part made you smile the most? Tell us in the comments 👇",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -174,7 +179,10 @@
       "EVERY EVENING",
       "ALMOST 🥺",
       "SO CAREFUL",
-      "NAILED IT"
+      "NAILED IT",
+      "NEVER FORGOT",
+      "PROUD BOY",
+      "OH NO 😭"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -196,7 +204,8 @@
       "She has been practising this all week.",
       "This puppy's first day home is the sweetest thing ever.",
       "Absolutely nobody asked for this friendship, and yet.",
-      "This is what pure joy looks like — and it's adorable."
+      "This is what pure joy looks like — and it's adorable.",
+      "This took forty attempts. Here is attempt forty-one."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -222,7 +231,8 @@
       "New here? Welcome. We do this every single day 🐾",
       "Genuine question: how did nobody cry filming this?",
       "Small channel, real replies. Comment and we'll talk 🐾",
-      "Cat person or dog person? Deciding this in the comments today."
+      "Cat person or dog person? Deciding this in the comments today.",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -284,7 +294,8 @@
       "DAY ONE AT HOME",
       "ATTEMPT FORTY-ONE",
       "NOT A SINGLE PLAN",
-      "TINY AND FEARLESS"
+      "TINY AND FEARLESS",
+      "GUARDING HIS BABY"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -306,7 +317,8 @@
       "How Is This Real 🥺 {core}",
       "{anchor} Moment Of The Day | {core}",
       "{core} | You Have To See This",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "{core} | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -448,11 +460,13 @@
       "a toddler brushing a very tolerant cat",
       "a dog who sits outside the bathroom door and waits every time",
       "a kitten who sits on the book every time someone reads",
-      "a kitten who adopted a litter of orphaned puppies"
+      "a kitten who adopted a litter of orphaned puppies",
+      "two dogs who each wait for their own child at the gate"
     ],
     "voices": [
       "en-GB-SoniaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
