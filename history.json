@@ -26,7 +26,9 @@
       "There's a new sweet story here every single day. Come back tomorrow.",
       "Subscribe — the next small, sweet thing is one day away.",
       "Stick around. The next one is just as soft as this.",
-      "Follow SweetSoul Stories for your daily dose of joy."
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -42,7 +44,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -60,13 +63,15 @@
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "{teaser} Watch it twice — the second time is even sweeter.",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
       "Which part made you smile the most? Tell us in the comments 👇",
       "Who should see this today? Tag them.",
-      "What was the exact second that got you? Comment the timestamp 👇"
+      "What was the exact second that got you? Comment the timestamp 👇",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -190,7 +195,10 @@
       "OH NO 😭",
       "LOOK HOW LITTLE",
       "NEARLY THERE",
-      "SO TINY"
+      "SO TINY",
+      "SOMEHOW YES",
+      "PERFECTLY BALANCED",
+      "TOO PURE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -214,7 +222,8 @@
       "Absolutely nobody asked for this friendship, and yet.",
       "This is what pure joy looks like — and it's adorable.",
       "This took forty attempts. Here is attempt forty-one.",
-      "You'll feel this one in your chest."
+      "You'll feel this one in your chest.",
+      "This one is going to sit with you for a while."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -242,7 +251,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Cat person or dog person? Deciding this in the comments today.",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Tell us in one word how this made you feel 👇"
+      "Tell us in one word how this made you feel 👇",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -306,7 +316,8 @@
       "NOT A SINGLE PLAN",
       "TINY AND FEARLESS",
       "GUARDING HIS BABY",
-      "THIS IS THE ONE"
+      "THIS IS THE ONE",
+      "CUTEST THING TODAY"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -330,7 +341,8 @@
       "{core} | You Have To See This",
       "Everyone Needs To See This {anchor} | {core}",
       "{core} | {anchor}",
-      "{core} (This Got Me) | {anchor}"
+      "{core} (This Got Me) | {anchor}",
+      "{core} — And It Gets Better"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -474,13 +486,15 @@
       "a kitten who sits on the book every time someone reads",
       "a kitten who adopted a litter of orphaned puppies",
       "two dogs who each wait for their own child at the gate",
-      "a scared puppy who hid for a week and then chose one person"
+      "a scared puppy who hid for a week and then chose one person",
+      "a dog and a rabbit who nap in the same basket"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
