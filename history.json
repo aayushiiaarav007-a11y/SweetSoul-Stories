@@ -24,7 +24,9 @@
       "Stay for tomorrow's story. It's just as soft as this one.",
       "Subscribe, and tomorrow this will find you again.",
       "There's a new sweet story here every single day. Come back tomorrow.",
-      "Subscribe — the next small, sweet thing is one day away."
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Stick around. The next one is just as soft as this.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -39,7 +41,8 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -56,12 +59,14 @@
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Who should see this today? Tag them."
+      "Who should see this today? Tag them.",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -182,7 +187,10 @@
       "NAILED IT",
       "NEVER FORGOT",
       "PROUD BOY",
-      "OH NO 😭"
+      "OH NO 😭",
+      "LOOK HOW LITTLE",
+      "NEARLY THERE",
+      "SO TINY"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -205,7 +213,8 @@
       "This puppy's first day home is the sweetest thing ever.",
       "Absolutely nobody asked for this friendship, and yet.",
       "This is what pure joy looks like — and it's adorable.",
-      "This took forty attempts. Here is attempt forty-one."
+      "This took forty attempts. Here is attempt forty-one.",
+      "You'll feel this one in your chest."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -232,7 +241,8 @@
       "Genuine question: how did nobody cry filming this?",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Cat person or dog person? Deciding this in the comments today.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Tell us in one word how this made you feel 👇"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -295,7 +305,8 @@
       "ATTEMPT FORTY-ONE",
       "NOT A SINGLE PLAN",
       "TINY AND FEARLESS",
-      "GUARDING HIS BABY"
+      "GUARDING HIS BABY",
+      "THIS IS THE ONE"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -318,7 +329,8 @@
       "{anchor} Moment Of The Day | {core}",
       "{core} | You Have To See This",
       "Everyone Needs To See This {anchor} | {core}",
-      "{core} | {anchor}"
+      "{core} | {anchor}",
+      "{core} (This Got Me) | {anchor}"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -461,12 +473,14 @@
       "a dog who sits outside the bathroom door and waits every time",
       "a kitten who sits on the book every time someone reads",
       "a kitten who adopted a litter of orphaned puppies",
-      "two dogs who each wait for their own child at the gate"
+      "two dogs who each wait for their own child at the gate",
+      "a scared puppy who hid for a week and then chose one person"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
