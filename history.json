@@ -6,7 +6,7 @@
     "desc_questions": 6,
     "flashes": 2,
     "hooks": 1,
-    "pinned_comments": 4,
+    "pinned_comments": 5,
     "screen_hooks": 1,
     "title_patterns": 3,
     "voices": 24
@@ -32,13 +32,17 @@
       "Every day, one gentle story. Subscribe and let it find you.",
       "Come for one story, stay for the daily ones. Subscribe.",
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "There is more where this came from. Subscribe and find out."
+      "There is more where this came from. Subscribe and find out.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -47,7 +51,8 @@
       "What was the exact second that got you? Comment the timestamp 👇",
       "Who else needed this today? Say hi in the comments 👋",
       "What should we call this little one? Best comment wins 🏆",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -180,7 +185,10 @@
       "THE EARS",
       "IT WORKED?!",
       "COMMITTED",
-      "BRAND NEW"
+      "BRAND NEW",
+      "ANY SECOND NOW",
+      "CAME OUT AT LAST",
+      "NEVER LEAVES"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -207,38 +215,11 @@
       "You'll feel this one in your chest.",
       "This one is going to sit with you for a while.",
       "You'll want to share this with everyone you love.",
-      "Nobody taught him this. He just knew."
+      "Nobody taught him this. He just knew.",
+      "Stop scrolling — you need to see this right now."
     ],
     "pinned_comments": [
-      "If this showed up at the right moment for you today, say so 👇",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "If this made you smile, that's all we wanted today ❤️",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "The last three seconds are the reason this exists 🥹",
-      "We read every comment on this channel. Say something and find out.",
-      "Tag the person who always sends you cute animal videos.",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Sound on is a completely different video, by the way 🔊",
-      "This is the exact kind of thing this channel is for.",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Somebody tell me I'm not the only one who teared up here.",
-      "New here? Welcome. We do this every single day 🐾",
-      "Genuine question: how did nobody cry filming this?",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "Tell us in one word how this made you feel 👇",
-      "Watched it again while uploading it. No regrets.",
-      "Name this little one. We're taking suggestions seriously.",
-      "Which second got you? Drop the timestamp and we'll compare."
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -305,7 +286,8 @@
       "THIS IS THE ONE",
       "CUTEST THING TODAY",
       "THIS IS TRUST",
-      "HE CHOSE HER"
+      "HE CHOSE HER",
+      "TWO SECONDS IN 🥹"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -332,7 +314,8 @@
       "{core} (This Got Me) | {anchor}",
       "{core} — And It Gets Better",
       "{core} (Try Not To Smile) | {anchor}",
-      "{anchor}: {core} 😭❤️"
+      "{anchor}: {core} 😭❤️",
+      "{core} | Tiny Heart, Huge Moment"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -479,10 +462,12 @@
       "a scared puppy who hid for a week and then chose one person",
       "a dog and a rabbit who nap in the same basket",
       "a kitten and a parrot who taught each other to whistle",
-      "a rescue dog meeting the child who chose him"
+      "a rescue dog meeting the child who chose him",
+      "a puppy who carries his blanket everywhere he goes"
     ],
     "voices": [
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
