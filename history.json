@@ -34,15 +34,19 @@
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "There is more where this came from. Subscribe and find out.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Subscribe, and let us hand you one good thing every single day."
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "Stay a while. We post something gentle here every day."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -52,7 +56,8 @@
       "Who else needed this today? Say hi in the comments 👋",
       "What should we call this little one? Best comment wins 🏆",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -188,7 +193,10 @@
       "BRAND NEW",
       "ANY SECOND NOW",
       "CAME OUT AT LAST",
-      "NEVER LEAVES"
+      "NEVER LEAVES",
+      "WHAT IS THAT",
+      "THOSE EYES",
+      "FIRST NAP HERE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -216,10 +224,12 @@
       "This one is going to sit with you for a while.",
       "You'll want to share this with everyone you love.",
       "Nobody taught him this. He just knew.",
-      "Stop scrolling — you need to see this right now."
+      "Stop scrolling — you need to see this right now.",
+      "This little moment made everyone in the room cry happy tears."
     ],
     "pinned_comments": [
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -287,7 +297,8 @@
       "CUTEST THING TODAY",
       "THIS IS TRUST",
       "HE CHOSE HER",
-      "TWO SECONDS IN 🥹"
+      "TWO SECONDS IN 🥹",
+      "ALMOST TOO CUTE"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -315,7 +326,8 @@
       "{core} — And It Gets Better",
       "{core} (Try Not To Smile) | {anchor}",
       "{anchor}: {core} 😭❤️",
-      "{core} | Tiny Heart, Huge Moment"
+      "{core} | Tiny Heart, Huge Moment",
+      "{anchor}: {core} — Stay Till The End"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -463,11 +475,13 @@
       "a dog and a rabbit who nap in the same basket",
       "a kitten and a parrot who taught each other to whistle",
       "a rescue dog meeting the child who chose him",
-      "a puppy who carries his blanket everywhere he goes"
+      "a puppy who carries his blanket everywhere he goes",
+      "a kitten fascinated by a dripping tap"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
