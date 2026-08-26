@@ -1,15 +1,15 @@
 {
   "cycles": {
     "ctas": 6,
-    "desc_ctas": 8,
-    "desc_openers": 7,
+    "desc_ctas": 9,
+    "desc_openers": 8,
     "desc_questions": 6,
     "flashes": 2,
     "hooks": 1,
     "pinned_comments": 4,
     "screen_hooks": 1,
     "title_patterns": 3,
-    "voices": 23
+    "voices": 24
   },
   "used": {
     "ctas": [
@@ -30,45 +30,15 @@
       "If you smiled, that's the whole job done. Subscribe for more.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Every day, one gentle story. Subscribe and let it find you.",
-      "Come for one story, stay for the daily ones. Subscribe."
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "There is more where this came from. Subscribe and find out."
     ],
     "desc_ctas": [
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe and let something gentle reach you every day.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
-      "This one melted us. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "We rewatched this more times than we should admit. {teaser}",
-      "This is the soft part of the internet. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}",
-      "{anchor} alert: {teaser}",
-      "{teaser} The kind of clip you send to one specific person.",
-      "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood.",
-      "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "{teaser} Watch it twice — the second time is even sweeter.",
-      "Saving this one for a rough day. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -76,7 +46,8 @@
       "Who should see this today? Tag them.",
       "What was the exact second that got you? Comment the timestamp 👇",
       "Who else needed this today? Say hi in the comments 👋",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Did you watch with the sound on or off? Genuinely curious 👇"
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -206,7 +177,10 @@
       "TOO PURE",
       "SHE DECIDED",
       "DIDN'T SEE IT",
-      "THE EARS"
+      "THE EARS",
+      "IT WORKED?!",
+      "COMMITTED",
+      "BRAND NEW"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -232,7 +206,8 @@
       "This took forty attempts. Here is attempt forty-one.",
       "You'll feel this one in your chest.",
       "This one is going to sit with you for a while.",
-      "You'll want to share this with everyone you love."
+      "You'll want to share this with everyone you love.",
+      "Nobody taught him this. He just knew."
     ],
     "pinned_comments": [
       "If this showed up at the right moment for you today, say so 👇",
@@ -262,7 +237,8 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Tell us in one word how this made you feel 👇",
       "Watched it again while uploading it. No regrets.",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -328,7 +304,8 @@
       "GUARDING HIS BABY",
       "THIS IS THE ONE",
       "CUTEST THING TODAY",
-      "THIS IS TRUST"
+      "THIS IS TRUST",
+      "HE CHOSE HER"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -354,7 +331,8 @@
       "{core} | {anchor}",
       "{core} (This Got Me) | {anchor}",
       "{core} — And It Gets Better",
-      "{core} (Try Not To Smile) | {anchor}"
+      "{core} (Try Not To Smile) | {anchor}",
+      "{anchor}: {core} 😭❤️"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -500,15 +478,11 @@
       "two dogs who each wait for their own child at the gate",
       "a scared puppy who hid for a week and then chose one person",
       "a dog and a rabbit who nap in the same basket",
-      "a kitten and a parrot who taught each other to whistle"
+      "a kitten and a parrot who taught each other to whistle",
+      "a rescue dog meeting the child who chose him"
     ],
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-US-MichelleNeural"
+      "en-US-EmmaNeural"
     ]
   }
 }
