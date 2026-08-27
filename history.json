@@ -40,21 +40,25 @@
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "Follow along — the next tiny story is already waiting.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "Follow for more of this. Tomorrow's is already written."
+      "Follow for more of this. Tomorrow's is already written.",
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "New story, same warmth, every day. Subscribe so you don't miss it."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "This is the soft part of the internet. {teaser}",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -67,7 +71,8 @@
       "One word for how this made you feel. Go 👇",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Tag someone who needs to see this right now.",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -212,7 +217,10 @@
       "BIG WORLD, SMALL PUP",
       "WARM AND SAFE",
       "APPROVED ✅",
-      "RIGHT HERE"
+      "RIGHT HERE",
+      "AWWW",
+      "SHE APPROVES",
+      "THAT LITTLE SIGH"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -243,13 +251,15 @@
       "Stop scrolling — you need to see this right now.",
       "This little moment made everyone in the room cry happy tears.",
       "Two minutes earlier they were strangers.",
-      "Give this ten seconds. Trust me."
+      "Give this ten seconds. Trust me.",
+      "This happened by accident — and it's absolutely perfect."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
       "We read every comment on this channel. Say something and find out.",
       "This is the exact kind of thing this channel is for.",
-      "Genuine question: who is cuter here? Reply with your pick 👇"
+      "Genuine question: who is cuter here? Reply with your pick 👇",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -320,7 +330,8 @@
       "TWO SECONDS IN 🥹",
       "ALMOST TOO CUTE",
       "HE FINALLY RELAXED",
-      "HOME AT LAST ❤️"
+      "HOME AT LAST ❤️",
+      "GENTLE GIANT"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -351,7 +362,8 @@
       "{core} | Tiny Heart, Huge Moment",
       "{anchor}: {core} — Stay Till The End",
       "{anchor} | {core} ❤️",
-      "The Internet Loves This {anchor} | {core}"
+      "The Internet Loves This {anchor} | {core}",
+      "{core} — Watch The Last 5 Seconds"
     ],
     "topics": [
       "a dog who saved his own dinner to share with a stray",
@@ -502,14 +514,16 @@
       "a puppy who carries his blanket everywhere he goes",
       "a kitten fascinated by a dripping tap",
       "a cat and a dog who greet each other nose to nose every morning",
-      "a kitten who hides in the same shoe every evening"
+      "a kitten who hides in the same shoe every evening",
+      "a kitten who yawns bigger than his own head"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
       "en-US-AriaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
