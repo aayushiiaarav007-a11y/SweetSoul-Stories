@@ -51,7 +51,9 @@
       "Subscribe and let something gentle find you every day.",
       "Subscribe for one small, kind story a day. That's all we do here.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Save this channel for the days you need something soft. Subscribe.",
+      "Subscribe for the quiet, lovely corner of your feed."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -63,7 +65,8 @@
       "Subscribe — one small, kind story lands here every single day.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -75,7 +78,8 @@
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{anchor} alert: {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -93,7 +97,8 @@
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Rate this little one out of 10. No wrong answers.",
       "First time here? Say hello in the comments 👋",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -101,7 +106,10 @@
       "EVERY DAY THIS",
       "NOT LIKE THAT",
       "EARS UP 🥺",
-      "TOO CUTE"
+      "TOO CUTE",
+      "HE'S TRYING",
+      "WATCH TO THE END",
+      "WHAT IS THAT"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -137,7 +145,8 @@
       "The bond between these two will warm you to your core.",
       "This is going to be your favourite thirty seconds today.",
       "The way this baby laughs will instantly make your day.",
-      "She had no idea he'd been waiting by the door all morning."
+      "She had no idea he'd been waiting by the door all morning.",
+      "There was no plan here. It just happened."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -148,7 +157,8 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Sound on is a completely different video, by the way 🔊",
       "Somebody tell me I'm not the only one who teared up here.",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "Tell us in one word how this made you feel 👇"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -224,7 +234,8 @@
       "SHE PICKED THE BABY",
       "HE JUST KNEW",
       "KEEP WATCHING",
-      "SHE RUNS THIS HOUSE"
+      "SHE RUNS THIS HOUSE",
+      "THIS JUST HAPPENED"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -260,19 +271,22 @@
       "{core} 💛 Wholesome {anchor}",
       "{core} | {anchor} Compilation Worthy",
       "The Sweetest {anchor} | {core}",
-      "Not A Dry Eye | {core}"
+      "Not A Dry Eye | {core}",
+      "{core} | Proof The Internet Is Fine"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
       "a toddler and a kitten planting seeds in a tiny pot",
       "a puppy meeting the ocean for the first time",
-      "a puppy learning to fetch and bringing back the wrong thing"
+      "a puppy learning to fetch and bringing back the wrong thing",
+      "a kitten who hunts snowflakes through the glass"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-AnaNeural",
       "en-US-AriaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
