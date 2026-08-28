@@ -45,7 +45,9 @@
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "New story, same warmth, every day. Subscribe so you don't miss it.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "One good thing a day. Subscribe and let us handle it."
+      "One good thing a day. Subscribe and let us handle it.",
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "If you needed this today, subscribe — we'll be here again tomorrow."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -54,7 +56,8 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -63,7 +66,8 @@
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -78,7 +82,8 @@
       "Tag someone who needs to see this right now.",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Which one would you take home? Comment your pick.",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "EVERY DAY THIS",
@@ -229,7 +234,10 @@
       "THAT LITTLE SIGH",
       "KEEP GOING",
       "STILL GOING",
-      "HIS OWN BED"
+      "HIS OWN BED",
+      "CLOSE ENOUGH",
+      "MINE NOW",
+      "SO MUCH TRYING"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -262,7 +270,8 @@
       "Two minutes earlier they were strangers.",
       "Give this ten seconds. Trust me.",
       "This happened by accident — and it's absolutely perfect.",
-      "The bond between these two will warm you to your core."
+      "The bond between these two will warm you to your core.",
+      "This is going to be your favourite thirty seconds today."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -270,7 +279,8 @@
       "This is the exact kind of thing this channel is for.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Sound on is a completely different video, by the way 🔊"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -343,7 +353,8 @@
       "HE FINALLY RELAXED",
       "HOME AT LAST ❤️",
       "GENTLE GIANT",
-      "SHE PICKED THE BABY"
+      "SHE PICKED THE BABY",
+      "HE JUST KNEW"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -376,13 +387,16 @@
       "{anchor} | {core} ❤️",
       "The Internet Loves This {anchor} | {core}",
       "{core} — Watch The Last 5 Seconds",
-      "{core} 💛 Wholesome {anchor}"
+      "{core} 💛 Wholesome {anchor}",
+      "{core} | {anchor} Compilation Worthy"
     ],
     "topics": [
-      "a puppy's first birthday celebrated by the whole family"
+      "a puppy's first birthday celebrated by the whole family",
+      "a toddler and a kitten planting seeds in a tiny pot"
     ],
     "voices": [
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
