@@ -14,7 +14,9 @@
   },
   "used": {
     "ctas": [
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe — there's a new little moment here every single morning.",
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Follow along, and tomorrow we'll find another one of these together."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -30,7 +32,8 @@
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe and let something gentle reach you every day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -46,7 +49,8 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -68,7 +72,8 @@
       "Comment 🥹 if the ending got you too.",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "What should tomorrow's story be about? We read every comment.",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -88,7 +93,10 @@
       "NOBODY MOVES",
       "PROUD OF HIM",
       "IT WORKED?!",
-      "STRAIGHT IN"
+      "STRAIGHT IN",
+      "SLEEPY BOY",
+      "DIDN'T SEE IT",
+      "COMMITTED"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -128,7 +136,8 @@
       "There was no plan here. It just happened.",
       "One of them knows what is going on. It is not him.",
       "She was the smallest one there, and the bravest.",
-      "The tiniest hero you'll meet today."
+      "The tiniest hero you'll meet today.",
+      "There is a reason this clip refuses to leave my head."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -143,7 +152,8 @@
       "Tell us in one word how this made you feel 👇",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Small channel, real replies. Comment and we'll talk 🐾",
-      "Comment 🐾 and we'll reply to every single one today."
+      "Comment 🐾 and we'll reply to every single one today.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -223,7 +233,8 @@
       "THIS JUST HAPPENED",
       "TOOK A MONTH 🥹",
       "THE GENTLEST BOY",
-      "FIRST SOFT BED"
+      "FIRST SOFT BED",
+      "TRY NOT TO SMILE"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -263,7 +274,8 @@
       "{core} | Proof The Internet Is Fine",
       "{core} | Best {anchor} Of The Day",
       "{core} | Daily Dose Of Cute",
-      "{anchor} - {core}"
+      "{anchor} - {core}",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -273,11 +285,13 @@
       "a kitten who hunts snowflakes through the glass",
       "a dog who walks the child to the school gate and back",
       "a puppy who fell asleep in a basket of warm laundry",
-      "a kitten who yawns bigger than his own head"
+      "a kitten who yawns bigger than his own head",
+      "a dog and a tortoise racing very slowly across a lawn"
     ],
     "voices": [
       "en-US-AnaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
