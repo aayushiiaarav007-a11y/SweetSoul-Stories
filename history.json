@@ -10,7 +10,7 @@
     "screen_hooks": 1,
     "title_patterns": 3,
     "topics": 1,
-    "voices": 25
+    "voices": 26
   },
   "used": {
     "ctas": [
@@ -55,7 +55,9 @@
       "Save this channel for the days you need something soft. Subscribe.",
       "Subscribe for the quiet, lovely corner of your feed.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "That's all for today. Follow along and we'll see you tomorrow."
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "Subscribe for more of the quiet, lovely parts of the internet."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -69,7 +71,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -83,7 +86,8 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -103,7 +107,8 @@
       "First time here? Say hello in the comments 👋",
       "Comment 🐾 if you watched this more than once.",
       "Comment 🥹 if the ending got you too.",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -117,7 +122,10 @@
       "WHAT IS THAT",
       "TOTALLY WORTH IT",
       "FAST ASLEEP",
-      "WE LOVE HIM"
+      "WE LOVE HIM",
+      "NO BRAKES",
+      "ALMOST OVER, STAY",
+      "NOBODY MOVES"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -155,7 +163,8 @@
       "The way this baby laughs will instantly make your day.",
       "She had no idea he'd been waiting by the door all morning.",
       "There was no plan here. It just happened.",
-      "One of them knows what is going on. It is not him."
+      "One of them knows what is going on. It is not him.",
+      "She was the smallest one there, and the bravest."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -168,7 +177,8 @@
       "Somebody tell me I'm not the only one who teared up here.",
       "If this showed up at the right moment for you today, say so 👇",
       "Tell us in one word how this made you feel 👇",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -246,7 +256,8 @@
       "KEEP WATCHING",
       "SHE RUNS THIS HOUSE",
       "THIS JUST HAPPENED",
-      "TOOK A MONTH 🥹"
+      "TOOK A MONTH 🥹",
+      "THE GENTLEST BOY"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -284,7 +295,8 @@
       "The Sweetest {anchor} | {core}",
       "Not A Dry Eye | {core}",
       "{core} | Proof The Internet Is Fine",
-      "{core} | Best {anchor} Of The Day"
+      "{core} | Best {anchor} Of The Day",
+      "{core} | Daily Dose Of Cute"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -292,15 +304,11 @@
       "a puppy meeting the ocean for the first time",
       "a puppy learning to fetch and bringing back the wrong thing",
       "a kitten who hunts snowflakes through the glass",
-      "a dog who walks the child to the school gate and back"
+      "a dog who walks the child to the school gate and back",
+      "a puppy who fell asleep in a basket of warm laundry"
     ],
     "voices": [
-      "en-US-EmmaNeural",
-      "en-US-AnaNeural",
-      "en-US-AriaNeural",
-      "en-US-JennyNeural",
-      "en-US-MichelleNeural",
-      "en-GB-SoniaNeural"
+      "en-US-AnaNeural"
     ]
   }
 }
