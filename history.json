@@ -16,7 +16,9 @@
     "ctas": [
       "Subscribe — there's a new little moment here every single morning.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "Follow along, and tomorrow we'll find another one of these together."
+      "Follow along, and tomorrow we'll find another one of these together.",
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "One good thing a day. Subscribe and let us handle it."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -33,7 +35,8 @@
       "Subscribe and let something gentle reach you every day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -50,7 +53,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "This one melted us. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "Does your pet have a habit like this? Tell us about it below.",
@@ -73,7 +77,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "What should tomorrow's story be about? We read every comment.",
       "What is your pet's most ridiculous habit? Comment below.",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -96,7 +101,10 @@
       "STRAIGHT IN",
       "SLEEPY BOY",
       "DIDN'T SEE IT",
-      "COMMITTED"
+      "COMMITTED",
+      "NEARLY THERE",
+      "I'M DONE 🥹",
+      "HE HAS OPINIONS"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -137,7 +145,8 @@
       "One of them knows what is going on. It is not him.",
       "She was the smallest one there, and the bravest.",
       "The tiniest hero you'll meet today.",
-      "There is a reason this clip refuses to leave my head."
+      "There is a reason this clip refuses to leave my head.",
+      "Try not to smile watching this — I dare you."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -153,7 +162,8 @@
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Comment 🐾 and we'll reply to every single one today.",
-      "Does your pet do this too? I need to know it's not just this one."
+      "Does your pet do this too? I need to know it's not just this one.",
+      "New here? Welcome. We do this every single day 🐾"
     ],
     "screen_hooks": [
       "PURE JOY INCOMING",
@@ -234,7 +244,8 @@
       "TOOK A MONTH 🥹",
       "THE GENTLEST BOY",
       "FIRST SOFT BED",
-      "TRY NOT TO SMILE"
+      "TRY NOT TO SMILE",
+      "HE CHECKS ON HER"
     ],
     "title_patterns": [
       "{core} | Wholesome {anchor}",
@@ -275,7 +286,8 @@
       "{core} | Best {anchor} Of The Day",
       "{core} | Daily Dose Of Cute",
       "{anchor} - {core}",
-      "{core} | Softest Thing Today"
+      "{core} | Softest Thing Today",
+      "I Watched This 10 Times | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -286,12 +298,14 @@
       "a dog who walks the child to the school gate and back",
       "a puppy who fell asleep in a basket of warm laundry",
       "a kitten who yawns bigger than his own head",
-      "a dog and a tortoise racing very slowly across a lawn"
+      "a dog and a tortoise racing very slowly across a lawn",
+      "a puppy learning to swim with a laughing toddler cheering"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-MichelleNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
