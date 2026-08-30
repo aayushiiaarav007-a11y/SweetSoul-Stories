@@ -24,19 +24,24 @@
       "Subscribe and let something gentle find you every day.",
       "Save this channel for the days you need something soft. Subscribe.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
-      "Who should see this today? Tag them."
+      "Who should see this today? Tag them.",
+      "On a scale of 1-10, how cute was that? Comment your score!"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -71,7 +76,10 @@
       "NEVER FORGOT",
       "THAT'S THE ONE",
       "FIRST NAP HERE",
-      "PLOT TWIST"
+      "PLOT TWIST",
+      "EVERY EVENING",
+      "THIS BIT 👇",
+      "SO SOFT"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -116,7 +124,8 @@
       "Try not to smile watching this — I dare you.",
       "Every morning she does this. Every single morning.",
       "You won't believe what this tiny puppy just did.",
-      "This is the friendship nobody asked for but everyone needed."
+      "This is the friendship nobody asked for but everyone needed.",
+      "Their first hello turned into their whole friendship."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -136,17 +145,20 @@
       "New here? Welcome. We do this every single day 🐾",
       "Which second got you? Drop the timestamp and we'll compare.",
       "The last three seconds are the reason this exists 🥹",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
       "STAY FOR 15 SECONDS",
-      "LOOK AT HIS FACE"
+      "LOOK AT HIS FACE",
+      "FIRST TIME OUTSIDE"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
       "The Sweetest {anchor} | {core}",
-      "{core} | Proof The Internet Is Fine"
+      "{core} | Proof The Internet Is Fine",
+      "{core} | Best {anchor} Of The Day"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -161,10 +173,12 @@
       "a puppy learning to swim with a laughing toddler cheering",
       "a baby's first steps guided by a loyal gentle dog",
       "a kitten discovering its own reflection for the first time",
-      "a puppy's first trip to the beach and a war with the waves"
+      "a puppy's first trip to the beach and a war with the waves",
+      "a baby who claps every single time the dog walks in"
     ],
     "voices": [
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
