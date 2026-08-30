@@ -26,22 +26,27 @@
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
       "Stay for tomorrow's story. It's just as soft as this one.",
       "Subscribe — the next small, sweet thing is one day away.",
-      "Follow SweetSoul Stories for your daily dose of joy."
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "Subscribe for the quiet, lovely corner of your feed."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
       "Who should see this today? Tag them.",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -79,7 +84,10 @@
       "PLOT TWIST",
       "EVERY EVENING",
       "THIS BIT 👇",
-      "SO SOFT"
+      "SO SOFT",
+      "HE APPROVES",
+      "HER SPOT",
+      "SHE DECIDED"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -125,7 +133,8 @@
       "Every morning she does this. Every single morning.",
       "You won't believe what this tiny puppy just did.",
       "This is the friendship nobody asked for but everyone needed.",
-      "Their first hello turned into their whole friendship."
+      "Their first hello turned into their whole friendship.",
+      "Watch what happens the second she turns around."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -146,19 +155,22 @@
       "Which second got you? Drop the timestamp and we'll compare.",
       "The last three seconds are the reason this exists 🥹",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Watched it again while uploading it. No regrets."
+      "Watched it again while uploading it. No regrets.",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
       "STAY FOR 15 SECONDS",
       "LOOK AT HIS FACE",
-      "FIRST TIME OUTSIDE"
+      "FIRST TIME OUTSIDE",
+      "TWO SECONDS IN 🥹"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
       "The Sweetest {anchor} | {core}",
       "{core} | Proof The Internet Is Fine",
-      "{core} | Best {anchor} Of The Day"
+      "{core} | Best {anchor} Of The Day",
+      "The Internet Loves This {anchor} | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -174,11 +186,13 @@
       "a baby's first steps guided by a loyal gentle dog",
       "a kitten discovering its own reflection for the first time",
       "a puppy's first trip to the beach and a war with the waves",
-      "a baby who claps every single time the dog walks in"
+      "a baby who claps every single time the dog walks in",
+      "a cat who wakes the family at the exact same minute daily"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
