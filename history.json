@@ -36,7 +36,9 @@
       "That's today's dose of soft. Follow for tomorrow's.",
       "Follow now, and tomorrow's story will be waiting for you.",
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "If you smiled, that's the whole job done. Subscribe for more."
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Follow for daily reminders that small things carry a lot of love.",
+      "There is more where this came from. Subscribe and find out."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -47,7 +49,8 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "If you needed a reason to smile today, here it is. {teaser}",
@@ -56,7 +59,8 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -66,7 +70,8 @@
       "What should tomorrow's story be about? We read every comment.",
       "Would your pet do the same thing? Tell us below 👇",
       "Cat person or dog person? Settle it in the comments.",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -119,7 +124,10 @@
       "FULL CONCENTRATION",
       "THE PAWS",
       "THE TAIL 🥹",
-      "THERE SHE IS"
+      "THERE SHE IS",
+      "PROTECT THEM BOTH",
+      "STILL KNOWS HER",
+      "HERE WE GO"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -170,7 +178,8 @@
       "The plan was simple. The plan did not survive.",
       "He had never had a soft place to sleep until now.",
       "Keep watching, the best part is hiding at the end.",
-      "That little sigh at the end broke me."
+      "That little sigh at the end broke me.",
+      "This little face was waiting all week for this."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -196,7 +205,8 @@
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Name this little one. We're taking suggestions seriously.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "What should tomorrow's story be about? Best idea gets made."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -207,7 +217,8 @@
       "BAD PLAN, GREAT RESULT",
       "FOR A HARD DAY",
       "THE SAME SPOT DAILY",
-      "ATTEMPT FORTY-ONE"
+      "ATTEMPT FORTY-ONE",
+      "THIS IS NEW TO HIM"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -218,7 +229,8 @@
       "{core} | Wholesome {anchor}",
       "{core} 🐾 {anchor}",
       "This {anchor} Will Melt Your Heart | {core}",
-      "{core} — And It Gets Better"
+      "{core} — And It Gets Better",
+      "{core} — Watch The Last 5 Seconds"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -239,10 +251,12 @@
       "a toddler sharing an umbrella with a soaked stray cat",
       "a puppy who has decided the mailbox is his enemy",
       "a puppy who befriended the neighbour's shy cat over a fence",
-      "a kitten meeting a bowl of water for the first time"
+      "a kitten meeting a bowl of water for the first time",
+      "a baby meeting the family cat through a glass door"
     ],
     "voices": [
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
