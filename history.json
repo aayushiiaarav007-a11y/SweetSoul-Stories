@@ -32,7 +32,9 @@
       "There's a new sweet story here every single day. Come back tomorrow.",
       "Follow for more of this. Tomorrow's is already written.",
       "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Come for one story, stay for the daily ones. Subscribe."
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "That's today's dose of soft. Follow for tomorrow's.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -41,14 +43,16 @@
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -56,7 +60,8 @@
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Comment 🥹 if the ending got you too.",
       "What should tomorrow's story be about? We read every comment.",
-      "Would your pet do the same thing? Tell us below 👇"
+      "Would your pet do the same thing? Tell us below 👇",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -103,7 +108,10 @@
       "THE BEST BIT",
       "ALWAYS GENTLE",
       "LOOK HOW LITTLE",
-      "TINY YAWN"
+      "TINY YAWN",
+      "STILL THERE",
+      "SO TINY",
+      "FULL CONCENTRATION"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -152,7 +160,8 @@
       "Their first hello turned into their whole friendship.",
       "Watch what happens the second she turns around.",
       "The plan was simple. The plan did not survive.",
-      "He had never had a soft place to sleep until now."
+      "He had never had a soft place to sleep until now.",
+      "Keep watching, the best part is hiding at the end."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -176,7 +185,8 @@
       "Watched it again while uploading it. No regrets.",
       "Saving this one for a bad day. Recommend you do the same.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -185,7 +195,8 @@
       "FIRST TIME OUTSIDE",
       "TWO SECONDS IN 🥹",
       "BAD PLAN, GREAT RESULT",
-      "FOR A HARD DAY"
+      "FOR A HARD DAY",
+      "THE SAME SPOT DAILY"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -194,7 +205,8 @@
       "{core} | Best {anchor} Of The Day",
       "The Internet Loves This {anchor} | {core}",
       "{core} | Wholesome {anchor}",
-      "{core} 🐾 {anchor}"
+      "{core} 🐾 {anchor}",
+      "This {anchor} Will Melt Your Heart | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -213,14 +225,16 @@
       "a baby who claps every single time the dog walks in",
       "a cat who wakes the family at the exact same minute daily",
       "a toddler sharing an umbrella with a soaked stray cat",
-      "a puppy who has decided the mailbox is his enemy"
+      "a puppy who has decided the mailbox is his enemy",
+      "a puppy who befriended the neighbour's shy cat over a fence"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-AnaNeural",
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
