@@ -44,7 +44,9 @@
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "Subscribe, and tomorrow this will find you again.",
-      "Come back tomorrow. There's always another small moment worth seeing."
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "Stay a while. We post something gentle here every day.",
+      "Stick around. The next one is just as soft as this."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -59,7 +61,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "If you needed a reason to smile today, here it is. {teaser}",
@@ -72,7 +75,8 @@
       "This is the soft part of the internet. {teaser}",
       "Saving this one for a rough day. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -86,7 +90,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -151,7 +156,10 @@
       "PROBLEM SOLVED",
       "HE REMEMBERED",
       "THE EARS",
-      "NEVER LEAVES"
+      "NEVER LEAVES",
+      "THIS ONE HURTS",
+      "GOOD LUCK 😅",
+      "THAT LITTLE SIGH"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -206,7 +214,8 @@
       "This little face was waiting all week for this.",
       "One tiny decision, and two lives got better.",
       "You are about to smile whether you like it or not.",
-      "It took four seconds for these two to become inseparable."
+      "It took four seconds for these two to become inseparable.",
+      "This is the sweetest thing I've filmed all year."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -236,7 +245,8 @@
       "What should tomorrow's story be about? Best idea gets made.",
       "If this made you smile, that's all we wanted today ❤️",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Tag the person who sends you every animal video. It's their turn."
+      "Tag the person who sends you every animal video. It's their turn.",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -251,7 +261,8 @@
       "THIS IS NEW TO HIM",
       "KEEP WATCHING",
       "NOBODY TAUGHT HIM",
-      "SOMEONE'S ABOUT TO LOSE"
+      "SOMEONE'S ABOUT TO LOSE",
+      "CUTEST THING TODAY"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -266,7 +277,8 @@
       "{core} — Watch The Last 5 Seconds",
       "{core} | {anchor}",
       "{anchor} You Need To See: {core}",
-      "{core} | Save This For A Bad Day"
+      "{core} | Save This For A Bad Day",
+      "You'll Watch This Twice | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -291,14 +303,16 @@
       "a baby meeting the family cat through a glass door",
       "a baby and a dog sharing a picnic blanket in the garden",
       "a dog meeting his new baby sibling at the hospital",
-      "a kitten meeting the household's grumpy older cat"
+      "a kitten meeting the household's grumpy older cat",
+      "a dog who swims in the lake every summer morning"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
