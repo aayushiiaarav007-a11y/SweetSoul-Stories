@@ -38,7 +38,9 @@
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "If you smiled, that's the whole job done. Subscribe for more.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "There is more where this came from. Subscribe and find out."
+      "There is more where this came from. Subscribe and find out.",
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -50,7 +52,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe — one small, kind story lands here every single day.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "If you needed a reason to smile today, here it is. {teaser}",
@@ -60,7 +63,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -71,7 +75,8 @@
       "Would your pet do the same thing? Tell us below 👇",
       "Cat person or dog person? Settle it in the comments.",
       "Who else needed this today? Say hi in the comments 👋",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Did you watch with the sound on or off? Genuinely curious 👇"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -127,7 +132,10 @@
       "THERE SHE IS",
       "PROTECT THEM BOTH",
       "STILL KNOWS HER",
-      "HERE WE GO"
+      "HERE WE GO",
+      "ALMOST GOT IT",
+      "HE DID IT",
+      "LOOK AT HIM GO"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -179,7 +187,8 @@
       "He had never had a soft place to sleep until now.",
       "Keep watching, the best part is hiding at the end.",
       "That little sigh at the end broke me.",
-      "This little face was waiting all week for this."
+      "This little face was waiting all week for this.",
+      "One tiny decision, and two lives got better."
     ],
     "pinned_comments": [
       "Tag the person who always sends you cute animal videos.",
@@ -206,7 +215,8 @@
       "Name this little one. We're taking suggestions seriously.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "Genuine question: how did nobody cry filming this?",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "If this made you smile, that's all we wanted today ❤️"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -218,7 +228,8 @@
       "FOR A HARD DAY",
       "THE SAME SPOT DAILY",
       "ATTEMPT FORTY-ONE",
-      "THIS IS NEW TO HIM"
+      "THIS IS NEW TO HIM",
+      "KEEP WATCHING"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -230,7 +241,8 @@
       "{core} 🐾 {anchor}",
       "This {anchor} Will Melt Your Heart | {core}",
       "{core} — And It Gets Better",
-      "{core} — Watch The Last 5 Seconds"
+      "{core} — Watch The Last 5 Seconds",
+      "{core} | {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -252,11 +264,13 @@
       "a puppy who has decided the mailbox is his enemy",
       "a puppy who befriended the neighbour's shy cat over a fence",
       "a kitten meeting a bowl of water for the first time",
-      "a baby meeting the family cat through a glass door"
+      "a baby meeting the family cat through a glass door",
+      "a baby and a dog sharing a picnic blanket in the garden"
     ],
     "voices": [
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
