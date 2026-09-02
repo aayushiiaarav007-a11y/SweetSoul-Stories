@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 7,
-    "desc_ctas": 10,
+    "desc_ctas": 11,
     "desc_openers": 9,
     "desc_questions": 7,
     "flashes": 3,
@@ -50,25 +50,12 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "Subscribe for daily proof that the world still has soft edges.",
       "SweetSoul Stories, every day, for the days you need something kind.",
-      "Follow along — the next tiny story is already waiting."
+      "Follow along — the next tiny story is already waiting.",
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day."
     ],
     "desc_ctas": [
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe and let something gentle reach you every day.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "If you needed a reason to smile today, here it is. {teaser}",
@@ -84,7 +71,8 @@
       "{anchor} alert: {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "This one melted us. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -101,7 +89,8 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Tag someone who needs to see this right now.",
       "Which one would you take home? Comment your pick.",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -175,7 +164,10 @@
       "CERTIFIED CUTE",
       "ONE SECOND MORE",
       "WATCH THIS",
-      "APPROVED ✅"
+      "APPROVED ✅",
+      "ONE MORE TRY",
+      "WORTH THE WAIT",
+      "VERY SERIOUS BUSINESS"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -233,11 +225,13 @@
       "It took four seconds for these two to become inseparable.",
       "This is the sweetest thing I've filmed all year.",
       "Nobody expected the baby to react like that.",
-      "This is what happens when nobody is supervising."
+      "This is what happens when nobody is supervising.",
+      "He is far too small to understand what he just did."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
-      "Which second got you? Drop the timestamp and we'll compare."
+      "Which second got you? Drop the timestamp and we'll compare.",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -255,7 +249,8 @@
       "SOMEONE'S ABOUT TO LOSE",
       "CUTEST THING TODAY",
       "THE ENDING THOUGH",
-      "STILL WAITING 🥺"
+      "STILL WAITING 🥺",
+      "LAST ONE LEFT"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -273,7 +268,8 @@
       "{core} | Save This For A Bad Day",
       "You'll Watch This Twice | {core}",
       "{anchor} | {core} ❤️",
-      "How Is This Real 🥺 {core}"
+      "How Is This Real 🥺 {core}",
+      "Wait For The End 🥺 {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -301,11 +297,13 @@
       "a kitten meeting the household's grumpy older cat",
       "a dog who swims in the lake every summer morning",
       "a toddler teaching a puppy to sit",
-      "a puppy learning to climb stairs with an old dog's help"
+      "a puppy learning to climb stairs with an old dog's help",
+      "a puppy and a goat who both think they are dogs"
     ],
     "voices": [
       "en-US-MichelleNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
