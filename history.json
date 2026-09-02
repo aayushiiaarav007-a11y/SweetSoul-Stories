@@ -48,7 +48,9 @@
       "Stay a while. We post something gentle here every day.",
       "Stick around. The next one is just as soft as this.",
       "That's all for today. Follow along and we'll see you tomorrow.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -65,7 +67,8 @@
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe and let something gentle reach you every day.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "If you needed a reason to smile today, here it is. {teaser}",
@@ -80,7 +83,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{anchor} alert: {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -96,7 +100,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Tag someone who needs to see this right now.",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -167,7 +172,10 @@
       "THAT LITTLE SIGH",
       "STILL GOING",
       "NEW BLANKET",
-      "CERTIFIED CUTE"
+      "CERTIFIED CUTE",
+      "ONE SECOND MORE",
+      "WATCH THIS",
+      "APPROVED ✅"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -224,10 +232,12 @@
       "You are about to smile whether you like it or not.",
       "It took four seconds for these two to become inseparable.",
       "This is the sweetest thing I've filmed all year.",
-      "Nobody expected the baby to react like that."
+      "Nobody expected the baby to react like that.",
+      "This is what happens when nobody is supervising."
     ],
     "pinned_comments": [
-      "The last three seconds are the reason this exists 🥹"
+      "The last three seconds are the reason this exists 🥹",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -244,7 +254,8 @@
       "NOBODY TAUGHT HIM",
       "SOMEONE'S ABOUT TO LOSE",
       "CUTEST THING TODAY",
-      "THE ENDING THOUGH"
+      "THE ENDING THOUGH",
+      "STILL WAITING 🥺"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -261,7 +272,8 @@
       "{anchor} You Need To See: {core}",
       "{core} | Save This For A Bad Day",
       "You'll Watch This Twice | {core}",
-      "{anchor} | {core} ❤️"
+      "{anchor} | {core} ❤️",
+      "How Is This Real 🥺 {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -288,10 +300,12 @@
       "a dog meeting his new baby sibling at the hospital",
       "a kitten meeting the household's grumpy older cat",
       "a dog who swims in the lake every summer morning",
-      "a toddler teaching a puppy to sit"
+      "a toddler teaching a puppy to sit",
+      "a puppy learning to climb stairs with an old dog's help"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
