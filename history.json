@@ -1,8 +1,8 @@
 {
   "cycles": {
-    "ctas": 7,
+    "ctas": 8,
     "desc_ctas": 11,
-    "desc_openers": 9,
+    "desc_openers": 10,
     "desc_questions": 7,
     "flashes": 3,
     "hooks": 1,
@@ -10,80 +10,21 @@
     "screen_hooks": 2,
     "title_patterns": 4,
     "topics": 1,
-    "voices": 29
+    "voices": 30
   },
   "used": {
     "ctas": [
-      "Subscribe — there's a new little moment here every single morning.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "Follow along, and tomorrow we'll find another one of these together.",
-      "Every day, one gentle story. Subscribe and let it find you.",
-      "One good thing a day. Subscribe and let us handle it.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "Subscribe, and let us hand you one good thing every single day.",
-      "Subscribe and let something gentle find you every day.",
-      "Save this channel for the days you need something soft. Subscribe.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Stay for tomorrow's story. It's just as soft as this one.",
-      "Subscribe — the next small, sweet thing is one day away.",
-      "Follow SweetSoul Stories for your daily dose of joy.",
-      "New story every day, no exceptions. Follow SweetSoul Stories.",
-      "Subscribe for the quiet, lovely corner of your feed.",
-      "There's a new sweet story here every single day. Come back tomorrow.",
-      "Follow for more of this. Tomorrow's is already written.",
-      "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Come for one story, stay for the daily ones. Subscribe.",
-      "That's today's dose of soft. Follow for tomorrow's.",
-      "Follow now, and tomorrow's story will be waiting for you.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "If you smiled, that's the whole job done. Subscribe for more.",
-      "Follow for daily reminders that small things carry a lot of love.",
-      "There is more where this came from. Subscribe and find out.",
-      "Tomorrow's story is already waiting for you. Follow along.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "Subscribe for more of the quiet, lovely parts of the internet.",
-      "One tiny story a day, every day. Subscribe so you catch the next.",
       "Subscribe, and tomorrow this will find you again.",
-      "Come back tomorrow. There's always another small moment worth seeing.",
-      "Stay a while. We post something gentle here every day.",
-      "Stick around. The next one is just as soft as this.",
-      "That's all for today. Follow along and we'll see you tomorrow.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "SweetSoul Stories, every day, for the days you need something kind.",
-      "Follow along — the next tiny story is already waiting.",
-      "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "If your day got a little better, that's all we wanted. Subscribe for more.",
-      "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "Subscribe for one small, kind story a day. That's all we do here."
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Subscribe — one small, kind story lands here every single day.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
-      "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "Here is your {anchor_lc} moment for today. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{teaser} Small moment, disproportionate effect on your mood.",
-      "This is the soft part of the internet. {teaser}",
-      "Saving this one for a rough day. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter.",
-      "{anchor} alert: {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "This one melted us. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "{teaser} The kind of clip you send to one specific person.",
       "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
@@ -105,7 +46,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "Rate this little one out of 10. No wrong answers.",
       "First time here? Say hello in the comments 👋",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "If this is your kind of thing, comment 🐾 and we'll make more."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -191,7 +133,10 @@
       "SAME SPOT",
       "ON DUTY",
       "MAKES NO SENSE",
-      "THERE IT IS"
+      "THERE IT IS",
+      "TOO PURE",
+      "WE DON'T KNOW EITHER",
+      "PROUD BOY"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -253,7 +198,8 @@
       "He is far too small to understand what he just did.",
       "You will rewind this. I already know.",
       "He is trying so hard and it is going so badly.",
-      "This tiny thing changed one family forever."
+      "This tiny thing changed one family forever.",
+      "Twenty seconds is all this takes. Give it to yourself."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -261,7 +207,8 @@
       "Tag the person who sends you every animal video. It's their turn.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Saving this one for a bad day. Recommend you do the same.",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -283,7 +230,8 @@
       "LAST ONE LEFT",
       "TOO SMALL TO KNOW",
       "EVERY SINGLE MORNING",
-      "SHE LET HIM CLOSE"
+      "SHE LET HIM CLOSE",
+      "THIS IS THE GOOD PART"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -305,7 +253,8 @@
       "Wait For The End 🥺 {core}",
       "Nobody Expected This | {core}",
       "I Watched This 10 Times | {core}",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "{core} (This Got Me) | {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -337,15 +286,11 @@
       "a puppy and a goat who both think they are dogs",
       "a puppy howling along to a baby's laughter",
       "a baby meeting a giant gentle dog and reaching out",
-      "a baby and a puppy watching rain on the window together"
+      "a baby and a puppy watching rain on the window together",
+      "a kitten who hides in the same shoe every evening"
     ],
     "voices": [
-      "en-US-MichelleNeural",
-      "en-US-EmmaNeural",
-      "en-US-AnaNeural",
-      "en-US-AriaNeural",
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-US-EmmaNeural"
     ]
   }
 }
