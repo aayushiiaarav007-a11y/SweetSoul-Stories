@@ -27,7 +27,9 @@
       "Stay for tomorrow's story. It's just as soft as this one.",
       "Come back tomorrow. There's always another small moment worth seeing.",
       "Follow for more of this. Tomorrow's is already written.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it."
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Subscribe — one small, kind story lands here every single day.",
@@ -40,7 +42,8 @@
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -49,12 +52,14 @@
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "This one melted us. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Pure, simple, wholesome joy in under a minute."
+      "{teaser} Pure, simple, wholesome joy in under a minute.",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
       "What should tomorrow's story be about? We read every comment.",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -161,7 +166,10 @@
       "WAIT...",
       "WE LOVE HER",
       "HE CAME BACK",
-      "RIGHT ON TIME"
+      "RIGHT ON TIME",
+      "PERFECTLY BALANCED",
+      "THOSE EYES",
+      "NEW FAVOURITE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -230,7 +238,8 @@
       "They have known each other for exactly one minute.",
       "This baby's reaction is absolutely priceless.",
       "This is the good part of the internet.",
-      "What happened next made the whole family burst into tears."
+      "What happened next made the whole family burst into tears.",
+      "This is a very short story about a very large heart."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -245,7 +254,8 @@
       "Somebody tell me I'm not the only one who teared up here.",
       "Tag the person who always sends you cute animal videos.",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "Sound on is a completely different video, by the way 🔊"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -274,7 +284,8 @@
       "NO WORDS NEEDED",
       "HE THINKS HE'S BIG",
       "THE LOOK AT THE END",
-      "SHE NEVER MISSES"
+      "SHE NEVER MISSES",
+      "WATCH HER EYES"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -303,7 +314,8 @@
       "{core} | Tiny Heart, Huge Moment",
       "{anchor}: {core} 😭❤️",
       "{core} | Softest Thing Today",
-      "Someone Send Help 🥹 {core}"
+      "Someone Send Help 🥹 {core}",
+      "{core} (Try Not To Smile) | {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -342,10 +354,12 @@
       "a shy shelter dog wagging his tail for the very first time",
       "a cat who checks on every family member before sleeping",
       "a toddler reading a picture book to three sleepy puppies",
-      "a cat who moved her kittens onto the child's bed"
+      "a cat who moved her kittens onto the child's bed",
+      "a rescue dog who guards the baby's door every night"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
