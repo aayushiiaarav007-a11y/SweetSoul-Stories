@@ -23,7 +23,9 @@
       "New story, same warmth, every day. Subscribe so you don't miss it.",
       "Subscribe, and let us hand you one good thing every single day.",
       "Come for one story, stay for the daily ones. Subscribe.",
-      "Follow along, and tomorrow we'll find another one of these together."
+      "Follow along, and tomorrow we'll find another one of these together.",
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Come back tomorrow. There's always another small moment worth seeing."
     ],
     "desc_ctas": [
       "Subscribe — one small, kind story lands here every single day.",
@@ -34,17 +36,20 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -145,7 +150,10 @@
       "PROUD OF HER",
       "HERE IT COMES",
       "HE'S SO PLEASED",
-      "OKAY THEN"
+      "OKAY THEN",
+      "SHE APPROVES",
+      "SAME LOVE",
+      "WAIT..."
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -212,7 +220,8 @@
       "This might be the softest thing on the internet today.",
       "You can actually see the exact moment they become friends.",
       "They have known each other for exactly one minute.",
-      "This baby's reaction is absolutely priceless."
+      "This baby's reaction is absolutely priceless.",
+      "This is the good part of the internet."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -225,7 +234,8 @@
       "What should tomorrow's story be about? Best idea gets made.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Somebody tell me I'm not the only one who teared up here.",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -252,7 +262,8 @@
       "BEST FRIENDS ALREADY",
       "GIVE IT 10 SECONDS",
       "NO WORDS NEEDED",
-      "HE THINKS HE'S BIG"
+      "HE THINKS HE'S BIG",
+      "THE LOOK AT THE END"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -279,7 +290,8 @@
       "This Is Why We Love {anchor}s | {core}",
       "{anchor}: {core} — Stay Till The End",
       "{core} | Tiny Heart, Huge Moment",
-      "{anchor}: {core} 😭❤️"
+      "{anchor}: {core} 😭❤️",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -316,14 +328,16 @@
       "the way a baby laughs every time the dog sneezes",
       "a rescue cat who finally let someone hold her",
       "a shy shelter dog wagging his tail for the very first time",
-      "a cat who checks on every family member before sleeping"
+      "a cat who checks on every family member before sleeping",
+      "a toddler reading a picture book to three sleepy puppies"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
       "en-US-MichelleNeural",
       "en-US-AriaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
