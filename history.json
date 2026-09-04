@@ -19,7 +19,9 @@
       "Subscribe and let something gentle find you every day.",
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
       "Subscribe — one small, kind story lands here every single day.",
@@ -28,12 +30,14 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -57,7 +61,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Does your pet have a habit like this? Tell us about it below.",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -152,7 +157,10 @@
       "IT'S HAPPENING",
       "SO SMALL",
       "TUCKED IN",
-      "FIRST TIME"
+      "FIRST TIME",
+      "LIKE CLOCKWORK",
+      "DID YOU SEE",
+      "PROUD OF HER"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -217,7 +225,8 @@
       "This tiny thing changed one family forever.",
       "Twenty seconds is all this takes. Give it to yourself.",
       "This might be the softest thing on the internet today.",
-      "You can actually see the exact moment they become friends."
+      "You can actually see the exact moment they become friends.",
+      "They have known each other for exactly one minute."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -228,7 +237,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "What should tomorrow's story be about? Best idea gets made.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "Somebody tell me I'm not the only one who teared up here."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -253,7 +263,8 @@
       "SHE LET HIM CLOSE",
       "THIS IS THE GOOD PART",
       "BEST FRIENDS ALREADY",
-      "GIVE IT 10 SECONDS"
+      "GIVE IT 10 SECONDS",
+      "NO WORDS NEEDED"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -278,7 +289,8 @@
       "{anchor}: {core}",
       "{core} (This Got Me) | {anchor}",
       "This Is Why We Love {anchor}s | {core}",
-      "{anchor}: {core} — Stay Till The End"
+      "{anchor}: {core} — Stay Till The End",
+      "{core} | Tiny Heart, Huge Moment"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -313,12 +325,14 @@
       "a baby and a puppy watching rain on the window together",
       "a kitten who hides in the same shoe every evening",
       "the way a baby laughs every time the dog sneezes",
-      "a rescue cat who finally let someone hold her"
+      "a rescue cat who finally let someone hold her",
+      "a shy shelter dog wagging his tail for the very first time"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
