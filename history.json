@@ -31,7 +31,9 @@
       "Every day, one gentle story. Subscribe and let it find you.",
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "Tomorrow's story is already waiting for you. Follow along.",
-      "That's all for today. Follow along and we'll see you tomorrow."
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "Subscribe — one small, kind story lands here every single day.",
@@ -46,7 +48,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe and let something gentle reach you every day.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -57,14 +60,16 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
       "What should tomorrow's story be about? We read every comment.",
       "Comment 🐾 if you watched this more than once.",
       "Tag someone who needs to see this right now.",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -177,7 +182,10 @@
       "NEW FAVOURITE",
       "OH DEAR 😅",
       "BIG WORLD, SMALL PUP",
-      "SLOWLY NOW"
+      "SLOWLY NOW",
+      "ZERO FEAR",
+      "NO NOTES",
+      "BEST FRIENDS"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -248,7 +256,8 @@
       "This is the good part of the internet.",
       "What happened next made the whole family burst into tears.",
       "This is a very short story about a very large heart.",
-      "Home found him, not the other way around."
+      "Home found him, not the other way around.",
+      "This is the first time anyone has been gentle with him."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -265,7 +274,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "If this showed up at the right moment for you today, say so 👇",
       "Sound on is a completely different video, by the way 🔊",
-      "Tell us in one word how this made you feel 👇"
+      "Tell us in one word how this made you feel 👇",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -296,7 +306,8 @@
       "THE LOOK AT THE END",
       "SHE NEVER MISSES",
       "WATCH HER EYES",
-      "HE JUST KNEW"
+      "HE JUST KNEW",
+      "DAY ONE AT HOME"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -327,7 +338,8 @@
       "{core} | Softest Thing Today",
       "Someone Send Help 🥹 {core}",
       "{core} (Try Not To Smile) | {anchor}",
-      "Two Seconds In And I Was Gone | {core}"
+      "Two Seconds In And I Was Gone | {core}",
+      "{core} 💕 {anchor} Moment"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -368,12 +380,14 @@
       "a toddler reading a picture book to three sleepy puppies",
       "a cat who moved her kittens onto the child's bed",
       "a rescue dog who guards the baby's door every night",
-      "a baby and a puppy meeting their first butterfly"
+      "a baby and a puppy meeting their first butterfly",
+      "a puppy meeting his reflection and deciding to make friends"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
