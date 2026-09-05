@@ -18,7 +18,8 @@
       "That is the end of today's story. Follow along for tomorrow's.",
       "Every story here carries a lesson. Subscribe and collect them all.",
       "If this story stayed with you, subscribe — there is a new one tomorrow.",
-      "We will be here tomorrow with another one. Follow so you find it."
+      "We will be here tomorrow with another one. Follow so you find it.",
+      "Subscribe so tomorrow's story reaches you without you having to look."
     ],
     "topics": [
       [
@@ -88,6 +89,10 @@
       [
         "greed",
         "a farmer with a goose that lays one golden egg a day"
+      ],
+      [
+        "empathy",
+        "a girl who befriends the child everyone else laughs at"
       ]
     ]
   }
