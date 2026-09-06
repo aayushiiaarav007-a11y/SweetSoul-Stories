@@ -39,10 +39,13 @@
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "If you needed this today, subscribe — we'll be here again tomorrow.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "There's a new sweet story here every single day. Come back tomorrow."
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "Subscribe for more of the quiet, lovely parts of the internet."
     ],
     "desc_ctas": [
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -57,7 +60,8 @@
       "{anchor} alert: {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "We rewatched this more times than we should admit. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -68,7 +72,8 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Does your pet have a habit like this? Tell us about it below.",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -193,7 +198,10 @@
       "TRY AGAIN BUDDY",
       "GOOD ENOUGH FOR HIM",
       "BRAVE TODAY",
-      "ALMOST 🥺"
+      "ALMOST 🥺",
+      "NAILED IT",
+      "NOT MOVING",
+      "BRAND NEW"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -268,7 +276,8 @@
       "This is the first time anyone has been gentle with him.",
       "This little rescue story will stay with you all day.",
       "This dog has been waiting for this moment his whole life.",
-      "Nobody expected this, and it changed everything."
+      "Nobody expected this, and it changed everything.",
+      "One look and this little one had a home."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -289,7 +298,8 @@
       "This is the exact kind of thing this channel is for.",
       "Genuine question: how did nobody cry filming this?",
       "New here? Welcome. We do this every single day 🐾",
-      "Comment 🐾 and we'll reply to every single one today."
+      "Comment 🐾 and we'll reply to every single one today.",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -324,7 +334,8 @@
       "DAY ONE AT HOME",
       "THIS MELTED ME",
       "ONE MINUTE OLD FRIENDS",
-      "TOOK A MONTH 🥹"
+      "TOOK A MONTH 🥹",
+      "WATCH HIM THINK"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -359,7 +370,8 @@
       "{core} 💕 {anchor} Moment",
       "Not A Dry Eye | {core}",
       "{anchor} That Fixed My Whole Day | {core}",
-      "{core} 🥹 {anchor}"
+      "{core} 🥹 {anchor}",
+      "{anchor} - {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -404,10 +416,12 @@
       "a puppy meeting his reflection and deciding to make friends",
       "a cat and a dog who greet each other nose to nose every morning",
       "a cat who sleeps on the pregnant owner's lap every evening",
-      "a puppy who will only sleep if he can hear someone breathing"
+      "a puppy who will only sleep if he can hear someone breathing",
+      "a kitten and a puppy learning to share one water bowl"
     ],
     "voices": [
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
