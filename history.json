@@ -43,12 +43,15 @@
       "Subscribe for one small, kind story a day. That's all we do here.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "Stay a while. We post something gentle here every day.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Subscribe — there's a new little moment here every single morning.",
+      "Stick around. The next one is just as soft as this."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -65,7 +68,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -78,7 +82,8 @@
       "Does your pet have a habit like this? Tell us about it below.",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "One word for how this made you feel. Go 👇",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -209,7 +214,10 @@
       "BRAND NEW",
       "WELL THEN 😭",
       "LISTEN 🔊",
-      "THAT FACE"
+      "THAT FACE",
+      "FEELS SAFE NOW",
+      "MINE NOW",
+      "OH NO 😭"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -286,7 +294,8 @@
       "This dog has been waiting for this moment his whole life.",
       "Nobody expected this, and it changed everything.",
       "One look and this little one had a home.",
-      "One small moment, one enormous amount of love."
+      "One small moment, one enormous amount of love.",
+      "Nothing dramatic happens here. That's the point."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -309,7 +318,8 @@
       "New here? Welcome. We do this every single day 🐾",
       "Comment 🐾 and we'll reply to every single one today.",
       "Cat person or dog person? Deciding this in the comments today.",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -346,7 +356,8 @@
       "ONE MINUTE OLD FRIENDS",
       "TOOK A MONTH 🥹",
       "WATCH HIM THINK",
-      "SHE RUNS THIS HOUSE"
+      "SHE RUNS THIS HOUSE",
+      "THIS JUST HAPPENED"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -383,7 +394,8 @@
       "{anchor} That Fixed My Whole Day | {core}",
       "{core} 🥹 {anchor}",
       "{anchor} - {core}",
-      "{core} | {anchor} Compilation Worthy"
+      "{core} | {anchor} Compilation Worthy",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -430,12 +442,14 @@
       "a cat who sleeps on the pregnant owner's lap every evening",
       "a puppy who will only sleep if he can hear someone breathing",
       "a kitten and a puppy learning to share one water bowl",
-      "a toddler and a kitten sharing a single blanket in winter"
+      "a toddler and a kitten sharing a single blanket in winter",
+      "a kitten and an old dog who share one favourite chair"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
