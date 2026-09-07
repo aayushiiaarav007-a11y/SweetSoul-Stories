@@ -2,7 +2,7 @@
   "cycles": {
     "ctas": 8,
     "desc_ctas": 12,
-    "desc_openers": 10,
+    "desc_openers": 11,
     "desc_questions": 8,
     "flashes": 3,
     "hooks": 1,
@@ -10,7 +10,7 @@
     "screen_hooks": 2,
     "title_patterns": 4,
     "topics": 1,
-    "voices": 32
+    "voices": 33
   },
   "used": {
     "ctas": [
@@ -49,7 +49,9 @@
       "SweetSoul Stories, every day, for the days you need something kind.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "One good thing a day. Subscribe and let us handle it.",
-      "There is more where this came from. Subscribe and find out."
+      "There is more where this came from. Subscribe and find out.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -57,27 +59,11 @@
       "Subscribe — one small, kind story lands here every single day.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
-      "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter.",
-      "{teaser} Small moment, disproportionate effect on your mood.",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "This one melted us. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "{anchor} alert: {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "We rewatched this more times than we should admit. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "This is the soft part of the internet. {teaser}",
-      "Saving this one for a rough day. {teaser}",
-      "{teaser} The kind of clip you send to one specific person.",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -93,7 +79,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "Which part made you smile the most? Tell us in the comments 👇"
+      "Which part made you smile the most? Tell us in the comments 👇",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -233,7 +220,10 @@
       "GUARD MODE",
       "OUT COLD",
       "SHE WAITED",
-      "SHE DID IT"
+      "SHE DID IT",
+      "WARM AND SAFE",
+      "HIS OWN WAY",
+      "TOGETHER NOW"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -313,7 +303,8 @@
       "One small moment, one enormous amount of love.",
       "Nothing dramatic happens here. That's the point.",
       "Confidence: enormous. Coordination: none.",
-      "This is the cutest thing you'll see all day."
+      "This is the cutest thing you'll see all day.",
+      "Watch how she waits for him. She always waits."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -339,7 +330,8 @@
       "Name this little one. We're taking suggestions seriously.",
       "Watched it again while uploading it. No regrets.",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -379,7 +371,8 @@
       "SHE RUNS THIS HOUSE",
       "THIS JUST HAPPENED",
       "VERY PROUD OF HIMSELF",
-      "GUARDING HIS BABY"
+      "GUARDING HIS BABY",
+      "IT GETS BETTER"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -419,7 +412,8 @@
       "{core} | {anchor} Compilation Worthy",
       "Everyone Needs To See This {anchor} | {core}",
       "{core} 💛 Wholesome {anchor}",
-      "{core} | You Have To See This"
+      "{core} | You Have To See This",
+      "{core} | {anchor} Done Right"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -469,15 +463,11 @@
       "a toddler and a kitten sharing a single blanket in winter",
       "a kitten and an old dog who share one favourite chair",
       "a baby crawling across the room to reach a sleeping puppy",
-      "a toddler reading the alphabet out loud to a listening dog"
+      "a toddler reading the alphabet out loud to a listening dog",
+      "a three-legged puppy outrunning everyone at the park"
     ],
     "voices": [
-      "en-US-AnaNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-GB-SoniaNeural",
-      "en-US-EmmaNeural",
-      "en-US-MichelleNeural"
+      "en-GB-SoniaNeural"
     ]
   }
 }
