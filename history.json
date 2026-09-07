@@ -51,7 +51,9 @@
       "One good thing a day. Subscribe and let us handle it.",
       "There is more where this came from. Subscribe and find out.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Subscribe to SweetSoul Stories and let the good part reach you daily."
+      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "If that helped even a little, subscribe and we'll do it again tomorrow."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -60,10 +62,12 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "We rewatched this more times than we should admit. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -80,7 +84,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "What was the exact second that got you? Comment the timestamp 👇",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -223,7 +228,10 @@
       "SHE DID IT",
       "WARM AND SAFE",
       "HIS OWN WAY",
-      "TOGETHER NOW"
+      "TOGETHER NOW",
+      "FINALLY 🥹",
+      "TOOK HER TIME",
+      "SO CLOSE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -304,7 +312,8 @@
       "Nothing dramatic happens here. That's the point.",
       "Confidence: enormous. Coordination: none.",
       "This is the cutest thing you'll see all day.",
-      "Watch how she waits for him. She always waits."
+      "Watch how she waits for him. She always waits.",
+      "It is not going to work, and he is going to try anyway."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -331,7 +340,8 @@
       "Watched it again while uploading it. No regrets.",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Does your pet do this too? I need to know it's not just this one."
+      "Does your pet do this too? I need to know it's not just this one.",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -372,7 +382,8 @@
       "THIS JUST HAPPENED",
       "VERY PROUD OF HIMSELF",
       "GUARDING HIS BABY",
-      "IT GETS BETTER"
+      "IT GETS BETTER",
+      "SMALL PAWS BIG HEART"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -413,7 +424,8 @@
       "Everyone Needs To See This {anchor} | {core}",
       "{core} 💛 Wholesome {anchor}",
       "{core} | You Have To See This",
-      "{core} | {anchor} Done Right"
+      "{core} | {anchor} Done Right",
+      "{anchor} Moment Of The Day | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -464,10 +476,12 @@
       "a kitten and an old dog who share one favourite chair",
       "a baby crawling across the room to reach a sleeping puppy",
       "a toddler reading the alphabet out loud to a listening dog",
-      "a three-legged puppy outrunning everyone at the park"
+      "a three-legged puppy outrunning everyone at the park",
+      "a puppy and a lamb who follow each other everywhere"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
