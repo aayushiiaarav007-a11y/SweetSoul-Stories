@@ -47,14 +47,17 @@
       "Subscribe — there's a new little moment here every single morning.",
       "Stick around. The next one is just as soft as this.",
       "SweetSoul Stories, every day, for the days you need something kind.",
-      "New story every day, no exceptions. Follow SweetSoul Stories."
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "One good thing a day. Subscribe and let us handle it.",
+      "There is more where this came from. Subscribe and find out."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
       "Follow for the softest thirty seconds of your day, daily.",
       "Subscribe — one small, kind story lands here every single day.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -73,7 +76,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "This is the soft part of the internet. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -88,7 +92,8 @@
       "One word for how this made you feel. Go 👇",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
-      "What was the exact second that got you? Comment the timestamp 👇"
+      "What was the exact second that got you? Comment the timestamp 👇",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "CAME OUT AT LAST",
@@ -225,7 +230,10 @@
       "OH NO 😭",
       "BRAVE LITTLE THING",
       "RIGHT HERE",
-      "GUARD MODE"
+      "GUARD MODE",
+      "OUT COLD",
+      "SHE WAITED",
+      "SHE DID IT"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -304,7 +312,8 @@
       "One look and this little one had a home.",
       "One small moment, one enormous amount of love.",
       "Nothing dramatic happens here. That's the point.",
-      "Confidence: enormous. Coordination: none."
+      "Confidence: enormous. Coordination: none.",
+      "This is the cutest thing you'll see all day."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -329,7 +338,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "Name this little one. We're taking suggestions seriously.",
       "Watched it again while uploading it. No regrets.",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -368,7 +378,8 @@
       "WATCH HIM THINK",
       "SHE RUNS THIS HOUSE",
       "THIS JUST HAPPENED",
-      "VERY PROUD OF HIMSELF"
+      "VERY PROUD OF HIMSELF",
+      "GUARDING HIS BABY"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -407,7 +418,8 @@
       "{anchor} - {core}",
       "{core} | {anchor} Compilation Worthy",
       "Everyone Needs To See This {anchor} | {core}",
-      "{core} 💛 Wholesome {anchor}"
+      "{core} 💛 Wholesome {anchor}",
+      "{core} | You Have To See This"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -456,14 +468,16 @@
       "a kitten and a puppy learning to share one water bowl",
       "a toddler and a kitten sharing a single blanket in winter",
       "a kitten and an old dog who share one favourite chair",
-      "a baby crawling across the room to reach a sleeping puppy"
+      "a baby crawling across the room to reach a sleeping puppy",
+      "a toddler reading the alphabet out loud to a listening dog"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-JennyNeural",
       "en-US-AriaNeural",
       "en-GB-SoniaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
