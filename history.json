@@ -18,7 +18,9 @@
       "SweetSoul Stories, every day, for the days you need something kind.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily."
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Tomorrow's story is already waiting for you. Follow along."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -33,7 +35,8 @@
       "One good thing a day. Subscribe and we'll handle the rest.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -42,7 +45,8 @@
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -65,7 +69,8 @@
       "Comment 🥹 if the ending got you too.",
       "What should we call this little one? Best comment wins 🏆",
       "What is your pet's most ridiculous habit? Comment below.",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "SHE WAITED",
@@ -74,7 +79,10 @@
       "OH NO 😭",
       "EVERY EVENING",
       "SO TINY",
-      "MAKES NO SENSE"
+      "MAKES NO SENSE",
+      "NEARLY THERE",
+      "THIS ONE HURTS",
+      "WELL THEN 😭"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -161,11 +169,13 @@
       "The whole house went quiet when this happened.",
       "This started as an ordinary Tuesday.",
       "Watch till the very end — it gets even better.",
-      "This is your sign to be gentle with something small today."
+      "This is your sign to be gentle with something small today.",
+      "It started with a sound at the door."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -212,14 +222,16 @@
       "THE SOFTEST THING",
       "THIS IS TRUST",
       "GOING SO BADLY 😭",
-      "SOUND ON 🔊"
+      "SOUND ON 🔊",
+      "THIS IS THE ONE"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
       "{core} 💛 Wholesome {anchor}",
       "{core} — Watch The Last 5 Seconds",
       "{core} | Proof The Internet Is Fine",
-      "The Sweetest {anchor} | {core}"
+      "The Sweetest {anchor} | {core}",
+      "{core} | {anchor} Compilation Worthy"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -276,10 +288,12 @@
       "a kitten who sits on the book every time someone reads",
       "a baby falling asleep on a patient old dog's belly",
       "a kitten who claimed the freshly made bed as her own",
-      "a nervous rescue kitten finally purring after a month"
+      "a nervous rescue kitten finally purring after a month",
+      "a dog gently guarding a sleeping newborn all night"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
