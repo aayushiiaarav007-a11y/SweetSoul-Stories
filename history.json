@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 9,
-    "desc_ctas": 12,
+    "desc_ctas": 13,
     "desc_openers": 11,
     "desc_questions": 9,
     "flashes": 4,
@@ -24,25 +24,12 @@
       "Subscribe for the quiet, lovely corner of your feed.",
       "Follow along — the next tiny story is already waiting.",
       "That's all for today. Follow along and we'll see you tomorrow.",
-      "Come for one story, stay for the daily ones. Subscribe."
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "Stay a while. We post something gentle here every day."
     ],
     "desc_ctas": [
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe and let something gentle reach you every day.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -54,10 +41,12 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "This is the soft part of the internet. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "On a scale of 1-10, how cute was that? Comment your score!"
     ],
     "flashes": [
       "SHE WAITED",
@@ -75,7 +64,10 @@
       "SO CLOSE",
       "STILL KNOWS HER",
       "TOGETHER NOW",
-      "EARS UP 🥺"
+      "EARS UP 🥺",
+      "TINY LEGS",
+      "SLOWLY NOW",
+      "KEEP GOING"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -165,14 +157,16 @@
       "This is your sign to be gentle with something small today.",
       "It started with a sound at the door.",
       "Okay, you have to see what happens in about four seconds.",
-      "She has decided he belongs to her now."
+      "She has decided he belongs to her now.",
+      "He picked her, not the other way around."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
       "New here? Welcome. We do this every single day 🐾",
       "This is the exact kind of thing this channel is for.",
       "Tag the person who sends you every animal video. It's their turn.",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -222,7 +216,8 @@
       "SOUND ON 🔊",
       "THIS IS THE ONE",
       "ZERO COORDINATION",
-      "SOMEBODY PICKED HIM"
+      "SOMEBODY PICKED HIM",
+      "TRY NOT TO SMILE"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -232,7 +227,8 @@
       "The Sweetest {anchor} | {core}",
       "{core} | {anchor} Compilation Worthy",
       "Two Seconds In And I Was Gone | {core}",
-      "How Is This Real 🥺 {core}"
+      "How Is This Real 🥺 {core}",
+      "{anchor}: {core} 😭❤️"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -292,13 +288,15 @@
       "a nervous rescue kitten finally purring after a month",
       "a dog gently guarding a sleeping newborn all night",
       "a dog who learned to be gentle only around the baby",
-      "a blind kitten who learned the whole house by heart"
+      "a blind kitten who learned the whole house by heart",
+      "a stray puppy following a child home in the rain"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
