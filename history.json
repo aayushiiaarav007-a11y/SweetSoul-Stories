@@ -20,7 +20,9 @@
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "Follow now, and tomorrow's story will be waiting for you.",
-      "Tomorrow's story is already waiting for you. Follow along."
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -36,7 +38,8 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -46,7 +49,8 @@
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -70,7 +74,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "What is your pet's most ridiculous habit? Comment below.",
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Would your pet do the same thing? Tell us below 👇"
     ],
     "flashes": [
       "SHE WAITED",
@@ -82,7 +87,10 @@
       "MAKES NO SENSE",
       "NEARLY THERE",
       "THIS ONE HURTS",
-      "WELL THEN 😭"
+      "WELL THEN 😭",
+      "COMMITTED",
+      "SHE APPROVES",
+      "SO CLOSE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -170,12 +178,14 @@
       "This started as an ordinary Tuesday.",
       "Watch till the very end — it gets even better.",
       "This is your sign to be gentle with something small today.",
-      "It started with a sound at the door."
+      "It started with a sound at the door.",
+      "Okay, you have to see what happens in about four seconds."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
       "New here? Welcome. We do this every single day 🐾",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -223,7 +233,8 @@
       "THIS IS TRUST",
       "GOING SO BADLY 😭",
       "SOUND ON 🔊",
-      "THIS IS THE ONE"
+      "THIS IS THE ONE",
+      "ZERO COORDINATION"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -231,7 +242,8 @@
       "{core} — Watch The Last 5 Seconds",
       "{core} | Proof The Internet Is Fine",
       "The Sweetest {anchor} | {core}",
-      "{core} | {anchor} Compilation Worthy"
+      "{core} | {anchor} Compilation Worthy",
+      "Two Seconds In And I Was Gone | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -289,11 +301,13 @@
       "a baby falling asleep on a patient old dog's belly",
       "a kitten who claimed the freshly made bed as her own",
       "a nervous rescue kitten finally purring after a month",
-      "a dog gently guarding a sleeping newborn all night"
+      "a dog gently guarding a sleeping newborn all night",
+      "a dog who learned to be gentle only around the baby"
     ],
     "voices": [
       "en-US-MichelleNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
