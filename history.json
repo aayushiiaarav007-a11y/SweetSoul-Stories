@@ -26,10 +26,13 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "Come for one story, stay for the daily ones. Subscribe.",
       "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Stay a while. We post something gentle here every day."
+      "Stay a while. We post something gentle here every day.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "Subscribe for one small, kind story a day. That's all we do here."
     ],
     "desc_ctas": [
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -42,11 +45,13 @@
       "{teaser} Small moment, disproportionate effect on your mood.",
       "This is the soft part of the internet. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "If this is your kind of thing, comment 🐾 and we'll make more."
     ],
     "flashes": [
       "SHE WAITED",
@@ -67,7 +72,10 @@
       "EARS UP 🥺",
       "TINY LEGS",
       "SLOWLY NOW",
-      "KEEP GOING"
+      "KEEP GOING",
+      "BIG WORLD, SMALL PUP",
+      "TOOK HER TIME",
+      "FAST ASLEEP"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -158,7 +166,8 @@
       "It started with a sound at the door.",
       "Okay, you have to see what happens in about four seconds.",
       "She has decided he belongs to her now.",
-      "He picked her, not the other way around."
+      "He picked her, not the other way around.",
+      "There is nothing careful about this, and that is the beauty."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -166,7 +175,8 @@
       "This is the exact kind of thing this channel is for.",
       "Tag the person who sends you every animal video. It's their turn.",
       "Tag the person who always sends you cute animal videos.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "Comment 🐾 and we'll reply to every single one today."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -217,7 +227,8 @@
       "THIS IS THE ONE",
       "ZERO COORDINATION",
       "SOMEBODY PICKED HIM",
-      "TRY NOT TO SMILE"
+      "TRY NOT TO SMILE",
+      "FULL COMMITMENT"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -228,7 +239,8 @@
       "{core} | {anchor} Compilation Worthy",
       "Two Seconds In And I Was Gone | {core}",
       "How Is This Real 🥺 {core}",
-      "{anchor}: {core} 😭❤️"
+      "{anchor}: {core} 😭❤️",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -289,14 +301,16 @@
       "a dog gently guarding a sleeping newborn all night",
       "a dog who learned to be gentle only around the baby",
       "a blind kitten who learned the whole house by heart",
-      "a stray puppy following a child home in the rain"
+      "a stray puppy following a child home in the rain",
+      "a cat who greets the baby at the door every single morning"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
       "en-GB-SoniaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
