@@ -32,13 +32,16 @@
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Follow SweetSoul Stories for your daily dose of joy.",
       "Subscribe and let something gentle find you every day.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day."
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "Stick around. The next one is just as soft as this.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -54,14 +57,16 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "This one melted us. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "What is your pet's most ridiculous habit? Comment below.",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "SHE WAITED",
@@ -91,7 +96,10 @@
       "LOOK 👀",
       "SO SOFT",
       "FIRST NAP HERE",
-      "HERE IT COMES"
+      "HERE IT COMES",
+      "WATCH THIS",
+      "APPROVED ✅",
+      "WAIT..."
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -185,7 +193,8 @@
       "He picked her, not the other way around.",
       "There is nothing careful about this, and that is the beauty.",
       "This is the part of the day everyone waits for.",
-      "She has never lost this game and she is not about to."
+      "She has never lost this game and she is not about to.",
+      "She has made a decision and there will be no discussion."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -196,7 +205,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "Comment 🐾 and we'll reply to every single one today.",
       "Does your pet do this too? I need to know it's not just this one.",
-      "The last three seconds are the reason this exists 🥹"
+      "The last three seconds are the reason this exists 🥹",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -250,7 +260,8 @@
       "TRY NOT TO SMILE",
       "FULL COMMITMENT",
       "THE GENTLEST BOY",
-      "MADE MY WHOLE WEEK"
+      "MADE MY WHOLE WEEK",
+      "SHE ALWAYS WAITS"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -264,7 +275,8 @@
       "{anchor}: {core} 😭❤️",
       "{core} | Softest Thing Today",
       "{anchor} - {core}",
-      "{core} (This Got Me) | {anchor}"
+      "{core} (This Got Me) | {anchor}",
+      "Not A Dry Eye | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -328,11 +340,13 @@
       "a stray puppy following a child home in the rain",
       "a cat who greets the baby at the door every single morning",
       "a puppy's first car ride with his head out the window",
-      "a puppy who waits by the window every day for the school bus"
+      "a puppy who waits by the window every day for the school bus",
+      "a toddler meeting the puppy she has been drawing for weeks"
     ],
     "voices": [
       "en-US-AriaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
