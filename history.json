@@ -34,14 +34,17 @@
       "Subscribe and let something gentle find you every day.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
       "Stick around. The next one is just as soft as this.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming."
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "If your day got a little better, that's all we wanted. Subscribe for more."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -58,7 +61,8 @@
       "This one melted us. {teaser}",
       "Saving this one for a rough day. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -66,7 +70,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "What is your pet's most ridiculous habit? Comment below.",
       "Comment 🥹 if the ending got you too.",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "SHE WAITED",
@@ -99,7 +104,10 @@
       "HERE IT COMES",
       "WATCH THIS",
       "APPROVED ✅",
-      "WAIT..."
+      "WAIT...",
+      "ONE SECOND MORE",
+      "PROUD OF HER",
+      "WE DON'T KNOW EITHER"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -194,7 +202,8 @@
       "There is nothing careful about this, and that is the beauty.",
       "This is the part of the day everyone waits for.",
       "She has never lost this game and she is not about to.",
-      "She has made a decision and there will be no discussion."
+      "She has made a decision and there will be no discussion.",
+      "There is a right way to do this. He found another way."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -206,7 +215,8 @@
       "Comment 🐾 and we'll reply to every single one today.",
       "Does your pet do this too? I need to know it's not just this one.",
       "The last three seconds are the reason this exists 🥹",
-      "Cat person or dog person? Deciding this in the comments today."
+      "Cat person or dog person? Deciding this in the comments today.",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -261,7 +271,8 @@
       "FULL COMMITMENT",
       "THE GENTLEST BOY",
       "MADE MY WHOLE WEEK",
-      "SHE ALWAYS WAITS"
+      "SHE ALWAYS WAITS",
+      "SHE PICKED THE BABY"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -276,7 +287,8 @@
       "{core} | Softest Thing Today",
       "{anchor} - {core}",
       "{core} (This Got Me) | {anchor}",
-      "Not A Dry Eye | {core}"
+      "Not A Dry Eye | {core}",
+      "{core} — And It Gets Better"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -341,12 +353,14 @@
       "a cat who greets the baby at the door every single morning",
       "a puppy's first car ride with his head out the window",
       "a puppy who waits by the window every day for the school bus",
-      "a toddler meeting the puppy she has been drawing for weeks"
+      "a toddler meeting the puppy she has been drawing for weeks",
+      "a rescue kitten finding a forever home"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-GB-SoniaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
