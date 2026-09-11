@@ -44,7 +44,9 @@
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "Stay for tomorrow's story. It's just as soft as this one.",
       "There is more where this came from. Subscribe and find out.",
-      "There's a new sweet story here every single day. Come back tomorrow."
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "One good thing a day. Subscribe and let us handle it.",
+      "Follow SweetSoul Stories — we keep the gentle ones coming."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -56,11 +58,13 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe — one small, kind story lands here every single day.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -73,7 +77,8 @@
       "Cat person or dog person? Settle it in the comments.",
       "Does your pet have a habit like this? Tell us about it below.",
       "First time here? Say hello in the comments 👋",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Would your pet do the same thing? Tell us below 👇"
     ],
     "flashes": [
       "SHE WAITED",
@@ -121,7 +126,10 @@
       "NOT MOVING",
       "SHE'S HAD ENOUGH",
       "RIGHT HERE",
-      "NO MORE HIDING"
+      "NO MORE HIDING",
+      "ZERO FEAR",
+      "NAILED IT",
+      "HE REMEMBERED"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -221,7 +229,8 @@
       "Two seconds in and my heart was gone.",
       "Sometimes the smallest creatures carry the biggest love.",
       "What this toddler did next left everyone speechless.",
-      "The best things really are the quiet ones."
+      "The best things really are the quiet ones.",
+      "I did not expect to cry over a puppy today, but here we are."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -238,7 +247,8 @@
       "If this showed up at the right moment for you today, say so 👇",
       "Somebody tell me I'm not the only one who teared up here.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "If this made you smile, that's all we wanted today ❤️"
+      "If this made you smile, that's all we wanted today ❤️",
+      "Genuine question: how did nobody cry filming this?"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -298,7 +308,8 @@
       "HE CHECKS ON HER",
       "HIS FIRST TIME",
       "STAY A SECOND",
-      "WATCH WHAT HE DOES"
+      "WATCH WHAT HE DOES",
+      "WAIT FOR THE END 🥹"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -318,7 +329,8 @@
       "{core} | Tiny Heart, Huge Moment",
       "{core} | You Have To See This",
       "{anchor}: {core}",
-      "You'll Watch This Twice | {core}"
+      "You'll Watch This Twice | {core}",
+      "{core} | Best {anchor} Of The Day"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -388,11 +400,13 @@
       "two dogs who each wait for their own child at the gate",
       "a dog who has never once let the toddler wander off alone",
       "a baby's first word being the family dog's name",
-      "a kitten who follows the toddler from room to room all day"
+      "a kitten who follows the toddler from room to room all day",
+      "a puppy who cries until the kitten comes to bed"
     ],
     "voices": [
       "en-US-MichelleNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
