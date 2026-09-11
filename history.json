@@ -42,7 +42,9 @@
       "Subscribe — the next small, sweet thing is one day away.",
       "That's today's dose of soft. Follow for tomorrow's.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "There is more where this came from. Subscribe and find out.",
+      "There's a new sweet story here every single day. Come back tomorrow."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -53,10 +55,12 @@
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe — one small, kind story lands here every single day.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -68,7 +72,8 @@
       "What should tomorrow's story be about? We read every comment.",
       "Cat person or dog person? Settle it in the comments.",
       "Does your pet have a habit like this? Tell us about it below.",
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "SHE WAITED",
@@ -113,7 +118,10 @@
       "ANY SECOND NOW",
       "SLEEPY BOY",
       "THE PAWS",
-      "NOT MOVING"
+      "NOT MOVING",
+      "SHE'S HAD ENOUGH",
+      "RIGHT HERE",
+      "NO MORE HIDING"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -212,7 +220,8 @@
       "There is a right way to do this. He found another way.",
       "Two seconds in and my heart was gone.",
       "Sometimes the smallest creatures carry the biggest love.",
-      "What this toddler did next left everyone speechless."
+      "What this toddler did next left everyone speechless.",
+      "The best things really are the quiet ones."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -228,7 +237,8 @@
       "Which second got you? Drop the timestamp and we'll compare.",
       "If this showed up at the right moment for you today, say so 👇",
       "Somebody tell me I'm not the only one who teared up here.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "If this made you smile, that's all we wanted today ❤️"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -287,7 +297,8 @@
       "SHE PICKED THE BABY",
       "HE CHECKS ON HER",
       "HIS FIRST TIME",
-      "STAY A SECOND"
+      "STAY A SECOND",
+      "WATCH WHAT HE DOES"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -306,7 +317,8 @@
       "{core} — And It Gets Better",
       "{core} | Tiny Heart, Huge Moment",
       "{core} | You Have To See This",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "You'll Watch This Twice | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -375,10 +387,12 @@
       "a rescue kitten finding a forever home",
       "two dogs who each wait for their own child at the gate",
       "a dog who has never once let the toddler wander off alone",
-      "a baby's first word being the family dog's name"
+      "a baby's first word being the family dog's name",
+      "a kitten who follows the toddler from room to room all day"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
