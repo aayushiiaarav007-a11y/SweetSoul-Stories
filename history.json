@@ -54,7 +54,9 @@
       "Follow for more of this. Tomorrow's is already written.",
       "If you smiled, that's the whole job done. Subscribe for more.",
       "Follow along, and tomorrow we'll find another one of these together.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow."
+      "If that helped even a little, subscribe and we'll do it again tomorrow.",
+      "Save this channel for the days you need something soft. Subscribe.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -71,7 +73,8 @@
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe and let something gentle reach you every day.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -80,7 +83,8 @@
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "We rewatched this more times than we should admit. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -98,7 +102,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "What was the exact second that got you? Comment the timestamp 👇",
       "Rate this little one out of 10. No wrong answers.",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "SHE WAITED",
@@ -161,7 +166,10 @@
       "HIS JOB NOW",
       "HERE WE GO",
       "SHE DECIDED",
-      "NEW BLANKET"
+      "NEW BLANKET",
+      "DIDN'T SEE IT",
+      "FULL CONCENTRATION",
+      "WHAT IS THAT"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -266,7 +274,8 @@
       "This is going about as well as you'd expect.",
       "Nobody warned the cat about any of this.",
       "This is what trust looks like when it is brand new.",
-      "This little kitten just stole every heart in the room."
+      "This little kitten just stole every heart in the room.",
+      "This is the exact moment he realises what he has done."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -288,7 +297,8 @@
       "We read every comment on this channel. Say something and find out.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "Name this little one. We're taking suggestions seriously.",
-      "Small channel, real replies. Comment and we'll talk 🐾"
+      "Small channel, real replies. Comment and we'll talk 🐾",
+      "Sound on is a completely different video, by the way 🔊"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -353,7 +363,8 @@
       "SOMETHING SOFT TODAY",
       "TINY AND FEARLESS",
       "HE FINALLY RELAXED",
-      "SHE HAD NO IDEA"
+      "SHE HAD NO IDEA",
+      "DON'T SCROLL PAST"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -378,7 +389,8 @@
       "{core} | {anchor}",
       "Wait For The End 🥺 {core}",
       "{core} 💕 {anchor} Moment",
-      "{core} | Save This For A Bad Day"
+      "{core} | Save This For A Bad Day",
+      "{anchor} Moment Of The Day | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -453,10 +465,12 @@
       "a kitten learning to play fetch with a laughing toddler",
       "a dog carrying his blanket to a crying baby",
       "a puppy and a duckling that grew up in the same yard",
-      "a toddler and puppy taking a nap together"
+      "a toddler and puppy taking a nap together",
+      "a big dog letting three kittens use him as a bed"
     ],
     "voices": [
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
