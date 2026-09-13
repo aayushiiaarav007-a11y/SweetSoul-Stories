@@ -1,6 +1,6 @@
 {
   "cycles": {
-    "ctas": 9,
+    "ctas": 10,
     "desc_ctas": 14,
     "desc_openers": 12,
     "desc_questions": 9,
@@ -14,54 +14,12 @@
   },
   "used": {
     "ctas": [
-      "Subscribe, and let us hand you one good thing every single day.",
-      "SweetSoul Stories, every day, for the days you need something kind.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Subscribe for more of the quiet, lovely parts of the internet.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Follow now, and tomorrow's story will be waiting for you.",
-      "Tomorrow's story is already waiting for you. Follow along.",
-      "Subscribe for the quiet, lovely corner of your feed.",
-      "Follow along — the next tiny story is already waiting.",
-      "That's all for today. Follow along and we'll see you tomorrow.",
-      "Come for one story, stay for the daily ones. Subscribe.",
       "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Stay a while. We post something gentle here every day.",
-      "One tiny story a day, every day. Subscribe so you catch the next.",
-      "Subscribe for one small, kind story a day. That's all we do here.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "Follow SweetSoul Stories for your daily dose of joy.",
-      "Subscribe and let something gentle find you every day.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Stick around. The next one is just as soft as this.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "New story every day, no exceptions. Follow SweetSoul Stories.",
-      "If your day got a little better, that's all we wanted. Subscribe for more.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "Subscribe — the next small, sweet thing is one day away.",
-      "That's today's dose of soft. Follow for tomorrow's.",
-      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "Stay for tomorrow's story. It's just as soft as this one.",
-      "There is more where this came from. Subscribe and find out.",
-      "There's a new sweet story here every single day. Come back tomorrow.",
-      "One good thing a day. Subscribe and let us handle it.",
-      "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "Come back tomorrow. There's always another small moment worth seeing.",
-      "Subscribe, and tomorrow this will find you again.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "Every day, one gentle story. Subscribe and let it find you.",
-      "Follow for more of this. Tomorrow's is already written.",
-      "If you smiled, that's the whole job done. Subscribe for more.",
-      "Follow along, and tomorrow we'll find another one of these together.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "Save this channel for the days you need something soft. Subscribe.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "Follow for daily reminders that small things carry a lot of love.",
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe, and tomorrow this will find you again."
     ],
     "desc_ctas": [
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -72,7 +30,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "We rewatched this more times than we should admit. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -92,7 +51,8 @@
       "Rate this little one out of 10. No wrong answers.",
       "Comment 🐾 if you watched this more than once.",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "SHE WAITED",
@@ -161,7 +121,10 @@
       "WHAT IS THAT",
       "SAFE AT LAST",
       "PROTECT THEM BOTH",
-      "SO MUCH TRYING"
+      "SO MUCH TRYING",
+      "TOO CUTE",
+      "I'M DONE 🥹",
+      "HOLD ON 🥹"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -268,7 +231,8 @@
       "This is what trust looks like when it is brand new.",
       "This little kitten just stole every heart in the room.",
       "This is the exact moment he realises what he has done.",
-      "This kind of thing does not happen twice."
+      "This kind of thing does not happen twice.",
+      "This tiny kitten just did something nobody saw coming."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -292,7 +256,8 @@
       "Name this little one. We're taking suggestions seriously.",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Sound on is a completely different video, by the way 🔊",
-      "Watched it again while uploading it. No regrets."
+      "Watched it again while uploading it. No regrets.",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -359,7 +324,8 @@
       "HE FINALLY RELAXED",
       "SHE HAD NO IDEA",
       "DON'T SCROLL PAST",
-      "NOBODY EXPECTED THIS"
+      "NOBODY EXPECTED THIS",
+      "TAKE THIRTY SECONDS"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -386,7 +352,8 @@
       "{core} 💕 {anchor} Moment",
       "{core} | Save This For A Bad Day",
       "{anchor} Moment Of The Day | {core}",
-      "Nobody Expected This | {core}"
+      "Nobody Expected This | {core}",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -463,12 +430,14 @@
       "a puppy and a duckling that grew up in the same yard",
       "a toddler and puppy taking a nap together",
       "a big dog letting three kittens use him as a bed",
-      "a kitten who purrs only when the baby is nearby"
+      "a kitten who purrs only when the baby is nearby",
+      "a puppy trying to fit in a box three sizes too small"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
