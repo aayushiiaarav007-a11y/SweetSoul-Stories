@@ -17,12 +17,15 @@
       "If you needed this today, subscribe — we'll be here again tomorrow.",
       "Subscribe, and tomorrow this will find you again.",
       "Save this channel for the days you need something soft. Subscribe.",
-      "Tomorrow's story is already waiting for you. Follow along."
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "That's all for today. Follow along and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -35,7 +38,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -57,7 +61,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Tag someone who needs to see this right now.",
-      "Who should see this today? Tag them."
+      "Who should see this today? Tag them.",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "SHE WAITED",
@@ -132,7 +137,10 @@
       "HOLD ON 🥹",
       "SAME SPOT",
       "ALWAYS GENTLE",
-      "RIGHT ON TIME"
+      "RIGHT ON TIME",
+      "SO CAREFUL",
+      "FIRST TIME",
+      "THE BEST BIT"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -241,7 +249,8 @@
       "This is the exact moment he realises what he has done.",
       "This kind of thing does not happen twice.",
       "This tiny kitten just did something nobody saw coming.",
-      "Nobody in the family remembers life before this."
+      "Nobody in the family remembers life before this.",
+      "Watch him think about it. That's the best bit."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -267,7 +276,8 @@
       "Sound on is a completely different video, by the way 🔊",
       "Watched it again while uploading it. No regrets.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "Genuine question: who is cuter here? Reply with your pick 👇"
+      "Genuine question: who is cuter here? Reply with your pick 👇",
+      "What should tomorrow's story be about? Best idea gets made."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -336,7 +346,8 @@
       "DON'T SCROLL PAST",
       "NOBODY EXPECTED THIS",
       "TAKE THIRTY SECONDS",
-      "WATCH TILL THE END"
+      "WATCH TILL THE END",
+      "GENTLE GIANT"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -365,7 +376,8 @@
       "{anchor} Moment Of The Day | {core}",
       "Nobody Expected This | {core}",
       "Everyone Needs To See This {anchor} | {core}",
-      "This {anchor} Will Melt Your Heart | {core}"
+      "This {anchor} Will Melt Your Heart | {core}",
+      "I Watched This 10 Times | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -444,14 +456,16 @@
       "a big dog letting three kittens use him as a bed",
       "a kitten who purrs only when the baby is nearby",
       "a puppy trying to fit in a box three sizes too small",
-      "a toddler brushing a very tolerant cat"
+      "a toddler brushing a very tolerant cat",
+      "a dog who adopted an abandoned kitten as his own"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
