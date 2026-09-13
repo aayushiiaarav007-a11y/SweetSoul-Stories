@@ -15,11 +15,14 @@
   "used": {
     "ctas": [
       "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Subscribe, and tomorrow this will find you again."
+      "Subscribe, and tomorrow this will find you again.",
+      "Save this channel for the days you need something soft. Subscribe.",
+      "Tomorrow's story is already waiting for you. Follow along."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -31,7 +34,8 @@
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "We rewatched this more times than we should admit. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -52,7 +56,8 @@
       "Comment 🐾 if you watched this more than once.",
       "Which part made you smile the most? Tell us in the comments 👇",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "SHE WAITED",
@@ -124,7 +129,10 @@
       "SO MUCH TRYING",
       "TOO CUTE",
       "I'M DONE 🥹",
-      "HOLD ON 🥹"
+      "HOLD ON 🥹",
+      "SAME SPOT",
+      "ALWAYS GENTLE",
+      "RIGHT ON TIME"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -232,7 +240,8 @@
       "This little kitten just stole every heart in the room.",
       "This is the exact moment he realises what he has done.",
       "This kind of thing does not happen twice.",
-      "This tiny kitten just did something nobody saw coming."
+      "This tiny kitten just did something nobody saw coming.",
+      "Nobody in the family remembers life before this."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -257,7 +266,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Sound on is a completely different video, by the way 🔊",
       "Watched it again while uploading it. No regrets.",
-      "Be honest, how many times did you watch this? I'll go first: eleven."
+      "Be honest, how many times did you watch this? I'll go first: eleven.",
+      "Genuine question: who is cuter here? Reply with your pick 👇"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -325,7 +335,8 @@
       "SHE HAD NO IDEA",
       "DON'T SCROLL PAST",
       "NOBODY EXPECTED THIS",
-      "TAKE THIRTY SECONDS"
+      "TAKE THIRTY SECONDS",
+      "WATCH TILL THE END"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -353,7 +364,8 @@
       "{core} | Save This For A Bad Day",
       "{anchor} Moment Of The Day | {core}",
       "Nobody Expected This | {core}",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "This {anchor} Will Melt Your Heart | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -431,13 +443,15 @@
       "a toddler and puppy taking a nap together",
       "a big dog letting three kittens use him as a bed",
       "a kitten who purrs only when the baby is nearby",
-      "a puppy trying to fit in a box three sizes too small"
+      "a puppy trying to fit in a box three sizes too small",
+      "a toddler brushing a very tolerant cat"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
