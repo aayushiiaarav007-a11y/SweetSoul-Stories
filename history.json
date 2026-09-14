@@ -25,7 +25,9 @@
       "Every day, one gentle story. Subscribe and let it find you.",
       "Follow along, and tomorrow we'll find another one of these together.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "There's a new sweet story here every single day. Come back tomorrow."
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Subscribe for the quiet, lovely corner of your feed."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -34,7 +36,8 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe and let something gentle reach you every day.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -51,10 +54,12 @@
       "{anchor} alert: {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
       "SHE WAITED",
@@ -141,7 +146,10 @@
       "PROBLEM SOLVED",
       "THOSE EYES",
       "EVERY DAY THIS",
-      "ONE MORE TRY"
+      "ONE MORE TRY",
+      "NO NOTES",
+      "LIKE CLOCKWORK",
+      "GUARD MODE"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -254,7 +262,8 @@
       "Watch him think about it. That's the best bit.",
       "This is what being chosen looks like.",
       "This is the kind of story the internet was made for.",
-      "This tiny soul proved that love has no size."
+      "This tiny soul proved that love has no size.",
+      "Small paws, enormous heart."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -284,7 +293,8 @@
       "What should tomorrow's story be about? Best idea gets made.",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Tell us in one word how this made you feel 👇",
-      "Saving this one for a bad day. Recommend you do the same."
+      "Saving this one for a bad day. Recommend you do the same.",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -357,7 +367,8 @@
       "GENTLE GIANT",
       "WAIT FOR IT...",
       "ALMOST TOO CUTE",
-      "JUST WAIT 🥺"
+      "JUST WAIT 🥺",
+      "TINY BUT MIGHTY"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -390,7 +401,8 @@
       "I Watched This 10 Times | {core}",
       "{anchor} That Fixed My Whole Day | {core}",
       "The Internet Loves This {anchor} | {core}",
-      "{core} | Wholesome {anchor}"
+      "{core} | Wholesome {anchor}",
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -473,12 +485,14 @@
       "a dog who adopted an abandoned kitten as his own",
       "a dog proudly carrying his puppy to meet the family baby",
       "a cat and a dog sharing one very small sunbeam",
-      "a toddler and a puppy jumping in the same puddle"
+      "a toddler and a puppy jumping in the same puddle",
+      "a rescue dog meeting the child who chose him"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-AnaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
