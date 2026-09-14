@@ -6,7 +6,7 @@
     "desc_questions": 10,
     "flashes": 4,
     "hooks": 1,
-    "pinned_comments": 7,
+    "pinned_comments": 8,
     "screen_hooks": 2,
     "title_patterns": 5,
     "topics": 1,
@@ -27,7 +27,9 @@
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
       "There's a new sweet story here every single day. Come back tomorrow.",
       "Subscribe, and let us hand you one good thing every single day.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "Come for one story, stay for the daily ones. Subscribe."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -37,7 +39,8 @@
       "Subscribe and let something gentle reach you every day.",
       "Follow for the softest thirty seconds of your day, daily.",
       "New wholesome moment every single day. Hit subscribe.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -55,11 +58,13 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "{teaser} Pure, simple, wholesome joy in under a minute."
+      "{teaser} Pure, simple, wholesome joy in under a minute.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "SHE WAITED",
@@ -149,7 +154,10 @@
       "ONE MORE TRY",
       "NO NOTES",
       "LIKE CLOCKWORK",
-      "GUARD MODE"
+      "GUARD MODE",
+      "WORTH THE WAIT",
+      "SO SMALL",
+      "HER SPOT"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -263,38 +271,11 @@
       "This is what being chosen looks like.",
       "This is the kind of story the internet was made for.",
       "This tiny soul proved that love has no size.",
-      "Small paws, enormous heart."
+      "Small paws, enormous heart.",
+      "This is a good day being made in real time."
     ],
     "pinned_comments": [
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "New here? Welcome. We do this every single day 🐾",
-      "This is the exact kind of thing this channel is for.",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "Tag the person who always sends you cute animal videos.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "The last three seconds are the reason this exists 🥹",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "Which second got you? Drop the timestamp and we'll compare.",
-      "If this showed up at the right moment for you today, say so 👇",
-      "Somebody tell me I'm not the only one who teared up here.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "If this made you smile, that's all we wanted today ❤️",
-      "Genuine question: how did nobody cry filming this?",
-      "We read every comment on this channel. Say something and find out.",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Name this little one. We're taking suggestions seriously.",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Sound on is a completely different video, by the way 🔊",
-      "Watched it again while uploading it. No regrets.",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Tell us in one word how this made you feel 👇",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "Genuine question: who is cuter here? Reply with your pick 👇"
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -368,7 +349,8 @@
       "WAIT FOR IT...",
       "ALMOST TOO CUTE",
       "JUST WAIT 🥺",
-      "TINY BUT MIGHTY"
+      "TINY BUT MIGHTY",
+      "THE QUIET ONES HIT"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -402,7 +384,8 @@
       "{anchor} That Fixed My Whole Day | {core}",
       "The Internet Loves This {anchor} | {core}",
       "{core} | Wholesome {anchor}",
-      "{anchor} You Need To See: {core}"
+      "{anchor} You Need To See: {core}",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -486,13 +469,15 @@
       "a dog proudly carrying his puppy to meet the family baby",
       "a cat and a dog sharing one very small sunbeam",
       "a toddler and a puppy jumping in the same puddle",
-      "a rescue dog meeting the child who chose him"
+      "a rescue dog meeting the child who chose him",
+      "a toddler carefully feeding a bottle to a rescued kitten"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-AnaNeural",
       "en-GB-SoniaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
