@@ -37,7 +37,9 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "If you smiled, that's the whole job done. Subscribe for more.",
-      "Follow SweetSoul Stories for your daily dose of joy."
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "Follow for daily reminders that small things carry a lot of love."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -52,12 +54,14 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
       "This one melted us. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -66,7 +70,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Would your pet do the same thing? Tell us below 👇",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "SHE WAITED",
@@ -171,7 +176,10 @@
       "SOMEHOW YES",
       "WATCH TO THE END",
       "HE DID IT",
-      "IT'S HAPPENING"
+      "IT'S HAPPENING",
+      "THIS BIT 👇",
+      "HE'S TRYING",
+      "GOOD LUCK 😅"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -290,14 +298,16 @@
       "This little puppy just became everyone's favorite hero.",
       "This one is for anyone having a hard week.",
       "It's the way he checks on her that gets me every time.",
-      "Look how carefully he does this. Nobody showed him how."
+      "Look how carefully he does this. Nobody showed him how.",
+      "He wasn't supposed to be able to do this yet."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "We read every comment on this channel. Say something and find out."
+      "We read every comment on this channel. Say something and find out.",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -376,7 +386,8 @@
       "NO SUPERVISION HERE",
       "FIRST HELLO ❤️",
       "HE CHOSE HER",
-      "PURE JOY INCOMING"
+      "PURE JOY INCOMING",
+      "SHE WAITED ALL DAY"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -415,7 +426,8 @@
       "{core} 🐾 {anchor}",
       "Someone Send Help 🥹 {core}",
       "{core} (Try Not To Smile) | {anchor}",
-      "{anchor}: {core} — Stay Till The End"
+      "{anchor}: {core} — Stay Till The End",
+      "{anchor} | {core} ❤️"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -504,12 +516,14 @@
       "a kitten meeting a feather and losing the fight",
       "a scared puppy who hid for a week and then chose one person",
       "a puppy who discovered the garden sprinkler",
-      "a kitten discovering a window box full of flowers"
+      "a kitten discovering a window box full of flowers",
+      "a kitten fascinated by a dripping tap"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
