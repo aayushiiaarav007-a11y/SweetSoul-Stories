@@ -35,7 +35,9 @@
       "New story, same warmth, every day. Subscribe so you don't miss it.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -49,11 +51,13 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -61,7 +65,8 @@
       "Which one would you take home? Comment your pick.",
       "What should we call this little one? Best comment wins 🏆",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Would your pet do the same thing? Tell us below 👇"
+      "Would your pet do the same thing? Tell us below 👇",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "SHE WAITED",
@@ -163,7 +168,10 @@
       "THE TAIL 🥹",
       "TUCKED IN",
       "HE APPROVES",
-      "SOMEHOW YES"
+      "SOMEHOW YES",
+      "WATCH TO THE END",
+      "HE DID IT",
+      "IT'S HAPPENING"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -281,13 +289,15 @@
       "This is a good day being made in real time.",
       "This little puppy just became everyone's favorite hero.",
       "This one is for anyone having a hard week.",
-      "It's the way he checks on her that gets me every time."
+      "It's the way he checks on her that gets me every time.",
+      "Look how carefully he does this. Nobody showed him how."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -365,7 +375,8 @@
       "THE QUIET ONES HIT",
       "NO SUPERVISION HERE",
       "FIRST HELLO ❤️",
-      "HE CHOSE HER"
+      "HE CHOSE HER",
+      "PURE JOY INCOMING"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -403,7 +414,8 @@
       "{core} 🥹 {anchor}",
       "{core} 🐾 {anchor}",
       "Someone Send Help 🥹 {core}",
-      "{core} (Try Not To Smile) | {anchor}"
+      "{core} (Try Not To Smile) | {anchor}",
+      "{anchor}: {core} — Stay Till The End"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -491,11 +503,13 @@
       "a toddler carefully feeding a bottle to a rescued kitten",
       "a kitten meeting a feather and losing the fight",
       "a scared puppy who hid for a week and then chose one person",
-      "a puppy who discovered the garden sprinkler"
+      "a puppy who discovered the garden sprinkler",
+      "a kitten discovering a window box full of flowers"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
