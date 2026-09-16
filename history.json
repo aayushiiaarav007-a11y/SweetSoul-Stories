@@ -41,7 +41,9 @@
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
       "Follow for daily reminders that small things carry a lot of love.",
       "One good thing a day. Subscribe and let us handle it.",
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe — there's a new little moment here every single morning.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day."
     ],
     "desc_ctas": [
       "Subscribe — this channel exists for exactly the day you're having.",
@@ -58,14 +60,16 @@
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
       "This one melted us. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -76,7 +80,8 @@
       "Would your pet do the same thing? Tell us below 👇",
       "Cat person or dog person? Settle it in the comments.",
       "Tag someone who needs to see this right now.",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Does your pet have a habit like this? Tell us about it below."
     ],
     "flashes": [
       "SHE WAITED",
@@ -187,7 +192,10 @@
       "GOOD LUCK 😅",
       "TRUST 🤍",
       "NO BRAKES",
-      "PROUD OF HIM"
+      "PROUD OF HIM",
+      "BEST FRIENDS",
+      "NOBODY MOVES",
+      "HE HAS OPINIONS"
     ],
     "hooks": [
       "It is the ordinary days that turn out to matter.",
@@ -308,7 +316,8 @@
       "It's the way he checks on her that gets me every time.",
       "Look how carefully he does this. Nobody showed him how.",
       "He wasn't supposed to be able to do this yet.",
-      "I've watched this a hundred times and it still gets me."
+      "I've watched this a hundred times and it still gets me.",
+      "This is the most serious thing that has ever happened to him."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -317,7 +326,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "We read every comment on this channel. Say something and find out.",
       "Watched it again while uploading it. No regrets.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "NOT A SINGLE PLAN",
@@ -398,7 +408,8 @@
       "HE CHOSE HER",
       "PURE JOY INCOMING",
       "SHE WAITED ALL DAY",
-      "YOU'LL WATCH TWICE"
+      "YOU'LL WATCH TWICE",
+      "FIRST SOFT BED"
     ],
     "title_patterns": [
       "{core} | {anchor} Done Right",
@@ -439,7 +450,8 @@
       "{core} (Try Not To Smile) | {anchor}",
       "{anchor}: {core} — Stay Till The End",
       "{anchor} | {core} ❤️",
-      "{core} | Daily Dose Of Cute"
+      "{core} | Daily Dose Of Cute",
+      "This Is Why We Love {anchor}s | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -530,14 +542,16 @@
       "a puppy who discovered the garden sprinkler",
       "a kitten discovering a window box full of flowers",
       "a kitten fascinated by a dripping tap",
-      "a kitten and puppy becoming best friends"
+      "a kitten and puppy becoming best friends",
+      "a kitten trying to catch a sunbeam on the wall"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
       "en-US-AriaNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
