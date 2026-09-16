@@ -47,11 +47,14 @@
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily."
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "Stick around. The next one is just as soft as this.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -61,7 +64,8 @@
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "{anchor} alert: {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -75,7 +79,8 @@
       "Comment 🐾 if you watched this more than once.",
       "Does your pet have a habit like this? Tell us about it below.",
       "What should tomorrow's story be about? We read every comment.",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "SHE WAITED",
@@ -195,11 +200,15 @@
       "OH DEAR 😅",
       "ALMOST GOT IT",
       "ALMOST OVER, STAY",
-      "CERTIFIED CUTE"
+      "CERTIFIED CUTE",
+      "THERE IT IS",
+      "WE LOVE HIM",
+      "NEVER FORGOT"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
-      "This is the good part of the internet."
+      "This is the good part of the internet.",
+      "He picked her, not the other way around."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -211,15 +220,18 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Tag the person who always sends you cute animal videos.",
       "Sound on is a completely different video, by the way 🔊",
-      "Does your pet do this too? I need to know it's not just this one."
+      "Does your pet do this too? I need to know it's not just this one.",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
-      "STAY A SECOND"
+      "STAY A SECOND",
+      "GENTLE GIANT"
     ],
     "title_patterns": [
       "{core} | {anchor}",
-      "Two Seconds In And I Was Gone | {core}"
+      "Two Seconds In And I Was Gone | {core}",
+      "{core} 🐾 {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -313,11 +325,13 @@
       "a kitten and puppy becoming best friends",
       "a kitten trying to catch a sunbeam on the wall",
       "a kitten who insists on supervising bath time",
-      "a dog and a toddler building the world's worst snowman"
+      "a dog and a toddler building the world's worst snowman",
+      "a toddler who insists the dog sits at the dinner table"
     ],
     "voices": [
       "en-US-MichelleNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
