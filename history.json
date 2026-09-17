@@ -53,14 +53,17 @@
       "Subscribe and let something gentle find you every day.",
       "Stay a while. We post something gentle here every day.",
       "There is more where this came from. Subscribe and find out.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "One tiny story a day, every day. Subscribe so you catch the next."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe and let something gentle reach you every day.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -73,7 +76,8 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -90,7 +94,8 @@
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "One word for how this made you feel. Go 👇",
       "Who else needed this today? Say hi in the comments 👋",
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "SHE WAITED",
@@ -219,14 +224,18 @@
       "BRAND NEW",
       "HE'S SO PLEASED",
       "OKAY THEN",
-      "WARM AND SAFE"
+      "WARM AND SAFE",
+      "AGAIN? OKAY",
+      "OUT COLD",
+      "PURE JOY"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
       "This is the good part of the internet.",
       "He picked her, not the other way around.",
       "There is a right way to do this. He found another way.",
-      "What happened next made the whole family burst into tears."
+      "What happened next made the whole family burst into tears.",
+      "Nobody taught him this. He just knew."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -241,21 +250,24 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "What should tomorrow's story be about? Best idea gets made.",
-      "Tag the person who sends you every animal video. It's their turn."
+      "Tag the person who sends you every animal video. It's their turn.",
+      "Name this little one. We're taking suggestions seriously."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
       "STAY A SECOND",
       "GENTLE GIANT",
       "WATCH WHAT HE DOES",
-      "THE GENTLEST BOY"
+      "THE GENTLEST BOY",
+      "DON'T SCROLL PAST"
     ],
     "title_patterns": [
       "{core} | {anchor}",
       "Two Seconds In And I Was Gone | {core}",
       "{core} 🐾 {anchor}",
       "{core} — Watch The Last 5 Seconds",
-      "You'll Watch This Twice | {core}"
+      "You'll Watch This Twice | {core}",
+      "The Sweetest {anchor} | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -352,14 +364,16 @@
       "a dog and a toddler building the world's worst snowman",
       "a toddler who insists the dog sits at the dinner table",
       "a kitten who has claimed the warmest laundry basket",
-      "a kitten and a parrot who taught each other to whistle"
+      "a kitten and a parrot who taught each other to whistle",
+      "a dog who sits outside the bathroom door and waits every time"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-EmmaNeural",
       "en-US-AriaNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
