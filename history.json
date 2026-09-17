@@ -10,7 +10,7 @@
     "screen_hooks": 3,
     "title_patterns": 6,
     "topics": 1,
-    "voices": 40
+    "voices": 41
   },
   "used": {
     "ctas": [
@@ -55,7 +55,9 @@
       "There is more where this came from. Subscribe and find out.",
       "Stay for tomorrow's story. It's just as soft as this one.",
       "Follow now, and tomorrow's story will be waiting for you.",
-      "One tiny story a day, every day. Subscribe so you catch the next."
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Follow SweetSoul Stories — we keep the gentle ones coming."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -63,7 +65,8 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe and let something gentle reach you every day.",
       "Subscribe — one small, kind story lands here every single day.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -77,7 +80,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -95,7 +99,8 @@
       "One word for how this made you feel. Go 👇",
       "Who else needed this today? Say hi in the comments 👋",
       "First time here? Say hello in the comments 👋",
-      "What was the exact second that got you? Comment the timestamp 👇"
+      "What was the exact second that got you? Comment the timestamp 👇",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "SHE WAITED",
@@ -227,7 +232,10 @@
       "WARM AND SAFE",
       "AGAIN? OKAY",
       "OUT COLD",
-      "PURE JOY"
+      "PURE JOY",
+      "THAT LITTLE SIGH",
+      "STILL THERE",
+      "THAT'S THE ONE"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -235,7 +243,8 @@
       "He picked her, not the other way around.",
       "There is a right way to do this. He found another way.",
       "What happened next made the whole family burst into tears.",
-      "Nobody taught him this. He just knew."
+      "Nobody taught him this. He just knew.",
+      "Home found him, not the other way around."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -251,7 +260,8 @@
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "What should tomorrow's story be about? Best idea gets made.",
       "Tag the person who sends you every animal video. It's their turn.",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Somebody tell me I'm not the only one who teared up here."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -259,7 +269,8 @@
       "GENTLE GIANT",
       "WATCH WHAT HE DOES",
       "THE GENTLEST BOY",
-      "DON'T SCROLL PAST"
+      "DON'T SCROLL PAST",
+      "DAY ONE AT HOME"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -267,7 +278,8 @@
       "{core} 🐾 {anchor}",
       "{core} — Watch The Last 5 Seconds",
       "You'll Watch This Twice | {core}",
-      "The Sweetest {anchor} | {core}"
+      "The Sweetest {anchor} | {core}",
+      "Wait For The End 🥺 {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -365,15 +377,11 @@
       "a toddler who insists the dog sits at the dinner table",
       "a kitten who has claimed the warmest laundry basket",
       "a kitten and a parrot who taught each other to whistle",
-      "a dog who sits outside the bathroom door and waits every time"
+      "a dog who sits outside the bathroom door and waits every time",
+      "a toddler building a pillow fort for a shy puppy"
     ],
     "voices": [
-      "en-US-MichelleNeural",
-      "en-US-EmmaNeural",
-      "en-US-AriaNeural",
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural"
+      "en-US-AriaNeural"
     ]
   }
 }
