@@ -20,7 +20,9 @@
       "Follow for daily reminders that small things carry a lot of love.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Follow now, and tomorrow's story will be waiting for you.",
-      "Stay a while. We post something gentle here every day."
+      "Stay a while. We post something gentle here every day.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "Stick around. The next one is just as soft as this."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -33,7 +35,8 @@
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -52,7 +55,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -75,7 +79,8 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Who should see this today? Tag them.",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "SHE WAITED",
@@ -222,7 +227,10 @@
       "CLOSE ENOUGH",
       "NEVER LEAVES",
       "LOOK HOW LITTLE",
-      "STRAIGHT IN"
+      "STRAIGHT IN",
+      "DID YOU SEE",
+      "THAT FACE",
+      "TOTALLY WORTH IT"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -235,7 +243,8 @@
       "One small moment, one enormous amount of love.",
       "You can actually see the exact moment they become friends.",
       "Watch till the very end — it gets even better.",
-      "Okay, you have to see what happens in about four seconds."
+      "Okay, you have to see what happens in about four seconds.",
+      "A baby, a puppy, and a moment you'll never forget."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -256,7 +265,8 @@
       "The last three seconds are the reason this exists 🥹",
       "Comment 🐾 and we'll reply to every single one today.",
       "New here? Welcome. We do this every single day 🐾",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -269,7 +279,8 @@
       "VERY PROUD OF HIMSELF",
       "SHE ALWAYS WAITS",
       "ATTEMPT FORTY-ONE",
-      "HE THINKS HE'S BIG"
+      "HE THINKS HE'S BIG",
+      "THIS JUST HAPPENED"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -282,7 +293,8 @@
       "{core} 💛 Wholesome {anchor}",
       "This Is Why We Love {anchor}s | {core}",
       "{core} | Save This For A Bad Day",
-      "{core} — And It Gets Better"
+      "{core} — And It Gets Better",
+      "{core} | {anchor} Compilation Worthy"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -385,14 +397,16 @@
       "a toddler and a fluffy cat playing hide and seek",
       "a kitten who tucks in a newborn baby every night",
       "a puppy who falls asleep standing up mid-play",
-      "a dog who insists on carrying the picnic basket himself"
+      "a dog who insists on carrying the picnic basket himself",
+      "a toddler meeting a litter of newborn puppies"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-AnaNeural",
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
