@@ -24,7 +24,8 @@
       "Stay with us — tomorrow's story is already waiting for you.",
       "There is a story here for every night of the week. Subscribe.",
       "If this one made you think, subscribe — the next may too.",
-      "Subscribe, and share this story with someone small tonight."
+      "Subscribe, and share this story with someone small tonight.",
+      "Come back tomorrow. There is always another story worth hearing."
     ],
     "topics": [
       [
@@ -118,6 +119,10 @@
       [
         "contentment",
         "a dog who loses his bone chasing a reflection"
+      ],
+      [
+        "teamwork",
+        "ants who must move a giant crumb before the rain comes"
       ]
     ]
   }
