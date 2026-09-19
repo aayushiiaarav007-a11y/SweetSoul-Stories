@@ -26,7 +26,9 @@
       "Follow SweetSoul Stories for your daily dose of joy.",
       "Subscribe for the quiet, lovely corner of your feed.",
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "There is more where this came from. Subscribe and find out."
+      "There is more where this came from. Subscribe and find out.",
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -42,18 +44,24 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Did you watch with the sound on or off? Genuinely curious 👇"
     ],
     "flashes": [
       "NEW BLANKET",
-      "THE EARS"
+      "THE EARS",
+      "HIS OWN BED",
+      "STRAIGHT IN",
+      "MASSIVE EFFORT"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -69,7 +77,8 @@
       "Okay, you have to see what happens in about four seconds.",
       "A baby, a puppy, and a moment you'll never forget.",
       "This tiny soul proved that love has no size.",
-      "She was the smallest one there, and the bravest."
+      "She was the smallest one there, and the bravest.",
+      "This is the sound of somebody being happy."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -93,7 +102,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Cat person or dog person? Deciding this in the comments today.",
-      "Saving this one for a bad day. Recommend you do the same."
+      "Saving this one for a bad day. Recommend you do the same.",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -109,7 +119,8 @@
       "HE THINKS HE'S BIG",
       "THIS JUST HAPPENED",
       "THE SOFTEST THING",
-      "HE CHOSE HER"
+      "HE CHOSE HER",
+      "WAIT FOR THE END 🥹"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -125,7 +136,8 @@
       "{core} — And It Gets Better",
       "{core} | {anchor} Compilation Worthy",
       "{core} (Try Not To Smile) | {anchor}",
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "{anchor} That Fixed My Whole Day | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -231,11 +243,13 @@
       "a dog who insists on carrying the picnic basket himself",
       "a toddler meeting a litter of newborn puppies",
       "twin babies playing with a gentle giant dog",
-      "a kitten stealing a baby's toy and returning it"
+      "a kitten stealing a baby's toy and returning it",
+      "a puppy who insists on sleeping in the cat's bed"
     ],
     "voices": [
       "en-US-AriaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
