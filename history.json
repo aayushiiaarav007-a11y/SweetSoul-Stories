@@ -28,7 +28,9 @@
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "There is more where this came from. Subscribe and find out.",
       "If your day got a little better, that's all we wanted. Subscribe for more.",
-      "Subscribe — the next small, sweet thing is one day away."
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Follow SweetSoul Stories — we keep the gentle ones coming.",
+      "New story, same warmth, every day. Subscribe so you don't miss it."
     ],
     "desc_ctas": [
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
@@ -45,23 +47,29 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "What should we call this little one? Best comment wins 🏆"
     ],
     "flashes": [
       "NEW BLANKET",
       "THE EARS",
       "HIS OWN BED",
       "STRAIGHT IN",
-      "MASSIVE EFFORT"
+      "MASSIVE EFFORT",
+      "TOO CUTE",
+      "NO MORE HIDING",
+      "MINE NOW"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -78,7 +86,8 @@
       "A baby, a puppy, and a moment you'll never forget.",
       "This tiny soul proved that love has no size.",
       "She was the smallest one there, and the bravest.",
-      "This is the sound of somebody being happy."
+      "This is the sound of somebody being happy.",
+      "This is going to be your favourite thirty seconds today."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -103,7 +112,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Cat person or dog person? Deciding this in the comments today.",
       "Saving this one for a bad day. Recommend you do the same.",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "If this showed up at the right moment for you today, say so 👇"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -120,7 +130,8 @@
       "THIS JUST HAPPENED",
       "THE SOFTEST THING",
       "HE CHOSE HER",
-      "WAIT FOR THE END 🥹"
+      "WAIT FOR THE END 🥹",
+      "PURE JOY INCOMING"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -137,7 +148,8 @@
       "{core} | {anchor} Compilation Worthy",
       "{core} (Try Not To Smile) | {anchor}",
       "I Watched This 10 Times | {core}",
-      "{anchor} That Fixed My Whole Day | {core}"
+      "{anchor} That Fixed My Whole Day | {core}",
+      "{core} | Proof The Internet Is Fine"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -244,12 +256,14 @@
       "a toddler meeting a litter of newborn puppies",
       "twin babies playing with a gentle giant dog",
       "a kitten stealing a baby's toy and returning it",
-      "a puppy who insists on sleeping in the cat's bed"
+      "a puppy who insists on sleeping in the cat's bed",
+      "a dog who lets the family cat win every single time"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-GB-SoniaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
