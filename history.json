@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 11,
-    "desc_ctas": 15,
+    "desc_ctas": 16,
     "desc_openers": 14,
     "desc_questions": 11,
     "flashes": 5,
@@ -30,36 +30,25 @@
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "Subscribe — the next small, sweet thing is one day away.",
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "New story, same warmth, every day. Subscribe so you don't miss it."
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "Come back tomorrow. There's always another small moment worth seeing."
     ],
     "desc_ctas": [
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Subscribe and let something gentle reach you every day.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{anchor} alert: {teaser}",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -69,7 +58,10 @@
       "MASSIVE EFFORT",
       "TOO CUTE",
       "NO MORE HIDING",
-      "MINE NOW"
+      "MINE NOW",
+      "AWWW",
+      "SHE WAITED",
+      "ANY SECOND NOW"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -87,7 +79,8 @@
       "This tiny soul proved that love has no size.",
       "She was the smallest one there, and the bravest.",
       "This is the sound of somebody being happy.",
-      "This is going to be your favourite thirty seconds today."
+      "This is going to be your favourite thirty seconds today.",
+      "This tiny kitten just did something nobody saw coming."
     ],
     "pinned_comments": [
       "Genuine question: who is cuter here? Reply with your pick 👇",
@@ -113,7 +106,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "Saving this one for a bad day. Recommend you do the same.",
       "This is the exact kind of thing this channel is for.",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "Genuine question: how did nobody cry filming this?"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -131,7 +125,8 @@
       "THE SOFTEST THING",
       "HE CHOSE HER",
       "WAIT FOR THE END 🥹",
-      "PURE JOY INCOMING"
+      "PURE JOY INCOMING",
+      "HE JUST KNEW"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -149,7 +144,8 @@
       "{core} (Try Not To Smile) | {anchor}",
       "I Watched This 10 Times | {core}",
       "{anchor} That Fixed My Whole Day | {core}",
-      "{core} | Proof The Internet Is Fine"
+      "{core} | Proof The Internet Is Fine",
+      "{core} | Best {anchor} Of The Day"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -257,13 +253,15 @@
       "twin babies playing with a gentle giant dog",
       "a kitten stealing a baby's toy and returning it",
       "a puppy who insists on sleeping in the cat's bed",
-      "a dog who lets the family cat win every single time"
+      "a dog who lets the family cat win every single time",
+      "a kitten learning to jump and misjudging every distance"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-GB-SoniaNeural",
       "en-US-MichelleNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
