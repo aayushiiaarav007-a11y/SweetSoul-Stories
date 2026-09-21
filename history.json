@@ -6,7 +6,7 @@
     "desc_questions": 11,
     "flashes": 5,
     "hooks": 2,
-    "pinned_comments": 8,
+    "pinned_comments": 9,
     "screen_hooks": 3,
     "title_patterns": 6,
     "topics": 1,
@@ -40,14 +40,17 @@
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "Subscribe — there's a new little moment here every single morning.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "SweetSoul Stories, every day, for the days you need something kind."
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
+      "That's today's dose of soft. Follow for tomorrow's."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe and let something gentle reach you every day.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -58,7 +61,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
@@ -68,7 +72,8 @@
       "Comment 🐾 if you watched this more than once.",
       "What is your pet's most ridiculous habit? Comment below.",
       "Rate this little one out of 10. No wrong answers.",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "On a scale of 1-10, how cute was that? Comment your score!"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -93,7 +98,10 @@
       "OKAY THEN",
       "RIGHT ON TIME",
       "GOOD ENOUGH FOR HIM",
-      "TUCKED IN"
+      "TUCKED IN",
+      "WAIT...",
+      "DIDN'T SEE IT",
+      "THAT FACE"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -116,37 +124,10 @@
       "Watch what happens the second she turns around.",
       "There is nothing careful about this, and that is the beauty.",
       "One look and this little one had a home.",
-      "He has one plan, and it is a bad plan, and it is wonderful."
+      "He has one plan, and it is a bad plan, and it is wonderful.",
+      "It is not going to work, and he is going to try anyway."
     ],
     "pinned_comments": [
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "We read every comment on this channel. Say something and find out.",
-      "Watched it again while uploading it. No regrets.",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "Tag the person who always sends you cute animal videos.",
-      "Sound on is a completely different video, by the way 🔊",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "Name this little one. We're taking suggestions seriously.",
-      "Somebody tell me I'm not the only one who teared up here.",
-      "The last three seconds are the reason this exists 🥹",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "New here? Welcome. We do this every single day 🐾",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "This is the exact kind of thing this channel is for.",
-      "If this showed up at the right moment for you today, say so 👇",
-      "Genuine question: how did nobody cry filming this?",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "If this made you smile, that's all we wanted today ❤️",
-      "Which second got you? Drop the timestamp and we'll compare.",
       "Tell us in one word how this made you feel 👇"
     ],
     "screen_hooks": [
@@ -170,7 +151,8 @@
       "BEST FRIENDS ALREADY",
       "GUARDING HIS BABY",
       "YOU'LL WATCH TWICE",
-      "THE ENDING THOUGH"
+      "THE ENDING THOUGH",
+      "GOING SO BADLY 😭"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -193,7 +175,8 @@
       "{core} | You Have To See This",
       "Someone Send Help 🥹 {core}",
       "{core} (This Got Me) | {anchor}",
-      "{anchor}: {core} 😭❤️"
+      "{anchor}: {core} 😭❤️",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -306,12 +289,14 @@
       "a cat who grooms the puppy every morning without fail",
       "a puppy discovering snow for the first time",
       "a rescue dog sleeping in a real bed for the first time",
-      "a puppy learning that the vacuum is not actually a monster"
+      "a puppy learning that the vacuum is not actually a monster",
+      "a puppy meeting a baby for the first time"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AnaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
