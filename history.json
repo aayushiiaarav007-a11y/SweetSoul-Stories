@@ -10,7 +10,7 @@
     "screen_hooks": 3,
     "title_patterns": 6,
     "topics": 1,
-    "voices": 43
+    "voices": 44
   },
   "used": {
     "ctas": [
@@ -46,7 +46,9 @@
       "Save this channel for the days you need something soft. Subscribe.",
       "There's a new sweet story here every single day. Come back tomorrow.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Follow along — the next tiny story is already waiting."
+      "Follow along — the next tiny story is already waiting.",
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Follow along, and tomorrow we'll find another one of these together."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -56,7 +58,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Follow for the softest thirty seconds of your day, daily.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -70,7 +73,8 @@
       "This is the soft part of the internet. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
@@ -83,7 +87,8 @@
       "Who else needed this today? Say hi in the comments 👋",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Tag someone who needs to see this right now.",
-      "Which part made you smile the most? Tell us in the comments 👇"
+      "Which part made you smile the most? Tell us in the comments 👇",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -117,7 +122,10 @@
       "BRAVE LITTLE THING",
       "ONE SECOND MORE",
       "HE DID IT",
-      "FIRST TIME"
+      "FIRST TIME",
+      "HE APPROVES",
+      "BRAND NEW",
+      "SHE DID IT"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -143,12 +151,14 @@
       "He has one plan, and it is a bad plan, and it is wonderful.",
       "It is not going to work, and he is going to try anyway.",
       "Watch him think about it. That's the best bit.",
-      "This started as an ordinary Tuesday."
+      "This started as an ordinary Tuesday.",
+      "Watch his ears. That's when you'll know."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "Small channel, real replies. Comment and we'll talk 🐾"
+      "Small channel, real replies. Comment and we'll talk 🐾",
+      "Genuine question: who is cuter here? Reply with your pick 👇"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -174,7 +184,8 @@
       "THE ENDING THOUGH",
       "GOING SO BADLY 😭",
       "THE QUIET ONES HIT",
-      "EVERY SINGLE MORNING"
+      "EVERY SINGLE MORNING",
+      "KEEP WATCHING"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -200,7 +211,8 @@
       "{anchor}: {core} 😭❤️",
       "{core} 🥹 {anchor}",
       "{anchor}: {core}",
-      "{anchor}: {core} — Stay Till The End"
+      "{anchor}: {core} — Stay Till The End",
+      "This {anchor} Will Melt Your Heart | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -316,15 +328,11 @@
       "a puppy learning that the vacuum is not actually a monster",
       "a puppy meeting a baby for the first time",
       "a dog and a rabbit who nap in the same basket",
-      "a puppy found in a box who now has his own armchair"
+      "a puppy found in a box who now has his own armchair",
+      "an old cat adopted by a family with a newborn"
     ],
     "voices": [
-      "en-US-JennyNeural",
-      "en-US-AnaNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-GB-SoniaNeural",
-      "en-US-MichelleNeural"
+      "en-US-AriaNeural"
     ]
   }
 }
