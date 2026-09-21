@@ -44,7 +44,9 @@
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "That's today's dose of soft. Follow for tomorrow's.",
       "Save this channel for the days you need something soft. Subscribe.",
-      "There's a new sweet story here every single day. Come back tomorrow."
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -53,7 +55,8 @@
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -66,7 +69,8 @@
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "This is the soft part of the internet. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
@@ -78,7 +82,8 @@
       "Rate this little one out of 10. No wrong answers.",
       "Who else needed this today? Say hi in the comments 👋",
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -109,7 +114,10 @@
       "THAT FACE",
       "CAME OUT AT LAST",
       "WATCH THIS",
-      "BRAVE LITTLE THING"
+      "BRAVE LITTLE THING",
+      "ONE SECOND MORE",
+      "HE DID IT",
+      "FIRST TIME"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -134,11 +142,13 @@
       "One look and this little one had a home.",
       "He has one plan, and it is a bad plan, and it is wonderful.",
       "It is not going to work, and he is going to try anyway.",
-      "Watch him think about it. That's the best bit."
+      "Watch him think about it. That's the best bit.",
+      "This started as an ordinary Tuesday."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -163,7 +173,8 @@
       "YOU'LL WATCH TWICE",
       "THE ENDING THOUGH",
       "GOING SO BADLY 😭",
-      "THE QUIET ONES HIT"
+      "THE QUIET ONES HIT",
+      "EVERY SINGLE MORNING"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -188,7 +199,8 @@
       "{core} (This Got Me) | {anchor}",
       "{anchor}: {core} 😭❤️",
       "{core} 🥹 {anchor}",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "{anchor}: {core} — Stay Till The End"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -303,14 +315,16 @@
       "a rescue dog sleeping in a real bed for the first time",
       "a puppy learning that the vacuum is not actually a monster",
       "a puppy meeting a baby for the first time",
-      "a dog and a rabbit who nap in the same basket"
+      "a dog and a rabbit who nap in the same basket",
+      "a puppy found in a box who now has his own armchair"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AnaNeural",
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
