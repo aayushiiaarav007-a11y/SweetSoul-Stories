@@ -56,7 +56,9 @@
       "Come for one story, stay for the daily ones. Subscribe.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
       "Tomorrow's story is already waiting for you. Follow along.",
-      "Subscribe, and tomorrow this will find you again."
+      "Subscribe, and tomorrow this will find you again.",
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "Every day, one gentle story. Subscribe and let it find you."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -71,7 +73,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -90,7 +93,8 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
@@ -108,7 +112,8 @@
       "Does your pet have a habit like this? Tell us about it below.",
       "Cat person or dog person? Settle it in the comments.",
       "Who should see this today? Tag them.",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -157,7 +162,10 @@
       "NEVER LEAVES",
       "NOT LIKE THAT",
       "WATCH TO THE END",
-      "SNORING NOW"
+      "SNORING NOW",
+      "SO CLOSE",
+      "GOOD LUCK 😅",
+      "CLOSE ENOUGH"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -188,7 +196,8 @@
       "This happened by accident — and it's absolutely perfect.",
       "This is what happens when nobody is supervising.",
       "Confidence: enormous. Coordination: none.",
-      "Some friendships do not need words at all."
+      "Some friendships do not need words at all.",
+      "It started with a sound at the door."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -198,7 +207,8 @@
       "Somebody tell me I'm not the only one who teared up here.",
       "If this showed up at the right moment for you today, say so 👇",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -229,7 +239,8 @@
       "NOBODY TAUGHT HIM",
       "BAD PLAN, GREAT RESULT",
       "STILL WAITING 🥺",
-      "SOMEBODY PICKED HIM"
+      "SOMEBODY PICKED HIM",
+      "TINY AND FEARLESS"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -260,7 +271,8 @@
       "{anchor} | {core} ❤️",
       "Everyone Needs To See This {anchor} | {core}",
       "{core} 💕 {anchor} Moment",
-      "{core} | Wholesome {anchor}"
+      "{core} | Wholesome {anchor}",
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -381,14 +393,16 @@
       "a puppy who fell asleep holding the toddler's sleeve",
       "an old dog teaching a clumsy puppy how to be calm",
       "a shy cat meeting a crawling baby for the first time",
-      "a kitten who was the last one left at the shelter"
+      "a kitten who was the last one left at the shelter",
+      "a baby sharing snacks with a patient gentle dog"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
       "en-US-MichelleNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
