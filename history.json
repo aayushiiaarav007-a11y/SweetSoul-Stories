@@ -50,7 +50,9 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "Follow along, and tomorrow we'll find another one of these together.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
-      "If you smiled, that's the whole job done. Subscribe for more."
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Subscribe and let something gentle find you every day."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -62,7 +64,8 @@
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe — one small, kind story lands here every single day.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -78,7 +81,8 @@
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
@@ -93,7 +97,8 @@
       "Tag someone who needs to see this right now.",
       "Which part made you smile the most? Tell us in the comments 👇",
       "What should tomorrow's story be about? We read every comment.",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -133,7 +138,10 @@
       "SHE DID IT",
       "OUT COLD",
       "MY HEART",
-      "MAKES NO SENSE"
+      "MAKES NO SENSE",
+      "NEVER FORGOT",
+      "OH DEAR 😅",
+      "LIKE CLOCKWORK"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -161,14 +169,16 @@
       "Watch him think about it. That's the best bit.",
       "This started as an ordinary Tuesday.",
       "Watch his ears. That's when you'll know.",
-      "This happened by accident — and it's absolutely perfect."
+      "This happened by accident — and it's absolutely perfect.",
+      "This is what happens when nobody is supervising."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Somebody tell me I'm not the only one who teared up here."
+      "Somebody tell me I'm not the only one who teared up here.",
+      "If this showed up at the right moment for you today, say so 👇"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -196,7 +206,8 @@
       "THE QUIET ONES HIT",
       "EVERY SINGLE MORNING",
       "KEEP WATCHING",
-      "NOBODY TAUGHT HIM"
+      "NOBODY TAUGHT HIM",
+      "BAD PLAN, GREAT RESULT"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -224,7 +235,8 @@
       "{anchor}: {core}",
       "{anchor}: {core} — Stay Till The End",
       "This {anchor} Will Melt Your Heart | {core}",
-      "{anchor} | {core} ❤️"
+      "{anchor} | {core} ❤️",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -342,11 +354,13 @@
       "a dog and a rabbit who nap in the same basket",
       "a puppy found in a box who now has his own armchair",
       "an old cat adopted by a family with a newborn",
-      "a puppy who fell asleep holding the toddler's sleeve"
+      "a puppy who fell asleep holding the toddler's sleeve",
+      "an old dog teaching a clumsy puppy how to be calm"
     ],
     "voices": [
       "en-US-AriaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
