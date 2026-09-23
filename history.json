@@ -15,7 +15,9 @@
   "used": {
     "ctas": [
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "Follow SweetSoul Stories — we keep the gentle ones coming."
+      "Follow SweetSoul Stories — we keep the gentle ones coming.",
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Come back tomorrow. There's always another small moment worth seeing."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -32,10 +34,12 @@
       "Subscribe — this channel exists for exactly the day you're having.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
@@ -55,7 +59,8 @@
       "Who should see this today? Tag them.",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Comment 🥹 if the ending got you too.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -110,7 +115,10 @@
       "CLOSE ENOUGH",
       "ONE MORE TIME",
       "KEEP GOING",
-      "WHAT IS THAT"
+      "WHAT IS THAT",
+      "EVERY EVENING",
+      "SO SMALL",
+      "TRY AGAIN BUDDY"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -143,7 +151,8 @@
       "Confidence: enormous. Coordination: none.",
       "Some friendships do not need words at all.",
       "It started with a sound at the door.",
-      "Nobody in this house gets any work done anymore."
+      "Nobody in this house gets any work done anymore.",
+      "It took four seconds for these two to become inseparable."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -155,7 +164,8 @@
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "Okay but the part at the end though 🥹 What was your favourite second?",
-      "We read every comment on this channel. Say something and find out."
+      "We read every comment on this channel. Say something and find out.",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -188,7 +198,8 @@
       "STILL WAITING 🥺",
       "SOMEBODY PICKED HIM",
       "TINY AND FEARLESS",
-      "NO WORDS NEEDED"
+      "NO WORDS NEEDED",
+      "TAKE THIRTY SECONDS"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -221,7 +232,8 @@
       "{core} 💕 {anchor} Moment",
       "{core} | Wholesome {anchor}",
       "{anchor} You Need To See: {core}",
-      "{core} | {anchor} Done Right"
+      "{core} | {anchor} Done Right",
+      "Not A Dry Eye | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -344,10 +356,12 @@
       "a shy cat meeting a crawling baby for the first time",
       "a kitten who was the last one left at the shelter",
       "a baby sharing snacks with a patient gentle dog",
-      "a kitten who taught herself to open the cupboard"
+      "a kitten who taught herself to open the cupboard",
+      "a kitten's first Christmas tree and a lot of poor decisions"
     ],
     "voices": [
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
