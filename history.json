@@ -21,17 +21,21 @@
       "Follow for more of this. Tomorrow's is already written.",
       "Subscribe and let something gentle find you every day.",
       "Come for one story, stay for the daily ones. Subscribe.",
-      "If you needed this today, subscribe — we'll be here again tomorrow."
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "{anchor} alert: {teaser}",
-      "A very short {anchor_lc} story with a very large heart. {teaser}"
+      "A very short {anchor_lc} story with a very large heart. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "If this is your kind of thing, comment 🐾 and we'll make more.",
@@ -54,7 +58,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "First time here? Say hello in the comments 👋",
       "Would your pet do the same thing? Tell us below 👇",
-      "What was the exact second that got you? Comment the timestamp 👇"
+      "What was the exact second that got you? Comment the timestamp 👇",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -118,7 +123,10 @@
       "HIS OWN WAY",
       "WE DON'T KNOW EITHER",
       "THE TAIL 🥹",
-      "VERY SERIOUS BUSINESS"
+      "VERY SERIOUS BUSINESS",
+      "SO SOFT",
+      "THOSE EYES",
+      "TINY LEGS"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -154,7 +162,8 @@
       "Nobody in this house gets any work done anymore.",
       "It took four seconds for these two to become inseparable.",
       "This is a very short story about a very large heart.",
-      "This is what being chosen looks like."
+      "This is what being chosen looks like.",
+      "This tiny thing changed one family forever."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -169,7 +178,8 @@
       "We read every comment on this channel. Say something and find out.",
       "This is the exact kind of thing this channel is for.",
       "Sound on is a completely different video, by the way 🔊",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -205,7 +215,8 @@
       "NO WORDS NEEDED",
       "TAKE THIRTY SECONDS",
       "FIRST HELLO ❤️",
-      "THIS IS TRUST"
+      "THIS IS TRUST",
+      "SHE NEVER MISSES"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -241,7 +252,8 @@
       "{core} | {anchor} Done Right",
       "Not A Dry Eye | {core}",
       "{anchor} - {core}",
-      "{core} | Tiny Heart, Huge Moment"
+      "{core} | Tiny Heart, Huge Moment",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -367,13 +379,15 @@
       "a kitten who taught herself to open the cupboard",
       "a kitten's first Christmas tree and a lot of poor decisions",
       "a kitten who steals one strawberry every single morning",
-      "a kitten and a baby discovering bubbles together"
+      "a kitten and a baby discovering bubbles together",
+      "a kitten watching the first snowfall from a warm windowsill"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
