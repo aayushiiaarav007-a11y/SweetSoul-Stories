@@ -29,7 +29,9 @@
       "SweetSoul Stories, every day, for the days you need something kind.",
       "If you smiled, that's the whole job done. Subscribe for more.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "There's a new sweet story here every single day. Come back tomorrow."
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "There is more where this came from. Subscribe and find out.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
@@ -37,7 +39,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -47,11 +50,13 @@
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "This is the soft part of the internet. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
-      "What should tomorrow's story be about? We read every comment."
+      "What should tomorrow's story be about? We read every comment.",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -127,7 +132,10 @@
       "COMMITTED",
       "TRUST 🤍",
       "GUARD MODE",
-      "LISTEN 🔊"
+      "LISTEN 🔊",
+      "THE PAWS",
+      "PROBLEM SOLVED",
+      "TOGETHER NOW"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -167,7 +175,8 @@
       "This tiny thing changed one family forever.",
       "This is a very small act of love, caught on camera.",
       "I did not expect to cry over a puppy today, but here we are.",
-      "This little kitten just stole every heart in the room."
+      "This little kitten just stole every heart in the room.",
+      "Give this ten seconds. Trust me."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -186,7 +195,8 @@
       "Watched it again while uploading it. No regrets.",
       "If this made you smile, that's all we wanted today ❤️",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -226,7 +236,8 @@
       "SHE NEVER MISSES",
       "THIS IS NEW TO HIM",
       "WATCH HER EYES",
-      "THIS IS THE GOOD PART"
+      "THIS IS THE GOOD PART",
+      "THE LOOK AT THE END"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -266,7 +277,8 @@
       "{core} | Softest Thing Today",
       "The Internet Loves This {anchor} | {core}",
       "{core} | Daily Dose Of Cute",
-      "Nobody Expected This | {core}"
+      "Nobody Expected This | {core}",
+      "How Is This Real 🥺 {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -396,11 +408,13 @@
       "a kitten watching the first snowfall from a warm windowsill",
       "a puppy who carries his blanket everywhere he goes",
       "a kitten rescued from a drain pipe meeting her new family",
-      "a kitten meeting the family's old gentle dog"
+      "a kitten meeting the family's old gentle dog",
+      "a kitten who sits on the windowsill until the car comes home"
     ],
     "voices": [
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
