@@ -27,14 +27,17 @@
       "Save this channel for the days you need something soft. Subscribe.",
       "Subscribe, and tomorrow this will find you again.",
       "SweetSoul Stories, every day, for the days you need something kind.",
-      "If you smiled, that's the whole job done. Subscribe for more."
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Follow for daily reminders that small things carry a lot of love.",
+      "There's a new sweet story here every single day. Come back tomorrow."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "New wholesome moment every single day. Hit subscribe.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -43,10 +46,12 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "This is the soft part of the internet. {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -119,7 +124,10 @@
       "TOOK HER TIME",
       "HIS JOB NOW",
       "PROUD BOY",
-      "COMMITTED"
+      "COMMITTED",
+      "TRUST 🤍",
+      "GUARD MODE",
+      "LISTEN 🔊"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -158,7 +166,8 @@
       "This is what being chosen looks like.",
       "This tiny thing changed one family forever.",
       "This is a very small act of love, caught on camera.",
-      "I did not expect to cry over a puppy today, but here we are."
+      "I did not expect to cry over a puppy today, but here we are.",
+      "This little kitten just stole every heart in the room."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -176,7 +185,8 @@
       "Genuine question: how did nobody cry filming this?",
       "Watched it again while uploading it. No regrets.",
       "If this made you smile, that's all we wanted today ❤️",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "Rate the ending out of 10 — I'm giving it a firm 10."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -215,7 +225,8 @@
       "THIS IS TRUST",
       "SHE NEVER MISSES",
       "THIS IS NEW TO HIM",
-      "WATCH HER EYES"
+      "WATCH HER EYES",
+      "THIS IS THE GOOD PART"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -254,7 +265,8 @@
       "{core} | Tiny Heart, Huge Moment",
       "{core} | Softest Thing Today",
       "The Internet Loves This {anchor} | {core}",
-      "{core} | Daily Dose Of Cute"
+      "{core} | Daily Dose Of Cute",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -383,10 +395,12 @@
       "a kitten and a baby discovering bubbles together",
       "a kitten watching the first snowfall from a warm windowsill",
       "a puppy who carries his blanket everywhere he goes",
-      "a kitten rescued from a drain pipe meeting her new family"
+      "a kitten rescued from a drain pipe meeting her new family",
+      "a kitten meeting the family's old gentle dog"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
