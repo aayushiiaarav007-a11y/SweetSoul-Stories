@@ -8,7 +8,7 @@
     "hooks": 2,
     "pinned_comments": 9,
     "screen_hooks": 3,
-    "title_patterns": 6,
+    "title_patterns": 7,
     "topics": 1,
     "voices": 46
   },
@@ -33,7 +33,9 @@
       "There is more where this came from. Subscribe and find out.",
       "Follow now, and tomorrow's story will be waiting for you.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Tomorrow's story is already waiting for you. Follow along."
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
@@ -43,7 +45,8 @@
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -55,13 +58,15 @@
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "This one melted us. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
       "What should tomorrow's story be about? We read every comment.",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Would your pet do the same thing? Tell us below 👇"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -143,7 +148,10 @@
       "TOGETHER NOW",
       "FIRST NAP HERE",
       "OH NO 😭",
-      "BIG WORLD, SMALL PUP"
+      "BIG WORLD, SMALL PUP",
+      "STILL THERE",
+      "WORTH THE WAIT",
+      "FEELS SAFE NOW"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -185,7 +193,8 @@
       "I did not expect to cry over a puppy today, but here we are.",
       "This little kitten just stole every heart in the room.",
       "Give this ten seconds. Trust me.",
-      "This is the part of the day everyone waits for."
+      "This is the part of the day everyone waits for.",
+      "This is the friendship nobody asked for but everyone needed."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -206,7 +215,8 @@
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Cat person or dog person? Deciding this in the comments today."
+      "Cat person or dog person? Deciding this in the comments today.",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -248,49 +258,11 @@
       "WATCH HER EYES",
       "THIS IS THE GOOD PART",
       "THE LOOK AT THE END",
-      "SOMEONE'S ABOUT TO LOSE"
+      "SOMEONE'S ABOUT TO LOSE",
+      "HE FINALLY RELAXED"
     ],
     "title_patterns": [
-      "{core} | {anchor}",
-      "Two Seconds In And I Was Gone | {core}",
-      "{core} 🐾 {anchor}",
-      "{core} — Watch The Last 5 Seconds",
-      "You'll Watch This Twice | {core}",
-      "The Sweetest {anchor} | {core}",
-      "Wait For The End 🥺 {core}",
-      "{core} 💛 Wholesome {anchor}",
-      "This Is Why We Love {anchor}s | {core}",
-      "{core} | Save This For A Bad Day",
-      "{core} — And It Gets Better",
-      "{core} | {anchor} Compilation Worthy",
-      "{core} (Try Not To Smile) | {anchor}",
-      "I Watched This 10 Times | {core}",
-      "{anchor} That Fixed My Whole Day | {core}",
-      "{core} | Proof The Internet Is Fine",
-      "{core} | Best {anchor} Of The Day",
-      "{core} | You Have To See This",
-      "Someone Send Help 🥹 {core}",
-      "{core} (This Got Me) | {anchor}",
-      "{anchor}: {core} 😭❤️",
-      "{core} 🥹 {anchor}",
-      "{anchor}: {core}",
-      "{anchor}: {core} — Stay Till The End",
-      "This {anchor} Will Melt Your Heart | {core}",
-      "{anchor} | {core} ❤️",
-      "Everyone Needs To See This {anchor} | {core}",
-      "{core} 💕 {anchor} Moment",
-      "{core} | Wholesome {anchor}",
-      "{anchor} You Need To See: {core}",
-      "{core} | {anchor} Done Right",
-      "Not A Dry Eye | {core}",
-      "{anchor} - {core}",
-      "{core} | Tiny Heart, Huge Moment",
-      "{core} | Softest Thing Today",
-      "The Internet Loves This {anchor} | {core}",
-      "{core} | Daily Dose Of Cute",
-      "Nobody Expected This | {core}",
-      "How Is This Real 🥺 {core}",
-      "{anchor} Moment Of The Day | {core}"
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -422,13 +394,15 @@
       "a kitten rescued from a drain pipe meeting her new family",
       "a kitten meeting the family's old gentle dog",
       "a kitten who sits on the windowsill until the car comes home",
-      "a rescue puppy meeting his new brother, a three-legged dog"
+      "a rescue puppy meeting his new brother, a three-legged dog",
+      "a puppy meeting a duckling in the backyard"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AriaNeural",
       "en-US-EmmaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
