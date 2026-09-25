@@ -31,7 +31,9 @@
       "Follow for daily reminders that small things carry a lot of love.",
       "There's a new sweet story here every single day. Come back tomorrow.",
       "There is more where this came from. Subscribe and find out.",
-      "Follow now, and tomorrow's story will be waiting for you."
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "Tomorrow's story is already waiting for you. Follow along."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
@@ -40,7 +42,8 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -51,12 +54,14 @@
       "This is the soft part of the internet. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
       "What should tomorrow's story be about? We read every comment.",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -135,7 +140,10 @@
       "LISTEN 🔊",
       "THE PAWS",
       "PROBLEM SOLVED",
-      "TOGETHER NOW"
+      "TOGETHER NOW",
+      "FIRST NAP HERE",
+      "OH NO 😭",
+      "BIG WORLD, SMALL PUP"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -176,7 +184,8 @@
       "This is a very small act of love, caught on camera.",
       "I did not expect to cry over a puppy today, but here we are.",
       "This little kitten just stole every heart in the room.",
-      "Give this ten seconds. Trust me."
+      "Give this ten seconds. Trust me.",
+      "This is the part of the day everyone waits for."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -196,7 +205,8 @@
       "If this made you smile, that's all we wanted today ❤️",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -237,7 +247,8 @@
       "THIS IS NEW TO HIM",
       "WATCH HER EYES",
       "THIS IS THE GOOD PART",
-      "THE LOOK AT THE END"
+      "THE LOOK AT THE END",
+      "SOMEONE'S ABOUT TO LOSE"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -278,7 +289,8 @@
       "The Internet Loves This {anchor} | {core}",
       "{core} | Daily Dose Of Cute",
       "Nobody Expected This | {core}",
-      "How Is This Real 🥺 {core}"
+      "How Is This Real 🥺 {core}",
+      "{anchor} Moment Of The Day | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -409,12 +421,14 @@
       "a puppy who carries his blanket everywhere he goes",
       "a kitten rescued from a drain pipe meeting her new family",
       "a kitten meeting the family's old gentle dog",
-      "a kitten who sits on the windowsill until the car comes home"
+      "a kitten who sits on the windowsill until the car comes home",
+      "a rescue puppy meeting his new brother, a three-legged dog"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AriaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
