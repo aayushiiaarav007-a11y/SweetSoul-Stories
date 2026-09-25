@@ -10,7 +10,7 @@
     "screen_hooks": 3,
     "title_patterns": 7,
     "topics": 1,
-    "voices": 46
+    "voices": 47
   },
   "used": {
     "ctas": [
@@ -37,7 +37,9 @@
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Follow along — the next tiny story is already waiting.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Follow along, and tomorrow we'll find another one of these together."
+      "Follow along, and tomorrow we'll find another one of these together.",
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
@@ -49,7 +51,8 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -63,7 +66,8 @@
       "This one melted us. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -71,7 +75,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Would your pet do the same thing? Tell us below 👇",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -159,7 +164,10 @@
       "FEELS SAFE NOW",
       "ONE MORE TRY",
       "LOOK AT HIM GO",
-      "PROUD OF HER"
+      "PROUD OF HER",
+      "NOT MOVING",
+      "SAME LOVE",
+      "EVERY DAY THIS"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -203,7 +211,8 @@
       "Give this ten seconds. Trust me.",
       "This is the part of the day everyone waits for.",
       "This is the friendship nobody asked for but everyone needed.",
-      "Nobody in that room stayed dry-eyed."
+      "Nobody in that room stayed dry-eyed.",
+      "Look how carefully he does this. Nobody showed him how."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -226,7 +235,8 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Cat person or dog person? Deciding this in the comments today.",
       "Tag the person who sends you every animal video. It's their turn.",
-      "Name this little one. We're taking suggestions seriously."
+      "Name this little one. We're taking suggestions seriously.",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -270,11 +280,13 @@
       "THE LOOK AT THE END",
       "SOMEONE'S ABOUT TO LOSE",
       "HE FINALLY RELAXED",
-      "THIS IS THE ONE"
+      "THIS IS THE ONE",
+      "SHE WAITED ALL DAY"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
-      "{core} | {anchor}"
+      "{core} | {anchor}",
+      "{anchor} That Fixed My Whole Day | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -408,15 +420,11 @@
       "a kitten who sits on the windowsill until the car comes home",
       "a rescue puppy meeting his new brother, a three-legged dog",
       "a puppy meeting a duckling in the backyard",
-      "a kitten who adopted a litter of orphaned puppies"
+      "a kitten who adopted a litter of orphaned puppies",
+      "a puppy who brings one sock to every visitor as a gift"
     ],
     "voices": [
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural",
-      "en-US-MichelleNeural"
+      "en-US-JennyNeural"
     ]
   }
 }
