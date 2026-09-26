@@ -41,7 +41,9 @@
       "Every day, one gentle story. Subscribe and let it find you.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "Subscribe, and let us hand you one good thing every single day."
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Stick around. The next one is just as soft as this.",
+      "If your day got a little better, that's all we wanted. Subscribe for more."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
@@ -55,7 +57,8 @@
       "Subscribe — this channel exists for exactly the day you're having.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -71,7 +74,8 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "Saving this one for a rough day. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -81,7 +85,8 @@
       "Would your pet do the same thing? Tell us below 👇",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Comment 🐾 if you watched this more than once.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -175,7 +180,10 @@
       "EVERY DAY THIS",
       "WARM AND SAFE",
       "NOBODY MOVES",
-      "FINALLY 🥹"
+      "FINALLY 🥹",
+      "TOTALLY WORTH IT",
+      "HE HAS OPINIONS",
+      "WE LOVE HIM"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -221,7 +229,8 @@
       "This is the friendship nobody asked for but everyone needed.",
       "Nobody in that room stayed dry-eyed.",
       "Look how carefully he does this. Nobody showed him how.",
-      "You'll feel this one in your chest."
+      "You'll feel this one in your chest.",
+      "This little face was waiting all week for this."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -246,7 +255,8 @@
       "Tag the person who sends you every animal video. It's their turn.",
       "Name this little one. We're taking suggestions seriously.",
       "Which second got you? Drop the timestamp and we'll compare.",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -292,13 +302,15 @@
       "HE FINALLY RELAXED",
       "THIS IS THE ONE",
       "SHE WAITED ALL DAY",
-      "LOOK AT HIS FACE"
+      "LOOK AT HIS FACE",
+      "LAST ONE LEFT"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
       "{core} | {anchor}",
       "{anchor} That Fixed My Whole Day | {core}",
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "{core} | Proof The Internet Is Fine"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -434,11 +446,13 @@
       "a puppy meeting a duckling in the backyard",
       "a kitten who adopted a litter of orphaned puppies",
       "a puppy who brings one sock to every visitor as a gift",
-      "a cat and a baby who both refuse to nap without the other"
+      "a cat and a baby who both refuse to nap without the other",
+      "a puppy's first autumn and a very large pile of leaves"
     ],
     "voices": [
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
