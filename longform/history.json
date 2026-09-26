@@ -27,7 +27,8 @@
       "Subscribe, and share this story with someone small tonight.",
       "Come back tomorrow. There is always another story worth hearing.",
       "Another story, another lesson, tomorrow. Subscribe and stay with us.",
-      "Subscribe, and we will meet again in the next story."
+      "Subscribe, and we will meet again in the next story.",
+      "There is a new story here every day. Come listen tomorrow."
     ],
     "topics": [
       [
@@ -133,6 +134,10 @@
       [
         "courage",
         "a small boy who must cross a dark forest to fetch medicine"
+      ],
+      [
+        "perseverance",
+        "a spider who rebuilds her web every single morning"
       ]
     ]
   }
