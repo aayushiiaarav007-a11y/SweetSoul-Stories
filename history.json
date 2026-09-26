@@ -45,7 +45,9 @@
       "Stick around. The next one is just as soft as this.",
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "New story every day, no exceptions. Follow SweetSoul Stories."
     ],
     "desc_ctas": [
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
@@ -61,7 +63,8 @@
       "If you want more of this in your feed, subscribing is the whole trick.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "Subscribe and let something gentle reach you every day.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "{teaser} Watch it twice — the second time is even sweeter.",
@@ -79,7 +82,8 @@
       "Saving this one for a rough day. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -91,7 +95,8 @@
       "Comment 🐾 if you watched this more than once.",
       "What should we call this little one? Best comment wins 🏆",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -191,7 +196,10 @@
       "WE LOVE HIM",
       "SO MUCH TRYING",
       "SHE'S HAD ENOUGH",
-      "ALMOST 🥺"
+      "ALMOST 🥺",
+      "ALMOST GOT IT",
+      "APPROVED ✅",
+      "NO SHARING"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -239,7 +247,8 @@
       "Look how carefully he does this. Nobody showed him how.",
       "You'll feel this one in your chest.",
       "This little face was waiting all week for this.",
-      "She has been practising this all week."
+      "She has been practising this all week.",
+      "Nobody in the family remembers life before this."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -266,7 +275,8 @@
       "Which second got you? Drop the timestamp and we'll compare.",
       "Tag the person who always sends you cute animal videos.",
       "Saving this one for a bad day. Recommend you do the same.",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "Comment 🐾 and we'll reply to every single one today."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -314,7 +324,8 @@
       "SHE WAITED ALL DAY",
       "LOOK AT HIS FACE",
       "LAST ONE LEFT",
-      "HIS FIRST TIME"
+      "HIS FIRST TIME",
+      "TOOK A MONTH 🥹"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -322,7 +333,8 @@
       "{anchor} That Fixed My Whole Day | {core}",
       "I Watched This 10 Times | {core}",
       "{core} | Proof The Internet Is Fine",
-      "{core} | Tiny Heart, Huge Moment"
+      "{core} | Tiny Heart, Huge Moment",
+      "Not A Dry Eye | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -460,13 +472,15 @@
       "a puppy who brings one sock to every visitor as a gift",
       "a cat and a baby who both refuse to nap without the other",
       "a puppy's first autumn and a very large pile of leaves",
-      "a deaf puppy learning hand signals from a patient toddler"
+      "a deaf puppy learning hand signals from a patient toddler",
+      "a puppy discovering his own tail exists"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AriaNeural",
       "en-US-AnaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
