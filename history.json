@@ -1,6 +1,6 @@
 {
   "cycles": {
-    "ctas": 12,
+    "ctas": 13,
     "desc_ctas": 18,
     "desc_openers": 16,
     "desc_questions": 12,
@@ -14,62 +14,21 @@
   },
   "used": {
     "ctas": [
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "Follow SweetSoul Stories for your daily dose of joy.",
-      "Come back tomorrow. There's always another small moment worth seeing.",
-      "Follow for more of this. Tomorrow's is already written.",
-      "Subscribe and let something gentle find you every day.",
-      "Come for one story, stay for the daily ones. Subscribe.",
-      "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe — the next small, sweet thing is one day away.",
-      "Save this channel for the days you need something soft. Subscribe.",
-      "Subscribe, and tomorrow this will find you again.",
-      "SweetSoul Stories, every day, for the days you need something kind.",
-      "If you smiled, that's the whole job done. Subscribe for more.",
-      "Follow for daily reminders that small things carry a lot of love.",
-      "There's a new sweet story here every single day. Come back tomorrow.",
-      "There is more where this came from. Subscribe and find out.",
-      "Follow now, and tomorrow's story will be waiting for you.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Tomorrow's story is already waiting for you. Follow along.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "Follow along — the next tiny story is already waiting.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Follow along, and tomorrow we'll find another one of these together.",
-      "Every day, one gentle story. Subscribe and let it find you.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Subscribe for one small, kind story a day. That's all we do here.",
-      "Subscribe, and let us hand you one good thing every single day.",
-      "Stick around. The next one is just as soft as this.",
-      "If your day got a little better, that's all we wanted. Subscribe for more.",
-      "That's today's dose of soft. Follow for tomorrow's.",
-      "Subscribe for the quiet, lovely corner of your feed.",
-      "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "New story every day, no exceptions. Follow SweetSoul Stories.",
-      "That's all for today. Follow along and we'll see you tomorrow.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "Subscribe — there's a new little moment here every single morning.",
-      "One tiny story a day, every day. Subscribe so you catch the next.",
-      "One good thing a day. Subscribe and let us handle it.",
-      "Stay for tomorrow's story. It's just as soft as this one.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "Subscribe for more of the quiet, lovely parts of the internet.",
-      "Stay a while. We post something gentle here every day.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming."
+      "SweetSoul Stories, every day, for the days you need something kind."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Follow for the softest thirty seconds of your day, daily.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -87,7 +46,8 @@
       "Which one would you take home? Comment your pick.",
       "Does your pet have a habit like this? Tell us about it below.",
       "Comment 🥹 if the ending got you too.",
-      "Rate this little one out of 10. No wrong answers."
+      "Rate this little one out of 10. No wrong answers.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -205,7 +165,10 @@
       "THE BEST BIT",
       "TINY YAWN",
       "THERE IT IS",
-      "HER SPOT"
+      "HER SPOT",
+      "NEARLY THERE",
+      "THERE SHE IS",
+      "TAIL GOING WILD"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -259,11 +222,13 @@
       "The tiniest hero you'll meet today.",
       "Twenty seconds is all this takes. Give it to yourself.",
       "The way this baby laughs will instantly make your day.",
-      "Sometimes the smallest creatures carry the biggest love."
+      "Sometimes the smallest creatures carry the biggest love.",
+      "This one is for anyone having a hard week."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -317,7 +282,8 @@
       "MADE MY WHOLE WEEK",
       "NOT A SINGLE PLAN",
       "THIS MELTED ME",
-      "ZERO COORDINATION"
+      "ZERO COORDINATION",
+      "CUTEST THING TODAY"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -331,7 +297,8 @@
       "{core} | Best {anchor} Of The Day",
       "The Sweetest {anchor} | {core}",
       "{core} 🥹 {anchor}",
-      "{anchor}: {core} — Stay Till The End"
+      "{anchor}: {core} — Stay Till The End",
+      "{core} 🐾 {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -475,13 +442,15 @@
       "a baby's first giggle triggered by a playful dog",
       "a dog who brings his toy to whoever looks sad",
       "a senior dog getting adopted on his last day at the shelter",
-      "a kitten who sleeps in the fruit bowl and refuses to move"
+      "a kitten who sleeps in the fruit bowl and refuses to move",
+      "a baby and a cat playing peekaboo through a doorway"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
