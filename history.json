@@ -51,13 +51,17 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
       "Subscribe — there's a new little moment here every single morning.",
-      "One tiny story a day, every day. Subscribe so you catch the next."
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "One good thing a day. Subscribe and let us handle it.",
+      "Stay for tomorrow's story. It's just as soft as this one."
     ],
     "desc_ctas": [
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -72,7 +76,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Who else needed this today? Say hi in the comments 👋",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "Does your pet have a habit like this? Tell us about it below."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -181,7 +186,10 @@
       "LOOK 👀",
       "HE'S SO PLEASED",
       "HE CAME BACK",
-      "HE'S TRYING"
+      "HE'S TRYING",
+      "HOLD ON 🥹",
+      "HERE WE GO",
+      "ZERO REGRETS"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -232,7 +240,8 @@
       "She has been practising this all week.",
       "Nobody in the family remembers life before this.",
       "This is the cutest thing you'll see all day.",
-      "The tiniest hero you'll meet today."
+      "The tiniest hero you'll meet today.",
+      "Twenty seconds is all this takes. Give it to yourself."
     ],
     "pinned_comments": [
       "Tell us in one word how this made you feel 👇",
@@ -262,7 +271,8 @@
       "New here? Welcome. We do this every single day 🐾",
       "Comment 🐾 and we'll reply to every single one today.",
       "The last three seconds are the reason this exists 🥹",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -313,7 +323,8 @@
       "HIS FIRST TIME",
       "TOOK A MONTH 🥹",
       "SHE HAD NO IDEA",
-      "MADE MY WHOLE WEEK"
+      "MADE MY WHOLE WEEK",
+      "NOT A SINGLE PLAN"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -324,7 +335,8 @@
       "{core} | Tiny Heart, Huge Moment",
       "Not A Dry Eye | {core}",
       "{core} 💛 Wholesome {anchor}",
-      "{core} | Best {anchor} Of The Day"
+      "{core} | Best {anchor} Of The Day",
+      "The Sweetest {anchor} | {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -465,10 +477,12 @@
       "a deaf puppy learning hand signals from a patient toddler",
       "a puppy discovering his own tail exists",
       "a puppy meeting a puddle and deciding to sit in it",
-      "a baby's first giggle triggered by a playful dog"
+      "a baby's first giggle triggered by a playful dog",
+      "a dog who brings his toy to whoever looks sad"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
