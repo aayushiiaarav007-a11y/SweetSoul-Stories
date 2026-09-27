@@ -55,17 +55,21 @@
       "One good thing a day. Subscribe and let us handle it.",
       "Stay for tomorrow's story. It's just as soft as this one.",
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "Subscribe for more of the quiet, lovely parts of the internet."
+      "Subscribe for more of the quiet, lovely parts of the internet.",
+      "Stay a while. We post something gentle here every day.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -82,7 +86,8 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Which one would you take home? Comment your pick.",
       "Does your pet have a habit like this? Tell us about it below.",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -197,7 +202,10 @@
       "ZERO REGRETS",
       "SO CAREFUL",
       "ALMOST OVER, STAY",
-      "THE BEST BIT"
+      "THE BEST BIT",
+      "TINY YAWN",
+      "THERE IT IS",
+      "HER SPOT"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -250,10 +258,12 @@
       "This is the cutest thing you'll see all day.",
       "The tiniest hero you'll meet today.",
       "Twenty seconds is all this takes. Give it to yourself.",
-      "The way this baby laughs will instantly make your day."
+      "The way this baby laughs will instantly make your day.",
+      "Sometimes the smallest creatures carry the biggest love."
     ],
     "pinned_comments": [
-      "We read every comment on this channel. Say something and find out."
+      "We read every comment on this channel. Say something and find out.",
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -306,7 +316,8 @@
       "SHE HAD NO IDEA",
       "MADE MY WHOLE WEEK",
       "NOT A SINGLE PLAN",
-      "THIS MELTED ME"
+      "THIS MELTED ME",
+      "ZERO COORDINATION"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -319,7 +330,8 @@
       "{core} 💛 Wholesome {anchor}",
       "{core} | Best {anchor} Of The Day",
       "The Sweetest {anchor} | {core}",
-      "{core} 🥹 {anchor}"
+      "{core} 🥹 {anchor}",
+      "{anchor}: {core} — Stay Till The End"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -462,12 +474,14 @@
       "a puppy meeting a puddle and deciding to sit in it",
       "a baby's first giggle triggered by a playful dog",
       "a dog who brings his toy to whoever looks sad",
-      "a senior dog getting adopted on his last day at the shelter"
+      "a senior dog getting adopted on his last day at the shelter",
+      "a kitten who sleeps in the fruit bowl and refuses to move"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
