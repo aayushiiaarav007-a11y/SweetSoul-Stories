@@ -6,7 +6,7 @@
     "desc_questions": 12,
     "flashes": 5,
     "hooks": 2,
-    "pinned_comments": 9,
+    "pinned_comments": 10,
     "screen_hooks": 3,
     "title_patterns": 7,
     "topics": 1,
@@ -53,15 +53,19 @@
       "Subscribe — there's a new little moment here every single morning.",
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "One good thing a day. Subscribe and let us handle it.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "Subscribe for more of the quiet, lovely parts of the internet."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -77,7 +81,8 @@
       "Who else needed this today? Say hi in the comments 👋",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Which one would you take home? Comment your pick.",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -189,7 +194,10 @@
       "HE'S TRYING",
       "HOLD ON 🥹",
       "HERE WE GO",
-      "ZERO REGRETS"
+      "ZERO REGRETS",
+      "SO CAREFUL",
+      "ALMOST OVER, STAY",
+      "THE BEST BIT"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -241,38 +249,11 @@
       "Nobody in the family remembers life before this.",
       "This is the cutest thing you'll see all day.",
       "The tiniest hero you'll meet today.",
-      "Twenty seconds is all this takes. Give it to yourself."
+      "Twenty seconds is all this takes. Give it to yourself.",
+      "The way this baby laughs will instantly make your day."
     ],
     "pinned_comments": [
-      "Tell us in one word how this made you feel 👇",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Somebody tell me I'm not the only one who teared up here.",
-      "If this showed up at the right moment for you today, say so 👇",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "We read every comment on this channel. Say something and find out.",
-      "This is the exact kind of thing this channel is for.",
-      "Sound on is a completely different video, by the way 🔊",
-      "Genuine question: how did nobody cry filming this?",
-      "Watched it again while uploading it. No regrets.",
-      "If this made you smile, that's all we wanted today ❤️",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "Name this little one. We're taking suggestions seriously.",
-      "Which second got you? Drop the timestamp and we'll compare.",
-      "Tag the person who always sends you cute animal videos.",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "New here? Welcome. We do this every single day 🐾",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "The last three seconds are the reason this exists 🥹",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Does your pet do this too? I need to know it's not just this one."
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -324,7 +305,8 @@
       "TOOK A MONTH 🥹",
       "SHE HAD NO IDEA",
       "MADE MY WHOLE WEEK",
-      "NOT A SINGLE PLAN"
+      "NOT A SINGLE PLAN",
+      "THIS MELTED ME"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -336,7 +318,8 @@
       "Not A Dry Eye | {core}",
       "{core} 💛 Wholesome {anchor}",
       "{core} | Best {anchor} Of The Day",
-      "The Sweetest {anchor} | {core}"
+      "The Sweetest {anchor} | {core}",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -478,11 +461,13 @@
       "a puppy discovering his own tail exists",
       "a puppy meeting a puddle and deciding to sit in it",
       "a baby's first giggle triggered by a playful dog",
-      "a dog who brings his toy to whoever looks sad"
+      "a dog who brings his toy to whoever looks sad",
+      "a senior dog getting adopted on his last day at the shelter"
     ],
     "voices": [
       "en-GB-SoniaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
