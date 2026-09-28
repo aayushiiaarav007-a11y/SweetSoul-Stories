@@ -22,7 +22,9 @@
       "Subscribe for one small, kind story a day. That's all we do here.",
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -33,7 +35,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "New wholesome moment every single day. Hit subscribe.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
@@ -44,7 +47,8 @@
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -67,7 +71,8 @@
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Who should see this today? Tag them.",
       "Cat person or dog person? Settle it in the comments.",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "NEW BLANKET",
@@ -200,7 +205,10 @@
       "SO TINY",
       "FAST ASLEEP",
       "STILL KNOWS HER",
-      "NO STOPPING HIM"
+      "NO STOPPING HIM",
+      "SLEEPY BOY",
+      "IT'S HAPPENING",
+      "FULL SPEED"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -259,7 +267,8 @@
       "He does not know he is being kind. He just is.",
       "Absolutely nobody asked for this friendship, and yet.",
       "It is the ordinary days that turn out to matter.",
-      "This is what pure joy looks like — and it's adorable."
+      "This is what pure joy looks like — and it's adorable.",
+      "Their first hello turned into their whole friendship."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -268,7 +277,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "The last three seconds are the reason this exists 🥹",
       "Somebody tell me I'm not the only one who teared up here.",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -327,7 +337,8 @@
       "FULL COMMITMENT",
       "STAY FOR 15 SECONDS",
       "HOME AT LAST ❤️",
-      "TOO SMALL TO KNOW"
+      "TOO SMALL TO KNOW",
+      "WAIT FOR IT..."
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -346,7 +357,8 @@
       "{core} (This Got Me) | {anchor}",
       "{core} | {anchor} Compilation Worthy",
       "{anchor} | {core} ❤️",
-      "{core} | Daily Dose Of Cute"
+      "{core} | Daily Dose Of Cute",
+      "How Is This Real 🥺 {core}"
     ],
     "topics": [
       "a puppy's first birthday celebrated by the whole family",
@@ -495,12 +507,14 @@
       "two rescue kittens meeting on their first day home",
       "a puppy who greets every single person on the morning walk",
       "a puppy discovering rain and trying to bite it",
-      "a puppy trying to carry a stick far too big for him"
+      "a puppy trying to carry a stick far too big for him",
+      "a one-eyed cat becoming the most confident pet in the house"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-GB-SoniaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
