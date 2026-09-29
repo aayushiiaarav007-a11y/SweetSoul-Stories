@@ -30,7 +30,9 @@
       "Follow along — the next tiny story is already waiting.",
       "Subscribe and let something gentle find you every day.",
       "Stay for tomorrow's story. It's just as soft as this one.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily."
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe — there's a new little moment here every single morning."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -45,7 +47,8 @@
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
@@ -60,11 +63,13 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -209,7 +214,10 @@
       "PROTECT THEM BOTH",
       "I'M DONE 🥹",
       "SHE APPROVES",
-      "HE REMEMBERED"
+      "HE REMEMBERED",
+      "LOOK HOW LITTLE",
+      "ON DUTY",
+      "CERTIFIED CUTE"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -272,7 +280,8 @@
       "Their first hello turned into their whole friendship.",
       "Nothing dramatic happens here. That's the point.",
       "It only took one afternoon to change everything.",
-      "One of them knows what is going on. It is not him."
+      "One of them knows what is going on. It is not him.",
+      "She has made a decision and there will be no discussion."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -285,7 +294,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Sound on is a completely different video, by the way 🔊",
       "Cat person or dog person? Deciding this in the comments today.",
-      "Which second got you? Drop the timestamp and we'll compare."
+      "Which second got you? Drop the timestamp and we'll compare.",
+      "Tell us in one word how this made you feel 👇"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -348,7 +358,8 @@
       "WAIT FOR IT...",
       "IT GETS BETTER",
       "FIRST SOFT BED",
-      "TRY NOT TO SMILE"
+      "TRY NOT TO SMILE",
+      "ONE MINUTE OLD FRIENDS"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -371,13 +382,16 @@
       "How Is This Real 🥺 {core}",
       "{core} | Save This For A Bad Day",
       "Wait For The End 🥺 {core}",
-      "{core} (Try Not To Smile) | {anchor}"
+      "{core} (Try Not To Smile) | {anchor}",
+      "{core} | You Have To See This"
     ],
     "topics": [
-      "a rescue kitten finding a forever home"
+      "a rescue kitten finding a forever home",
+      "a puppy and kitten cuddling under a warm blanket"
     ],
     "voices": [
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
