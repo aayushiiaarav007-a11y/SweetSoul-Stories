@@ -28,7 +28,8 @@
       "Come back tomorrow. There is always another story worth hearing.",
       "Another story, another lesson, tomorrow. Subscribe and stay with us.",
       "Subscribe, and we will meet again in the next story.",
-      "There is a new story here every day. Come listen tomorrow."
+      "There is a new story here every day. Come listen tomorrow.",
+      "Subscribe, and let a good story be the last thing you hear today."
     ],
     "topics": [
       [
@@ -138,6 +139,10 @@
       [
         "perseverance",
         "a spider who rebuilds her web every single morning"
+      ],
+      [
+        "admitting fault",
+        "a young cook who ruins the village feast and must confess"
       ]
     ]
   }
