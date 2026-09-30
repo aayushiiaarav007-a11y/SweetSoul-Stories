@@ -34,7 +34,9 @@
       "There's a new sweet story here every single day. Come back tomorrow.",
       "Subscribe — there's a new little moment here every single morning.",
       "Follow for more of this. Tomorrow's is already written.",
-      "That's today's dose of soft. Follow for tomorrow's."
+      "That's today's dose of soft. Follow for tomorrow's.",
+      "New story, same warmth, every day. Subscribe so you don't miss it.",
+      "If you smiled, that's the whole job done. Subscribe for more."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -51,7 +53,8 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe and let something gentle reach you every day.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
@@ -68,13 +71,15 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "If you needed a reason to smile today, here it is. {teaser}",
       "This one melted us. {teaser}",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "One word for how this made you feel. Go 👇",
       "Who should see this today? Tag them.",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "If this is your kind of thing, comment 🐾 and we'll make more."
     ],
     "flashes": [
       "NEW BLANKET",
@@ -225,7 +230,10 @@
       "CERTIFIED CUTE",
       "SHE DECIDED",
       "TOO PURE",
-      "THIS ONE HURTS"
+      "THIS ONE HURTS",
+      "AND THEN 🥹",
+      "DID YOU SEE",
+      "SAFE AT LAST"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -290,7 +298,8 @@
       "It only took one afternoon to change everything.",
       "One of them knows what is going on. It is not him.",
       "She has made a decision and there will be no discussion.",
-      "He is trying so hard and it is going so badly."
+      "He is trying so hard and it is going so badly.",
+      "Stop scrolling — you need to see this right now."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -305,7 +314,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "Which second got you? Drop the timestamp and we'll compare.",
       "Tell us in one word how this made you feel 👇",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -370,7 +380,8 @@
       "FIRST SOFT BED",
       "TRY NOT TO SMILE",
       "ONE MINUTE OLD FRIENDS",
-      "NO SUPERVISION HERE"
+      "NO SUPERVISION HERE",
+      "GIVE IT 10 SECONDS"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -395,17 +406,20 @@
       "Wait For The End 🥺 {core}",
       "{core} (Try Not To Smile) | {anchor}",
       "{core} | You Have To See This",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "{anchor} - {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
       "a puppy and kitten cuddling under a warm blanket",
-      "a puppy trying to carry a stick far too big for him"
+      "a puppy trying to carry a stick far too big for him",
+      "a rescue dog meeting the child who chose him"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-AriaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
