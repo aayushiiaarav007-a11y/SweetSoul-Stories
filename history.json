@@ -42,15 +42,19 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "Subscribe — the next small, sweet thing is one day away.",
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "Save this channel for the days you need something soft. Subscribe."
+      "Save this channel for the days you need something soft. Subscribe.",
+      "Stick around. The next one is just as soft as this.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -60,7 +64,8 @@
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Would your pet do the same thing? Tell us below 👇",
       "What should tomorrow's story be about? We read every comment.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -71,7 +76,10 @@
       "SHE DID IT",
       "WARM AND SAFE",
       "ALMOST GOT IT",
-      "ON DUTY"
+      "ON DUTY",
+      "SAME LOVE",
+      "NAILED IT",
+      "NO NOTES"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -140,7 +148,8 @@
       "Stop scrolling — you need to see this right now.",
       "He wasn't supposed to be able to do this yet.",
       "This is what trust looks like when it is brand new.",
-      "Two seconds in and my heart was gone."
+      "Two seconds in and my heart was gone.",
+      "Every morning she does this. Every single morning."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -159,7 +168,8 @@
       "Watched it again while uploading it. No regrets.",
       "Name this little one. We're taking suggestions seriously.",
       "Saving this one for a bad day. Recommend you do the same.",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -228,7 +238,8 @@
       "GIVE IT 10 SECONDS",
       "FOR A HARD DAY",
       "SMALL PAWS BIG HEART",
-      "WATCH HIM THINK"
+      "WATCH HIM THINK",
+      "NOBODY EXPECTED THIS"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -257,7 +268,8 @@
       "{anchor} - {core}",
       "{anchor}: {core} 😭❤️",
       "{anchor} Moment Of The Day | {core}",
-      "{core} | {anchor} Done Right"
+      "{core} | {anchor} Done Right",
+      "Someone Send Help 🥹 {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -266,10 +278,12 @@
       "a rescue dog meeting the child who chose him",
       "a shy shelter dog wagging his tail for the very first time",
       "a baby crawling across the room to reach a sleeping puppy",
-      "a puppy learning to fetch and bringing back the wrong thing"
+      "a puppy learning to fetch and bringing back the wrong thing",
+      "a baby and a dog sharing a picnic blanket in the garden"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
