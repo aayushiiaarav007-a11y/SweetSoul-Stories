@@ -29,7 +29,8 @@
       "Another story, another lesson, tomorrow. Subscribe and stay with us.",
       "Subscribe, and we will meet again in the next story.",
       "There is a new story here every day. Come listen tomorrow.",
-      "Subscribe, and let a good story be the last thing you hear today."
+      "Subscribe, and let a good story be the last thing you hear today.",
+      "Thank you for listening all the way to the end. Subscribe for the next one."
     ],
     "topics": [
       [
@@ -143,6 +144,10 @@
       [
         "admitting fault",
         "a young cook who ruins the village feast and must confess"
+      ],
+      [
+        "trust",
+        "a boy who must rely on a stranger to guide him home in fog"
       ]
     ]
   }
