@@ -50,7 +50,9 @@
       "Follow for daily reminders that small things carry a lot of love.",
       "There is more where this came from. Subscribe and find out.",
       "One good thing a day. Subscribe and let us handle it.",
-      "Come back tomorrow. There's always another small moment worth seeing."
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "Stay a while. We post something gentle here every day."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -59,14 +61,16 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -80,7 +84,8 @@
       "Comment 🥹 if the ending got you too.",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Cat person or dog person? Settle it in the comments.",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -103,7 +108,10 @@
       "EVERY EVENING",
       "WHAT IS THAT",
       "THE EARS",
-      "SO TINY"
+      "SO TINY",
+      "ZERO REGRETS",
+      "BRAVE TODAY",
+      "KEEP GOING"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -176,7 +184,8 @@
       "Every morning she does this. Every single morning.",
       "Watch how she waits for him. She always waits.",
       "Nobody expected this, and it changed everything.",
-      "The best things really are the quiet ones."
+      "The best things really are the quiet ones.",
+      "This one is going to sit with you for a while."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -199,7 +208,8 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "Comment 🐾 and we'll reply to every single one today.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
-      "If this made you smile, that's all we wanted today ❤️"
+      "If this made you smile, that's all we wanted today ❤️",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -272,7 +282,8 @@
       "NOBODY EXPECTED THIS",
       "FIRST TIME OUTSIDE",
       "TWO SECONDS IN 🥹",
-      "THE SAME SPOT DAILY"
+      "THE SAME SPOT DAILY",
+      "WATCH TILL THE END"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -305,7 +316,8 @@
       "Someone Send Help 🥹 {core}",
       "{core} 💕 {anchor} Moment",
       "{core} | Softest Thing Today",
-      "The Internet Loves This {anchor} | {core}"
+      "The Internet Loves This {anchor} | {core}",
+      "{core} | Wholesome {anchor}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -318,14 +330,16 @@
       "a baby and a dog sharing a picnic blanket in the garden",
       "a puppy who waits by the window every day for the school bus",
       "the way a baby laughs every time the dog sneezes",
-      "a cat who wakes the family at the exact same minute daily"
+      "a cat who wakes the family at the exact same minute daily",
+      "a kitten learning to play fetch with a laughing toddler"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-AnaNeural",
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
