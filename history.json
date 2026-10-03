@@ -15,7 +15,9 @@
   "used": {
     "ctas": [
       "Subscribe — the next small, sweet thing is one day away.",
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe — there's a new little moment here every single morning.",
+      "One good thing a day. Subscribe and let us handle it.",
+      "That's all for today. Follow along and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -29,7 +31,8 @@
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe and let something gentle reach you every day.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "Here is your {anchor_lc} moment for today. {teaser}",
@@ -41,7 +44,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "Saving this one for a rough day. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -60,7 +64,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "Who else needed this today? Say hi in the comments 👋",
       "Tag someone who needs to see this right now.",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -98,7 +103,10 @@
       "FIRST NAP HERE",
       "THE PAWS",
       "WE DON'T KNOW EITHER",
-      "HE'S SO PLEASED"
+      "HE'S SO PLEASED",
+      "HOLD ON 🥹",
+      "GOOD LUCK 😅",
+      "WELL THEN 😭"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -176,7 +184,8 @@
       "This is the sweetest thing I've filmed all year.",
       "Try not to smile watching this — I dare you.",
       "This is a good day being made in real time.",
-      "He is far too small to understand what he just did."
+      "He is far too small to understand what he just did.",
+      "This baby's reaction is absolutely priceless."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -204,7 +213,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -282,7 +292,8 @@
       "JUST WAIT 🥺",
       "HE CHECKS ON HER",
       "SOMETHING SOFT TODAY",
-      "TINY BUT MIGHTY"
+      "TINY BUT MIGHTY",
+      "ALMOST TOO CUTE"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -320,7 +331,8 @@
       "Everyone Needs To See This {anchor} | {core}",
       "This Is Why We Love {anchor}s | {core}",
       "{core} — And It Gets Better",
-      "This {anchor} Will Melt Your Heart | {core}"
+      "This {anchor} Will Melt Your Heart | {core}",
+      "Two Seconds In And I Was Gone | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -338,13 +350,15 @@
       "a puppy's first birthday celebrated by the whole family",
       "a puppy who fell asleep holding the toddler's sleeve",
       "a cat who sleeps on the pregnant owner's lap every evening",
-      "a kitten discovering its own reflection for the first time"
+      "a kitten discovering its own reflection for the first time",
+      "a rescue cat who finally let someone hold her"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-JennyNeural",
       "en-US-MichelleNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
