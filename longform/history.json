@@ -30,7 +30,8 @@
       "Subscribe, and we will meet again in the next story.",
       "There is a new story here every day. Come listen tomorrow.",
       "Subscribe, and let a good story be the last thing you hear today.",
-      "Thank you for listening all the way to the end. Subscribe for the next one."
+      "Thank you for listening all the way to the end. Subscribe for the next one.",
+      "If you enjoyed this one, subscribe and we will tell you another tomorrow."
     ],
     "topics": [
       [
@@ -148,6 +149,10 @@
       [
         "trust",
         "a boy who must rely on a stranger to guide him home in fog"
+      ],
+      [
+        "contentment",
+        "a city mouse and a country mouse who swap homes"
       ]
     ]
   }
