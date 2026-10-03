@@ -10,7 +10,7 @@
     "screen_hooks": 3,
     "title_patterns": 7,
     "topics": 2,
-    "voices": 52
+    "voices": 53
   },
   "used": {
     "ctas": [
@@ -19,7 +19,9 @@
       "One good thing a day. Subscribe and let us handle it.",
       "That's all for today. Follow along and we'll see you tomorrow.",
       "If you smiled, that's the whole job done. Subscribe for more.",
-      "If your day got a little better, that's all we wanted. Subscribe for more."
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "Subscribe and let something gentle find you every day."
     ],
     "desc_ctas": [
       "We post daily. Subscribing means the next one finds you without looking.",
@@ -35,7 +37,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "Here is your {anchor_lc} moment for today. {teaser}",
@@ -49,7 +52,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{anchor} alert: {teaser}",
       "This is the soft part of the internet. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
@@ -70,7 +74,8 @@
       "Tag someone who needs to see this right now.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "What should we call this little one? Best comment wins 🏆"
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -114,7 +119,10 @@
       "WELL THEN 😭",
       "STILL GOING",
       "NO SHARING",
-      "THOSE EYES"
+      "THOSE EYES",
+      "TOGETHER NOW",
+      "FIRST TIME",
+      "THIS ONE HURTS"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -194,7 +202,8 @@
       "This is a good day being made in real time.",
       "He is far too small to understand what he just did.",
       "This baby's reaction is absolutely priceless.",
-      "This dog has been waiting for this moment his whole life."
+      "This dog has been waiting for this moment his whole life.",
+      "This is the most serious thing that has ever happened to him."
     ],
     "pinned_comments": [
       "We read every comment on this channel. Say something and find out.",
@@ -224,7 +233,8 @@
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "If this showed up at the right moment for you today, say so 👇",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "SHE LET HIM CLOSE",
@@ -304,7 +314,8 @@
       "SOMETHING SOFT TODAY",
       "TINY BUT MIGHTY",
       "ALMOST TOO CUTE",
-      "SOUND ON 🔊"
+      "SOUND ON 🔊",
+      "SHE RUNS THIS HOUSE"
     ],
     "title_patterns": [
       "{anchor} You Need To See: {core}",
@@ -344,7 +355,8 @@
       "{core} — And It Gets Better",
       "This {anchor} Will Melt Your Heart | {core}",
       "Two Seconds In And I Was Gone | {core}",
-      "{core} — Watch The Last 5 Seconds"
+      "{core} — Watch The Last 5 Seconds",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -364,15 +376,11 @@
       "a cat who sleeps on the pregnant owner's lap every evening",
       "a kitten discovering its own reflection for the first time",
       "a rescue cat who finally let someone hold her",
-      "a kitten discovering a window box full of flowers"
+      "a kitten discovering a window box full of flowers",
+      "a toddler and a fluffy cat playing hide and seek"
     ],
     "voices": [
-      "en-US-AnaNeural",
-      "en-US-JennyNeural",
-      "en-US-MichelleNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-GB-SoniaNeural"
+      "en-US-MichelleNeural"
     ]
   }
 }
