@@ -33,22 +33,27 @@
       "Come back tomorrow. There's always another small moment worth seeing.",
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Subscribe for one small, kind story a day. That's all we do here."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Follow for the softest thirty seconds of your day, daily.",
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
-      "A very short {anchor_lc} story with a very large heart. {teaser}"
+      "A very short {anchor_lc} story with a very large heart. {teaser}",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -113,7 +118,10 @@
       "STILL KNOWS HER",
       "OH DEAR 😅",
       "OH NO 😭",
-      "HE REMEMBERED"
+      "HE REMEMBERED",
+      "PROTECT THEM BOTH",
+      "ONE SECOND MORE",
+      "AGAIN? OKAY"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -200,7 +208,8 @@
       "That little sigh at the end broke me.",
       "This is the exact moment he realises what he has done.",
       "You'll want to share this with everyone you love.",
-      "The bond between these two will warm you to your core."
+      "The bond between these two will warm you to your core.",
+      "This took forty attempts. Here is attempt forty-one."
     ],
     "pinned_comments": [
       "Does your pet do this too? I need to know it's not just this one.",
@@ -208,21 +217,24 @@
       "Tell us in one word how this made you feel 👇",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "If this made you smile, that's all we wanted today ❤️",
-      "Okay but the part at the end though 🥹 What was your favourite second?"
+      "Okay but the part at the end though 🥹 What was your favourite second?",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
       "NOBODY TAUGHT HIM",
       "THE LOOK AT THE END",
       "WATCH WHAT HE DOES",
-      "TINY BUT MIGHTY"
+      "TINY BUT MIGHTY",
+      "SHE LET HIM CLOSE"
     ],
     "title_patterns": [
       "Nobody Expected This | {core}",
       "{core} | Tiny Heart, Huge Moment",
       "{core} | Daily Dose Of Cute",
       "The Internet Loves This {anchor} | {core}",
-      "{core} | {anchor} Done Right"
+      "{core} | {anchor} Done Right",
+      "Not A Dry Eye | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -249,10 +261,12 @@
       "a kitten who adopted a litter of orphaned puppies",
       "a kitten meeting a bowl of water for the first time",
       "a dog gently guarding a sleeping newborn all night",
-      "a kitten who hunts snowflakes through the glass"
+      "a kitten who hunts snowflakes through the glass",
+      "a puppy meeting his reflection and deciding to make friends"
     ],
     "voices": [
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
