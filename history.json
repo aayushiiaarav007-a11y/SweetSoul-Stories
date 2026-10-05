@@ -35,7 +35,9 @@
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "Stay for tomorrow's story. It's just as soft as this one.",
-      "Subscribe for one small, kind story a day. That's all we do here."
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Follow SweetSoul Stories — we keep the gentle ones coming."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -43,17 +45,20 @@
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Which one would you take home? Comment your pick.",
-      "First time here? Say hello in the comments 👋"
+      "First time here? Say hello in the comments 👋",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -121,7 +126,10 @@
       "HE REMEMBERED",
       "PROTECT THEM BOTH",
       "ONE SECOND MORE",
-      "AGAIN? OKAY"
+      "AGAIN? OKAY",
+      "ALWAYS GENTLE",
+      "ONE MORE TIME",
+      "LOOK HOW LITTLE"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -209,7 +217,8 @@
       "This is the exact moment he realises what he has done.",
       "You'll want to share this with everyone you love.",
       "The bond between these two will warm you to your core.",
-      "This took forty attempts. Here is attempt forty-one."
+      "This took forty attempts. Here is attempt forty-one.",
+      "It's the way he checks on her that gets me every time."
     ],
     "pinned_comments": [
       "Does your pet do this too? I need to know it's not just this one.",
@@ -218,7 +227,8 @@
       "Be honest, how many times did you watch this? I'll go first: eleven.",
       "If this made you smile, that's all we wanted today ❤️",
       "Okay but the part at the end though 🥹 What was your favourite second?",
-      "We read every comment on this channel. Say something and find out."
+      "We read every comment on this channel. Say something and find out.",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -226,7 +236,8 @@
       "THE LOOK AT THE END",
       "WATCH WHAT HE DOES",
       "TINY BUT MIGHTY",
-      "SHE LET HIM CLOSE"
+      "SHE LET HIM CLOSE",
+      "DAY ONE AT HOME"
     ],
     "title_patterns": [
       "Nobody Expected This | {core}",
@@ -234,7 +245,8 @@
       "{core} | Daily Dose Of Cute",
       "The Internet Loves This {anchor} | {core}",
       "{core} | {anchor} Done Right",
-      "Not A Dry Eye | {core}"
+      "Not A Dry Eye | {core}",
+      "{core} | {anchor}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -262,11 +274,13 @@
       "a kitten meeting a bowl of water for the first time",
       "a dog gently guarding a sleeping newborn all night",
       "a kitten who hunts snowflakes through the glass",
-      "a puppy meeting his reflection and deciding to make friends"
+      "a puppy meeting his reflection and deciding to make friends",
+      "a kitten who sleeps in the fruit bowl and refuses to move"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
