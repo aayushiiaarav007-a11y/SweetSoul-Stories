@@ -1,37 +1,10 @@
 {
-  "cycles": {},
+  "cycles": {
+    "ctas": 1
+  },
   "used": {
     "ctas": [
-      "Follow along for a gentle story every time you need one.",
-      "There are many more stories like this one. Subscribe so you do not miss them.",
-      "Subscribe, and let us keep telling you stories worth remembering.",
-      "Tell someone this story tonight, and subscribe for the next one.",
-      "Subscribe for a new story, and a new lesson, every single time.",
-      "If your children enjoyed this, subscribe — there is a new one waiting.",
-      "If this warmed you even a little, subscribe for the next one.",
-      "Thank you for staying till the lesson. Subscribe for the next.",
-      "Subscribe for stories the whole family can listen to together.",
-      "If you would like another, subscribe and we will begin again tomorrow.",
-      "Subscribe and let a gentle story find you every day.",
-      "Subscribe for stories that are gentle on the ears and good for the heart.",
-      "Subscribe for calm, kind stories with something worth keeping in them.",
-      "That is the end of today's story. Follow along for tomorrow's.",
-      "Every story here carries a lesson. Subscribe and collect them all.",
-      "If this story stayed with you, subscribe — there is a new one tomorrow.",
-      "We will be here tomorrow with another one. Follow so you find it.",
-      "Subscribe so tomorrow's story reaches you without you having to look.",
-      "Subscribe for a brand-new story every single day!",
-      "Stay with us — tomorrow's story is already waiting for you.",
-      "There is a story here for every night of the week. Subscribe.",
-      "If this one made you think, subscribe — the next may too.",
-      "Subscribe, and share this story with someone small tonight.",
-      "Come back tomorrow. There is always another story worth hearing.",
-      "Another story, another lesson, tomorrow. Subscribe and stay with us.",
-      "Subscribe, and we will meet again in the next story.",
-      "There is a new story here every day. Come listen tomorrow.",
-      "Subscribe, and let a good story be the last thing you hear today.",
-      "Thank you for listening all the way to the end. Subscribe for the next one.",
-      "If you enjoyed this one, subscribe and we will tell you another tomorrow."
+      "If this warmed you even a little, subscribe for the next one."
     ],
     "topics": [
       [
@@ -153,6 +126,10 @@
       [
         "contentment",
         "a city mouse and a country mouse who swap homes"
+      ],
+      [
+        "kindness",
+        "a blind woman and the child who describes the world to her"
       ]
     ]
   }
