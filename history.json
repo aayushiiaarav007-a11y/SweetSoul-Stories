@@ -14,11 +14,14 @@
   },
   "used": {
     "ctas": [
-      "That's all for today. Follow along and we'll see you tomorrow."
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -34,7 +37,8 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
@@ -52,7 +56,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "Comment 🐾 if you watched this more than once.",
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "Who should see this today? Tag them."
+      "Who should see this today? Tag them.",
+      "Does your pet have a habit like this? Tell us about it below."
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -156,7 +161,10 @@
       "HE APPROVES",
       "PROUD OF HER",
       "HE CAME BACK",
-      "NOBODY MOVES"
+      "NOBODY MOVES",
+      "NEVER SEEN THIS",
+      "NEVER FORGOT",
+      "SO CLOSE"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -256,7 +264,8 @@
       "This kind of thing does not happen twice.",
       "This little moment made everyone in the room cry happy tears.",
       "Nobody expected the baby to react like that.",
-      "She has decided he belongs to her now."
+      "She has decided he belongs to her now.",
+      "Somebody is about to be very surprised."
     ],
     "pinned_comments": [
       "Does your pet do this too? I need to know it's not just this one.",
@@ -277,7 +286,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Tag the person who always sends you cute animal videos.",
       "This is the exact kind of thing this channel is for.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "What should tomorrow's story be about? Best idea gets made."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -297,7 +307,8 @@
       "TAKE THIRTY SECONDS",
       "DON'T SCROLL PAST",
       "BEST FRIENDS ALREADY",
-      "VERY PROUD OF HIMSELF"
+      "VERY PROUD OF HIMSELF",
+      "HOME AT LAST ❤️"
     ],
     "title_patterns": [
       "Nobody Expected This | {core}",
@@ -317,7 +328,8 @@
       "Someone Send Help 🥹 {core}",
       "{core} | Wholesome {anchor}",
       "{anchor} Moment Of The Day | {core}",
-      "{core} 💕 {anchor} Moment"
+      "{core} 💕 {anchor} Moment",
+      "{core} | Save This For A Bad Day"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -357,11 +369,13 @@
       "a toddler and a kitten planting seeds in a tiny pot",
       "a puppy howling along to a baby's laughter",
       "a kitten rescued from a drain pipe meeting her new family",
-      "a deaf puppy learning hand signals from a patient toddler"
+      "a deaf puppy learning hand signals from a patient toddler",
+      "a dog who lets the family cat win every single time"
     ],
     "voices": [
       "en-US-AnaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
