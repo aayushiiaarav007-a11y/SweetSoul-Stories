@@ -20,14 +20,17 @@
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "SweetSoul Stories, every day, for the days you need something kind."
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "Subscribe — there's a new little moment here every single morning.",
+      "Stick around. The next one is just as soft as this."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -46,7 +49,8 @@
       "Saving this one for a rough day. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
@@ -67,7 +71,8 @@
       "Who should see this today? Tag them.",
       "Does your pet have a habit like this? Tell us about it below.",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -180,7 +185,10 @@
       "HE'S TRYING",
       "IT WORKED?!",
       "THE TAIL 🥹",
-      "TRY AGAIN BUDDY"
+      "TRY AGAIN BUDDY",
+      "TUCKED IN",
+      "TOO CUTE",
+      "GUARD MODE"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -283,7 +291,8 @@
       "She has decided he belongs to her now.",
       "Somebody is about to be very surprised.",
       "You are about to smile whether you like it or not.",
-      "This is the first time anyone has been gentle with him."
+      "This is the first time anyone has been gentle with him.",
+      "They have known each other for exactly one minute."
     ],
     "pinned_comments": [
       "Does your pet do this too? I need to know it's not just this one.",
@@ -307,7 +316,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "What should tomorrow's story be about? Best idea gets made.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Comment 🐾 and we'll reply to every single one today."
+      "Comment 🐾 and we'll reply to every single one today.",
+      "If this showed up at the right moment for you today, say so 👇"
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -330,7 +340,8 @@
       "VERY PROUD OF HIMSELF",
       "HOME AT LAST ❤️",
       "JUST WAIT 🥺",
-      "THIS IS THE ONE"
+      "THIS IS THE ONE",
+      "THIS JUST HAPPENED"
     ],
     "title_patterns": [
       "Nobody Expected This | {core}",
@@ -353,7 +364,8 @@
       "{core} 💕 {anchor} Moment",
       "{core} | Save This For A Bad Day",
       "{anchor} You Need To See: {core}",
-      "{anchor}: {core} 😭❤️"
+      "{anchor}: {core} 😭❤️",
+      "{core} — And It Gets Better"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -396,14 +408,16 @@
       "a deaf puppy learning hand signals from a patient toddler",
       "a dog who lets the family cat win every single time",
       "a puppy learning that the vacuum is not actually a monster",
-      "a dog who swims in the lake every summer morning"
+      "a dog who swims in the lake every summer morning",
+      "a puppy and a duckling that grew up in the same yard"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
