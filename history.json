@@ -16,12 +16,15 @@
     "ctas": [
       "That's all for today. Follow along and we'll see you tomorrow.",
       "Follow now, and tomorrow's story will be waiting for you.",
-      "Follow along — the next tiny story is already waiting."
+      "Follow along — the next tiny story is already waiting.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "A very short {anchor_lc} story with a very large heart. {teaser}",
@@ -38,7 +41,8 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "Saving this one for a rough day. {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
@@ -57,7 +61,8 @@
       "Comment 🐾 if you watched this more than once.",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Who should see this today? Tag them.",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -164,7 +169,10 @@
       "NOBODY MOVES",
       "NEVER SEEN THIS",
       "NEVER FORGOT",
-      "SO CLOSE"
+      "SO CLOSE",
+      "THE BEST BIT",
+      "WAIT...",
+      "HE'S TRYING"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -265,7 +273,8 @@
       "This little moment made everyone in the room cry happy tears.",
       "Nobody expected the baby to react like that.",
       "She has decided he belongs to her now.",
-      "Somebody is about to be very surprised."
+      "Somebody is about to be very surprised.",
+      "You are about to smile whether you like it or not."
     ],
     "pinned_comments": [
       "Does your pet do this too? I need to know it's not just this one.",
@@ -287,7 +296,8 @@
       "Tag the person who always sends you cute animal videos.",
       "This is the exact kind of thing this channel is for.",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Genuine question: who is cuter here? Reply with your pick 👇"
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -308,7 +318,8 @@
       "DON'T SCROLL PAST",
       "BEST FRIENDS ALREADY",
       "VERY PROUD OF HIMSELF",
-      "HOME AT LAST ❤️"
+      "HOME AT LAST ❤️",
+      "JUST WAIT 🥺"
     ],
     "title_patterns": [
       "Nobody Expected This | {core}",
@@ -329,7 +340,8 @@
       "{core} | Wholesome {anchor}",
       "{anchor} Moment Of The Day | {core}",
       "{core} 💕 {anchor} Moment",
-      "{core} | Save This For A Bad Day"
+      "{core} | Save This For A Bad Day",
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -370,12 +382,14 @@
       "a puppy howling along to a baby's laughter",
       "a kitten rescued from a drain pipe meeting her new family",
       "a deaf puppy learning hand signals from a patient toddler",
-      "a dog who lets the family cat win every single time"
+      "a dog who lets the family cat win every single time",
+      "a puppy learning that the vacuum is not actually a monster"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
