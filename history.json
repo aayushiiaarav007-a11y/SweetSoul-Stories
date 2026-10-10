@@ -40,7 +40,9 @@
       "Tomorrow's story is already waiting for you. Follow along.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "There is more where this came from. Subscribe and find out.",
-      "Subscribe, and let us hand you one good thing every single day."
+      "Subscribe, and let us hand you one good thing every single day.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "Come for one story, stay for the daily ones. Subscribe."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
@@ -57,7 +59,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe and let something gentle reach you every day.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "{anchor} moments like this are why the internet is worth it. {teaser}",
@@ -68,7 +71,8 @@
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "This one melted us. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -76,7 +80,8 @@
       "Who should see this today? Tag them.",
       "Which one would you take home? Comment your pick.",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -219,7 +224,10 @@
       "SLOWLY NOW",
       "FINALLY 🥹",
       "IT'S HAPPENING",
-      "NO BRAKES"
+      "NO BRAKES",
+      "HIS JOB NOW",
+      "FEELS SAFE NOW",
+      "SO MUCH TRYING"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -332,12 +340,14 @@
       "She has never lost this game and she is not about to.",
       "This puppy's first day home is the sweetest thing ever.",
       "This little puppy just became everyone's favorite hero.",
-      "Wait for it, because this will melt your heart."
+      "Wait for it, because this will melt your heart.",
+      "He believes he is enormous. He is not."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
       "Tell us in one word how this made you feel 👇",
-      "Small channel, real replies. Comment and we'll talk 🐾"
+      "Small channel, real replies. Comment and we'll talk 🐾",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -370,7 +380,8 @@
       "WAIT FOR IT...",
       "SHE NEVER MISSES",
       "SMALL PAWS BIG HEART",
-      "SHE HAD NO IDEA"
+      "SHE HAD NO IDEA",
+      "GUARDING HIS BABY"
     ],
     "title_patterns": [
       "Nobody Expected This | {core}",
@@ -403,7 +414,8 @@
       "{core} | Best {anchor} Of The Day",
       "This Is Why We Love {anchor}s | {core}",
       "{anchor} | {core} ❤️",
-      "{core} (Try Not To Smile) | {anchor}"
+      "{core} (Try Not To Smile) | {anchor}",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -456,12 +468,14 @@
       "a puppy meeting the ocean for the first time",
       "a scared puppy who hid for a week and then chose one person",
       "a cat and a baby who both refuse to nap without the other",
-      "a puppy and a goat who both think they are dogs"
+      "a puppy and a goat who both think they are dogs",
+      "a puppy discovering his own tail exists"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-AnaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
