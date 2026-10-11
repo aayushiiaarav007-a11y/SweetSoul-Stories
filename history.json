@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 15,
-    "desc_ctas": 21,
+    "desc_ctas": 22,
     "desc_openers": 19,
     "desc_questions": 15,
     "flashes": 6,
@@ -42,24 +42,11 @@
       "There is more where this came from. Subscribe and find out.",
       "Subscribe, and let us hand you one good thing every single day.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Come for one story, stay for the daily ones. Subscribe."
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Come back tomorrow. There's always another small moment worth seeing."
     ],
     "desc_ctas": [
-      "Follow for the softest thirty seconds of your day, daily.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe and let something gentle reach you every day.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Subscribe for daily proof that the world still has soft edges.",
       "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
@@ -72,7 +59,8 @@
       "This one melted us. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -81,7 +69,8 @@
       "Which one would you take home? Comment your pick.",
       "What was the exact second that got you? Comment the timestamp 👇",
       "Cat person or dog person? Settle it in the comments.",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "GOOD ENOUGH FOR HIM",
@@ -227,7 +216,10 @@
       "NO BRAKES",
       "HIS JOB NOW",
       "FEELS SAFE NOW",
-      "SO MUCH TRYING"
+      "SO MUCH TRYING",
+      "OUT COLD",
+      "WE LOVE HIM",
+      "RIGHT HERE"
     ],
     "hooks": [
       "What this toddler did next left everyone speechless.",
@@ -341,13 +333,15 @@
       "This puppy's first day home is the sweetest thing ever.",
       "This little puppy just became everyone's favorite hero.",
       "Wait for it, because this will melt your heart.",
-      "He believes he is enormous. He is not."
+      "He believes he is enormous. He is not.",
+      "There was no plan here. It just happened."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
       "Tell us in one word how this made you feel 👇",
       "Small channel, real replies. Comment and we'll talk 🐾",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -381,7 +375,8 @@
       "SHE NEVER MISSES",
       "SMALL PAWS BIG HEART",
       "SHE HAD NO IDEA",
-      "GUARDING HIS BABY"
+      "GUARDING HIS BABY",
+      "STAY A SECOND"
     ],
     "title_patterns": [
       "Nobody Expected This | {core}",
@@ -415,7 +410,8 @@
       "This Is Why We Love {anchor}s | {core}",
       "{anchor} | {core} ❤️",
       "{core} (Try Not To Smile) | {anchor}",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "{core} | You Have To See This"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -469,13 +465,15 @@
       "a scared puppy who hid for a week and then chose one person",
       "a cat and a baby who both refuse to nap without the other",
       "a puppy and a goat who both think they are dogs",
-      "a puppy discovering his own tail exists"
+      "a puppy discovering his own tail exists",
+      "a kitten and puppy becoming best friends"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-AnaNeural",
       "en-GB-SoniaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
