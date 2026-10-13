@@ -15,7 +15,9 @@
   "used": {
     "ctas": [
       "Subscribe for the quiet, lovely corner of your feed.",
-      "That's today's dose of soft. Follow for tomorrow's."
+      "That's today's dose of soft. Follow for tomorrow's.",
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "Come for one story, stay for the daily ones. Subscribe."
     ],
     "desc_ctas": [
       "New wholesome story every day. Subscribe so the next one finds you.",
@@ -26,10 +28,12 @@
       "New wholesome moment every single day. Hit subscribe.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -47,7 +51,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Comment 🥹 if the ending got you too.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -68,10 +73,14 @@
       "FIRST NAP HERE",
       "THIS BIT 👇",
       "GOOD ENOUGH FOR HIM",
-      "NAILED IT"
+      "NAILED IT",
+      "NEVER LEAVES",
+      "THERE SHE IS",
+      "BIG WORLD, SMALL PUP"
     ],
     "hooks": [
-      "He has one plan, and it is a bad plan, and it is wonderful."
+      "He has one plan, and it is a bad plan, and it is wonderful.",
+      "You won't believe what this tiny puppy just did."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -86,7 +95,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Watched it again while uploading it. No regrets.",
       "New here? Welcome. We do this every single day 🐾",
-      "Be honest, how many times did you watch this? I'll go first: eleven."
+      "Be honest, how many times did you watch this? I'll go first: eleven.",
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -129,10 +139,12 @@
       "THIS MELTED ME",
       "GOING SO BADLY 😭",
       "NOBODY EXPECTED THIS",
-      "LAST ONE LEFT"
+      "LAST ONE LEFT",
+      "GENTLE GIANT"
     ],
     "title_patterns": [
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "{core} (This Got Me) | {anchor}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -195,10 +207,12 @@
       "a toddler and a puppy jumping in the same puddle",
       "a big dog letting three kittens use him as a bed",
       "a blind kitten who learned the whole house by heart",
-      "a kitten and an old dog who share one favourite chair"
+      "a kitten and an old dog who share one favourite chair",
+      "a kitten who was the last one left at the shelter"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
