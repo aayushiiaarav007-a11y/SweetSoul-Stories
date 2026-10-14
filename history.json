@@ -31,10 +31,13 @@
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
       "SweetSoul Stories, every day, for the days you need something kind.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "One tiny story a day, every day. Subscribe so you catch the next."
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{teaser} The kind of clip you send to one specific person.",
@@ -45,10 +48,12 @@
       "We rewatched this more times than we should admit. {teaser}",
       "This is the soft part of the internet. {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -93,7 +98,10 @@
       "LOOK 👀",
       "THAT LITTLE SIGH",
       "WE DON'T KNOW EITHER",
-      "NOT LIKE THAT"
+      "NOT LIKE THAT",
+      "OUT COLD",
+      "BRAND NEW",
+      "PROTECT THEM BOTH"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -104,7 +112,8 @@
       "The bond between these two will warm you to your core.",
       "Try not to smile watching this — I dare you.",
       "He picked her, not the other way around.",
-      "Keep watching, the best part is hiding at the end."
+      "Keep watching, the best part is hiding at the end.",
+      "This is going about as well as you'd expect."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -127,7 +136,8 @@
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Saving this one for a bad day. Recommend you do the same.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Somebody tell me I'm not the only one who teared up here."
+      "Somebody tell me I'm not the only one who teared up here.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -178,7 +188,8 @@
       "NO SUPERVISION HERE",
       "STAY FOR 15 SECONDS",
       "THE GENTLEST BOY",
-      "STILL WAITING 🥺"
+      "STILL WAITING 🥺",
+      "THIS IS NEW TO HIM"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -189,7 +200,8 @@
       "{anchor} You Need To See: {core}",
       "{core} | {anchor} Done Right",
       "{anchor}: {core}",
-      "{core} 💕 {anchor} Moment"
+      "{core} 💕 {anchor} Moment",
+      "The Internet Loves This {anchor} | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -260,12 +272,14 @@
       "a puppy learning to swim with a laughing toddler cheering",
       "a baby sharing snacks with a patient gentle dog",
       "a kitten who follows the toddler from room to room all day",
-      "a cat who moved her kittens onto the child's bed"
+      "a cat who moved her kittens onto the child's bed",
+      "a cat and a dog sharing one very small sunbeam"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
