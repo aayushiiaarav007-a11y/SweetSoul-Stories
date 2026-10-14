@@ -10,7 +10,7 @@
     "screen_hooks": 4,
     "title_patterns": 9,
     "topics": 2,
-    "voices": 60
+    "voices": 61
   },
   "used": {
     "ctas": [
@@ -25,7 +25,9 @@
       "Follow along — the next tiny story is already waiting.",
       "Stick around. The next one is just as soft as this.",
       "If you smiled, that's the whole job done. Subscribe for more.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Subscribe, and tomorrow this will find you again.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily."
     ],
     "desc_ctas": [
       "New wholesome story every day. Subscribe so the next one finds you.",
@@ -41,7 +43,8 @@
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe and let something gentle reach you every day.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "{teaser} The kind of clip you send to one specific person.",
@@ -49,7 +52,8 @@
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "This one melted us. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -72,7 +76,8 @@
       "Tag someone who needs to see this right now.",
       "One word for how this made you feel. Go 👇",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -108,7 +113,10 @@
       "SOMEHOW YES",
       "ALMOST GOT IT",
       "SO SOFT",
-      "SNORING NOW"
+      "SNORING NOW",
+      "CERTIFIED CUTE",
+      "TOGETHER NOW",
+      "THE BEST BIT"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -116,7 +124,8 @@
       "This little moment made everyone in the room cry happy tears.",
       "This took forty attempts. Here is attempt forty-one.",
       "Watch his ears. That's when you'll know.",
-      "The bond between these two will warm you to your core."
+      "The bond between these two will warm you to your core.",
+      "Try not to smile watching this — I dare you."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -136,7 +145,8 @@
       "Name this little one. We're taking suggestions seriously.",
       "Comment 🐾 and we'll reply to every single one today.",
       "Sound on is a completely different video, by the way 🔊",
-      "Genuine question: who is cuter here? Reply with your pick 👇"
+      "Genuine question: who is cuter here? Reply with your pick 👇",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -184,7 +194,8 @@
       "THIS IS THE GOOD PART",
       "CUTEST THING TODAY",
       "SHE WAITED ALL DAY",
-      "NO SUPERVISION HERE"
+      "NO SUPERVISION HERE",
+      "STAY FOR 15 SECONDS"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -192,7 +203,8 @@
       "{anchor} | {core} ❤️",
       "{core} | Softest Thing Today",
       "{anchor} That Fixed My Whole Day | {core}",
-      "{anchor} You Need To See: {core}"
+      "{anchor} You Need To See: {core}",
+      "{core} | {anchor} Done Right"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -260,15 +272,11 @@
       "a puppy learning to climb stairs with an old dog's help",
       "a shy cat meeting a crawling baby for the first time",
       "a toddler and a kitten sharing a single blanket in winter",
-      "a puppy learning to swim with a laughing toddler cheering"
+      "a puppy learning to swim with a laughing toddler cheering",
+      "a baby sharing snacks with a patient gentle dog"
     ],
     "voices": [
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural",
-      "en-US-AriaNeural",
-      "en-US-MichelleNeural",
-      "en-US-EmmaNeural"
+      "en-GB-SoniaNeural"
     ]
   }
 }
