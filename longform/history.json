@@ -7,7 +7,8 @@
       "If this warmed you even a little, subscribe for the next one.",
       "We will be here tomorrow with another one. Follow so you find it.",
       "Follow along for a gentle story every time you need one.",
-      "Subscribe for calm, kind stories with something worth keeping in them."
+      "Subscribe for calm, kind stories with something worth keeping in them.",
+      "That is the end of today's story. Follow along for tomorrow's."
     ],
     "topics": [
       [
@@ -145,6 +146,10 @@
       [
         "never giving up",
         "a lame calf who learns to climb the hill with the herd"
+      ],
+      [
+        "friendship across differences",
+        "a cat and a mouse who agree to a truce"
       ]
     ]
   }
