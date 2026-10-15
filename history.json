@@ -39,14 +39,17 @@
       "Follow along, and tomorrow we'll find another one of these together.",
       "Follow SweetSoul Stories for your daily dose of joy.",
       "There's a new sweet story here every single day. Come back tomorrow.",
-      "Stay a while. We post something gentle here every day."
+      "Stay a while. We post something gentle here every day.",
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "Subscribe and let something gentle find you every day."
     ],
     "desc_ctas": [
       "Subscribe for daily proof that the world still has soft edges.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "New wholesome moment every single day. Hit subscribe.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "{teaser} The kind of clip you send to one specific person.",
@@ -61,14 +64,16 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "Saving this one for a rough day. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
       "Tag someone who needs to see this right now.",
       "What should we call this little one? Best comment wins 🏆",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -125,7 +130,10 @@
       "GUARD MODE",
       "PROBLEM SOLVED",
       "LIKE CLOCKWORK",
-      "WORTH THE WAIT"
+      "WORTH THE WAIT",
+      "FULL CONCENTRATION",
+      "THAT'S THE ONE",
+      "HIS JOB NOW"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -140,7 +148,8 @@
       "This is going about as well as you'd expect.",
       "That little sigh at the end broke me.",
       "Nobody expected this, and it changed everything.",
-      "Two minutes earlier they were strangers."
+      "Two minutes earlier they were strangers.",
+      "The tiniest hero you'll meet today."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -167,7 +176,8 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "What should tomorrow's story be about? Best idea gets made.",
       "Tag the person who sends you every animal video. It's their turn.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -222,7 +232,8 @@
       "THIS IS NEW TO HIM",
       "FIRST TIME OUTSIDE",
       "LOOK AT HIS FACE",
-      "BAD PLAN, GREAT RESULT"
+      "BAD PLAN, GREAT RESULT",
+      "SOMEONE'S ABOUT TO LOSE"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -237,7 +248,8 @@
       "The Internet Loves This {anchor} | {core}",
       "{core} | Save This For A Bad Day",
       "{core} — Watch The Last 5 Seconds",
-      "{anchor}: {core} — Stay Till The End"
+      "{anchor}: {core} — Stay Till The End",
+      "How Is This Real 🥺 {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -312,10 +324,12 @@
       "a cat and a dog sharing one very small sunbeam",
       "two rescue kittens meeting on their first day home",
       "a puppy's first autumn and a very large pile of leaves",
-      "a cat and a dog who greet each other nose to nose every morning"
+      "a cat and a dog who greet each other nose to nose every morning",
+      "a puppy who greets every single person on the morning walk"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
