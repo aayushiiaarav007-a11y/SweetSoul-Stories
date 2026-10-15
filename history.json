@@ -35,12 +35,15 @@
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "Subscribe, and let us hand you one good thing every single day.",
       "Subscribe — the next small, sweet thing is one day away.",
-      "Follow for more of this. Tomorrow's is already written."
+      "Follow for more of this. Tomorrow's is already written.",
+      "Follow along, and tomorrow we'll find another one of these together.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "Subscribe for daily proof that the world still has soft edges.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "{teaser} The kind of clip you send to one specific person.",
@@ -53,12 +56,14 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{anchor} alert: {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
       "Tag someone who needs to see this right now.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -109,7 +114,10 @@
       "PROTECT THEM BOTH",
       "TRUST 🤍",
       "ALWAYS GENTLE",
-      "MY HEART"
+      "MY HEART",
+      "NO NOTES",
+      "ALMOST 🥺",
+      "GUARD MODE"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -122,7 +130,8 @@
       "He picked her, not the other way around.",
       "Keep watching, the best part is hiding at the end.",
       "This is going about as well as you'd expect.",
-      "That little sigh at the end broke me."
+      "That little sigh at the end broke me.",
+      "Nobody expected this, and it changed everything."
     ],
     "pinned_comments": [
       "The last three seconds are the reason this exists 🥹",
@@ -147,7 +156,8 @@
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Somebody tell me I'm not the only one who teared up here.",
       "Does your pet do this too? I need to know it's not just this one.",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -200,7 +210,8 @@
       "THE GENTLEST BOY",
       "STILL WAITING 🥺",
       "THIS IS NEW TO HIM",
-      "FIRST TIME OUTSIDE"
+      "FIRST TIME OUTSIDE",
+      "LOOK AT HIS FACE"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -213,7 +224,8 @@
       "{anchor}: {core}",
       "{core} 💕 {anchor} Moment",
       "The Internet Loves This {anchor} | {core}",
-      "{core} | Save This For A Bad Day"
+      "{core} | Save This For A Bad Day",
+      "{core} — Watch The Last 5 Seconds"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -286,14 +298,16 @@
       "a kitten who follows the toddler from room to room all day",
       "a cat who moved her kittens onto the child's bed",
       "a cat and a dog sharing one very small sunbeam",
-      "two rescue kittens meeting on their first day home"
+      "two rescue kittens meeting on their first day home",
+      "a puppy's first autumn and a very large pile of leaves"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
       "en-US-EmmaNeural",
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
