@@ -8,7 +8,8 @@
       "We will be here tomorrow with another one. Follow so you find it.",
       "Follow along for a gentle story every time you need one.",
       "Subscribe for calm, kind stories with something worth keeping in them.",
-      "That is the end of today's story. Follow along for tomorrow's."
+      "That is the end of today's story. Follow along for tomorrow's.",
+      "If you would like another, subscribe and we will begin again tomorrow."
     ],
     "topics": [
       [
@@ -150,6 +151,10 @@
       [
         "friendship across differences",
         "a cat and a mouse who agree to a truce"
+      ],
+      [
+        "courage",
+        "a small boy who must cross a dark forest to fetch medicine"
       ]
     ]
   }
