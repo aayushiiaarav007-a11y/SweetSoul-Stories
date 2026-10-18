@@ -22,12 +22,15 @@
       "Come back tomorrow. There's always another small moment worth seeing.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "Follow along, and tomorrow we'll find another one of these together.",
-      "SweetSoul Stories, every day, for the days you need something kind."
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "Follow for more of this. Tomorrow's is already written."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe — one small, kind story lands here every single day.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
@@ -38,7 +41,8 @@
       "{teaser} Small moment, disproportionate effect on your mood.",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -59,7 +63,8 @@
       "Comment 🥹 if the ending got you too.",
       "Which one would you take home? Comment your pick.",
       "What should tomorrow's story be about? We read every comment.",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -158,7 +163,10 @@
       "STILL GOING",
       "NO STOPPING HIM",
       "NEW FAVOURITE",
-      "LOOK AT HIM GO"
+      "LOOK AT HIM GO",
+      "SHE APPROVES",
+      "HERE IT COMES",
+      "WELL THEN 😭"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -187,7 +195,8 @@
       "She has never lost this game and she is not about to.",
       "Some moments are too small to photograph and too big to forget.",
       "This one is going to sit with you for a while.",
-      "Watch till the very end — it gets even better."
+      "Watch till the very end — it gets even better.",
+      "You'll feel this one in your chest."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -199,7 +208,8 @@
       "One word for how this made you feel. Mine was 'oh'.",
       "Genuine question: how did nobody cry filming this?",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -268,7 +278,8 @@
       "NOT A SINGLE PLAN",
       "WATCH TILL THE END",
       "WATCH HIM THINK",
-      "SHE ALWAYS WAITS"
+      "SHE ALWAYS WAITS",
+      "TRY NOT TO SMILE"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -297,7 +308,8 @@
       "This {anchor} Will Melt Your Heart | {core}",
       "Everyone Needs To See This {anchor} | {core}",
       "{core} | You Have To See This",
-      "{core} 💛 Wholesome {anchor}"
+      "{core} 💛 Wholesome {anchor}",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -386,12 +398,14 @@
       "a baby's first steps guided by a loyal gentle dog",
       "a puppy who befriended the neighbour's shy cat over a fence",
       "a puppy trying to fit in a box three sizes too small",
-      "a dog proudly carrying his puppy to meet the family baby"
+      "a dog proudly carrying his puppy to meet the family baby",
+      "a toddler who insists the dog sits at the dinner table"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
