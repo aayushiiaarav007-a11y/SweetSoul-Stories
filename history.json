@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 17,
-    "desc_ctas": 23,
+    "desc_ctas": 24,
     "desc_openers": 21,
     "desc_questions": 16,
     "flashes": 7,
@@ -10,31 +10,18 @@
     "screen_hooks": 4,
     "title_patterns": 9,
     "topics": 2,
-    "voices": 63
+    "voices": 64
   },
   "used": {
     "ctas": [
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "Tomorrow's story is already waiting for you. Follow along.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it."
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
-      "Subscribe for daily proof that the world still has soft edges.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe and let something gentle reach you every day.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
@@ -42,7 +29,8 @@
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -60,7 +48,8 @@
       "Comment 🐾 if you watched this more than once.",
       "First time here? Say hello in the comments 👋",
       "Would your pet do the same thing? Tell us below 👇",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -150,7 +139,10 @@
       "COMMITTED",
       "NEW BLANKET",
       "HIS OWN BED",
-      "PLOT TWIST"
+      "PLOT TWIST",
+      "THIS ONE HURTS",
+      "TAIL GOING WILD",
+      "THE EARS"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -176,7 +168,8 @@
       "There is a right way to do this. He found another way.",
       "This baby's reaction is absolutely priceless.",
       "She was the smallest one there, and the bravest.",
-      "She has never lost this game and she is not about to."
+      "She has never lost this game and she is not about to.",
+      "Some moments are too small to photograph and too big to forget."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -185,7 +178,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "If this made you smile, that's all we wanted today ❤️",
       "Saving this one for a bad day. Recommend you do the same.",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Genuine question: how did nobody cry filming this?"
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -251,7 +245,8 @@
       "THE SAME SPOT DAILY",
       "ZERO COORDINATION",
       "HE THINKS HE'S BIG",
-      "NOT A SINGLE PLAN"
+      "NOT A SINGLE PLAN",
+      "WATCH TILL THE END"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -277,7 +272,8 @@
       "{anchor} - {core}",
       "{anchor} Moment Of The Day | {core}",
       "{core} | Best {anchor} Of The Day",
-      "This {anchor} Will Melt Your Heart | {core}"
+      "This {anchor} Will Melt Your Heart | {core}",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -363,15 +359,11 @@
       "a baby meeting the family cat through a glass door",
       "a cat who checks on every family member before sleeping",
       "a kitten who sits on the book every time someone reads",
-      "a baby's first steps guided by a loyal gentle dog"
+      "a baby's first steps guided by a loyal gentle dog",
+      "a puppy who befriended the neighbour's shy cat over a fence"
     ],
     "voices": [
-      "en-US-EmmaNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural",
-      "en-US-MichelleNeural"
+      "en-US-AnaNeural"
     ]
   }
 }
