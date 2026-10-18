@@ -18,10 +18,13 @@
       "Tomorrow's story is already waiting for you. Follow along.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Stay for tomorrow's story. It's just as soft as this one.",
-      "Subscribe, and let us hand you one good thing every single day."
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Come back tomorrow. There's always another small moment worth seeing.",
+      "New story every day, no exceptions. Follow SweetSoul Stories."
     ],
     "desc_ctas": [
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
@@ -30,7 +33,8 @@
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "A very short {anchor_lc} story with a very large heart. {teaser}"
+      "A very short {anchor_lc} story with a very large heart. {teaser}",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "One word for how this made you feel. Go 👇",
@@ -49,7 +53,8 @@
       "First time here? Say hello in the comments 👋",
       "Would your pet do the same thing? Tell us below 👇",
       "Comment 🥹 if the ending got you too.",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -142,7 +147,10 @@
       "PLOT TWIST",
       "THIS ONE HURTS",
       "TAIL GOING WILD",
-      "THE EARS"
+      "THE EARS",
+      "NO BRAKES",
+      "SHE DECIDED",
+      "STILL GOING"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -169,7 +177,8 @@
       "This baby's reaction is absolutely priceless.",
       "She was the smallest one there, and the bravest.",
       "She has never lost this game and she is not about to.",
-      "Some moments are too small to photograph and too big to forget."
+      "Some moments are too small to photograph and too big to forget.",
+      "This one is going to sit with you for a while."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -179,7 +188,8 @@
       "If this made you smile, that's all we wanted today ❤️",
       "Saving this one for a bad day. Recommend you do the same.",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -246,7 +256,8 @@
       "ZERO COORDINATION",
       "HE THINKS HE'S BIG",
       "NOT A SINGLE PLAN",
-      "WATCH TILL THE END"
+      "WATCH TILL THE END",
+      "WATCH HIM THINK"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -273,7 +284,8 @@
       "{anchor} Moment Of The Day | {core}",
       "{core} | Best {anchor} Of The Day",
       "This {anchor} Will Melt Your Heart | {core}",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "{core} | You Have To See This"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -360,10 +372,12 @@
       "a cat who checks on every family member before sleeping",
       "a kitten who sits on the book every time someone reads",
       "a baby's first steps guided by a loyal gentle dog",
-      "a puppy who befriended the neighbour's shy cat over a fence"
+      "a puppy who befriended the neighbour's shy cat over a fence",
+      "a puppy trying to fit in a box three sizes too small"
     ],
     "voices": [
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
