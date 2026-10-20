@@ -38,7 +38,9 @@
       "Follow SweetSoul Stories for your daily dose of joy.",
       "Subscribe — there's a new little moment here every single morning.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "Subscribe for more of the quiet, lovely parts of the internet."
+      "Subscribe for more of the quiet, lovely parts of the internet.",
+      "Subscribe — the next small, sweet thing is one day away.",
+      "If that helped even a little, subscribe and we'll do it again tomorrow."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -51,7 +53,8 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
@@ -70,13 +73,15 @@
       "{anchor} alert: {teaser}",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "Comment 🐾 if you watched this more than once.",
       "First time here? Say hello in the comments 👋",
       "Tag someone who needs to see this right now.",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -199,7 +204,10 @@
       "APPROVED ✅",
       "TOTALLY WORTH IT",
       "TOO CUTE",
-      "ONE SECOND MORE"
+      "ONE SECOND MORE",
+      "SAME SPOT",
+      "OKAY THEN",
+      "WHAT IS THAT"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -236,7 +244,8 @@
       "This little kitten just stole every heart in the room.",
       "This dog has been waiting for this moment his whole life.",
       "He is very proud of himself and he should be.",
-      "Small paws, enormous heart."
+      "Small paws, enormous heart.",
+      "Confidence: enormous. Coordination: none."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -256,7 +265,8 @@
       "Which second got you? Drop the timestamp and we'll compare.",
       "If this showed up at the right moment for you today, say so 👇",
       "The last three seconds are the reason this exists 🥹",
-      "Small channel, real replies. Comment and we'll talk 🐾"
+      "Small channel, real replies. Comment and we'll talk 🐾",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -333,7 +343,8 @@
       "THE SOFTEST THING",
       "WAIT FOR THE END 🥹",
       "HE JUST KNEW",
-      "HE FINALLY RELAXED"
+      "HE FINALLY RELAXED",
+      "THE QUIET ONES HIT"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -370,7 +381,8 @@
       "{core} — And It Gets Better",
       "This Is Why We Love {anchor}s | {core}",
       "Wait For The End 🥺 {core}",
-      "Two Seconds In And I Was Gone | {core}"
+      "Two Seconds In And I Was Gone | {core}",
+      "{core} | {anchor} Compilation Worthy"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -467,14 +479,16 @@
       "a dog who has never once let the toddler wander off alone",
       "a kitten's first Christmas tree and a lot of poor decisions",
       "a rescue dog who guards the baby's door every night",
-      "a toddler and puppy taking a nap together"
+      "a toddler and puppy taking a nap together",
+      "a kitten watching the first snowfall from a warm windowsill"
     ],
     "voices": [
       "en-US-AnaNeural",
       "en-US-JennyNeural",
       "en-US-MichelleNeural",
       "en-US-AriaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
