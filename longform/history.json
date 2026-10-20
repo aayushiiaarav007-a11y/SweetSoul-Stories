@@ -9,7 +9,8 @@
       "Follow along for a gentle story every time you need one.",
       "Subscribe for calm, kind stories with something worth keeping in them.",
       "That is the end of today's story. Follow along for tomorrow's.",
-      "If you would like another, subscribe and we will begin again tomorrow."
+      "If you would like another, subscribe and we will begin again tomorrow.",
+      "Subscribe, and let us keep telling you stories worth remembering."
     ],
     "topics": [
       [
@@ -155,6 +156,10 @@
       [
         "courage",
         "a small boy who must cross a dark forest to fetch medicine"
+      ],
+      [
+        "never giving up",
+        "a lame calf who learns to climb the hill with the herd"
       ]
     ]
   }
