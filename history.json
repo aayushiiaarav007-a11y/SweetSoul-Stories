@@ -46,7 +46,9 @@
       "Stick around. The next one is just as soft as this.",
       "Follow for daily reminders that small things carry a lot of love.",
       "One good thing a day. Subscribe and let us handle it.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day."
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming."
     ],
     "desc_ctas": [
       "There is a new one of these tomorrow. Subscribe so you catch it.",
@@ -63,12 +65,14 @@
       "New wholesome moment every single day. Hit subscribe.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "Here is your {anchor_lc} moment for today. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{teaser} Pure, simple, wholesome joy in under a minute."
+      "{teaser} Pure, simple, wholesome joy in under a minute.",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "Comment 🐾 if you watched this more than once.",
@@ -78,7 +82,8 @@
       "Who should see this today? Tag them.",
       "Rate this little one out of 10. No wrong answers.",
       "What should tomorrow's story be about? We read every comment.",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "PERFECTLY BALANCED",
@@ -213,7 +218,10 @@
       "ZERO REGRETS",
       "TINY LEGS",
       "FIRST TIME",
-      "DID YOU SEE"
+      "DID YOU SEE",
+      "SHE DID IT",
+      "FAST ASLEEP",
+      "HE DID IT"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -254,7 +262,8 @@
       "Confidence: enormous. Coordination: none.",
       "He wasn't supposed to be able to do this yet.",
       "I've watched this a hundred times and it still gets me.",
-      "This tiny kitten just did something nobody saw coming."
+      "This tiny kitten just did something nobody saw coming.",
+      "This is the kind of story the internet was made for."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -278,7 +287,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Tag the person who sends you every animal video. It's their turn.",
-      "Does your pet do this too? I need to know it's not just this one."
+      "Does your pet do this too? I need to know it's not just this one.",
+      "This is the exact kind of thing this channel is for."
     ],
     "screen_hooks": [
       "TOO SMALL TO KNOW",
@@ -359,7 +369,8 @@
       "THE QUIET ONES HIT",
       "NO WORDS NEEDED",
       "MADE MY WHOLE WEEK",
-      "HE CHECKS ON HER"
+      "HE CHECKS ON HER",
+      "WATCH HER EYES"
     ],
     "title_patterns": [
       "I Watched This 10 Times | {core}",
@@ -400,7 +411,8 @@
       "{core} | {anchor} Compilation Worthy",
       "{core} (Try Not To Smile) | {anchor}",
       "The Sweetest {anchor} | {core}",
-      "Someone Send Help 🥹 {core}"
+      "Someone Send Help 🥹 {core}",
+      "{core} | Wholesome {anchor}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -501,12 +513,14 @@
       "a kitten watching the first snowfall from a warm windowsill",
       "a kitten trying to catch a sunbeam on the wall",
       "a puppy who fell asleep in a basket of warm laundry",
-      "a toddler meeting a litter of newborn puppies"
+      "a toddler meeting a litter of newborn puppies",
+      "a baby falling asleep on a patient old dog's belly"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AriaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
