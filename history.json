@@ -27,7 +27,9 @@
       "Subscribe, and let us hand you one good thing every single day.",
       "Tomorrow's story is already waiting for you. Follow along.",
       "One tiny story a day, every day. Subscribe so you catch the next.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day."
+      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
+      "Stick around. The next one is just as soft as this.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "Subscribe for daily proof that the world still has soft edges.",
@@ -41,7 +43,8 @@
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "Here is your {anchor_lc} moment for today. {teaser}",
@@ -59,7 +62,8 @@
       "Saving this one for a rough day. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "Comment 🐾 if you watched this more than once.",
@@ -82,7 +86,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Would your pet do the same thing? Tell us below 👇",
       "What is your pet's most ridiculous habit? Comment below.",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -104,7 +109,10 @@
       "SO SMALL",
       "WE LOVE HER",
       "THIS ONE HURTS",
-      "ZERO REGRETS"
+      "ZERO REGRETS",
+      "LOOK HOW LITTLE",
+      "HERE WE GO",
+      "SO CLOSE"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -158,7 +166,8 @@
       "It is not going to work, and he is going to try anyway.",
       "Sometimes the smallest creatures carry the biggest love.",
       "The whole house went quiet when this happened.",
-      "The plan was simple. The plan did not survive."
+      "The plan was simple. The plan did not survive.",
+      "This is a very small act of love, caught on camera."
     ],
     "pinned_comments": [
       "Watched it again while uploading it. No regrets.",
@@ -166,7 +175,8 @@
       "We read every comment on this channel. Say something and find out.",
       "Does your pet do this too? I need to know it's not just this one.",
       "Somebody tell me I'm not the only one who teared up here.",
-      "What should tomorrow's story be about? Best idea gets made."
+      "What should tomorrow's story be about? Best idea gets made.",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -180,7 +190,8 @@
       "SHE HAD NO IDEA",
       "JUST WAIT 🥺",
       "WAIT FOR THE END 🥹",
-      "TAKE THIRTY SECONDS"
+      "TAKE THIRTY SECONDS",
+      "HE JUST KNEW"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -194,7 +205,8 @@
       "Two Seconds In And I Was Gone | {core}",
       "{core} 💛 Wholesome {anchor}",
       "{core} (This Got Me) | {anchor}",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "{core} | Tiny Heart, Huge Moment"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -308,13 +320,15 @@
       "a kitten who insists on supervising bath time",
       "a kitten who yawns bigger than his own head",
       "a kitten and a puppy learning to share one water bowl",
-      "a kitten who steals one strawberry every single morning"
+      "a kitten who steals one strawberry every single morning",
+      "a kitten and a parrot who taught each other to whistle"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
       "en-US-AriaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
