@@ -45,14 +45,17 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow."
+      "If that helped even a little, subscribe and we'll do it again tomorrow.",
+      "Subscribe — the next small, sweet thing is one day away.",
+      "One good thing a day. Subscribe and let us handle it."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
@@ -61,7 +64,8 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "Saving this one for a rough day. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -70,7 +74,8 @@
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Who should see this today? Tag them.",
       "Tag someone who needs to see this right now.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -119,7 +124,10 @@
       "SAME LOVE",
       "BRAVE LITTLE THING",
       "HERE IT COMES",
-      "IT WORKED?!"
+      "IT WORKED?!",
+      "WE LOVE HIM",
+      "DIDN'T SEE IT",
+      "ZERO FEAR"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -182,7 +190,8 @@
       "Give this ten seconds. Trust me.",
       "You can actually see the exact moment they become friends.",
       "Some friendships do not need words at all.",
-      "Wait for it, because this will melt your heart."
+      "Wait for it, because this will melt your heart.",
+      "This little rescue story will stay with you all day."
     ],
     "pinned_comments": [
       "Watched it again while uploading it. No regrets.",
@@ -199,7 +208,8 @@
       "Name this little one. We're taking suggestions seriously.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "If this showed up at the right moment for you today, say so 👇"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -222,7 +232,8 @@
       "WATCH WHAT HE DOES",
       "STAY A SECOND",
       "GOING SO BADLY 😭",
-      "HE THINKS HE'S BIG"
+      "HE THINKS HE'S BIG",
+      "LOOK AT HIS FACE"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -245,7 +256,8 @@
       "{anchor}: {core} — Stay Till The End",
       "{core} 🐾 {anchor}",
       "{anchor} Moment Of The Day | {core}",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -368,10 +380,12 @@
       "a dog who brings his toy to whoever looks sad",
       "a dog and a toddler building the world's worst snowman",
       "a three-legged puppy outrunning everyone at the park",
-      "a toddler who packs the puppy a lunch for the park"
+      "a toddler who packs the puppy a lunch for the park",
+      "a cat who greets the baby at the door every single morning"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
