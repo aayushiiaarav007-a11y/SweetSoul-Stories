@@ -10,7 +10,7 @@
     "screen_hooks": 5,
     "title_patterns": 10,
     "topics": 2,
-    "voices": 69
+    "voices": 70
   },
   "used": {
     "ctas": [
@@ -43,13 +43,16 @@
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "If you smiled, that's the whole job done. Subscribe for more.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it."
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "If that helped even a little, subscribe and we'll do it again tomorrow."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
@@ -57,7 +60,8 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -65,7 +69,8 @@
       "Would your pet do the same thing? Tell us below 👇",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Who should see this today? Tag them.",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -111,7 +116,10 @@
       "PROUD OF HIM",
       "NEVER FORGOT",
       "SAME SPOT",
-      "SAME LOVE"
+      "SAME LOVE",
+      "BRAVE LITTLE THING",
+      "HERE IT COMES",
+      "IT WORKED?!"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -173,7 +181,8 @@
       "Their first hello turned into their whole friendship.",
       "Give this ten seconds. Trust me.",
       "You can actually see the exact moment they become friends.",
-      "Some friendships do not need words at all."
+      "Some friendships do not need words at all.",
+      "Wait for it, because this will melt your heart."
     ],
     "pinned_comments": [
       "Watched it again while uploading it. No regrets.",
@@ -189,7 +198,8 @@
       "Saving this one for a bad day. Recommend you do the same.",
       "Name this little one. We're taking suggestions seriously.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Okay but the part at the end though 🥹 What was your favourite second?"
+      "Okay but the part at the end though 🥹 What was your favourite second?",
+      "Genuine question: how did nobody cry filming this?"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -211,7 +221,8 @@
       "HOME AT LAST ❤️",
       "WATCH WHAT HE DOES",
       "STAY A SECOND",
-      "GOING SO BADLY 😭"
+      "GOING SO BADLY 😭",
+      "HE THINKS HE'S BIG"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -233,7 +244,8 @@
       "{core} | {anchor} Compilation Worthy",
       "{anchor}: {core} — Stay Till The End",
       "{core} 🐾 {anchor}",
-      "{anchor} Moment Of The Day | {core}"
+      "{anchor} Moment Of The Day | {core}",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -355,14 +367,10 @@
       "a toddler carefully feeding a bottle to a rescued kitten",
       "a dog who brings his toy to whoever looks sad",
       "a dog and a toddler building the world's worst snowman",
-      "a three-legged puppy outrunning everyone at the park"
+      "a three-legged puppy outrunning everyone at the park",
+      "a toddler who packs the puppy a lunch for the park"
     ],
     "voices": [
-      "en-US-AriaNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AnaNeural",
-      "en-US-JennyNeural",
-      "en-US-EmmaNeural",
       "en-US-MichelleNeural"
     ]
   }
