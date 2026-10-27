@@ -53,7 +53,9 @@
       "Come back tomorrow. There's always another small moment worth seeing.",
       "Follow along — the next tiny story is already waiting.",
       "Subscribe and let something gentle find you every day.",
-      "Stay for tomorrow's story. It's just as soft as this one."
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "Subscribe for more of the quiet, lovely parts of the internet."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -64,7 +66,8 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "New wholesome moment every single day. Hit subscribe.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
@@ -77,7 +80,8 @@
       "This one melted us. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -90,7 +94,8 @@
       "Rate this little one out of 10. No wrong answers.",
       "Comment 🐾 if you watched this more than once.",
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -151,7 +156,10 @@
       "AWWW",
       "BIG WORLD, SMALL PUP",
       "TUCKED IN",
-      "WATCH TO THE END"
+      "WATCH TO THE END",
+      "KEEP GOING",
+      "THERE IT IS",
+      "OH DEAR 😅"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -218,7 +226,8 @@
       "This little rescue story will stay with you all day.",
       "This started as an ordinary Tuesday.",
       "This tiny soul proved that love has no size.",
-      "One small moment, one enormous amount of love."
+      "One small moment, one enormous amount of love.",
+      "This happened by accident — and it's absolutely perfect."
     ],
     "pinned_comments": [
       "Watched it again while uploading it. No regrets.",
@@ -239,7 +248,8 @@
       "If this showed up at the right moment for you today, say so 👇",
       "If this made you smile, that's all we wanted today ❤️",
       "Comment 🐾 and we'll reply to every single one today.",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -266,7 +276,8 @@
       "LOOK AT HIS FACE",
       "GIVE IT 10 SECONDS",
       "SHE NEVER MISSES",
-      "GUARDING HIS BABY"
+      "GUARDING HIS BABY",
+      "KEEP WATCHING"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -293,7 +304,8 @@
       "{core} 🥹 {anchor}",
       "{anchor} That Fixed My Whole Day | {core}",
       "{core} | Daily Dose Of Cute",
-      "{core} | Save This For A Bad Day"
+      "{core} | Save This For A Bad Day",
+      "{core} — Watch The Last 5 Seconds"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -420,14 +432,16 @@
       "a cat who greets the baby at the door every single morning",
       "a toddler meeting the puppy she has been drawing for weeks",
       "a puppy who insists on sleeping in the cat's bed",
-      "a puppy who falls asleep standing up mid-play"
+      "a puppy who falls asleep standing up mid-play",
+      "a puppy who cries until the kitten comes to bed"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-US-AnaNeural",
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
