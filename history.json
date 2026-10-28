@@ -16,7 +16,9 @@
     "ctas": [
       "Subscribe for more of the quiet, lovely parts of the internet.",
       "SweetSoul Stories, every day, for the days you need something kind.",
-      "Stick around. The next one is just as soft as this."
+      "Stick around. The next one is just as soft as this.",
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "If your day got a little better, that's all we wanted. Subscribe for more."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -31,7 +33,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe — one small, kind story lands here every single day.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
@@ -48,7 +51,8 @@
       "{teaser} The kind of clip you send to one specific person.",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -65,7 +69,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "What should we call this little one? Best comment wins 🏆",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -138,7 +143,10 @@
       "MY HEART",
       "NO STOPPING HIM",
       "OKAY THEN",
-      "AGAIN? OKAY"
+      "AGAIN? OKAY",
+      "NO NOTES",
+      "RIGHT ON TIME",
+      "ONE SECOND MORE"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -209,7 +217,8 @@
       "This happened by accident — and it's absolutely perfect.",
       "One tiny decision, and two lives got better.",
       "He is trying so hard and it is going so badly.",
-      "Home found him, not the other way around."
+      "Home found him, not the other way around.",
+      "Look how carefully he does this. Nobody showed him how."
     ],
     "pinned_comments": [
       "Watched it again while uploading it. No regrets.",
@@ -234,7 +243,8 @@
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Cat person or dog person? Deciding this in the comments today.",
       "New here? Welcome. We do this every single day 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -265,7 +275,8 @@
       "KEEP WATCHING",
       "MADE MY WHOLE WEEK",
       "TINY AND FEARLESS",
-      "FIRST SOFT BED"
+      "FIRST SOFT BED",
+      "SOMEBODY PICKED HIM"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -296,7 +307,8 @@
       "{core} — Watch The Last 5 Seconds",
       "I Watched This 10 Times | {core}",
       "Not A Dry Eye | {core}",
-      "How Is This Real 🥺 {core}"
+      "How Is This Real 🥺 {core}",
+      "{anchor} | {core} ❤️"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -427,12 +439,14 @@
       "a puppy who cries until the kitten comes to bed",
       "a dog who sits outside the bathroom door and waits every time",
       "a baby's first word being the family dog's name",
-      "a kitten fascinated by a dripping tap"
+      "a kitten fascinated by a dripping tap",
+      "a dog meeting his new baby sibling at the hospital"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
