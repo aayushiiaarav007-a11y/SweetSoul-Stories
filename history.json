@@ -6,7 +6,7 @@
     "desc_questions": 18,
     "flashes": 8,
     "hooks": 3,
-    "pinned_comments": 14,
+    "pinned_comments": 15,
     "screen_hooks": 5,
     "title_patterns": 10,
     "topics": 2,
@@ -28,17 +28,21 @@
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
       "Subscribe — the next small, sweet thing is one day away.",
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "That's all for today. Follow along and we'll see you tomorrow."
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Follow along, and tomorrow we'll find another one of these together.",
+      "One good thing a day. Subscribe and let us handle it."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe and let something gentle reach you every day.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "We rewatched this more times than we should admit. {teaser}",
       "This one melted us. {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -61,7 +65,8 @@
       "Which one would you take home? Comment your pick.",
       "Does your pet have a habit like this? Tell us about it below.",
       "Who else needed this today? Say hi in the comments 👋",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "If this is your kind of thing, comment 🐾 and we'll make more."
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -152,7 +157,10 @@
       "PLOT TWIST",
       "THE BEST BIT",
       "OH NO 😭",
-      "NO MORE HIDING"
+      "NO MORE HIDING",
+      "NOT LIKE THAT",
+      "HE APPROVES",
+      "WORTH THE WAIT"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -229,38 +237,11 @@
       "Nobody in this house gets any work done anymore.",
       "She has decided he belongs to her now.",
       "What this toddler did next left everyone speechless.",
-      "You will rewind this. I already know."
+      "You will rewind this. I already know.",
+      "Nobody taught him this. He just knew."
     ],
     "pinned_comments": [
-      "Watched it again while uploading it. No regrets.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "We read every comment on this channel. Say something and find out.",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "Somebody tell me I'm not the only one who teared up here.",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "Tag the person who always sends you cute animal videos.",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "Name this little one. We're taking suggestions seriously.",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "Genuine question: how did nobody cry filming this?",
-      "If this showed up at the right moment for you today, say so 👇",
-      "If this made you smile, that's all we wanted today ❤️",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "This is the exact kind of thing this channel is for.",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "New here? Welcome. We do this every single day 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "Tell us in one word how this made you feel 👇",
-      "Sound on is a completely different video, by the way 🔊",
-      "Which second got you? Drop the timestamp and we'll compare.",
-      "The last three seconds are the reason this exists 🥹",
-      "Be honest, how many times did you watch this? I'll go first: eleven."
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -297,7 +278,8 @@
       "ONE MINUTE OLD FRIENDS",
       "STAY FOR 15 SECONDS",
       "NOT A SINGLE PLAN",
-      "STILL WAITING 🥺"
+      "STILL WAITING 🥺",
+      "DAY ONE AT HOME"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -334,7 +316,8 @@
       "{core} | Best {anchor} Of The Day",
       "{anchor} You Need To See: {core}",
       "{core} | Wholesome {anchor}",
-      "{core} | You Have To See This"
+      "{core} | You Have To See This",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -471,12 +454,14 @@
       "an old cat adopted by a family with a newborn",
       "a cat who grooms the puppy every morning without fail",
       "a kitten stealing a baby's toy and returning it",
-      "a puppy meeting a duckling in the backyard"
+      "a puppy meeting a duckling in the backyard",
+      "a puppy who will only sleep if he can hear someone breathing"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
