@@ -26,15 +26,19 @@
       "Subscribe, and let us hand you one good thing every single day.",
       "Follow for more of this. Tomorrow's is already written.",
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Subscribe — the next small, sweet thing is one day away."
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Follow SweetSoul Stories — we keep the gentle ones coming.",
+      "That's all for today. Follow along and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "We rewatched this more times than we should admit. {teaser}",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -56,7 +60,8 @@
       "What should tomorrow's story be about? We read every comment.",
       "Which one would you take home? Comment your pick.",
       "Does your pet have a habit like this? Tell us about it below.",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -144,7 +149,10 @@
       "I'M DONE 🥹",
       "HER SPOT",
       "STILL THERE",
-      "PLOT TWIST"
+      "PLOT TWIST",
+      "THE BEST BIT",
+      "OH NO 😭",
+      "NO MORE HIDING"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -220,7 +228,8 @@
       "Every morning she does this. Every single morning.",
       "Nobody in this house gets any work done anymore.",
       "She has decided he belongs to her now.",
-      "What this toddler did next left everyone speechless."
+      "What this toddler did next left everyone speechless.",
+      "You will rewind this. I already know."
     ],
     "pinned_comments": [
       "Watched it again while uploading it. No regrets.",
@@ -250,7 +259,8 @@
       "Tell us in one word how this made you feel 👇",
       "Sound on is a completely different video, by the way 🔊",
       "Which second got you? Drop the timestamp and we'll compare.",
-      "The last three seconds are the reason this exists 🥹"
+      "The last three seconds are the reason this exists 🥹",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -286,7 +296,8 @@
       "TINY BUT MIGHTY",
       "ONE MINUTE OLD FRIENDS",
       "STAY FOR 15 SECONDS",
-      "NOT A SINGLE PLAN"
+      "NOT A SINGLE PLAN",
+      "STILL WAITING 🥺"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -322,7 +333,8 @@
       "You'll Watch This Twice | {core}",
       "{core} | Best {anchor} Of The Day",
       "{anchor} You Need To See: {core}",
-      "{core} | Wholesome {anchor}"
+      "{core} | Wholesome {anchor}",
+      "{core} | You Have To See This"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -458,11 +470,13 @@
       "a kitten learning to jump and misjudging every distance",
       "an old cat adopted by a family with a newborn",
       "a cat who grooms the puppy every morning without fail",
-      "a kitten stealing a baby's toy and returning it"
+      "a kitten stealing a baby's toy and returning it",
+      "a puppy meeting a duckling in the backyard"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
