@@ -36,7 +36,9 @@
       "Save this channel for the days you need something soft. Subscribe.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
       "Subscribe for the quiet, lovely corner of your feed.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "Stay a while. We post something gentle here every day.",
+      "If that helped even a little, subscribe and we'll do it again tomorrow."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -45,7 +47,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "We rewatched this more times than we should admit. {teaser}",
@@ -54,11 +57,13 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -161,7 +166,10 @@
       "FIRST NAP HERE",
       "MINE NOW",
       "ONE MORE TRY",
-      "LOOK 👀"
+      "LOOK 👀",
+      "PROUD OF HER",
+      "NO SHARING",
+      "EVERY DAY THIS"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -242,13 +250,15 @@
       "Nobody taught him this. He just knew.",
       "Absolutely nobody asked for this friendship, and yet.",
       "This is the sweetest thing I've filmed all year.",
-      "This kind of thing does not happen twice."
+      "This kind of thing does not happen twice.",
+      "This is what trust looks like when it is brand new."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Saving this one for a bad day. Recommend you do the same.",
       "Sound on is a completely different video, by the way 🔊",
-      "We read every comment on this channel. Say something and find out."
+      "We read every comment on this channel. Say something and find out.",
+      "What should tomorrow's story be about? Best idea gets made."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -289,7 +299,8 @@
       "DAY ONE AT HOME",
       "HE CHOSE HER",
       "THIS IS NEW TO HIM",
-      "THIS IS THE GOOD PART"
+      "THIS IS THE GOOD PART",
+      "SOUND ON 🔊"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -330,7 +341,8 @@
       "Nobody Expected This | {core}",
       "{anchor} - {core}",
       "{anchor}: {core} 😭❤️",
-      "Someone Send Help 🥹 {core}"
+      "Someone Send Help 🥹 {core}",
+      "{core} | {anchor} Done Right"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -471,10 +483,12 @@
       "a puppy who will only sleep if he can hear someone breathing",
       "a dog who walks the child to the school gate and back",
       "a toddler reading the alphabet out loud to a listening dog",
-      "a puppy's first trip to the beach and a war with the waves"
+      "a puppy's first trip to the beach and a war with the waves",
+      "a nervous rescue kitten finally purring after a month"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
