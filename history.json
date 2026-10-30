@@ -30,19 +30,23 @@
       "Follow SweetSoul Stories — we keep the gentle ones coming.",
       "That's all for today. Follow along and we'll see you tomorrow.",
       "Follow along, and tomorrow we'll find another one of these together.",
-      "One good thing a day. Subscribe and let us handle it."
+      "One good thing a day. Subscribe and let us handle it.",
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe and let something gentle reach you every day.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "We rewatched this more times than we should admit. {teaser}",
       "This one melted us. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "First time here? Say hello in the comments 👋",
@@ -66,7 +70,8 @@
       "Does your pet have a habit like this? Tell us about it below.",
       "Who else needed this today? Say hi in the comments 👋",
       "One word for how this made you feel. Go 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "What was the exact second that got you? Comment the timestamp 👇"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -160,7 +165,10 @@
       "NO MORE HIDING",
       "NOT LIKE THAT",
       "HE APPROVES",
-      "WORTH THE WAIT"
+      "WORTH THE WAIT",
+      "NEW BLANKET",
+      "WELL THEN 😭",
+      "PURE JOY"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -238,10 +246,12 @@
       "She has decided he belongs to her now.",
       "What this toddler did next left everyone speechless.",
       "You will rewind this. I already know.",
-      "Nobody taught him this. He just knew."
+      "Nobody taught him this. He just knew.",
+      "Absolutely nobody asked for this friendship, and yet."
     ],
     "pinned_comments": [
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -279,7 +289,8 @@
       "STAY FOR 15 SECONDS",
       "NOT A SINGLE PLAN",
       "STILL WAITING 🥺",
-      "DAY ONE AT HOME"
+      "DAY ONE AT HOME",
+      "HE CHOSE HER"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -317,7 +328,8 @@
       "{anchor} You Need To See: {core}",
       "{core} | Wholesome {anchor}",
       "{core} | You Have To See This",
-      "Nobody Expected This | {core}"
+      "Nobody Expected This | {core}",
+      "{anchor} - {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -455,13 +467,15 @@
       "a cat who grooms the puppy every morning without fail",
       "a kitten stealing a baby's toy and returning it",
       "a puppy meeting a duckling in the backyard",
-      "a puppy who will only sleep if he can hear someone breathing"
+      "a puppy who will only sleep if he can hear someone breathing",
+      "a dog who walks the child to the school gate and back"
     ],
     "voices": [
       "en-US-EmmaNeural",
       "en-US-JennyNeural",
       "en-GB-SoniaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
