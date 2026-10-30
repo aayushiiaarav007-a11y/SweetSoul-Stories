@@ -10,7 +10,7 @@
     "screen_hooks": 5,
     "title_patterns": 10,
     "topics": 2,
-    "voices": 72
+    "voices": 73
   },
   "used": {
     "ctas": [
@@ -34,7 +34,9 @@
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "Subscribe to SweetSoul Stories and let the good part reach you daily.",
       "Save this channel for the days you need something soft. Subscribe.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it."
+      "We'll be back tomorrow with another one. Follow so you don't miss it.",
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -42,7 +44,8 @@
       "Subscribe — this channel exists for exactly the day you're having.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Follow for the softest thirty seconds of your day, daily."
+      "Follow for the softest thirty seconds of your day, daily.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "We rewatched this more times than we should admit. {teaser}",
@@ -50,10 +53,12 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "A very short {anchor_lc} story with a very large heart. {teaser}"
+      "A very short {anchor_lc} story with a very large heart. {teaser}",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
-      "Rate this little one out of 10. No wrong answers."
+      "Rate this little one out of 10. No wrong answers.",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -153,7 +158,10 @@
       "PURE JOY",
       "THERE SHE IS",
       "ALMOST 🥺",
-      "FIRST NAP HERE"
+      "FIRST NAP HERE",
+      "MINE NOW",
+      "ONE MORE TRY",
+      "LOOK 👀"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -233,12 +241,14 @@
       "You will rewind this. I already know.",
       "Nobody taught him this. He just knew.",
       "Absolutely nobody asked for this friendship, and yet.",
-      "This is the sweetest thing I've filmed all year."
+      "This is the sweetest thing I've filmed all year.",
+      "This kind of thing does not happen twice."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Saving this one for a bad day. Recommend you do the same.",
-      "Sound on is a completely different video, by the way 🔊"
+      "Sound on is a completely different video, by the way 🔊",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -278,7 +288,8 @@
       "STILL WAITING 🥺",
       "DAY ONE AT HOME",
       "HE CHOSE HER",
-      "THIS IS NEW TO HIM"
+      "THIS IS NEW TO HIM",
+      "THIS IS THE GOOD PART"
     ],
     "title_patterns": [
       "This {anchor} Will Melt Your Heart | {core}",
@@ -318,7 +329,8 @@
       "{core} | You Have To See This",
       "Nobody Expected This | {core}",
       "{anchor} - {core}",
-      "{anchor}: {core} 😭❤️"
+      "{anchor}: {core} 😭❤️",
+      "Someone Send Help 🥹 {core}"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -458,15 +470,11 @@
       "a puppy meeting a duckling in the backyard",
       "a puppy who will only sleep if he can hear someone breathing",
       "a dog who walks the child to the school gate and back",
-      "a toddler reading the alphabet out loud to a listening dog"
+      "a toddler reading the alphabet out loud to a listening dog",
+      "a puppy's first trip to the beach and a war with the waves"
     ],
     "voices": [
-      "en-US-EmmaNeural",
-      "en-US-JennyNeural",
-      "en-GB-SoniaNeural",
-      "en-US-AriaNeural",
-      "en-US-MichelleNeural",
-      "en-US-AnaNeural"
+      "en-US-JennyNeural"
     ]
   }
 }
