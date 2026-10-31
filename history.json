@@ -40,7 +40,9 @@
       "Stay a while. We post something gentle here every day.",
       "If that helped even a little, subscribe and we'll do it again tomorrow.",
       "Come for one story, stay for the daily ones. Subscribe.",
-      "Follow for daily reminders that small things carry a lot of love."
+      "Follow for daily reminders that small things carry a lot of love.",
+      "There is more where this came from. Subscribe and find out.",
+      "If you needed this today, subscribe — we'll be here again tomorrow."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -51,7 +53,8 @@
       "Follow for the softest thirty seconds of your day, daily.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "Subscribe — one small, kind story lands here every single day."
     ],
     "desc_openers": [
       "We rewatched this more times than we should admit. {teaser}",
@@ -62,13 +65,15 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
       "Who else needed this today? Say hi in the comments 👋",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -177,7 +182,10 @@
       "EVERY DAY THIS",
       "LIKE CLOCKWORK",
       "EARS UP 🥺",
-      "NEVER SEEN THIS"
+      "NEVER SEEN THIS",
+      "WATCH THIS",
+      "TOO CUTE",
+      "PROUD BOY"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -260,7 +268,8 @@
       "This is the sweetest thing I've filmed all year.",
       "This kind of thing does not happen twice.",
       "This is what trust looks like when it is brand new.",
-      "There is nothing careful about this, and that is the beauty."
+      "There is nothing careful about this, and that is the beauty.",
+      "He believes he is enormous. He is not."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -268,7 +277,8 @@
       "Sound on is a completely different video, by the way 🔊",
       "We read every comment on this channel. Say something and find out.",
       "What should tomorrow's story be about? Best idea gets made.",
-      "Tag the person who sends you every animal video. It's their turn."
+      "Tag the person who sends you every animal video. It's their turn.",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -311,10 +321,12 @@
       "THIS IS NEW TO HIM",
       "THIS IS THE GOOD PART",
       "SOUND ON 🔊",
-      "SHE WAITED ALL DAY"
+      "SHE WAITED ALL DAY",
+      "FULL COMMITMENT"
     ],
     "title_patterns": [
-      "{anchor} | {core} ❤️"
+      "{anchor} | {core} ❤️",
+      "{core} | Tiny Heart, Huge Moment"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -457,12 +469,14 @@
       "a toddler reading the alphabet out loud to a listening dog",
       "a puppy's first trip to the beach and a war with the waves",
       "a nervous rescue kitten finally purring after a month",
-      "a baby meeting a giant gentle dog and reaching out"
+      "a baby meeting a giant gentle dog and reaching out",
+      "twin babies playing with a gentle giant dog"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-EmmaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
