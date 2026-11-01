@@ -50,7 +50,9 @@
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe and let something gentle find you every day."
+      "Subscribe and let something gentle find you every day.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "There's a new sweet story here every single day. Come back tomorrow."
     ],
     "desc_ctas": [
       "One good thing a day. Subscribe and we'll handle the rest.",
@@ -66,7 +68,8 @@
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "New wholesome moment every single day. Hit subscribe.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "We rewatched this more times than we should admit. {teaser}",
@@ -82,7 +85,8 @@
       "{anchor} alert: {teaser}",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
@@ -93,7 +97,8 @@
       "Which one would you take home? Comment your pick.",
       "What should we call this little one? Best comment wins 🏆",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -217,7 +222,10 @@
       "HE HAS OPINIONS",
       "HE DID IT",
       "NO BRAKES",
-      "HIS OWN WAY"
+      "HIS OWN WAY",
+      "NOT MOVING",
+      "WE DON'T KNOW EITHER",
+      "ON DUTY"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -305,7 +313,8 @@
       "Stop scrolling — you need to see this right now.",
       "This is your sign to be gentle with something small today.",
       "Watch him think about it. That's the best bit.",
-      "Nobody expected the baby to react like that."
+      "Nobody expected the baby to react like that.",
+      "This little face was waiting all week for this."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -318,7 +327,8 @@
       "The last three seconds are the reason this exists 🥹",
       "One word for how this made you feel. Mine was 'oh'.",
       "Tell us in one word how this made you feel 👇",
-      "If this made you smile, that's all we wanted today ❤️"
+      "If this made you smile, that's all we wanted today ❤️",
+      "Genuine question: how did nobody cry filming this?"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -366,7 +376,8 @@
       "THE SAME SPOT DAILY",
       "BEST FRIENDS ALREADY",
       "TOOK A MONTH 🥹",
-      "NO WORDS NEEDED"
+      "NO WORDS NEEDED",
+      "VERY PROUD OF HIMSELF"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -374,7 +385,8 @@
       "{core} | You Have To See This",
       "{core} (This Got Me) | {anchor}",
       "{core} (Try Not To Smile) | {anchor}",
-      "{anchor} That Fixed My Whole Day | {core}"
+      "{anchor} That Fixed My Whole Day | {core}",
+      "{core} | Best {anchor} Of The Day"
     ],
     "topics": [
       "a rescue kitten finding a forever home",
@@ -522,11 +534,13 @@
       "an old dog teaching a clumsy puppy how to be calm",
       "a kitten and a baby discovering bubbles together",
       "a rescue puppy meeting his new brother, a three-legged dog",
-      "a dog who learned to be gentle only around the baby"
+      "a dog who learned to be gentle only around the baby",
+      "a baby and a cat playing peekaboo through a doorway"
     ],
     "voices": [
       "en-US-MichelleNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
