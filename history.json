@@ -17,17 +17,21 @@
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
       "Save this channel for the days you need something soft. Subscribe.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Follow for more of this. Tomorrow's is already written."
+      "Follow for more of this. Tomorrow's is already written.",
+      "Stay for tomorrow's story. It's just as soft as this one.",
+      "Tomorrow's story is already waiting for you. Follow along."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Follow for the softest thirty seconds of your day, daily.",
       "We post daily. Subscribing means the next one finds you without looking.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
@@ -44,7 +48,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "What should tomorrow's story be about? We read every comment.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -186,7 +191,10 @@
       "WAIT...",
       "FULL CONCENTRATION",
       "ALMOST GOT IT",
-      "NOBODY MOVES"
+      "NOBODY MOVES",
+      "GUARD MODE",
+      "MAKES NO SENSE",
+      "SLEEPY BOY"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -280,7 +288,8 @@
       "This is what happens when nobody is supervising.",
       "This is what being chosen looks like.",
       "Nothing dramatic happens here. That's the point.",
-      "She has made a decision and there will be no discussion."
+      "She has made a decision and there will be no discussion.",
+      "Watch what happens the second she turns around."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -299,7 +308,8 @@
       "Comment 🐾 and we'll reply to every single one today.",
       "Which second got you? Drop the timestamp and we'll compare.",
       "Somebody tell me I'm not the only one who teared up here.",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -353,7 +363,8 @@
       "ATTEMPT FORTY-ONE",
       "THIS IS TRUST",
       "SHE ALWAYS WAITS",
-      "WATCH TILL THE END"
+      "WATCH TILL THE END",
+      "THE GENTLEST BOY"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -367,15 +378,18 @@
       "{core} | {anchor} Done Right",
       "{core} | Save This For A Bad Day",
       "{core} 💕 {anchor} Moment",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "I Watched This 10 Times | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
-      "a kitten meeting a bowl of water for the first time"
+      "a kitten meeting a bowl of water for the first time",
+      "a kitten who steals one strawberry every single morning"
     ],
     "voices": [
       "en-GB-SoniaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
