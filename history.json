@@ -15,15 +15,19 @@
   "used": {
     "ctas": [
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Save this channel for the days you need something soft. Subscribe."
+      "Save this channel for the days you need something soft. Subscribe.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "Follow for more of this. Tomorrow's is already written."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
@@ -39,7 +43,8 @@
       "Comment 🐾 if you watched this more than once.",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "What should tomorrow's story be about? We read every comment."
+      "What should tomorrow's story be about? We read every comment.",
+      "Comment where you're watching from — we love seeing the map fill up 🌍"
     ],
     "flashes": [
       "TOTALLY WORTH IT",
@@ -178,7 +183,10 @@
       "HIS OWN BED",
       "OUT COLD",
       "APPROVED ✅",
-      "WAIT..."
+      "WAIT...",
+      "FULL CONCENTRATION",
+      "ALMOST GOT IT",
+      "NOBODY MOVES"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -271,7 +279,8 @@
       "This is what pure joy looks like — and it's adorable.",
       "This is what happens when nobody is supervising.",
       "This is what being chosen looks like.",
-      "Nothing dramatic happens here. That's the point."
+      "Nothing dramatic happens here. That's the point.",
+      "She has made a decision and there will be no discussion."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -289,7 +298,8 @@
       "New here? Welcome. We do this every single day 🐾",
       "Comment 🐾 and we'll reply to every single one today.",
       "Which second got you? Drop the timestamp and we'll compare.",
-      "Somebody tell me I'm not the only one who teared up here."
+      "Somebody tell me I'm not the only one who teared up here.",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -342,7 +352,8 @@
       "SMALL PAWS BIG HEART",
       "ATTEMPT FORTY-ONE",
       "THIS IS TRUST",
-      "SHE ALWAYS WAITS"
+      "SHE ALWAYS WAITS",
+      "WATCH TILL THE END"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -355,13 +366,16 @@
       "The Sweetest {anchor} | {core}",
       "{core} | {anchor} Done Right",
       "{core} | Save This For A Bad Day",
-      "{core} 💕 {anchor} Moment"
+      "{core} 💕 {anchor} Moment",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
-      "a puppy meeting a puddle and deciding to sit in it"
+      "a puppy meeting a puddle and deciding to sit in it",
+      "a kitten meeting a bowl of water for the first time"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
