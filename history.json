@@ -29,7 +29,9 @@
       "There is more where this came from. Subscribe and find out.",
       "Subscribe for one small, kind story a day. That's all we do here.",
       "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily."
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -41,7 +43,8 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -51,7 +54,8 @@
       "{teaser} Small moment, disproportionate effect on your mood.",
       "We rewatched this more times than we should admit. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "Rate this little one out of 10. No wrong answers.",
@@ -74,7 +78,8 @@
       "Does your pet have a habit like this? Tell us about it below.",
       "Would your pet do the same thing? Tell us below 👇",
       "First time here? Say hello in the comments 👋",
-      "What was the exact second that got you? Comment the timestamp 👇"
+      "What was the exact second that got you? Comment the timestamp 👇",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -82,7 +87,10 @@
       "I'M DONE 🥹",
       "BRAVE LITTLE THING",
       "FIRST NAP HERE",
-      "STILL GOING"
+      "STILL GOING",
+      "SO SOFT",
+      "FINALLY 🥹",
+      "FIRST TIME"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -182,7 +190,8 @@
       "This is going to be your favourite thirty seconds today.",
       "A baby, a puppy, and a moment you'll never forget.",
       "This is the most serious thing that has ever happened to him.",
-      "This might be the softest thing on the internet today."
+      "This might be the softest thing on the internet today.",
+      "Two seconds in and my heart was gone."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -207,7 +216,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "Name this little one. We're taking suggestions seriously.",
-      "Be honest, how many times did you watch this? I'll go first: eleven."
+      "Be honest, how many times did you watch this? I'll go first: eleven.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -267,7 +277,8 @@
       "SHE PICKED THE BABY",
       "THE SOFTEST THING",
       "BAD PLAN, GREAT RESULT",
-      "GENTLE GIANT"
+      "GENTLE GIANT",
+      "THIS JUST HAPPENED"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -287,7 +298,8 @@
       "{core} — Watch The Last 5 Seconds",
       "{core} | Daily Dose Of Cute",
       "Someone Send Help 🥹 {core}",
-      "Nobody Expected This | {core}"
+      "Nobody Expected This | {core}",
+      "The Internet Loves This {anchor} | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -297,11 +309,13 @@
       "a toddler and a fluffy cat playing hide and seek",
       "a dog who walks the child to the school gate and back",
       "a shy cat meeting a crawling baby for the first time",
-      "a one-eyed cat becoming the most confident pet in the house"
+      "a one-eyed cat becoming the most confident pet in the house",
+      "a rescue dog meeting the child who chose him"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
