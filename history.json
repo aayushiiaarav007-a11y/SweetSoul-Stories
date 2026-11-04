@@ -10,7 +10,7 @@
     "screen_hooks": 5,
     "title_patterns": 11,
     "topics": 3,
-    "voices": 76
+    "voices": 77
   },
   "used": {
     "ctas": [
@@ -37,7 +37,9 @@
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "Follow now, and tomorrow's story will be waiting for you.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -53,7 +55,8 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Subscribe — one small, kind story lands here every single day.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -67,11 +70,13 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "{anchor} alert: {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "Comment 🥹 if the ending got you too."
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -91,7 +96,10 @@
       "COMMITTED",
       "SO TINY",
       "MINE NOW",
-      "SAME SPOT"
+      "SAME SPOT",
+      "FULL CONCENTRATION",
+      "OUT COLD",
+      "FAST ASLEEP"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -195,7 +203,8 @@
       "Two seconds in and my heart was gone.",
       "Watch how she waits for him. She always waits.",
       "This is the good part of the internet.",
-      "Somebody is about to be very surprised."
+      "Somebody is about to be very surprised.",
+      "One look and this little one had a home."
     ],
     "pinned_comments": [
       "If you made it to the end, you're my favourite kind of person 🤍",
@@ -224,7 +233,8 @@
       "Does your pet do this too? I need to know it's not just this one.",
       "If this showed up at the right moment for you today, say so 👇",
       "Watched it again while uploading it. No regrets.",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "Rate the ending out of 10 — I'm giving it a firm 10."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -288,7 +298,8 @@
       "THIS JUST HAPPENED",
       "WATCH HIM THINK",
       "FOR A HARD DAY",
-      "EVERY SINGLE MORNING"
+      "EVERY SINGLE MORNING",
+      "THIS IS THE ONE"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -312,7 +323,8 @@
       "The Internet Loves This {anchor} | {core}",
       "Wait For The End 🥺 {core}",
       "{core} | {anchor} Compilation Worthy",
-      "{anchor} - {core}"
+      "{anchor} - {core}",
+      "{core} | Proof The Internet Is Fine"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -326,14 +338,10 @@
       "a rescue dog meeting the child who chose him",
       "a puppy and a lamb who follow each other everywhere",
       "a puppy who brings one sock to every visitor as a gift",
-      "a cat and a dog sharing one very small sunbeam"
+      "a cat and a dog sharing one very small sunbeam",
+      "a rescue dog who guards the baby's door every night"
     ],
     "voices": [
-      "en-US-EmmaNeural",
-      "en-US-AriaNeural",
-      "en-GB-SoniaNeural",
-      "en-US-MichelleNeural",
-      "en-US-AnaNeural",
       "en-US-JennyNeural"
     ]
   }
