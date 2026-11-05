@@ -45,11 +45,14 @@
       "Subscribe, and tomorrow this will find you again.",
       "Subscribe, and let us hand you one good thing every single day.",
       "That's all for today. Follow along and we'll see you tomorrow.",
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe — there's a new little moment here every single morning.",
+      "There's a new sweet story here every single day. Come back tomorrow.",
+      "Subscribe for more of the quiet, lovely parts of the internet."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Subscribe and let something gentle reach you every day."
     ],
     "desc_openers": [
       "This one melted us. {teaser}",
@@ -67,7 +70,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -75,7 +79,8 @@
       "Comment 🥹 if the ending got you too.",
       "Comment 🐾 if you watched this more than once.",
       "Who else needed this today? Say hi in the comments 👋",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -107,7 +112,10 @@
       "OH NO 😭",
       "KEEP GOING",
       "HE'S TRYING",
-      "BIG WORLD, SMALL PUP"
+      "BIG WORLD, SMALL PUP",
+      "FULL SPEED",
+      "SO SMALL",
+      "HIS OWN BED"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -215,11 +223,13 @@
       "One look and this little one had a home.",
       "It took four seconds for these two to become inseparable.",
       "He does not know he is being kind. He just is.",
-      "It's the way he checks on her that gets me every time."
+      "It's the way he checks on her that gets me every time.",
+      "You are about to smile whether you like it or not."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
-      "Somebody tell me I'm not the only one who teared up here."
+      "Somebody tell me I'm not the only one who teared up here.",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -287,7 +297,8 @@
       "THIS IS THE ONE",
       "THE ENDING THOUGH",
       "WATCH HER EYES",
-      "NO SUPERVISION HERE"
+      "NO SUPERVISION HERE",
+      "SOMEONE'S ABOUT TO LOSE"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -315,7 +326,8 @@
       "{core} | Proof The Internet Is Fine",
       "This Is Why We Love {anchor}s | {core}",
       "{anchor} Moment Of The Day | {core}",
-      "{core} | {anchor}"
+      "{core} | {anchor}",
+      "{core} — And It Gets Better"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -333,13 +345,15 @@
       "a rescue dog who guards the baby's door every night",
       "a kitten learning to play fetch with a laughing toddler",
       "a dog who has never once let the toddler wander off alone",
-      "a puppy found in a box who now has his own armchair"
+      "a puppy found in a box who now has his own armchair",
+      "a puppy who fell asleep in a basket of warm laundry"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AnaNeural",
       "en-US-AriaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
