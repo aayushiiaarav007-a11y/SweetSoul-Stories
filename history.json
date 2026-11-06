@@ -51,17 +51,21 @@
       "One good thing a day. Subscribe and let us handle it.",
       "SweetSoul Stories, every day, for the days you need something kind.",
       "Come for one story, stay for the daily ones. Subscribe.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily."
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "New story, same warmth, every day. Subscribe so you don't miss it."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Subscribe and let something gentle reach you every day.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -72,7 +76,8 @@
       "One word for how this made you feel. Go 👇",
       "First time here? Say hello in the comments 👋",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "What should we call this little one? Best comment wins 🏆"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -113,7 +118,10 @@
       "WATCH THIS",
       "WAIT...",
       "NOT MOVING",
-      "HE REMEMBERED"
+      "HE REMEMBERED",
+      "HERE WE GO",
+      "TAIL GOING WILD",
+      "RIGHT HERE"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -224,14 +232,16 @@
       "It's the way he checks on her that gets me every time.",
       "You are about to smile whether you like it or not.",
       "He is far too small to understand what he just did.",
-      "This is the exact moment he realises what he has done."
+      "This is the exact moment he realises what he has done.",
+      "It is the ordinary days that turn out to matter."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
       "Somebody tell me I'm not the only one who teared up here.",
       "Cat person or dog person? Deciding this in the comments today.",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "Watched it again while uploading it. No regrets."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -302,7 +312,8 @@
       "NO SUPERVISION HERE",
       "SOMEONE'S ABOUT TO LOSE",
       "PURE JOY INCOMING",
-      "FIRST TIME OUTSIDE"
+      "FIRST TIME OUTSIDE",
+      "NOBODY EXPECTED THIS"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -333,7 +344,8 @@
       "{core} | {anchor}",
       "{core} — And It Gets Better",
       "{anchor}: {core} 😭❤️",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "{core} 💛 Wholesome {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -354,10 +366,12 @@
       "a puppy found in a box who now has his own armchair",
       "a puppy who fell asleep in a basket of warm laundry",
       "a baby sharing snacks with a patient gentle dog",
-      "a kitten who sits on the windowsill until the car comes home"
+      "a kitten who sits on the windowsill until the car comes home",
+      "a puppy's first birthday celebrated by the whole family"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
