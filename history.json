@@ -55,7 +55,9 @@
       "Every day, one gentle story. Subscribe and let it find you.",
       "New story, same warmth, every day. Subscribe so you don't miss it.",
       "Stay a while. We post something gentle here every day.",
-      "That's today's dose of soft. Follow for tomorrow's."
+      "That's today's dose of soft. Follow for tomorrow's.",
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
@@ -64,12 +66,14 @@
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
       "This is the soft part of the internet. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "{anchor} moments like this are why the internet is worth it. {teaser}"
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -82,7 +86,8 @@
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "Tag someone who needs to see this right now.",
       "What should we call this little one? Best comment wins 🏆",
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -129,7 +134,10 @@
       "RIGHT HERE",
       "SLEEPY BOY",
       "THE PAWS",
-      "THAT FACE"
+      "THAT FACE",
+      "HER SPOT",
+      "THE TAIL 🥹",
+      "SAFE AT LAST"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -242,7 +250,8 @@
       "He is far too small to understand what he just did.",
       "This is the exact moment he realises what he has done.",
       "It is the ordinary days that turn out to matter.",
-      "The best things really are the quiet ones."
+      "The best things really are the quiet ones.",
+      "They have known each other for exactly one minute."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -251,7 +260,8 @@
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Watched it again while uploading it. No regrets.",
-      "Which second got you? Drop the timestamp and we'll compare."
+      "Which second got you? Drop the timestamp and we'll compare.",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -324,7 +334,8 @@
       "PURE JOY INCOMING",
       "FIRST TIME OUTSIDE",
       "NOBODY EXPECTED THIS",
-      "FIRST HELLO ❤️"
+      "FIRST HELLO ❤️",
+      "NOBODY TAUGHT HIM"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -357,7 +368,8 @@
       "{anchor}: {core} 😭❤️",
       "{anchor}: {core}",
       "{core} 💛 Wholesome {anchor}",
-      "How Is This Real 🥺 {core}"
+      "How Is This Real 🥺 {core}",
+      "{core} | Softest Thing Today"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -380,12 +392,14 @@
       "a baby sharing snacks with a patient gentle dog",
       "a kitten who sits on the windowsill until the car comes home",
       "a puppy's first birthday celebrated by the whole family",
-      "a cat who sleeps on the pregnant owner's lap every evening"
+      "a cat who sleeps on the pregnant owner's lap every evening",
+      "a kitten's first Christmas tree and a lot of poor decisions"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-MichelleNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
