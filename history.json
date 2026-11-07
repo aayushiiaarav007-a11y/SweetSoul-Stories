@@ -10,13 +10,15 @@
     "screen_hooks": 5,
     "title_patterns": 11,
     "topics": 3,
-    "voices": 78
+    "voices": 79
   },
   "used": {
     "ctas": [
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
-      "Save this channel for the days you need something soft. Subscribe."
+      "Save this channel for the days you need something soft. Subscribe.",
+      "If you smiled, that's the whole job done. Subscribe for more.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
@@ -28,7 +30,8 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe — this channel exists for exactly the day you're having.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -36,7 +39,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "This one melted us. {teaser}",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -52,7 +56,8 @@
       "What is your pet's most ridiculous habit? Comment below.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
       "Which part made you smile the most? Tell us in the comments 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -108,7 +113,10 @@
       "HE'S SO PLEASED",
       "DIDN'T SEE IT",
       "SLOWLY NOW",
-      "SHE DECIDED"
+      "SHE DECIDED",
+      "HERE IT COMES",
+      "OH DEAR 😅",
+      "SHE WAITED"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -224,7 +232,8 @@
       "The best things really are the quiet ones.",
       "They have known each other for exactly one minute.",
       "She had no idea he'd been waiting by the door all morning.",
-      "This little puppy just became everyone's favorite hero."
+      "This little puppy just became everyone's favorite hero.",
+      "I did not expect to cry over a puppy today, but here we are."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -236,7 +245,8 @@
       "Which second got you? Drop the timestamp and we'll compare.",
       "Tag the person who sends you every animal video. It's their turn.",
       "Tell us in one word how this made you feel 👇",
-      "If this made you smile, that's all we wanted today ❤️"
+      "If this made you smile, that's all we wanted today ❤️",
+      "Tag the person who always sends you cute animal videos."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -312,7 +322,8 @@
       "FIRST HELLO ❤️",
       "NOBODY TAUGHT HIM",
       "SHE LET HIM CLOSE",
-      "TRY NOT TO SMILE"
+      "TRY NOT TO SMILE",
+      "THE LOOK AT THE END"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -348,7 +359,8 @@
       "How Is This Real 🥺 {core}",
       "{core} | Softest Thing Today",
       "Two Seconds In And I Was Gone | {core}",
-      "Not A Dry Eye | {core}"
+      "Not A Dry Eye | {core}",
+      "{anchor}: {core} — Stay Till The End"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -374,15 +386,11 @@
       "a cat who sleeps on the pregnant owner's lap every evening",
       "a kitten's first Christmas tree and a lot of poor decisions",
       "a puppy discovering his own tail exists",
-      "a kitten meeting a feather and losing the fight"
+      "a kitten meeting a feather and losing the fight",
+      "a kitten who tucks in a newborn baby every night"
     ],
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-US-MichelleNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-US-EmmaNeural",
-      "en-US-AnaNeural"
+      "en-GB-SoniaNeural"
     ]
   }
 }
