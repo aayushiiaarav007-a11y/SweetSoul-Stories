@@ -1,6 +1,6 @@
 {
   "cycles": {
-    "ctas": 20,
+    "ctas": 21,
     "desc_ctas": 29,
     "desc_openers": 26,
     "desc_questions": 20,
@@ -14,50 +14,7 @@
   },
   "used": {
     "ctas": [
-      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "Save this channel for the days you need something soft. Subscribe.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Follow for more of this. Tomorrow's is already written.",
-      "Stay for tomorrow's story. It's just as soft as this one.",
-      "Tomorrow's story is already waiting for you. Follow along.",
-      "Subscribe — the next small, sweet thing is one day away.",
-      "Follow along — the next tiny story is already waiting.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "Stick around. The next one is just as soft as this.",
-      "Come back tomorrow. There's always another small moment worth seeing.",
-      "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "There is more where this came from. Subscribe and find out.",
-      "Subscribe for one small, kind story a day. That's all we do here.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "If you smiled, that's the whole job done. Subscribe for more.",
-      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "One tiny story a day, every day. Subscribe so you catch the next.",
-      "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "New story every day, no exceptions. Follow SweetSoul Stories.",
-      "Follow now, and tomorrow's story will be waiting for you.",
-      "Follow for daily reminders that small things carry a lot of love.",
-      "Subscribe for the quiet, lovely corner of your feed.",
-      "If your day got a little better, that's all we wanted. Subscribe for more.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Follow along, and tomorrow we'll find another one of these together.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "Subscribe, and tomorrow this will find you again.",
-      "Subscribe, and let us hand you one good thing every single day.",
-      "That's all for today. Follow along and we'll see you tomorrow.",
-      "Subscribe — there's a new little moment here every single morning.",
-      "There's a new sweet story here every single day. Come back tomorrow.",
-      "Subscribe for more of the quiet, lovely parts of the internet.",
-      "One good thing a day. Subscribe and let us handle it.",
-      "SweetSoul Stories, every day, for the days you need something kind.",
-      "Come for one story, stay for the daily ones. Subscribe.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "Every day, one gentle story. Subscribe and let it find you.",
-      "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "Stay a while. We post something gentle here every day.",
-      "That's today's dose of soft. Follow for tomorrow's.",
-      "Follow SweetSoul Stories for your daily dose of joy.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming."
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
@@ -67,13 +24,15 @@
       "If you want more of this in your feed, subscribing is the whole trick.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
       "This is the soft part of the internet. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -87,7 +46,8 @@
       "Tag someone who needs to see this right now.",
       "What should we call this little one? Best comment wins 🏆",
       "What is your pet's most ridiculous habit? Comment below.",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -137,7 +97,10 @@
       "THAT FACE",
       "HER SPOT",
       "THE TAIL 🥹",
-      "SAFE AT LAST"
+      "SAFE AT LAST",
+      "PROBLEM SOLVED",
+      "SHE DID IT",
+      "HE'S SO PLEASED"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -251,7 +214,8 @@
       "This is the exact moment he realises what he has done.",
       "It is the ordinary days that turn out to matter.",
       "The best things really are the quiet ones.",
-      "They have known each other for exactly one minute."
+      "They have known each other for exactly one minute.",
+      "She had no idea he'd been waiting by the door all morning."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -261,7 +225,8 @@
       "Rate the ending out of 10 — I'm giving it a firm 10.",
       "Watched it again while uploading it. No regrets.",
       "Which second got you? Drop the timestamp and we'll compare.",
-      "Tag the person who sends you every animal video. It's their turn."
+      "Tag the person who sends you every animal video. It's their turn.",
+      "Tell us in one word how this made you feel 👇"
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -335,7 +300,8 @@
       "FIRST TIME OUTSIDE",
       "NOBODY EXPECTED THIS",
       "FIRST HELLO ❤️",
-      "NOBODY TAUGHT HIM"
+      "NOBODY TAUGHT HIM",
+      "SHE LET HIM CLOSE"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -369,7 +335,8 @@
       "{anchor}: {core}",
       "{core} 💛 Wholesome {anchor}",
       "How Is This Real 🥺 {core}",
-      "{core} | Softest Thing Today"
+      "{core} | Softest Thing Today",
+      "Two Seconds In And I Was Gone | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -393,13 +360,15 @@
       "a kitten who sits on the windowsill until the car comes home",
       "a puppy's first birthday celebrated by the whole family",
       "a cat who sleeps on the pregnant owner's lap every evening",
-      "a kitten's first Christmas tree and a lot of poor decisions"
+      "a kitten's first Christmas tree and a lot of poor decisions",
+      "a puppy discovering his own tail exists"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-MichelleNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
