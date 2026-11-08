@@ -26,7 +26,9 @@
       "Stay for tomorrow's story. It's just as soft as this one.",
       "Subscribe for daily proof that the world still has soft edges.",
       "There's a new sweet story here every single day. Come back tomorrow.",
-      "Follow SweetSoul Stories for your daily dose of joy."
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "Subscribe to SweetSoul Stories and let the good part reach you daily."
     ],
     "desc_ctas": [
       "Follow for the softest thirty seconds of your day, daily.",
@@ -43,7 +45,8 @@
       "Subscribe — one small, kind story lands here every single day.",
       "New wholesome moment every single day. Hit subscribe.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -56,7 +59,8 @@
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -77,7 +81,8 @@
       "Who should see this today? Tag them.",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Would your pet do the same thing? Tell us below 👇",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -148,7 +153,10 @@
       "CAME OUT AT LAST",
       "ONE MORE TIME",
       "NOBODY MOVES",
-      "THIS ONE HURTS"
+      "THIS ONE HURTS",
+      "PROTECT THEM BOTH",
+      "SHE APPROVES",
+      "BEST FRIENDS"
     ],
     "hooks": [
       "He has one plan, and it is a bad plan, and it is wonderful.",
@@ -269,7 +277,8 @@
       "Nobody in that room stayed dry-eyed.",
       "You'll want to share this with everyone you love.",
       "This is the part of the day everyone waits for.",
-      "This is the sound of somebody being happy."
+      "This is the sound of somebody being happy.",
+      "The way this baby laughs will instantly make your day."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -286,7 +295,8 @@
       "The last three seconds are the reason this exists 🥹",
       "Name this little one. We're taking suggestions seriously.",
       "Saving this one for a bad day. Recommend you do the same.",
-      "This is the exact kind of thing this channel is for."
+      "This is the exact kind of thing this channel is for.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "THE QUIET ONES HIT",
@@ -367,7 +377,8 @@
       "WAIT FOR IT...",
       "IT GETS BETTER",
       "HE FINALLY RELAXED",
-      "THIS MELTED ME"
+      "THIS MELTED ME",
+      "SHE RUNS THIS HOUSE"
     ],
     "title_patterns": [
       "{anchor} | {core} ❤️",
@@ -408,7 +419,8 @@
       "You'll Watch This Twice | {core}",
       "{core} 🐾 {anchor}",
       "{core} | Wholesome {anchor}",
-      "This {anchor} Will Melt Your Heart | {core}"
+      "This {anchor} Will Melt Your Heart | {core}",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -439,14 +451,16 @@
       "a baby crawling across the room to reach a sleeping puppy",
       "a big dog letting three kittens use him as a bed",
       "a puppy meeting a duckling in the backyard",
-      "a dog meeting his new baby sibling at the hospital"
+      "a dog meeting his new baby sibling at the hospital",
+      "a kitten who was the last one left at the shelter"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-AriaNeural",
       "en-US-MichelleNeural",
       "en-US-AnaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
