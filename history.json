@@ -44,7 +44,9 @@
       "That's today's dose of soft. Follow for tomorrow's.",
       "Subscribe — there's a new little moment here every single morning.",
       "Subscribe — the next small, sweet thing is one day away.",
-      "Subscribe, and let us hand you one good thing every single day."
+      "Subscribe, and let us hand you one good thing every single day.",
+      "If your day got a little better, that's all we wanted. Subscribe for more.",
+      "We'll be back tomorrow with another one. Follow so you don't miss it."
     ],
     "desc_ctas": [
       "Subscribe and let something gentle reach you every day.",
@@ -54,18 +56,21 @@
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "If you want more of this in your feed, subscribing is the whole trick.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
-      "{teaser} Nothing dramatic happens here, and that is exactly the point."
+      "{teaser} Nothing dramatic happens here, and that is exactly the point.",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
       "What was the exact second that got you? Comment the timestamp 👇",
       "First time here? Say hello in the comments 👋",
       "Cat person or dog person? Settle it in the comments.",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "One word for how this made you feel. Go 👇"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -163,7 +168,10 @@
       "WATCH TO THE END",
       "NAILED IT",
       "PERFECTLY BALANCED",
-      "SO MUCH TRYING"
+      "SO MUCH TRYING",
+      "GOOD ENOUGH FOR HIM",
+      "PLOT TWIST",
+      "AWWW"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -173,7 +181,8 @@
       "Keep watching, the best part is hiding at the end.",
       "Two seconds in and my heart was gone.",
       "You won't believe what this tiny puppy just did.",
-      "There is nothing careful about this, and that is the beauty."
+      "There is nothing careful about this, and that is the beauty.",
+      "This little moment made everyone in the room cry happy tears."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -199,7 +208,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Be honest, how many times did you watch this? I'll go first: eleven."
+      "Be honest, how many times did you watch this? I'll go first: eleven.",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -209,7 +219,8 @@
       "GIVE IT 10 SECONDS",
       "THIS IS TRUST",
       "SHE ALWAYS WAITS",
-      "EVERY SINGLE MORNING"
+      "EVERY SINGLE MORNING",
+      "THE SOFTEST THING"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -219,7 +230,8 @@
       "{core} | {anchor} Compilation Worthy",
       "{core} — Watch The Last 5 Seconds",
       "Wait For The End 🥺 {core}",
-      "You'll Watch This Twice | {core}"
+      "You'll Watch This Twice | {core}",
+      "{anchor}: {core} — Stay Till The End"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -259,11 +271,13 @@
       "a puppy's first car ride with his head out the window",
       "a dog who adopted an abandoned kitten as his own",
       "a kitten and a puppy learning to share one water bowl",
-      "a kitten who has claimed the warmest laundry basket"
+      "a kitten who has claimed the warmest laundry basket",
+      "a baby falling asleep on a patient old dog's belly"
     ],
     "voices": [
       "en-US-MichelleNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
