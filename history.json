@@ -38,14 +38,17 @@
       "That's all for today. Follow along and we'll see you tomorrow.",
       "New story, same warmth, every day. Subscribe so you don't miss it.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "Subscribe and let something gentle find you every day."
+      "Subscribe and let something gentle find you every day.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily."
     ],
     "desc_ctas": [
       "Subscribe and let something gentle reach you every day.",
       "New wholesome moment every single day. Hit subscribe.",
       "Follow for the softest thirty seconds of your day, daily.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -64,11 +67,13 @@
       "{teaser} The kind of clip you send to one specific person.",
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "We rewatched this more times than we should admit. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
-      "What was the exact second that got you? Comment the timestamp 👇"
+      "What was the exact second that got you? Comment the timestamp 👇",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -157,14 +162,18 @@
       "LIKE CLOCKWORK",
       "ALMOST GOT IT",
       "ALMOST 🥺",
-      "HE APPROVES"
+      "HE APPROVES",
+      "TOO PURE",
+      "NEVER FORGOT",
+      "HE DID IT"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
       "Okay, you have to see what happens in about four seconds.",
       "Nobody expected this, and it changed everything.",
       "What happened next made the whole family burst into tears.",
-      "Keep watching, the best part is hiding at the end."
+      "Keep watching, the best part is hiding at the end.",
+      "Two seconds in and my heart was gone."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -187,21 +196,24 @@
       "Genuine question: how did nobody cry filming this?",
       "Okay but the part at the end though 🥹 What was your favourite second?",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "Small channel, real replies. Comment and we'll talk 🐾"
+      "Small channel, real replies. Comment and we'll talk 🐾",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
       "HE THINKS HE'S BIG",
       "THIS JUST HAPPENED",
       "SHE LET HIM CLOSE",
-      "GIVE IT 10 SECONDS"
+      "GIVE IT 10 SECONDS",
+      "THIS IS TRUST"
     ],
     "title_patterns": [
       "{anchor}: {core}",
       "{core} (Try Not To Smile) | {anchor}",
       "{core} | Best {anchor} Of The Day",
       "{core} | {anchor} Done Right",
-      "{core} | {anchor} Compilation Worthy"
+      "{core} | {anchor} Compilation Worthy",
+      "{core} — Watch The Last 5 Seconds"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -238,14 +250,16 @@
       "a puppy who carries his blanket everywhere he goes",
       "a puppy who befriended the neighbour's shy cat over a fence",
       "a senior dog getting adopted on his last day at the shelter",
-      "a puppy's first car ride with his head out the window"
+      "a puppy's first car ride with his head out the window",
+      "a dog who adopted an abandoned kitten as his own"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-GB-SoniaNeural",
       "en-US-MichelleNeural",
       "en-US-EmmaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
