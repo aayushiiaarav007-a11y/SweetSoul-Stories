@@ -42,7 +42,9 @@
       "One tiny story a day, every day. Subscribe so you catch the next.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "That's today's dose of soft. Follow for tomorrow's.",
-      "Subscribe — there's a new little moment here every single morning."
+      "Subscribe — there's a new little moment here every single morning.",
+      "Subscribe — the next small, sweet thing is one day away.",
+      "Subscribe, and let us hand you one good thing every single day."
     ],
     "desc_ctas": [
       "Subscribe and let something gentle reach you every day.",
@@ -51,16 +53,19 @@
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "If you want more of this in your feed, subscribing is the whole trick.",
-      "If this made your day, subscribing takes two seconds and keeps them coming."
+      "If this made your day, subscribing takes two seconds and keeps them coming.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
       "What was the exact second that got you? Comment the timestamp 👇",
       "First time here? Say hello in the comments 👋",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -155,7 +160,10 @@
       "HE DID IT",
       "HIS OWN WAY",
       "TINY LEGS",
-      "WATCH TO THE END"
+      "WATCH TO THE END",
+      "NAILED IT",
+      "PERFECTLY BALANCED",
+      "SO MUCH TRYING"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -164,7 +172,8 @@
       "What happened next made the whole family burst into tears.",
       "Keep watching, the best part is hiding at the end.",
       "Two seconds in and my heart was gone.",
-      "You won't believe what this tiny puppy just did."
+      "You won't believe what this tiny puppy just did.",
+      "There is nothing careful about this, and that is the beauty."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -189,7 +198,8 @@
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "One word for how this made you feel. Mine was 'oh'."
+      "One word for how this made you feel. Mine was 'oh'.",
+      "Be honest, how many times did you watch this? I'll go first: eleven."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -198,7 +208,8 @@
       "SHE LET HIM CLOSE",
       "GIVE IT 10 SECONDS",
       "THIS IS TRUST",
-      "SHE ALWAYS WAITS"
+      "SHE ALWAYS WAITS",
+      "EVERY SINGLE MORNING"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -207,7 +218,8 @@
       "{core} | {anchor} Done Right",
       "{core} | {anchor} Compilation Worthy",
       "{core} — Watch The Last 5 Seconds",
-      "Wait For The End 🥺 {core}"
+      "Wait For The End 🥺 {core}",
+      "You'll Watch This Twice | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -246,10 +258,12 @@
       "a senior dog getting adopted on his last day at the shelter",
       "a puppy's first car ride with his head out the window",
       "a dog who adopted an abandoned kitten as his own",
-      "a kitten and a puppy learning to share one water bowl"
+      "a kitten and a puppy learning to share one water bowl",
+      "a kitten who has claimed the warmest laundry basket"
     ],
     "voices": [
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
