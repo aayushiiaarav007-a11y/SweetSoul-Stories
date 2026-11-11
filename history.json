@@ -6,7 +6,7 @@
     "desc_questions": 21,
     "flashes": 9,
     "hooks": 4,
-    "pinned_comments": 16,
+    "pinned_comments": 17,
     "screen_hooks": 6,
     "title_patterns": 12,
     "topics": 3,
@@ -54,7 +54,9 @@
       "Stick around. The next one is just as soft as this.",
       "Stay a while. We post something gentle here every day.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "Come for one story, stay for the daily ones. Subscribe."
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Follow along — the next tiny story is already waiting."
     ],
     "desc_ctas": [
       "Subscribe and let something gentle reach you every day.",
@@ -69,7 +71,8 @@
       "Subscribe — one small, kind story lands here every single day.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "New wholesome story every day. Subscribe so the next one finds you.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
@@ -78,7 +81,8 @@
       "If you needed a reason to smile today, here it is. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
       "This is the soft part of the internet. {teaser}",
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -90,7 +94,8 @@
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Comment 🐾 if you watched this more than once."
+      "Comment 🐾 if you watched this more than once.",
+      "Would your pet do the same thing? Tell us below 👇"
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -203,7 +208,10 @@
       "TUCKED IN",
       "RIGHT ON TIME",
       "WE DON'T KNOW EITHER",
-      "NEW FAVOURITE"
+      "NEW FAVOURITE",
+      "WARM AND SAFE",
+      "SOMEHOW YES",
+      "NO NOTES"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -218,38 +226,11 @@
       "She has never lost this game and she is not about to.",
       "Watch what happens the second she turns around.",
       "He picked her, not the other way around.",
-      "I've watched this a hundred times and it still gets me."
+      "I've watched this a hundred times and it still gets me.",
+      "This is the most serious thing that has ever happened to him."
     ],
     "pinned_comments": [
-      "New here? Welcome. We do this every single day 🐾",
-      "Somebody tell me I'm not the only one who teared up here.",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Watched it again while uploading it. No regrets.",
-      "Which second got you? Drop the timestamp and we'll compare.",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "Tell us in one word how this made you feel 👇",
-      "If this made you smile, that's all we wanted today ❤️",
-      "Tag the person who always sends you cute animal videos.",
-      "The last three seconds are the reason this exists 🥹",
-      "Name this little one. We're taking suggestions seriously.",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "This is the exact kind of thing this channel is for.",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "Sound on is a completely different video, by the way 🔊",
-      "Genuine question: how did nobody cry filming this?",
-      "Okay but the part at the end though 🥹 What was your favourite second?",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "We read every comment on this channel. Say something and find out.",
-      "If this showed up at the right moment for you today, say so 👇",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Comment 🐾 and we'll reply to every single one today."
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -264,7 +245,8 @@
       "SMALL PAWS BIG HEART",
       "GUARDING HIS BABY",
       "KEEP WATCHING",
-      "GENTLE GIANT"
+      "GENTLE GIANT",
+      "TOO SMALL TO KNOW"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -279,7 +261,8 @@
       "{core} 💛 Wholesome {anchor}",
       "{core} 🥹 {anchor}",
       "The Sweetest {anchor} | {core}",
-      "{anchor} That Fixed My Whole Day | {core}"
+      "{anchor} That Fixed My Whole Day | {core}",
+      "{core} | Daily Dose Of Cute"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -324,10 +307,12 @@
       "a puppy learning to swim with a laughing toddler cheering",
       "a cat and a dog who greet each other nose to nose every morning",
       "a puppy learning that the vacuum is not actually a monster",
-      "a shy shelter dog wagging his tail for the very first time"
+      "a shy shelter dog wagging his tail for the very first time",
+      "a toddler meeting the puppy she has been drawing for weeks"
     ],
     "voices": [
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
