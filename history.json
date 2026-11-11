@@ -10,7 +10,7 @@
     "screen_hooks": 6,
     "title_patterns": 12,
     "topics": 3,
-    "voices": 81
+    "voices": 82
   },
   "used": {
     "ctas": [
@@ -52,7 +52,9 @@
       "Follow for more of this. Tomorrow's is already written.",
       "Follow now, and tomorrow's story will be waiting for you.",
       "Stick around. The next one is just as soft as this.",
-      "Stay a while. We post something gentle here every day."
+      "Stay a while. We post something gentle here every day.",
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "Come for one story, stay for the daily ones. Subscribe."
     ],
     "desc_ctas": [
       "Subscribe and let something gentle reach you every day.",
@@ -66,7 +68,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Subscribe — one small, kind story lands here every single day.",
       "We post daily. Subscribing means the next one finds you without looking.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
@@ -74,7 +77,8 @@
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "If you needed a reason to smile today, here it is. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
-      "This is the soft part of the internet. {teaser}"
+      "This is the soft part of the internet. {teaser}",
+      "Saving this one for a rough day. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -85,7 +89,8 @@
       "One word for how this made you feel. Go 👇",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Did you watch with the sound on or off? Genuinely curious 👇",
-      "If this is your kind of thing, comment 🐾 and we'll make more."
+      "If this is your kind of thing, comment 🐾 and we'll make more.",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -195,7 +200,10 @@
       "WHAT IS THAT",
       "TOGETHER NOW",
       "BRAVE TODAY",
-      "TUCKED IN"
+      "TUCKED IN",
+      "RIGHT ON TIME",
+      "WE DON'T KNOW EITHER",
+      "NEW FAVOURITE"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -209,7 +217,8 @@
       "This little moment made everyone in the room cry happy tears.",
       "She has never lost this game and she is not about to.",
       "Watch what happens the second she turns around.",
-      "He picked her, not the other way around."
+      "He picked her, not the other way around.",
+      "I've watched this a hundred times and it still gets me."
     ],
     "pinned_comments": [
       "New here? Welcome. We do this every single day 🐾",
@@ -239,7 +248,8 @@
       "We read every comment on this channel. Say something and find out.",
       "If this showed up at the right moment for you today, say so 👇",
       "What should tomorrow's story be about? Best idea gets made.",
-      "Genuine question: who is cuter here? Reply with your pick 👇"
+      "Genuine question: who is cuter here? Reply with your pick 👇",
+      "Comment 🐾 and we'll reply to every single one today."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -253,7 +263,8 @@
       "THE SOFTEST THING",
       "SMALL PAWS BIG HEART",
       "GUARDING HIS BABY",
-      "KEEP WATCHING"
+      "KEEP WATCHING",
+      "GENTLE GIANT"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -267,7 +278,8 @@
       "{anchor}: {core} — Stay Till The End",
       "{core} 💛 Wholesome {anchor}",
       "{core} 🥹 {anchor}",
-      "The Sweetest {anchor} | {core}"
+      "The Sweetest {anchor} | {core}",
+      "{anchor} That Fixed My Whole Day | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -311,15 +323,11 @@
       "a baby falling asleep on a patient old dog's belly",
       "a puppy learning to swim with a laughing toddler cheering",
       "a cat and a dog who greet each other nose to nose every morning",
-      "a puppy learning that the vacuum is not actually a monster"
+      "a puppy learning that the vacuum is not actually a monster",
+      "a shy shelter dog wagging his tail for the very first time"
     ],
     "voices": [
-      "en-US-MichelleNeural",
-      "en-US-EmmaNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-US-AnaNeural",
-      "en-GB-SoniaNeural"
+      "en-US-JennyNeural"
     ]
   }
 }
