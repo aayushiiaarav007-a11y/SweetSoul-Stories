@@ -56,7 +56,9 @@
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
       "Come for one story, stay for the daily ones. Subscribe.",
       "Subscribe for the quiet, lovely corner of your feed.",
-      "Follow along — the next tiny story is already waiting."
+      "Follow along — the next tiny story is already waiting.",
+      "There is more where this came from. Subscribe and find out.",
+      "One good thing a day. Subscribe and let us handle it."
     ],
     "desc_ctas": [
       "Subscribe and let something gentle reach you every day.",
@@ -72,7 +74,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "Some days you just need a {anchor_lc} video like this. {teaser}",
@@ -82,7 +85,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "This is the soft part of the internet. {teaser}",
       "Saving this one for a rough day. {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} Watch it twice — the second time is even sweeter."
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -95,7 +99,8 @@
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
       "Comment 🐾 if you watched this more than once.",
-      "Would your pet do the same thing? Tell us below 👇"
+      "Would your pet do the same thing? Tell us below 👇",
+      "What is your pet's most ridiculous habit? Comment below."
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -211,7 +216,10 @@
       "NEW FAVOURITE",
       "WARM AND SAFE",
       "SOMEHOW YES",
-      "NO NOTES"
+      "NO NOTES",
+      "WORTH THE WAIT",
+      "NO SHARING",
+      "AGAIN? OKAY"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -227,10 +235,12 @@
       "Watch what happens the second she turns around.",
       "He picked her, not the other way around.",
       "I've watched this a hundred times and it still gets me.",
-      "This is the most serious thing that has ever happened to him."
+      "This is the most serious thing that has ever happened to him.",
+      "Twenty seconds is all this takes. Give it to yourself."
     ],
     "pinned_comments": [
-      "Tag the person who sends you every animal video. It's their turn."
+      "Tag the person who sends you every animal video. It's their turn.",
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -246,7 +256,8 @@
       "GUARDING HIS BABY",
       "KEEP WATCHING",
       "GENTLE GIANT",
-      "TOO SMALL TO KNOW"
+      "TOO SMALL TO KNOW",
+      "JUST WAIT 🥺"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -262,7 +273,8 @@
       "{core} 🥹 {anchor}",
       "The Sweetest {anchor} | {core}",
       "{anchor} That Fixed My Whole Day | {core}",
-      "{core} | Daily Dose Of Cute"
+      "{core} | Daily Dose Of Cute",
+      "{anchor} - {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -308,11 +320,13 @@
       "a cat and a dog who greet each other nose to nose every morning",
       "a puppy learning that the vacuum is not actually a monster",
       "a shy shelter dog wagging his tail for the very first time",
-      "a toddler meeting the puppy she has been drawing for weeks"
+      "a toddler meeting the puppy she has been drawing for weeks",
+      "a deaf puppy learning hand signals from a patient toddler"
     ],
     "voices": [
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
