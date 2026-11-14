@@ -37,7 +37,9 @@
       "Stay with SweetSoul Stories. There's always another gentle one coming.",
       "That's today's dose of soft. Follow for tomorrow's.",
       "That's all for today. Follow along and we'll see you tomorrow.",
-      "Follow for more of this. Tomorrow's is already written."
+      "Follow for more of this. Tomorrow's is already written.",
+      "Follow along — the next tiny story is already waiting.",
+      "If you needed this today, subscribe — we'll be here again tomorrow."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -50,18 +52,24 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe — one small, kind story lands here every single day.",
       "Subscribe — this channel exists for exactly the day you're having.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
+      "{teaser} Pure, simple, wholesome joy in under a minute."
     ],
     "desc_questions": [
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
-      "ON DUTY"
+      "ON DUTY",
+      "ZERO REGRETS",
+      "SHE'S HAD ENOUGH",
+      "SO CAREFUL"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -90,7 +98,8 @@
       "Give this ten seconds. Trust me.",
       "What this toddler did next left everyone speechless.",
       "Home found him, not the other way around.",
-      "It is not going to work, and he is going to try anyway."
+      "It is not going to work, and he is going to try anyway.",
+      "This is the sweetest thing I've filmed all year."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -106,7 +115,8 @@
       "This is the exact kind of thing this channel is for.",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Small channel, real replies. Comment and we'll talk 🐾"
+      "Small channel, real replies. Comment and we'll talk 🐾",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -135,7 +145,8 @@
       "WATCH HIM THINK",
       "THE LOOK AT THE END",
       "NOT A SINGLE PLAN",
-      "ATTEMPT FORTY-ONE"
+      "ATTEMPT FORTY-ONE",
+      "IT GETS BETTER"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -164,7 +175,8 @@
       "The Internet Loves This {anchor} | {core}",
       "How Is This Real 🥺 {core}",
       "This Is Why We Love {anchor}s | {core}",
-      "{core} 💕 {anchor} Moment"
+      "{core} 💕 {anchor} Moment",
+      "Nobody Expected This | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -223,12 +235,14 @@
       "a toddler reading the alphabet out loud to a listening dog",
       "a dog who swims in the lake every summer morning",
       "a kitten discovering its own reflection for the first time",
-      "a rescue puppy meeting his new brother, a three-legged dog"
+      "a rescue puppy meeting his new brother, a three-legged dog",
+      "a baby who claps every single time the dog walks in"
     ],
     "voices": [
       "en-US-AriaNeural",
       "en-US-JennyNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
