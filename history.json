@@ -33,7 +33,9 @@
       "If you smiled, that's the whole job done. Subscribe for more.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "Tomorrow's story is already waiting for you. Follow along.",
-      "Follow now, and tomorrow's story will be waiting for you."
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Stay with SweetSoul Stories. There's always another gentle one coming.",
+      "That's today's dose of soft. Follow for tomorrow's."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -44,10 +46,12 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
-      "Saving this one for a rough day. {teaser}"
+      "Saving this one for a rough day. {teaser}",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "On a scale of 1-10, how cute was that? Comment your score!",
@@ -71,7 +75,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "Which one would you take home? Comment your pick.",
       "What should tomorrow's story be about? We read every comment.",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "GOOD LUCK 😅",
@@ -220,7 +225,10 @@
       "IT WORKED?!",
       "GUARD MODE",
       "THOSE EYES",
-      "ALMOST OVER, STAY"
+      "ALMOST OVER, STAY",
+      "SHE'S HAD ENOUGH",
+      "TOTALLY WORTH IT",
+      "DID YOU SEE"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -247,7 +255,8 @@
       "One look and this little one had a home.",
       "That little sigh at the end broke me.",
       "Give this ten seconds. Trust me.",
-      "What this toddler did next left everyone speechless."
+      "What this toddler did next left everyone speechless.",
+      "Home found him, not the other way around."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -261,7 +270,8 @@
       "Watched it again while uploading it. No regrets.",
       "Does your pet do this too? I need to know it's not just this one.",
       "This is the exact kind of thing this channel is for.",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "Rate the ending out of 10 — I'm giving it a firm 10."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -288,7 +298,8 @@
       "TRY NOT TO SMILE",
       "GOING SO BADLY 😭",
       "WATCH HIM THINK",
-      "THE LOOK AT THE END"
+      "THE LOOK AT THE END",
+      "NOT A SINGLE PLAN"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -315,7 +326,8 @@
       "{core} | Save This For A Bad Day",
       "{core} 🐾 {anchor}",
       "The Internet Loves This {anchor} | {core}",
-      "How Is This Real 🥺 {core}"
+      "How Is This Real 🥺 {core}",
+      "This Is Why We Love {anchor}s | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -372,10 +384,12 @@
       "two dogs who each wait for their own child at the gate",
       "a kitten who sits on the book every time someone reads",
       "a toddler reading the alphabet out loud to a listening dog",
-      "a dog who swims in the lake every summer morning"
+      "a dog who swims in the lake every summer morning",
+      "a kitten discovering its own reflection for the first time"
     ],
     "voices": [
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
