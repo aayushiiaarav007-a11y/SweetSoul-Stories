@@ -45,7 +45,9 @@
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
       "Subscribe — there's a new little moment here every single morning.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "Subscribe, and tomorrow this will find you again."
     ],
     "desc_ctas": [
       "If you want more of this in your feed, subscribing is the whole trick.",
@@ -62,7 +64,8 @@
       "New wholesome moment every single day. Hit subscribe.",
       "One good thing a day. Subscribe and we'll handle the rest.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -71,14 +74,16 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "What was the exact second that got you? Comment the timestamp 👇",
-      "On a scale of 1-10, how cute was that? Comment your score!"
+      "On a scale of 1-10, how cute was that? Comment your score!",
+      "What should we call this little one? Best comment wins 🏆"
     ],
     "flashes": [
       "ON DUTY",
@@ -93,7 +98,10 @@
       "NOBODY MOVES",
       "DIDN'T SEE IT",
       "AWWW",
-      "TUCKED IN"
+      "TUCKED IN",
+      "TRUST 🤍",
+      "NOT LIKE THAT",
+      "BRAVE TODAY"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -126,7 +134,8 @@
       "This is the sweetest thing I've filmed all year.",
       "Nobody in the family remembers life before this.",
       "This might be the softest thing on the internet today.",
-      "Look how carefully he does this. Nobody showed him how."
+      "Look how carefully he does this. Nobody showed him how.",
+      "This little face was waiting all week for this."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -146,7 +155,8 @@
       "We read every comment on this channel. Say something and find out.",
       "Tell us in one word how this made you feel 👇",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "Genuine question: who is cuter here? Reply with your pick 👇"
+      "Genuine question: who is cuter here? Reply with your pick 👇",
+      "If this showed up at the right moment for you today, say so 👇"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -179,7 +189,8 @@
       "IT GETS BETTER",
       "FIRST HELLO ❤️",
       "THIS IS NEW TO HIM",
-      "HIS FIRST TIME"
+      "HIS FIRST TIME",
+      "THE GENTLEST BOY"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -212,7 +223,8 @@
       "Nobody Expected This | {core}",
       "{core} | Softest Thing Today",
       "{core} — And It Gets Better",
-      "{anchor} | {core} ❤️"
+      "{anchor} | {core} ❤️",
+      "{anchor} You Need To See: {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -275,10 +287,12 @@
       "a baby who claps every single time the dog walks in",
       "a puppy and a duckling that grew up in the same yard",
       "a cat who grooms the puppy every morning without fail",
-      "a toddler sharing an umbrella with a soaked stray cat"
+      "a toddler sharing an umbrella with a soaked stray cat",
+      "a kitten rescued from a drain pipe meeting her new family"
     ],
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
