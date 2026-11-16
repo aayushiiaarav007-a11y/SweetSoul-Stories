@@ -53,12 +53,15 @@
       "Follow SweetSoul Stories for your daily dose of joy.",
       "Subscribe for one small, kind story a day. That's all we do here.",
       "SweetSoul Stories, every day, for the days you need something kind.",
-      "Follow for daily reminders that small things carry a lot of love."
+      "Follow for daily reminders that small things carry a lot of love.",
+      "Subscribe, and let us hand you one good thing every single day.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_ctas": [
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
       "New wholesome moment every single day. Hit subscribe.",
-      "Subscribe — this channel exists for exactly the day you're having."
+      "Subscribe — this channel exists for exactly the day you're having.",
+      "We post daily. Subscribing means the next one finds you without looking."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -71,7 +74,8 @@
       "This is the soft part of the internet. {teaser}",
       "Some days you just need a {anchor_lc} video like this. {teaser}",
       "This one melted us. {teaser}",
-      "A very short {anchor_lc} story with a very large heart. {teaser}"
+      "A very short {anchor_lc} story with a very large heart. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -82,7 +86,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "Did you watch with the sound on or off? Genuinely curious 👇",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Which one would you take home? Comment your pick."
     ],
     "flashes": [
       "ON DUTY",
@@ -109,7 +114,10 @@
       "HOLD ON 🥹",
       "I'M DONE 🥹",
       "EVERY DAY THIS",
-      "WELL THEN 😭"
+      "WELL THEN 😭",
+      "HE'S TRYING",
+      "LISTEN 🔊",
+      "TAIL GOING WILD"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -146,7 +154,8 @@
       "This little face was waiting all week for this.",
       "Absolutely nobody asked for this friendship, and yet.",
       "He had never had a soft place to sleep until now.",
-      "She has made a decision and there will be no discussion."
+      "She has made a decision and there will be no discussion.",
+      "The best things really are the quiet ones."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -170,7 +179,8 @@
       "If this showed up at the right moment for you today, say so 👇",
       "If this made you smile, that's all we wanted today ❤️",
       "The last three seconds are the reason this exists 🥹",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "Sound on is a completely different video, by the way 🔊"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -207,7 +217,8 @@
       "THE GENTLEST BOY",
       "SHE NEVER MISSES",
       "SOMETHING SOFT TODAY",
-      "FIRST SOFT BED"
+      "FIRST SOFT BED",
+      "FOR A HARD DAY"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -244,7 +255,8 @@
       "{anchor} You Need To See: {core}",
       "I Watched This 10 Times | {core}",
       "This {anchor} Will Melt Your Heart | {core}",
-      "{core} (This Got Me) | {anchor}"
+      "{core} (This Got Me) | {anchor}",
+      "{core} | Tiny Heart, Huge Moment"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -311,14 +323,16 @@
       "a kitten rescued from a drain pipe meeting her new family",
       "the way a baby laughs every time the dog sneezes",
       "a kitten and a baby discovering bubbles together",
-      "a toddler meeting a litter of newborn puppies"
+      "a toddler meeting a litter of newborn puppies",
+      "a scared puppy who hid for a week and then chose one person"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
       "en-US-AriaNeural",
       "en-US-AnaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
