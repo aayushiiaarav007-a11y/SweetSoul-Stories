@@ -49,10 +49,13 @@
       "Every day, one gentle story. Subscribe and let it find you.",
       "Subscribe, and tomorrow this will find you again.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Subscribe for one small, kind story a day. That's all we do here."
     ],
     "desc_ctas": [
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "New wholesome moment every single day. Hit subscribe."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -63,7 +66,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "This is the soft part of the internet. {teaser}",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "This one melted us. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -72,7 +76,8 @@
       "What was the exact second that got you? Comment the timestamp 👇",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "What should we call this little one? Best comment wins 🏆",
-      "Did you watch with the sound on or off? Genuinely curious 👇"
+      "Did you watch with the sound on or off? Genuinely curious 👇",
+      "If this is your kind of thing, comment 🐾 and we'll make more."
     ],
     "flashes": [
       "ON DUTY",
@@ -93,7 +98,10 @@
       "BRAVE TODAY",
       "NEW FAVOURITE",
       "AND THEN 🥹",
-      "THAT FACE"
+      "THAT FACE",
+      "THIS BIT 👇",
+      "EVERY EVENING",
+      "HOLD ON 🥹"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -128,7 +136,8 @@
       "This might be the softest thing on the internet today.",
       "Look how carefully he does this. Nobody showed him how.",
       "This little face was waiting all week for this.",
-      "Absolutely nobody asked for this friendship, and yet."
+      "Absolutely nobody asked for this friendship, and yet.",
+      "He had never had a soft place to sleep until now."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -150,7 +159,8 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "If this showed up at the right moment for you today, say so 👇",
-      "If this made you smile, that's all we wanted today ❤️"
+      "If this made you smile, that's all we wanted today ❤️",
+      "The last three seconds are the reason this exists 🥹"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -185,7 +195,8 @@
       "THIS IS NEW TO HIM",
       "HIS FIRST TIME",
       "THE GENTLEST BOY",
-      "SHE NEVER MISSES"
+      "SHE NEVER MISSES",
+      "SOMETHING SOFT TODAY"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -220,7 +231,8 @@
       "{core} — And It Gets Better",
       "{anchor} | {core} ❤️",
       "{anchor} You Need To See: {core}",
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "This {anchor} Will Melt Your Heart | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -285,12 +297,14 @@
       "a cat who grooms the puppy every morning without fail",
       "a toddler sharing an umbrella with a soaked stray cat",
       "a kitten rescued from a drain pipe meeting her new family",
-      "the way a baby laughs every time the dog sneezes"
+      "the way a baby laughs every time the dog sneezes",
+      "a kitten and a baby discovering bubbles together"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
