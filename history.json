@@ -14,7 +14,9 @@
   },
   "used": {
     "ctas": [
-      "If this made you smile, SweetSoul Stories has one of these for you daily."
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "Follow now, and tomorrow's story will be waiting for you."
     ],
     "desc_ctas": [
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
@@ -22,7 +24,8 @@
       "Subscribe — this channel exists for exactly the day you're having.",
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe and let something gentle reach you every day.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -38,7 +41,8 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "{anchor} alert: {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -52,7 +56,8 @@
       "Cat person or dog person? Settle it in the comments.",
       "Which one would you take home? Comment your pick.",
       "Comment 🐾 if you watched this more than once.",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "ON DUTY",
@@ -88,7 +93,10 @@
       "RIGHT ON TIME",
       "STRAIGHT IN",
       "LOOK 👀",
-      "ONE MORE TIME"
+      "ONE MORE TIME",
+      "NO NOTES",
+      "FIRST NAP HERE",
+      "COMMITTED"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -128,7 +136,8 @@
       "She has made a decision and there will be no discussion.",
       "The best things really are the quiet ones.",
       "Nobody in this house gets any work done anymore.",
-      "I did not expect to cry over a puppy today, but here we are."
+      "I did not expect to cry over a puppy today, but here we are.",
+      "A baby, a puppy, and a moment you'll never forget."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -155,7 +164,8 @@
       "New here? Welcome. We do this every single day 🐾",
       "Sound on is a completely different video, by the way 🔊",
       "Comment 🐾 and we'll reply to every single one today.",
-      "Genuine question: how did nobody cry filming this?"
+      "Genuine question: how did nobody cry filming this?",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -195,7 +205,8 @@
       "FIRST SOFT BED",
       "FOR A HARD DAY",
       "SHE HAD NO IDEA",
-      "DON'T SCROLL PAST"
+      "DON'T SCROLL PAST",
+      "WATCH HER EYES"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -235,7 +246,8 @@
       "{core} (This Got Me) | {anchor}",
       "{core} | Tiny Heart, Huge Moment",
       "Not A Dry Eye | {core}",
-      "{core} | Proof The Internet Is Fine"
+      "{core} | Proof The Internet Is Fine",
+      "{core} | {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -305,11 +317,13 @@
       "a toddler meeting a litter of newborn puppies",
       "a scared puppy who hid for a week and then chose one person",
       "a baby and a puppy meeting their first butterfly",
-      "a kitten who taught herself to open the cupboard"
+      "a kitten who taught herself to open the cupboard",
+      "a cat and a baby who both refuse to nap without the other"
     ],
     "voices": [
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
