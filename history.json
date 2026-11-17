@@ -8,7 +8,7 @@
     "hooks": 4,
     "pinned_comments": 17,
     "screen_hooks": 6,
-    "title_patterns": 12,
+    "title_patterns": 13,
     "topics": 3,
     "voices": 86
   },
@@ -18,7 +18,9 @@
       "SweetSoul Stories, every day, for the days you need something kind.",
       "Follow now, and tomorrow's story will be waiting for you.",
       "Save this channel for the days you need something soft. Subscribe.",
-      "Subscribe for the quiet, lovely corner of your feed."
+      "Subscribe for the quiet, lovely corner of your feed.",
+      "Subscribe and let something gentle find you every day.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
@@ -28,7 +30,8 @@
       "Subscribe and let something gentle reach you every day.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "Subscribe for daily proof that the world still has soft edges."
+      "Subscribe for daily proof that the world still has soft edges.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -46,7 +49,8 @@
       "{teaser} Small moment, disproportionate effect on your mood.",
       "We rewatched this more times than we should admit. {teaser}",
       "{anchor} alert: {teaser}",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -62,7 +66,8 @@
       "Comment 🐾 if you watched this more than once.",
       "Tag someone who needs to see this right now.",
       "Be honest — how many times did you rewatch? Comment the number 👇",
-      "Rate this little one out of 10. No wrong answers."
+      "Rate this little one out of 10. No wrong answers.",
+      "Which part made you smile the most? Tell us in the comments 👇"
     ],
     "flashes": [
       "ON DUTY",
@@ -104,7 +109,10 @@
       "COMMITTED",
       "THIS ONE HURTS",
       "CERTIFIED CUTE",
-      "FIRST TIME"
+      "FIRST TIME",
+      "SAFE AT LAST",
+      "WARM AND SAFE",
+      "TOTALLY WORTH IT"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -146,7 +154,8 @@
       "Nobody in this house gets any work done anymore.",
       "I did not expect to cry over a puppy today, but here we are.",
       "A baby, a puppy, and a moment you'll never forget.",
-      "This is what happens when nobody is supervising."
+      "This is what happens when nobody is supervising.",
+      "Two minutes earlier they were strangers."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -175,7 +184,8 @@
       "Comment 🐾 and we'll reply to every single one today.",
       "Genuine question: how did nobody cry filming this?",
       "Which second got you? Drop the timestamp and we'll compare.",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "Saving this one for a bad day. Recommend you do the same."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -217,49 +227,11 @@
       "SHE HAD NO IDEA",
       "DON'T SCROLL PAST",
       "WATCH HER EYES",
-      "THE QUIET ONES HIT"
+      "THE QUIET ONES HIT",
+      "SOMEBODY PICKED HIM"
     ],
     "title_patterns": [
-      "{anchor}: {core}",
-      "{core} (Try Not To Smile) | {anchor}",
-      "{core} | Best {anchor} Of The Day",
-      "{core} | {anchor} Done Right",
-      "{core} | {anchor} Compilation Worthy",
-      "{core} — Watch The Last 5 Seconds",
-      "Wait For The End 🥺 {core}",
-      "You'll Watch This Twice | {core}",
-      "{anchor}: {core} — Stay Till The End",
-      "{core} 💛 Wholesome {anchor}",
-      "{core} 🥹 {anchor}",
-      "The Sweetest {anchor} | {core}",
-      "{anchor} That Fixed My Whole Day | {core}",
-      "{core} | Daily Dose Of Cute",
-      "{anchor} - {core}",
-      "Someone Send Help 🥹 {core}",
-      "{anchor} Moment Of The Day | {core}",
-      "{anchor}: {core} 😭❤️",
-      "Everyone Needs To See This {anchor} | {core}",
-      "{core} | You Have To See This",
-      "Two Seconds In And I Was Gone | {core}",
-      "{core} | Save This For A Bad Day",
-      "{core} 🐾 {anchor}",
-      "The Internet Loves This {anchor} | {core}",
-      "How Is This Real 🥺 {core}",
-      "This Is Why We Love {anchor}s | {core}",
-      "{core} 💕 {anchor} Moment",
-      "Nobody Expected This | {core}",
-      "{core} | Softest Thing Today",
-      "{core} — And It Gets Better",
-      "{anchor} | {core} ❤️",
-      "{anchor} You Need To See: {core}",
-      "I Watched This 10 Times | {core}",
-      "This {anchor} Will Melt Your Heart | {core}",
-      "{core} (This Got Me) | {anchor}",
-      "{core} | Tiny Heart, Huge Moment",
-      "Not A Dry Eye | {core}",
-      "{core} | Proof The Internet Is Fine",
-      "{core} | {anchor}",
-      "{core} | Wholesome {anchor}"
+      "{core} | {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -331,13 +303,15 @@
       "a baby and a puppy meeting their first butterfly",
       "a kitten who taught herself to open the cupboard",
       "a cat and a baby who both refuse to nap without the other",
-      "a puppy howling along to a baby's laughter"
+      "a puppy howling along to a baby's laughter",
+      "a kitten discovering a window box full of flowers"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AriaNeural",
       "en-US-AnaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
