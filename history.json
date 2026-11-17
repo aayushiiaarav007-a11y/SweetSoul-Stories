@@ -16,7 +16,9 @@
     "ctas": [
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
       "SweetSoul Stories, every day, for the days you need something kind.",
-      "Follow now, and tomorrow's story will be waiting for you."
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "Save this channel for the days you need something soft. Subscribe.",
+      "Subscribe for the quiet, lovely corner of your feed."
     ],
     "desc_ctas": [
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
@@ -25,7 +27,8 @@
       "We post daily. Subscribing means the next one finds you without looking.",
       "Subscribe and let something gentle reach you every day.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -42,7 +45,8 @@
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "We rewatched this more times than we should admit. {teaser}",
-      "{anchor} alert: {teaser}"
+      "{anchor} alert: {teaser}",
+      "Here is your {anchor_lc} moment for today. {teaser}"
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -57,7 +61,8 @@
       "Which one would you take home? Comment your pick.",
       "Comment 🐾 if you watched this more than once.",
       "Tag someone who needs to see this right now.",
-      "Be honest — how many times did you rewatch? Comment the number 👇"
+      "Be honest — how many times did you rewatch? Comment the number 👇",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "ON DUTY",
@@ -96,7 +101,10 @@
       "ONE MORE TIME",
       "NO NOTES",
       "FIRST NAP HERE",
-      "COMMITTED"
+      "COMMITTED",
+      "THIS ONE HURTS",
+      "CERTIFIED CUTE",
+      "FIRST TIME"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -137,7 +145,8 @@
       "The best things really are the quiet ones.",
       "Nobody in this house gets any work done anymore.",
       "I did not expect to cry over a puppy today, but here we are.",
-      "A baby, a puppy, and a moment you'll never forget."
+      "A baby, a puppy, and a moment you'll never forget.",
+      "This is what happens when nobody is supervising."
     ],
     "pinned_comments": [
       "Tag the person who sends you every animal video. It's their turn.",
@@ -165,7 +174,8 @@
       "Sound on is a completely different video, by the way 🔊",
       "Comment 🐾 and we'll reply to every single one today.",
       "Genuine question: how did nobody cry filming this?",
-      "Which second got you? Drop the timestamp and we'll compare."
+      "Which second got you? Drop the timestamp and we'll compare.",
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -206,7 +216,8 @@
       "FOR A HARD DAY",
       "SHE HAD NO IDEA",
       "DON'T SCROLL PAST",
-      "WATCH HER EYES"
+      "WATCH HER EYES",
+      "THE QUIET ONES HIT"
     ],
     "title_patterns": [
       "{anchor}: {core}",
@@ -247,7 +258,8 @@
       "{core} | Tiny Heart, Huge Moment",
       "Not A Dry Eye | {core}",
       "{core} | Proof The Internet Is Fine",
-      "{core} | {anchor}"
+      "{core} | {anchor}",
+      "{core} | Wholesome {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -318,12 +330,14 @@
       "a scared puppy who hid for a week and then chose one person",
       "a baby and a puppy meeting their first butterfly",
       "a kitten who taught herself to open the cupboard",
-      "a cat and a baby who both refuse to nap without the other"
+      "a cat and a baby who both refuse to nap without the other",
+      "a puppy howling along to a baby's laughter"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AriaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
