@@ -26,7 +26,9 @@
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "Subscribe, and let us hand you one good thing every single day.",
       "Subscribe for one small, kind story a day. That's all we do here.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily."
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "New story every day, no exceptions. Follow SweetSoul Stories.",
+      "Come back tomorrow. There's always another small moment worth seeing."
     ],
     "desc_ctas": [
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
@@ -40,11 +42,13 @@
       "One good thing a day. Subscribe and we'll handle the rest.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "There is a new one of these tomorrow. Subscribe so you catch it."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better."
     ],
     "desc_questions": [
       "Comment 🥹 if the ending got you too.",
@@ -64,7 +68,8 @@
       "Which part made you smile the most? Tell us in the comments 👇",
       "What should tomorrow's story be about? We read every comment.",
       "Would your pet do the same thing? Tell us below 👇",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "First time here? Say hello in the comments 👋"
     ],
     "flashes": [
       "ON DUTY",
@@ -118,7 +123,10 @@
       "APPROVED ✅",
       "ZERO FEAR",
       "GOOD LUCK 😅",
-      "SLOWLY NOW"
+      "SLOWLY NOW",
+      "ONE SECOND MORE",
+      "SAME SPOT",
+      "DID YOU SEE"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -164,11 +172,13 @@
       "Two minutes earlier they were strangers.",
       "This is a very small act of love, caught on camera.",
       "It is the ordinary days that turn out to matter.",
-      "It only took one afternoon to change everything."
+      "It only took one afternoon to change everything.",
+      "She has been practising this all week."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
-      "Tag the person who always sends you cute animal videos."
+      "Tag the person who always sends you cute animal videos.",
+      "Name this little one. We're taking suggestions seriously."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -214,13 +224,15 @@
       "SOMEBODY PICKED HIM",
       "WAIT FOR IT...",
       "STILL WAITING 🥺",
-      "SHE WAITED ALL DAY"
+      "SHE WAITED ALL DAY",
+      "THIS MELTED ME"
     ],
     "title_patterns": [
       "{core} | {anchor}",
       "{anchor}: {core} — Stay Till The End",
       "Not A Dry Eye | {core}",
-      "{core} 💛 Wholesome {anchor}"
+      "{core} 💛 Wholesome {anchor}",
+      "This Is Why We Love {anchor}s | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -296,11 +308,13 @@
       "a kitten discovering a window box full of flowers",
       "a puppy's first trip to the beach and a war with the waves",
       "a kitten fascinated by a dripping tap",
-      "a kitten meeting the household's grumpy older cat"
+      "a kitten meeting the household's grumpy older cat",
+      "a baby and a cat playing peekaboo through a doorway"
     ],
     "voices": [
       "en-US-AriaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
