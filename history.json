@@ -40,12 +40,15 @@
       "Every day, one gentle story. Subscribe and let it find you.",
       "Tomorrow's story is already waiting for you. Follow along.",
       "Follow along — the next tiny story is already waiting.",
-      "Stay a while. We post something gentle here every day."
+      "Stay a while. We post something gentle here every day.",
+      "Subscribe — there's a new little moment here every single morning.",
+      "One small, sweet story every day. Subscribe and we'll see you tomorrow."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "New wholesome story every day. Subscribe so the next one finds you."
+      "New wholesome story every day. Subscribe so the next one finds you.",
+      "Follow for the softest thirty seconds of your day, daily."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -56,11 +59,13 @@
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
       "{anchor} moments like this are why the internet is worth it. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
-      "Did this make you smile? Drop a ❤️ in the comments so we know!"
+      "Did this make you smile? Drop a ❤️ in the comments so we know!",
+      "Rate this little one out of 10. No wrong answers."
     ],
     "flashes": [
       "ON DUTY",
@@ -135,7 +140,10 @@
       "ALMOST 🥺",
       "PERFECTLY BALANCED",
       "SAME LOVE",
-      "SHE DECIDED"
+      "SHE DECIDED",
+      "STILL THERE",
+      "HE CAME BACK",
+      "SHE APPROVES"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -188,7 +196,8 @@
       "This tiny soul proved that love has no size.",
       "This is a very short story about a very large heart.",
       "She was the smallest one there, and the bravest.",
-      "Stop scrolling — you need to see this right now."
+      "Stop scrolling — you need to see this right now.",
+      "He wasn't supposed to be able to do this yet."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -199,7 +208,8 @@
       "Saving this one for a bad day. Recommend you do the same.",
       "Watched it again while uploading it. No regrets.",
       "If this showed up at the right moment for you today, say so 👇",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
+      "One word for how this made you feel. Mine was 'oh'."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -252,7 +262,8 @@
       "WATCH WHAT HE DOES",
       "TINY AND FEARLESS",
       "THIS IS THE GOOD PART",
-      "THIS IS THE ONE"
+      "THIS IS THE ONE",
+      "PURE JOY INCOMING"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -265,7 +276,8 @@
       "{core} | {anchor} Done Right",
       "{anchor} That Fixed My Whole Day | {core}",
       "Two Seconds In And I Was Gone | {core}",
-      "{core} 🐾 {anchor}"
+      "{core} 🐾 {anchor}",
+      "{anchor}: {core} 😭❤️"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -348,12 +360,14 @@
       "a toddler and puppy taking a nap together",
       "a dog and a tortoise racing very slowly across a lawn",
       "a puppy meeting the ocean for the first time",
-      "a kitten who hunts snowflakes through the glass"
+      "a kitten who hunts snowflakes through the glass",
+      "a baby and a dog sharing a picnic blanket in the garden"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-MichelleNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
