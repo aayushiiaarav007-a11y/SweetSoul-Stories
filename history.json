@@ -38,11 +38,14 @@
       "That's today's dose of soft. Follow for tomorrow's.",
       "Stick around. The next one is just as soft as this.",
       "Every day, one gentle story. Subscribe and let it find you.",
-      "Tomorrow's story is already waiting for you. Follow along."
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "Follow along — the next tiny story is already waiting.",
+      "Stay a while. We post something gentle here every day."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it."
+      "There is a new one of these tomorrow. Subscribe so you catch it.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -52,10 +55,12 @@
       "{teaser} Pure, simple, wholesome joy in under a minute.",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "{anchor} moments like this are why the internet is worth it. {teaser}"
+      "{anchor} moments like this are why the internet is worth it. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
-      "What is your pet's most ridiculous habit? Comment below."
+      "What is your pet's most ridiculous habit? Comment below.",
+      "Did this make you smile? Drop a ❤️ in the comments so we know!"
     ],
     "flashes": [
       "ON DUTY",
@@ -127,7 +132,10 @@
       "SLEEPY BOY",
       "PROBLEM SOLVED",
       "WATCH THIS",
-      "ALMOST 🥺"
+      "ALMOST 🥺",
+      "PERFECTLY BALANCED",
+      "SAME LOVE",
+      "SHE DECIDED"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -179,7 +187,8 @@
       "They have known each other for exactly one minute.",
       "This tiny soul proved that love has no size.",
       "This is a very short story about a very large heart.",
-      "She was the smallest one there, and the bravest."
+      "She was the smallest one there, and the bravest.",
+      "Stop scrolling — you need to see this right now."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -189,7 +198,8 @@
       "The last three seconds are the reason this exists 🥹",
       "Saving this one for a bad day. Recommend you do the same.",
       "Watched it again while uploading it. No regrets.",
-      "If this showed up at the right moment for you today, say so 👇"
+      "If this showed up at the right moment for you today, say so 👇",
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -241,7 +251,8 @@
       "NO WORDS NEEDED",
       "WATCH WHAT HE DOES",
       "TINY AND FEARLESS",
-      "THIS IS THE GOOD PART"
+      "THIS IS THE GOOD PART",
+      "THIS IS THE ONE"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -253,7 +264,8 @@
       "Nobody Expected This | {core}",
       "{core} | {anchor} Done Right",
       "{anchor} That Fixed My Whole Day | {core}",
-      "Two Seconds In And I Was Gone | {core}"
+      "Two Seconds In And I Was Gone | {core}",
+      "{core} 🐾 {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -335,11 +347,13 @@
       "a baby's first giggle triggered by a playful dog",
       "a toddler and puppy taking a nap together",
       "a dog and a tortoise racing very slowly across a lawn",
-      "a puppy meeting the ocean for the first time"
+      "a puppy meeting the ocean for the first time",
+      "a kitten who hunts snowflakes through the glass"
     ],
     "voices": [
       "en-US-JennyNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
