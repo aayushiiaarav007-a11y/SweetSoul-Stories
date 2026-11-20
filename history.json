@@ -44,14 +44,17 @@
       "Subscribe — there's a new little moment here every single morning.",
       "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
       "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "If you needed this today, subscribe — we'll be here again tomorrow."
+      "If you needed this today, subscribe — we'll be here again tomorrow.",
+      "Follow for daily reminders that small things carry a lot of love.",
+      "We'll be back tomorrow with another one. Follow so you don't miss it."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "New wholesome story every day. Subscribe so the next one finds you.",
       "Follow for the softest thirty seconds of your day, daily.",
-      "If you want more of this in your feed, subscribing is the whole trick."
+      "If you want more of this in your feed, subscribing is the whole trick.",
+      "Subscribe for daily proof that the world still has soft edges."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -64,13 +67,15 @@
       "{anchor} moments like this are why the internet is worth it. {teaser}",
       "{teaser} Watch to the end — the last few seconds are the whole thing.",
       "{teaser} Small moment, disproportionate effect on your mood.",
-      "{teaser} Watch it twice — the second time is even sweeter."
+      "{teaser} Watch it twice — the second time is even sweeter.",
+      "{teaser} Nothing dramatic happens here, and that is exactly the point."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
       "Did this make you smile? Drop a ❤️ in the comments so we know!",
       "Rate this little one out of 10. No wrong answers.",
-      "Comment where you're watching from — we love seeing the map fill up 🌍"
+      "Comment where you're watching from — we love seeing the map fill up 🌍",
+      "On a scale of 1-10, how cute was that? Comment your score!"
     ],
     "flashes": [
       "ON DUTY",
@@ -151,7 +156,10 @@
       "SHE APPROVES",
       "WAIT...",
       "WE LOVE HIM",
-      "MINE NOW"
+      "MINE NOW",
+      "THE EARS",
+      "NEVER SEEN THIS",
+      "HE HAS OPINIONS"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -206,7 +214,8 @@
       "She was the smallest one there, and the bravest.",
       "Stop scrolling — you need to see this right now.",
       "He wasn't supposed to be able to do this yet.",
-      "There is a right way to do this. He found another way."
+      "There is a right way to do this. He found another way.",
+      "This kind of thing does not happen twice."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -219,7 +228,8 @@
       "If this showed up at the right moment for you today, say so 👇",
       "We watched this 6 times before uploading it. Sorry not sorry 🐾",
       "One word for how this made you feel. Mine was 'oh'.",
-      "Genuine question: who is cuter here? Reply with your pick 👇"
+      "Genuine question: who is cuter here? Reply with your pick 👇",
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -274,7 +284,8 @@
       "THIS IS THE GOOD PART",
       "THIS IS THE ONE",
       "PURE JOY INCOMING",
-      "STAY A SECOND"
+      "STAY A SECOND",
+      "YOU'LL WATCH TWICE"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -289,7 +300,8 @@
       "Two Seconds In And I Was Gone | {core}",
       "{core} 🐾 {anchor}",
       "{anchor}: {core} 😭❤️",
-      "{core} | {anchor} Compilation Worthy"
+      "{core} | {anchor} Compilation Worthy",
+      "Someone Send Help 🥹 {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -374,14 +386,16 @@
       "a puppy meeting the ocean for the first time",
       "a kitten who hunts snowflakes through the glass",
       "a baby and a dog sharing a picnic blanket in the garden",
-      "a kitten trying to catch a sunbeam on the wall"
+      "a kitten trying to catch a sunbeam on the wall",
+      "a dog proudly carrying his puppy to meet the family baby"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
       "en-US-AnaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
