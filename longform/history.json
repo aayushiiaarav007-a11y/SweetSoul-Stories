@@ -25,7 +25,8 @@
       "Subscribe, and share this story with someone small tonight.",
       "If this story stayed with you, subscribe — there is a new one tomorrow.",
       "Subscribe so tomorrow's story reaches you without you having to look.",
-      "There is a story here for every night of the week. Subscribe."
+      "There is a story here for every night of the week. Subscribe.",
+      "If this one made you think, subscribe — the next may too."
     ],
     "topics": [
       [
@@ -227,6 +228,10 @@
       [
         "generosity",
         "a baker who quietly leaves bread out for whoever needs it"
+      ],
+      [
+        "courage",
+        "a young fisherman who rows out to fetch his lost brother"
       ]
     ]
   }
