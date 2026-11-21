@@ -50,7 +50,9 @@
       "Follow for more of this. Tomorrow's is already written.",
       "Subscribe for daily proof that the world still has soft edges.",
       "There's a new sweet story here every single day. Come back tomorrow.",
-      "There is more where this came from. Subscribe and find out."
+      "There is more where this came from. Subscribe and find out.",
+      "One tiny story a day, every day. Subscribe so you catch the next.",
+      "Subscribe, and tomorrow this will find you again."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -60,7 +62,8 @@
       "If you want more of this in your feed, subscribing is the whole trick.",
       "Subscribe for daily proof that the world still has soft edges.",
       "Subscribe and let something gentle reach you every day.",
-      "Subscribe — one small, kind story lands here every single day."
+      "Subscribe — one small, kind story lands here every single day.",
+      "Subscribe — this channel exists for exactly the day you're having."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -76,7 +79,8 @@
       "{teaser} Watch it twice — the second time is even sweeter.",
       "{teaser} Nothing dramatic happens here, and that is exactly the point.",
       "This one melted us. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -85,7 +89,8 @@
       "Comment where you're watching from — we love seeing the map fill up 🌍",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "First time here? Say hello in the comments 👋",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "Be honest — how many times did you rewatch? Comment the number 👇"
     ],
     "flashes": [
       "ON DUTY",
@@ -175,7 +180,10 @@
       "KEEP GOING",
       "FAST ASLEEP",
       "OH DEAR 😅",
-      "TOOK HER TIME"
+      "TOOK HER TIME",
+      "IT'S HAPPENING",
+      "NEARLY THERE",
+      "BEST FRIENDS"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -233,7 +241,8 @@
       "There is a right way to do this. He found another way.",
       "This kind of thing does not happen twice.",
       "Every morning she does this. Every single morning.",
-      "Nobody warned the cat about any of this."
+      "Nobody warned the cat about any of this.",
+      "This dog has been waiting for this moment his whole life."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -249,7 +258,8 @@
       "Genuine question: who is cuter here? Reply with your pick 👇",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "If this made you smile, that's all we wanted today ❤️",
-      "Comment 🐾 and we'll reply to every single one today."
+      "Comment 🐾 and we'll reply to every single one today.",
+      "We read every comment on this channel. Say something and find out."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -307,7 +317,8 @@
       "STAY A SECOND",
       "YOU'LL WATCH TWICE",
       "NOBODY EXPECTED THIS",
-      "SHE PICKED THE BABY"
+      "SHE PICKED THE BABY",
+      "MADE MY WHOLE WEEK"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -325,7 +336,8 @@
       "{core} | {anchor} Compilation Worthy",
       "Someone Send Help 🥹 {core}",
       "{core} 💕 {anchor} Moment",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "Wait For The End 🥺 {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -413,11 +425,13 @@
       "a kitten trying to catch a sunbeam on the wall",
       "a dog proudly carrying his puppy to meet the family baby",
       "a dog who insists on carrying the picnic basket himself",
-      "a puppy meeting a baby for the first time"
+      "a puppy meeting a baby for the first time",
+      "a nervous rescue kitten finally purring after a month"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-GB-SoniaNeural"
+      "en-GB-SoniaNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
