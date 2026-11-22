@@ -19,7 +19,9 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "If your day got a little better, that's all we wanted. Subscribe for more.",
       "Follow for daily reminders that small things carry a lot of love.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's."
+      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
+      "There is more where this came from. Subscribe and find out.",
+      "Tomorrow's story is already waiting for you. Follow along."
     ],
     "desc_ctas": [
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
@@ -36,12 +38,14 @@
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "If this made your day, subscribing takes two seconds and keeps them coming.",
       "New wholesome moment every single day. Hit subscribe.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "Subscribe for your daily dose of joy — one small, sweet story at a time."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -57,7 +61,8 @@
       "One word for how this made you feel. Go 👇",
       "Tag someone who needs to see this right now.",
       "What should tomorrow's story be about? We read every comment.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Cat person or dog person? Settle it in the comments."
     ],
     "flashes": [
       "ON DUTY",
@@ -168,7 +173,10 @@
       "NO STOPPING HIM",
       "TOO CUTE",
       "NOT MOVING",
-      "WORTH THE WAIT"
+      "WORTH THE WAIT",
+      "LOOK HOW LITTLE",
+      "VERY SERIOUS BUSINESS",
+      "CAME OUT AT LAST"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -233,7 +241,8 @@
       "This started as an ordinary Tuesday.",
       "One of them knows what is going on. It is not him.",
       "Some friendships do not need words at all.",
-      "You'll want to share this with everyone you love."
+      "You'll want to share this with everyone you love.",
+      "You'll feel this one in your chest."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -256,7 +265,8 @@
       "If you made it to the end, you're my favourite kind of person 🤍",
       "What should tomorrow's story be about? Best idea gets made.",
       "Sound on is a completely different video, by the way 🔊",
-      "Rate the ending out of 10 — I'm giving it a firm 10."
+      "Rate the ending out of 10 — I'm giving it a firm 10.",
+      "Which second got you? Drop the timestamp and we'll compare."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -321,7 +331,8 @@
       "WAIT FOR THE END 🥹",
       "TWO SECONDS IN 🥹",
       "ALMOST TOO CUTE",
-      "SOUND ON 🔊"
+      "SOUND ON 🔊",
+      "NO SUPERVISION HERE"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -346,7 +357,8 @@
       "This {anchor} Will Melt Your Heart | {core}",
       "{core} (Try Not To Smile) | {anchor}",
       "{core} | You Have To See This",
-      "Everyone Needs To See This {anchor} | {core}"
+      "Everyone Needs To See This {anchor} | {core}",
+      "{anchor} - {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -441,12 +453,14 @@
       "a kitten and a parrot who taught each other to whistle",
       "a puppy who falls asleep standing up mid-play",
       "a puppy who has decided the mailbox is his enemy",
-      "a rescue cat who finally let someone hold her"
+      "a rescue cat who finally let someone hold her",
+      "a toddler carefully feeding a bottle to a rescued kitten"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-EmmaNeural"
     ]
   }
 }
