@@ -1,7 +1,7 @@
 {
   "cycles": {
     "ctas": 24,
-    "desc_ctas": 33,
+    "desc_ctas": 34,
     "desc_openers": 30,
     "desc_questions": 23,
     "flashes": 10,
@@ -21,31 +21,19 @@
       "Follow for daily reminders that small things carry a lot of love.",
       "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
       "There is more where this came from. Subscribe and find out.",
-      "Tomorrow's story is already waiting for you. Follow along."
+      "Tomorrow's story is already waiting for you. Follow along.",
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Every day, one gentle story. Subscribe and let it find you."
     ],
     "desc_ctas": [
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "New wholesome story every day. Subscribe so the next one finds you.",
-      "Follow for the softest thirty seconds of your day, daily.",
-      "If you want more of this in your feed, subscribing is the whole trick.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe and let something gentle reach you every day.",
-      "Subscribe — one small, kind story lands here every single day.",
-      "Subscribe — this channel exists for exactly the day you're having.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "One good thing a day. Subscribe and we'll handle the rest.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
-      "If this made your day, subscribing takes two seconds and keeps them coming.",
-      "New wholesome moment every single day. Hit subscribe.",
-      "We post daily. Subscribing means the next one finds you without looking.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
       "{teaser} Watch it twice — the second time is even sweeter.",
       "This one melted us. {teaser}",
-      "{teaser} Watch to the end — the last few seconds are the whole thing."
+      "{teaser} Watch to the end — the last few seconds are the whole thing.",
+      "Some days you just need a {anchor_lc} video like this. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -62,7 +50,8 @@
       "Tag someone who needs to see this right now.",
       "What should tomorrow's story be about? We read every comment.",
       "What should we call this little one? Best comment wins 🏆",
-      "Cat person or dog person? Settle it in the comments."
+      "Cat person or dog person? Settle it in the comments.",
+      "Did you watch with the sound on or off? Genuinely curious 👇"
     ],
     "flashes": [
       "ON DUTY",
@@ -176,7 +165,10 @@
       "WORTH THE WAIT",
       "LOOK HOW LITTLE",
       "VERY SERIOUS BUSINESS",
-      "CAME OUT AT LAST"
+      "CAME OUT AT LAST",
+      "WE DON'T KNOW EITHER",
+      "THE PAWS",
+      "SO CLOSE"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -242,7 +234,8 @@
       "One of them knows what is going on. It is not him.",
       "Some friendships do not need words at all.",
       "You'll want to share this with everyone you love.",
-      "You'll feel this one in your chest."
+      "You'll feel this one in your chest.",
+      "Watch him think about it. That's the best bit."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -266,7 +259,8 @@
       "What should tomorrow's story be about? Best idea gets made.",
       "Sound on is a completely different video, by the way 🔊",
       "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Which second got you? Drop the timestamp and we'll compare."
+      "Which second got you? Drop the timestamp and we'll compare.",
+      "Tag the person who sends you every animal video. It's their turn."
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -332,7 +326,8 @@
       "TWO SECONDS IN 🥹",
       "ALMOST TOO CUTE",
       "SOUND ON 🔊",
-      "NO SUPERVISION HERE"
+      "NO SUPERVISION HERE",
+      "VERY PROUD OF HIMSELF"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -358,7 +353,8 @@
       "{core} (Try Not To Smile) | {anchor}",
       "{core} | You Have To See This",
       "Everyone Needs To See This {anchor} | {core}",
-      "{anchor} - {core}"
+      "{anchor} - {core}",
+      "{core} 🥹 {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -454,13 +450,15 @@
       "a puppy who falls asleep standing up mid-play",
       "a puppy who has decided the mailbox is his enemy",
       "a rescue cat who finally let someone hold her",
-      "a toddler carefully feeding a bottle to a rescued kitten"
+      "a toddler carefully feeding a bottle to a rescued kitten",
+      "a kitten stealing a baby's toy and returning it"
     ],
     "voices": [
       "en-GB-SoniaNeural",
       "en-US-JennyNeural",
       "en-US-AriaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-MichelleNeural"
     ]
   }
 }
