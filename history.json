@@ -33,7 +33,9 @@
       "Come for one story, stay for the daily ones. Subscribe.",
       "Follow along — the next tiny story is already waiting.",
       "Subscribe — there's a new little moment here every single morning.",
-      "Stay a while. We post something gentle here every day."
+      "Stay a while. We post something gentle here every day.",
+      "If this made you smile, SweetSoul Stories has one of these for you daily.",
+      "Subscribe — the next small, sweet thing is one day away."
     ],
     "desc_ctas": [
       "If this made your day, subscribing takes two seconds and keeps them coming.",
@@ -41,7 +43,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Subscribe for daily proof that the world still has soft edges.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
-      "Subscribe for your daily dose of joy — one small, sweet story at a time."
+      "Subscribe for your daily dose of joy — one small, sweet story at a time.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -53,7 +56,8 @@
       "{teaser} The kind of clip you send to one specific person.",
       "Saving this one for a rough day. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "Here is your {anchor_lc} moment for today. {teaser}"
+      "Here is your {anchor_lc} moment for today. {teaser}",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -76,7 +80,8 @@
       "Would your pet do the same thing? Tell us below 👇",
       "Comment 🥹 if the ending got you too.",
       "Who should see this today? Tag them.",
-      "Which one would you take home? Comment your pick."
+      "Which one would you take home? Comment your pick.",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "ON DUTY",
@@ -208,7 +213,10 @@
       "GUARD MODE",
       "SNORING NOW",
       "FINALLY 🥹",
-      "GOOD ENOUGH FOR HIM"
+      "GOOD ENOUGH FOR HIM",
+      "MASSIVE EFFORT",
+      "ALWAYS GENTLE",
+      "MAKES NO SENSE"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -280,7 +288,8 @@
       "He has one plan, and it is a bad plan, and it is wonderful.",
       "The bond between these two will warm you to your core.",
       "This is the cutest thing you'll see all day.",
-      "This is a good day being made in real time."
+      "This is a good day being made in real time.",
+      "The tiniest hero you'll meet today."
     ],
     "pinned_comments": [
       "Somebody tell me I'm not the only one who teared up here.",
@@ -310,7 +319,8 @@
       "Small channel, real replies. Comment and we'll talk 🐾",
       "Cat person or dog person? Deciding this in the comments today.",
       "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "New here? Welcome. We do this every single day 🐾"
+      "New here? Welcome. We do this every single day 🐾",
+      "Okay but the part at the end though 🥹 What was your favourite second?"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -382,7 +392,8 @@
       "ONE MINUTE OLD FRIENDS",
       "FIRST TIME OUTSIDE",
       "THE ENDING THOUGH",
-      "TAKE THIRTY SECONDS"
+      "TAKE THIRTY SECONDS",
+      "LAST ONE LEFT"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -414,7 +425,8 @@
       "{core} | Softest Thing Today",
       "How Is This Real 🥺 {core}",
       "{core} — Watch The Last 5 Seconds",
-      "{core} (This Got Me) | {anchor}"
+      "{core} (This Got Me) | {anchor}",
+      "I Watched This 10 Times | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -516,13 +528,15 @@
       "a dog gently guarding a sleeping newborn all night",
       "a cat who moved her kittens onto the child's bed",
       "a cat who greets the baby at the door every single morning",
-      "a dog who sits outside the bathroom door and waits every time"
+      "a dog who sits outside the bathroom door and waits every time",
+      "a dog who lets the family cat win every single time"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AnaNeural",
       "en-US-EmmaNeural",
-      "en-US-MichelleNeural"
+      "en-US-MichelleNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
