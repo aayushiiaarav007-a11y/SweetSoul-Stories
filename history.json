@@ -6,7 +6,7 @@
     "desc_questions": 23,
     "flashes": 10,
     "hooks": 4,
-    "pinned_comments": 18,
+    "pinned_comments": 19,
     "screen_hooks": 6,
     "title_patterns": 13,
     "topics": 3,
@@ -35,7 +35,9 @@
       "Subscribe — there's a new little moment here every single morning.",
       "Stay a while. We post something gentle here every day.",
       "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Subscribe — the next small, sweet thing is one day away."
+      "Subscribe — the next small, sweet thing is one day away.",
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Subscribe, and tomorrow this will find you again."
     ],
     "desc_ctas": [
       "If this made your day, subscribing takes two seconds and keeps them coming.",
@@ -44,7 +46,8 @@
       "Subscribe for daily proof that the world still has soft edges.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe for your daily dose of joy — one small, sweet story at a time.",
-      "One good thing a day. Subscribe and we'll handle the rest."
+      "One good thing a day. Subscribe and we'll handle the rest.",
+      "If you want more of this in your feed, subscribing is the whole trick."
     ],
     "desc_openers": [
       "{anchor} alert: {teaser}",
@@ -57,7 +60,8 @@
       "Saving this one for a rough day. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
       "Here is your {anchor_lc} moment for today. {teaser}",
-      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
+      "A very short {anchor_lc} story with a very large heart. {teaser}"
     ],
     "desc_questions": [
       "What is your pet's most ridiculous habit? Comment below.",
@@ -81,7 +85,8 @@
       "Comment 🥹 if the ending got you too.",
       "Who should see this today? Tag them.",
       "Which one would you take home? Comment your pick.",
-      "Who else needed this today? Say hi in the comments 👋"
+      "Who else needed this today? Say hi in the comments 👋",
+      "Comment 🐾 if you watched this more than once."
     ],
     "flashes": [
       "ON DUTY",
@@ -216,7 +221,10 @@
       "GOOD ENOUGH FOR HIM",
       "MASSIVE EFFORT",
       "ALWAYS GENTLE",
-      "MAKES NO SENSE"
+      "MAKES NO SENSE",
+      "ALMOST GOT IT",
+      "BRAND NEW",
+      "NO MORE HIDING"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -289,38 +297,11 @@
       "The bond between these two will warm you to your core.",
       "This is the cutest thing you'll see all day.",
       "This is a good day being made in real time.",
-      "The tiniest hero you'll meet today."
+      "The tiniest hero you'll meet today.",
+      "This puppy's first day home is the sweetest thing ever."
     ],
     "pinned_comments": [
-      "Somebody tell me I'm not the only one who teared up here.",
-      "Tag the person who always sends you cute animal videos.",
-      "Name this little one. We're taking suggestions seriously.",
-      "Does your pet do this too? I need to know it's not just this one.",
-      "The last three seconds are the reason this exists 🥹",
-      "Saving this one for a bad day. Recommend you do the same.",
-      "Watched it again while uploading it. No regrets.",
-      "If this showed up at the right moment for you today, say so 👇",
-      "We watched this 6 times before uploading it. Sorry not sorry 🐾",
-      "One word for how this made you feel. Mine was 'oh'.",
-      "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "If this made you smile, that's all we wanted today ❤️",
-      "Comment 🐾 and we'll reply to every single one today.",
-      "We read every comment on this channel. Say something and find out.",
-      "Tell us in one word how this made you feel 👇",
-      "This is the exact kind of thing this channel is for.",
-      "If you made it to the end, you're my favourite kind of person 🤍",
-      "What should tomorrow's story be about? Best idea gets made.",
-      "Sound on is a completely different video, by the way 🔊",
-      "Rate the ending out of 10 — I'm giving it a firm 10.",
-      "Which second got you? Drop the timestamp and we'll compare.",
-      "Tag the person who sends you every animal video. It's their turn.",
-      "Genuine question: how did nobody cry filming this?",
-      "Small channel, real replies. Comment and we'll talk 🐾",
-      "Cat person or dog person? Deciding this in the comments today.",
-      "Be honest, how many times did you watch this? I'll go first: eleven.",
-      "New here? Welcome. We do this every single day 🐾",
-      "Okay but the part at the end though 🥹 What was your favourite second?"
+      "Sound on is a completely different video, by the way 🔊"
     ],
     "screen_hooks": [
       "TOOK A MONTH 🥹",
@@ -393,7 +374,8 @@
       "FIRST TIME OUTSIDE",
       "THE ENDING THOUGH",
       "TAKE THIRTY SECONDS",
-      "LAST ONE LEFT"
+      "LAST ONE LEFT",
+      "STAY FOR 15 SECONDS"
     ],
     "title_patterns": [
       "{core} | {anchor}",
@@ -426,7 +408,8 @@
       "How Is This Real 🥺 {core}",
       "{core} — Watch The Last 5 Seconds",
       "{core} (This Got Me) | {anchor}",
-      "I Watched This 10 Times | {core}"
+      "I Watched This 10 Times | {core}",
+      "{core} | Tiny Heart, Huge Moment"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -529,14 +512,16 @@
       "a cat who moved her kittens onto the child's bed",
       "a cat who greets the baby at the door every single morning",
       "a dog who sits outside the bathroom door and waits every time",
-      "a dog who lets the family cat win every single time"
+      "a dog who lets the family cat win every single time",
+      "a baby meeting a giant gentle dog and reaching out"
     ],
     "voices": [
       "en-US-JennyNeural",
       "en-US-AnaNeural",
       "en-US-EmmaNeural",
       "en-US-MichelleNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-GB-SoniaNeural"
     ]
   }
 }
