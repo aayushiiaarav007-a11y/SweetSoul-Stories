@@ -26,7 +26,8 @@
       "If this story stayed with you, subscribe — there is a new one tomorrow.",
       "Subscribe so tomorrow's story reaches you without you having to look.",
       "There is a story here for every night of the week. Subscribe.",
-      "If this one made you think, subscribe — the next may too."
+      "If this one made you think, subscribe — the next may too.",
+      "Tell someone this story tonight, and subscribe for the next one."
     ],
     "topics": [
       [
@@ -232,6 +233,10 @@
       [
         "courage",
         "a young fisherman who rows out to fetch his lost brother"
+      ],
+      [
+        "humility",
+        "a tall tree that mocks the bending reed before the storm"
       ]
     ]
   }
