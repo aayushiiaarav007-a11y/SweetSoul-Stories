@@ -55,15 +55,19 @@
       "If you smiled, that's the whole job done. Subscribe for more.",
       "Subscribe for one small, kind story a day. That's all we do here.",
       "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "SweetSoul Stories, every day, for the days you need something kind."
+      "SweetSoul Stories, every day, for the days you need something kind.",
+      "Follow now, and tomorrow's story will be waiting for you.",
+      "New story every day, no exceptions. Follow SweetSoul Stories."
     ],
     "desc_ctas": [
-      "New wholesome moment every single day. Hit subscribe."
+      "New wholesome moment every single day. Hit subscribe.",
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
-      "We rewatched this more times than we should admit. {teaser}"
+      "We rewatched this more times than we should admit. {teaser}",
+      "If you needed a reason to smile today, here it is. {teaser}"
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -74,7 +78,8 @@
       "Which one would you take home? Comment your pick.",
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Cat person or dog person? Settle it in the comments.",
-      "Rate this little one out of 10. No wrong answers."
+      "Rate this little one out of 10. No wrong answers.",
+      "Does your pet have a habit like this? Tell us about it below."
     ],
     "flashes": [
       "FAST ASLEEP",
@@ -87,7 +92,10 @@
       "STILL KNOWS HER",
       "HERE WE GO",
       "NEARLY THERE",
-      "NEVER SEEN THIS"
+      "NEVER SEEN THIS",
+      "PROBLEM SOLVED",
+      "SHE APPROVES",
+      "SOMEHOW YES"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -170,7 +178,8 @@
       "This is going about as well as you'd expect.",
       "He believes he is enormous. He is not.",
       "This happened by accident — and it's absolutely perfect.",
-      "This is the kind of story the internet was made for."
+      "This is the kind of story the internet was made for.",
+      "This little rescue story will stay with you all day."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -182,13 +191,16 @@
       "The last three seconds are the reason this exists 🥹",
       "Comment 🐾 and we'll reply to every single one today.",
       "Tag the person who always sends you cute animal videos.",
-      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅"
+      "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
+      "If you made it to the end, you're my favourite kind of person 🤍"
     ],
     "screen_hooks": [
-      "STAY A SECOND"
+      "STAY A SECOND",
+      "SOMETHING SOFT TODAY"
     ],
     "title_patterns": [
-      "{core} | Daily Dose Of Cute"
+      "{core} | Daily Dose Of Cute",
+      "{anchor}: {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -301,12 +313,14 @@
       "a cat who checks on every family member before sleeping",
       "a toddler and a kitten planting seeds in a tiny pot",
       "a dog and a rabbit who nap in the same basket",
-      "a kitten and puppy becoming best friends"
+      "a kitten and puppy becoming best friends",
+      "a toddler who packs the puppy a lunch for the park"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
-      "en-US-EmmaNeural"
+      "en-US-EmmaNeural",
+      "en-US-AriaNeural"
     ]
   }
 }
