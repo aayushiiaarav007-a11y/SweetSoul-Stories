@@ -14,19 +14,23 @@
   },
   "used": {
     "ctas": [
-      "Every day, one gentle story. Subscribe and let it find you."
+      "Every day, one gentle story. Subscribe and let it find you.",
+      "Come for one story, stay for the daily ones. Subscribe.",
+      "Follow SweetSoul Stories for your daily dose of joy."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
-      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
-      "{teaser} The kind of clip you send to one specific person."
+      "{teaser} The kind of clip you send to one specific person.",
+      "{teaser} Small moment, disproportionate effect on your mood."
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -39,7 +43,8 @@
       "Cat person or dog person? Settle it in the comments.",
       "Rate this little one out of 10. No wrong answers.",
       "Does your pet have a habit like this? Tell us about it below.",
-      "What should we call this little one? Best comment wins 🏆"
+      "What should we call this little one? Best comment wins 🏆",
+      "Tag someone who needs to see this right now."
     ],
     "flashes": [
       "FAST ASLEEP",
@@ -58,7 +63,10 @@
       "SOMEHOW YES",
       "LISTEN 🔊",
       "ANY SECOND NOW",
-      "HE HAS OPINIONS"
+      "HE HAS OPINIONS",
+      "CERTIFIED CUTE",
+      "TINY LEGS",
+      "NEVER FORGOT"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -143,7 +151,8 @@
       "This happened by accident — and it's absolutely perfect.",
       "This is the kind of story the internet was made for.",
       "This little rescue story will stay with you all day.",
-      "This is the first time anyone has been gentle with him."
+      "This is the first time anyone has been gentle with him.",
+      "Somebody is about to be very surprised."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -157,17 +166,20 @@
       "Tag the person who always sends you cute animal videos.",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "If you made it to the end, you're my favourite kind of person 🤍",
-      "Cat person or dog person? Deciding this in the comments today."
+      "Cat person or dog person? Deciding this in the comments today.",
+      "Does your pet do this too? I need to know it's not just this one."
     ],
     "screen_hooks": [
       "STAY A SECOND",
       "SOMETHING SOFT TODAY",
-      "HE JUST KNEW"
+      "HE JUST KNEW",
+      "HE CHOSE HER"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
       "{anchor}: {core}",
-      "{core} 🐾 {anchor}"
+      "{core} 🐾 {anchor}",
+      "{core} (Try Not To Smile) | {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -282,14 +294,16 @@
       "a dog and a rabbit who nap in the same basket",
       "a kitten and puppy becoming best friends",
       "a toddler who packs the puppy a lunch for the park",
-      "a toddler who insists the dog sits at the dinner table"
+      "a toddler who insists the dog sits at the dinner table",
+      "a kitten who yawns bigger than his own head"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
       "en-US-AriaNeural",
-      "en-US-JennyNeural"
+      "en-US-JennyNeural",
+      "en-US-AnaNeural"
     ]
   }
 }
