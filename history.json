@@ -10,19 +10,22 @@
     "screen_hooks": 7,
     "title_patterns": 14,
     "topics": 3,
-    "voices": 93
+    "voices": 94
   },
   "used": {
     "ctas": [
       "Every day, one gentle story. Subscribe and let it find you.",
       "Come for one story, stay for the daily ones. Subscribe.",
-      "Follow SweetSoul Stories for your daily dose of joy."
+      "Follow SweetSoul Stories for your daily dose of joy.",
+      "Stay a while. We post something gentle here every day.",
+      "There is more where this came from. Subscribe and find out."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
       "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
-      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day."
+      "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
+      "One good thing a day. Subscribe and we'll handle the rest."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -30,7 +33,8 @@
       "We rewatched this more times than we should admit. {teaser}",
       "If you needed a reason to smile today, here it is. {teaser}",
       "{teaser} The kind of clip you send to one specific person.",
-      "{teaser} Small moment, disproportionate effect on your mood."
+      "{teaser} Small moment, disproportionate effect on your mood.",
+      "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you."
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -44,7 +48,8 @@
       "Rate this little one out of 10. No wrong answers.",
       "Does your pet have a habit like this? Tell us about it below.",
       "What should we call this little one? Best comment wins 🏆",
-      "Tag someone who needs to see this right now."
+      "Tag someone who needs to see this right now.",
+      "Who else needed this today? Say hi in the comments 👋"
     ],
     "flashes": [
       "FAST ASLEEP",
@@ -66,7 +71,10 @@
       "HE HAS OPINIONS",
       "CERTIFIED CUTE",
       "TINY LEGS",
-      "NEVER FORGOT"
+      "NEVER FORGOT",
+      "NEW FAVOURITE",
+      "WARM AND SAFE",
+      "MAKES NO SENSE"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -152,7 +160,8 @@
       "This is the kind of story the internet was made for.",
       "This little rescue story will stay with you all day.",
       "This is the first time anyone has been gentle with him.",
-      "Somebody is about to be very surprised."
+      "Somebody is about to be very surprised.",
+      "Sometimes the smallest creatures carry the biggest love."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -167,19 +176,22 @@
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
       "If you made it to the end, you're my favourite kind of person 🤍",
       "Cat person or dog person? Deciding this in the comments today.",
-      "Does your pet do this too? I need to know it's not just this one."
+      "Does your pet do this too? I need to know it's not just this one.",
+      "Small channel, real replies. Comment and we'll talk 🐾"
     ],
     "screen_hooks": [
       "STAY A SECOND",
       "SOMETHING SOFT TODAY",
       "HE JUST KNEW",
-      "HE CHOSE HER"
+      "HE CHOSE HER",
+      "TOO SMALL TO KNOW"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
       "{anchor}: {core}",
       "{core} 🐾 {anchor}",
-      "{core} (Try Not To Smile) | {anchor}"
+      "{core} (Try Not To Smile) | {anchor}",
+      "Two Seconds In And I Was Gone | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -295,15 +307,11 @@
       "a kitten and puppy becoming best friends",
       "a toddler who packs the puppy a lunch for the park",
       "a toddler who insists the dog sits at the dinner table",
-      "a kitten who yawns bigger than his own head"
+      "a kitten who yawns bigger than his own head",
+      "a kitten who follows the toddler from room to room all day"
     ],
     "voices": [
-      "en-US-MichelleNeural",
-      "en-GB-SoniaNeural",
-      "en-US-EmmaNeural",
-      "en-US-AriaNeural",
-      "en-US-JennyNeural",
-      "en-US-AnaNeural"
+      "en-US-EmmaNeural"
     ]
   }
 }
