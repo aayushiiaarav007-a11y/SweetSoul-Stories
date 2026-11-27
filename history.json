@@ -1,6 +1,6 @@
 {
   "cycles": {
-    "ctas": 24,
+    "ctas": 25,
     "desc_ctas": 35,
     "desc_openers": 31,
     "desc_questions": 24,
@@ -14,60 +14,19 @@
   },
   "used": {
     "ctas": [
-      "There's a new sweet story here every single day. Come back tomorrow.",
-      "Save this channel for the days you need something soft. Subscribe.",
-      "Subscribe for daily proof that the world still has soft edges.",
-      "If your day got a little better, that's all we wanted. Subscribe for more.",
-      "Follow for daily reminders that small things carry a lot of love.",
-      "If this was your favourite thirty seconds today, subscribe for tomorrow's.",
-      "There is more where this came from. Subscribe and find out.",
-      "Tomorrow's story is already waiting for you. Follow along.",
-      "Follow SweetSoul Stories for your daily dose of joy.",
-      "Every day, one gentle story. Subscribe and let it find you.",
-      "Subscribe for the quiet, lovely corner of your feed.",
-      "One small, sweet story every day. Subscribe and we'll see you tomorrow.",
-      "Come back tomorrow. There's always another small moment worth seeing.",
-      "Stick around. The next one is just as soft as this.",
-      "If that helped even a little, subscribe and we'll do it again tomorrow.",
-      "Follow for more of this. Tomorrow's is already written.",
-      "Come for one story, stay for the daily ones. Subscribe.",
-      "Follow along — the next tiny story is already waiting.",
-      "Subscribe — there's a new little moment here every single morning.",
-      "Stay a while. We post something gentle here every day.",
-      "If this made you smile, SweetSoul Stories has one of these for you daily.",
-      "Subscribe — the next small, sweet thing is one day away.",
-      "That's all for today. Follow along and we'll see you tomorrow.",
-      "Subscribe, and tomorrow this will find you again.",
-      "Subscribe and let something gentle find you every day.",
-      "Follow along, and tomorrow we'll find another one of these together.",
-      "Stay with SweetSoul Stories. There's always another gentle one coming.",
-      "Subscribe for more of the quiet, lovely parts of the internet.",
-      "Subscribe, and let us hand you one good thing every single day.",
-      "If you needed this today, subscribe — we'll be here again tomorrow.",
-      "Follow SweetSoul Stories — we keep the gentle ones coming.",
-      "That's today's dose of soft. Follow for tomorrow's.",
-      "One tiny story a day, every day. Subscribe so you catch the next.",
-      "New story, same warmth, every day. Subscribe so you don't miss it.",
-      "Stay for tomorrow's story. It's just as soft as this one.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
-      "We'll be back tomorrow with another one. Follow so you don't miss it.",
-      "Subscribe to SweetSoul Stories and let the good part reach you daily.",
-      "If you smiled, that's the whole job done. Subscribe for more.",
-      "Subscribe for one small, kind story a day. That's all we do here.",
-      "Subscribe to SweetSoul Stories — a new little moment like this every day.",
-      "SweetSoul Stories, every day, for the days you need something kind.",
-      "Follow now, and tomorrow's story will be waiting for you.",
-      "New story every day, no exceptions. Follow SweetSoul Stories."
+      "Every day, one gentle story. Subscribe and let it find you."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
-      "Follow SweetSoul Stories for daily feel-good animal and baby moments."
+      "Follow SweetSoul Stories for daily feel-good animal and baby moments.",
+      "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
       "A very short {anchor_lc} story with a very large heart. {teaser}",
       "We rewatched this more times than we should admit. {teaser}",
-      "If you needed a reason to smile today, here it is. {teaser}"
+      "If you needed a reason to smile today, here it is. {teaser}",
+      "{teaser} The kind of clip you send to one specific person."
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -79,7 +38,8 @@
       "On a scale of 1-10, how cute was that? Comment your score!",
       "Cat person or dog person? Settle it in the comments.",
       "Rate this little one out of 10. No wrong answers.",
-      "Does your pet have a habit like this? Tell us about it below."
+      "Does your pet have a habit like this? Tell us about it below.",
+      "What should we call this little one? Best comment wins 🏆"
     ],
     "flashes": [
       "FAST ASLEEP",
@@ -95,7 +55,10 @@
       "NEVER SEEN THIS",
       "PROBLEM SOLVED",
       "SHE APPROVES",
-      "SOMEHOW YES"
+      "SOMEHOW YES",
+      "LISTEN 🔊",
+      "ANY SECOND NOW",
+      "HE HAS OPINIONS"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -179,7 +142,8 @@
       "He believes he is enormous. He is not.",
       "This happened by accident — and it's absolutely perfect.",
       "This is the kind of story the internet was made for.",
-      "This little rescue story will stay with you all day."
+      "This little rescue story will stay with you all day.",
+      "This is the first time anyone has been gentle with him."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -192,15 +156,18 @@
       "Comment 🐾 and we'll reply to every single one today.",
       "Tag the person who always sends you cute animal videos.",
       "Fun fact: this took 40 takes of nothing happening before THIS happened 😅",
-      "If you made it to the end, you're my favourite kind of person 🤍"
+      "If you made it to the end, you're my favourite kind of person 🤍",
+      "Cat person or dog person? Deciding this in the comments today."
     ],
     "screen_hooks": [
       "STAY A SECOND",
-      "SOMETHING SOFT TODAY"
+      "SOMETHING SOFT TODAY",
+      "HE JUST KNEW"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
-      "{anchor}: {core}"
+      "{anchor}: {core}",
+      "{core} 🐾 {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -314,13 +281,15 @@
       "a toddler and a kitten planting seeds in a tiny pot",
       "a dog and a rabbit who nap in the same basket",
       "a kitten and puppy becoming best friends",
-      "a toddler who packs the puppy a lunch for the park"
+      "a toddler who packs the puppy a lunch for the park",
+      "a toddler who insists the dog sits at the dinner table"
     ],
     "voices": [
       "en-US-MichelleNeural",
       "en-GB-SoniaNeural",
       "en-US-EmmaNeural",
-      "en-US-AriaNeural"
+      "en-US-AriaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
