@@ -20,7 +20,9 @@
       "Stay a while. We post something gentle here every day.",
       "There is more where this came from. Subscribe and find out.",
       "Subscribe for more of the quiet, lovely parts of the internet.",
-      "Subscribe for one small, kind story a day. That's all we do here."
+      "Subscribe for one small, kind story a day. That's all we do here.",
+      "That's today's dose of soft. Follow for tomorrow's.",
+      "There's a new sweet story here every single day. Come back tomorrow."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -28,7 +30,8 @@
       "Hit subscribe — we post a fresh dose of cute daily, and you don't want to miss tomorrow's.",
       "Subscribe to SweetSoul Stories for a new heartwarming moment every single day.",
       "One good thing a day. Subscribe and we'll handle the rest.",
-      "We post daily. Subscribing means the next one finds you without looking."
+      "We post daily. Subscribing means the next one finds you without looking.",
+      "New wholesome story every day. Subscribe so the next one finds you."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -38,7 +41,8 @@
       "{teaser} The kind of clip you send to one specific person.",
       "{teaser} Small moment, disproportionate effect on your mood.",
       "{teaser} Thirty seconds of {anchor_lc} that asks nothing of you.",
-      "This one melted us. {teaser}"
+      "This one melted us. {teaser}",
+      "This is the soft part of the internet. {teaser}"
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -54,7 +58,8 @@
       "What should we call this little one? Best comment wins 🏆",
       "Tag someone who needs to see this right now.",
       "Who else needed this today? Say hi in the comments 👋",
-      "One word for how this made you feel. Go 👇"
+      "One word for how this made you feel. Go 👇",
+      "What should tomorrow's story be about? We read every comment."
     ],
     "flashes": [
       "FAST ASLEEP",
@@ -82,7 +87,10 @@
       "MAKES NO SENSE",
       "WORTH THE WAIT",
       "CLOSE ENOUGH",
-      "SAFE AT LAST"
+      "SAFE AT LAST",
+      "WE DON'T KNOW EITHER",
+      "I'M DONE 🥹",
+      "WHAT IS THAT"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -170,7 +178,8 @@
       "This is the first time anyone has been gentle with him.",
       "Somebody is about to be very surprised.",
       "Sometimes the smallest creatures carry the biggest love.",
-      "This is the sound of somebody being happy."
+      "This is the sound of somebody being happy.",
+      "This rescue puppy's first smile says it all."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -187,7 +196,8 @@
       "Cat person or dog person? Deciding this in the comments today.",
       "Does your pet do this too? I need to know it's not just this one.",
       "Small channel, real replies. Comment and we'll talk 🐾",
-      "Tell us in one word how this made you feel 👇"
+      "Tell us in one word how this made you feel 👇",
+      "What should tomorrow's story be about? Best idea gets made."
     ],
     "screen_hooks": [
       "STAY A SECOND",
@@ -195,7 +205,8 @@
       "HE JUST KNEW",
       "HE CHOSE HER",
       "TOO SMALL TO KNOW",
-      "THIS IS THE GOOD PART"
+      "THIS IS THE GOOD PART",
+      "TINY AND FEARLESS"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -203,7 +214,8 @@
       "{core} 🐾 {anchor}",
       "{core} (Try Not To Smile) | {anchor}",
       "Two Seconds In And I Was Gone | {core}",
-      "{core} | You Have To See This"
+      "{core} | You Have To See This",
+      "Everyone Needs To See This {anchor} | {core}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -321,11 +333,13 @@
       "a toddler who insists the dog sits at the dinner table",
       "a kitten who yawns bigger than his own head",
       "a kitten who follows the toddler from room to room all day",
-      "a toddler and a puppy jumping in the same puddle"
+      "a toddler and a puppy jumping in the same puddle",
+      "an old cat adopted by a family with a newborn"
     ],
     "voices": [
       "en-US-EmmaNeural",
-      "en-US-AnaNeural"
+      "en-US-AnaNeural",
+      "en-US-JennyNeural"
     ]
   }
 }
