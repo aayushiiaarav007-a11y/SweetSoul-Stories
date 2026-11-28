@@ -28,7 +28,8 @@
       "There is a story here for every night of the week. Subscribe.",
       "If this one made you think, subscribe — the next may too.",
       "Tell someone this story tonight, and subscribe for the next one.",
-      "Every story here carries a lesson. Subscribe and collect them all."
+      "Every story here carries a lesson. Subscribe and collect them all.",
+      "Subscribe for a brand-new story every single day!"
     ],
     "topics": [
       [
@@ -242,6 +243,10 @@
       [
         "persistence",
         "a girl who tries ninety-nine times to light a lamp in the wind"
+      ],
+      [
+        "learning from anyone",
+        "a scholar taught something vital by a shepherd"
       ]
     ]
   }
