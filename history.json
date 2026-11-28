@@ -10,7 +10,7 @@
     "screen_hooks": 7,
     "title_patterns": 14,
     "topics": 3,
-    "voices": 94
+    "voices": 95
   },
   "used": {
     "ctas": [
@@ -28,7 +28,9 @@
       "Follow now, and tomorrow's story will be waiting for you.",
       "New story every day, no exceptions. Follow SweetSoul Stories.",
       "Come back tomorrow. There's always another small moment worth seeing.",
-      "Follow SweetSoul Stories — tiny stories, big hearts, daily."
+      "Follow SweetSoul Stories — tiny stories, big hearts, daily.",
+      "That's all for today. Follow along and we'll see you tomorrow.",
+      "Subscribe and let something gentle find you every day."
     ],
     "desc_ctas": [
       "New wholesome moment every single day. Hit subscribe.",
@@ -40,7 +42,8 @@
       "New wholesome story every day. Subscribe so the next one finds you.",
       "There is a new one of these tomorrow. Subscribe so you catch it.",
       "Subscribe for daily proof that the world still has soft edges.",
-      "Subscribe and let something gentle reach you every day."
+      "Subscribe and let something gentle reach you every day.",
+      "If this made your day, subscribing takes two seconds and keeps them coming."
     ],
     "desc_openers": [
       "Saving this one for a rough day. {teaser}",
@@ -54,7 +57,8 @@
       "This is the soft part of the internet. {teaser}",
       "Here is your {anchor_lc} moment for today. {teaser}",
       "{teaser} This is the kind of {anchor_lc} moment that makes your whole day better.",
-      "Some days you just need a {anchor_lc} video like this. {teaser}"
+      "Some days you just need a {anchor_lc} video like this. {teaser}",
+      "{teaser} Watch to the end — the last few seconds are the whole thing."
     ],
     "desc_questions": [
       "What was the exact second that got you? Comment the timestamp 👇",
@@ -74,7 +78,8 @@
       "What should tomorrow's story be about? We read every comment.",
       "Comment 🐾 if you watched this more than once.",
       "If this is your kind of thing, comment 🐾 and we'll make more.",
-      "Comment 🥹 if the ending got you too."
+      "Comment 🥹 if the ending got you too.",
+      "Who should see this today? Tag them."
     ],
     "flashes": [
       "FAST ASLEEP",
@@ -114,7 +119,10 @@
       "APPROVED ✅",
       "WAIT...",
       "HE CAME BACK",
-      "SHE DID IT"
+      "SHE DID IT",
+      "HE'S TRYING",
+      "HE'S SO PLEASED",
+      "MY HEART"
     ],
     "hooks": [
       "This tiny thing changed one family forever.",
@@ -206,7 +214,8 @@
       "This rescue puppy's first smile says it all.",
       "The plan was simple. The plan did not survive.",
       "Watch his ears. That's when you'll know.",
-      "This little puppy just became everyone's favorite hero."
+      "This little puppy just became everyone's favorite hero.",
+      "He does not know he is being kind. He just is."
     ],
     "pinned_comments": [
       "Sound on is a completely different video, by the way 🔊",
@@ -227,7 +236,8 @@
       "What should tomorrow's story be about? Best idea gets made.",
       "Somebody tell me I'm not the only one who teared up here.",
       "Genuine question: who is cuter here? Reply with your pick 👇",
-      "Watched it again while uploading it. No regrets."
+      "Watched it again while uploading it. No regrets.",
+      "We watched this 6 times before uploading it. Sorry not sorry 🐾"
     ],
     "screen_hooks": [
       "STAY A SECOND",
@@ -239,7 +249,8 @@
       "TINY AND FEARLESS",
       "GIVE IT 10 SECONDS",
       "TRY NOT TO SMILE",
-      "TINY BUT MIGHTY"
+      "TINY BUT MIGHTY",
+      "GUARDING HIS BABY"
     ],
     "title_patterns": [
       "{core} | Daily Dose Of Cute",
@@ -251,7 +262,8 @@
       "Everyone Needs To See This {anchor} | {core}",
       "{core} — Watch The Last 5 Seconds",
       "This {anchor} Will Melt Your Heart | {core}",
-      "{core} | Proof The Internet Is Fine"
+      "{core} | Proof The Internet Is Fine",
+      "{core} | Wholesome {anchor}"
     ],
     "topics": [
       "a puppy meeting a puddle and deciding to sit in it",
@@ -373,14 +385,10 @@
       "an old cat adopted by a family with a newborn",
       "a kitten who claimed the freshly made bed as her own",
       "a puppy who will only sleep if he can hear someone breathing",
-      "a toddler brushing a very tolerant cat"
+      "a toddler brushing a very tolerant cat",
+      "a puppy and a goat who both think they are dogs"
     ],
     "voices": [
-      "en-US-EmmaNeural",
-      "en-US-AnaNeural",
-      "en-US-JennyNeural",
-      "en-US-AriaNeural",
-      "en-US-MichelleNeural",
       "en-GB-SoniaNeural"
     ]
   }
